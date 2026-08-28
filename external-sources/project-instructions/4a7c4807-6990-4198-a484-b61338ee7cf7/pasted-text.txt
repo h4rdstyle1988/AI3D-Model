@@ -1,0 +1,617 @@
+Wir unterbrechen den konservativen v003-Reparaturpfad vorübergehend und führen zuerst einen **separaten, pragmatischen Machbarkeitstest** durch.
+
+# Ziel
+
+Beweise mit möglichst einfachem und robustem Verfahren, dass aus dem bestehenden C01-Modell ein:
+
+* geschlossenes,
+* manifoldes,
+* selbstschnittfreies,
+* slicbares,
+* praktisch druckbares
+
+Single-Solid erzeugt werden kann.
+
+Dieser Test dient **nicht** dem maximalen Formerhalt und ist **kein finaler Master**.
+
+Er soll uns beantworten:
+
+> Können wir aus C01 grundsätzlich einen technisch sauberen FDM-Körper erzeugen, und wie viel sichtbare Qualität verlieren wir dabei?
+
+---
+
+# 1. Referenz schützen
+
+Verwende ausschließlich eine Kopie des unveränderten C01-Masters.
+
+Aktueller C01-Master:
+
+SHA-256 beginnt mit:
+
+`58F6A915…A7D`
+
+Niemals:
+
+* C01-Master überschreiben;
+* v001 verändern;
+* v002-Failure-Artefakte verändern;
+* bisherige Reports ersetzen.
+
+Lege einen separaten Arbeitsbereich an, z. B.:
+
+`smoke-test-single-solid`
+
+Alle Resultate deutlich als:
+
+`SMOKE-TEST / NON-MASTER`
+
+kennzeichnen.
+
+---
+
+# 2. Grundprinzip
+
+Für diesen Versuch ist ausdrücklich ein **globaler impliziter Neuaufbau** zulässig.
+
+Bevorzugt:
+
+* Voxel-Remesh;
+* SDF / Signed-Distance-Field;
+* robustes implicit-surface reconstruction;
+* vergleichbares volumetrisches Verfahren.
+
+Hier ist globales Remeshing ausdrücklich erlaubt, weil es sich nur um einen Machbarkeitstest handelt.
+
+Das Ziel ist nicht, problematische C01-Topologie direkt zu reparieren.
+
+Stattdessen soll die sichtbare Oberfläche als Grundlage genommen und daraus **ein vollständig neuer, sauber geschlossener Solid** erzeugt werden.
+
+---
+
+# 3. Keine Innenhaut
+
+Auch beim Smoke-Test gilt:
+
+Keine separate künstliche Innenwand erzeugen.
+
+Ziel:
+
+**eine einzige geschlossene äußere Solid-Grenze.**
+
+Der Slicer soll später:
+
+* Perimeter;
+* Top-/Bottom-Layers;
+* Infill
+
+selbst erzeugen.
+
+---
+
+# 4. Zuerst vorhandene Werkzeuge prüfen
+
+Prüfe kurz, welche bereits installierten oder projektintern verfügbaren Werkzeuge robuste volumetrische Rekonstruktion unterstützen.
+
+Bevorzugt vorhandene Tools verwenden.
+
+Mögliche Methoden können sein:
+
+* OpenVDB;
+* trimesh voxel/voxelized operations;
+* PyVista/VTK;
+* CGAL;
+* Blender Voxel Remesh;
+* MeshLab/PyMeshLab;
+* libigl;
+* vorhandene CUDA-/CPU-Implementierungen;
+* andere bereits verfügbare robuste SDF-/Voxelmethoden.
+
+Keine große neue Toolchain installieren, wenn bereits ein geeignetes Werkzeug vorhanden ist.
+
+Dokumentiere lediglich, welches Backend verwendet wurde.
+
+---
+
+# 5. Stufenweiser Test statt sofort maximaler Qualität
+
+Nicht direkt mit extrem hoher Auflösung starten.
+
+Erzeuge zunächst maximal drei sinnvolle Stufen.
+
+## Test A – Robustheitsbeweis
+
+Zielauflösung ungefähr:
+
+**1,0 mm**
+
+oder technisch nächstliegender sinnvoller Wert.
+
+Priorität:
+
+* maximale Robustheit;
+* möglichst sicher geschlossen;
+* schnelle technische Aussage.
+
+Dieser Kandidat darf sichtbare Detailverluste haben.
+
+Wenn bereits Test A nicht sauber rekonstruiert werden kann, Ursache untersuchen, bevor feinere Varianten gerechnet werden.
+
+---
+
+## Test B – praktikabler FDM-Test
+
+Wenn A funktioniert:
+
+Zielauflösung ungefähr:
+
+**0,5 mm**
+
+oder ähnlich sinnvoll.
+
+Hier soll bereits beurteilt werden, ob die resultierende Form für realen FDM-Druck optisch akzeptabel sein könnte.
+
+---
+
+## Test C – Detailtest
+
+Nur wenn B erfolgreich und technisch sinnvoll ist:
+
+Zielauflösung ungefähr:
+
+**0,25–0,30 mm**
+
+Nicht unnötig feiner rechnen.
+
+Wir brauchen für diesen Schritt keinen mathematischen Sub-Mikrometer-Erhalt.
+
+Ziel ist ein realistisches Druckmodell.
+
+---
+
+# 6. Auflösung intelligent begrenzen
+
+Vor dem Lauf:
+
+* Bounding Box bestimmen;
+* physische Modellgröße in mm bestätigen;
+* daraus geschätzte Voxelanzahl und Speicherbedarf berechnen.
+
+Verhindere versehentliche extrem große Voxelgrids.
+
+Falls 0,25 mm unverhältnismäßig große RAM-/Rechenanforderungen erzeugt:
+
+nicht erzwingen.
+
+Dann bei der feinsten praktikablen Auflösung stoppen.
+
+---
+
+# 7. Geometrische Interpretation
+
+Beim Aufbau des Volumens möglichst robuste Inside/Outside-Klassifikation verwenden.
+
+Falls das Eingangsmaterial wegen seiner Defekte kein zuverlässiges klassisches Signed Distance Field zulässt, dürfen robustere Verfahren verwendet werden, beispielsweise:
+
+* generalized winding number;
+* unsigned-distance plus robuste Innen-/Außenklassifikation;
+* flood fill;
+* volumetrische occupancy;
+* vergleichbare konservative Methoden.
+
+Nicht an einer bestimmten Library festhalten, wenn deren Algorithmus wegen der C01-Defekte ungeeignet ist.
+
+Ziel ist ein technisch sauberer Solid.
+
+---
+
+# 8. Maßstab zwingend erhalten
+
+Für jede Variante kontrollieren:
+
+* X-Ausdehnung;
+* Y-Ausdehnung;
+* Z-Ausdehnung;
+* Position;
+* Orientierung.
+
+Keine unbemerkte:
+
+* Skalierung;
+* Achsenvertauschung;
+* Spiegelung;
+* Unit-Konvertierung.
+
+Bounding Box vor/nach Rekonstruktion dokumentieren.
+
+---
+
+# 9. Maulhöhle besonders kontrollieren
+
+Ein globaler Voxel-/SDF-Remesh kann konkave Bereiche versehentlich schließen.
+
+Deshalb nach jedem erfolgreichen Kandidaten prüfen:
+
+## Maul
+
+Die validierte Maulhöhle muss weiterhin als erkennbare konkave Geometrie vorhanden sein.
+
+Prüfe insbesondere:
+
+* Öffnung noch vorhanden;
+* keine künstliche Membran über dem Maul;
+* Kavität nicht vollständig zugeschmiert;
+* Lippen-/Maulränder nicht grob verschmolzen;
+* keine offensichtlich falsche Volumenfüllung.
+
+Ein technisch manifoldes Modell mit geschlossenem Maul wäre **kein akzeptabler visueller Kandidat**, selbst wenn die Topologie PASS meldet.
+
+---
+
+# 10. Kritische äußere Features kontrollieren
+
+Zusätzlich visuell/geometrisch prüfen:
+
+* Schwanz;
+* Ohren;
+* Zähne;
+* Finger/Krallen;
+* dünne Extremitäten;
+* Spitzen;
+* kleine Vorsprünge;
+* Übergänge zwischen eng benachbarten Körperteilen.
+
+Erfasse:
+
+* verschwundene Details;
+* zusammengewachsene Bereiche;
+* ungewollt geschlossene Spalten;
+* stark abgerundete Details.
+
+---
+
+# 11. Keine künstliche Glättung am Anfang
+
+Den ersten Output jeder Voxelstufe zunächst **ungeglättet** validieren.
+
+Falls die Oberfläche stark voxelartig ist, darf später ein separater Test mit sehr begrenzter Glättung erfolgen.
+
+Aber:
+
+* kein aggressives Laplacian Smooth;
+* keine Formveränderung nur aus kosmetischen Gründen;
+* keine Glättung, bevor die ungeglättete Ausgangsabweichung dokumentiert wurde.
+
+Falls geglättet wird:
+
+Vorher/Nachher getrennt speichern.
+
+---
+
+# 12. Topologiegate
+
+Für jeden erzeugten Smoke-Test-Kandidaten prüfen:
+
+* Anzahl Connected Components;
+* Shared-Edge-Komponenten;
+* Boundary-Kanten;
+* Non-Manifold-Kanten;
+* Vertex-Manifoldness;
+* ungültige Vertex-Links;
+* Winding-Konsistenz;
+* Duplicate Faces;
+* degenerierte Faces;
+* Zero-Area-Faces;
+* Selbstkreuzungen;
+* nicht-adjazente Kontakte;
+* Watertightness.
+
+Ziel:
+
+* **1 Komponente**
+* **0 Boundary**
+* **0 Non-Manifold**
+* **0 ungültige Vertex-Links**
+* **0 nicht-adjazente Selbstkreuzungen**
+* **0 problematische nicht-adjazente Kontakte**
+* watertight
+* edge-manifold
+* vertex-manifold
+
+---
+
+# 13. Formerhalt quantitativ messen
+
+Für jeden technisch gültigen Kandidaten gegen C01 messen:
+
+Mindestens:
+
+* Median-Abweichung;
+* p95;
+* p99;
+* Maximum;
+* Bounding-Box-Abweichung.
+
+Wenn möglich zusätzlich:
+
+* bidirektionale Surface Distance;
+* Approximate Hausdorff Distance;
+* Flächenanteil mit Abweichung >0,25 mm;
+* > 0,5 mm;
+* > 1,0 mm;
+* > 2,0 mm.
+
+Wichtig:
+
+Ein großer numerischer Maximalwert allein darf nicht automatisch zum FAIL führen.
+
+Erst feststellen, ob er von:
+
+* einem echten sichtbaren Formverlust;
+* einer ursprünglich defekten Stelle;
+* einem dünnen Feature;
+* oder einem einzelnen geometrischen Ausreißer
+
+verursacht wird.
+
+---
+
+# 14. Visuellen Vergleich erzeugen
+
+Für A, B und C nach Möglichkeit identische Vergleichsansichten erzeugen:
+
+* Vorderseite;
+* Rückseite;
+* links;
+* rechts;
+* oben;
+* schräge Perspektive;
+* Detailansicht Maul;
+* größte Abweichungsregionen.
+
+Wenn technisch einfach möglich:
+
+zusätzlich eine Distance-Heatmap.
+
+Ziel:
+
+Wir wollen nicht nur Zahlen sehen, sondern schnell erkennen können, ob der Qualitätsverlust im realen Modell überhaupt relevant ist.
+
+---
+
+# 15. Vereinfachung ausdrücklich erlaubt
+
+Wenn das volumetrische Ergebnis extrem viele Dreiecke besitzt, darf anschließend eine **separate Kopie** moderat vereinfacht werden.
+
+Aber nur unter Bedingungen:
+
+* Ausgangs-Solid vorher vollständig speichern;
+* Simplification darf keine neue Topologie erzeugen;
+* nach Simplification erneut komplette Topologieprüfung;
+* Formabweichung erneut messen.
+
+Nicht auf eine bestimmte Polygonzahl zwingen.
+
+Nur vereinfachen, wenn Dateigröße/Verarbeitung sonst unnötig problematisch ist.
+
+---
+
+# 16. STL- und 3MF-Test
+
+Wenn ein Smoke-Test-Kandidat intern PASS erreicht:
+
+Exportiere:
+
+* STL;
+* 3MF.
+
+Danach beide Dateien neu importieren und die Topologie erneut prüfen.
+
+Für jeden Roundtrip:
+
+* Komponenten;
+* Boundary;
+* Non-Manifold;
+* Vertex-Manifold;
+* Self-Intersections;
+* Kontakte;
+* Watertightness;
+* Bounding Box.
+
+Nur der Roundtrip zählt.
+
+Nicht davon ausgehen, dass ein korrekter Arbeitsmesh automatisch korrekt exportiert wurde.
+
+---
+
+# 17. Praktischer Slicer-Test
+
+Wenn ein Kandidat die geometrischen Gates und mindestens einen sinnvollen Roundtrip besteht:
+
+Falls ein geeigneter lokaler Slicer vorhanden ist, z. B.:
+
+* OrcaSlicer;
+* Bambu Studio;
+* PrusaSlicer;
+* Cura;
+* anderes FDM-Tool,
+
+öffne/teste das Modell nicht-destruktiv.
+
+Prüfe insbesondere:
+
+* wird genau ein Objekt/Solid erkannt?
+* lässt es sich vollständig slicen?
+* fehlen Layerbereiche?
+* entstehen unerwartete Hohlräume?
+* meldet der Slicer Meshfehler?
+* gibt es problematische Thin-Wall-Bereiche?
+* verschwinden wichtige Details?
+
+Wenn CLI-Funktionen verfügbar sind, dürfen diese verwendet werden.
+
+Keine spezielle Druckerkonfiguration erzwingen.
+
+Es geht zunächst um grundsätzliche Slicbarkeit.
+
+---
+
+# 18. Optional: sehr einfacher Reparaturvergleich
+
+Falls bereits ein vorhandenes Tool eine robuste Funktion wie:
+
+* voxel remesh;
+* make manifold;
+* solidify via volume;
+* implicit reconstruction
+
+mit praktisch einem Schritt anbietet, darf zusätzlich **ein einzelner Vergleichskandidat** erzeugt werden.
+
+Dieser Vergleich dient nur der Frage:
+
+> Liefert ein einfaches Standardtool bereits ein ähnlich gutes Ergebnis wie unsere kontrollierte Pipeline?
+
+Nicht automatisch als beste Lösung übernehmen.
+
+Danach dieselben Topologie- und Formtests durchführen.
+
+Falls der einfache Standardweg funktioniert und qualitativ genauso gut oder besser ist:
+
+klar darauf hinweisen.
+
+Wir wollen die Sache vereinfachen, nicht aus Prinzip die komplizierteste Methode verwenden.
+
+---
+
+# 19. Frühzeitiges Stoppen bei gutem Ergebnis
+
+Sehr wichtig:
+
+Nicht unnötig weiteroptimieren.
+
+Falls beispielsweise 0,5 mm bereits:
+
+* technisch vollständig PASS;
+* STL/3MF PASS;
+* slicbar;
+* Maul korrekt;
+* Details sichtbar erhalten;
+* Formabweichung für FDM praktisch unkritisch
+
+ist:
+
+dann ausdrücklich feststellen:
+
+**„0,5-mm-Smoke-Test ist bereits praktisch brauchbar.“**
+
+0,25 mm kann dann optional zum Vergleich gerechnet werden, ist aber nicht zwingend erforderlich.
+
+---
+
+# 20. Entscheidungslogik am Ende
+
+Erstelle eine kompakte Vergleichstabelle:
+
+| Variante | Auflösung | Topologie | STL | 3MF | Slicer | Formtreue | visuelle Bewertung |
+| -------- | --------: | --------- | --- | --- | ------ | --------- | ------------------ |
+
+Danach eine klare Empfehlung ausgeben.
+
+## Ergebnis A – Smoke-Test funktioniert sehr gut
+
+Falls eine Variante fehlerfrei und optisch nahezu identisch ist:
+
+Empfehle zu prüfen, ob diese volumetrische Rekonstruktion direkt als Basis für das finale Druckmodell verwendet werden kann.
+
+Dann müssten wir eventuell die extrem aufwendige Reparatur aller 30 C01-Defektregionen nicht fortsetzen.
+
+---
+
+## Ergebnis B – technisch sauber, aber einige Details leiden
+
+Dann exakt benennen:
+
+* welche Details;
+* wo;
+* wie stark.
+
+Prüfen, ob diese wenigen Bereiche später lokal aus C01 zurückübertragen oder nachmodelliert werden könnten.
+
+Bevorzugt:
+
+**sauberer Solid + wenige lokale Detailkorrekturen**
+
+statt:
+
+**komplette mikrochirurgische Reparatur aller Originaldefekte**.
+
+---
+
+## Ergebnis C – nur grobe Auflösung funktioniert
+
+Dann wissen wir zumindest sicher:
+
+C01 kann grundsätzlich in einen druckbaren Solid überführt werden.
+
+Danach untersuchen, warum feinere Auflösungen Probleme erzeugen.
+
+---
+
+## Ergebnis D – auch volumetrisch kein sauberer Solid möglich
+
+Dann:
+
+* exakt dokumentieren, warum;
+* keine endlosen Varianten rechnen;
+* bestimmen, ob das Problem Eingangsskalierung, Inside/Outside-Klassifikation, extrem dünne Features oder konkrete geometrische Regionen sind.
+
+---
+
+# 21. Resultate speichern
+
+Mindestens:
+
+* verwendete Parameter;
+* Tool/Backend;
+* Logs;
+* Topologiereports;
+* Formabweichungen;
+* Vergleichsbilder;
+* erfolgreiche Arbeitsmeshes;
+* STL-/3MF-Roundtrips;
+* Slicer-Ergebnis;
+* Maschinenlesbares JSON;
+* Abschlussbericht.
+
+Erfolgreiche Dateien beispielsweise:
+
+`C01-smoke-1000um`
+`C01-smoke-500um`
+`C01-smoke-250um`
+
+oder entsprechend der tatsächlich verwendeten Auflösung.
+
+Alle eindeutig mit:
+
+`NON-MASTER`
+
+kennzeichnen.
+
+---
+
+# 22. Wichtigste Priorität dieses Versuchs
+
+Dieser Lauf soll ausdrücklich pragmatisch sein.
+
+Wir versuchen nicht, akademisch perfekte Reparaturmethoden zu beweisen.
+
+Die eigentliche Frage lautet:
+
+> Wie kommen wir auf dem einfachsten reproduzierbaren Weg zu einem fehlerfreien Modell, das sichtbar unserem C01 entspricht und sich realistisch als FDM-Modell verwenden lässt?
+
+Wenn eine einfache Methode dieses Ziel erreicht, ist sie gegenüber einer wesentlich komplizierteren Methode zu bevorzugen.
+
+Keine unnötige Komplexität erzeugen.
+
+Kein funktionierendes Ergebnis verwerfen, nur weil es nicht über den ursprünglich geplanten Reparaturweg entstanden ist.
+
+C01 bleibt immer als unveränderte Referenz erhalten.

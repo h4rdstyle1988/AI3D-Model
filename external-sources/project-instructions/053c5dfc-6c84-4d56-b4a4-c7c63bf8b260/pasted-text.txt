@@ -1,0 +1,313 @@
+Wir beenden die Arbeit für heute.
+
+Erstelle jetzt einen vollständigen und reproduzierbaren
+KNOWN-GOOD-CHECKPOINT des aktuellen AI3D-Systems.
+
+WICHTIG:
+Ab jetzt keine Experimente, keine Optimierungen, keine Reparaturen
+am Schwein und keine neuen Modellläufe mehr.
+
+Das oberste Ziel ist:
+Der aktuell funktionierende Zustand muss morgen exakt erhalten sein.
+
+============================================================
+1. NICHTS MEHR VERÄNDERN
+============================================================
+
+Ab jetzt ausdrücklich NICHT:
+
+- keine pip installs / upgrades / uninstalls
+- keine apt installs / upgrades
+- keine ROCm-Änderungen
+- keine Torch-Änderungen
+- keine erneute Kompilierung
+- keine Änderungen an Flash-Attention
+- keine Änderungen an CuMesh
+- keine Änderungen an FlexGEMM
+- keine Änderungen an O-Voxel
+- keine Änderungen an nvdiffrast
+- keine Änderungen an TRELLIS2-rocm
+- keine Änderungen an TripoSR
+- keine Änderungen an SPAR3D
+- keine automatische Mesh-Reparatur
+- keine neue TRELLIS-Generation
+- keinen neuen Seed ausprobieren
+- keine Originaldateien überschreiben
+- keine Caches bereinigen
+- keine Build-Artefakte löschen
+- kein git clean / reset / checkout auf Arbeitsdateien
+- keine vermeintlich unnötigen Dateien löschen
+
+============================================================
+2. LAUFENDE PROZESSE PRÜFEN
+============================================================
+
+Prüfe zunächst, ob noch relevante Schreib-, Build-, Download-,
+Benchmark- oder Modellprozesse laufen.
+
+Falls noch ein Prozess Daten schreibt:
+- kontrolliert fertigstellen lassen
+- nicht hart abbrechen
+
+Danach sicherstellen, dass alle Ergebnis-, JSON-, Log- und
+Reportdateien vollständig geschrieben und geschlossen sind.
+
+Keine neue langlaufende Aufgabe starten.
+
+============================================================
+3. FUNKTIONIERENDEN TRELLIS-STAND DOKUMENTIEREN
+============================================================
+
+Dokumentiere den exakten aktuellen Known-Good-Zustand:
+
+- Windows-/WSL-Version
+- Ubuntu-Version
+- Kernel-Version
+- ROCm/HIP-Version
+- GPU und gfx-Architektur
+- Python-Version
+- Torch-Version
+- torchvision-Version
+- Triton-Version
+- Flash-Attention-Version
+- nvdiffrast-Version
+- CuMesh-Version
+- FlexGEMM-Version
+- O-Voxel-Version
+- transformers-Version
+- utils3d-Version
+
+Für sämtliche beteiligten Git-Repositories:
+- absoluter Pfad
+- Remote URL
+- aktueller Commit
+- Branch
+- git status --short
+
+Getrackte Änderungen und ungetrackte Build-Artefakte klar
+voneinander unterscheiden.
+
+Bestehende Änderungen NICHT bereinigen.
+
+============================================================
+4. PYTHON-UMGEBUNGEN SICHERN
+============================================================
+
+Für mindestens:
+
+~/ai3d/trellis2-venv
+~/ai3d/.venv
+~/ai3d/spar3d-venv
+
+jeweils eine Paketliste erzeugen.
+
+Für die TRELLIS-Umgebung zusätzlich einen vollständigen
+pip freeze sichern.
+
+Keine Pakete verändern.
+
+============================================================
+5. WSL-KONFIGURATION SICHERN
+============================================================
+
+Die aktuell funktionierende Windows-Datei
+
+C:\Users\h4rds\.wslconfig
+
+dokumentieren und eine Textkopie im Checkpoint ablegen.
+
+Aktuell soll insbesondere dokumentiert sein:
+
+[wsl2]
+memory=24GB
+swap=16GB
+
+Die aktive WSL-Speicherkonfiguration ebenfalls auslesen und
+dokumentieren.
+
+============================================================
+6. HUGGING-FACE-CACHE NUR VERIFIZIEREN
+============================================================
+
+Die vorhandenen Modellgewichte NICHT erneut herunterladen und
+NICHT duplizieren, sofern sie bereits vollständig und verifiziert
+im lokalen Hugging-Face-Cache liegen.
+
+Dokumentieren:
+
+- Cache-Pfad
+- alle vier verwendeten Repositories
+- fixierte Revisionen
+- vorhandene/verifizierte Dateien
+- vorhandene SHA-256-Prüfungen
+- Offline-Ladefähigkeit
+
+Insbesondere:
+
+microsoft/TRELLIS.2-4B
+microsoft/TRELLIS-image-large
+facebook/dinov3-vitl16-pretrain-lvd1689m
+briaai/RMBG-2.0
+
+Keine Cache-Bereinigung durchführen.
+
+============================================================
+7. UNSERE EIGENEN DATEIEN SICHERN
+============================================================
+
+Sichere insbesondere:
+
+- Benchmark-Runner
+- Preflight-Skripte
+- Validierungsskripte
+- Reports
+- JSON-Messberichte
+- Mesh-Analysen
+- Renderings
+- GLB
+- Original-STL
+- konservative Print-STL
+- verwendete Eingabebilder bzw. deren verifizierte Referenzen
+- alle eigenen Hilfsskripte
+- alle für die ROCm/TRELLIS-Konfiguration relevanten Dateien
+
+Die Originalergebnisse unter
+
+D:\3D-Models\generated\trellis2-quality-test\
+
+dürfen NICHT verändert oder überschrieben werden.
+
+============================================================
+8. CHECKPOINT ERSTELLEN
+============================================================
+
+Erstelle auf dem Windows-Laufwerk einen eindeutig benannten
+Checkpoint-Ordner, beispielsweise:
+
+D:\3D-Models\ai3d-checkpoints\
+TRELLIS2_AMD_KNOWN_GOOD_2026-08-24\
+
+Darin sollen die kleinen, für Reproduzierbarkeit wichtigen
+Dateien und Dokumentationen liegen.
+
+Große Modellgewichte und komplette Python-venvs NICHT blind
+duplizieren, wenn dadurch zig Gigabyte unnötig kopiert würden.
+
+Stattdessen deren:
+- Pfade
+- Versionen
+- Revisionen
+- Hashes
+- Paketstände
+
+so dokumentieren, dass der aktuelle Zustand eindeutig
+rekonstruierbar ist.
+
+============================================================
+9. ABSCHLUSS-MANIFEST
+============================================================
+
+Erstelle:
+
+KNOWN_GOOD_MANIFEST.md
+
+und zusätzlich, wenn sinnvoll:
+
+known_good_manifest.json
+
+Darin mindestens:
+
+- Datum/Zeit
+- Systemzustand
+- alle relevanten Pfade
+- Repository-Commits
+- Python-/Paketversionen
+- ROCm/Torch-Versionen
+- GPU-Architektur gfx1101
+- WSL-Konfiguration
+- Hugging-Face-Modellrevisionen
+- Speicherorte der Ergebnisse
+- SHA-256 der wichtigen Inputs
+- Status des offiziellen Baselines
+- Status des Seed-42-Schweins
+- bekannte verbleibende Probleme
+- exakter nächster Arbeitsschritt
+
+Bekannte verbleibende Probleme beim Schwein ausdrücklich
+dokumentieren:
+
+- visuelle Rekonstruktion PASS
+- Maulkavität PASS
+- direkte Druckbarkeit FAIL
+- 19 Komponenten
+- nahezu globale gegenorientierte Außen-/Innenschale
+- Schwanz/Schwanzfragmente fehlerhaft
+- Boundary-/Non-Manifold-Probleme
+- Original darf nicht verändert werden
+
+============================================================
+10. RESTORE-/STARTANLEITUNG
+============================================================
+
+Erstelle eine kurze:
+
+START_HERE_NEXT_SESSION.md
+
+Sie soll morgen erklären:
+
+1. wie WSL gestartet wird
+2. welche venv für TRELLIS aktiviert wird
+3. wo TRELLIS liegt
+4. wo die Ergebnisse liegen
+5. wie der Known-Good-Zustand verifiziert wird
+6. welcher Test optional durchgeführt werden kann
+7. wo wir mit PHASE 4 weiterarbeiten
+
+Der nächste Entwicklungsschritt lautet:
+
+PHASE 4 – deterministische 3D-Druck-Aufbereitung des bestehenden
+Seed-42-Schweins.
+
+NICHT erneut TRELLIS installieren.
+
+============================================================
+11. LETZTER READ-ONLY-SANITY-CHECK
+============================================================
+
+Am Ende ausschließlich lesend prüfen:
+
+- TRELLIS-Repositories vorhanden
+- venv vorhanden
+- Torch weiterhin ROCm 7.14
+- RX 7800 XT weiterhin gfx1101
+- wichtige HIP-Module vorhanden
+- Modellcache vorhanden
+- Baseline-Ergebnisse vorhanden
+- Schweine-Ergebnisse vorhanden
+- Reports vorhanden
+- Checkpoint vorhanden
+
+KEIN neuer vollständiger Modelllauf nötig.
+
+============================================================
+12. DANACH STOPP
+============================================================
+
+Wenn alles gesichert und verifiziert ist:
+
+NICHT mit PHASE 4 beginnen.
+NICHT das Schwein reparieren.
+NICHT weiter optimieren.
+NICHT aufräumen.
+
+Gib mir zum Abschluss nur einen kompakten Bericht:
+
+- CHECKPOINT: PASS/FAIL
+- Speicherort
+- was gesichert wurde
+- ob noch Prozesse laufen
+- ob morgen ohne Neuinstallation weitergearbeitet werden kann
+- bekannte offene Punkte
+- "SAFE TO CLOSE: YES/NO"
+
+Wenn SAFE TO CLOSE = YES erreicht ist, Arbeit vollständig beenden.

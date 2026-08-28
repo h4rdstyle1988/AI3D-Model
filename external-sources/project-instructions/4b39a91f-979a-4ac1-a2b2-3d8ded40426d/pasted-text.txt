@@ -1,0 +1,383 @@
+Arbeite auf Basis des aktuellen Projektstands und der abgeschlossenen **„v002 Pre-Build: C01-Solid- und Innenwandanalyse“** weiter.
+
+## Oberstes Ziel
+
+Erzeuge aus **C01** einen praktisch nutzbaren, druckbaren **Single-Solid-Kandidaten v002**, indem ausschließlich die nachgewiesenen lokalen Topologiefehler repariert werden.
+
+Das Ziel ist **nicht**, das Modell neu zu rekonstruieren, eine zusätzliche Innenhaut zu erzeugen oder größere Flächen neu aufzubauen.
+
+Die validierte Form von C01 soll maximal erhalten bleiben.
+
+---
+
+# 1. Zuerst aktuellen Stand sichern
+
+Bevor irgendeine Geometrie verändert wird:
+
+* aktuellen Projektstand vollständig sichern;
+* bestehende funktionierende Skripte, Reports und Quelldaten nicht überschreiben;
+* einen eindeutigen Commit/Checkpoint für den Zustand **vor v002** erzeugen;
+* bestehende C01-Geometrie unverändert als Referenz erhalten;
+* alle neu erzeugten Dateien eindeutig als `v002` bzw. `v002-*` kennzeichnen.
+
+Falls Git verwendet wird, soll ein sauberer Commit/Tag oder vergleichbarer reproduzierbarer Sicherungspunkt angelegt werden.
+
+Keine bestehende validierte Datei überschreiben.
+
+---
+
+# 2. Verbindliche Ausgangslage
+
+Die Pre-Build-Analyse hat ergeben:
+
+* C01 ist kanonisch **eine Shared-Vertex-Komponente**.
+* 232219 Faces / 115805 Vertices.
+* Winding konsistent.
+* 68 Boundary-Kanten.
+* 273 Non-Manifold-Kanten.
+* 473 ungültige Vertex-Links an Defektvertices.
+* 179 lokale Defektcluster.
+* maximaler Cluster-Extent 2.297 mm.
+* p95 Cluster-Extent 0.944 mm.
+* keine nicht-adjazenten C01-Selbstereignisse.
+* Maulhöhle ist Teil derselben C01-Oberfläche und keine separate Innenfläche.
+* Eine zweite geschlossene Innenhaut ist für das gewünschte FDM-Modell nicht erforderlich.
+* Der v001-Ansatz hat durch Patchflächen 1408 neue Selbstereignisse erzeugt und ist deshalb ausdrücklich verworfen.
+
+Diese Erkenntnisse sind als technische Randbedingungen zu behandeln und nicht erneut durch einen grundsätzlich anderen Modellierungsansatz zu ersetzen.
+
+---
+
+# 3. Verbotene Reparaturmethoden
+
+Für v002 ausdrücklich NICHT verwenden:
+
+* keine zweite Innenhaut;
+* keine Offset-Shell;
+* keine künstliche Wand zwischen Außen- und Innenfläche;
+* keine positionsgleichen Vertex-Fan-Splits;
+* keine übereinanderliegenden oder nahezu deckungsgleichen Ersatzflächen;
+* kein globales Remeshing;
+* kein globales Voxel-Remesh;
+* keine globale Decimation;
+* kein automatisches „Make Manifold“, falls dabei größere Regionen ungeprüft verändert werden;
+* keine großflächige Rekonstruktion;
+* kein pauschales Welding mit großer Toleranz;
+* keine Reparatur, die nur deshalb akzeptiert wird, weil das Mesh anschließend „watertight“ gemeldet wird.
+
+Watertightness allein ist kein ausreichendes PASS-Kriterium.
+
+---
+
+# 4. Maulbereich strikt schützen
+
+Die validierte Maulgeometrie ist besonders zu schützen.
+
+Definiere die bestehende validierte Maul-ROI plus **5 mm Sicherheitsband** als geschützten Bereich.
+
+Innerhalb dieses Bereichs darf keine Geometrie verändert werden, außer:
+
+1. ein konkreter Defekt ist eindeutig nachgewiesen;
+2. der Defekt kann keinem außerhalb liegenden Patch zugeordnet werden;
+3. der geplante Eingriff wird vorher separat dokumentiert;
+4. die lokale Formabweichung wird anschließend quantitativ geprüft.
+
+Die neun bekannten Clusterzentren im breiten Maul-Guard sind kein ausreichender Grund für einen Eingriff, da keines innerhalb der validierten Maulmasken-Bounding-Box liegt.
+
+---
+
+# 5. Reparaturstrategie
+
+Bearbeite die Defekte als **lokale topologische Reparaturaufgabe**.
+
+Für jeden der 179 Defektcluster bzw. für sinnvoll zusammenhängende überlappende Cluster:
+
+## A. Lokalen Arbeitsbereich bestimmen
+
+* identifiziere alle tatsächlich beteiligten Defektvertices, Defektkanten und Faces;
+* erweitere den Bereich nur so weit, wie für eine saubere lokale Retriangulation notwendig;
+* behalte unveränderte Originalgeometrie außerhalb des Reparaturbereichs exakt bei.
+
+## B. Defekt klassifizieren
+
+Bestimme vor der Reparatur möglichst:
+
+* Boundary-/Hole-Defekt;
+* Non-Manifold-Edge;
+* ungültiger Vertex-Link;
+* Pinch;
+* Foldover;
+* positionsgleicher Kontakt;
+* Kombination mehrerer Typen.
+
+Die Klassifikation soll in einem Report festgehalten werden.
+
+## C. Lokale Reparatur durchführen
+
+Bevorzugte Methode:
+
+* nur problematische Faces lokal entfernen;
+* dadurch entstehende saubere Randloops bestimmen;
+* lokale Region mit **echter gemeinsamer Topologie** neu triangulieren;
+* vorhandene Randvertices verwenden, soweit geometrisch sinnvoll;
+* neue Vertices nur erzeugen, wenn notwendig;
+* keine getrennten positionsgleichen Vertex-Fans erzeugen.
+
+Die Retriangulation soll möglichst:
+
+* Formabweichung minimieren;
+* normale Oberflächenorientierung erhalten;
+* unnötig lange oder extrem dünne Dreiecke vermeiden;
+* keine neue Falte oder lokale Selbstüberschneidung erzeugen.
+
+---
+
+# 6. Patch-by-Patch-Validierung mit Rollback
+
+Jeder lokale Patch muss unmittelbar nach Erstellung geprüft werden.
+
+Mindestens prüfen:
+
+* gültige Face-Indizes;
+* keine degenerierten Dreiecke;
+* keine Zero-Area-Faces;
+* keine unerwarteten Duplicate-Faces;
+* korrekte Winding-Konsistenz;
+* korrekte Edge-Inzidenz;
+* gültige Vertex-Links;
+* keine neuen Boundary-Kanten außerhalb der geplanten lokalen Zwischenphase;
+* keine lokalen Selbstkreuzungen;
+* keine lokalen nicht-adjazenten Kontakte.
+
+Zusätzlich:
+
+**Jeder neue Patch muss gegen alle relevanten nicht-adjazenten Faces des gesamten C01 getestet werden**, nicht nur gegen Faces innerhalb des lokalen Reparaturbereichs.
+
+Erzeugt ein Patch:
+
+* neue Kreuzungen;
+* neue Kontakte;
+* neue Non-Manifold-Strukturen;
+* neue ungültige Vertex-Links;
+* oder eine nicht akzeptable Formabweichung,
+
+dann Patch **verwerfen / rollback** und mit einer alternativen lokalen Triangulation erneut versuchen.
+
+Nicht mehrere fehlerhafte Patches ansammeln und erst am Ende prüfen.
+
+---
+
+# 7. Formschutz
+
+C01 ist geometrisch die Referenz.
+
+Für unveränderte Bereiche muss die Abweichung exakt bzw. praktisch null bleiben.
+
+Für reparierte lokale Bereiche:
+
+* Abweichung zum ursprünglichen C01 quantitativ messen;
+* Maximum, p95 und möglichst Median dokumentieren;
+* Größe des veränderten Gebiets dokumentieren.
+
+Keine pauschale Glättung verwenden.
+
+Falls mehrere mögliche Reparaturen topologisch gültig sind, bevorzuge diejenige mit:
+
+1. geringster Formabweichung;
+2. kleinstem veränderten Gebiet;
+3. sauberster lokaler Triangle-Qualität.
+
+---
+
+# 8. Globales v002-Gate
+
+Wenn alle lokalen Reparaturen abgeschlossen sind, erstelle einen **v002 Candidate**.
+
+Dieser darf nur weiterverwendet werden, wenn nach positionsbasiertem Welding bzw. der bestehenden kanonischen Vertexprüfung Folgendes erfüllt ist:
+
+* **genau 1 zusammenhängende Solid-Grenze**;
+* **0 Boundary-Kanten**;
+* **0 Non-Manifold-Kanten**;
+* **0 ungültige Vertex-Links**;
+* edge-manifold;
+* vertex-manifold;
+* Winding konsistent;
+* watertight;
+* keine degenerierten Faces;
+* keine Duplicate-Faces;
+* **0 nicht-adjazente Selbstkreuzungen**;
+* **0 nicht-adjazente Kontakte**.
+
+Zusätzlich die globale Zahl der Komponenten sowohl als Shared-Vertex- als auch Shared-Edge-Struktur dokumentieren.
+
+Keine Freigabe bei „fast sauber“.
+
+Die Zielwerte sind Null.
+
+---
+
+# 9. STL- und 3MF-Roundtrip zwingend prüfen
+
+Wenn der interne Candidate PASS ist:
+
+## STL
+
+Export → neu laden → erneut vollständig prüfen:
+
+* Komponenten;
+* Boundary-Kanten;
+* Non-Manifold-Kanten;
+* Vertex-Manifoldness;
+* Self-intersections;
+* Kontakte;
+* Watertightness;
+* Topologie.
+
+## 3MF
+
+Export → neu laden → gleiche Prüfungen.
+
+Zusätzlich:
+
+* Koordinatenabweichung;
+* Face-/Indexintegrität soweit sinnvoll;
+* CRC bzw. Containerintegrität.
+
+Ein v002 gilt nur dann als geometrisch erfolgreich, wenn **Arbeitsmesh, STL-Roundtrip und 3MF-Roundtrip** die relevanten Topologiegates bestehen.
+
+---
+
+# 10. Danach erst FDM-Druckbarkeitsanalyse
+
+Topologiereparatur und Druckbarkeitsoptimierung ausdrücklich trennen.
+
+Wenn und nur wenn v002 alle oben genannten Geometriegates besteht:
+
+Führe anschließend eine separate **FDM Manufacturability Analysis** durch.
+
+Dabei untersuchen:
+
+* lokale Mindestdicken äußerer Features;
+* dünne Spitzen;
+* Ohren;
+* Krallen/Finger;
+* Schwanz;
+* Zähne;
+* Lippen-/Maulränder;
+* dünne Verbindungsstege;
+* kleine freistehende Details;
+* mögliche fragile Bereiche.
+
+Noch keine automatische Verdickung durchführen.
+
+Zuerst ausschließlich messen und reporten.
+
+Erstelle eine Heatmap bzw. quantitative Liste der kritisch dünnen Bereiche, sofern technisch sinnvoll.
+
+Die spätere Mindestdicke soll abhängig von realistischer FDM-Fertigung beurteilt werden, ohne die Form unnötig zu verändern.
+
+---
+
+# 11. Praktische Slicer-Prüfung
+
+Wenn v002 topologisch PASS ist:
+
+Erzeuge einen testweise slicbaren Export und prüfe, ob ein üblicher FDM-Slicer das Modell als einen geschlossenen Körper interpretiert.
+
+Falls lokal installierte Slicer oder CLI-Werkzeuge verfügbar sind, kann eine nicht-destruktive Testanalyse durchgeführt werden.
+
+Wichtig:
+
+* kein Slicer-Erfolg ersetzt die geometrische Validierung;
+* der Slicer-Test ist ein zusätzliches Praxis-Gate.
+
+Dokumentiere insbesondere:
+
+* erkannte Anzahl von Bodies;
+* ungewöhnliche Thin-Wall-Warnungen;
+* fehlende Regionen;
+* unerwartete Hohlräume;
+* fehlerhafte Layerbereiche.
+
+---
+
+# 12. Ergebnisdateien
+
+Bei Erfolg mindestens erzeugen:
+
+* `v002-candidate` in verlustarmem Arbeitsformat;
+* `v002-candidate.stl`;
+* `v002-candidate.3mf`;
+* vollständiger Validierungsreport;
+* Maschinenlesbares JSON mit allen Metriken;
+* Änderungs-/Patchreport;
+* Liste der geänderten Defektcluster;
+* Formabweichungsreport;
+* Roundtrip-Report;
+* FDM-Druckbarkeitsreport, sofern das Geometriegate bestanden wurde.
+
+Den finalen Kandidaten noch nicht automatisch als endgültigen Master deklarieren.
+
+---
+
+# 13. Abbruchkriterien
+
+Falls während der Arbeit festgestellt wird, dass einzelne Cluster mit der beschriebenen lokalen Strategie nicht sicher reparierbar sind:
+
+Nicht mit aggressiveren globalen Methoden weitermachen.
+
+Stattdessen:
+
+* betroffene Cluster isolieren;
+* exakte Ursache dokumentieren;
+* Screenshot/Koordinaten/Face- und Vertex-IDs ausgeben;
+* erklären, warum lokale Retriangulation scheitert;
+* maximal 2–3 technisch begründete Alternativen vorschlagen.
+
+Dann stoppen, bevor größere Geometriebereiche verändert werden.
+
+---
+
+# 14. Abschlussbericht
+
+Am Ende eine klare Entscheidung ausgeben:
+
+## PASS
+
+Nur wenn v002 alle geometrischen Gates und Roundtrips erfüllt.
+
+Dann zusätzlich zusammenfassen:
+
+* wie viele Cluster repariert wurden;
+* wie viele Faces/Vertices verändert bzw. neu erzeugt wurden;
+* maximale und p95 Formabweichung;
+* finale Topologiemetriken;
+* STL-/3MF-Ergebnisse;
+* noch bestehende FDM-Druckbarkeitsrisiken.
+
+## FAIL
+
+Falls auch nur eines der zwingenden Geometriegates nicht erfüllt wird:
+
+* v002 nicht als fertiges Modell deklarieren;
+* fehlerhafte Regionen exakt benennen;
+* Ursache analysieren;
+* Candidate getrennt von validierten Dateien aufbewahren;
+* keine bestehende gute Referenz überschreiben.
+
+---
+
+## Entscheidungsprinzip
+
+Die Prioritäten sind in dieser Reihenfolge:
+
+1. **Originalform erhalten**
+2. **echte saubere Topologie herstellen**
+3. **keine neuen geometrischen Fehler erzeugen**
+4. **Roundtrip-Stabilität sicherstellen**
+5. **praktische FDM-Druckbarkeit prüfen**
+6. erst danach über eventuelle lokale konstruktive Verstärkungen entscheiden
+
+Arbeite konservativ, messbar und reproduzierbar.
+
+Kein Reparaturschritt darf nur deshalb akzeptiert werden, weil das Modell visuell gut aussieht.

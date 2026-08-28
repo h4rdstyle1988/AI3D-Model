@@ -1,0 +1,219 @@
+Überarbeite `benchmark-b-spuelenablage-v004-r01` **minimalinvasiv** auf Basis des Prüfberichts `REAL-FIT-SOLL-IST-REPORT.md`.
+
+Ziel ist ausdrücklich **keine Neukonstruktion**. Die bestehende Zweiteilung, Passung, Auflage, Gefällefunktion, Wasserführung und Behältergeometrie bleiben erhalten.
+
+## 1. Ausgangslage
+
+Der aktuelle Prüfbericht bestätigt:
+
+* Gitterstärke: **3,00 mm** PASS
+* Einlegetiefe: **3,00 mm** PASS
+* Führungsspiel links/rechts: **0,50 / 0,50 mm** PASS
+* Führungsspiel vorne/hinten: **0,50 / 0,50 mm** PASS
+* horizontale Auflagebreite: **3,00 mm** PASS
+* wirksame Auflageüberdeckung: **2,50 mm** PASS
+* Volumenüberschneidung Wanne/Einsatz: **0,00 mm³** PASS
+* Wasserraum vollständig verbunden: **75674/75674 Zellen** PASS
+* Wasserfallen an Zusatzauflagen: **0** PASS
+
+Diese bereits bestandenen Punkte dürfen durch die Korrektur **nicht verschlechtert werden**.
+
+## 2. Hauptfehler – Wischtuchhalter
+
+Aktueller Zustand:
+
+* erforderliche freie Tiefe unter der vorgesehenen Steckwabe: **mindestens 18,5–19,0 mm**
+* vorhanden: **14,62 mm**
+* Wischtuchhalter-Zapfen: **18,0 mm**
+* Zapfenende voll eingesteckt: **Z = 12,00 mm**
+* Gefälleboden an dieser Position: **Z = 12,38 mm**
+* reale Kollision: **0,38 mm**
+
+Status aktuell: **FAIL**
+
+### Verbindliche Korrektur
+
+Schaffe **ausschließlich lokal unter der vorgesehenen Steckwabe** ausreichend Freiraum für den unveränderten 18-mm-Sechskantzapfen.
+
+Ziel:
+
+**mindestens 18,5 mm, bevorzugt 19,0 mm freie Tiefe unter der Gitterunterseite**
+
+Dabei gilt zwingend:
+
+* Wischtuchhalter selbst **nicht verändern**
+* Zapfenlänge **nicht verkürzen**
+* Steckgeometrie **nicht ändern**
+* Wabenposition nur ändern, wenn dies technisch zwingend ist
+* Gefällefunktion der Wanne erhalten
+* Wasserweg zum Ablauf erhalten
+* keine neue Wasserfalle erzeugen
+* keine zusätzliche Halterung, Führung oder Sonderaufnahme erzeugen
+
+Erlaubt ist nur eine **lokale Anpassung des Gefällebodens bzw. der darunterliegenden Geometrie**, soweit technisch notwendig, um den Freiraum herzustellen.
+
+Die Änderung muss weich und funktional in den bestehenden Gefälleboden übergehen.
+
+Keine harte Tasche, Senke oder Sackgasse erzeugen.
+
+## 3. Fertigungsrisiko Behälter ↔ Wannenrand
+
+Der Prüfbericht nennt:
+
+* Kontakt Behälterunterkante ↔ Wannenrand bei Z=30
+* Kontaktfläche: **483,00 mm²**
+* digital keine Durchdringung
+* jedoch bündiger Kontakt ohne Fertigungsspiel
+* mögliches Kippeln bei realer PETG-Drucktoleranz
+
+Dieser Punkt soll ebenfalls minimal korrigiert werden.
+
+### Ziel
+
+Verhindere, dass der Behälter im real gedruckten Zustand unbeabsichtigt auf dem Wannenrand aufsetzt und dadurch den Einsatz kippeln lässt.
+
+### Verbindliche Vorgabe
+
+Die eigentliche Führung des Einsatzes bleibt weiterhin ausschließlich:
+
+**235 × 80 mm Gitterrahmen in 236 × 81 mm Öffnung**
+
+Diese Passung darf nicht verändert werden.
+
+Zwischen:
+
+**Behälterunterkante und Wannenrand**
+
+ist eine kleine definierte vertikale bzw. geometrische Entlastung vorzusehen, sodass der Behälter im Sollzustand **nicht tragend auf dem Wannenrand sitzt**.
+
+Zielspiel:
+
+**ca. 0,3 mm**
+
+Zulässiger Bereich:
+
+**0,25–0,40 mm**
+
+Die tragende Funktion bleibt ausschließlich auf:
+
+* umlaufender Auflagekante
+* vorhandenen notwendigen Einzelstützen
+
+Keine neue Führung oder Klemmwirkung am Behälter erzeugen.
+
+## 4. Was ausdrücklich unverändert bleiben muss
+
+Nicht verändern:
+
+* Hauptkörper Wanne: **240 × 85 × 20 mm**
+* hinterer Fuß: **240 × 35 × 10 mm**
+* Behälter: **85 × 85 × 100 mm**
+* Behälterwandstärke: **2,0 mm**
+* Wabengitterstärke: **3,0 mm**
+* Gitterrahmen: **235 × 80 mm**
+* Führung in Wanne: **236 × 81 mm**
+* Führungsspiel: **0,50 mm je Seite**
+* Einlegetiefe: **3,00 mm**
+* horizontale Auflagebreite: **3,00 mm**
+* vorhandene 45°-Unterstützung der Auflage
+* Position des Behälters
+* Porzellanteil weiterhin frei und lose
+* keine Porzellanführung
+* keine Clips
+* keine Rastnasen
+* keine Klemmung
+* keine Magnete
+* keine Schrauben zwischen Wanne und Einsatz
+* bestehender vorderer Ablauf
+* grundlegende Gefällerichtung
+* vollständige Herausnehmbarkeit des Einsatzes
+
+## 5. Zusatzauflagen
+
+Die vorhandenen zusätzlichen Stützpunkte unter dem Gitter dürfen nur verändert werden, wenn dies für den Halterfreiraum zwingend erforderlich ist.
+
+Falls eine Stütze im Bereich der Halterwabe liegt:
+
+* lokal versetzen oder anpassen
+* Wasserweg erhalten
+* keine zusätzliche Stütze ohne Notwendigkeit ergänzen
+
+Die große Gitterfläche muss weiterhin ausreichend abgestützt bleiben.
+
+## 6. Wasserweg nach der Änderung erneut prüfen
+
+Nach der lokalen Freiraumkorrektur zwingend erneut validieren:
+
+**Gitter → Wanne → Gefälle → Ablauf → Spüle**
+
+Es dürfen entstehen:
+
+* keine geschlossenen Taschen
+* keine lokalen Tiefpunkte ohne Ablauf
+* keine Wasserfallen
+* keine blockierten Strömungswege durch Auflagen oder Stützen
+
+Der Wasserraum muss weiterhin vollständig mit dem Frontablauf verbunden sein.
+
+## 7. Soll/Ist-Prüfung nach Korrektur
+
+Erstelle einen neuen Prüfbericht mit mindestens:
+
+### Halterwabe
+
+* freie Tiefe unter Gitter
+* Z-Lage Gitterunterseite
+* Z-Lage Gefälleboden an Steckposition
+* Ende des 18-mm-Zapfens
+* resultierender Sicherheitsabstand
+
+Ziel:
+
+**mindestens +0,5 mm Freiraum zwischen voll eingestecktem Zapfen und darunterliegender Geometrie**
+
+### Einsatzpassung
+
+* links/rechts weiterhin **0,50 / 0,50 mm**
+* vorne/hinten weiterhin **0,50 / 0,50 mm**
+* Einlegetiefe weiterhin **3,00 mm**
+* keine Volumenüberschneidung
+
+### Behälterauflage
+
+* Abstand Behälterunterkante ↔ Wannenrand
+* Ziel **ca. 0,3 mm**
+* Nachweis, dass der Behälter nicht tragend auf dem Rand sitzt
+
+### Wasser
+
+* vollständige Konnektivität des Wasserraums
+* Anzahl erkannter Wasserfallen
+* Verbindung zum Ablauf
+
+## 8. Ausgabe
+
+Neue Revision erstellen, bestehende Revision nicht überschreiben.
+
+Erzeuge:
+
+* Wanne STL
+* Einsatz STL
+* 3MF
+* zusammengesetzte Vorschau
+* Querschnitt durch die Halterwabe
+* Detailansicht Behälterunterkante / Wannenrand
+* neuen Soll/Ist-Prüfbericht
+* Änderungsbericht gegenüber v004-r01
+
+## 9. Änderungsdisziplin
+
+Nur diese beiden Punkte ändern:
+
+1. Freiraum unter der vorgesehenen Wischtuchhalter-Wabe
+2. Fertigungsspiel Behälterunterkante ↔ Wannenrand
+
+Keine weitere Geometrie optimieren, verschönern oder neu interpretieren.
+
+Wenn eine der beiden Korrekturen die bereits bestandene Passung, Wasserführung oder Stabilität verschlechtern würde:
+
+**STOPPEN und den Konflikt melden, statt eigenständig eine alternative Konstruktion einzuführen.**

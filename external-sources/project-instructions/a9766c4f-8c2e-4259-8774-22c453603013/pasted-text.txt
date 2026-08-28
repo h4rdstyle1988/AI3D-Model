@@ -1,0 +1,231 @@
+Erstelle eine neue Revision des `benchmark-b-wischtuchhalter` als **separaten, abnehmbaren Steckbügel** für die bestehende Spülenablage `benchmark-b-spuelenablage-v003-r03`.
+
+Die folgende Konstruktion ist verbindlich. **Keine Maße, Funktionen oder Befestigungsprinzipien selbstständig verändern oder ergänzen.**
+
+# 1. Funktion
+
+Der Wischtuchhalter dient ausschließlich dazu, einen feuchten Küchen-/Wischtuchlappen an der Vorderseite der Spülenablage aufzuhängen.
+
+Der Halter wird:
+
+**von oben senkrecht in genau eine vorhandene sechseckige Wabe gesteckt.**
+
+Nach dem Einstecken ragt der Bügel:
+
+**waagerecht nach vorne in Richtung Spüle.**
+
+Die Spülenablage selbst wird nicht verändert.
+
+Der Halter bleibt vollständig:
+
+* abnehmbar
+* werkzeuglos
+* ohne Schrauben
+* ohne Magnete
+* ohne Clips
+* ohne Rastmechanismus
+
+# 2. Bestehende Wabenstruktur
+
+Verwende exakt die Wabengeometrie aus:
+
+`benchmark-b-spuelenablage-v003-r03`
+
+Bekannte Konstruktionswerte des bestehenden Gitters:
+
+* reguläres hexagonales Wabengitter
+* Zell-Seitenlänge auf Mittellinie: **7,0 mm**
+* Gitterstegbreite: **2,8 mm**
+* Gitterstärke in Z: **3,0 mm**
+* resultierende freie Wabenöffnung über gegenüberliegende Flächen ungefähr **9,3 mm**
+
+Die vorhandene Spülenablage darf zur Aufnahme des Halters **nicht geändert werden**.
+
+# 3. Sechskant-Steckzapfen
+
+Der Steckzapfen ist ein **gerades reguläres Sechskantprisma**.
+
+Verbindliche Maße:
+
+* Schlüsselweite / Abstand gegenüberliegender Flächen: **8,90 mm**
+* Abstand gegenüberliegender Ecken: **ca. 10,28 mm**
+* nutzbare gerade Stecklänge: **18,0 mm**
+
+Der Querschnitt muss über die gesamten **18,0 mm exakt konstant** bleiben.
+
+Ausdrücklich verboten:
+
+* Konus
+* Verjüngung
+* Aufweitung
+* Klemmrippen
+* Rastnasen
+* Widerhaken
+* Noppen
+* federnde Elemente
+* unterschiedliche Durchmesser bzw. Schlüsselweiten
+* tiefenabhängige Passung
+
+Der Sechskant soll dadurch in jeder Einstecktiefe dieselbe Passung besitzen.
+
+Der Benutzer soll den Halter beispielsweise nur 5 mm, 10 mm oder vollständig einstecken können, ohne dass sich die Passgeometrie verändert.
+
+Die nominelle Differenz zur freien Wabenöffnung beträgt ungefähr **0,4 mm über die Schlüsselweite bzw. etwa 0,2 mm je gegenüberliegender Fläche**.
+
+Materialtoleranzen dürfen nicht durch eine konische Geometrie kompensiert werden.
+
+# 4. Orientierung des Sechskants
+
+Der Sechskant muss exakt zur Orientierung der bestehenden Waben passen.
+
+Nach dem Einstecken muss der Sechskant gleichzeitig als **Verdrehsicherung** dienen.
+
+Der Bügel darf sich bei Belastung durch einen Lappen nicht frei um die vertikale Achse drehen.
+
+# 5. Bügel
+
+Vom oberen Ende des Steckbereichs führt der Bügel im rechten Winkel nach vorne Richtung Spüle.
+
+Verbindliche freie horizontale Ausladung:
+
+**90,0 mm**
+
+Gemessen ab dem Übergang des Steckbereiches zum horizontalen Bügel bis zum Beginn des vorderen Endanschlags.
+
+Querschnitt des geraden Bügels:
+
+* Breite: **10,0 mm**
+* Höhe: **8,0 mm**
+
+Der Bügel ist über seine Hauptlänge gerade.
+
+Alle frei berührbaren Außenkanten erhalten eine Verrundung:
+
+**Radius 2,0 mm**
+
+Keine scharfkantige rechteckige Stange erzeugen.
+
+# 6. Übergang Steckzapfen → Bügel
+
+Der 90°-Übergang zwischen vertikalem Sechskant und horizontalem Bügel muss mechanisch verstärkt werden.
+
+Verbindlicher Innenradius:
+
+**R = 6,0 mm**
+
+Der Radius beginnt ausschließlich **oberhalb des nutzbaren 18-mm-Sechskant-Steckbereichs**.
+
+Der gerade Sechskant darf durch diese Verstärkung nicht verbreitert oder verändert werden.
+
+Die vollständigen 18,0 mm Stecklänge müssen einen konstanten Sechskantquerschnitt von 8,90 mm Schlüsselweite behalten.
+
+# 7. Vorderes Ende / Abrutschsicherung
+
+Am freien Ende erhält der Bügel eine kleine nach oben gerichtete Abrutschsicherung.
+
+Geometrie:
+
+* Höhe über Oberkante des Bügels: **8,0 mm**
+* Länge in Bügelrichtung: **8,0 mm**
+* gleiche Grundbreite wie der Bügel: **10,0 mm**
+* Übergang zum Bügel: **R = 4,0 mm**
+* obere Außenkante: **R = 2,0 mm**
+
+Die Abrutschsicherung darf kein Haken mit Hinterschneidung werden.
+
+Sie ist lediglich eine sanfte Erhöhung, damit ein aufgelegter Lappen nicht leicht nach vorne abrutscht.
+
+# 8. Gesamtabmessungen
+
+Zielmaße des Bauteils ungefähr:
+
+* horizontale Ausladung einschließlich Endanschlag: **98 mm**
+* Steckzapfenlänge nach unten: **18 mm**
+* Bügelquerschnitt: **10 × 8 mm**
+* zusätzlicher Endanschlag: **8 mm hoch**
+
+Abweichungen durch die definierten Radien dürfen nur im Bereich von Rundungen entstehen.
+
+Die funktionalen Maße dürfen nicht verändert werden.
+
+# 9. Material und Druck
+
+Material:
+
+**PETG**
+
+Auslegung für:
+
+* FDM
+* 0,4-mm-Düse
+* 0,20–0,24-mm-Schichthöhe
+* feuchte Küchenumgebung
+* wiederholtes Einsetzen und Herausnehmen
+
+Das Teil soll robust sein und einen nassen Küchenlappen sicher tragen können.
+
+Keine unnötigen Materialeinsparungen oder filigranen Strukturen einbauen.
+
+# 10. Druckorientierung
+
+Entwickle das Modell so, dass eine sinnvolle FDM-Druckorientierung möglich ist.
+
+Bevorzugt soll der Bügel **seitlich liegend** gedruckt werden, sodass die Biegebelastung im späteren Gebrauch nicht ausschließlich entlang einer ungünstigen Layer-Trennebene wirkt.
+
+Falls aufgrund der Sechskantgeometrie eine andere Orientierung technisch deutlich besser ist, dokumentiere dies, ändere deswegen aber **keine der vorgegebenen Bauteilmaße**.
+
+Support möglichst vermeiden bzw. minimieren.
+
+# 11. Keine zusätzlichen Elemente
+
+Nicht hinzufügen:
+
+* zweiten Steckzapfen
+* zweite Wabenaufnahme
+* Grundplatte
+* Klemmplatte
+* Rastnase
+* Clip
+* Schraube
+* Magnet
+* bewegliches Gelenk
+* Haken unterhalb des Bügels
+* zusätzliche Ablage
+* zusätzliche Befestigung an der Spülenablage
+* Änderung des vorhandenen Wabengitters
+
+Es gibt **genau einen geraden Sechskant-Steckzapfen und einen nach vorne gerichteten Wischtuchbügel**.
+
+# 12. Validierung
+
+Vor Export zwingend prüfen:
+
+* Sechskant-Schlüsselweite = **8,90 mm**
+* Sechskant über gesamte Stecklänge konstant
+* Stecklänge = **18,0 mm**
+* keine Konizität vorhanden
+* Passung zur realen Wabe von `benchmark-b-spuelenablage-v003-r03`
+* Bügel-Ausladung = **90,0 mm**
+* Bügelquerschnitt = **10,0 × 8,0 mm**
+* Übergangsradius = **6,0 mm**
+* Endanschlag = **8,0 mm**
+* keine Kollision mit den Wabenstegen beim Einstecken
+* keine Änderung an der Spülenablage
+* watertight
+* manifold
+* keine Selbstüberschneidungen
+* PETG-/FDM-tauglich
+* mechanisch plausibel für einen nassen Küchenlappen
+
+Erzeuge anschließend:
+
+* STL
+* 3MF
+* GLB/Vorschau
+* Maßbericht
+* Passungsbericht
+* Validierungsbericht
+
+Zeige zusätzlich eine Darstellung des Halters **virtuell in eine originale Wabe der Spülenablage eingesteckt**, damit Ausrichtung, Passung und Richtung zur Spüle vor dem Druck visuell geprüft werden können.
+
+Keine Rückfrage und keine alternative Konstruktion erzeugen, solange alle oben definierten Werte technisch umsetzbar sind.

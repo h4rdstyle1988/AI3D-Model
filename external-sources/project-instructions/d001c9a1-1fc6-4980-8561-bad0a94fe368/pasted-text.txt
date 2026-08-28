@@ -1,0 +1,249 @@
+Wir setzen das AI3D-Projekt nach dem gestrigen
+KNOWN-GOOD-CHECKPOINT fort.
+
+PHASE 4 beginnt jetzt.
+
+============================================================
+0. CHECKPOINT ZUERST VERIFIZIEREN
+============================================================
+
+Bevor irgendetwas verändert wird:
+
+1. Finde den gestern erzeugten KNOWN-GOOD-CHECKPOINT.
+2. Lies:
+   - KNOWN_GOOD_MANIFEST.md
+   - known_good_manifest.json, falls vorhanden
+   - START_HERE_NEXT_SESSION.md
+3. Prüfe ausschließlich lesend:
+   - TRELLIS2-rocm vorhanden
+   - trellis2-venv vorhanden
+   - Torch weiterhin 2.12.0+rocm7.14.0
+   - GPU weiterhin AMD Radeon RX 7800 XT / gfx1101
+   - native HIP-Module vorhanden
+   - Hugging-Face-Cache vollständig vorhanden
+   - offizieller Baseline-Output vorhanden
+   - Seed-42-Schweine-Output vorhanden
+   - Quality-/Benchmark-Berichte vorhanden
+4. Prüfe die aktive WSL-Konfiguration:
+   memory=24GB
+   swap=16GB
+
+Wenn der Known-Good-Zustand NICHT eindeutig PASS ist:
+STOPP.
+Nichts reparieren oder installieren.
+Erst berichten.
+
+Wenn PASS:
+mit PHASE 4 fortfahren.
+
+============================================================
+1. KNOWN-GOOD-SYSTEM NICHT VERÄNDERN
+============================================================
+
+TRELLIS, ROCm, Torch und die funktionierenden nativen Module
+sind ab jetzt eingefroren.
+
+Keine:
+- Paketupdates
+- ROCm-/Torch-Änderungen
+- Neuinstallation
+- Neukompilierung
+- Git-Resets
+- Cache-Bereinigung
+- Änderungen an TripoSR oder SPAR3D
+
+Keine neue TRELLIS-Generation.
+
+Das vorhandene Seed-42-Schwein ist der Master.
+
+Original-GLB und Original-STL niemals verändern oder überschreiben.
+
+Alle PHASE-4-Arbeiten ausschließlich auf Kopien in einem neuen
+Arbeitsordner durchführen.
+
+============================================================
+2. PHASE 4A – SCHWEIN GEOMETRISCH ZERLEGEN
+============================================================
+
+Analysiere die vorhandenen 19 Komponenten vollständig.
+
+Für jede Komponente dokumentieren:
+
+- ID
+- Vertices
+- Faces
+- Anteil an Gesamtoberfläche
+- Bounding Box
+- orientiertes Volumen
+- watertight ja/nein
+- manifold ja/nein
+- räumliche Position
+- vermutete Funktion
+
+Klassifizierung:
+
+- Haupt-Außenschale
+- Haupt-Innenschale
+- Maulbestandteil
+- Schwanz
+- Schwanzfragment
+- sinnvolles Körperdetail
+- schwebendes Artefakt
+- unbekannt
+
+Noch NICHTS löschen.
+
+============================================================
+3. PHASE 4B – DOPPELSCHALE EXAKT UNTERSUCHEN
+============================================================
+
+Die beiden Hauptkomponenten separat analysieren.
+
+Bekannter Ausgangspunkt:
+Sie enthalten zusammen rund 96,56 % der Oberfläche,
+haben nahezu identische Bounding Boxes und entgegengesetzte
+Orientierung.
+
+Bestimme:
+
+- welche eindeutig außen liegt
+- welche eindeutig innen liegt
+- ob sie vollständig verschachtelt sind
+- wo sie sich schneiden
+- wo sie sich berühren
+- wo der Abstand extrem klein wird
+
+Lokalen Schalenabstand statistisch bestimmen:
+
+- Minimum
+- 1%-Perzentil
+- 5%-Perzentil
+- Median
+- 95%-Perzentil
+- Maximum
+
+Zusätzlich eine räumliche Heatmap des Schalenabstands erzeugen,
+wenn ohne Veränderung des Meshes möglich.
+
+============================================================
+4. PHASE 4C – MAUL SCHÜTZEN
+============================================================
+
+Das große offene Maul ist das wichtigste Designmerkmal.
+
+Untersuche separat:
+
+- Maulrand
+- Seitenwände
+- Boden
+- Rückwand
+- Übergang zum Körper
+- Zugehörigkeit dieser Flächen zu Außen-/Innenschale
+
+Beantworte eindeutig:
+
+Würde das Entfernen einer der beiden Hauptschalen Teile der
+Maulkavität zerstören?
+
+Noch keine Schale entfernen.
+
+============================================================
+5. SCHNITTANSICHTEN ERZEUGEN
+============================================================
+
+Erzeuge aussagekräftige diagnostische Schnittansichten:
+
+1. horizontal durch das Maul
+2. vertikal durch Maul und Kopf
+3. horizontal durch den Bauch
+4. vertikal durch den gesamten Körper
+5. Schnitt durch den Rücken/Schwanzansatz
+
+Außen- und Innenschale müssen in den Ansichten eindeutig
+unterscheidbar sein.
+
+Diese Ansichten dienen nur der Diagnose.
+
+============================================================
+6. REPARATURMETHODEN VERGLEICHEN
+============================================================
+
+Noch KEINE endgültige Reparatur durchführen.
+
+Vergleiche mindestens:
+
+A)
+Direkte Mesh-Reparatur / vorhandene Schalen weiterverwenden
+
+B)
+Außenschale behalten und kontrollierte neue Innenwand erzeugen
+
+C)
+SDF-/Voxel-basierter Neuaufbau mit anschließender kontrollierter
+Maulkavität
+
+Bewerte jede Methode hinsichtlich:
+
+- Formerhalt
+- Erhalt des Mauls
+- Verlust feiner Details
+- Robustheit
+- Manifold-/Watertight-Ergebnis
+- kontrollierbare Wandstärke
+- Rechenaufwand
+- Automatisierbarkeit für unser späteres AI3D-Programm
+
+============================================================
+7. ZIEL DES SPÄTEREN PRINT-MESHES
+============================================================
+
+Das spätere Zielmodell soll:
+
+- 190 mm Zielhöhe besitzen
+- optisch möglichst exakt dem TRELLIS-Schwein entsprechen
+- das große Maul vollständig erhalten
+- eine kontrollierte FDM-taugliche Wandstärke besitzen
+- keine schwebenden Schwanzfragmente besitzen
+- später einen neu konstruierten stabilen Ringelschwanz bekommen
+- genau einen sinnvollen Druckkörper bilden
+- watertight sein
+- two-manifold sein
+- 0 Boundary Edges besitzen
+- 0 Non-Manifold Edges besitzen
+- keine degenerierten Faces besitzen
+- keine duplizierten Faces besitzen
+- korrekte Normalen besitzen
+- plan und sinnvoll druckbar sein
+
+============================================================
+8. HEUTE ZUNÄCHST KEINE FORMVERÄNDERNDE REPARATUR
+============================================================
+
+Nach Analyse und Methodenvergleich STOPP.
+
+Noch NICHT:
+
+- Doppelschale löschen
+- Boolean Union
+- Voxel-Remesh
+- SDF-Reconstruction
+- Hole Filling
+- Smoothing
+- Schwanz entfernen
+- neuen Schwanz bauen
+- Modell skalieren
+- STL überschreiben
+
+Erstelle stattdessen einen PHASE-4A-REPORT mit:
+
+- Checkpoint-Verifikation
+- Komponenten-Tabelle
+- Schalenanalyse
+- Abstandsmessungen
+- Maulanalyse
+- Schnittansichten
+- Empfehlung A/B/C
+- konkretem nächsten Reparaturschritt
+- Risiken für Formerhalt und Maul
+
+Danach Bericht vorlegen und auf Freigabe warten.

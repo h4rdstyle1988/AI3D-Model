@@ -1,0 +1,339 @@
+SPAR3D ist für unseren Anwendungsfall qualitativ ausgeschieden.
+
+Installiere und validiere jetzt TRELLIS.2 als dritte Image-to-3D-Engine.
+
+WICHTIG:
+Arbeite selbstständig.
+Führe Terminalbefehle selbst aus, prüfe Logs und behebe technische Probleme
+eigenständig.
+
+Frage mich nur bei:
+- interaktiven Logins
+- Lizenzbestätigungen
+- Aktionen mit relevantem Risiko
+
+BESTEHENDES SYSTEM:
+
+Windows 11
+WSL2
+Ubuntu 24.04
+AMD Radeon RX 7800 XT 16 GB
+gfx1101
+ROCm/HIP 7.14
+
+Bestehende funktionierende Engines:
+
+~/ai3d/TripoSR
+~/ai3d/SPAR3D
+~/ai3d/.venv
+~/ai3d/spar3d-venv
+
+Diese Installationen NICHT verändern.
+
+SPAR3D funktioniert technisch unter ROCm.
+Quality-Sweep zeigte jedoch fundamentale Rekonstruktionsfehler:
+- offenes Maul wird nicht als echte Höhle rekonstruiert
+- Gliedmaßen verschmelzen
+- Rückseite wird halluziniert
+- teilweise frei schwebende Komponenten
+
+SPAR3D bleibt installiert, wird aber vorerst nicht weiter optimiert.
+
+
+=========================
+PHASE 1 – TRELLIS.2 SETUP
+=========================
+
+Verwende als Ausgangspunkt den aktuellen nativen ROCm-Port:
+
+https://github.com/ATLAS-0321/trellis2-amd
+
+Dieser Port unterstützt laut Dokumentation:
+gfx1100
+gfx1101
+gfx1102
+gfx1201
+
+und ROCm 7.x.
+
+Installiere unter:
+
+~/ai3d/trellis2-amd
+
+Erstelle eine EIGENE Python-Umgebung.
+
+Unter keinen Umständen bestehende TripoSR- oder SPAR3D-venvs verändern.
+
+WICHTIG:
+
+Unser System verwendet ROCm 7.14 und bereits funktionierendes
+PyTorch 2.12.0+rocm7.14.0.
+
+Der TRELLIS-Port wurde mit anderen ROCm-Versionen entwickelt.
+
+Installiere deshalb NICHT blind eine andere ROCm/PyTorch-Version.
+
+Prüfe zuerst die Kompatibilität des vorhandenen ROCm-7.14-Stacks.
+
+Native Extensions müssen gegen die tatsächlich installierte
+PyTorch-/ROCm-ABI kompiliert werden.
+
+GPU-Ziel:
+
+gfx1101
+
+Keine gfx1100-Hardcodes ungeprüft übernehmen.
+
+
+===============================
+PHASE 2 – KOMPONENTEN VALIDIEREN
+===============================
+
+Prüfe nach Installation einzeln:
+
+PyTorch ROCm
+flash-attention
+nvdiffrast-rocm
+CuMesh-rocm
+FlexGEMM-rocm
+O-Voxel
+TRELLIS2-rocm
+
+Danach:
+
+torch.cuda.is_available()
+torch.cuda.get_device_name(0)
+torch.version.hip
+
+und einen echten GPU-Matrix-Test durchführen.
+
+Wenn einzelne native Extensions Probleme mit ROCm 7.14 haben:
+- Ursache analysieren
+- möglichst minimal patchen
+- Änderungen dokumentieren
+
+Keine funktionierende globale ROCm-Installation ersetzen.
+
+
+===================================
+PHASE 3 – OFFIZIELLER BASELINE-TEST
+===================================
+
+Bevor unser Schwein getestet wird:
+
+Führe zuerst den vorgesehenen TRELLIS.2-Beispieltest mit dem offiziellen
+Beispielbild aus.
+
+Nutze auf AMD zunächst:
+
+PYTORCH_NO_CUDA_MEMORY_CACHING=1
+
+Beachte:
+Der ROCm-Port dokumentiert Probleme mit dem normalen PyTorch
+Caching Allocator in Verbindung mit externem hipMalloc/CuMesh.
+
+Für unsere RX 7800 XT mit 16 GB NICHT sofort die maximalen Einstellungen
+verwenden.
+
+Starte konservativ.
+
+Ziel für ersten Test ungefähr:
+
+texture_size: 1024 oder 2048
+decimation_target: deutlich unter 1.000.000
+
+Wähle selbst sinnvolle Einstellungen für 16 GB VRAM.
+
+Keine 4096er Texturen oder 1M-Face-Meshes erzwingen, solange nicht klar ist,
+dass genügend VRAM vorhanden ist.
+
+Erzeuge:
+
+GLB
+STL bzw. druckbares Mesh
+Preview-Renderings
+
+Messe:
+
+- Modellinitialisierung
+- Image preprocessing
+- Shape generation
+- Mesh extraction
+- Texture generation/baking
+- Export
+- Gesamtzeit
+- Peak VRAM
+- Peak RAM
+
+Wenn der offizielle Test keine plausible Geometrie erzeugt:
+STOP.
+
+Dann zuerst ROCm-Port/Installation untersuchen und NICHT unser Schwein testen.
+
+
+=============================
+PHASE 4 – SCHWEIN A/B-TEST
+=============================
+
+Nur wenn der offizielle Baseline-Test visuell plausibel ist:
+
+Verwende EXAKT DASSELBE originale Schweine-Referenzbild wie beim
+SPAR3D Quality-Sweep.
+
+Das Bild NICHT neu generieren.
+Nicht verändern.
+Nicht neu croppen, außer TRELLIS benötigt technisch zwingend eine
+standardisierte Vorverarbeitung.
+
+Wir wollen einen fairen Vergleich:
+
+TripoSR
+vs.
+SPAR3D
+vs.
+TRELLIS.2
+
+Nur EINEN TRELLIS.2-Baseline-Lauf durchführen.
+
+Noch keinen Parameter-Sweep.
+
+
+===============================
+PHASE 5 – DRUCK-MESH VALIDIERUNG
+===============================
+
+Erzeuge aus TRELLIS.2:
+
+Original GLB
+
+und zusätzlich eine für 3D-Druck gedachte STL.
+
+Originalgeometrie immer separat behalten.
+
+STL automatisch mit trimesh bzw. geeigneten Mesh-Werkzeugen prüfen:
+
+- Vertices
+- Faces
+- Komponenten
+- watertight
+- closed manifold
+- Boundary Edges
+- Non-Manifold Edges
+- degenerierte Faces
+- doppelte Faces
+- Normalen
+- Bounding Box
+
+WICHTIG:
+
+TRELLIS.2 unter ROCm kann bekannte kleine Boundary-/Surface-Defekte
+erzeugen.
+
+Deshalb Originalmesh zuerst analysieren.
+
+Danach darf eine zweite reparierte STL erzeugt werden.
+
+Reparatur darf:
+- UV-Seams verschweißen
+- kleine Löcher schließen
+- Normalen korrigieren
+- degenerierte Faces entfernen
+
+Reparatur darf NICHT:
+- Gliedmaßen verschmelzen
+- Körperteile entfernen
+- Form stark glätten
+- fehlende Anatomie erfinden
+
+Speichere deshalb:
+
+trellis2-pig-original.glb
+trellis2-pig-original.stl
+trellis2-pig-print-repaired.stl
+
+
+=========================
+PHASE 6 – VISUELLE PRÜFUNG
+=========================
+
+Render:
+
+FRONT
+FRONT-LEFT
+LEFT
+BACK
+RIGHT
+TOP
+PERSPECTIVE
+
+Zusätzlich möglichst eine Ansicht des Meshes ohne Textur.
+
+Erzeuge ein Kontaktblatt.
+
+Beim Schwein besonders prüfen:
+
+1. Ist das große offene Maul tatsächlich eine geometrische Vertiefung/Höhle?
+
+2. Besitzt die Maulöffnung echte Tiefe?
+
+3. Sind Ober- und Unterkante des Mauls geometrisch getrennt?
+
+4. Sind Vorderbeine erkennbar vom Körper getrennt?
+
+5. Sind Ohren plausibel?
+
+6. Ist die Rückseite ein plausibler Körper und nicht nur ein runder
+   Doppelklumpen?
+
+7. Gibt es schwebende Komponenten?
+
+8. Gibt es erfundene Fortsätze?
+
+9. Ist die sitzende Cartoon-Schwein-Silhouette erhalten?
+
+10. Wäre das Modell grundsätzlich als Ausgangsbasis für unsere
+    Schlüsselablage verwendbar?
+
+
+=========================
+PHASE 7 – ABSCHLUSSBERICHT
+=========================
+
+Erstelle einen Bericht:
+
+TRELLIS.2 ROCm Status:
+PASS / FAIL
+
+RX 7800 XT:
+funktioniert / funktioniert nicht
+
+ROCm 7.14:
+funktioniert / benötigte Patches
+
+Laufzeiten:
+...
+
+Peak VRAM:
+...
+
+Mesh:
+...
+
+Danach direkte Bewertung gegenüber SPAR3D:
+
+TRELLIS besser
+TRELLIS ähnlich
+TRELLIS schlechter
+
+Besonders das offene Maul vergleichen.
+
+Noch KEINEN TRELLIS-Parameter-Sweep durchführen.
+
+Noch KEINE GUI bauen.
+
+Noch KEINE weitere 3D-Engine installieren.
+
+Wenn der erste Schweine-Baseline-Lauf gut aussieht:
+STOP und Ergebnisse präsentieren.
+
+Wir entscheiden danach gemeinsam, ob TRELLIS.2 einen Quality-Sweep bekommt.

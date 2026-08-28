@@ -1,0 +1,492 @@
+Arbeite auf Basis des erfolgreichen **0,5-mm-Smoke-Tests** weiter.
+
+Der 0,5-mm-Test hat bereits einen praktisch brauchbaren Single-Solid erzeugt und damit gezeigt, dass der volumetrische Fast-Path für dieses Projekt grundsätzlich funktioniert.
+
+Ab jetzt ist das Ziel nicht mehr, C01 mikrochirurgisch zu reparieren.
+
+## Neues Hauptziel
+
+Aus dem erfolgreichen 0,5-mm-Verfahren soll jetzt ein **reproduzierbarer, schneller Produktionspfad** entstehen, der das komplette Modell einschließlich Schwanz in einen technisch sauberen und praktisch druckbaren Solid überführt.
+
+Dabei gilt:
+
+> Einfacher, robuster und schneller ist besser als akademisch perfekte Originaltopologie.
+
+Der unveränderte C01-Master und alle bisherigen Artefakte bleiben geschützt.
+
+---
+
+# 1. Bestehenden erfolgreichen Smoke-Test einfrieren
+
+Der bereits erfolgreiche 0,5-mm-Kandidat bleibt unverändert als Referenz erhalten.
+
+Bekannter Status:
+
+* 1 Komponente
+* watertight
+* edge-manifold
+* vertex-manifold
+* 0 Boundary-Kanten
+* 0 Non-Manifold-Kanten
+* 0 ungültige Vertex-Links
+* 0 Selbstschnitte
+* 0 problematische nicht-adjazente Kontakte
+* STL PASS
+* 3MF PASS
+* 381 geprüfte Layer
+* 0 offene oder verzweigte Konturen
+
+Außenabweichung zu C01:
+
+* Median: 0,332 mm
+* p95: 0,475 mm
+* p99: 0,505 mm
+* Maximum: 0,704 mm
+
+Maulerhalt:
+
+* Fläche: 98,6 %
+* Tiefenkontrast: 98,7 %
+
+Keine Glättung, Simplification oder morphologisches Closing.
+
+Diese Datei nicht überschreiben.
+
+---
+
+# 2. Laufzeit des Fast-Path messen
+
+Eine der wichtigsten neuen Kennzahlen ist die reale Produktionszeit.
+
+Messe deshalb separat und reproduzierbar:
+
+1. Quelldaten laden
+2. Volumen-/Voxel-Rekonstruktion erzeugen
+3. Mesh extrahieren
+4. notwendige schnelle Topologieprüfung
+5. STL schreiben
+6. 3MF schreiben
+7. Roundtrip-Kurzprüfung
+
+Nicht die gesamte Forschungsanalyse und nicht alte Versuche mitrechnen.
+
+Ausgeben:
+
+* reine Rekonstruktionszeit
+* Validierungszeit
+* Export-/Roundtrip-Zeit
+* Gesamtzeit
+* CPU-/GPU-Auslastung soweit einfach verfügbar
+* Peak-RAM soweit einfach messbar
+
+Zielgröße für den späteren Standardprozess:
+
+**möglichst wenige Minuten, idealerweise unter 5 Minuten und jedenfalls nicht unnötig länger als 10 Minuten für normale Modelle.**
+
+Falls einzelne Prüfungen einen unverhältnismäßig großen Teil der Laufzeit verursachen, diese separat identifizieren.
+
+---
+
+# 3. Schwanzkomponenten analysieren
+
+Die separaten Schwanzkomponenten gehören nicht zu C01 und müssen jetzt als nächste konkrete Modellaufgabe behandelt werden.
+
+Zuerst ausschließlich analysieren:
+
+* Anzahl der Schwanzkomponenten
+* Faces / Vertices
+* jeweilige Bounding Box
+* Lage relativ zu C01
+* Abstand zur Körperoberfläche
+* Überlappungen
+* eventuelle Doppelhaut
+* Orientierung
+* Watertightness
+* Self-Intersections
+* Non-Manifold-Probleme
+
+Bestimme anschließend, welche Komponenten zusammen den tatsächlich sichtbaren bzw. gewünschten Schwanz darstellen.
+
+Keine unnötigen internen oder duplizierten Grenzflächen übernehmen.
+
+---
+
+# 4. Schwanz möglichst vor dem volumetrischen Fast-Path integrieren
+
+Bevorzugter Produktionsweg:
+
+**sichtbare Gesamtgeometrie aus Körper + korrekt gewähltem Schwanz zusammensetzen und anschließend gemeinsam volumetrisch zu EINEM Solid rekonstruieren.**
+
+Nicht versuchen, zwei bereits fertige watertight Meshes nachträglich mit komplizierter topologischer Mikrochirurgie zusammenzuschweißen, wenn der volumetrische Fast-Path die Vereinigung robuster erledigen kann.
+
+Ziel:
+
+> Input-Surface → volumetrische Rekonstruktion → genau ein sauberer Gesamt-Solid.
+
+Falls der Schwanz C01 berührt oder leicht überschneidet, darf der volumetrische Prozess die Verbindung natürlich vereinigen.
+
+Falls zwischen Körper und Schwanz ein kleiner unbeabsichtigter Spalt liegt:
+
+* Abstand exakt messen;
+* anhand der Referenzgeometrie feststellen, ob der Schwanz tatsächlich verbunden sein soll;
+* nur eine minimale, lokale und geometrisch plausible Verbindung herstellen;
+* keine großflächigen Brücken erfinden.
+
+---
+
+# 5. Keine zweite Haut erzeugen
+
+Auch beim Gesamtmodell:
+
+* keine künstliche Innenhaut
+* keine separate Hohlkörpergrenze
+* keine Doppelwand
+
+Das gewünschte Ergebnis ist weiterhin:
+
+**eine einzige geschlossene Solid-Grenzfläche.**
+
+---
+
+# 6. Zunächst wieder 0,5 mm verwenden
+
+Der erste vollständige Gesamtmodell-Versuch soll mit dem bereits erfolgreichen Parameterbereich erfolgen:
+
+**0,5 mm**
+
+Nicht sofort auf 0,25 mm wechseln.
+
+Der vorhandene Test zeigt bereits, dass 0,5 mm für den Körper praktikabel ist.
+
+Nur wenn der Schwanz oder andere wichtige Details bei 0,5 mm sichtbar unzureichend erhalten bleiben, darf anschließend gezielt eine feinere Variante untersucht werden.
+
+---
+
+# 7. Kritische Detailkontrolle nach Schwanzintegration
+
+Nach Rekonstruktion des vollständigen Modells besonders prüfen:
+
+* Schwanzansatz
+* dünnste Schwanzstelle
+* Schwanzspitze
+* Maulöffnung
+* Ohren
+* Schnauze
+* Finger/Krallen
+* Füße
+* dünne Übergänge zwischen Extremitäten und Körper
+
+Beim Schwanz insbesondere sicherstellen:
+
+* keine künstliche Einschnürung am Ansatz
+* kein ungewollter Spalt
+* kein zusammengeschmolzener falscher Bereich
+* keine starke Verkürzung
+* keine abgeschnittene Spitze
+
+---
+
+# 8. Nicht nur Topologie, sondern sichtbare Form prüfen
+
+Für das komplette Modell einen Vergleich zum ursprünglichen sichtbaren Input erzeugen.
+
+Mindestens:
+
+* Vorderansicht
+* Rückansicht
+* links
+* rechts
+* oben
+* schräg vorne
+* schräg hinten
+* Schwanzansatz
+* Schwanzspitze
+* Maul
+
+Wenn möglich zusätzlich Distance-Heatmap.
+
+Wir suchen ein **praktisch identisches Druckmodell**, nicht mathematische Gleichheit im Sub-Millimeterbereich.
+
+---
+
+# 9. Vollständiges Geometriegate
+
+Der vollständige Kandidat darf nur PASS bekommen bei:
+
+* genau 1 Gesamtkomponente
+* watertight
+* edge-manifold
+* vertex-manifold
+* 0 Boundary-Kanten
+* 0 Non-Manifold-Kanten
+* 0 ungültige Vertex-Links
+* konsistente Orientierung
+* 0 degenerierte Faces
+* 0 Duplicate-Faces
+* 0 nicht-adjazente Selbstkreuzungen
+* 0 problematische nicht-adjazente Kontakte
+
+---
+
+# 10. STL- und 3MF-Roundtrip
+
+Wenn der interne Gesamtmesh PASS ist:
+
+Export:
+
+* STL
+* 3MF
+
+Beide wieder einlesen.
+
+Danach mindestens erneut prüfen:
+
+* Komponenten
+* Boundary
+* Non-Manifold
+* Vertex-Manifoldness
+* Watertightness
+* Self-Intersections
+* Kontakte
+* Bounding Box
+* Einheit / Maßstab
+
+Erst der Roundtrip zählt.
+
+---
+
+# 11. Schnelles Produktions-Gate entwickeln
+
+Zusätzlich zum vollständigen Forschungs-Validator soll jetzt ein **Fast Validation Gate** definiert werden.
+
+Ziel:
+
+Für spätere normale Modelle soll nicht jedes Mal die komplette teure Forensik nötig sein.
+
+Ermittle deshalb, welche Prüfungen für einen Produktions-PASS zwingend nötig und schnell genug sind.
+
+Beispielsweise:
+
+## Fast Gate
+
+* Mesh kann geladen werden
+* genau 1 Komponente
+* watertight
+* 0 Boundary
+* 0 Non-Manifold
+* edge-/vertex-manifold
+* keine degenerierten Faces
+* robuste Self-Intersection-Prüfung
+* STL-/3MF-Roundtrip-Kurzcheck
+
+## Deep Gate
+
+Nur wenn:
+
+* Fast Gate scheitert
+* ungewöhnliche Geometrie erkannt wird
+* sichtbare Qualitätsprobleme vorliegen
+* Benutzer explizit maximale Prüfung verlangt
+
+Dann erst die teuren exakten Gesamtmesh-Analysen verwenden.
+
+Dokumentiere, welche Prüfung wie lange dauert.
+
+---
+
+# 12. Zeitbudget als feste Pipeline-Regel
+
+Entwickle eine Empfehlung für den späteren automatischen Workflow.
+
+Grundidee:
+
+### NORMAL MODE
+
+Fast-Path mit 0,5-mm-Volumenrekonstruktion + Fast Validation.
+
+Ziel:
+
+**wenige Minuten.**
+
+### DETAIL MODE
+
+Nur bei sichtbarem Detailverlust:
+
+0,25–0,30 mm oder gezielte lokale Verbesserungen.
+
+### DEEP REPAIR MODE
+
+Nur wenn Fast-Path scheitert oder sichtbar nicht akzeptabel ist.
+
+Keine stundenlange Spezialanalyse als Standard.
+
+---
+
+# 13. Keine unnötigen Schritte mehr durchführen
+
+Wenn der vollständige 0,5-mm-Kandidat:
+
+* technisch PASS
+* visuell gut
+* Schwanz korrekt
+* STL PASS
+* 3MF PASS
+
+ist:
+
+nicht automatisch weitere Reparaturverfahren ausprobieren.
+
+Insbesondere nicht:
+
+* v003-C01-Mikrochirurgie fortsetzen
+* 0,25-mm-Version rechnen
+* glätten
+* decimieren
+* alternative Remesher durchtesten
+
+sofern kein konkreter Nutzen besteht.
+
+---
+
+# 14. Optional echten Slicer auffinden
+
+Prüfe noch einmal kurz, ob lokal einer dieser Slicer vorhanden ist:
+
+* Anycubic Slicer / Anycubic Slicer Next
+* OrcaSlicer
+* Bambu Studio
+* PrusaSlicer
+* Cura
+
+Dabei auch typische Windows-Installationspfade prüfen.
+
+Falls keiner vorhanden ist:
+
+nicht installieren, sofern das nicht ohnehin vorgesehen ist.
+
+Dann weiterhin den vorhandenen Layer-Loop-Test als Proxy verwenden und klar dokumentieren.
+
+Falls ein Slicer vorhanden ist:
+
+* Modell testweise laden
+* automatischen Repair möglichst deaktivieren
+* slicen
+* auf Warnungen prüfen
+* Anzahl der Körper prüfen
+* auffällige fehlende Layer oder Hohlräume prüfen
+
+---
+
+# 15. Produktionsartefakte
+
+Bei vollständigem PASS getrennten neuen Ordner erzeugen, beispielsweise:
+
+`full-model-fastpath-0500um-candidate`
+
+Darin mindestens:
+
+* vollständiges Arbeitsmesh
+* STL
+* 3MF
+* Validierungsreport
+* Laufzeitreport
+* Formerhaltreport
+* Vergleichsbilder
+* maschinenlesbares JSON
+* SHA-256-Manifest
+
+Noch klar als:
+
+**CANDIDATE**
+
+kennzeichnen.
+
+Nicht automatisch den C01-Master ersetzen.
+
+---
+
+# 16. Wichtig: Verfahren generalisieren
+
+Der langfristige Zweck ist nicht nur dieses Modell.
+
+Dokumentiere nach erfolgreichem Lauf, wie die Pipeline später allgemein funktionieren kann:
+
+> Multi-View-Rekonstruktion → sichtbare Surface-Geometrie → volumetrischer Fast-Path → Fast Validation → STL/3MF.
+
+Ziel dieses Gesamtprojekts ist später:
+
+> Aus einer konsistenten Bilderreihe innerhalb weniger Minuten ein druckbares 3D-Modell erzeugen.
+
+Daher bei allen Entscheidungen berücksichtigen:
+
+* Automatisierbarkeit
+* Laufzeit
+* Robustheit
+* möglichst wenige Spezialfälle
+* keine unnötige manuelle Nacharbeit
+
+---
+
+# 17. Abschlussentscheidung
+
+Am Ende klar eine der folgenden Aussagen ausgeben:
+
+## A – PRODUCTION FAST-PATH PASS
+
+Wenn vollständiger Körper inklusive Schwanz:
+
+* technisch sauber
+* visuell akzeptabel
+* Roundtrip-stabil
+* in sinnvoller Laufzeit erzeugt
+
+wurde.
+
+Dann konkrete gemessene Gesamtzeit nennen.
+
+---
+
+## B – FAST-PATH PASS MIT KLEINEM DETAILPROBLEM
+
+Wenn nur einzelne sichtbare Details leiden:
+
+exakt benennen.
+
+Dann höchstens eine gezielte Verbesserung empfehlen.
+
+---
+
+## C – SCHWANZ ERFORDERT SONDERBEHANDLUNG
+
+Wenn nur die Schwanzintegration scheitert:
+
+Körper-Fast-Path nicht verwerfen.
+
+Schwanzproblem isolieren und einfachste alternative Integrationsmethode nennen.
+
+---
+
+## D – FAST-PATH FAIL
+
+Nur wenn der volumetrische Gesamtweg selbst technisch scheitert.
+
+Dann genaue Ursache dokumentieren und nicht automatisch wieder in stundenlange Reparaturversuche wechseln.
+
+---
+
+# Leitprinzip
+
+Wir entwickeln jetzt keinen Mesh-Forschungsdemonstrator mehr.
+
+Wir entwickeln einen **praktischen 3D-Druck-Workflow**.
+
+Prioritäten:
+
+1. sichtbare Form stimmt
+2. Modell ist ein sauberer Solid
+3. Modell lässt sich drucken
+4. Verarbeitung dauert nur wenige Minuten
+5. Verfahren ist reproduzierbar und automatisierbar
+6. erst danach kommen akademische Topologieperfektion und Spezialfälle
+
+Wenn eine einfache Lösung funktioniert, ist sie zu bevorzugen.

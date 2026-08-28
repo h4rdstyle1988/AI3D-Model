@@ -1,0 +1,197 @@
+Überarbeite den aktuellen Stand `benchmark-b-spuelenablage-v003-r02` auf Basis der folgenden verbindlichen Anforderungen.
+
+## 1. Grundprinzip unverändert
+
+Die Spülenablage ist ein funktionales PETG-Bauteil mit folgenden Hauptmaßen:
+
+* Gesamtbreite: **240 mm**
+* Gesamttiefe Hauptkörper: **85 mm**
+* Höhe Hauptkörper/Wanne: **20 mm**
+* hinterer Fuß: **240 × 35 × 10 mm**
+* der Fuß beginnt unmittelbar an der Hinterkante
+* dadurch verbleiben **50 mm freitragender Bereich nach vorne Richtung Spüle**
+* Behälter: Außenmaß **85 × 85 × 100 mm**
+
+Die Einbaurichtung ist eindeutig:
+
+**hinten = Wand**
+**vorne = Spüle/Ablauf**
+
+## 2. Material und Materialstärke
+
+Das Bauteil wird aus **PETG** gedruckt.
+
+Für alle normalen konstruktiven Wände des Bauteils gilt verbindlich eine **Materialstärke von 2,0 mm**.
+
+Die 20 mm Höhe des Hauptkörpers bedeutet ausdrücklich **nicht**, dass dieser massiv ausgeführt werden soll.
+
+Gitterstege, Ablaufquerschnitte, Gefälleflächen und lokal konstruktiv notwendige Verstärkungen dürfen funktional dimensioniert werden. Abweichungen von 2,0 mm müssen technisch begründet und dokumentiert werden.
+
+## 3. Hauptkörper als Ablaufwanne
+
+Der Hauptkörper muss funktional als **Wanne mit innenliegender Gitterfläche** konstruiert werden.
+
+Das Gitter bildet die Nutz-/Abstellfläche.
+
+Unterhalb des Gitters befindet sich ein zusammenhängender Wasserraum bzw. eine Auffangwanne.
+
+Der Boden dieses Wasserraums benötigt ein funktionales **Gefälle zum vorderen Ablauf**.
+
+Der Wasserweg muss durchgehend funktionieren:
+
+**Gitter → Auffangwanne → Gefälle → vorderer Ablauf → Spüle**
+
+Es dürfen keine Sackgassen, geschlossenen Taschen oder lokalen Tiefpunkte entstehen, in denen Restwasser stehen bleibt.
+
+Das gilt ausdrücklich für die **gesamte Breite und Tiefe der entwässerten Fläche**, einschließlich des Bereichs unter dem 85 × 85 mm großen Behälter.
+
+Die genaue technisch sinnvolle Dimensionierung des Gefälles darf konstruktiv festgelegt werden, muss jedoch dokumentiert und auf vollständige Entwässerung geprüft werden.
+
+## 4. Porzellanteil
+
+Die bisherige integrierte Standführung für das Porzellanteil ist **vollständig zu entfernen**.
+
+Das betrifft insbesondere die in v003-r02 vorhandene Zwei-Schienen-Führung bzw. `porcelain_sponge_stand`.
+
+Das Porzellanteil ist ein separates vorhandenes Bauteil und wird:
+
+* nicht eingefasst
+* nicht geführt
+* nicht befestigt
+* nicht positioniert
+* nicht eingeklemmt
+* nicht durch Anschläge gehalten
+
+Es steht **vollständig frei und lose direkt auf der ebenen Gitterfläche** und kann jederzeit einfach hochgenommen werden.
+
+Nach Entfernung der bisherigen Führung muss die dadurch frei werdende Fläche wieder **normale, durchgehende und wasserdurchlässige Gitterfläche** sein.
+
+Keine Ersatzhalterung konstruieren.
+
+## 5. Behälter
+
+Es gibt genau **einen** hohen Behälter.
+
+Außenmaße:
+
+**85 × 85 × 100 mm**
+
+Materialstärke der geschlossenen Wände:
+
+**2,0 mm**
+
+Der Behälter besitzt geschlossene:
+
+* Vorderwand
+* Rückwand
+* linke Seitenwand
+* rechte Seitenwand
+
+Nach oben ist er vollständig offen.
+
+Nach unten besitzt er **keinen geschlossenen Boden**.
+
+Der untere Bereich muss als wasserdurchlässiges Gitter ausgeführt bzw. direkt funktional mit der darunterliegenden Gitter-/Ablaufstruktur verbunden werden.
+
+Wasser aus nassen Bürsten muss nach unten abtropfen und anschließend über die gemeinsame Auffangwanne und das Gefälle zum vorderen Ablauf gelangen.
+
+Keine weiteren Behälter ergänzen.
+
+Insbesondere **keinen separaten Behälter für die Spülmittelflasche** konstruieren.
+
+## 6. Verbleibende Gitterfläche
+
+Die komplette verbleibende Oberfläche außerhalb des 85 × 85 mm großen Behälters bleibt nutzbare Gitterfläche.
+
+Das Porzellanteil wird mittig auf dieser Fläche frei abgestellt.
+
+Andere Gegenstände, beispielsweise eine Spülmittelflasche, dürfen ebenfalls frei auf der Gitterfläche stehen.
+
+Dafür keine speziellen Halterungen konstruieren.
+
+## 7. Fuß
+
+Unter dem Hauptkörper befindet sich ausschließlich der definierte hintere Fuß:
+
+**240 mm breit × 35 mm tief × 10 mm hoch**
+
+Position:
+
+direkt an der Hinterkante des 240 × 85 mm großen Hauptkörpers.
+
+Der Fuß erstreckt sich über die komplette Breite von 240 mm.
+
+Keine zusätzlichen Füße, Stützen oder Auflageelemente hinzufügen.
+
+## 8. Ablauf
+
+Der Ablauf befindet sich vorne zur Spüle.
+
+Er muss unmittelbar mit dem tiefsten Bereich der Auffangwanne verbunden sein.
+
+Die Ablaufgeometrie darf funktional dimensioniert werden.
+
+Der bereits entwickelte Ablauf darf übernommen werden, sofern:
+
+* der Wasserweg vollständig funktioniert
+* kein Wasser davor stehen bleibt
+* keine Sackgasse entsteht
+* der Ablauf FDM-tauglich ist
+* die Konstruktion mit PETG und 0,4-mm-Düse zuverlässig druckbar ist
+
+## 9. Konstruktionsfreiheit
+
+Wichtig für alle weiteren Änderungen:
+
+**Notwendige technische Lösungen zur Umsetzung einer ausdrücklich geforderten Funktion dürfen konstruktiv entwickelt und sinnvoll dimensioniert werden.**
+
+Beispiele:
+
+* Gefälle
+* Ablaufquerschnitt
+* Gittergeometrie
+* Gitterstege
+* Radien
+* notwendige lokale Verstärkungen
+* FDM-gerechte Übergänge
+
+Es dürfen jedoch **keine neuen Funktionen oder Nutzungselemente erfunden werden**.
+
+Insbesondere keine zusätzlichen:
+
+* Halterungen
+* Führungen
+* Anschläge
+* Behälter
+* Sockel
+* Positionierhilfen
+* Füße
+
+Grundregel:
+
+**Die technische Umsetzung einer geforderten Funktion darf konstruiert werden. Neue Funktionen dürfen nicht hinzugefügt werden.**
+
+## 10. Validierung vor Freigabe
+
+Vor Erstellung einer finalen Druckdatei muss mindestens geprüft und berichtet werden:
+
+* Außenmaße
+* Wandstärke 2,0 mm
+* Behältermaß 85 × 85 × 100 mm
+* Fußmaß 240 × 35 × 10 mm
+* Position des Fußes
+* freie Gitterfläche ohne Porzellanführung
+* vollständige Wasserdurchlässigkeit des Behälterbodens
+* durchgängiger Wasserweg
+* Gefällerichtung
+* keine Wasser-Sackgassen/Tiefpunkte
+* Ablaufverbindung
+* FDM-Druckbarkeit mit PETG
+* Eignung für 0,4-mm-Düse
+* Manifold/Watertight-Zustand der geschlossenen Volumenkörper
+* keine unbeabsichtigten Überschneidungen
+* keine unnötigen oder nicht spezifizierten Geometrien
+
+**Bestehende funktionierende Konstruktionsteile aus v003-r02 sollen erhalten bleiben, sofern sie diesen Anforderungen nicht widersprechen. Nicht das komplette Modell grundlos neu konstruieren.**
+
+Erstelle danach einen neuen Kandidaten und dokumentiere sämtliche gegenüber v003-r02 vorgenommenen Änderungen.
