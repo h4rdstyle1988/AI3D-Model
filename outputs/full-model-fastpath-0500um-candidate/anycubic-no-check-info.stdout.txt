@@ -1,0 +1,17 @@
+[2026-08-25 16:06:44.325170] [0x000066a8] [trace]   Initializing StaticPrintConfigs
+[2026-08-25 16:06:44.874663] [0x000066a8] [error]   Slic3r::GUI::PartPlate::calc_exclude_triangles:Unable to create exclude triangles
+
+[full-model-fastpath-0500um-CANDIDATE.stl]
+size_x = 146.500000
+size_y = 190.500000
+size_z = 146.000000
+min_x = -73.250000
+min_y = -95.250000
+min_z = -73.250000
+max_x = 73.250000
+max_y = 95.250000
+max_z = 72.750000
+number_of_facets = 1443070
+manifold = yes
+number_of_parts =  1
+volume = 1245247.750000

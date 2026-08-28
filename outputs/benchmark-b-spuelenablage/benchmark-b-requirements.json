@@ -1,0 +1,106 @@
+{
+  "schema": "ai3d.benchmark-b.binding-requirements.v1",
+  "revision": "B-2026-08-25.1",
+  "binding": true,
+  "status": "BUILD_NOT_PRESENT_NOT_EVALUATED",
+  "benchmark": {
+    "id": "B",
+    "name": "Spülenablage"
+  },
+  "precedence": {
+    "supersedes_conflicting_prior_assumptions_for": [
+      "outlet_functional_length",
+      "outlet_open_or_closed_topology",
+      "support_surface_solid_or_grid_topology"
+    ],
+    "preserves_other_previously_defined_main_dimensions": true,
+    "prior_main_dimensions_found_in_current_workspace": false
+  },
+  "outlet": {
+    "functional_length": {
+      "target_mm": 50.0,
+      "binding_design_dimension": true,
+      "measurement": "centerline arc length from main-body exit to functional overhang end toward sink",
+      "exclude_internal_main_body_path": true
+    },
+    "top_open": {
+      "required": true,
+      "continuous_over_full_functional_length": true,
+      "forbidden": ["closed_pipe", "tunnel", "covered_channel_segment"]
+    },
+    "channel": {
+      "minimum_clear_width_mm": "MEASURE_AND_REPORT",
+      "maximum_clear_width_mm": "MEASURE_AND_REPORT",
+      "continuous_water_path_required": true,
+      "dead_ends_forbidden": true,
+      "unintended_pockets_forbidden": true,
+      "unconnected_local_minima_forbidden": true,
+      "sink_rim_rise_required_by_prior_definition": true,
+      "free_discharge_after_rim_required": true
+    }
+  },
+  "grid_supports": {
+    "required": true,
+    "zones": ["dish_brush", "sponge", "detergent_bottle"],
+    "solid_closed_support_surface_allowed": false,
+    "real_through_openings_required": true,
+    "drain_to_collection_geometry_required": true,
+    "per_zone_reporting": [
+      "strut_width_mm",
+      "strut_height_or_thickness_mm",
+      "typical_opening_width_mm",
+      "open_area_fraction_if_computable",
+      "reference_object_envelope",
+      "contact_and_stability_result",
+      "fdm_profile",
+      "drainage_connectivity_result"
+    ]
+  },
+  "dimension_gate": {
+    "required_checks": [
+      {"id": "B-DIM-OUTLET-LENGTH", "target_mm": 50.0},
+      {"id": "B-DIM-OUTLET-OPEN", "target": true},
+      {"id": "B-DIM-GRID-PRESENT", "target_for_all_zones": true},
+      {"id": "B-DIM-CHANNEL-WIDTH", "target": "measured_min_and_max_with_locations"},
+      {"id": "B-DIM-GRID-GEOMETRY", "target": "measured_for_all_three_zones"}
+    ],
+    "all_prior_main_dimensions_still_required": true
+  },
+  "function_gate": {
+    "water": [
+      "each_grid_zone_drains_downward",
+      "continuous_connected_path_to_outlet_end",
+      "channel_open_and_free",
+      "no_pocket_or_dead_end",
+      "sink_rim_transition_and_free_discharge_verified"
+    ],
+    "use": [
+      "brush_stably_supported_on_real_grid",
+      "sponge_stably_supported_on_real_grid",
+      "detergent_bottle_stably_supported_on_real_grid",
+      "grid_openings_remain_functional_under_loaded_object"
+    ],
+    "manufacturing": [
+      "single_clean_slicable_solid_or_documented_valid_assembly",
+      "fdm_robust_grid_struts",
+      "fdm_acceptable_bridge_spans",
+      "stl_roundtrip_pass",
+      "3mf_roundtrip_pass",
+      "slicer_pass"
+    ]
+  },
+  "required_reports": [
+    "DIMENSION-REPORT.md",
+    "FUNCTION-REPORT.md",
+    "machine-readable-gate-report.json",
+    "outlet-top-view",
+    "outlet-longitudinal-section",
+    "minimum-channel-width-section",
+    "maximum-channel-width-section",
+    "brush-grid-detail",
+    "sponge-grid-detail",
+    "detergent-grid-detail",
+    "connected-water-path-visualization",
+    "artifact-manifest-with-sha256"
+  ]
+}

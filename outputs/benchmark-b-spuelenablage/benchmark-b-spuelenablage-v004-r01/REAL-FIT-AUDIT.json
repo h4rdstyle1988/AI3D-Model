@@ -1,0 +1,80 @@
+{
+  "assembly_transform": {
+    "insert": "local Z + 27.0 mm",
+    "tray": "identity"
+  },
+  "contacts": {
+    "actual_radial_bearing_overlap_after_0p5mm_gap_mm": 2.5,
+    "actual_voxelized_ledge_top_width_from_inner_wall_mm": 3.0,
+    "interpretation": "coplanar bearing contacts at z=27 and z=30; no occupied-volume intersection",
+    "volumetric_overlap_mm3": 0.0,
+    "volumetric_overlap_voxels": 0,
+    "z27_ledge_to_grid_contact_area_mm2": 1538.0,
+    "z27_ten_post_to_grid_contact_area_mm2": 161.75,
+    "z27_total_contact_area_mm2": 1699.75,
+    "z30_holder_bottom_to_tray_rim_contact_area_mm2": 483.0
+  },
+  "cross_section": "outputs/benchmark-b-spuelenablage/benchmark-b-spuelenablage-v004-r01/REAL-FIT-CROSS-SECTIONS.png",
+  "fit": {
+    "complete_insert_bounds_xy_mm": [
+      237.5,
+      85.0
+    ],
+    "complete_insert_outer_margin_left_mm": 1.25,
+    "complete_insert_outer_margin_right_mm": 1.25,
+    "explanation": "The 85 mm holder never enters the 81 mm opening. Its wall begins at assembly Z=30, exactly at/above the tray rim. Only the 235 x 80 mm honeycomb skirt descends to Z=27 and defines the removable fit.",
+    "holder_front_rear_outer_margin_mm": [
+      0.0,
+      0.0
+    ],
+    "holder_outer_depth_mm": 85.0,
+    "insert_insertion_skirt_xy_mm": [
+      235.0,
+      80.0
+    ],
+    "skirt_gap_front_mm": 0.5,
+    "skirt_gap_left_mm": 0.5,
+    "skirt_gap_rear_mm": 0.5,
+    "skirt_gap_right_mm": 0.5,
+    "tray_inner_opening_xy_mm": [
+      236.0,
+      81.0
+    ],
+    "tray_outer_bounds_xy_mm": [
+      240.0,
+      85.0
+    ]
+  },
+  "geometry_changed": false,
+  "grid_z_assembly_mm": {
+    "thickness": 3.0,
+    "top": 30.0,
+    "underside": 27.0
+  },
+  "holder_clearance": {
+    "collision_mm": 0.37719451152321426,
+    "floor_top_z_mm": 12.377194511523214,
+    "free_depth_below_grid_underside_mm": 14.622805488476786,
+    "free_depth_from_grid_top_mm": 17.622805488476786,
+    "full_18mm_plug_tip_z_mm": 12.0,
+    "intended_complete_cell_xy_mm": [
+      -9.0,
+      -33.93782217350893
+    ],
+    "pass": false,
+    "required_free_depth_mm": [
+      18.5,
+      19.0
+    ]
+  },
+  "insertion_depth_mm": 3.0,
+  "schema": "ai3d.benchmark-b.v004-r01.real-fit-audit.v1",
+  "water_path": {
+    "all_under_insert_free_space_connected_to_front_outlet": true,
+    "closed_components_or_water_traps": 0,
+    "free_cells": 75674,
+    "outlet_connected_cells": 75674,
+    "raster_pitch_mm": 0.5,
+    "unreachable_free_cells": 0
+  }
+}

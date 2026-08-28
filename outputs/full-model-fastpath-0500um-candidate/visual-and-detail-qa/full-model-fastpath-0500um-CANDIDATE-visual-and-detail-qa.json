@@ -1,0 +1,1045 @@
+{
+  "artifacts": [
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-before-after-back-oblique.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-before-after-back.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-before-after-front-oblique.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-before-after-front.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-before-after-left.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-before-after-right.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-before-after-top.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-candidate-to-input-heatmap-back-oblique.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-candidate-to-input-heatmap-back.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-candidate-to-input-heatmap-front-oblique.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-candidate-to-input-heatmap-front.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-closeup-mouth.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-closeup-tail-root.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-closeup-tail-tip-and-curl-joint.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-mouth-depth-before-after.png",
+    "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/visual-and-detail-qa/full-model-fastpath-0500um-CANDIDATE-visual-contact-sheet.png"
+  ],
+  "checks": {
+    "curl_connector_minimum_diameter_at_least_3mm": true,
+    "mouth_area_at_least_70_percent": true,
+    "mouth_depth_at_least_70_percent": true,
+    "mouth_height_at_least_75_percent": true,
+    "mouth_no_front_membrane": true,
+    "mouth_opening_detected": true,
+    "mouth_width_at_least_80_percent": true,
+    "root_connector_minimum_diameter_at_least_3mm": true
+  },
+  "classification": "CANDIDATE / NON-MASTER",
+  "critical_C01_regions": {
+    "ears_upper_head": {
+      "area_mm2": 16150.69511780548,
+      "faces": 26500,
+      "maximum_sampled_face_centroid_mm": 0.8936734795570374,
+      "median_mm": 0.3190617561340332,
+      "p95_mm": 0.4460639953613281
+    },
+    "feet_lower": {
+      "area_mm2": 28457.319318640526,
+      "faces": 41714,
+      "maximum_sampled_face_centroid_mm": 2.447504758834839,
+      "median_mm": 0.2988123893737793,
+      "p95_mm": 0.4533233642578125
+    },
+    "fingers_hands_front_lower_mid": {
+      "area_mm2": 17924.523560451435,
+      "faces": 39279,
+      "maximum_sampled_face_centroid_mm": 13.040632247924805,
+      "median_mm": 0.3490143120288849,
+      "p95_mm": 6.220026016235352
+    },
+    "snout_front_mid": {
+      "area_mm2": 9957.160088240775,
+      "faces": 19434,
+      "maximum_sampled_face_centroid_mm": 10.108322143554688,
+      "median_mm": 0.37353891134262085,
+      "p95_mm": 5.374185562133789
+    }
+  },
+  "deviation_mm": {
+    "C01_to_candidate": {
+      "area_fraction_above_mm": {
+        "0.25": 0.7525365190355144,
+        "0.5": 0.11077759401880408,
+        "1.0": 0.06466513088226156,
+        "2.0": 0.05643673130181981
+      },
+      "area_weighted_median_mm": 0.32453155517578125,
+      "area_weighted_p95_mm": 3.3177852630615234,
+      "area_weighted_p99_mm": 13.371915817260742,
+      "backend": "cuMesh unsigned_distance only; ray_trace is not called",
+      "cpu_naive_spotcheck": {
+        "maximum_abs_error_mm": 1.3932005660244329e-08,
+        "samples": 8,
+        "status": "PASS"
+      },
+      "quadrature_samples": 696657,
+      "sampled_maximum_location_kind": "vertex",
+      "sampled_maximum_location_mm": [
+        0.2717254161834717,
+        -27.049482345581055,
+        25.860416412353516
+      ],
+      "sampled_maximum_mm": 16.299482345581055,
+      "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+      "vertex_samples": 115805
+    },
+    "C05_to_candidate": {
+      "area_fraction_above_mm": {
+        "0.25": 0.7202530757190306,
+        "0.5": 0.03514668801063094,
+        "1.0": 0.019153632757942945,
+        "2.0": 0.0024833838684023917
+      },
+      "area_weighted_median_mm": 0.305145263671875,
+      "area_weighted_p95_mm": 0.453369140625,
+      "area_weighted_p99_mm": 1.4042977094650269,
+      "backend": "cuMesh unsigned_distance only; ray_trace is not called",
+      "cpu_naive_spotcheck": {
+        "maximum_abs_error_mm": 1.764114188063104e-08,
+        "samples": 8,
+        "status": "PASS"
+      },
+      "quadrature_samples": 8862,
+      "sampled_maximum_location_kind": "vertex",
+      "sampled_maximum_location_mm": [
+        -52.548702239990234,
+        -87.60682678222656,
+        -58.86680603027344
+      ],
+      "sampled_maximum_mm": 2.541574239730835,
+      "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+      "vertex_samples": 1479
+    },
+    "C08_to_candidate": {
+      "area_fraction_above_mm": {
+        "0.25": 0.7141470471710836,
+        "0.5": 0.03371223836094765,
+        "1.0": 0.018771552305591698,
+        "2.0": 0.0029206931050530746
+      },
+      "area_weighted_median_mm": 0.30758509039878845,
+      "area_weighted_p95_mm": 0.4589385986328125,
+      "area_weighted_p99_mm": 1.4510364532470703,
+      "backend": "cuMesh unsigned_distance only; ray_trace is not called",
+      "cpu_naive_spotcheck": {
+        "maximum_abs_error_mm": 5.79615511142606e-08,
+        "samples": 8,
+        "status": "PASS"
+      },
+      "quadrature_samples": 4740,
+      "sampled_maximum_location_kind": "face quadrature",
+      "sampled_maximum_location_mm": [
+        -56.14607238769531,
+        -91.16395568847656,
+        -49.78729248046875
+      ],
+      "sampled_maximum_mm": 2.5390965938568115,
+      "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+      "vertex_samples": 792
+    },
+    "candidate_to_construction_input": {
+      "area_fraction_above_mm": {
+        "0.25": 0.7737274368406091,
+        "0.5": 0.014291444286074885,
+        "1.0": 0.0,
+        "2.0": 0.0
+      },
+      "area_weighted_median_mm": 0.3319651186466217,
+      "area_weighted_p95_mm": 0.47488343715667725,
+      "area_weighted_p99_mm": 0.5053967833518982,
+      "backend": "cuMesh unsigned_distance only; ray_trace is not called",
+      "cpu_naive_spotcheck": {
+        "maximum_abs_error_mm": 2.130254953491839e-06,
+        "samples": 8,
+        "status": "PASS"
+      },
+      "quadrature_samples": 4329210,
+      "sampled_maximum_location_kind": "face quadrature",
+      "sampled_maximum_location_mm": [
+        44.875,
+        -22.875,
+        39.33333206176758
+      ],
+      "sampled_maximum_mm": 0.7040215134620667,
+      "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+      "vertex_samples": 721371
+    }
+  },
+  "geometry_mutated": false,
+  "heatmap_scale_mm": {
+    "maximum_p99_clipped": 0.5185861790180206,
+    "minimum": 0.0
+  },
+  "mouth": {
+    "C01": {
+      "interior_depth_z_mm": {
+        "maximum": -13.088607015124488,
+        "median": -35.210275200826146,
+        "minimum": -45.726286513003714,
+        "range": 32.637679497879226
+      },
+      "membrane_test": "PASS",
+      "opening_area_mm2_projected": 5172.1406893597705,
+      "opening_bounds_xy_mm": [
+        [
+          -54.0174048481298,
+          -11.767435863506279
+        ],
+        [
+          54.02499424041187,
+          47.18235254795206
+        ]
+      ],
+      "opening_detected": true,
+      "opening_width_height_mm": [
+        108.04239908854167,
+        58.949788411458336
+      ],
+      "raster_metadata": {
+        "background_pixels": 408727,
+        "camera_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "depth_selection": "smaller clip-z wins; clip-z is negative camera-axis depth",
+        "hit_pixels": 639849,
+        "model_depth_min_max": [
+          -56.20422080898829,
+          72.74794144548092
+        ],
+        "model_position_source": "pixel-center inverse orthographic projection plus raw clip-z; not barycentric reconstruction",
+        "pixels_per_model_unit": 5.173894736842105,
+        "resolution_height_width": [
+          1024,
+          1024
+        ],
+        "screen_right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "screen_scale_u_ndc_per_model_unit": 0.010105263157894737,
+        "screen_scale_v_ndc_per_model_unit": 0.010105263157894737,
+        "screen_u_center": 0.0037946961410355584,
+        "screen_up": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "screen_v_center": 0.11916081618122121,
+        "triangles": 232219,
+        "validation": {
+          "barycentric_minimum": 0.0,
+          "barycentric_sum_max_abs_error": 0.0,
+          "clip_depth_max_abs_error": 0.03273317217826843,
+          "cpu_vs_gpu_barycentric_max_abs_error": 2.892605394575922,
+          "pixel_center_ndc_max_error": 0.011351241897556999,
+          "sample_count": 64,
+          "valid_triangle_ids": true
+        },
+        "view": "+z"
+      },
+      "rim_transition_minus_interior_median_depth_mm": 93.3487096802836,
+      "segmentation": {
+        "depth_seed": {
+          "algorithm": "256-bin Otsu inside guard",
+          "all_components": [
+            {
+              "center_overlap_pixels": 0,
+              "label": 1,
+              "normalized_center_distance": 0.9954703502738143,
+              "pixels": 1,
+              "score": 0.2007273797766747
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 2,
+              "normalized_center_distance": 0.9939532991503758,
+              "pixels": 9,
+              "score": 1.8087495740690243
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 3,
+              "normalized_center_distance": 0.9771920520400602,
+              "pixels": 6,
+              "score": 1.2223025707397868
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 4,
+              "normalized_center_distance": 0.9630908768140268,
+              "pixels": 7,
+              "score": 1.4425959616447466
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 5,
+              "normalized_center_distance": 0.9242611814811226,
+              "pixels": 2,
+              "score": 0.4257996499291057
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 6,
+              "normalized_center_distance": 0.9206513545356243,
+              "pixels": 2,
+              "score": 0.4271126480679132
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 7,
+              "normalized_center_distance": 0.9136474620277578,
+              "pixels": 3,
+              "score": 0.6445251027257509
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 8,
+              "normalized_center_distance": 0.9462570068136839,
+              "pixels": 2,
+              "score": 0.41797038358152294
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 9,
+              "normalized_center_distance": 0.8899591862988474,
+              "pixels": 9,
+              "score": 1.9737548738961155
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 10,
+              "normalized_center_distance": 0.8891984474398029,
+              "pixels": 1,
+              "score": 0.21945254627219846
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 11,
+              "normalized_center_distance": 0.9345518672597786,
+              "pixels": 2,
+              "score": 0.42210055449631684
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 12,
+              "normalized_center_distance": 0.9817019897949933,
+              "pixels": 2,
+              "score": 0.4059423498075382
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 13,
+              "normalized_center_distance": 0.8820869436578201,
+              "pixels": 2,
+              "score": 0.4416621910544072
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 14,
+              "normalized_center_distance": 0.9712540091577814,
+              "pixels": 1,
+              "score": 0.20470761866518547
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 15,
+              "normalized_center_distance": 0.8615851731846944,
+              "pixels": 1,
+              "score": 0.22490404337055825
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 16,
+              "normalized_center_distance": 0.9518691521167277,
+              "pixels": 4,
+              "score": 0.8320373297199646
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 17,
+              "normalized_center_distance": 0.9654738088211847,
+              "pixels": 1,
+              "score": 0.20568110821117572
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 18,
+              "normalized_center_distance": 0.8218983538086737,
+              "pixels": 1,
+              "score": 0.23323107000929608
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 19,
+              "normalized_center_distance": 0.8101307275058683,
+              "pixels": 62,
+              "score": 14.620838353083393
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 20,
+              "normalized_center_distance": 0.9481152200415205,
+              "pixels": 1,
+              "score": 0.20866106683073124
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 21,
+              "normalized_center_distance": 0.7857865221836594,
+              "pixels": 5,
+              "score": 1.206812381922805
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 22,
+              "normalized_center_distance": 0.7256229284571845,
+              "pixels": 21,
+              "score": 5.381177345126733
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 23,
+              "normalized_center_distance": 0.8242520559351364,
+              "pixels": 2,
+              "score": 0.4654401145779051
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 24,
+              "normalized_center_distance": 0.783294084270379,
+              "pixels": 2,
+              "score": 0.48388934729366595
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 25,
+              "normalized_center_distance": 0.7764263823284692,
+              "pixels": 8,
+              "score": 1.9485079830693355
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 26,
+              "normalized_center_distance": 0.7447199721521714,
+              "pixels": 1,
+              "score": 0.25132701363088267
+            },
+            {
+              "center_overlap_pixels": 10157,
+              "label": 27,
+              "normalized_center_distance": 0.16870792846468782,
+              "pixels": 136191,
+              "score": 10157081316.229488
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 28,
+              "normalized_center_distance": 0.9188265968975119,
+              "pixels": 50,
+              "score": 10.694486276389942
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 29,
+              "normalized_center_distance": 0.9986132629115895,
+              "pixels": 1,
+              "score": 0.20022212435661252
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 30,
+              "normalized_center_distance": 0.9877107428004364,
+              "pixels": 5,
+              "score": 1.0099290220037664
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 31,
+              "normalized_center_distance": 0.8973039421523689,
+              "pixels": 8,
+              "score": 1.7432172299939572
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 32,
+              "normalized_center_distance": 0.9373364672191498,
+              "pixels": 2,
+              "score": 0.4211106234874143
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 33,
+              "normalized_center_distance": 0.9962967723439711,
+              "pixels": 11,
+              "score": 2.206537047213836
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 34,
+              "normalized_center_distance": 0.9655572490519381,
+              "pixels": 10,
+              "score": 2.056669895185809
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 35,
+              "normalized_center_distance": 0.9018855820610752,
+              "pixels": 2,
+              "score": 0.4340708901880231
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 36,
+              "normalized_center_distance": 0.9910824460794656,
+              "pixels": 6,
+              "score": 1.208622364081005
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 37,
+              "normalized_center_distance": 0.9926219216917525,
+              "pixels": 8,
+              "score": 1.609500013710626
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 38,
+              "normalized_center_distance": 0.9639282946136107,
+              "pixels": 4,
+              "score": 0.8237718854047278
+            }
+          ],
+          "candidate_pixels": 136456,
+          "connected_components": 38,
+          "direction": "select model Z <= threshold (recessed from +Z camera)",
+          "selected_component": {
+            "center_overlap_pixels": 10157,
+            "label": 27,
+            "normalized_center_distance": 0.16870792846468782,
+            "pixels": 136191,
+            "score": 10157081316.229488
+          },
+          "threshold_model_z": 14.00555408211083
+        },
+        "guard": {
+          "center_model_xy": [
+            0.0037946961410355584,
+            10.379160816181221
+          ],
+          "hit_pixels": 175586,
+          "radii_model_xy": [
+            54.05114332665175,
+            38.949999999999996
+          ],
+          "x_radius_fraction_of_global_width": 0.37,
+          "y_center_offset_fraction_of_global_height": 0.054,
+          "y_radius_fraction_of_global_height": 0.205
+        },
+        "mask": {
+          "bounds_model_xy": [
+            [
+              -54.0174048481298,
+              -11.767435863506279
+            ],
+            [
+              54.02499424041187,
+              47.18235254795206
+            ]
+          ],
+          "centroid_model_xy": [
+            0.07538017271026912,
+            16.772141323080362
+          ],
+          "pixels": 138454,
+          "row_column_bounds": [
+            [
+              450,
+              232
+            ],
+            [
+              755,
+              791
+            ]
+          ],
+          "touches_guard_boundary_fraction": 0.012011209499183844,
+          "touches_guard_boundary_pixels": 1663
+        },
+        "method": "front +Z nvdiffrast first-hit depth; normalized elliptical guard; Otsu low-depth seed; central-overlap connected component; physical-scale morphology",
+        "morphology": {
+          "band_model_units": 2.0,
+          "band_pixels": 10,
+          "closing_iterations": 5,
+          "nominal_band_mm_at_190mm_height": 2.0,
+          "seed_dilation_iterations": 3
+        },
+        "pairwise_distinct": true,
+        "pairwise_overlap_pixels": {
+          "back_wall__body_transition": 0,
+          "floor__back_wall": 0,
+          "floor__body_transition": 0,
+          "mouth_rim__back_wall": 0,
+          "mouth_rim__body_transition": 0,
+          "mouth_rim__floor": 0,
+          "mouth_rim__side_walls": 0,
+          "side_walls__back_wall": 0,
+          "side_walls__body_transition": 0,
+          "side_walls__floor": 0
+        },
+        "realized_thresholds": {
+          "back_wall_z": -38.03875278027799,
+          "floor_y": 13.165425464618721,
+          "side_lateral_distance": 22.892479741750822
+        },
+        "subregion_rules": {
+          "back_wall": "interior depth <= q0.30; assigned first",
+          "body_transition": "outside ROI, inside guard, within physical 2 mm image-distance of ROI boundary",
+          "floor": "remaining interior y <= q0.40; assigned second",
+          "mouth_rim": "inside ROI within physical 2 mm image-distance of ROI boundary",
+          "priority_and_disjointness": "back wall -> floor -> side walls; rim and transition are separate inside/outside bands",
+          "side_walls": "remaining interior lateral distance >= q0.55; assigned third",
+          "unclassified_interior": "remaining central/upper interior; reported but not mislabeled as a requested anatomical region"
+        },
+        "subregions": {
+          "back_wall": {
+            "pixels": 30728
+          },
+          "body_transition": {
+            "pixels": 7384
+          },
+          "floor": {
+            "pixels": 32369
+          },
+          "mouth_rim": {
+            "pixels": 36029
+          },
+          "side_walls": {
+            "pixels": 26248
+          }
+        },
+        "unclassified_interior_pixels": 13080
+      },
+      "subregions_nonempty": true
+    },
+    "candidate": {
+      "interior_depth_z_mm": {
+        "maximum": -12.679074073831242,
+        "median": -34.44162019466361,
+        "minimum": -41.24999933193128,
+        "range": 28.570925258100036
+      },
+      "membrane_test": "PASS",
+      "opening_area_mm2_projected": 5104.013034142554,
+      "opening_bounds_xy_mm": [
+        [
+          -54.163360595703125,
+          -11.336517333984375
+        ],
+        [
+          54.163360595703125,
+          46.993255615234375
+        ]
+      ],
+      "opening_detected": true,
+      "opening_width_height_mm": [
+        108.32672119140625,
+        58.32977294921875
+      ],
+      "raster_metadata": {
+        "background_pixels": 400560,
+        "camera_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "depth_selection": "smaller clip-z wins; clip-z is negative camera-axis depth",
+        "hit_pixels": 648016,
+        "model_depth_min_max": [
+          -73.25,
+          72.75
+        ],
+        "model_position_source": "pixel-center inverse orthographic projection plus raw clip-z; not barycentric reconstruction",
+        "pixels_per_model_unit": 5.160314960629921,
+        "resolution_height_width": [
+          1024,
+          1024
+        ],
+        "screen_right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "screen_scale_u_ndc_per_model_unit": 0.010078740157480314,
+        "screen_scale_v_ndc_per_model_unit": 0.010078740157480314,
+        "screen_u_center": 0.0,
+        "screen_up": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "screen_v_center": 0.0,
+        "triangles": 1443070,
+        "validation": {
+          "barycentric_minimum": 0.0,
+          "barycentric_sum_max_abs_error": 0.0,
+          "clip_depth_max_abs_error": 8.404254913330078e-06,
+          "cpu_vs_gpu_barycentric_max_abs_error": 0.002554761792118087,
+          "pixel_center_ndc_max_error": 6.437301635743355e-06,
+          "sample_count": 64,
+          "valid_triangle_ids": true
+        },
+        "view": "+z"
+      },
+      "rim_transition_minus_interior_median_depth_mm": 92.26482749606173,
+      "segmentation": {
+        "depth_seed": {
+          "algorithm": "256-bin Otsu inside guard",
+          "all_components": [
+            {
+              "center_overlap_pixels": 0,
+              "label": 1,
+              "normalized_center_distance": 0.9856898317823831,
+              "pixels": 3,
+              "score": 0.6069484272749783
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 2,
+              "normalized_center_distance": 0.9272312792913302,
+              "pixels": 5,
+              "score": 1.0618134448079524
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 3,
+              "normalized_center_distance": 0.9381527020543378,
+              "pixels": 3,
+              "score": 0.6312319945939914
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 4,
+              "normalized_center_distance": 0.9553370349471759,
+              "pixels": 1,
+              "score": 0.2074108674599518
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 5,
+              "normalized_center_distance": 0.9919938730891996,
+              "pixels": 1,
+              "score": 0.20128923774654167
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 6,
+              "normalized_center_distance": 0.9225872267482921,
+              "pixels": 3,
+              "score": 0.6396112654918039
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 7,
+              "normalized_center_distance": 0.9278459020516561,
+              "pixels": 1,
+              "score": 0.21225187400536194
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 8,
+              "normalized_center_distance": 0.9463993439787648,
+              "pixels": 5,
+              "score": 1.044801642771702
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 9,
+              "normalized_center_distance": 0.8459397466003429,
+              "pixels": 3,
+              "score": 0.6843441916643096
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 10,
+              "normalized_center_distance": 0.7159421738023657,
+              "pixels": 3,
+              "score": 0.7764439946209989
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 11,
+              "normalized_center_distance": 0.9604173662762816,
+              "pixels": 3,
+              "score": 0.6196209843777226
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 12,
+              "normalized_center_distance": 0.8292399120639363,
+              "pixels": 7,
+              "score": 1.6215115660921986
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 13,
+              "normalized_center_distance": 0.6827411615964245,
+              "pixels": 3,
+              "score": 0.8040815939937125
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 14,
+              "normalized_center_distance": 0.6990052562689016,
+              "pixels": 4,
+              "score": 1.0537349433991428
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 15,
+              "normalized_center_distance": 0.6843484391167894,
+              "pixels": 1,
+              "score": 0.26756613436023635
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 16,
+              "normalized_center_distance": 0.8024502693650282,
+              "pixels": 1,
+              "score": 0.23754091502188676
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 17,
+              "normalized_center_distance": 0.7720423277742425,
+              "pixels": 9,
+              "score": 2.2014743801266508
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 18,
+              "normalized_center_distance": 0.7460911137244614,
+              "pixels": 1,
+              "score": 0.2509810564068088
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 19,
+              "normalized_center_distance": 0.6001494695460308,
+              "pixels": 2,
+              "score": 0.5881318731716598
+            },
+            {
+              "center_overlap_pixels": 9667,
+              "label": 20,
+              "normalized_center_distance": 0.17093894430051673,
+              "pixels": 133610,
+              "score": 9667079352.363216
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 21,
+              "normalized_center_distance": 0.8913383682591437,
+              "pixels": 6,
+              "score": 1.31424653872621
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 22,
+              "normalized_center_distance": 0.9639076926029466,
+              "pixels": 1,
+              "score": 0.20594646654222312
+            },
+            {
+              "center_overlap_pixels": 0,
+              "label": 23,
+              "normalized_center_distance": 0.9631007623719847,
+              "pixels": 2,
+              "score": 0.4121669159801255
+            }
+          ],
+          "candidate_pixels": 133678,
+          "connected_components": 23,
+          "direction": "select model Z <= threshold (recessed from +Z camera)",
+          "selected_component": {
+            "center_overlap_pixels": 9667,
+            "label": 20,
+            "normalized_center_distance": 0.17093894430051673,
+            "pixels": 133610,
+            "score": 9667079352.363216
+          },
+          "threshold_model_z": -10.395839289422536
+        },
+        "guard": {
+          "center_model_xy": [
+            0.0,
+            10.286999999999999
+          ],
+          "hit_pixels": 174653,
+          "radii_model_xy": [
+            54.205,
+            39.052499999999995
+          ],
+          "x_radius_fraction_of_global_width": 0.37,
+          "y_center_offset_fraction_of_global_height": 0.054,
+          "y_radius_fraction_of_global_height": 0.205
+        },
+        "mask": {
+          "bounds_model_xy": [
+            [
+              -54.163360595703125,
+              -11.336517333984375
+            ],
+            [
+              54.163360595703125,
+              46.993255615234375
+            ]
+          ],
+          "centroid_model_xy": [
+            -0.0047964020877862105,
+            16.78268504693225
+          ],
+          "pixels": 135914,
+          "row_column_bounds": [
+            [
+              453,
+              232
+            ],
+            [
+              754,
+              791
+            ]
+          ],
+          "touches_guard_boundary_fraction": 0.018423414806421706,
+          "touches_guard_boundary_pixels": 2504
+        },
+        "method": "front +Z nvdiffrast first-hit depth; normalized elliptical guard; Otsu low-depth seed; central-overlap connected component; physical-scale morphology",
+        "morphology": {
+          "band_model_units": 2.0,
+          "band_pixels": 10,
+          "closing_iterations": 5,
+          "nominal_band_mm_at_190mm_height": 2.0,
+          "seed_dilation_iterations": 3
+        },
+        "pairwise_distinct": true,
+        "pairwise_overlap_pixels": {
+          "back_wall__body_transition": 0,
+          "floor__back_wall": 0,
+          "floor__body_transition": 0,
+          "mouth_rim__back_wall": 0,
+          "mouth_rim__body_transition": 0,
+          "mouth_rim__floor": 0,
+          "mouth_rim__side_walls": 0,
+          "side_walls__back_wall": 0,
+          "side_walls__body_transition": 0,
+          "side_walls__floor": 0
+        },
+        "realized_thresholds": {
+          "back_wall_z": -37.25445483749112,
+          "floor_y": 11.142730712890625,
+          "side_lateral_distance": 22.651036851898752
+        },
+        "subregion_rules": {
+          "back_wall": "interior depth <= q0.30; assigned first",
+          "body_transition": "outside ROI, inside guard, within physical 2 mm image-distance of ROI boundary",
+          "floor": "remaining interior y <= q0.40; assigned second",
+          "mouth_rim": "inside ROI within physical 2 mm image-distance of ROI boundary",
+          "priority_and_disjointness": "back wall -> floor -> side walls; rim and transition are separate inside/outside bands",
+          "side_walls": "remaining interior lateral distance >= q0.55; assigned third",
+          "unclassified_interior": "remaining central/upper interior; reported but not mislabeled as a requested anatomical region"
+        },
+        "subregions": {
+          "back_wall": {
+            "pixels": 27971
+          },
+          "body_transition": {
+            "pixels": 7625
+          },
+          "floor": {
+            "pixels": 29662
+          },
+          "mouth_rim": {
+            "pixels": 42711
+          },
+          "side_walls": {
+            "pixels": 25288
+          }
+        },
+        "unclassified_interior_pixels": 10282
+      },
+      "subregions_nonempty": true
+    },
+    "ratios": {
+      "depth_contrast": 0.9883888894883053,
+      "height": 0.9894823123382226,
+      "opening_area": 0.9868279578400931,
+      "width": 1.0026315789473683
+    }
+  },
+  "pass": true,
+  "renderer": "nvdiffrast full-face opaque ID/depth raster; no face subsampling",
+  "schema": "ai3d.full-model-fastpath.visual-and-detail-qa.v1",
+  "tail": {
+    "connector_centerline_thickness": {
+      "C05_to_C01": {
+        "median_diameter_mm": 5.693795628690934,
+        "method": "2x Euclidean distance-transform radius sampled along central 70% of connector centerline",
+        "minimum_diameter_mm": 5.621592239754002,
+        "minimum_position_mm": [
+          -9.854544282947263,
+          -89.86647601589837,
+          -46.69600524012608
+        ],
+        "p05_diameter_mm": 5.625724891042584
+      },
+      "C05_to_C08": {
+        "median_diameter_mm": 5.714323504953222,
+        "method": "2x Euclidean distance-transform radius sampled along central 70% of connector centerline",
+        "minimum_diameter_mm": 5.532988106985902,
+        "minimum_position_mm": [
+          -53.24144065219136,
+          -88.30953399852558,
+          -57.13270310594091
+        ],
+        "p05_diameter_mm": 5.548830801576132
+      },
+      "thinnest_measured_connection": {
+        "connection": "C05_to_C08",
+        "median_diameter_mm": 5.714323504953222,
+        "method": "2x Euclidean distance-transform radius sampled along central 70% of connector centerline",
+        "minimum_diameter_mm": 5.532988106985902,
+        "minimum_position_mm": [
+          -53.24144065219136,
+          -88.30953399852558,
+          -57.13270310594091
+        ],
+        "p05_diameter_mm": 5.548830801576132
+      }
+    },
+    "original_component_equivalent_diameters": {
+      "C05_4V_over_A_mm": 4.891464574278691,
+      "C08_4V_over_A_mm": 4.1745031882815695,
+      "interpretation": "Equivalent tubular diameter only; not a certified pointwise minimum wall/thickness."
+    },
+    "selection": {
+      "basis": [
+        "C05 and C08 are the larger outer members of two near-coincident pairs and match the visible long strand plus curled/end fragment.",
+        "C07 and C09 add no independently visible feature and would reintroduce duplicate/inner boundaries.",
+        "The reference image shows one connected curled tail, so C05 must connect to C01 and C08 must connect to C05 before the joint voxel rebuild."
+      ],
+      "double_skin_components_to_exclude": [
+        7,
+        9
+      ],
+      "geometry_not_yet_created": true,
+      "visible_tail_components_to_keep": [
+        5,
+        8
+      ]
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "candidate": "benchmark-b-spuelenablage-v004-r01",
+  "file_count": 44,
+  "files": [
+    {
+      "bytes": 491,
+      "path": "DIMENSION-REPORT.md",
+      "sha256": "50965d4286fa0722d6e9c496fe066434b8019e699b4686df348ebceb17992de9"
+    },
+    {
+      "bytes": 622,
+      "path": "FIT-REPORT.md",
+      "sha256": "bd850b39eeea5c648df37b7d56bdf5658f84af14cac7c6a55caf3df1eab170d6"
+    },
+    {
+      "bytes": 709,
+      "path": "FUNCTION-REPORT.md",
+      "sha256": "473bebd63406fe8eda6f3d14e61436f55912b0a9c378a87cb346b7d26054ae7f"
+    },
+    {
+      "bytes": 565,
+      "path": "PRINT-REPORT.md",
+      "sha256": "7008de9911c094667490266469858f396335a25fa7bfa3d84410598423ed98fb"
+    },
+    {
+      "bytes": 1881,
+      "path": "README.md",
+      "sha256": "7e0ea3e49f180f867f4c7db6ffae5919aa66023945e7f50dbae47627f01d82f3"
+    },
+    {
+      "bytes": 930,
+      "path": "REQUIREMENTS-v004.txt",
+      "sha256": "b62edb19381b5eda7a3592f5cb3672d0d3f077ff47b1ca4939a8eee7f0be830b"
+    },
+    {
+      "bytes": 746,
+      "path": "SOLL-IST-VERGLEICH.md",
+      "sha256": "75043d5cb66e0e6626e801a893d893af714301cc864ebf10e689aee2862579ac"
+    },
+    {
+      "bytes": 822,
+      "path": "SOURCE-3MF-AUDIT.md",
+      "sha256": "719dc4ae99bb10045090a86b8fe90f421f0fa963a01487414c63a643e5f8dd64"
+    },
+    {
+      "bytes": 768,
+      "path": "SUPPORT-AND-WATERWAY-REPORT.md",
+      "sha256": "d0afa612dd48cd1dbe47992b4fa1ccace8e43b499c39cae5e1b72687313cfbdc"
+    },
+    {
+      "bytes": 756,
+      "path": "VALIDATION-REPORT.md",
+      "sha256": "dc52ec85106d357478e9fd81a910b97b17173b8412cea450abb86c006795d460"
+    },
+    {
+      "bytes": 890,
+      "path": "WISCHTUCHHALTER-COMPATIBILITY-REPORT.md",
+      "sha256": "058f51d9c074b76e0af52b0ba7e034f10ac25343cd994a92b4425b651245f241"
+    },
+    {
+      "bytes": 6502951,
+      "path": "benchmark-b-spuelenablage-v004-r01-einsatz.3mf",
+      "sha256": "3725acd55bb148af34192476f1ff6f37ab84944ba78e9bd45a783f99ae7e1d63"
+    },
+    {
+      "bytes": 15045204,
+      "path": "benchmark-b-spuelenablage-v004-r01-einsatz.glb",
+      "sha256": "06312d526601e2ada387cc07ee79f7f96204e78d77cc9a9ec066bc824f0addba"
+    },
+    {
+      "bytes": 41802284,
+      "path": "benchmark-b-spuelenablage-v004-r01-einsatz.stl",
+      "sha256": "f9034469bd9c85971b2c5534f2222bcb7b790ac115684a28126ff4054eb88bd4"
+    },
+    {
+      "bytes": 5768523,
+      "path": "benchmark-b-spuelenablage-v004-r01-wanne.3mf",
+      "sha256": "5c2abb57b2da5454be34d69e9e4e0b241b095bb13fbe91567c39952b97680d8a"
+    },
+    {
+      "bytes": 13752464,
+      "path": "benchmark-b-spuelenablage-v004-r01-wanne.glb",
+      "sha256": "eb66ffd71d2a269f11305364a47f3bb6672a2861c901d5634588b80d9e27f869"
+    },
+    {
+      "bytes": 38199684,
+      "path": "benchmark-b-spuelenablage-v004-r01-wanne.stl",
+      "sha256": "10c76aec4616db93a29642c4dc2b4fd5a862626b1ae036b4ba05b25f19256e61"
+    },
+    {
+      "bytes": 28796948,
+      "path": "benchmark-b-spuelenablage-v004-r01-zusammengesetzt.glb",
+      "sha256": "10dc0a4ab67293536363d245ffe40c0de33632ad6403ec5523ca566353a639b1"
+    },
+    {
+      "bytes": 3743,
+      "path": "design-parameters.json",
+      "sha256": "d4ddf7a9455b221cf7f14f097e10ad708a4076a66c8b4e82fc44dd2f3b9796dc"
+    },
+    {
+      "bytes": 185551,
+      "path": "machine-readable-gate-report.json",
+      "sha256": "722b06ff92e3400c903356877c4f931127628c9a527541c61b71ca2e1f4bc527"
+    },
+    {
+      "bytes": 30057,
+      "path": "profiles/0.24mm-einsatz-no-support.json",
+      "sha256": "378288bc27bd1ebb40f5065af169f763a6f926d9df288ba148ae31168461b57f"
+    },
+    {
+      "bytes": 30073,
+      "path": "profiles/0.24mm-split-wanne-tree-support.json",
+      "sha256": "5444c3a776dc2b5b329d918cf439f850f695702292e69cf0d76b12c7ddb873cd"
+    },
+    {
+      "bytes": 77454,
+      "path": "querschnitt-auflage-stuetzen-wasserweg.png",
+      "sha256": "d64aeb23c7e9c962369245deee8cd5fdf95a1de6d55f73812c72b16999971350"
+    },
+    {
+      "bytes": 66388,
+      "path": "render-einsatz-perspective.png",
+      "sha256": "8c4bbe72cc3fca3946ec9d7f225b7f6db2aa195a686feeadb5d6428b72c055b2"
+    },
+    {
+      "bytes": 46917,
+      "path": "render-getrennt-natural-print-orientation.png",
+      "sha256": "82b2609fed7d8237de34d8c97408b6b7403c4dfca53b657d39e366eafcad633d"
+    },
+    {
+      "bytes": 48424,
+      "path": "render-wanne-perspective.png",
+      "sha256": "281a2765642066efc0b96a59046a046aca668edb5278de796d05e019e07cc1c4"
+    },
+    {
+      "bytes": 73733,
+      "path": "render-zusammengesetzt-perspective.png",
+      "sha256": "508a9f774218283f13681e2243174ee666fb0aecddbd90b0802dd72472594104"
+    },
+    {
+      "bytes": 2522,
+      "path": "reproduction-commands.md",
+      "sha256": "fb097a970dca75cd977918ecc0d604c7d7f9df7c13e71b0fe71c27e7aa318fdd"
+    },
+    {
+      "bytes": 6192,
+      "path": "reproduction-scripts/analyze_anycubic_gcode.py",
+      "sha256": "b0172fbcd448e596db991cd168ae3648ea35495ff104c8374b3b2a9745ea48ad"
+    },
+    {
+      "bytes": 32932,
+      "path": "reproduction-scripts/build_benchmark_b_spuelenablage_v004_split.py",
+      "sha256": "a1a3475519dab378f5edd0490954a72acc9fbe17edffa2f0190845d007bada67"
+    },
+    {
+      "bytes": 23703,
+      "path": "reproduction-scripts/validate_benchmark_b_spuelenablage_v004_split.py",
+      "sha256": "324ae1a4a1ae523f4bbb7caea8b046fd2186c7c82422257689a344ed82d32186"
+    },
+    {
+      "bytes": 1696,
+      "path": "reproduction-scripts/write_artifact_manifest.py",
+      "sha256": "ad8ce7e3b181d1ffd7aae2245c51ff21662566175a0942d6cd6f4d067316bf01"
+    },
+    {
+      "bytes": 123122,
+      "path": "slicer-einsatz-petg-no-support-no-repair/gcode-audit.json",
+      "sha256": "f4d8417787896cc75515a81188ddfdc96b86e0c27e400c7bef8a4f8fa1133282"
+    },
+    {
+      "bytes": 12062059,
+      "path": "slicer-einsatz-petg-no-support-no-repair/plate_1.gcode",
+      "sha256": "26ed33807d9ee205c9bc7f5df4f2d582486bb193c81f6fdc34d5af9a19e98a11"
+    },
+    {
+      "bytes": 24111,
+      "path": "slicer-einsatz-petg-no-support-no-repair/plate_1.gcode.metadata",
+      "sha256": "334111aba4e48f1e81f2fc5778351e64c745e61e358ddba562df6bae671303dd"
+    },
+    {
+      "bytes": 0,
+      "path": "slicer-einsatz-petg-no-support-no-repair/slicer.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 121198,
+      "path": "slicer-einsatz-petg-no-support-no-repair/slicer.stdout.txt",
+      "sha256": "fe5f490dbad5d0f346ccea10e87502bc1a97ce735f001121ca6a103d347dbb39"
+    },
+    {
+      "bytes": 51083,
+      "path": "slicer-wanne-petg-tree-support-no-repair/gcode-audit.json",
+      "sha256": "60640abf475e4179cce9f86a0cd9d386bc38df431a3c2b815f9dde15079c1db3"
+    },
+    {
+      "bytes": 38196263,
+      "path": "slicer-wanne-petg-tree-support-no-repair/plate_1.gcode",
+      "sha256": "5052fbb7aa4cf23b398c58494b5d9d10b661e9dc7bf80aea1a4e37cf6763f0c7"
+    },
+    {
+      "bytes": 24111,
+      "path": "slicer-wanne-petg-tree-support-no-repair/plate_1.gcode.metadata",
+      "sha256": "45f7a95b22b14b91d136848bb150aabf3ecbcce8d70567205c806ce804245619"
+    },
+    {
+      "bytes": 0,
+      "path": "slicer-wanne-petg-tree-support-no-repair/slicer.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 49148,
+      "path": "slicer-wanne-petg-tree-support-no-repair/slicer.stdout.txt",
+      "sha256": "d97c68a7b4c96f84cdc8306d2efd4637065da88a280a17c0d94b9409c7458557"
+    },
+    {
+      "bytes": 2476,
+      "path": "technical-validation-preflight.json",
+      "sha256": "be58d2f81acee7e9c43e2d278fd585349650b86043c30f34327185d04b002c46"
+    },
+    {
+      "bytes": 185551,
+      "path": "technical-validation.json",
+      "sha256": "722b06ff92e3400c903356877c4f931127628c9a527541c61b71ca2e1f4bc527"
+    }
+  ],
+  "schema": "ai3d.artifact-manifest.v1",
+  "total_bytes": 201345745
+}

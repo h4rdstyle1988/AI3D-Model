@@ -1,0 +1,2 @@
+[2026-08-25 16:10:45.281901] [0x0000429c] [trace]   Initializing StaticPrintConfigs
+Slic3r::CLI::run found error, exit

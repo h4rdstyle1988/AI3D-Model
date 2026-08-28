@@ -1,0 +1,1015 @@
+[2026-08-27 18:33:20.160537] [0x00006690] [trace]   Initializing StaticPrintConfigs
+[2026-08-27 18:33:20.169037] [0x00006690] [warning] cli mode, Current AnycubicSlicerNext Version 1.4.1.2
+[2026-08-27 18:33:20.169304] [0x00006690] [info]    Will start to read model file now, file count :1
+
+[2026-08-27 18:33:20.169428] [0x00006690] [info]    allow_multicolor_oneplate 1, allow_rotations 1 skip_modified_gcodes 0 avoid_extrusion_cali_region 0 loaded_filament_ids size 0, clone_objects size 0, skip_useless_pick 0, allow_newer_file 0
+[2026-08-27 18:33:20.169428] [0x00006690] [info]    plate_to_slice=0, normative_check=1, use_first_fila_as_default=0
+[2026-08-27 18:33:20.169428] [0x00006690] [info]    read model file:C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\benchmark-b-spuelenablage-v004-r01-einsatz.stl
+
+[2026-08-27 18:33:20.489941] [0x00006690] [info]    object benchmark-b-spuelenablage-v004-r01-einsatz.stl, id :5, from stl or other 3mf
+
+[2026-08-27 18:33:20.490442] [0x00006690] [info]    Slic3r::CLI::run:before load settings, file count=2
+
+[2026-08-27 18:33:20.490442] [0x00006690] [info]    Slic3r::CLI::run::<lambda_45b08019745bcc83912ac9227defcd06>::operator ():load setting file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\machine\Anycubic Kobra S1 0.4 nozzle.json, with rule 1
+
+[2026-08-27 18:33:20.490943] [0x00006690] [info]    no substitutions performed from file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\machine\Anycubic Kobra S1 0.4 nozzle.json
+
+[2026-08-27 18:33:20.491442] [0x00006690] [info]    Slic3r::CLI::run:2565, load printer_model_id Anycubic Kobra S1 from current printer model Anycubic Kobra S1
+[2026-08-27 18:33:20.491442] [0x00006690] [info]    loaded machine config D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\machine\Anycubic Kobra S1 0.4 nozzle.json, type Anycubic Kobra S1 0.4 nozzle, name system, inherits Anycubic Kobra S1 0.4 nozzle, printer_model_id Anycubic Kobra S1
+[2026-08-27 18:33:20.491442] [0x00006690] [info]    Slic3r::CLI::run::<lambda_45b08019745bcc83912ac9227defcd06>::operator ():load setting file C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\profiles\0.24mm-einsatz-no-support.json, with rule 1
+
+[2026-08-27 18:33:20.493442] [0x00006690] [info]    no substitutions performed from file C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\profiles\0.24mm-einsatz-no-support.json
+
+[2026-08-27 18:33:20.493442] [0x00006690] [info]    loaded process config C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\profiles\0.24mm-einsatz-no-support.json, type 0.24mm Einsatz No Support @Anycubic Kobra S1 0.4 nozzle, name system, inherits 0.24mm Einsatz No Support @Anycubic Kobra S1 0.4 nozzle
+[2026-08-27 18:33:20.493442] [0x00006690] [info]    Slic3r::CLI::run::<lambda_45b08019745bcc83912ac9227defcd06>::operator ():load setting file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\Anycubic PETG @Anycubic Kobra S1 0.4 nozzle.json, with rule 1
+
+[2026-08-27 18:33:20.493941] [0x00006690] [info]    Slic3r::CLI::run::<lambda_45b08019745bcc83912ac9227defcd06>::operator ():load setting file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\Anycubic PETG @acbase.json, with rule 1
+
+[2026-08-27 18:33:20.494444] [0x00006690] [info]    Slic3r::CLI::run::<lambda_45b08019745bcc83912ac9227defcd06>::operator ():load setting file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\fdm_filament_common.json, with rule 1
+
+[2026-08-27 18:33:20.494942] [0x00006690] [info]    no substitutions performed from file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\fdm_filament_common.json
+
+[2026-08-27 18:33:20.495440] [0x00006690] [info]    no substitutions performed from file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\Anycubic PETG @acbase.json
+
+[2026-08-27 18:33:20.495440] [0x00006690] [info]    no substitutions performed from file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\Anycubic PETG @Anycubic Kobra S1 0.4 nozzle.json
+
+[2026-08-27 18:33:20.495943] [0x00006690] [info]    loaded filament 1 from file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\Anycubic PETG @Anycubic Kobra S1 0.4 nozzle.json, type system, name Anycubic PETG @Anycubic Kobra S1 0.4 nozzle, inherits 
+[2026-08-27 18:33:20.495943] [0x00006690] [info]    current printer , new printer Anycubic Kobra S1 0.4 nozzle, current process , new process 0.24mm Einsatz No Support @Anycubic Kobra S1 0.4 nozzle
+[2026-08-27 18:33:20.495943] [0x00006690] [info]    current printer inherits , new printer inherits Anycubic Kobra S1 0.4 nozzle, current process inherits , new process inherits 0.24mm Einsatz No Support @Anycubic Kobra S1 0.4 nozzle
+[2026-08-27 18:33:20.495943] [0x00006690] [info]    index 0, new print compatible printer Anycubic Kobra S1 0.4 nozzle
+[2026-08-27 18:33:20.495943] [0x00006690] [info]    new printer Anycubic Kobra S1 0.4 nozzle, inherited from Anycubic Kobra S1 0.4 nozzle, new process 0.24mm Einsatz No Support @Anycubic Kobra S1 0.4 nozzle, inherited from 0.24mm Einsatz No Support @Anycubic Kobra S1 0.4 nozzle ,compatible 1
+[2026-08-27 18:33:20.495943] [0x00006690] [info]    update printer config to newest, different size 0, different_settings: 
+[2026-08-27 18:33:20.495943] [0x00006690] [info]    update_full_config: config keys count 120
+[2026-08-27 18:33:20.496443] [0x00006690] [info]    load a new printer, update all the keys, different_settings: 
+[2026-08-27 18:33:20.496443] [0x00006690] [info]    check printer cli safe params, current_printer_name , new_printer_name Anycubic Kobra S1 0.4 nozzle, printer_model Anycubic Kobra S1
+[2026-08-27 18:33:20.496443] [0x00006690] [info]    line 3257 , will parse file D:\Program Files\AnycubicSlicerNext\resources/profiles/Anycubic.json
+[2026-08-27 18:33:20.497443] [0x00006690] [warning] can not find key printer in the file
+[2026-08-27 18:33:20.497943] [0x00006690] [info]    update process config to newest, different size 0, different_settings: 
+[2026-08-27 18:33:20.497943] [0x00006690] [info]    update_full_config: config keys count 547
+[2026-08-27 18:33:20.497943] [0x00006690] [info]    load a new process, update all the keys, different_settings: enable_support;support_filament;support_interface_bottom_layers;support_interface_filament;support_interface_spacing;support_interface_top_layers;support_top_z_distance;wall_loops
+[2026-08-27 18:33:20.498443] [0x00006690] [info]    update filament 1's config to newest, different size 0, name Anycubic PETG @Anycubic Kobra S1 0.4 nozzle, different_settings 
+[2026-08-27 18:33:20.498443] [0x00006690] [info]    skip scalar option inherits from filament 1: Anycubic PETG @Anycubic Kobra S1 0.4 nozzle
+[2026-08-27 18:33:20.498443] [0x00006690] [warning] no filament colors found in projects
+[2026-08-27 18:33:20.498443] [0x00006690] [info]    total 1 models, 0 objects
+
+[2026-08-27 18:33:20.498943] [0x00006690] [info]    translate_old 0, shrink_to_new_bed 0, old bed size {250, 250, 250}
+[2026-08-27 18:33:20.499443] [0x00006690] [info]    Slic3r::GUI::PartPlateList::reset_size:before size: plate_width 0, plate_depth 0, plate_height 0
+[2026-08-27 18:33:20.499443] [0x00006690] [info]    Slic3r::GUI::PartPlateList::reset_size:after size: plate_width 250, plate_depth 250, plate_height 250
+[2026-08-27 18:33:20.499443] [0x00006690] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: plate_id 0, before, origin {0,0,0}, plate_width 0, plate_depth 0, plate_height 0
+[2026-08-27 18:33:20.499443] [0x00006690] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {0,0,0}, plate_width 250, plate_depth 250, plate_height 250
+[2026-08-27 18:33:20.499443] [0x00006690] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:33:20.499443] [0x00006690] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: plate_id 1, before, origin {0,0,0}, plate_width 0, plate_depth 0, plate_height 0
+[2026-08-27 18:33:20.499443] [0x00006690] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {300,0,0}, plate_width 250, plate_depth 250, plate_height 250
+[2026-08-27 18:33:20.499943] [0x00006690] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:33:20.499943] [0x00006690] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:33:20.499943] [0x00006690] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:33:20.499943] [0x00006690] [error]   Slic3r::GUI::PartPlate::calc_exclude_triangles:Unable to create exclude triangles
+
+[2026-08-27 18:33:20.500443] [0x00006690] [info]    will start transforms, commands count 2
+
+[2026-08-27 18:33:20.500443] [0x00006690] [info]    process transform ensure_on_bed
+
+[2026-08-27 18:33:20.500443] [0x00006690] [info]    process transform arrange
+
+[2026-08-27 18:33:20.500443] [0x00006690] [info]    finished model pre-process commands
+
+[2026-08-27 18:33:20.500443] [0x00006690] [info]    before arrange, need_arrange=1, duplicate_count 0, filament_color_changed 0
+[2026-08-27 18:33:20.584943] [0x00006690] [info]    Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":1,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":0,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":40.000000,"clearance_height_to_lid":240.000000,"clearance_radius":60.000000,"printable_height":250.000000,
+[2026-08-27 18:33:20.584943] [0x00006690] [info]    arrange: items selected before arranging: 1
+[2026-08-27 18:33:20.584943] [0x00006690] [info]    arrange: items unselected before arranging: 0
+[2026-08-27 18:33:20.584943] [0x00006690] [info]    start 1 th arranging...
+[2026-08-27 18:33:20.585442] [0x00006690] [info]    finished 1 th arranging...
+[2026-08-27 18:33:20.585442] [0x00006690] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:33:20.585442] [0x00006690] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:33:20.585442] [0x00006690] [info]    Slic3r::GUI::PartPlateList::rebuild_plates_after_arrangement:before rebuild, plates count 1, recycle_plates 1
+[2026-08-27 18:33:20.585941] [0x00006690] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:33:20.585941] [0x00006690] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:33:20.585941] [0x00006690] [info]    Slic3r::GUI::PartPlate::add_instance: plate 0 , m_ready_for_slice changes to 1
+[2026-08-27 18:33:20.585941] [0x00006690] [info]    Slic3r::GUI::PartPlateList::rebuild_plates_after_arrangement:after rebuild, plates count 1
+[2026-08-27 18:33:20.585941] [0x00006690] [info]    ensure_on_bed: need to ensure each object on beds
+[2026-08-27 18:33:20.587941] [0x00006690] [info]    Need to slice for plate 0, total plate count 1 partplates!
+
+[2026-08-27 18:33:20.587941] [0x00006690] [info]    Plate 1: pre_check 1, start
+[2026-08-27 18:33:20.589441] [0x00006690] [info]    Slic3r::Model::update_print_volume_state, print_volume {0, 0, 0} to {250, 250, 250}, got 1 printable istances
+[2026-08-27 18:33:20.589441] [0x00006690] [info]    plate 1: load cached data success, go on.
+[2026-08-27 18:33:20.589941] [0x00006690] [info]    Slic3r::Print::apply, Line 1029: enter
+[2026-08-27 18:33:20.589941] [0x00006690] [info]    Slic3r::Print::apply, has_scarf_joint_seam:false
+[2026-08-27 18:33:20.590443] [0x00006690] [info]    Slic3r::Print::apply, got print_diff 159, object_diff 28, region_diff 31, set status to APPLY_STATUS_CHANGED
+[2026-08-27 18:33:20.590443] [0x00006690] [info]    Slic3r::Print::apply 1103: found full_config_diff changed.
+[2026-08-27 18:33:20.593940] [0x00006690] [info]    Slic3r::Print::apply 1425: found print object changed.
+[2026-08-27 18:33:20.593940] [0x00006690] [info]    Slic3r::Print::apply, got new_changed_keys, size=1
+[2026-08-27 18:33:20.593940] [0x00006690] [info]    Slic3r::Print::apply, i=0, key=enable_prime_tower
+[2026-08-27 18:33:20.606443] [0x00006690] [info]    Slic3r::Print::apply 1620: finished,  this 000001CD5335F030, m_modified_count 1, apply_status 1, m_support_used 0
+[2026-08-27 18:33:20.606943] [0x00006690] [info]    set no_check to 1:
+[2026-08-27 18:33:20.606943] [0x00006690] [info]    start Print::process for partplate 1
+
+[2026-08-27 18:33:20.606943] [0x00006690] [info]    set print's callback to default_status_callback.
+[2026-08-27 18:33:20.608443] [0x00006690] [info]    Slic3r::Print::process: this=000001CD5335F030, enter, use_cache=0, object size=1
+[2026-08-27 18:33:20.608443] [0x00006690] [info]    Slic3r::Print::process: total object counts 1 in current print, need to slice 1
+[2026-08-27 18:33:20.608443] [0x00006690] [info]    Starting the slicing process. WorkingSet: 70MB; PrivateBytes: 152MB; Pagefile(peak): 152MB(323MB)
+[2026-08-27 18:33:20.608443] [0x00006690] [info]    Slicing volumes... WorkingSet: 70MB; PrivateBytes: 152MB; Pagefile(peak): 152MB(323MB)
+[2026-08-27 18:33:20.781940] [0x00006690] [info]    Make overhang printable...
+[2026-08-27 18:33:20.781940] [0x00006690] [info]    angle 0.959931 maxHoleArea 0 tan_angle 1.42815
+[2026-08-27 18:33:20.781940] [0x00006690] [info]    layer_thickness 0.24 max_dist_from_lower_layer 0.342756
+[2026-08-27 18:33:20.812440] [0x00006690] [info]    Generating walls... WorkingSet: 89MB; PrivateBytes: 171MB; Pagefile(peak): 171MB(323MB)
+[2026-08-27 18:33:20.922442] [0x00006690] [warning] Detected non-planar Voronoi diagram, input polygons will be rotated back and forth.
+[2026-08-27 18:33:21.065439] [0x00006690] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-08-27 18:33:21.430451] [0x00001428] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-08-27 18:33:21.431952] [0x0000597c] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-08-27 18:33:21.435949] [0x000062c4] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-08-27 18:33:21.523950] [0x00006690] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-08-27 18:33:21.981951] [0x00004ac4] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-08-27 18:33:21.981951] [0x000062c4] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-08-27 18:33:22.003950] [0x00001428] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-08-27 18:33:22.125449] [0x0000597c] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-08-27 18:33:22.125950] [0x00000c74] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-08-27 18:33:22.141950] [0x00006690] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-08-27 18:33:22.143450] [0x00004b0c] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-08-27 18:33:22.574962] [0x00006690] [warning] SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[2026-08-27 18:33:22.898462] [0x00006690] [info]    Detecting solid surfaces... WorkingSet: 119MB; PrivateBytes: 199MB; Pagefile(peak): 199MB(323MB)
+[2026-08-27 18:33:22.940961] [0x00006690] [info]    Preparing fill surfaces... WorkingSet: 120MB; PrivateBytes: 201MB; Pagefile(peak): 201MB(323MB)
+[2026-08-27 18:33:22.940961] [0x00006690] [info]    Discovering vertical shells... WorkingSet: 120MB; PrivateBytes: 201MB; Pagefile(peak): 201MB(323MB)
+[2026-08-27 18:33:23.504470] [0x00006690] [info]    Processing external surfaces... WorkingSet: 122MB; PrivateBytes: 203MB; Pagefile(peak): 203MB(323MB)
+[2026-08-27 18:33:23.518970] [0x00006690] [info]    Bridge over infill - Start WorkingSet: 124MB; PrivateBytes: 205MB; Pagefile(peak): 205MB(323MB)
+[2026-08-27 18:33:23.568970] [0x00006690] [info]    Bridge over infill - Directions and expanded surfaces computed WorkingSet: 131MB; PrivateBytes: 211MB; Pagefile(peak): 211MB(323MB)
+[2026-08-27 18:33:23.584471] [0x00006690] [info]    Bridge over infill - End WorkingSet: 131MB; PrivateBytes: 211MB; Pagefile(peak): 211MB(323MB)
+[2026-08-27 18:33:24.314972] [0x00006690] [info]    Slicing process finished. WorkingSet: 142MB; PrivateBytes: 222MB; Pagefile(peak): 222MB(323MB)
+[2026-08-27 18:33:24.314972] [0x00006690] [info]    print::process: first time_using_cache is 0 secs.
+[2026-08-27 18:33:24.315471] [0x00006690] [info]    process finished, will export gcode temporily to C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\slicer-einsatz-petg-no-support-no-repair/plate_1.gcode
+
+[2026-08-27 18:33:24.315471] [0x00006690] [info]    Slic3r::GCodeProcessorResult::reset 639: this=000000B1326CD928 reset finished
+[2026-08-27 18:33:24.315971] [0x00006690] [info]    Will export G-code to C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\slicer-einsatz-petg-no-support-no-repair/plate_1.gcode soon
+[2026-08-27 18:33:24.315971] [0x00006690] [info]    Exporting G-code... WorkingSet: 142MB; PrivateBytes: 222MB; Pagefile(peak): 222MB(323MB)
+[2026-08-27 18:33:24.316470] [0x00006690] [info]    Slic3r::GCodeProcessorResult::reset 639: this=000000B1326CD928 reset finished
+[2026-08-27 18:33:25.112982] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:25.113482] [0x00006690] [warning] [P2 Fan] layer_id=0 <= before_layers(0), speed=0
+[2026-08-27 18:33:25.272482] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:25.272982] [0x00004b0c] [warning] [P2 Fan] layer_id=1 >= after_layers(0), speed=0
+[2026-08-27 18:33:25.380982] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:25.380982] [0x00001428] [warning] [P2 Fan] layer_id=2 >= after_layers(0), speed=0
+[2026-08-27 18:33:25.491497] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:25.491998] [0x00004ac4] [warning] [P2 Fan] layer_id=3 >= after_layers(0), speed=0
+[2026-08-27 18:33:25.593497] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:25.593997] [0x000063b4] [warning] [P2 Fan] layer_id=4 >= after_layers(0), speed=0
+[2026-08-27 18:33:25.703997] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:25.703997] [0x00006690] [warning] [P2 Fan] layer_id=5 >= after_layers(0), speed=0
+[2026-08-27 18:33:25.807498] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:25.807498] [0x000063b4] [warning] [P2 Fan] layer_id=6 >= after_layers(0), speed=0
+[2026-08-27 18:33:25.909997] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:25.909997] [0x00006690] [warning] [P2 Fan] layer_id=7 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.010998] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.010998] [0x000063b4] [warning] [P2 Fan] layer_id=8 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.120497] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.120998] [0x00001428] [warning] [P2 Fan] layer_id=9 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.236498] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.236998] [0x000062c4] [warning] [P2 Fan] layer_id=10 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.354498] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.354998] [0x00000c74] [warning] [P2 Fan] layer_id=11 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.409498] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.409998] [0x000063b4] [warning] [P2 Fan] layer_id=12 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.411998] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.411998] [0x000025bc] [warning] [P2 Fan] layer_id=13 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.412497] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.412497] [0x000025bc] [warning] [P2 Fan] layer_id=14 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.412497] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.412998] [0x00006690] [warning] [P2 Fan] layer_id=15 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.412998] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.412998] [0x00006690] [warning] [P2 Fan] layer_id=16 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.413497] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.413497] [0x00006690] [warning] [P2 Fan] layer_id=17 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.413497] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.413497] [0x00006690] [warning] [P2 Fan] layer_id=18 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.413998] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.413998] [0x00006690] [warning] [P2 Fan] layer_id=19 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.413998] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.414497] [0x00006690] [warning] [P2 Fan] layer_id=20 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.414497] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.414497] [0x00006690] [warning] [P2 Fan] layer_id=21 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.414497] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.414997] [0x00006690] [warning] [P2 Fan] layer_id=22 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.414997] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.414997] [0x00006690] [warning] [P2 Fan] layer_id=23 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.434507] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.435007] [0x000063b4] [warning] [P2 Fan] layer_id=24 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.435507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.435507] [0x00006690] [warning] [P2 Fan] layer_id=25 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.436006] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.436006] [0x0000597c] [warning] [P2 Fan] layer_id=26 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.436507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.437007] [0x00006690] [warning] [P2 Fan] layer_id=27 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.437007] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.437507] [0x000063b4] [warning] [P2 Fan] layer_id=28 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.438007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.438007] [0x00006690] [warning] [P2 Fan] layer_id=29 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.438507] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.438507] [0x000063b4] [warning] [P2 Fan] layer_id=30 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.439008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.440007] [0x00006690] [warning] [P2 Fan] layer_id=31 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.440507] [0x000010a0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.440507] [0x000010a0] [warning] [P2 Fan] layer_id=32 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.441007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.441007] [0x00006690] [warning] [P2 Fan] layer_id=33 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.441507] [0x000010a0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.441507] [0x000010a0] [warning] [P2 Fan] layer_id=34 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.441507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.441507] [0x00006690] [warning] [P2 Fan] layer_id=35 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.442007] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.442007] [0x00001428] [warning] [P2 Fan] layer_id=36 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.442507] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.442507] [0x00004100] [warning] [P2 Fan] layer_id=37 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.443007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.443507] [0x00006690] [warning] [P2 Fan] layer_id=38 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.444007] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.444007] [0x00004ac4] [warning] [P2 Fan] layer_id=39 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.444508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.444508] [0x00006690] [warning] [P2 Fan] layer_id=40 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.445007] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.445007] [0x00004ac4] [warning] [P2 Fan] layer_id=41 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.445508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.446008] [0x00006690] [warning] [P2 Fan] layer_id=42 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.446008] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.446507] [0x00004ac4] [warning] [P2 Fan] layer_id=43 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.447007] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.447007] [0x000062c4] [warning] [P2 Fan] layer_id=44 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.447507] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.447507] [0x00004100] [warning] [P2 Fan] layer_id=45 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.448006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.448006] [0x00006690] [warning] [P2 Fan] layer_id=46 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.448508] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.448508] [0x00004100] [warning] [P2 Fan] layer_id=47 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.449006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.449006] [0x00006690] [warning] [P2 Fan] layer_id=48 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.449507] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.449507] [0x00004100] [warning] [P2 Fan] layer_id=49 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.450007] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.450007] [0x0000104c] [warning] [P2 Fan] layer_id=50 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.450507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.450507] [0x00006690] [warning] [P2 Fan] layer_id=51 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.451007] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.451007] [0x000062c4] [warning] [P2 Fan] layer_id=52 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.451508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.451508] [0x00006690] [warning] [P2 Fan] layer_id=53 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.452507] [0x000010a0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.452507] [0x000010a0] [warning] [P2 Fan] layer_id=54 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.453007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.453007] [0x00006690] [warning] [P2 Fan] layer_id=55 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.453508] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.453508] [0x000025bc] [warning] [P2 Fan] layer_id=56 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.454007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.454007] [0x00006690] [warning] [P2 Fan] layer_id=57 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.454507] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.454507] [0x0000597c] [warning] [P2 Fan] layer_id=58 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.455007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.455508] [0x00006690] [warning] [P2 Fan] layer_id=59 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.456007] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.456007] [0x00004b0c] [warning] [P2 Fan] layer_id=60 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.456508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.456508] [0x00006690] [warning] [P2 Fan] layer_id=61 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.457008] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.457509] [0x00004b0c] [warning] [P2 Fan] layer_id=62 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.458007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.458007] [0x00006690] [warning] [P2 Fan] layer_id=63 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.458508] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.458508] [0x000063b4] [warning] [P2 Fan] layer_id=64 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.459007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.459007] [0x00006690] [warning] [P2 Fan] layer_id=65 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.459508] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.459508] [0x0000597c] [warning] [P2 Fan] layer_id=66 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.460007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.460508] [0x00006690] [warning] [P2 Fan] layer_id=67 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.461008] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.461008] [0x000063b4] [warning] [P2 Fan] layer_id=68 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.461507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.461507] [0x00006690] [warning] [P2 Fan] layer_id=69 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.462007] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.462007] [0x00004ac4] [warning] [P2 Fan] layer_id=70 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.462508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.462508] [0x00006690] [warning] [P2 Fan] layer_id=71 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.463008] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.463507] [0x00004ac4] [warning] [P2 Fan] layer_id=72 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.463507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.464008] [0x00006690] [warning] [P2 Fan] layer_id=73 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.464508] [0x000010a0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.464508] [0x000010a0] [warning] [P2 Fan] layer_id=74 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.465008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.465008] [0x00006690] [warning] [P2 Fan] layer_id=75 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.465508] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.465508] [0x000025bc] [warning] [P2 Fan] layer_id=76 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.466007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.466007] [0x00006690] [warning] [P2 Fan] layer_id=77 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.466507] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.467007] [0x000025bc] [warning] [P2 Fan] layer_id=78 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.467508] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.467508] [0x00004ac4] [warning] [P2 Fan] layer_id=79 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.467508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.468007] [0x00006690] [warning] [P2 Fan] layer_id=80 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.468507] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.468507] [0x00000c74] [warning] [P2 Fan] layer_id=81 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.469007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.469007] [0x00006690] [warning] [P2 Fan] layer_id=82 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.469509] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.469509] [0x000062c4] [warning] [P2 Fan] layer_id=83 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.470007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.470007] [0x00006690] [warning] [P2 Fan] layer_id=84 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.470507] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.471008] [0x00004b0c] [warning] [P2 Fan] layer_id=85 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.471008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.471507] [0x00006690] [warning] [P2 Fan] layer_id=86 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.472008] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.472008] [0x00001428] [warning] [P2 Fan] layer_id=87 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.472507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.472507] [0x00006690] [warning] [P2 Fan] layer_id=88 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.473007] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.473007] [0x0000104c] [warning] [P2 Fan] layer_id=89 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.473508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.473508] [0x00006690] [warning] [P2 Fan] layer_id=90 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.474008] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.474008] [0x000025bc] [warning] [P2 Fan] layer_id=91 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.474507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.475007] [0x00006690] [warning] [P2 Fan] layer_id=92 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.475507] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.475507] [0x0000597c] [warning] [P2 Fan] layer_id=93 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.475507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.476007] [0x00006690] [warning] [P2 Fan] layer_id=94 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.476007] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.476508] [0x00004b0c] [warning] [P2 Fan] layer_id=95 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.476508] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.477007] [0x0000597c] [warning] [P2 Fan] layer_id=96 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.477007] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.477507] [0x00004b0c] [warning] [P2 Fan] layer_id=97 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.478007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.478007] [0x00006690] [warning] [P2 Fan] layer_id=98 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.478508] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.478508] [0x00004b0c] [warning] [P2 Fan] layer_id=99 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.479007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.479007] [0x00006690] [warning] [P2 Fan] layer_id=100 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.479506] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.479506] [0x00000c74] [warning] [P2 Fan] layer_id=101 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.480007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.480007] [0x00006690] [warning] [P2 Fan] layer_id=102 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.480506] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.481006] [0x00004100] [warning] [P2 Fan] layer_id=103 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.481006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.481506] [0x00006690] [warning] [P2 Fan] layer_id=104 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.482007] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.482007] [0x000063b4] [warning] [P2 Fan] layer_id=105 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.482508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.482508] [0x00006690] [warning] [P2 Fan] layer_id=106 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.483007] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.483007] [0x0000597c] [warning] [P2 Fan] layer_id=107 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.483507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.483507] [0x00006690] [warning] [P2 Fan] layer_id=108 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.484008] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.484008] [0x000063b4] [warning] [P2 Fan] layer_id=109 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.484507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.484507] [0x00006690] [warning] [P2 Fan] layer_id=110 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.485007] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.485508] [0x00004100] [warning] [P2 Fan] layer_id=111 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.486008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.486008] [0x00006690] [warning] [P2 Fan] layer_id=112 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.486508] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.486508] [0x00004100] [warning] [P2 Fan] layer_id=113 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.487008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.487008] [0x00006690] [warning] [P2 Fan] layer_id=114 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.487508] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.488007] [0x00004b0c] [warning] [P2 Fan] layer_id=115 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.488007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.488506] [0x00006690] [warning] [P2 Fan] layer_id=116 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.489007] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.489007] [0x00001428] [warning] [P2 Fan] layer_id=117 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.489507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.489507] [0x00006690] [warning] [P2 Fan] layer_id=118 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.490008] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.490008] [0x0000104c] [warning] [P2 Fan] layer_id=119 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.490508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.490508] [0x00006690] [warning] [P2 Fan] layer_id=120 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.491008] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.491507] [0x0000104c] [warning] [P2 Fan] layer_id=121 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.491507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.492008] [0x00006690] [warning] [P2 Fan] layer_id=122 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.492508] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.492508] [0x0000104c] [warning] [P2 Fan] layer_id=123 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.493007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.493007] [0x00006690] [warning] [P2 Fan] layer_id=124 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.493508] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.493508] [0x000062c4] [warning] [P2 Fan] layer_id=125 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.494007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.494007] [0x00006690] [warning] [P2 Fan] layer_id=126 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.494507] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.494507] [0x000062c4] [warning] [P2 Fan] layer_id=127 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.495006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.495006] [0x00006690] [warning] [P2 Fan] layer_id=128 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.496507] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.497007] [0x00001428] [warning] [P2 Fan] layer_id=129 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.497508] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.497508] [0x00004ac4] [warning] [P2 Fan] layer_id=130 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.498007] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.498007] [0x00000c74] [warning] [P2 Fan] layer_id=131 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.498507] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.498507] [0x00004ac4] [warning] [P2 Fan] layer_id=132 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.499007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.499007] [0x00006690] [warning] [P2 Fan] layer_id=133 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.499507] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.499507] [0x00004b0c] [warning] [P2 Fan] layer_id=134 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.500007] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.500507] [0x000062c4] [warning] [P2 Fan] layer_id=135 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.501009] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.501009] [0x00000c74] [warning] [P2 Fan] layer_id=136 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.501508] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.501508] [0x000062c4] [warning] [P2 Fan] layer_id=137 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.502008] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.502508] [0x000025bc] [warning] [P2 Fan] layer_id=138 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.503009] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.503009] [0x00004ac4] [warning] [P2 Fan] layer_id=139 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.503508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.503508] [0x00006690] [warning] [P2 Fan] layer_id=140 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.504008] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.504008] [0x00004ac4] [warning] [P2 Fan] layer_id=141 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.504507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.505007] [0x00006690] [warning] [P2 Fan] layer_id=142 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.505508] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.505508] [0x00004b0c] [warning] [P2 Fan] layer_id=143 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.506007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.506007] [0x00006690] [warning] [P2 Fan] layer_id=144 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.506508] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.506508] [0x0000597c] [warning] [P2 Fan] layer_id=145 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.507008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.507008] [0x00006690] [warning] [P2 Fan] layer_id=146 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.507508] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.507508] [0x0000597c] [warning] [P2 Fan] layer_id=147 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.508007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.508007] [0x00006690] [warning] [P2 Fan] layer_id=148 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.508507] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.509007] [0x00004b0c] [warning] [P2 Fan] layer_id=149 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.509007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.509507] [0x00006690] [warning] [P2 Fan] layer_id=150 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.510006] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.510006] [0x00004b0c] [warning] [P2 Fan] layer_id=151 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.510506] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.510506] [0x00006690] [warning] [P2 Fan] layer_id=152 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.511008] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.511008] [0x00004b0c] [warning] [P2 Fan] layer_id=153 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.511508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.511508] [0x00006690] [warning] [P2 Fan] layer_id=154 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.512008] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.512008] [0x0000597c] [warning] [P2 Fan] layer_id=155 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.512508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.512508] [0x00006690] [warning] [P2 Fan] layer_id=156 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.513506] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.513506] [0x0000597c] [warning] [P2 Fan] layer_id=157 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.514006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.514006] [0x00006690] [warning] [P2 Fan] layer_id=158 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.514507] [0x000010a0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.515007] [0x000010a0] [warning] [P2 Fan] layer_id=159 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.515007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.515507] [0x00006690] [warning] [P2 Fan] layer_id=160 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.516007] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.516007] [0x000062c4] [warning] [P2 Fan] layer_id=161 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.516507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.516507] [0x00006690] [warning] [P2 Fan] layer_id=162 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.517008] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.517008] [0x00004ac4] [warning] [P2 Fan] layer_id=163 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.517508] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.517508] [0x00000c74] [warning] [P2 Fan] layer_id=164 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.518008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.518008] [0x00006690] [warning] [P2 Fan] layer_id=165 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.519008] [0x000010a0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.519008] [0x000010a0] [warning] [P2 Fan] layer_id=166 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.519507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.519507] [0x00006690] [warning] [P2 Fan] layer_id=167 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.520007] [0x000010a0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.520007] [0x000010a0] [warning] [P2 Fan] layer_id=168 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.520507] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.520507] [0x00004ac4] [warning] [P2 Fan] layer_id=169 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.521008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.521507] [0x00006690] [warning] [P2 Fan] layer_id=170 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.522008] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.522008] [0x000062c4] [warning] [P2 Fan] layer_id=171 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.522507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.522507] [0x00006690] [warning] [P2 Fan] layer_id=172 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.523008] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.523008] [0x00004ac4] [warning] [P2 Fan] layer_id=173 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.523508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.523508] [0x00006690] [warning] [P2 Fan] layer_id=174 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.524007] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.524007] [0x0000597c] [warning] [P2 Fan] layer_id=175 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.524508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.524508] [0x00006690] [warning] [P2 Fan] layer_id=176 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.525007] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.525508] [0x00004b0c] [warning] [P2 Fan] layer_id=177 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.526007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.526007] [0x00006690] [warning] [P2 Fan] layer_id=178 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.526508] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.526508] [0x0000104c] [warning] [P2 Fan] layer_id=179 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.527008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.527008] [0x00006690] [warning] [P2 Fan] layer_id=180 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.527507] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.527507] [0x0000104c] [warning] [P2 Fan] layer_id=181 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.528007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.528508] [0x00006690] [warning] [P2 Fan] layer_id=182 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.529008] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.529008] [0x0000104c] [warning] [P2 Fan] layer_id=183 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.529507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.529507] [0x00006690] [warning] [P2 Fan] layer_id=184 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.530006] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.530006] [0x0000104c] [warning] [P2 Fan] layer_id=185 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.530507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.530507] [0x00006690] [warning] [P2 Fan] layer_id=186 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.531007] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.531007] [0x00001428] [warning] [P2 Fan] layer_id=187 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.531506] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.531506] [0x00006690] [warning] [P2 Fan] layer_id=188 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.532007] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.532507] [0x00001428] [warning] [P2 Fan] layer_id=189 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.532507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.533008] [0x00006690] [warning] [P2 Fan] layer_id=190 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.533508] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.533508] [0x00001428] [warning] [P2 Fan] layer_id=191 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.534008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.534008] [0x00006690] [warning] [P2 Fan] layer_id=192 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.534508] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.534508] [0x000062c4] [warning] [P2 Fan] layer_id=193 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.535007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.535007] [0x00006690] [warning] [P2 Fan] layer_id=194 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.535506] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.536008] [0x000063b4] [warning] [P2 Fan] layer_id=195 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.536008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.536008] [0x00006690] [warning] [P2 Fan] layer_id=196 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.536508] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.537007] [0x00004b0c] [warning] [P2 Fan] layer_id=197 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.537007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.537507] [0x00006690] [warning] [P2 Fan] layer_id=198 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.538006] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.538006] [0x0000104c] [warning] [P2 Fan] layer_id=199 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.538506] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.538506] [0x00006690] [warning] [P2 Fan] layer_id=200 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.539006] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.539006] [0x0000597c] [warning] [P2 Fan] layer_id=201 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.539508] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.539508] [0x00004100] [warning] [P2 Fan] layer_id=202 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.540007] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.540007] [0x0000597c] [warning] [P2 Fan] layer_id=203 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.540510] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.541007] [0x00006690] [warning] [P2 Fan] layer_id=204 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.541508] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.541508] [0x000025bc] [warning] [P2 Fan] layer_id=205 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.542007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.542007] [0x00006690] [warning] [P2 Fan] layer_id=206 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.542507] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.542507] [0x000025bc] [warning] [P2 Fan] layer_id=207 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.543006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.543006] [0x00006690] [warning] [P2 Fan] layer_id=208 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.543506] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.543506] [0x00004100] [warning] [P2 Fan] layer_id=209 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.544006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.544006] [0x00006690] [warning] [P2 Fan] layer_id=210 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.544507] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.544507] [0x00004100] [warning] [P2 Fan] layer_id=211 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.545007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.545007] [0x00006690] [warning] [P2 Fan] layer_id=212 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.545508] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.546006] [0x00004100] [warning] [P2 Fan] layer_id=213 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.546006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.546507] [0x00006690] [warning] [P2 Fan] layer_id=214 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.547007] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.547007] [0x00004100] [warning] [P2 Fan] layer_id=215 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.547507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.547507] [0x00006690] [warning] [P2 Fan] layer_id=216 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.548008] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.548008] [0x00004100] [warning] [P2 Fan] layer_id=217 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.548507] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.548507] [0x0000104c] [warning] [P2 Fan] layer_id=218 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.549008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.549008] [0x00006690] [warning] [P2 Fan] layer_id=219 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.549508] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.549508] [0x00004100] [warning] [P2 Fan] layer_id=220 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.550008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.550008] [0x00006690] [warning] [P2 Fan] layer_id=221 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.550508] [0x000010a0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.550508] [0x000010a0] [warning] [P2 Fan] layer_id=222 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.551007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.551507] [0x00006690] [warning] [P2 Fan] layer_id=223 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.551507] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.552007] [0x000062c4] [warning] [P2 Fan] layer_id=224 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.552007] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.552507] [0x000063b4] [warning] [P2 Fan] layer_id=225 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.553007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.553007] [0x00006690] [warning] [P2 Fan] layer_id=226 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.553507] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.553507] [0x000025bc] [warning] [P2 Fan] layer_id=227 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.554008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.554008] [0x00006690] [warning] [P2 Fan] layer_id=228 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.554507] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.554507] [0x00004b0c] [warning] [P2 Fan] layer_id=229 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.555006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.555006] [0x00006690] [warning] [P2 Fan] layer_id=230 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.555507] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.555507] [0x00004b0c] [warning] [P2 Fan] layer_id=231 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.556008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.556008] [0x00006690] [warning] [P2 Fan] layer_id=232 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.556507] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.557007] [0x00004b0c] [warning] [P2 Fan] layer_id=233 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.557007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.557507] [0x00006690] [warning] [P2 Fan] layer_id=234 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.558006] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.558006] [0x000025bc] [warning] [P2 Fan] layer_id=235 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.558506] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.558506] [0x00006690] [warning] [P2 Fan] layer_id=236 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.559007] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.559007] [0x000025bc] [warning] [P2 Fan] layer_id=237 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.559506] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.559506] [0x00006690] [warning] [P2 Fan] layer_id=238 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.560006] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.560006] [0x000025bc] [warning] [P2 Fan] layer_id=239 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.560506] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.561008] [0x00006690] [warning] [P2 Fan] layer_id=240 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.561507] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.561507] [0x0000597c] [warning] [P2 Fan] layer_id=241 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.562007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.562007] [0x00006690] [warning] [P2 Fan] layer_id=242 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.562511] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.562511] [0x00004b0c] [warning] [P2 Fan] layer_id=243 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.563008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.563008] [0x00006690] [warning] [P2 Fan] layer_id=244 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.563507] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.563507] [0x00001428] [warning] [P2 Fan] layer_id=245 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.564006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.564006] [0x00006690] [warning] [P2 Fan] layer_id=246 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.564507] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.565007] [0x00001428] [warning] [P2 Fan] layer_id=247 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.565007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.565507] [0x00006690] [warning] [P2 Fan] layer_id=248 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.566007] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.566007] [0x000025bc] [warning] [P2 Fan] layer_id=249 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.566506] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.566506] [0x00006690] [warning] [P2 Fan] layer_id=250 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.567008] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.567008] [0x000025bc] [warning] [P2 Fan] layer_id=251 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.567508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.567508] [0x00006690] [warning] [P2 Fan] layer_id=252 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.568007] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.568007] [0x000025bc] [warning] [P2 Fan] layer_id=253 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.568507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.568507] [0x00006690] [warning] [P2 Fan] layer_id=254 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.569007] [0x000010a0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.569007] [0x000010a0] [warning] [P2 Fan] layer_id=255 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.569507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.570007] [0x00006690] [warning] [P2 Fan] layer_id=256 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.570507] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.570507] [0x00000c74] [warning] [P2 Fan] layer_id=257 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.571006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.571006] [0x00006690] [warning] [P2 Fan] layer_id=258 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.571507] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.571507] [0x00000c74] [warning] [P2 Fan] layer_id=259 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.572007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.572007] [0x00006690] [warning] [P2 Fan] layer_id=260 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.572507] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.572507] [0x00000c74] [warning] [P2 Fan] layer_id=261 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.573006] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.573006] [0x000062c4] [warning] [P2 Fan] layer_id=262 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.573507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.573507] [0x00006690] [warning] [P2 Fan] layer_id=263 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.574007] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.574007] [0x0000597c] [warning] [P2 Fan] layer_id=264 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.574506] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.574506] [0x00004100] [warning] [P2 Fan] layer_id=265 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.575007] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.575007] [0x000062c4] [warning] [P2 Fan] layer_id=266 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.575507] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.575507] [0x0000597c] [warning] [P2 Fan] layer_id=267 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.576007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.576007] [0x00006690] [warning] [P2 Fan] layer_id=268 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.576508] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.576508] [0x00004ac4] [warning] [P2 Fan] layer_id=269 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.577007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.577007] [0x00006690] [warning] [P2 Fan] layer_id=270 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.577508] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.577508] [0x0000597c] [warning] [P2 Fan] layer_id=271 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.578008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.578508] [0x00006690] [warning] [P2 Fan] layer_id=272 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.578508] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.579007] [0x00004b0c] [warning] [P2 Fan] layer_id=273 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.579507] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.579507] [0x00001428] [warning] [P2 Fan] layer_id=274 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.580007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.580007] [0x00006690] [warning] [P2 Fan] layer_id=275 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.580508] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.580508] [0x00004100] [warning] [P2 Fan] layer_id=276 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.581008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.581008] [0x00006690] [warning] [P2 Fan] layer_id=277 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.581507] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.581507] [0x00004100] [warning] [P2 Fan] layer_id=278 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.582006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.582006] [0x00006690] [warning] [P2 Fan] layer_id=279 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.582507] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.582507] [0x00004100] [warning] [P2 Fan] layer_id=280 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.583007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.583507] [0x00006690] [warning] [P2 Fan] layer_id=281 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.583507] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.584006] [0x0000597c] [warning] [P2 Fan] layer_id=282 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.584006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.584507] [0x00006690] [warning] [P2 Fan] layer_id=283 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.584507] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.585008] [0x00000c74] [warning] [P2 Fan] layer_id=284 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.585008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.585508] [0x00006690] [warning] [P2 Fan] layer_id=285 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.586008] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.586008] [0x000025bc] [warning] [P2 Fan] layer_id=286 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.586509] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.586509] [0x00006690] [warning] [P2 Fan] layer_id=287 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.587008] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.587008] [0x0000104c] [warning] [P2 Fan] layer_id=288 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.587507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.587507] [0x00006690] [warning] [P2 Fan] layer_id=289 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.588007] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.588506] [0x0000104c] [warning] [P2 Fan] layer_id=290 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.588506] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.589006] [0x00006690] [warning] [P2 Fan] layer_id=291 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.589506] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.589506] [0x000025bc] [warning] [P2 Fan] layer_id=292 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.590008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.590008] [0x00006690] [warning] [P2 Fan] layer_id=293 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.590508] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.590508] [0x000062c4] [warning] [P2 Fan] layer_id=294 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.591008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.591008] [0x00006690] [warning] [P2 Fan] layer_id=295 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.591508] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.591508] [0x00001428] [warning] [P2 Fan] layer_id=296 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.592007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.592007] [0x00006690] [warning] [P2 Fan] layer_id=297 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.592507] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.592507] [0x00001428] [warning] [P2 Fan] layer_id=298 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.593007] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.593508] [0x00004ac4] [warning] [P2 Fan] layer_id=299 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.594007] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.594007] [0x00004100] [warning] [P2 Fan] layer_id=300 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.594507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.594507] [0x00006690] [warning] [P2 Fan] layer_id=301 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.595009] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.595009] [0x00004100] [warning] [P2 Fan] layer_id=302 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.595507] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.595507] [0x00000c74] [warning] [P2 Fan] layer_id=303 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.596009] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.596009] [0x00006690] [warning] [P2 Fan] layer_id=304 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.596508] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.596508] [0x00004b0c] [warning] [P2 Fan] layer_id=305 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.597007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.597007] [0x00006690] [warning] [P2 Fan] layer_id=306 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.597507] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.597507] [0x00004b0c] [warning] [P2 Fan] layer_id=307 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.598007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.598007] [0x00006690] [warning] [P2 Fan] layer_id=308 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.598507] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.599008] [0x00004b0c] [warning] [P2 Fan] layer_id=309 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.599008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.599507] [0x00006690] [warning] [P2 Fan] layer_id=310 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.600008] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.600008] [0x000063b4] [warning] [P2 Fan] layer_id=311 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.600008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.600508] [0x00006690] [warning] [P2 Fan] layer_id=312 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.601008] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.601008] [0x000025bc] [warning] [P2 Fan] layer_id=313 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.601508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.601508] [0x00006690] [warning] [P2 Fan] layer_id=314 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.602008] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.602008] [0x0000104c] [warning] [P2 Fan] layer_id=315 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.602508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.602508] [0x00006690] [warning] [P2 Fan] layer_id=316 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.603008] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.603008] [0x00004b0c] [warning] [P2 Fan] layer_id=317 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.603508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.604007] [0x00006690] [warning] [P2 Fan] layer_id=318 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.604007] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.604508] [0x000063b4] [warning] [P2 Fan] layer_id=319 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.605007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.605007] [0x00006690] [warning] [P2 Fan] layer_id=320 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.605508] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.605508] [0x0000597c] [warning] [P2 Fan] layer_id=321 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.606008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.606008] [0x00006690] [warning] [P2 Fan] layer_id=322 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.606508] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.606508] [0x00004100] [warning] [P2 Fan] layer_id=323 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.607007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.607007] [0x00006690] [warning] [P2 Fan] layer_id=324 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.607508] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.608008] [0x000062c4] [warning] [P2 Fan] layer_id=325 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.608508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.608508] [0x00006690] [warning] [P2 Fan] layer_id=326 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.609008] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.609008] [0x000062c4] [warning] [P2 Fan] layer_id=327 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.609508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.609508] [0x00006690] [warning] [P2 Fan] layer_id=328 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.610007] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.610007] [0x000025bc] [warning] [P2 Fan] layer_id=329 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.610507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.610507] [0x00006690] [warning] [P2 Fan] layer_id=330 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.611007] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.611507] [0x000025bc] [warning] [P2 Fan] layer_id=331 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.611507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.612007] [0x00006690] [warning] [P2 Fan] layer_id=332 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.612506] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.612506] [0x00001428] [warning] [P2 Fan] layer_id=333 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.613007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.613007] [0x00006690] [warning] [P2 Fan] layer_id=334 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.613506] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.613506] [0x000025bc] [warning] [P2 Fan] layer_id=335 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.614008] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.614008] [0x00004100] [warning] [P2 Fan] layer_id=336 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.614507] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.614507] [0x0000597c] [warning] [P2 Fan] layer_id=337 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.615007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.615506] [0x00006690] [warning] [P2 Fan] layer_id=338 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.615506] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.616006] [0x000025bc] [warning] [P2 Fan] layer_id=339 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.616507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.616507] [0x00006690] [warning] [P2 Fan] layer_id=340 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.616507] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.617007] [0x00004b0c] [warning] [P2 Fan] layer_id=341 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.617507] [0x000010a0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.617507] [0x000010a0] [warning] [P2 Fan] layer_id=342 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.618007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.618007] [0x00006690] [warning] [P2 Fan] layer_id=343 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.618508] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.618508] [0x00000c74] [warning] [P2 Fan] layer_id=344 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.619008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.619008] [0x00006690] [warning] [P2 Fan] layer_id=345 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.619507] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.619507] [0x00004b0c] [warning] [P2 Fan] layer_id=346 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.620006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.620006] [0x00006690] [warning] [P2 Fan] layer_id=347 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.620507] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.621008] [0x00004b0c] [warning] [P2 Fan] layer_id=348 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.621008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.621507] [0x00006690] [warning] [P2 Fan] layer_id=349 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.621507] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.622006] [0x00004b0c] [warning] [P2 Fan] layer_id=350 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.622507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.622507] [0x00006690] [warning] [P2 Fan] layer_id=351 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.623007] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.623007] [0x00001428] [warning] [P2 Fan] layer_id=352 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.623507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.623507] [0x00006690] [warning] [P2 Fan] layer_id=353 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.624009] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.624009] [0x00001428] [warning] [P2 Fan] layer_id=354 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.624506] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.624506] [0x00006690] [warning] [P2 Fan] layer_id=355 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.625008] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.625008] [0x00001428] [warning] [P2 Fan] layer_id=356 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.625507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.625507] [0x00006690] [warning] [P2 Fan] layer_id=357 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.626007] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.626007] [0x0000104c] [warning] [P2 Fan] layer_id=358 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.626506] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.627006] [0x00006690] [warning] [P2 Fan] layer_id=359 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.627506] [0x0000104c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.627506] [0x0000104c] [warning] [P2 Fan] layer_id=360 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.628007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.628007] [0x00006690] [warning] [P2 Fan] layer_id=361 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.628508] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.628508] [0x00004ac4] [warning] [P2 Fan] layer_id=362 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.629007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.629508] [0x00006690] [warning] [P2 Fan] layer_id=363 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.630009] [0x000010a0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.630009] [0x000010a0] [warning] [P2 Fan] layer_id=364 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.630509] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.630509] [0x00006690] [warning] [P2 Fan] layer_id=365 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.631008] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.631008] [0x000062c4] [warning] [P2 Fan] layer_id=366 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.631008] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.631509] [0x000063b4] [warning] [P2 Fan] layer_id=367 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.631509] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.632007] [0x00006690] [warning] [P2 Fan] layer_id=368 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.632007] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.632007] [0x0000597c] [warning] [P2 Fan] layer_id=369 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.632509] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.632509] [0x000063b4] [warning] [P2 Fan] layer_id=370 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.633008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.633507] [0x00006690] [warning] [P2 Fan] layer_id=371 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.634007] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.634007] [0x000063b4] [warning] [P2 Fan] layer_id=372 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.634507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.634507] [0x00006690] [warning] [P2 Fan] layer_id=373 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.635007] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.635007] [0x00000c74] [warning] [P2 Fan] layer_id=374 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.635509] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.635509] [0x00006690] [warning] [P2 Fan] layer_id=375 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.636007] [0x00000c74] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.636007] [0x00000c74] [warning] [P2 Fan] layer_id=376 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.636507] [0x00001428] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.636507] [0x00001428] [warning] [P2 Fan] layer_id=377 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.637008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.637008] [0x00006690] [warning] [P2 Fan] layer_id=378 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.637507] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.637507] [0x0000597c] [warning] [P2 Fan] layer_id=379 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.638006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.638006] [0x00006690] [warning] [P2 Fan] layer_id=380 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.638506] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.639007] [0x0000597c] [warning] [P2 Fan] layer_id=381 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.639007] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.639508] [0x000063b4] [warning] [P2 Fan] layer_id=382 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.640008] [0x000010a0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.640008] [0x000010a0] [warning] [P2 Fan] layer_id=383 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.640508] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.640508] [0x000062c4] [warning] [P2 Fan] layer_id=384 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.641008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.641508] [0x00006690] [warning] [P2 Fan] layer_id=385 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.641508] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.642010] [0x000063b4] [warning] [P2 Fan] layer_id=386 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.642010] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.642508] [0x00004b0c] [warning] [P2 Fan] layer_id=387 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.643007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.643007] [0x00006690] [warning] [P2 Fan] layer_id=388 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.643508] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.643508] [0x00004b0c] [warning] [P2 Fan] layer_id=389 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.644007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.644007] [0x00006690] [warning] [P2 Fan] layer_id=390 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.644508] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.644508] [0x000025bc] [warning] [P2 Fan] layer_id=391 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.645007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.645507] [0x00006690] [warning] [P2 Fan] layer_id=392 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.646008] [0x000063b4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.646008] [0x000063b4] [warning] [P2 Fan] layer_id=393 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.646507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.646507] [0x00006690] [warning] [P2 Fan] layer_id=394 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.647008] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.647008] [0x00004ac4] [warning] [P2 Fan] layer_id=395 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.647508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.647508] [0x00006690] [warning] [P2 Fan] layer_id=396 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.648007] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.648007] [0x00004ac4] [warning] [P2 Fan] layer_id=397 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.648507] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.649007] [0x00006690] [warning] [P2 Fan] layer_id=398 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.649007] [0x00004b0c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.649507] [0x00004b0c] [warning] [P2 Fan] layer_id=399 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.650007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.650007] [0x00006690] [warning] [P2 Fan] layer_id=400 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.650507] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.650507] [0x0000597c] [warning] [P2 Fan] layer_id=401 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.651007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.651007] [0x00006690] [warning] [P2 Fan] layer_id=402 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.651508] [0x0000597c] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.651508] [0x0000597c] [warning] [P2 Fan] layer_id=403 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.652007] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.652007] [0x00004100] [warning] [P2 Fan] layer_id=404 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.652508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.652508] [0x00006690] [warning] [P2 Fan] layer_id=405 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.653008] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.653508] [0x00004ac4] [warning] [P2 Fan] layer_id=406 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.654007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.654007] [0x00006690] [warning] [P2 Fan] layer_id=407 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.654508] [0x000010a0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.654508] [0x000010a0] [warning] [P2 Fan] layer_id=408 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.655007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.655007] [0x00006690] [warning] [P2 Fan] layer_id=409 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.655508] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.656007] [0x000062c4] [warning] [P2 Fan] layer_id=410 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.656007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.656510] [0x00006690] [warning] [P2 Fan] layer_id=411 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.657007] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.657007] [0x000025bc] [warning] [P2 Fan] layer_id=412 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.657508] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.657508] [0x00006690] [warning] [P2 Fan] layer_id=413 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.658006] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.658006] [0x000025bc] [warning] [P2 Fan] layer_id=414 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.658506] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.658506] [0x00006690] [warning] [P2 Fan] layer_id=415 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.659008] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.659008] [0x000025bc] [warning] [P2 Fan] layer_id=416 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.660008] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.660008] [0x00006690] [warning] [P2 Fan] layer_id=417 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.660507] [0x00004100] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.660507] [0x00004100] [warning] [P2 Fan] layer_id=418 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.661007] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.661007] [0x00006690] [warning] [P2 Fan] layer_id=419 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.661507] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.661507] [0x00004ac4] [warning] [P2 Fan] layer_id=420 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.662006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.662006] [0x00006690] [warning] [P2 Fan] layer_id=421 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.662507] [0x000062c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.663006] [0x000062c4] [warning] [P2 Fan] layer_id=422 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.663006] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.663507] [0x00006690] [warning] [P2 Fan] layer_id=423 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.664007] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.664007] [0x000025bc] [warning] [P2 Fan] layer_id=424 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.664506] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.664506] [0x00006690] [warning] [P2 Fan] layer_id=425 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.665006] [0x000025bc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.665006] [0x000025bc] [warning] [P2 Fan] layer_id=426 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.665506] [0x00006690] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.665506] [0x00006690] [warning] [P2 Fan] layer_id=427 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.668507] [0x00004ac4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:26.668507] [0x00004ac4] [warning] [P2 Fan] layer_id=428 >= after_layers(0), speed=0
+[2026-08-27 18:33:26.781506] [0x00006690] [info]    Slic3r::GCodeProcessorResult::reset 639: this=000000B1326CD928 reset finished
+[2026-08-27 18:33:26.789008] [0x00006690] [info]    rename_file from C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\slicer-einsatz-petg-no-support-no-repair/plate_1.gcode.tmp to C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\slicer-einsatz-petg-no-support-no-repair/plate_1.gcode successfully
+[2026-08-27 18:33:26.789508] [0x00006690] [info]    Exporting G-code finished WorkingSet: 290MB; PrivateBytes: 386MB; Pagefile(peak): 386MB(403MB)
+[2026-08-27 18:33:26.791008] [0x00006690] [info]    export_gcode finished: time_using_cache update to 2 secs.
+[2026-08-27 18:33:26.791384] [0x00006690] [info]    Slicing result exported to C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\slicer-einsatz-petg-no-support-no-repair/plate_1.gcode
+
+[2026-08-27 18:33:26.791434] [0x00006690] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 1
+[2026-08-27 18:33:26.791536] [0x00006690] [info]    Slic3r::CLI::run, Finished
+
+[2026-08-27 18:33:26.791536] [0x00006690] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 1 to 0
+[2026-08-27 18:33:26.791536] [0x00006690] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:33:26.791536] [0x00006690] [info]    Slic3r::PrintObject::~PrintObject: this=000001CD53379D50, m_shared_object 0000000000000000
+[2026-08-27 18:33:26.849039] [0x00006690] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:33:26.849482] [0x00006690] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0

@@ -1,0 +1,47 @@
+{
+  "diagnostics": {
+    "fatal_message_after_successful_output": false,
+    "gcode_pre_config_suspicious_lines": [],
+    "known_nonfatal_plate_exclusion_visualization_message": true,
+    "stderr": "",
+    "stdout": "[2026-08-25 16:11:15.924784] [0x00001920] [trace]   Initializing StaticPrintConfigs\n[2026-08-25 16:11:16.509529] [0x00001920] [error]   Slic3r::GUI::PartPlate::calc_exclude_triangles:Unable to create exclude triangles\n\n"
+  },
+  "gcode": {
+    "bytes": 170709743,
+    "path": "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/full-model-fastpath-0500um-candidate/anycubic-no-check-slice-attempt03/plate_1.gcode",
+    "sha256": "879bb3aa9583a26e5c0a5d5a3b1aad6239666fd4c91b4efbc8b3cca247d12efd"
+  },
+  "header": {
+    "max_z_height": "190.60",
+    "model_instances": "1",
+    "source_info": "{\"models\":[{\"file_source\":0,\"mo_file_id\":-1,\"name\":\"full-model-fastpath-0500um-CANDIDATE.stl_id_0_copy_0\"}],\"models_from\":0,\"plate_index\":1,\"slice_paras_process\":1,\"software_version\":\"AnycubicSlicerNext 1.4.1.2 20260604104233\"}",
+    "total layer number": "953"
+  },
+  "layers": {
+    "first_z_mm": 0.2,
+    "last_z_mm": 190.6,
+    "layer_change_markers": 953,
+    "layers_without_positive_extrusion": [],
+    "minimum_positive_extrusion_moves_per_layer": 43,
+    "strictly_increasing_z": true,
+    "z_markers": 953
+  },
+  "mode": {
+    "auto_repair": "DISABLED_BY_--no-check",
+    "filament": "Anycubic PLA @Anycubic Kobra S1 0.4 nozzle",
+    "machine": "Anycubic Kobra S1 0.4 nozzle",
+    "orientation": "source +Y mapped to slicer +Z by --rotate-x 90; --ensure-on-bed; --arrange 1",
+    "process": "0.20mm High Quality @Anycubic Kobra S1 0.4 nozzle"
+  },
+  "objects": {
+    "definitions": 1,
+    "end_markers": 953,
+    "start_markers": 953
+  },
+  "pass": true,
+  "schema": "ai3d.full-model-fastpath.anycubic-slice-audit.v1",
+  "slicer": {
+    "name": "AnycubicSlicerNext",
+    "version": "1.4.1.2"
+  }
+}

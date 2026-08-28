@@ -1,0 +1,68 @@
+{
+  "schema": "ai3d.benchmark-b.gate-report.v1",
+  "requirements_revision": "B-2026-08-25.1",
+  "candidate": {
+    "id": null,
+    "source_sha256": null,
+    "status": "NOT_EVALUATED"
+  },
+  "dimension_gate": {
+    "prior_main_dimensions_pass": null,
+    "outlet": {
+      "functional_length_target_mm": 50.0,
+      "functional_length_measured_mm": null,
+      "measurement_method": "centerline arc length from main-body exit to functional overhang end",
+      "start_reference": null,
+      "end_reference": null,
+      "top_open_over_full_length": null,
+      "minimum_clear_width_mm": null,
+      "minimum_width_position_mm": null,
+      "maximum_clear_width_mm": null,
+      "maximum_width_position_mm": null
+    },
+    "grid_surfaces_present": {
+      "dish_brush": null,
+      "sponge": null,
+      "detergent_bottle": null
+    },
+    "pass": null
+  },
+  "function_gate": {
+    "water": {
+      "brush_grid_to_outlet_connected": null,
+      "sponge_grid_to_outlet_connected": null,
+      "detergent_grid_to_outlet_connected": null,
+      "channel_open_and_free": null,
+      "no_unintended_pockets": null,
+      "no_dead_ends": null,
+      "no_unconnected_local_minima": null,
+      "sink_rim_rise_verified": null,
+      "free_discharge_after_rim_verified": null
+    },
+    "use": {
+      "dish_brush_stably_supported": null,
+      "sponge_stably_supported": null,
+      "detergent_bottle_stably_supported": null,
+      "objects_supported_by_real_grid_geometry": null,
+      "drainage_remains_functional_when_loaded": null
+    },
+    "fdm": {
+      "profile": null,
+      "grid_struts_robust": null,
+      "grid_openings_not_unnecessarily_fine": null,
+      "bridge_spans_acceptable": null,
+      "slicable_geometry": null,
+      "stl_roundtrip_pass": null,
+      "3mf_roundtrip_pass": null,
+      "slicer_pass": null
+    },
+    "pass": null
+  },
+  "grid_measurements": {
+    "dish_brush": null,
+    "sponge": null,
+    "detergent_bottle": null
+  },
+  "evidence": [],
+  "overall_pass": null
+}

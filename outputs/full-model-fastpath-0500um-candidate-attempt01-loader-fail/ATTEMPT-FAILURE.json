@@ -1,0 +1,9 @@
+{
+  "classification": "FAILED PRE-BUILD ATTEMPT / NO CANDIDATE GEOMETRY CREATED",
+  "stage": "load_and_component_classification",
+  "reason": "Initial runner used raw trimesh connectivity and found 219 islands instead of the established positions-based 19-component Phase-4 decomposition.",
+  "geometry_created": false,
+  "source_modified": false,
+  "frozen_smoke_candidate_modified": false,
+  "corrective_action": "Runner changed to reuse phase4_component_atlas.face_component_labels and extract_component exactly as the validated tail analysis does. The retry uses a new output directory."
+}

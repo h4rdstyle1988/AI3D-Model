@@ -1,0 +1,6 @@
+[2026-08-25 16:09:42.737573] [0x00006250] [trace]   Initializing StaticPrintConfigs
+[2026-08-25 16:09:43.284073] [0x00006250] [error]   Slic3r::GUI::PartPlate::calc_exclude_triangles:Unable to create exclude triangles
+
+[2026-08-25 16:09:43.292798] [0x00006250] [error]   plate 1's got error: Nothing to be sliced, Either the print is empty or no object is fully inside the print volume before apply.
+
+Slic3r::CLI::run found error, exit

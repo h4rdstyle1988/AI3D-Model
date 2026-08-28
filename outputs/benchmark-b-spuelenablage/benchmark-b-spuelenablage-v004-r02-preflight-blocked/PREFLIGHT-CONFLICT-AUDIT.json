@@ -1,0 +1,71 @@
+{
+  "all_v004_r01_geometry_hashes_unchanged": true,
+  "blocking_conflicts": [
+    "18.5-19.0 mm below-grid clearance requires floor top Z=8.5-8.0 and a 2 mm shell bottom Z=6.5-6.0, below the unchanged main-body underside Z=10.",
+    "The target floor is 1.5-2.0 mm below the existing outlet end Z=10; retaining that outlet creates a hydraulic low point/water trap.",
+    "The independently requested 0.25-0.40 mm rim relief is not representable by the unchanged 0.5 mm binary build grid."
+  ],
+  "geometry_changed": false,
+  "geometry_created": false,
+  "proof_section": "outputs/benchmark-b-spuelenablage/benchmark-b-spuelenablage-v004-r02-preflight-blocked/PREFLIGHT-CONSTRAINT-CROSS-SECTION.png",
+  "reference_geometry_hashes": {
+    "benchmark-b-spuelenablage-v004-r01-einsatz.3mf": {
+      "matches_v004_r01_manifest": true,
+      "sha256": "3725acd55bb148af34192476f1ff6f37ab84944ba78e9bd45a783f99ae7e1d63"
+    },
+    "benchmark-b-spuelenablage-v004-r01-einsatz.glb": {
+      "matches_v004_r01_manifest": true,
+      "sha256": "06312d526601e2ada387cc07ee79f7f96204e78d77cc9a9ec066bc824f0addba"
+    },
+    "benchmark-b-spuelenablage-v004-r01-einsatz.stl": {
+      "matches_v004_r01_manifest": true,
+      "sha256": "f9034469bd9c85971b2c5534f2222bcb7b790ac115684a28126ff4054eb88bd4"
+    },
+    "benchmark-b-spuelenablage-v004-r01-wanne.3mf": {
+      "matches_v004_r01_manifest": true,
+      "sha256": "5c2abb57b2da5454be34d69e9e4e0b241b095bb13fbe91567c39952b97680d8a"
+    },
+    "benchmark-b-spuelenablage-v004-r01-wanne.glb": {
+      "matches_v004_r01_manifest": true,
+      "sha256": "eb66ffd71d2a269f11305364a47f3bb6672a2861c901d5634588b80d9e27f869"
+    },
+    "benchmark-b-spuelenablage-v004-r01-wanne.stl": {
+      "matches_v004_r01_manifest": true,
+      "sha256": "10c76aec4616db93a29642c4dc2b4fd5a862626b1ae036b4ba05b25f19256e61"
+    },
+    "benchmark-b-spuelenablage-v004-r01-zusammengesetzt.glb": {
+      "matches_v004_r01_manifest": true,
+      "sha256": "10dc0a4ab67293536363d245ffe40c0de33632ad6403ec5523ca566353a639b1"
+    }
+  },
+  "schema": "ai3d.benchmark-b.v004-r02.preflight-conflict.v1",
+  "status": "STOPPED_BEFORE_GEOMETRY",
+  "values": {
+    "existing_clearance_below_grid_underside_mm": 14.622805488476786,
+    "existing_floor_top_z_mm": 12.377194511523214,
+    "existing_outlet_end_floor_top_z_mm": 10.0,
+    "floor_top_for_tip_plus_0p5_clearance_mm": 11.5,
+    "grid_underside_z_mm": 27.0,
+    "holder_cell_x_mm": -9.0,
+    "holder_cell_y_mm": -33.93782217350893,
+    "main_body_bottom_z_mm": 10.0,
+    "plug_tip_z_mm": 12.0,
+    "protrusion_below_main_body_for_18p5_mm": 3.5,
+    "protrusion_below_main_body_for_19_mm": 4.0,
+    "required_lowering_for_18p5_mm": 3.8771945115232143,
+    "required_lowering_for_19_mm": 4.377194511523214,
+    "resulting_under_grid_clearance_at_tip_plus_0p5_mm": 15.5,
+    "rim_relief_representable_in_source_grid": false,
+    "rim_relief_target_mm": [
+      0.25,
+      0.4
+    ],
+    "source_resolution_mm": 0.5,
+    "target_below_outlet_for_18p5_mm": 1.5,
+    "target_below_outlet_for_19_mm": 2.0,
+    "target_floor_top_for_18p5_mm": 8.5,
+    "target_floor_top_for_19_mm": 8.0,
+    "target_shell_bottom_for_18p5_mm": 6.5,
+    "target_shell_bottom_for_19_mm": 6.0
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "base_total_height_including_foot_mm": 30.0,
+  "brush_holder": {
+    "all_four_walls_closed": true,
+    "open_grid_bottom": true,
+    "open_top": true,
+    "wall_mm": 2.0
+  },
+  "brush_holder_mm": {
+    "depth": 85.0,
+    "height_above_main": 100.0,
+    "width": 85.0
+  },
+  "candidate": "benchmark-b-spuelenablage-v004-r01",
+  "documented_functional_exceptions_mm": {
+    "drain_side_walls": "variable tapered functional section",
+    "honeycomb_strut_width": 2.8,
+    "honeycomb_thickness": 3.0
+  },
+  "drain": {
+    "catch_floor_material_thickness_mm": 2.0,
+    "catch_floor_top_formula_mm": "12.0 + 3.0*((y+42.5)/85.0) + 1.0*abs(x)/120.0",
+    "catch_floor_top_front_centre_mm": 12.0,
+    "catch_floor_top_front_outer_edge_mm": 13.0,
+    "catch_floor_top_rear_centre_mm": 15.0,
+    "catch_floor_top_rear_outer_edge_mm": 16.0,
+    "chute_floor_free_end_mm": 10.0,
+    "chute_floor_start_mm": 12.0,
+    "chute_outer_width_mm": 31.0,
+    "location": "front centre",
+    "opening_width_bottom_mm": 25.0,
+    "opening_width_top_mm": 12.0,
+    "short_chute_projection_mm": 12.5,
+    "taper_height_mm": 8.0,
+    "top_open": true
+  },
+  "fdm_assumption": "PETG; 0.4 mm nozzle; 0.20 mm layers",
+  "generation": {
+    "method": "two independent cell-centred binary solids followed by one marching-cubes extraction each",
+    "resolution_mm": 0.5,
+    "shape_changing_repair": false,
+    "smoothing": false
+  },
+  "grid": {
+    "cell_side_mm": 7.0,
+    "insert_outer_depth_mm": 80.0,
+    "insert_outer_width_mm": 235.0,
+    "pattern": "regular hexagonal honeycomb",
+    "perimeter_frame_width_mm": 3.5,
+    "strut_width_mm": 2.8,
+    "thickness_mm": 3.0,
+    "water_openings": true
+  },
+  "insert_seat": {
+    "clearance_each_side_mm": 0.5,
+    "recess_depth_mm": 3.0,
+    "retention": "gravity removable; no clip, detent, magnet, screw or interference fit",
+    "seat_top_z_mm": 27.0,
+    "seat_width_mm": 3.5,
+    "total_clearance_each_axis_mm": 1.0,
+    "tray_clear_opening_depth_mm": 81.0,
+    "tray_clear_opening_width_mm": 236.0,
+    "underside_angle_deg": 45.0
+  },
+  "internal_supports": {
+    "actual_centres_xy_mm": [
+      [
+        -96.5,
+        -15.751289
+      ],
+      [
+        -47.5,
+        -15.751289
+      ],
+      [
+        -2.0,
+        -21.813467
+      ],
+      [
+        47.0,
+        -21.813467
+      ],
+      [
+        92.5,
+        -15.751289
+      ],
+      [
+        -96.5,
+        20.621778
+      ],
+      [
+        -47.5,
+        20.621778
+      ],
+      [
+        -2.0,
+        14.5596
+      ],
+      [
+        47.0,
+        14.5596
+      ],
+      [
+        92.5,
+        20.621778
+      ]
+    ],
+    "count": 10,
+    "diameter_mm": 5.0,
+    "free_flow_around_each_post": true,
+    "layout_targets_x_mm": [
+      -94.0,
+      -47.0,
+      0.0,
+      47.0,
+      94.0
+    ],
+    "layout_targets_y_mm": [
+      -18.0,
+      18.0
+    ],
+    "type": "ten isolated circular posts below honeycomb nodes"
+  },
+  "main_body_mm": {
+    "depth": 85.0,
+    "height": 20.0,
+    "width": 240.0
+  },
+  "material": "PETG",
+  "normal_wall_thickness_mm": 2.0,
+  "porcelain_part": {
+    "part_of_print_mesh": false,
+    "placement": "free and loose directly on the uninterrupted honeycomb grid",
+    "printed_holder_or_guide": false
+  },
+  "print_orientation": {
+    "insert": "natural orientation; honeycomb underside translated to build plate Z=0; holder grows vertically",
+    "tray": "native orientation; rear foot on build plate; no support intended"
+  },
+  "rear_foot_mm": {
+    "depth": 35.0,
+    "height": 10.0,
+    "width": 240.0
+  },
+  "revision": "B-2026-08-27.4.1",
+  "source_3mf": "C:/Users/h4rds/Documents/spuelenablage.3mf",
+  "source_3mf_sha256": "3ed01ac3e2ad8a2a0283bfdccbf206255013aeb62753e5e8a869c81fa90ddf05"
+}

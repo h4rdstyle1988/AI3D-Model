@@ -1,0 +1,31 @@
+{
+  "schema": "ai3d.benchmark-b.requirements-artifact-manifest.v1",
+  "revision": "B-2026-08-25.1",
+  "files": [
+    {
+      "path": "BENCHMARK-B-BINDING-REQUIREMENTS.md",
+      "bytes": 5777,
+      "sha256": "1b157b988b86e7e73d6572ed3af231476d96e028f4c7ce5f296da3a4ae9ba18b"
+    },
+    {
+      "path": "BENCHMARK-B-GATE-REPORT-TEMPLATE.json",
+      "bytes": 1999,
+      "sha256": "afe99d9e75544cda3cf84070ebdbd3c27b6da649dfd66c9a5b74572dac256e8b"
+    },
+    {
+      "path": "benchmark-b-requirements.json",
+      "bytes": 3549,
+      "sha256": "da150052363a4add4df3523bb2a467a481f6b6fdc195838c51886ac5b910ee29"
+    },
+    {
+      "path": "DIMENSION-FUNCTION-REPORT-TEMPLATE.md",
+      "bytes": 2168,
+      "sha256": "d896fc300dbe23d539e2d06b35ff8b1d3f7ff392793c7474270341db8d7f28c2"
+    },
+    {
+      "path": "validate_benchmark_b_gate_report.py",
+      "bytes": 8561,
+      "sha256": "b9e49689e24b1566dbbbe3e0895c8668f284043a603c4bf1f3fa5de8f84bf3c0"
+    }
+  ]
+}

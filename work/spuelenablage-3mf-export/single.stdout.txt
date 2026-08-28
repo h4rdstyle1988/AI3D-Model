@@ -1,0 +1,7 @@
+[2026-08-27 18:38:03.721108] [0x00005b88] [trace]   Initializing StaticPrintConfigs
+[2026-08-27 18:38:03.729608] [0x00005b88] [warning] cli mode, Current AnycubicSlicerNext Version 1.4.1.2
+[2026-08-27 18:38:03.730868] [0x00005b88] [info]    Will start to read model file now, file count :2
+
+[2026-08-27 18:38:03.731526] [0x00005b88] [info]    allow_multicolor_oneplate 1, allow_rotations 1 skip_modified_gcodes 0 avoid_extrusion_cali_region 0 loaded_filament_ids size 0, clone_objects size 0, skip_useless_pick 0, allow_newer_file 0
+[2026-08-27 18:38:03.732030] [0x00005b88] [info]    plate_to_slice=0, normative_check=1, use_first_fila_as_default=0
+Slic3r::CLI::run found error, exit

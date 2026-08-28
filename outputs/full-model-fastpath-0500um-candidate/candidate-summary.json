@@ -1,0 +1,61 @@
+{
+  "schema": "ai3d.full-model-fastpath.candidate-summary.v1",
+  "classification": "CANDIDATE / NON-MASTER",
+  "decision": "A - PRODUCTION FAST-PATH PASS",
+  "pitch_mm": 0.5,
+  "included_components": [1, 5, 8],
+  "excluded_duplicate_tail_skins": [7, 9],
+  "connections": {
+    "C05_to_C01_gap_mm": 3.321546,
+    "C05_to_C08_gap_mm": 10.391633,
+    "nominal_radius_mm": 2.5,
+    "minimum_reconstructed_root_diameter_mm": 5.621592239754,
+    "minimum_reconstructed_curl_connection_diameter_mm": 5.5329881069859
+  },
+  "mesh": {
+    "vertices": 721371,
+    "faces": 1443070,
+    "components": 1,
+    "watertight": true,
+    "edge_manifold": true,
+    "vertex_manifold": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "invalid_vertex_links": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "nonadjacent_self_intersections_or_contacts": 0,
+    "winding_consistent": true,
+    "bounds_extents_mm": [146.5, 190.5, 146.0],
+    "signed_volume_mm3": 1245106.046875
+  },
+  "form": {
+    "candidate_to_visible_input_median_mm": 0.331965118646622,
+    "candidate_to_visible_input_p95_mm": 0.474883437156677,
+    "candidate_to_visible_input_sampled_max_mm": 0.704021513462067,
+    "mouth_area_ratio": 0.986827957840093,
+    "mouth_width_ratio": 1.00263157894737,
+    "mouth_height_ratio": 0.989482312338223,
+    "mouth_depth_contrast_ratio": 0.988388889488305
+  },
+  "timing_seconds": {
+    "reconstruction": 24.74529298,
+    "export": 4.521538184,
+    "roundtrip_load_and_topology": 35.089691178,
+    "exact_self_intersection_deep_step": 215.54786094,
+    "build_and_strict_gate_total": 323.237672345,
+    "normal_pipeline_without_exact_deep_step": 107.689811405,
+    "anycubic_slice": 17.7443768
+  },
+  "peak_ram_bytes": 6986354688,
+  "roundtrips": {"stl": "PASS", "3mf": "PASS", "anycubic_no_check_stl": "PASS"},
+  "layer_tests": {"internal": 381, "stl": 381, "3mf": 381, "anycubic_gcode": 953, "failed_or_empty": 0},
+  "artifacts": {
+    "stl_sha256": "9e2a2367af8bd34720b11dfa6a4149e720371c6f9f6d646e9adec239ebea1158",
+    "3mf_sha256": "5cf6001018a3b97ce8aee6d8255252fae4bd313d293bb2f2d702bf9cd3c53cad",
+    "working_npz_sha256": "1abe583e8070366aa013ce07adf18dca62a7ba2020c6572eab12898300d292c7",
+    "gcode_sha256": "879bb3aa9583a26e5c0a5d5a3b1aad6239666fd4c91b4efbc8b3cca247d12efd"
+  },
+  "source_and_previous_artifacts_modified": false,
+  "invalidated_methods_used": false
+}

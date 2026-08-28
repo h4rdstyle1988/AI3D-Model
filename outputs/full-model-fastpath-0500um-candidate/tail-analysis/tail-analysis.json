@@ -1,0 +1,3068 @@
+{
+  "analysis_only": true,
+  "invalidated_methods_not_used": [
+    "invalidated-cumesh-raytrace-v1",
+    "invalidated-edge-connectivity-split-v1"
+  ],
+  "inventory": {
+    "1": {
+      "bounds_mm": {
+        "center_mm": [
+          0.0037946961410355584,
+          0.11916081618122121,
+          8.271860318246315
+        ],
+        "diagonal_mm": 272.15665564449256,
+        "extents_mm": [
+          146.08417115311283,
+          190.0,
+          128.95216225446921
+        ],
+        "maximum_mm": [
+          73.04588027269745,
+          95.11916081618122,
+          72.74794144548092
+        ],
+        "minimum_mm": [
+          -73.03829088041537,
+          -94.88083918381878,
+          -56.20422080898829
+        ]
+      },
+      "self_intersections_and_contacts": {
+        "algorithm": "Float64 conservative centroid-sphere/AABB/plane broadphase plus exact triangle narrowphase; shared-vertex pairs excluded",
+        "candidate_statistics": {
+          "aabb_pass": 59981,
+          "kdtree_query_hits": 6865449,
+          "narrow_phase": 5220,
+          "nonadjacent_ordered_pairs": 1827616,
+          "plane_pass": 5220,
+          "sphere_pass": 990095
+        },
+        "counts": {},
+        "distance_tolerance_model_units": 2.7215665564449256e-08,
+        "event_count": 0,
+        "events": [],
+        "seconds": 4.087928295000005,
+        "triangle_count": 232219
+      },
+      "stable_role": "C01 body",
+      "topology": {
+        "boundary_edges": 68,
+        "bounds": {
+          "center_mm": [
+            0.0037946961410355584,
+            0.11916081618122121,
+            8.271860318246315
+          ],
+          "diagonal_mm": 272.15665564449256,
+          "extents_mm": [
+            146.08417115311283,
+            190.0,
+            128.95216225446921
+          ],
+          "maximum_mm": [
+            73.04588027269745,
+            95.11916081618122,
+            72.74794144548092
+          ],
+          "minimum_mm": [
+            -73.03829088041537,
+            -94.88083918381878,
+            -56.20422080898829
+          ]
+        },
+        "duplicate_faces_unoriented": 0,
+        "edge_manifold_closed": false,
+        "euler_number": -102,
+        "faces": 232219,
+        "finite_face_normals": true,
+        "finite_vertices": true,
+        "invalid_vertex_link_examples": [
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 8199
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 8200
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 10587
+          },
+          {
+            "incident_faces": 11,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 10,
+            "vertex": 10589
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 10594
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 9,
+            "vertex": 10599
+          },
+          {
+            "incident_faces": 10,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 9,
+            "vertex": 10603
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 9,
+            "vertex": 10606
+          },
+          {
+            "incident_faces": 4,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 10610
+          },
+          {
+            "incident_faces": 5,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 10612
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 10627
+          },
+          {
+            "incident_faces": 11,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 9,
+            "vertex": 10629
+          },
+          {
+            "incident_faces": 10,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 10630
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 10634
+          },
+          {
+            "incident_faces": 12,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 10,
+            "vertex": 10636
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 10640
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 10642
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 10643
+          },
+          {
+            "incident_faces": 4,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 10645
+          },
+          {
+            "incident_faces": 4,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 10648
+          },
+          {
+            "incident_faces": 4,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 10658
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 16464
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 16467
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 16474
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 16476
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 16477
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 16480
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 16492
+          },
+          {
+            "incident_faces": 11,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 9,
+            "vertex": 16493
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 16500
+          },
+          {
+            "incident_faces": 5,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 16501
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 16504
+          },
+          {
+            "incident_faces": 5,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 16506
+          },
+          {
+            "incident_faces": 10,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 9,
+            "vertex": 16507
+          },
+          {
+            "incident_faces": 5,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 16509
+          },
+          {
+            "incident_faces": 4,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 4,
+            "vertex": 16515
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 17331
+          },
+          {
+            "incident_faces": 5,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 23050
+          },
+          {
+            "incident_faces": 11,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 10,
+            "vertex": 23060
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 23061
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 23082
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 23085
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 23086
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 23095
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 23097
+          },
+          {
+            "incident_faces": 5,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 23157
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 23158
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 23168
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 23170
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 23171
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 23173
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 23177
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 23180
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 23181
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 23182
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 23188
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 23190
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 23206
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 23209
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 23214
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 23215
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 23216
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 23218
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 23219
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 23222
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 23225
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 23227
+          },
+          {
+            "incident_faces": 5,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 24751
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 24752
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 24756
+          },
+          {
+            "incident_faces": 12,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 12,
+            "vertex": 24758
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 24761
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 24765
+          },
+          {
+            "incident_faces": 5,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 24766
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 24768
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 34781
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 34787
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 34808
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 34809
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 34810
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 34812
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 9,
+            "vertex": 34815
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 34816
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 9,
+            "vertex": 34819
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 9,
+            "vertex": 34822
+          },
+          {
+            "incident_faces": 5,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 34823
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 34833
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 35249
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 35253
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 35255
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 35256
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 35260
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 35261
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 8,
+            "vertex": 35974
+          },
+          {
+            "incident_faces": 7,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 35976
+          },
+          {
+            "incident_faces": 6,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 5,
+            "vertex": 35978
+          },
+          {
+            "incident_faces": 10,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 9,
+            "vertex": 35979
+          },
+          {
+            "incident_faces": 4,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 4,
+            "vertex": 35998
+          },
+          {
+            "incident_faces": 5,
+            "link_components": 2,
+            "link_degree_max": 2,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 36004
+          },
+          {
+            "incident_faces": 8,
+            "link_components": 1,
+            "link_degree_max": 4,
+            "link_degree_min": 0,
+            "link_vertices": 7,
+            "vertex": 36039
+          }
+        ],
+        "invalid_vertex_links": 533,
+        "is_volume": false,
+        "maximum_edge_incidence": 4,
+        "nonmanifold_edges": 273,
+        "repeated_index_faces": 0,
+        "shared_edge_components": 52,
+        "shared_vertex_components": 1,
+        "signed_volume_mm3": 1138714.5254492462,
+        "surface_area_mm2": 140173.427400326,
+        "vertex_manifold": false,
+        "vertices": 115805,
+        "watertight": false,
+        "winding_consistent": true,
+        "zero_area_faces": 0,
+        "zero_length_face_normals": 0
+      }
+    },
+    "5": {
+      "bounds_mm": {
+        "center_mm": [
+          -32.10008772451617,
+          -89.76346930217565,
+          -60.03860703807337
+        ],
+        "diagonal_mm": 55.80579668664956,
+        "extents_mm": [
+          48.46337388446001,
+          10.697528566932462,
+          25.517664825104404
+        ],
+        "maximum_mm": [
+          -7.868400782286163,
+          -84.41470501870941,
+          -47.27977462552117
+        ],
+        "minimum_mm": [
+          -56.33177466674618,
+          -95.11223358564187,
+          -72.79743945062557
+        ]
+      },
+      "self_intersections_and_contacts": {
+        "algorithm": "Float64 conservative centroid-sphere/AABB/plane broadphase plus exact triangle narrowphase; shared-vertex pairs excluded",
+        "candidate_statistics": {
+          "aabb_pass": 474,
+          "kdtree_query_hits": 69832,
+          "narrow_phase": 73,
+          "nonadjacent_ordered_pairs": 14384,
+          "plane_pass": 73,
+          "sphere_pass": 8657
+        },
+        "counts": {},
+        "distance_tolerance_model_units": 5.580579668664956e-09,
+        "event_count": 0,
+        "events": [],
+        "seconds": 0.050722876999998334,
+        "triangle_count": 2954
+      },
+      "stable_role": "tail-related",
+      "topology": {
+        "boundary_edges": 0,
+        "bounds": {
+          "center_mm": [
+            -32.10008772451617,
+            -89.76346930217565,
+            -60.03860703807337
+          ],
+          "diagonal_mm": 55.80579668664956,
+          "extents_mm": [
+            48.46337388446001,
+            10.697528566932462,
+            25.517664825104404
+          ],
+          "maximum_mm": [
+            -7.868400782286163,
+            -84.41470501870941,
+            -47.27977462552117
+          ],
+          "minimum_mm": [
+            -56.33177466674618,
+            -95.11223358564187,
+            -72.79743945062557
+          ]
+        },
+        "duplicate_faces_unoriented": 0,
+        "edge_manifold_closed": true,
+        "euler_number": 2,
+        "faces": 2954,
+        "finite_face_normals": true,
+        "finite_vertices": true,
+        "invalid_vertex_link_examples": [],
+        "invalid_vertex_links": 0,
+        "is_volume": true,
+        "maximum_edge_incidence": 2,
+        "nonmanifold_edges": 0,
+        "repeated_index_faces": 0,
+        "shared_edge_components": 1,
+        "shared_vertex_components": 1,
+        "signed_volume_mm3": 1247.1467264637204,
+        "surface_area_mm2": 1019.8554707084866,
+        "vertex_manifold": true,
+        "vertices": 1479,
+        "watertight": true,
+        "winding_consistent": true,
+        "zero_area_faces": 0,
+        "zero_length_face_normals": 0
+      }
+    },
+    "7": {
+      "bounds_mm": {
+        "center_mm": [
+          -32.09173217714074,
+          -89.75956141599312,
+          -60.01139898184962
+        ],
+        "diagonal_mm": 54.66131241546973,
+        "extents_mm": [
+          47.703284362456195,
+          9.962613925032088,
+          24.758878403453267
+        ],
+        "maximum_mm": [
+          -8.240089995912648,
+          -84.77825445347708,
+          -47.63195978012298
+        ],
+        "minimum_mm": [
+          -55.94337435836884,
+          -94.74086837850916,
+          -72.39083818357625
+        ]
+      },
+      "self_intersections_and_contacts": {
+        "algorithm": "Float64 conservative centroid-sphere/AABB/plane broadphase plus exact triangle narrowphase; shared-vertex pairs excluded",
+        "candidate_statistics": {
+          "aabb_pass": 467,
+          "kdtree_query_hits": 64386,
+          "narrow_phase": 87,
+          "nonadjacent_ordered_pairs": 13645,
+          "plane_pass": 87,
+          "sphere_pass": 9182
+        },
+        "counts": {},
+        "distance_tolerance_model_units": 5.466131241546973e-09,
+        "event_count": 0,
+        "events": [],
+        "seconds": 0.052368099999995366,
+        "triangle_count": 2733
+      },
+      "stable_role": "tail-related",
+      "topology": {
+        "boundary_edges": 2,
+        "bounds": {
+          "center_mm": [
+            -32.09173217714074,
+            -89.75956141599312,
+            -60.01139898184962
+          ],
+          "diagonal_mm": 54.66131241546973,
+          "extents_mm": [
+            47.703284362456195,
+            9.962613925032088,
+            24.758878403453267
+          ],
+          "maximum_mm": [
+            -8.240089995912648,
+            -84.77825445347708,
+            -47.63195978012298
+          ],
+          "minimum_mm": [
+            -55.94337435836884,
+            -94.74086837850916,
+            -72.39083818357625
+          ]
+        },
+        "duplicate_faces_unoriented": 0,
+        "edge_manifold_closed": false,
+        "euler_number": 2,
+        "faces": 2733,
+        "finite_face_normals": true,
+        "finite_vertices": true,
+        "invalid_vertex_link_examples": [
+          {
+            "incident_faces": 6,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 6,
+            "vertex": 635
+          },
+          {
+            "incident_faces": 9,
+            "link_components": 1,
+            "link_degree_max": 3,
+            "link_degree_min": 0,
+            "link_vertices": 9,
+            "vertex": 638
+          },
+          {
+            "incident_faces": 1,
+            "link_components": 1,
+            "link_degree_max": 1,
+            "link_degree_min": 0,
+            "link_vertices": 2,
+            "vertex": 1355
+          }
+        ],
+        "invalid_vertex_links": 3,
+        "is_volume": false,
+        "maximum_edge_incidence": 3,
+        "nonmanifold_edges": 1,
+        "repeated_index_faces": 0,
+        "shared_edge_components": 2,
+        "shared_vertex_components": 1,
+        "signed_volume_mm3": 898.3382032869373,
+        "surface_area_mm2": 860.0131107549755,
+        "vertex_manifold": false,
+        "vertices": 1369,
+        "watertight": false,
+        "winding_consistent": true,
+        "zero_area_faces": 0,
+        "zero_length_face_normals": 0
+      }
+    },
+    "8": {
+      "bounds_mm": {
+        "center_mm": [
+          -58.72431784978954,
+          -88.88871119376235,
+          -38.39754691265524
+        ],
+        "diagonal_mm": 31.808939734993768,
+        "extents_mm": [
+          18.49676952642895,
+          11.001811695974652,
+          23.423029342016164
+        ],
+        "maximum_mm": [
+          -49.47593308657507,
+          -83.38780534577502,
+          -26.686032241647155
+        ],
+        "minimum_mm": [
+          -67.97270261300402,
+          -94.38961704174967,
+          -50.10906158366332
+        ]
+      },
+      "self_intersections_and_contacts": {
+        "algorithm": "Float64 conservative centroid-sphere/AABB/plane broadphase plus exact triangle narrowphase; shared-vertex pairs excluded",
+        "candidate_statistics": {
+          "aabb_pass": 277,
+          "kdtree_query_hits": 36210,
+          "narrow_phase": 31,
+          "nonadjacent_ordered_pairs": 7313,
+          "plane_pass": 31,
+          "sphere_pass": 5109
+        },
+        "counts": {},
+        "distance_tolerance_model_units": 3.1808939734993767e-09,
+        "event_count": 0,
+        "events": [],
+        "seconds": 0.02857491800000389,
+        "triangle_count": 1580
+      },
+      "stable_role": "tail-related",
+      "topology": {
+        "boundary_edges": 0,
+        "bounds": {
+          "center_mm": [
+            -58.72431784978954,
+            -88.88871119376235,
+            -38.39754691265524
+          ],
+          "diagonal_mm": 31.808939734993768,
+          "extents_mm": [
+            18.49676952642895,
+            11.001811695974652,
+            23.423029342016164
+          ],
+          "maximum_mm": [
+            -49.47593308657507,
+            -83.38780534577502,
+            -26.686032241647155
+          ],
+          "minimum_mm": [
+            -67.97270261300402,
+            -94.38961704174967,
+            -50.10906158366332
+          ]
+        },
+        "duplicate_faces_unoriented": 0,
+        "edge_manifold_closed": true,
+        "euler_number": 2,
+        "faces": 1580,
+        "finite_face_normals": true,
+        "finite_vertices": true,
+        "invalid_vertex_link_examples": [],
+        "invalid_vertex_links": 0,
+        "is_volume": true,
+        "maximum_edge_incidence": 2,
+        "nonmanifold_edges": 0,
+        "repeated_index_faces": 0,
+        "shared_edge_components": 1,
+        "shared_vertex_components": 1,
+        "signed_volume_mm3": 507.435502837634,
+        "surface_area_mm2": 486.2236102845276,
+        "vertex_manifold": true,
+        "vertices": 792,
+        "watertight": true,
+        "winding_consistent": true,
+        "zero_area_faces": 0,
+        "zero_length_face_normals": 0
+      }
+    },
+    "9": {
+      "bounds_mm": {
+        "center_mm": [
+          -58.73115169854466,
+          -88.88836879388683,
+          -38.390396131783945
+        ],
+        "diagonal_mm": 30.550177185151725,
+        "extents_mm": [
+          17.75309397531707,
+          10.260320712663557,
+          22.646562635883903
+        ],
+        "maximum_mm": [
+          -49.85460471088612,
+          -83.75820843755506,
+          -27.067114813841997
+        ],
+        "minimum_mm": [
+          -67.6076986862032,
+          -94.01852915021861,
+          -49.7136774497259
+        ]
+      },
+      "self_intersections_and_contacts": {
+        "algorithm": "Float64 conservative centroid-sphere/AABB/plane broadphase plus exact triangle narrowphase; shared-vertex pairs excluded",
+        "candidate_statistics": {
+          "aabb_pass": 314,
+          "kdtree_query_hits": 35617,
+          "narrow_phase": 30,
+          "nonadjacent_ordered_pairs": 8190,
+          "plane_pass": 30,
+          "sphere_pass": 5491
+        },
+        "counts": {},
+        "distance_tolerance_model_units": 3.0550177185151726e-09,
+        "event_count": 0,
+        "events": [],
+        "seconds": 0.023797812999994505,
+        "triangle_count": 1422
+      },
+      "stable_role": "tail-related",
+      "topology": {
+        "boundary_edges": 0,
+        "bounds": {
+          "center_mm": [
+            -58.73115169854466,
+            -88.88836879388683,
+            -38.390396131783945
+          ],
+          "diagonal_mm": 30.550177185151725,
+          "extents_mm": [
+            17.75309397531707,
+            10.260320712663557,
+            22.646562635883903
+          ],
+          "maximum_mm": [
+            -49.85460471088612,
+            -83.75820843755506,
+            -27.067114813841997
+          ],
+          "minimum_mm": [
+            -67.6076986862032,
+            -94.01852915021861,
+            -49.7136774497259
+          ]
+        },
+        "duplicate_faces_unoriented": 0,
+        "edge_manifold_closed": true,
+        "euler_number": 2,
+        "faces": 1422,
+        "finite_face_normals": true,
+        "finite_vertices": true,
+        "invalid_vertex_link_examples": [],
+        "invalid_vertex_links": 0,
+        "is_volume": true,
+        "maximum_edge_incidence": 2,
+        "nonmanifold_edges": 0,
+        "repeated_index_faces": 0,
+        "shared_edge_components": 1,
+        "shared_vertex_components": 1,
+        "signed_volume_mm3": 344.2789789474712,
+        "surface_area_mm2": 393.203376776339,
+        "vertex_manifold": true,
+        "vertices": 713,
+        "watertight": true,
+        "winding_consistent": true,
+        "zero_area_faces": 0,
+        "zero_length_face_normals": 0
+      }
+    }
+  },
+  "mesh_mutated": false,
+  "pairwise": {
+    "C05_C01": {
+      "AABB_IoU": 0.0011191735526694885,
+      "AABB_intersection_extents_mm": [
+        48.46337388446001,
+        10.466134165109366,
+        8.924446183467118
+      ],
+      "AABB_intersection_volume_mm3": 4526.6948363969195,
+      "A_to_B_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 3.3215461016239103,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -9.687126959161523,
+          -88.70819723956762,
+          -45.550648972717035
+        ],
+        "CPU_target_face_for_sampled_witness": 121753,
+        "area_weighted_median_mm": 21.028858184814453,
+        "area_weighted_p01_mm": 3.993924379348755,
+        "area_weighted_p05_mm": 6.32255744934082,
+        "area_weighted_p95_mm": 32.010684967041016,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 8862,
+        "sampled_maximum_mm": 33.59932327270508,
+        "sampled_minimum_mm": 3.3215484619140625,
+        "sampled_source_witness_kind": "vertex",
+        "sampled_source_witness_mm": [
+          -10.026715278625488,
+          -91.05764770507812,
+          -47.87388610839844
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 1479
+      },
+      "B_to_A_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 3.327959796174043,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -10.026715567842565,
+          -91.0576474498373,
+          -47.87388651530696
+        ],
+        "CPU_target_face_for_sampled_witness": 2290,
+        "area_weighted_median_mm": 116.87276458740234,
+        "area_weighted_p01_mm": 19.75309181213379,
+        "area_weighted_p05_mm": 43.39236831665039,
+        "area_weighted_p95_mm": 180.2447967529297,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 696657,
+        "sampled_maximum_mm": 202.0832061767578,
+        "sampled_minimum_mm": 3.3279595375061035,
+        "sampled_source_witness_kind": "quadrature",
+        "sampled_source_witness_mm": [
+          -9.597708702087402,
+          -88.58402252197266,
+          -45.689292907714844
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 115805
+      },
+      "components": [
+        5,
+        1
+      ],
+      "exact_CPU": {
+        "algorithm": {
+          "global_minimum_guarantee": "For non-intersecting meshes, every pair with a centroid-sphere lower bound no greater than the current real-pair upper bound is evaluated.",
+          "intersection_candidate_guarantee": "If two closed triangles intersect, their centroid spheres overlap; the radius-binned KD queries enumerate that pair before exact sphere, AABB, plane, Moller segment and coplanar SAT tests.",
+          "name": "centroid-sphere-kdtree-triangle-narrowphase",
+          "numeric_contract": "float64 predicates under the declared absolute distance, barycentric and angular tolerances; degenerate faces are reported separately.",
+          "version": "1.0.0"
+        },
+        "candidate_statistics": {
+          "global_minimum": {
+            "exact_distance_pairs": 3226,
+            "initial_upper_bound_pairs": 235173,
+            "kdtree_query_hits": 7455,
+            "lower_bound_pass_pairs": 3226
+          },
+          "intersection": {
+            "aabb_pass_pairs": 0,
+            "kdtree_query_hits": 0,
+            "narrow_phase_pairs": 0,
+            "plane_pass_pairs": 0,
+            "sphere_pass_pairs": 0
+          }
+        },
+        "global_minimum": {
+          "distance": 3.321546235261692,
+          "proof": "All pairs capable of improving the current real-pair upper bound were enumerated using lower bound max(0, centroid_distance-radius_a-radius_b); each surviving pair used all vertex-triangle and edge-edge features.",
+          "squared_distance": 11.03266939298112,
+          "status": "exact",
+          "triangle_a": 2290,
+          "triangle_b": 121753,
+          "witness_feature": "a_vertex_2_to_b_face",
+          "witness_point_a": [
+            -10.026715567842565,
+            -91.0576474498373,
+            -47.87388651530696
+          ],
+          "witness_point_b": [
+            -9.687127234715735,
+            -88.70819688979994,
+            -45.550649286153345
+          ]
+        },
+        "intersections": {
+          "examples": [],
+          "examples_truncated": false,
+          "intersecting_pair_count": 0,
+          "intersects": false,
+          "kind_counts": {}
+        },
+        "mesh_a": {
+          "bbox_max": [
+            -7.868400782286163,
+            -84.41470501870941,
+            -47.27977462552117
+          ],
+          "bbox_min": [
+            -56.33177466674618,
+            -95.11223358564187,
+            -72.79743945062557
+          ],
+          "component": 5,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.7981322792480612,
+          "triangle_count": 2954
+        },
+        "mesh_b": {
+          "bbox_max": [
+            73.04588027269745,
+            95.11916081618122,
+            72.74794144548092
+          ],
+          "bbox_min": [
+            -73.03829088041537,
+            -94.88083918381878,
+            -56.20422080898829
+          ],
+          "component": 1,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 2.7481469953917146,
+          "triangle_count": 232219
+        },
+        "reproducibility": {
+          "deterministic_pair_order": true,
+          "mesh_mutation": false,
+          "random_sampling": false,
+          "timings_are_nondeterministic": true
+        },
+        "schema_version": 1,
+        "settings": {
+          "angular_tolerance": 1e-12,
+          "barycentric_tolerance": 1e-10,
+          "chunk_size": 256,
+          "compute_global_minimum": true,
+          "distance_tolerance": 2.8055663666672844e-08,
+          "pair_batch_size": 32768,
+          "radius_bin_count_actual": 8,
+          "radius_bin_count_requested": 8,
+          "workers": 4
+        },
+        "software": {
+          "numpy": "2.4.4",
+          "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "scipy": "1.18.1"
+        },
+        "timings_seconds": {
+          "build_radius_bins": 0.0644978750000007,
+          "global_minimum": 1.314423228999999,
+          "intersection_search": 0.044730645000001346,
+          "total": 1.4236550999999977
+        }
+      }
+    },
+    "C05_C07": {
+      "AABB_IoU": 0.8894356239986677,
+      "AABB_intersection_extents_mm": [
+        47.703284362456195,
+        9.962613925032088,
+        24.758878403453267
+      ],
+      "AABB_intersection_volume_mm3": 11766.642231173535,
+      "A_to_B_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 0.29481441245669565,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -52.06106009800605,
+          -89.52287974642186,
+          -64.83102245915458
+        ],
+        "CPU_target_face_for_sampled_witness": 1176,
+        "area_weighted_median_mm": 0.3702816963195801,
+        "area_weighted_p01_mm": 0.3278372883796692,
+        "area_weighted_p05_mm": 0.34200966358184814,
+        "area_weighted_p95_mm": 0.40109580755233765,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 8862,
+        "sampled_maximum_mm": 0.4556284248828888,
+        "sampled_minimum_mm": 0.2948136031627655,
+        "sampled_source_witness_kind": "quadrature",
+        "sampled_source_witness_mm": [
+          -51.84688186645508,
+          -89.7068099975586,
+          -64.74609375
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 1479
+      },
+      "B_to_A_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 0.27228522083326845,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -52.31397614609,
+          -90.6058021850658,
+          -65.44843080478259
+        ],
+        "CPU_target_face_for_sampled_witness": 326,
+        "area_weighted_median_mm": 0.3709704875946045,
+        "area_weighted_p01_mm": 0.3232535421848297,
+        "area_weighted_p05_mm": 0.340440034866333,
+        "area_weighted_p95_mm": 0.39885810017585754,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 8199,
+        "sampled_maximum_mm": 0.4361889958381653,
+        "sampled_minimum_mm": 0.27228447794914246,
+        "sampled_source_witness_kind": "quadrature",
+        "sampled_source_witness_mm": [
+          -52.46962356567383,
+          -90.39723205566406,
+          -65.52850341796875
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 1369
+      },
+      "components": [
+        5,
+        7
+      ],
+      "exact_CPU": {
+        "algorithm": {
+          "global_minimum_guarantee": "For non-intersecting meshes, every pair with a centroid-sphere lower bound no greater than the current real-pair upper bound is evaluated.",
+          "intersection_candidate_guarantee": "If two closed triangles intersect, their centroid spheres overlap; the radius-binned KD queries enumerate that pair before exact sphere, AABB, plane, Moller segment and coplanar SAT tests.",
+          "name": "centroid-sphere-kdtree-triangle-narrowphase",
+          "numeric_contract": "float64 predicates under the declared absolute distance, barycentric and angular tolerances; degenerate faces are reported separately.",
+          "version": "1.0.0"
+        },
+        "candidate_statistics": {
+          "global_minimum": {
+            "exact_distance_pairs": 71252,
+            "initial_upper_bound_pairs": 5687,
+            "kdtree_query_hits": 82581,
+            "lower_bound_pass_pairs": 71252
+          },
+          "intersection": {
+            "aabb_pass_pairs": 12019,
+            "kdtree_query_hits": 59110,
+            "narrow_phase_pairs": 6,
+            "plane_pass_pairs": 6,
+            "sphere_pass_pairs": 49502
+          }
+        },
+        "global_minimum": {
+          "distance": 0.2547104137049337,
+          "proof": "All pairs capable of improving the current real-pair upper bound were enumerated using lower bound max(0, centroid_distance-radius_a-radius_b); each surviving pair used all vertex-triangle and edge-edge features.",
+          "squared_distance": 0.06487739484973848,
+          "status": "exact",
+          "triangle_a": 326,
+          "triangle_b": 1172,
+          "witness_feature": "edge_1_to_edge_0",
+          "witness_point_a": [
+            -52.37172711949827,
+            -90.66481279399541,
+            -65.48988143589114
+          ],
+          "witness_point_b": [
+            -52.50953860737919,
+            -90.47602122510295,
+            -65.5910897960839
+          ]
+        },
+        "intersections": {
+          "examples": [],
+          "examples_truncated": false,
+          "intersecting_pair_count": 0,
+          "intersects": false,
+          "kind_counts": {}
+        },
+        "mesh_a": {
+          "bbox_max": [
+            -7.868400782286163,
+            -84.41470501870941,
+            -47.27977462552117
+          ],
+          "bbox_min": [
+            -56.33177466674618,
+            -95.11223358564187,
+            -72.79743945062557
+          ],
+          "component": 5,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.7981322792480612,
+          "triangle_count": 2954
+        },
+        "mesh_b": {
+          "bbox_max": [
+            -8.240089995912648,
+            -84.77825445347708,
+            -47.63195978012298
+          ],
+          "bbox_min": [
+            -55.94337435836884,
+            -94.74086837850916,
+            -72.39083818357625
+          ],
+          "component": 7,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.5459728218218156,
+          "triangle_count": 2733
+        },
+        "reproducibility": {
+          "deterministic_pair_order": true,
+          "mesh_mutation": false,
+          "random_sampling": false,
+          "timings_are_nondeterministic": true
+        },
+        "schema_version": 1,
+        "settings": {
+          "angular_tolerance": 1e-12,
+          "barycentric_tolerance": 1e-10,
+          "chunk_size": 256,
+          "compute_global_minimum": true,
+          "distance_tolerance": 5.580579668664956e-09,
+          "pair_batch_size": 32768,
+          "radius_bin_count_actual": 8,
+          "radius_bin_count_requested": 8,
+          "workers": 4
+        },
+        "software": {
+          "numpy": "2.4.4",
+          "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "scipy": "1.18.1"
+        },
+        "timings_seconds": {
+          "build_radius_bins": 0.0006379119999948557,
+          "global_minimum": 0.5731664850000016,
+          "intersection_search": 0.0663237460000019,
+          "total": 0.6401300440000028
+        }
+      }
+    },
+    "C05_C08": {
+      "AABB_IoU": 0.005954444335213926,
+      "AABB_intersection_extents_mm": [
+        6.855841580171109,
+        9.974912023040261,
+        2.8292869581421485
+      ],
+      "AABB_intersection_volume_mm3": 193.4847966177374,
+      "A_to_B_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 10.391632982513487,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -56.15671038424953,
+          -91.266753946076,
+          -49.83501515417706
+        ],
+        "CPU_target_face_for_sampled_witness": 1363,
+        "area_weighted_median_mm": 25.091999053955078,
+        "area_weighted_p01_mm": 10.974418640136719,
+        "area_weighted_p05_mm": 12.978364944458008,
+        "area_weighted_p95_mm": 40.929588317871094,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 8862,
+        "sampled_maximum_mm": 42.643917083740234,
+        "sampled_minimum_mm": 10.391632080078125,
+        "sampled_source_witness_kind": "vertex",
+        "sampled_source_witness_mm": [
+          -52.548702239990234,
+          -87.60682678222656,
+          -58.86680603027344
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 1479
+      },
+      "B_to_A_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 10.392515414403455,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -52.54870314297171,
+          -87.60682831435781,
+          -58.866807133522364
+        ],
+        "CPU_target_face_for_sampled_witness": 84,
+        "area_weighted_median_mm": 22.239137649536133,
+        "area_weighted_p01_mm": 10.65522575378418,
+        "area_weighted_p05_mm": 11.623884201049805,
+        "area_weighted_p95_mm": 33.60196304321289,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 4740,
+        "sampled_maximum_mm": 35.199119567871094,
+        "sampled_minimum_mm": 10.392515182495117,
+        "sampled_source_witness_kind": "vertex",
+        "sampled_source_witness_mm": [
+          -56.28186798095703,
+          -91.22767639160156,
+          -49.869178771972656
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 792
+      },
+      "components": [
+        5,
+        8
+      ],
+      "exact_CPU": {
+        "algorithm": {
+          "global_minimum_guarantee": "For non-intersecting meshes, every pair with a centroid-sphere lower bound no greater than the current real-pair upper bound is evaluated.",
+          "intersection_candidate_guarantee": "If two closed triangles intersect, their centroid spheres overlap; the radius-binned KD queries enumerate that pair before exact sphere, AABB, plane, Moller segment and coplanar SAT tests.",
+          "name": "centroid-sphere-kdtree-triangle-narrowphase",
+          "numeric_contract": "float64 predicates under the declared absolute distance, barycentric and angular tolerances; degenerate faces are reported separately.",
+          "version": "1.0.0"
+        },
+        "candidate_statistics": {
+          "global_minimum": {
+            "exact_distance_pairs": 3178,
+            "initial_upper_bound_pairs": 4534,
+            "kdtree_query_hits": 3473,
+            "lower_bound_pass_pairs": 3178
+          },
+          "intersection": {
+            "aabb_pass_pairs": 0,
+            "kdtree_query_hits": 0,
+            "narrow_phase_pairs": 0,
+            "plane_pass_pairs": 0,
+            "sphere_pass_pairs": 0
+          }
+        },
+        "global_minimum": {
+          "distance": 10.391633088258395,
+          "proof": "All pairs capable of improving the current real-pair upper bound were enumerated using lower bound max(0, centroid_distance-radius_a-radius_b); each surviving pair used all vertex-triangle and edge-edge features.",
+          "squared_distance": 107.9860382409867,
+          "status": "exact",
+          "triangle_a": 84,
+          "triangle_b": 1363,
+          "witness_feature": "a_vertex_0_to_b_face",
+          "witness_point_a": [
+            -52.54870314297171,
+            -87.60682831435781,
+            -58.866807133522364
+          ],
+          "witness_point_b": [
+            -56.15671100349069,
+            -91.26675375273159,
+            -49.835015323202306
+          ]
+        },
+        "intersections": {
+          "examples": [],
+          "examples_truncated": false,
+          "intersecting_pair_count": 0,
+          "intersects": false,
+          "kind_counts": {}
+        },
+        "mesh_a": {
+          "bbox_max": [
+            -7.868400782286163,
+            -84.41470501870941,
+            -47.27977462552117
+          ],
+          "bbox_min": [
+            -56.33177466674618,
+            -95.11223358564187,
+            -72.79743945062557
+          ],
+          "component": 5,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.7981322792480612,
+          "triangle_count": 2954
+        },
+        "mesh_b": {
+          "bbox_max": [
+            -49.47593308657507,
+            -83.38780534577502,
+            -26.686032241647155
+          ],
+          "bbox_min": [
+            -67.97270261300402,
+            -94.38961704174967,
+            -50.10906158366332
+          ],
+          "component": 8,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.4573641893431264,
+          "triangle_count": 1580
+        },
+        "reproducibility": {
+          "deterministic_pair_order": true,
+          "mesh_mutation": false,
+          "random_sampling": false,
+          "timings_are_nondeterministic": true
+        },
+        "schema_version": 1,
+        "settings": {
+          "angular_tolerance": 1e-12,
+          "barycentric_tolerance": 1e-10,
+          "chunk_size": 256,
+          "compute_global_minimum": true,
+          "distance_tolerance": 7.665671001877167e-09,
+          "pair_batch_size": 32768,
+          "radius_bin_count_actual": 8,
+          "radius_bin_count_requested": 8,
+          "workers": 4
+        },
+        "software": {
+          "numpy": "2.4.4",
+          "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "scipy": "1.18.1"
+        },
+        "timings_seconds": {
+          "build_radius_bins": 0.000422061999998391,
+          "global_minimum": 0.10486468399999893,
+          "intersection_search": 0.04600589500000041,
+          "total": 0.15129465200000425
+        }
+      }
+    },
+    "C05_C09": {
+      "AABB_IoU": 0.00488110865711626,
+      "AABB_intersection_extents_mm": [
+        6.477169955860056,
+        9.6038241315092,
+        2.433902824204729
+      ],
+      "AABB_intersection_volume_mm3": 151.40238826186388,
+      "A_to_B_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 10.783335418081466,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -56.08288001765767,
+          -91.276441721028,
+          -49.36292069975639
+        ],
+        "CPU_target_face_for_sampled_witness": 947,
+        "area_weighted_median_mm": 25.46479606628418,
+        "area_weighted_p01_mm": 11.35232162475586,
+        "area_weighted_p05_mm": 13.361251831054688,
+        "area_weighted_p95_mm": 41.30757522583008,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 8862,
+        "sampled_maximum_mm": 43.00018310546875,
+        "sampled_minimum_mm": 10.78333568572998,
+        "sampled_source_witness_kind": "vertex",
+        "sampled_source_witness_mm": [
+          -52.548702239990234,
+          -87.60682678222656,
+          -58.86680603027344
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 1479
+      },
+      "B_to_A_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 10.791050865713467,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -52.54870314297171,
+          -87.60682831435781,
+          -58.866807133522364
+        ],
+        "CPU_target_face_for_sampled_witness": 84,
+        "area_weighted_median_mm": 21.8306941986084,
+        "area_weighted_p01_mm": 10.992488861083984,
+        "area_weighted_p05_mm": 11.855250358581543,
+        "area_weighted_p95_mm": 33.2794189453125,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 4266,
+        "sampled_maximum_mm": 34.81560134887695,
+        "sampled_minimum_mm": 10.791050910949707,
+        "sampled_source_witness_kind": "quadrature",
+        "sampled_source_witness_mm": [
+          -56.29339599609375,
+          -91.12757873535156,
+          -49.37847900390625
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 713
+      },
+      "components": [
+        5,
+        9
+      ],
+      "exact_CPU": {
+        "algorithm": {
+          "global_minimum_guarantee": "For non-intersecting meshes, every pair with a centroid-sphere lower bound no greater than the current real-pair upper bound is evaluated.",
+          "intersection_candidate_guarantee": "If two closed triangles intersect, their centroid spheres overlap; the radius-binned KD queries enumerate that pair before exact sphere, AABB, plane, Moller segment and coplanar SAT tests.",
+          "name": "centroid-sphere-kdtree-triangle-narrowphase",
+          "numeric_contract": "float64 predicates under the declared absolute distance, barycentric and angular tolerances; degenerate faces are reported separately.",
+          "version": "1.0.0"
+        },
+        "candidate_statistics": {
+          "global_minimum": {
+            "exact_distance_pairs": 3121,
+            "initial_upper_bound_pairs": 4376,
+            "kdtree_query_hits": 3527,
+            "lower_bound_pass_pairs": 3121
+          },
+          "intersection": {
+            "aabb_pass_pairs": 0,
+            "kdtree_query_hits": 0,
+            "narrow_phase_pairs": 0,
+            "plane_pass_pairs": 0,
+            "sphere_pass_pairs": 0
+          }
+        },
+        "global_minimum": {
+          "distance": 10.783335573091417,
+          "proof": "All pairs capable of improving the current real-pair upper bound were enumerated using lower bound max(0, centroid_distance-radius_a-radius_b); each surviving pair used all vertex-triangle and edge-edge features.",
+          "squared_distance": 116.2803260818988,
+          "status": "exact",
+          "triangle_a": 84,
+          "triangle_b": 947,
+          "witness_feature": "a_vertex_0_to_b_face",
+          "witness_point_a": [
+            -52.54870314297171,
+            -87.60682831435781,
+            -58.866807133522364
+          ],
+          "witness_point_b": [
+            -56.08288075368285,
+            -91.27644154182092,
+            -49.362920904264634
+          ]
+        },
+        "intersections": {
+          "examples": [],
+          "examples_truncated": false,
+          "intersecting_pair_count": 0,
+          "intersects": false,
+          "kind_counts": {}
+        },
+        "mesh_a": {
+          "bbox_max": [
+            -7.868400782286163,
+            -84.41470501870941,
+            -47.27977462552117
+          ],
+          "bbox_min": [
+            -56.33177466674618,
+            -95.11223358564187,
+            -72.79743945062557
+          ],
+          "component": 5,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.7981322792480612,
+          "triangle_count": 2954
+        },
+        "mesh_b": {
+          "bbox_max": [
+            -49.85460471088612,
+            -83.75820843755506,
+            -27.067114813841997
+          ],
+          "bbox_min": [
+            -67.6076986862032,
+            -94.01852915021861,
+            -49.7136774497259
+          ],
+          "component": 9,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.4637503928867874,
+          "triangle_count": 1422
+        },
+        "reproducibility": {
+          "deterministic_pair_order": true,
+          "mesh_mutation": false,
+          "random_sampling": false,
+          "timings_are_nondeterministic": true
+        },
+        "schema_version": 1,
+        "settings": {
+          "angular_tolerance": 1e-12,
+          "barycentric_tolerance": 1e-10,
+          "chunk_size": 256,
+          "compute_global_minimum": true,
+          "distance_tolerance": 7.608521664884678e-09,
+          "pair_batch_size": 32768,
+          "radius_bin_count_actual": 8,
+          "radius_bin_count_requested": 8,
+          "workers": 4
+        },
+        "software": {
+          "numpy": "2.4.4",
+          "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "scipy": "1.18.1"
+        },
+        "timings_seconds": {
+          "build_radius_bins": 0.00035980199999841034,
+          "global_minimum": 0.11438929999999914,
+          "intersection_search": 0.04489544100000131,
+          "total": 0.15964643399999545
+        }
+      }
+    },
+    "C07_C01": {
+      "AABB_IoU": 0.0010112923920025353,
+      "AABB_intersection_extents_mm": [
+        47.703284362456195,
+        9.962613925032088,
+        8.572261028865306
+      ],
+      "AABB_intersection_volume_mm3": 4073.9619539801583,
+      "A_to_B_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 3.6745836120734583,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -10.010093251914528,
+          -88.50604919293733,
+          -45.71311628797855
+        ],
+        "CPU_target_face_for_sampled_witness": 121750,
+        "area_weighted_median_mm": 21.090831756591797,
+        "area_weighted_p01_mm": 4.346706390380859,
+        "area_weighted_p05_mm": 6.588702201843262,
+        "area_weighted_p95_mm": 31.76239776611328,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 8199,
+        "sampled_maximum_mm": 33.211910247802734,
+        "sampled_minimum_mm": 3.674586057662964,
+        "sampled_source_witness_kind": "vertex",
+        "sampled_source_witness_mm": [
+          -10.345909118652344,
+          -91.11787414550781,
+          -48.27595901489258
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 1369
+      },
+      "B_to_A_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 3.675270531895656,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -10.34590936253811,
+          -91.11787587091546,
+          -48.27596018069658
+        ],
+        "CPU_target_face_for_sampled_witness": 2264,
+        "area_weighted_median_mm": 117.24637603759766,
+        "area_weighted_p01_mm": 20.122224807739258,
+        "area_weighted_p05_mm": 43.762657165527344,
+        "area_weighted_p95_mm": 180.61863708496094,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 696657,
+        "sampled_maximum_mm": 202.47930908203125,
+        "sampled_minimum_mm": 3.6752684116363525,
+        "sampled_source_witness_kind": "quadrature",
+        "sampled_source_witness_mm": [
+          -9.948983192443848,
+          -88.53489685058594,
+          -45.69172286987305
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 115805
+      },
+      "components": [
+        7,
+        1
+      ],
+      "exact_CPU": {
+        "algorithm": {
+          "global_minimum_guarantee": "For non-intersecting meshes, every pair with a centroid-sphere lower bound no greater than the current real-pair upper bound is evaluated.",
+          "intersection_candidate_guarantee": "If two closed triangles intersect, their centroid spheres overlap; the radius-binned KD queries enumerate that pair before exact sphere, AABB, plane, Moller segment and coplanar SAT tests.",
+          "name": "centroid-sphere-kdtree-triangle-narrowphase",
+          "numeric_contract": "float64 predicates under the declared absolute distance, barycentric and angular tolerances; degenerate faces are reported separately.",
+          "version": "1.0.0"
+        },
+        "candidate_statistics": {
+          "global_minimum": {
+            "exact_distance_pairs": 3403,
+            "initial_upper_bound_pairs": 234952,
+            "kdtree_query_hits": 7918,
+            "lower_bound_pass_pairs": 3403
+          },
+          "intersection": {
+            "aabb_pass_pairs": 0,
+            "kdtree_query_hits": 0,
+            "narrow_phase_pairs": 0,
+            "plane_pass_pairs": 0,
+            "sphere_pass_pairs": 0
+          }
+        },
+        "global_minimum": {
+          "distance": 3.674585673840602,
+          "proof": "All pairs capable of improving the current real-pair upper bound were enumerated using lower bound max(0, centroid_distance-radius_a-radius_b); each surviving pair used all vertex-triangle and edge-edge features.",
+          "squared_distance": 13.502579874394591,
+          "status": "exact",
+          "triangle_a": 2264,
+          "triangle_b": 121750,
+          "witness_feature": "a_vertex_1_to_b_face",
+          "witness_point_a": [
+            -10.34590936253811,
+            -91.11787587091546,
+            -48.27596018069658
+          ],
+          "witness_point_b": [
+            -10.010093307377824,
+            -88.50604945287964,
+            -45.7131160158006
+          ]
+        },
+        "intersections": {
+          "examples": [],
+          "examples_truncated": false,
+          "intersecting_pair_count": 0,
+          "intersects": false,
+          "kind_counts": {}
+        },
+        "mesh_a": {
+          "bbox_max": [
+            -8.240089995912648,
+            -84.77825445347708,
+            -47.63195978012298
+          ],
+          "bbox_min": [
+            -55.94337435836884,
+            -94.74086837850916,
+            -72.39083818357625
+          ],
+          "component": 7,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.5459728218218156,
+          "triangle_count": 2733
+        },
+        "mesh_b": {
+          "bbox_max": [
+            73.04588027269745,
+            95.11916081618122,
+            72.74794144548092
+          ],
+          "bbox_min": [
+            -73.03829088041537,
+            -94.88083918381878,
+            -56.20422080898829
+          ],
+          "component": 1,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 2.7481469953917146,
+          "triangle_count": 232219
+        },
+        "reproducibility": {
+          "deterministic_pair_order": true,
+          "mesh_mutation": false,
+          "random_sampling": false,
+          "timings_are_nondeterministic": true
+        },
+        "schema_version": 1,
+        "settings": {
+          "angular_tolerance": 1e-12,
+          "barycentric_tolerance": 1e-10,
+          "chunk_size": 256,
+          "compute_global_minimum": true,
+          "distance_tolerance": 2.801889548388801e-08,
+          "pair_batch_size": 32768,
+          "radius_bin_count_actual": 8,
+          "radius_bin_count_requested": 8,
+          "workers": 4
+        },
+        "software": {
+          "numpy": "2.4.4",
+          "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "scipy": "1.18.1"
+        },
+        "timings_seconds": {
+          "build_radius_bins": 0.07034383199999894,
+          "global_minimum": 1.443876533000001,
+          "intersection_search": 0.04390342900000377,
+          "total": 1.5581282300000012
+        }
+      }
+    },
+    "C07_C08": {
+      "AABB_IoU": 0.00496792329411559,
+      "AABB_intersection_extents_mm": [
+        6.467441271793774,
+        9.611362588272598,
+        2.477101803540336
+      ],
+      "AABB_intersection_volume_mm3": 153.97893467508624,
+      "A_to_B_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 10.820410063315636,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -56.28186917745214,
+          -91.22767587066524,
+          -49.869177928728284
+        ],
+        "CPU_target_face_for_sampled_witness": 1363,
+        "area_weighted_median_mm": 24.88580894470215,
+        "area_weighted_p01_mm": 11.300801277160645,
+        "area_weighted_p05_mm": 13.170938491821289,
+        "area_weighted_p95_mm": 40.64363098144531,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 8199,
+        "sampled_maximum_mm": 42.26943588256836,
+        "sampled_minimum_mm": 10.820408821105957,
+        "sampled_source_witness_kind": "quadrature",
+        "sampled_source_witness_mm": [
+          -52.595672607421875,
+          -87.72223663330078,
+          -59.419315338134766
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 1369
+      },
+      "B_to_A_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 10.817348031525249,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -52.73353628584878,
+          -87.59283544745496,
+          -59.41969142456826
+        ],
+        "CPU_target_face_for_sampled_witness": 89,
+        "area_weighted_median_mm": 22.60739517211914,
+        "area_weighted_p01_mm": 11.03172779083252,
+        "area_weighted_p05_mm": 11.992914199829102,
+        "area_weighted_p95_mm": 33.95873260498047,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 4740,
+        "sampled_maximum_mm": 35.57359313964844,
+        "sampled_minimum_mm": 10.817347526550293,
+        "sampled_source_witness_kind": "vertex",
+        "sampled_source_witness_mm": [
+          -56.28186798095703,
+          -91.22767639160156,
+          -49.869178771972656
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 792
+      },
+      "components": [
+        7,
+        8
+      ],
+      "exact_CPU": {
+        "algorithm": {
+          "global_minimum_guarantee": "For non-intersecting meshes, every pair with a centroid-sphere lower bound no greater than the current real-pair upper bound is evaluated.",
+          "intersection_candidate_guarantee": "If two closed triangles intersect, their centroid spheres overlap; the radius-binned KD queries enumerate that pair before exact sphere, AABB, plane, Moller segment and coplanar SAT tests.",
+          "name": "centroid-sphere-kdtree-triangle-narrowphase",
+          "numeric_contract": "float64 predicates under the declared absolute distance, barycentric and angular tolerances; degenerate faces are reported separately.",
+          "version": "1.0.0"
+        },
+        "candidate_statistics": {
+          "global_minimum": {
+            "exact_distance_pairs": 3405,
+            "initial_upper_bound_pairs": 4313,
+            "kdtree_query_hits": 3743,
+            "lower_bound_pass_pairs": 3405
+          },
+          "intersection": {
+            "aabb_pass_pairs": 0,
+            "kdtree_query_hits": 0,
+            "narrow_phase_pairs": 0,
+            "plane_pass_pairs": 0,
+            "sphere_pass_pairs": 0
+          }
+        },
+        "global_minimum": {
+          "distance": 10.817348993448396,
+          "proof": "All pairs capable of improving the current real-pair upper bound were enumerated using lower bound max(0, centroid_distance-radius_a-radius_b); each surviving pair used all vertex-triangle and edge-edge features.",
+          "squared_distance": 117.01503924605903,
+          "status": "exact",
+          "triangle_a": 89,
+          "triangle_b": 1363,
+          "witness_feature": "b_vertex_1_to_a_face",
+          "witness_point_a": [
+            -52.7335361618891,
+            -87.59283497994826,
+            -59.41969120058421
+          ],
+          "witness_point_b": [
+            -56.28186917745214,
+            -91.22767587066524,
+            -49.869177928728284
+          ]
+        },
+        "intersections": {
+          "examples": [],
+          "examples_truncated": false,
+          "intersecting_pair_count": 0,
+          "intersects": false,
+          "kind_counts": {}
+        },
+        "mesh_a": {
+          "bbox_max": [
+            -8.240089995912648,
+            -84.77825445347708,
+            -47.63195978012298
+          ],
+          "bbox_min": [
+            -55.94337435836884,
+            -94.74086837850916,
+            -72.39083818357625
+          ],
+          "component": 7,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.5459728218218156,
+          "triangle_count": 2733
+        },
+        "mesh_b": {
+          "bbox_max": [
+            -49.47593308657507,
+            -83.38780534577502,
+            -26.686032241647155
+          ],
+          "bbox_min": [
+            -67.97270261300402,
+            -94.38961704174967,
+            -50.10906158366332
+          ],
+          "component": 8,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.4573641893431264,
+          "triangle_count": 1580
+        },
+        "reproducibility": {
+          "deterministic_pair_order": true,
+          "mesh_mutation": false,
+          "random_sampling": false,
+          "timings_are_nondeterministic": true
+        },
+        "schema_version": 1,
+        "settings": {
+          "angular_tolerance": 1e-12,
+          "barycentric_tolerance": 1e-10,
+          "chunk_size": 256,
+          "compute_global_minimum": true,
+          "distance_tolerance": 7.606448801167424e-09,
+          "pair_batch_size": 32768,
+          "radius_bin_count_actual": 8,
+          "radius_bin_count_requested": 8,
+          "workers": 4
+        },
+        "software": {
+          "numpy": "2.4.4",
+          "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "scipy": "1.18.1"
+        },
+        "timings_seconds": {
+          "build_radius_bins": 0.00044909600000409,
+          "global_minimum": 0.12045466299999674,
+          "intersection_search": 0.041392606999998804,
+          "total": 0.16229864700000007
+        }
+      }
+    },
+    "C07_C09": {
+      "AABB_IoU": 0.0039632692877109715,
+      "AABB_intersection_extents_mm": [
+        6.088769647482721,
+        9.240274696741537,
+        2.0817176696029165
+      ],
+      "AABB_intersection_volume_mm3": 117.12139990696713,
+      "A_to_B_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 11.205922382135862,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -55.572230723933345,
+          -91.4007743723197,
+          -49.221034262304194
+        ],
+        "CPU_target_face_for_sampled_witness": 947,
+        "area_weighted_median_mm": 25.25629234313965,
+        "area_weighted_p01_mm": 11.691692352294922,
+        "area_weighted_p05_mm": 13.547428131103516,
+        "area_weighted_p95_mm": 41.016571044921875,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 8199,
+        "sampled_maximum_mm": 42.62543869018555,
+        "sampled_minimum_mm": 11.205923080444336,
+        "sampled_source_witness_kind": "vertex",
+        "sampled_source_witness_mm": [
+          -51.86079025268555,
+          -87.25985717773438,
+          -58.949893951416016
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 1369
+      },
+      "B_to_A_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 11.206057815657486,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -51.8607906658011,
+          -87.25985556116673,
+          -58.94989428347993
+        ],
+        "CPU_target_face_for_sampled_witness": 90,
+        "area_weighted_median_mm": 22.18526268005371,
+        "area_weighted_p01_mm": 11.382061958312988,
+        "area_weighted_p05_mm": 12.231527328491211,
+        "area_weighted_p95_mm": 33.64129638671875,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 4266,
+        "sampled_maximum_mm": 35.19001770019531,
+        "sampled_minimum_mm": 11.206056594848633,
+        "sampled_source_witness_kind": "vertex",
+        "sampled_source_witness_mm": [
+          -55.52080154418945,
+          -91.41329956054688,
+          -49.20674514770508
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 713
+      },
+      "components": [
+        7,
+        9
+      ],
+      "exact_CPU": {
+        "algorithm": {
+          "global_minimum_guarantee": "For non-intersecting meshes, every pair with a centroid-sphere lower bound no greater than the current real-pair upper bound is evaluated.",
+          "intersection_candidate_guarantee": "If two closed triangles intersect, their centroid spheres overlap; the radius-binned KD queries enumerate that pair before exact sphere, AABB, plane, Moller segment and coplanar SAT tests.",
+          "name": "centroid-sphere-kdtree-triangle-narrowphase",
+          "numeric_contract": "float64 predicates under the declared absolute distance, barycentric and angular tolerances; degenerate faces are reported separately.",
+          "version": "1.0.0"
+        },
+        "candidate_statistics": {
+          "global_minimum": {
+            "exact_distance_pairs": 3288,
+            "initial_upper_bound_pairs": 4155,
+            "kdtree_query_hits": 3767,
+            "lower_bound_pass_pairs": 3288
+          },
+          "intersection": {
+            "aabb_pass_pairs": 0,
+            "kdtree_query_hits": 0,
+            "narrow_phase_pairs": 0,
+            "plane_pass_pairs": 0,
+            "sphere_pass_pairs": 0
+          }
+        },
+        "global_minimum": {
+          "distance": 11.205923130974083,
+          "proof": "All pairs capable of improving the current real-pair upper bound were enumerated using lower bound max(0, centroid_distance-radius_a-radius_b); each surviving pair used all vertex-triangle and edge-edge features.",
+          "squared_distance": 125.5727132173,
+          "status": "exact",
+          "triangle_a": 90,
+          "triangle_b": 947,
+          "witness_feature": "a_vertex_2_to_b_face",
+          "witness_point_a": [
+            -51.8607906658011,
+            -87.25985556116673,
+            -58.94989428347993
+          ],
+          "witness_point_b": [
+            -55.57223151495282,
+            -91.40077417972265,
+            -49.221034482092875
+          ]
+        },
+        "intersections": {
+          "examples": [],
+          "examples_truncated": false,
+          "intersecting_pair_count": 0,
+          "intersects": false,
+          "kind_counts": {}
+        },
+        "mesh_a": {
+          "bbox_max": [
+            -8.240089995912648,
+            -84.77825445347708,
+            -47.63195978012298
+          ],
+          "bbox_min": [
+            -55.94337435836884,
+            -94.74086837850916,
+            -72.39083818357625
+          ],
+          "component": 7,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.5459728218218156,
+          "triangle_count": 2733
+        },
+        "mesh_b": {
+          "bbox_max": [
+            -49.85460471088612,
+            -83.75820843755506,
+            -27.067114813841997
+          ],
+          "bbox_min": [
+            -67.6076986862032,
+            -94.01852915021861,
+            -49.7136774497259
+          ],
+          "component": 9,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.4637503928867874,
+          "triangle_count": 1422
+        },
+        "reproducibility": {
+          "deterministic_pair_order": true,
+          "mesh_mutation": false,
+          "random_sampling": false,
+          "timings_are_nondeterministic": true
+        },
+        "schema_version": 1,
+        "settings": {
+          "angular_tolerance": 1e-12,
+          "barycentric_tolerance": 1e-10,
+          "chunk_size": 256,
+          "compute_global_minimum": true,
+          "distance_tolerance": 7.549418309431723e-09,
+          "pair_batch_size": 32768,
+          "radius_bin_count_actual": 8,
+          "radius_bin_count_requested": 8,
+          "workers": 4
+        },
+        "software": {
+          "numpy": "2.4.4",
+          "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "scipy": "1.18.1"
+        },
+        "timings_seconds": {
+          "build_radius_bins": 0.0003499760000025276,
+          "global_minimum": 0.12804212900000067,
+          "intersection_search": 0.0404180089999997,
+          "total": 0.168812084999999
+        }
+      }
+    },
+    "C08_C01": {
+      "AABB_IoU": 0.0013317348489641822,
+      "AABB_intersection_extents_mm": [
+        18.49676952642895,
+        11.001811695974652,
+        23.423029342016164
+      ],
+      "AABB_intersection_volume_mm3": 4766.539046811651,
+      "A_to_B_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 5.449034622952977,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -49.58361484344162,
+          -85.6033121577924,
+          -28.836665526346117
+        ],
+        "CPU_target_face_for_sampled_witness": 24483,
+        "area_weighted_median_mm": 10.512362480163574,
+        "area_weighted_p01_mm": 5.594361782073975,
+        "area_weighted_p05_mm": 6.145041465759277,
+        "area_weighted_p95_mm": 19.843494415283203,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 4740,
+        "sampled_maximum_mm": 21.490388870239258,
+        "sampled_minimum_mm": 5.44903564453125,
+        "sampled_source_witness_kind": "vertex",
+        "sampled_source_witness_mm": [
+          -52.91354751586914,
+          -88.83548736572266,
+          -31.692636489868164
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 792
+      },
+      "B_to_A_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 5.446440126198138,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -53.202911783193784,
+          -88.68309143025445,
+          -31.522041877932676
+        ],
+        "CPU_target_face_for_sampled_witness": 881,
+        "area_weighted_median_mm": 120.02836608886719,
+        "area_weighted_p01_mm": 18.848413467407227,
+        "area_weighted_p05_mm": 45.86172103881836,
+        "area_weighted_p95_mm": 184.30641174316406,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 696657,
+        "sampled_maximum_mm": 217.01104736328125,
+        "sampled_minimum_mm": 5.446439266204834,
+        "sampled_source_witness_kind": "vertex",
+        "sampled_source_witness_mm": [
+          -49.84279251098633,
+          -85.43802642822266,
+          -28.72153091430664
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 115805
+      },
+      "components": [
+        8,
+        1
+      ],
+      "exact_CPU": {
+        "algorithm": {
+          "global_minimum_guarantee": "For non-intersecting meshes, every pair with a centroid-sphere lower bound no greater than the current real-pair upper bound is evaluated.",
+          "intersection_candidate_guarantee": "If two closed triangles intersect, their centroid spheres overlap; the radius-binned KD queries enumerate that pair before exact sphere, AABB, plane, Moller segment and coplanar SAT tests.",
+          "name": "centroid-sphere-kdtree-triangle-narrowphase",
+          "numeric_contract": "float64 predicates under the declared absolute distance, barycentric and angular tolerances; degenerate faces are reported separately.",
+          "version": "1.0.0"
+        },
+        "candidate_statistics": {
+          "global_minimum": {
+            "exact_distance_pairs": 8200,
+            "initial_upper_bound_pairs": 233799,
+            "kdtree_query_hits": 15272,
+            "lower_bound_pass_pairs": 8200
+          },
+          "intersection": {
+            "aabb_pass_pairs": 0,
+            "kdtree_query_hits": 0,
+            "narrow_phase_pairs": 0,
+            "plane_pass_pairs": 0,
+            "sphere_pass_pairs": 0
+          }
+        },
+        "global_minimum": {
+          "distance": 5.44643840594027,
+          "proof": "All pairs capable of improving the current real-pair upper bound were enumerated using lower bound max(0, centroid_distance-radius_a-radius_b); each surviving pair used all vertex-triangle and edge-edge features.",
+          "squared_distance": 29.663691309701193,
+          "status": "exact",
+          "triangle_a": 881,
+          "triangle_b": 24481,
+          "witness_feature": "b_vertex_1_to_a_face",
+          "witness_point_a": [
+            -53.20291157039654,
+            -88.68309154232757,
+            -31.5220420033882
+          ],
+          "witness_point_b": [
+            -49.84279333005638,
+            -85.43802788633265,
+            -28.72153158755765
+          ]
+        },
+        "intersections": {
+          "examples": [],
+          "examples_truncated": false,
+          "intersecting_pair_count": 0,
+          "intersects": false,
+          "kind_counts": {}
+        },
+        "mesh_a": {
+          "bbox_max": [
+            -49.47593308657507,
+            -83.38780534577502,
+            -26.686032241647155
+          ],
+          "bbox_min": [
+            -67.97270261300402,
+            -94.38961704174967,
+            -50.10906158366332
+          ],
+          "component": 8,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.4573641893431264,
+          "triangle_count": 1580
+        },
+        "mesh_b": {
+          "bbox_max": [
+            73.04588027269745,
+            95.11916081618122,
+            72.74794144548092
+          ],
+          "bbox_min": [
+            -73.03829088041537,
+            -94.88083918381878,
+            -56.20422080898829
+          ],
+          "component": 1,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 2.7481469953917146,
+          "triangle_count": 232219
+        },
+        "reproducibility": {
+          "deterministic_pair_order": true,
+          "mesh_mutation": false,
+          "random_sampling": false,
+          "timings_are_nondeterministic": true
+        },
+        "schema_version": 1,
+        "settings": {
+          "angular_tolerance": 1e-12,
+          "barycentric_tolerance": 1e-10,
+          "chunk_size": 256,
+          "compute_global_minimum": true,
+          "distance_tolerance": 2.7215665564449256e-08,
+          "pair_batch_size": 32768,
+          "radius_bin_count_actual": 8,
+          "radius_bin_count_requested": 8,
+          "workers": 4
+        },
+        "software": {
+          "numpy": "2.4.4",
+          "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "scipy": "1.18.1"
+        },
+        "timings_seconds": {
+          "build_radius_bins": 0.06903530099999955,
+          "global_minimum": 1.406212317000005,
+          "intersection_search": 0.02768808399999756,
+          "total": 1.5029380300000028
+        }
+      }
+    },
+    "C08_C09": {
+      "AABB_IoU": 0.8654343438827724,
+      "AABB_intersection_extents_mm": [
+        17.75309397531707,
+        10.260320712663557,
+        22.646562635883903
+      ],
+      "AABB_intersection_volume_mm3": 4125.126592569057,
+      "A_to_B_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 0.2964317799329342,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -54.01257114349978,
+          -93.48657735766865,
+          -47.29861850767018
+        ],
+        "CPU_target_face_for_sampled_witness": 1278,
+        "area_weighted_median_mm": 0.37134626507759094,
+        "area_weighted_p01_mm": 0.32405826449394226,
+        "area_weighted_p05_mm": 0.3412550091743469,
+        "area_weighted_p95_mm": 0.4036330580711365,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 4740,
+        "sampled_maximum_mm": 0.4726843237876892,
+        "sampled_minimum_mm": 0.29642900824546814,
+        "sampled_source_witness_kind": "quadrature",
+        "sampled_source_witness_mm": [
+          -53.85822296142578,
+          -93.69072723388672,
+          -47.44818878173828
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 792
+      },
+      "B_to_A_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 0.2715680236736724,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -54.01105515463313,
+          -93.75127133739036,
+          -47.46324532492795
+        ],
+        "CPU_target_face_for_sampled_witness": 1206,
+        "area_weighted_median_mm": 0.3717377483844757,
+        "area_weighted_p01_mm": 0.32036566734313965,
+        "area_weighted_p05_mm": 0.3392946720123291,
+        "area_weighted_p95_mm": 0.4009566903114319,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 4266,
+        "sampled_maximum_mm": 0.440366268157959,
+        "sampled_minimum_mm": 0.27156713604927063,
+        "sampled_source_witness_kind": "vertex",
+        "sampled_source_witness_mm": [
+          -54.11031723022461,
+          -93.53196716308594,
+          -47.33753967285156
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 713
+      },
+      "components": [
+        8,
+        9
+      ],
+      "exact_CPU": {
+        "algorithm": {
+          "global_minimum_guarantee": "For non-intersecting meshes, every pair with a centroid-sphere lower bound no greater than the current real-pair upper bound is evaluated.",
+          "intersection_candidate_guarantee": "If two closed triangles intersect, their centroid spheres overlap; the radius-binned KD queries enumerate that pair before exact sphere, AABB, plane, Moller segment and coplanar SAT tests.",
+          "name": "centroid-sphere-kdtree-triangle-narrowphase",
+          "numeric_contract": "float64 predicates under the declared absolute distance, barycentric and angular tolerances; degenerate faces are reported separately.",
+          "version": "1.0.0"
+        },
+        "candidate_statistics": {
+          "global_minimum": {
+            "exact_distance_pairs": 40529,
+            "initial_upper_bound_pairs": 3002,
+            "kdtree_query_hits": 47202,
+            "lower_bound_pass_pairs": 40529
+          },
+          "intersection": {
+            "aabb_pass_pairs": 5853,
+            "kdtree_query_hits": 32265,
+            "narrow_phase_pairs": 0,
+            "plane_pass_pairs": 0,
+            "sphere_pass_pairs": 26765
+          }
+        },
+        "global_minimum": {
+          "distance": 0.27157093540271715,
+          "proof": "All pairs capable of improving the current real-pair upper bound were enumerated using lower bound max(0, centroid_distance-radius_a-radius_b); each surviving pair used all vertex-triangle and edge-edge features.",
+          "squared_distance": 0.07375077295550678,
+          "status": "exact",
+          "triangle_a": 1206,
+          "triangle_b": 1274,
+          "witness_feature": "b_vertex_1_to_a_face",
+          "witness_point_a": [
+            -54.01105509154777,
+            -93.75127130402188,
+            -47.46324533332743
+          ],
+          "witness_point_b": [
+            -54.11031823141871,
+            -93.53196477835692,
+            -47.33753833344583
+          ]
+        },
+        "intersections": {
+          "examples": [],
+          "examples_truncated": false,
+          "intersecting_pair_count": 0,
+          "intersects": false,
+          "kind_counts": {}
+        },
+        "mesh_a": {
+          "bbox_max": [
+            -49.47593308657507,
+            -83.38780534577502,
+            -26.686032241647155
+          ],
+          "bbox_min": [
+            -67.97270261300402,
+            -94.38961704174967,
+            -50.10906158366332
+          ],
+          "component": 8,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.4573641893431264,
+          "triangle_count": 1580
+        },
+        "mesh_b": {
+          "bbox_max": [
+            -49.85460471088612,
+            -83.75820843755506,
+            -27.067114813841997
+          ],
+          "bbox_min": [
+            -67.6076986862032,
+            -94.01852915021861,
+            -49.7136774497259
+          ],
+          "component": 9,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.4637503928867874,
+          "triangle_count": 1422
+        },
+        "reproducibility": {
+          "deterministic_pair_order": true,
+          "mesh_mutation": false,
+          "random_sampling": false,
+          "timings_are_nondeterministic": true
+        },
+        "schema_version": 1,
+        "settings": {
+          "angular_tolerance": 1e-12,
+          "barycentric_tolerance": 1e-10,
+          "chunk_size": 256,
+          "compute_global_minimum": true,
+          "distance_tolerance": 3.1808939734993767e-09,
+          "pair_batch_size": 32768,
+          "radius_bin_count_actual": 8,
+          "radius_bin_count_requested": 8,
+          "workers": 4
+        },
+        "software": {
+          "numpy": "2.4.4",
+          "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "scipy": "1.18.1"
+        },
+        "timings_seconds": {
+          "build_radius_bins": 0.00035719399999578627,
+          "global_minimum": 0.3280846469999972,
+          "intersection_search": 0.03541273899999453,
+          "total": 0.36385575999999986
+        }
+      }
+    },
+    "C09_C01": {
+      "AABB_IoU": 0.00115252907523914,
+      "AABB_intersection_extents_mm": [
+        17.75309397531707,
+        10.260320712663557,
+        22.646562635883903
+      ],
+      "AABB_intersection_volume_mm3": 4125.126592569057,
+      "A_to_B_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 5.812292434303786,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -49.690239647244134,
+          -85.58644164603979,
+          -28.731438627375603
+        ],
+        "CPU_target_face_for_sampled_witness": 24481,
+        "area_weighted_median_mm": 10.448134422302246,
+        "area_weighted_p01_mm": 5.961329936981201,
+        "area_weighted_p05_mm": 6.446789741516113,
+        "area_weighted_p95_mm": 19.514522552490234,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 4266,
+        "sampled_maximum_mm": 21.105798721313477,
+        "sampled_minimum_mm": 5.812293529510498,
+        "sampled_source_witness_kind": "vertex",
+        "sampled_source_witness_mm": [
+          -53.284847259521484,
+          -89.08534240722656,
+          -31.66729164123535
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 713
+      },
+      "B_to_A_unsigned_distance": {
+        "CPU_exact_distance_for_sampled_witness_mm": 5.809967444470787,
+        "CPU_exact_target_point_for_sampled_witness_mm": [
+          -53.492891094853896,
+          -88.97306420548556,
+          -31.538623377677794
+        ],
+        "CPU_target_face_for_sampled_witness": 747,
+        "area_weighted_median_mm": 120.39795684814453,
+        "area_weighted_p01_mm": 19.22003746032715,
+        "area_weighted_p05_mm": 46.22822570800781,
+        "area_weighted_p95_mm": 184.69125366210938,
+        "backend": "cuMesh unsigned_distance only; invalidated ray_trace is never called",
+        "quadrature_samples": 696657,
+        "sampled_maximum_mm": 217.3850860595703,
+        "sampled_minimum_mm": 5.809967041015625,
+        "sampled_source_witness_kind": "vertex",
+        "sampled_source_witness_mm": [
+          -49.84279251098633,
+          -85.43802642822266,
+          -28.72153091430664
+        ],
+        "sampling": "all vertices plus three deterministic area-weighted quadrature points per face",
+        "vertex_samples": 115805
+      },
+      "components": [
+        9,
+        1
+      ],
+      "exact_CPU": {
+        "algorithm": {
+          "global_minimum_guarantee": "For non-intersecting meshes, every pair with a centroid-sphere lower bound no greater than the current real-pair upper bound is evaluated.",
+          "intersection_candidate_guarantee": "If two closed triangles intersect, their centroid spheres overlap; the radius-binned KD queries enumerate that pair before exact sphere, AABB, plane, Moller segment and coplanar SAT tests.",
+          "name": "centroid-sphere-kdtree-triangle-narrowphase",
+          "numeric_contract": "float64 predicates under the declared absolute distance, barycentric and angular tolerances; degenerate faces are reported separately.",
+          "version": "1.0.0"
+        },
+        "candidate_statistics": {
+          "global_minimum": {
+            "exact_distance_pairs": 8264,
+            "initial_upper_bound_pairs": 233641,
+            "kdtree_query_hits": 15540,
+            "lower_bound_pass_pairs": 8264
+          },
+          "intersection": {
+            "aabb_pass_pairs": 0,
+            "kdtree_query_hits": 0,
+            "narrow_phase_pairs": 0,
+            "plane_pass_pairs": 0,
+            "sphere_pass_pairs": 0
+          }
+        },
+        "global_minimum": {
+          "distance": 5.809234059909612,
+          "proof": "All pairs capable of improving the current real-pair upper bound were enumerated using lower bound max(0, centroid_distance-radius_a-radius_b); each surviving pair used all vertex-triangle and edge-edge features.",
+          "squared_distance": 33.74720036281392,
+          "status": "exact",
+          "triangle_a": 747,
+          "triangle_b": 24481,
+          "witness_feature": "edge_0_to_edge_0",
+          "witness_point_a": [
+            -53.53346277978028,
+            -88.95116791382718,
+            -31.513531396346107
+          ],
+          "witness_point_b": [
+            -49.87611711022122,
+            -85.47926074666215,
+            -28.629630628504113
+          ]
+        },
+        "intersections": {
+          "examples": [],
+          "examples_truncated": false,
+          "intersecting_pair_count": 0,
+          "intersects": false,
+          "kind_counts": {}
+        },
+        "mesh_a": {
+          "bbox_max": [
+            -49.85460471088612,
+            -83.75820843755506,
+            -27.067114813841997
+          ],
+          "bbox_min": [
+            -67.6076986862032,
+            -94.01852915021861,
+            -49.7136774497259
+          ],
+          "component": 9,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 1.4637503928867874,
+          "triangle_count": 1422
+        },
+        "mesh_b": {
+          "bbox_max": [
+            73.04588027269745,
+            95.11916081618122,
+            72.74794144548092
+          ],
+          "bbox_min": [
+            -73.03829088041537,
+            -94.88083918381878,
+            -56.20422080898829
+          ],
+          "component": 1,
+          "degenerate_triangle_count": 0,
+          "maximum_centroid_sphere_radius": 2.7481469953917146,
+          "triangle_count": 232219
+        },
+        "reproducibility": {
+          "deterministic_pair_order": true,
+          "mesh_mutation": false,
+          "random_sampling": false,
+          "timings_are_nondeterministic": true
+        },
+        "schema_version": 1,
+        "settings": {
+          "angular_tolerance": 1e-12,
+          "barycentric_tolerance": 1e-10,
+          "chunk_size": 256,
+          "compute_global_minimum": true,
+          "distance_tolerance": 2.7215665564449256e-08,
+          "pair_batch_size": 32768,
+          "radius_bin_count_actual": 8,
+          "radius_bin_count_requested": 8,
+          "workers": 4
+        },
+        "software": {
+          "numpy": "2.4.4",
+          "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "scipy": "1.18.1"
+        },
+        "timings_seconds": {
+          "build_radius_bins": 0.07088139100000035,
+          "global_minimum": 1.3467637499999938,
+          "intersection_search": 0.024814960000000497,
+          "total": 1.4424626210000042
+        }
+      }
+    }
+  },
+  "schema": "ai3d.full-model-fastpath.tail-analysis.v1",
+  "selection_decision": {
+    "basis": [
+      "C05 and C08 are the larger outer members of two near-coincident pairs and match the visible long strand plus curled/end fragment.",
+      "C07 and C09 add no independently visible feature and would reintroduce duplicate/inner boundaries.",
+      "The reference image shows one connected curled tail, so C05 must connect to C01 and C08 must connect to C05 before the joint voxel rebuild."
+    ],
+    "double_skin_components_to_exclude": [
+      7,
+      9
+    ],
+    "geometry_not_yet_created": true,
+    "visible_tail_components_to_keep": [
+      5,
+      8
+    ]
+  },
+  "source": {
+    "millimeters_per_source_unit": 189.9013775168476,
+    "path": "/mnt/d/3D-Models/generated/trellis2-quality-test/phase4-analysis-seed42-2026-08-25/master-copies/trellis2-pig-print-repaired.stl",
+    "sha256": "58f6a915c53b587e8e796283b1750bd0c060104a90b4616c935c6ccc70771a7d"
+  },
+  "tail_component_count": 4,
+  "total_seconds": 19.032210409,
+  "visual": "/mnt/c/Users/h4rds/Documents/ChatGPT/AI3D Model/outputs/tail-analysis-2026-08-25/tail-components-analysis.png"
+}

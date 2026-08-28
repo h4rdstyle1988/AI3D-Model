@@ -1,0 +1,9 @@
+Verbindlicher Umbau der bereitgestellten spuelenablage.3mf in zwei Bauteile:
+
+1. Einsatz aus vollständigem Wabengitter und direkt verbundenem 85 × 85 × 100-mm-Behälter, vier geschlossene 2-mm-Wände, oben offen, Wabenboden wasserdurchlässig. Porzellanteil frei und lose ohne Führung.
+2. Wanne mit unverändertem 240 × 85 × 20-mm-Hauptkörper, 240 × 35 × 10-mm-Fuß, Gefälleboden, Frontablauf und Wasserweg.
+3. Umlaufende 3–4-mm-Auflage, etwa 3 mm Einlegetiefe, 45°-Unterseite, keine Halte- oder Klemmfunktion.
+4. PETG-Spiel 0,4–0,5 mm pro Seite anhand realer Geometrie.
+5. Minimale zusätzliche Abstützung unter Wabenknoten ohne Wasserbarrieren oder Taschen.
+6. Unter der Halter-Steckwabe 18,5–19 mm freie Tiefe für den unveränderten 18-mm-Zapfen; Kollisionen offen dokumentieren, Halter nicht verändern.
+7. Beide Bauteile separat druckbar; Topologie, Slicer, Maße, Passung, Wasserweg und Soll/Ist prüfen.

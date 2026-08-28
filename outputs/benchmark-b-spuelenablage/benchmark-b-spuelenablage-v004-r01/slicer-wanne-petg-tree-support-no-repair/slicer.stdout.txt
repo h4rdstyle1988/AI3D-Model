@@ -1,0 +1,402 @@
+[2026-08-27 18:33:13.025487] [0x00005b28] [trace]   Initializing StaticPrintConfigs
+[2026-08-27 18:33:13.033487] [0x00005b28] [warning] cli mode, Current AnycubicSlicerNext Version 1.4.1.2
+[2026-08-27 18:33:13.033987] [0x00005b28] [info]    Will start to read model file now, file count :1
+
+[2026-08-27 18:33:13.033987] [0x00005b28] [info]    allow_multicolor_oneplate 1, allow_rotations 1 skip_modified_gcodes 0 avoid_extrusion_cali_region 0 loaded_filament_ids size 0, clone_objects size 0, skip_useless_pick 0, allow_newer_file 0
+[2026-08-27 18:33:13.033987] [0x00005b28] [info]    plate_to_slice=0, normative_check=1, use_first_fila_as_default=0
+[2026-08-27 18:33:13.033987] [0x00005b28] [info]    read model file:C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\benchmark-b-spuelenablage-v004-r01-wanne.stl
+
+[2026-08-27 18:33:13.327987] [0x00005b28] [info]    object benchmark-b-spuelenablage-v004-r01-wanne.stl, id :5, from stl or other 3mf
+
+[2026-08-27 18:33:13.327987] [0x00005b28] [info]    Slic3r::CLI::run:before load settings, file count=2
+
+[2026-08-27 18:33:13.328487] [0x00005b28] [info]    Slic3r::CLI::run::<lambda_45b08019745bcc83912ac9227defcd06>::operator ():load setting file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\machine\Anycubic Kobra S1 0.4 nozzle.json, with rule 1
+
+[2026-08-27 18:33:13.328987] [0x00005b28] [info]    no substitutions performed from file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\machine\Anycubic Kobra S1 0.4 nozzle.json
+
+[2026-08-27 18:33:13.329410] [0x00005b28] [info]    Slic3r::CLI::run:2565, load printer_model_id Anycubic Kobra S1 from current printer model Anycubic Kobra S1
+[2026-08-27 18:33:13.329410] [0x00005b28] [info]    loaded machine config D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\machine\Anycubic Kobra S1 0.4 nozzle.json, type Anycubic Kobra S1 0.4 nozzle, name system, inherits Anycubic Kobra S1 0.4 nozzle, printer_model_id Anycubic Kobra S1
+[2026-08-27 18:33:13.329410] [0x00005b28] [info]    Slic3r::CLI::run::<lambda_45b08019745bcc83912ac9227defcd06>::operator ():load setting file C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\profiles\0.24mm-split-wanne-tree-support.json, with rule 1
+
+[2026-08-27 18:33:13.331412] [0x00005b28] [info]    no substitutions performed from file C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\profiles\0.24mm-split-wanne-tree-support.json
+
+[2026-08-27 18:33:13.331412] [0x00005b28] [info]    loaded process config C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\profiles\0.24mm-split-wanne-tree-support.json, type 0.24mm Split-Wanne + Tree Support @Anycubic Kobra S1 0.4 nozzle, name system, inherits 0.24mm Split-Wanne + Tree Support @Anycubic Kobra S1 0.4 nozzle
+[2026-08-27 18:33:13.331913] [0x00005b28] [info]    Slic3r::CLI::run::<lambda_45b08019745bcc83912ac9227defcd06>::operator ():load setting file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\Anycubic PETG @Anycubic Kobra S1 0.4 nozzle.json, with rule 1
+
+[2026-08-27 18:33:13.332124] [0x00005b28] [info]    Slic3r::CLI::run::<lambda_45b08019745bcc83912ac9227defcd06>::operator ():load setting file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\Anycubic PETG @acbase.json, with rule 1
+
+[2026-08-27 18:33:13.332626] [0x00005b28] [info]    Slic3r::CLI::run::<lambda_45b08019745bcc83912ac9227defcd06>::operator ():load setting file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\fdm_filament_common.json, with rule 1
+
+[2026-08-27 18:33:13.333127] [0x00005b28] [info]    no substitutions performed from file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\fdm_filament_common.json
+
+[2026-08-27 18:33:13.333127] [0x00005b28] [info]    no substitutions performed from file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\Anycubic PETG @acbase.json
+
+[2026-08-27 18:33:13.333627] [0x00005b28] [info]    no substitutions performed from file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\Anycubic PETG @Anycubic Kobra S1 0.4 nozzle.json
+
+[2026-08-27 18:33:13.333627] [0x00005b28] [info]    loaded filament 1 from file D:\Program Files\AnycubicSlicerNext\resources\profiles\Anycubic\filament\Anycubic PETG @Anycubic Kobra S1 0.4 nozzle.json, type system, name Anycubic PETG @Anycubic Kobra S1 0.4 nozzle, inherits 
+[2026-08-27 18:33:13.333627] [0x00005b28] [info]    current printer , new printer Anycubic Kobra S1 0.4 nozzle, current process , new process 0.24mm Split-Wanne + Tree Support @Anycubic Kobra S1 0.4 nozzle
+[2026-08-27 18:33:13.333627] [0x00005b28] [info]    current printer inherits , new printer inherits Anycubic Kobra S1 0.4 nozzle, current process inherits , new process inherits 0.24mm Split-Wanne + Tree Support @Anycubic Kobra S1 0.4 nozzle
+[2026-08-27 18:33:13.333627] [0x00005b28] [info]    index 0, new print compatible printer Anycubic Kobra S1 0.4 nozzle
+[2026-08-27 18:33:13.334126] [0x00005b28] [info]    new printer Anycubic Kobra S1 0.4 nozzle, inherited from Anycubic Kobra S1 0.4 nozzle, new process 0.24mm Split-Wanne + Tree Support @Anycubic Kobra S1 0.4 nozzle, inherited from 0.24mm Split-Wanne + Tree Support @Anycubic Kobra S1 0.4 nozzle ,compatible 1
+[2026-08-27 18:33:13.334126] [0x00005b28] [info]    update printer config to newest, different size 0, different_settings: 
+[2026-08-27 18:33:13.334126] [0x00005b28] [info]    update_full_config: config keys count 120
+[2026-08-27 18:33:13.334126] [0x00005b28] [info]    load a new printer, update all the keys, different_settings: 
+[2026-08-27 18:33:13.334126] [0x00005b28] [info]    check printer cli safe params, current_printer_name , new_printer_name Anycubic Kobra S1 0.4 nozzle, printer_model Anycubic Kobra S1
+[2026-08-27 18:33:13.334126] [0x00005b28] [info]    line 3257 , will parse file D:\Program Files\AnycubicSlicerNext\resources/profiles/Anycubic.json
+[2026-08-27 18:33:13.335626] [0x00005b28] [warning] can not find key printer in the file
+[2026-08-27 18:33:13.335626] [0x00005b28] [info]    update process config to newest, different size 0, different_settings: 
+[2026-08-27 18:33:13.335626] [0x00005b28] [info]    update_full_config: config keys count 547
+[2026-08-27 18:33:13.336127] [0x00005b28] [info]    load a new process, update all the keys, different_settings: enable_support;support_filament;support_interface_bottom_layers;support_interface_filament;support_interface_spacing;support_interface_top_layers;support_top_z_distance;wall_loops
+[2026-08-27 18:33:13.336127] [0x00005b28] [info]    update filament 1's config to newest, different size 0, name Anycubic PETG @Anycubic Kobra S1 0.4 nozzle, different_settings 
+[2026-08-27 18:33:13.336127] [0x00005b28] [info]    skip scalar option inherits from filament 1: Anycubic PETG @Anycubic Kobra S1 0.4 nozzle
+[2026-08-27 18:33:13.336127] [0x00005b28] [warning] no filament colors found in projects
+[2026-08-27 18:33:13.336127] [0x00005b28] [info]    total 1 models, 0 objects
+
+[2026-08-27 18:33:13.337126] [0x00005b28] [info]    translate_old 0, shrink_to_new_bed 0, old bed size {250, 250, 250}
+[2026-08-27 18:33:13.337126] [0x00005b28] [info]    Slic3r::GUI::PartPlateList::reset_size:before size: plate_width 0, plate_depth 0, plate_height 0
+[2026-08-27 18:33:13.337126] [0x00005b28] [info]    Slic3r::GUI::PartPlateList::reset_size:after size: plate_width 250, plate_depth 250, plate_height 250
+[2026-08-27 18:33:13.337126] [0x00005b28] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: plate_id 0, before, origin {0,0,0}, plate_width 0, plate_depth 0, plate_height 0
+[2026-08-27 18:33:13.337126] [0x00005b28] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {0,0,0}, plate_width 250, plate_depth 250, plate_height 250
+[2026-08-27 18:33:13.337126] [0x00005b28] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:33:13.337627] [0x00005b28] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: plate_id 1, before, origin {0,0,0}, plate_width 0, plate_depth 0, plate_height 0
+[2026-08-27 18:33:13.337627] [0x00005b28] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {300,0,0}, plate_width 250, plate_depth 250, plate_height 250
+[2026-08-27 18:33:13.337627] [0x00005b28] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:33:13.337627] [0x00005b28] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:33:13.337627] [0x00005b28] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:33:13.337627] [0x00005b28] [error]   Slic3r::GUI::PartPlate::calc_exclude_triangles:Unable to create exclude triangles
+
+[2026-08-27 18:33:13.338126] [0x00005b28] [info]    will start transforms, commands count 2
+
+[2026-08-27 18:33:13.338126] [0x00005b28] [info]    process transform ensure_on_bed
+
+[2026-08-27 18:33:13.338126] [0x00005b28] [info]    process transform arrange
+
+[2026-08-27 18:33:13.338126] [0x00005b28] [info]    finished model pre-process commands
+
+[2026-08-27 18:33:13.338626] [0x00005b28] [info]    before arrange, need_arrange=1, duplicate_count 0, filament_color_changed 0
+[2026-08-27 18:33:13.413127] [0x00005b28] [info]    Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":1,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":0,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":40.000000,"clearance_height_to_lid":240.000000,"clearance_radius":60.000000,"printable_height":250.000000,
+[2026-08-27 18:33:13.413127] [0x00005b28] [info]    arrange: items selected before arranging: 1
+[2026-08-27 18:33:13.413127] [0x00005b28] [info]    arrange: items unselected before arranging: 0
+[2026-08-27 18:33:13.413631] [0x00005b28] [info]    start 1 th arranging...
+[2026-08-27 18:33:13.413631] [0x00005b28] [info]    finished 1 th arranging...
+[2026-08-27 18:33:13.413631] [0x00005b28] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:33:13.414132] [0x00005b28] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:33:13.414132] [0x00005b28] [info]    Slic3r::GUI::PartPlateList::rebuild_plates_after_arrangement:before rebuild, plates count 1, recycle_plates 1
+[2026-08-27 18:33:13.414132] [0x00005b28] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:33:13.414132] [0x00005b28] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:33:13.414132] [0x00005b28] [info]    Slic3r::GUI::PartPlate::add_instance: plate 0 , m_ready_for_slice changes to 1
+[2026-08-27 18:33:13.414132] [0x00005b28] [info]    Slic3r::GUI::PartPlateList::rebuild_plates_after_arrangement:after rebuild, plates count 1
+[2026-08-27 18:33:13.414632] [0x00005b28] [info]    ensure_on_bed: need to ensure each object on beds
+[2026-08-27 18:33:13.416131] [0x00005b28] [info]    Need to slice for plate 0, total plate count 1 partplates!
+
+[2026-08-27 18:33:13.416131] [0x00005b28] [info]    Plate 1: pre_check 1, start
+[2026-08-27 18:33:13.417131] [0x00005b28] [info]    Slic3r::Model::update_print_volume_state, print_volume {0, 0, 0} to {250, 250, 250}, got 1 printable istances
+[2026-08-27 18:33:13.417630] [0x00005b28] [info]    plate 1: load cached data success, go on.
+[2026-08-27 18:33:13.417630] [0x00005b28] [info]    Slic3r::Print::apply, Line 1029: enter
+[2026-08-27 18:33:13.418130] [0x00005b28] [info]    Slic3r::Print::apply, has_scarf_joint_seam:false
+[2026-08-27 18:33:13.418630] [0x00005b28] [info]    Slic3r::Print::apply, got print_diff 159, object_diff 28, region_diff 31, set status to APPLY_STATUS_CHANGED
+[2026-08-27 18:33:13.418758] [0x00005b28] [info]    Slic3r::Print::apply 1103: found full_config_diff changed.
+[2026-08-27 18:33:13.421445] [0x00005b28] [info]    Slic3r::Print::apply 1425: found print object changed.
+[2026-08-27 18:33:13.421946] [0x00005b28] [info]    Slic3r::Print::apply, got new_changed_keys, size=1
+[2026-08-27 18:33:13.421946] [0x00005b28] [info]    Slic3r::Print::apply, i=0, key=enable_prime_tower
+[2026-08-27 18:33:13.432956] [0x00005b28] [info]    Slic3r::Print::apply 1620: finished,  this 0000021356FFD030, m_modified_count 1, apply_status 1, m_support_used 1
+[2026-08-27 18:33:13.432956] [0x00005b28] [info]    set no_check to 1:
+[2026-08-27 18:33:13.433457] [0x00005b28] [info]    start Print::process for partplate 1
+
+[2026-08-27 18:33:13.433457] [0x00005b28] [info]    set print's callback to default_status_callback.
+[2026-08-27 18:33:13.434957] [0x00005b28] [info]    Slic3r::Print::process: this=0000021356FFD030, enter, use_cache=0, object size=1
+[2026-08-27 18:33:13.435153] [0x00005b28] [info]    Slic3r::Print::process: total object counts 1 in current print, need to slice 1
+[2026-08-27 18:33:13.435249] [0x00005b28] [info]    Starting the slicing process. WorkingSet: 69MB; PrivateBytes: 150MB; Pagefile(peak): 150MB(318MB)
+[2026-08-27 18:33:13.435249] [0x00005b28] [info]    Slicing volumes... WorkingSet: 69MB; PrivateBytes: 150MB; Pagefile(peak): 150MB(318MB)
+[2026-08-27 18:33:13.554751] [0x00005b28] [info]    Make overhang printable...
+[2026-08-27 18:33:13.555253] [0x00005b28] [info]    angle 0.959931 maxHoleArea 0 tan_angle 1.42815
+[2026-08-27 18:33:13.555253] [0x00005b28] [info]    layer_thickness 0.24 max_dist_from_lower_layer 0.342756
+[2026-08-27 18:33:13.558252] [0x00005b28] [info]    Generating walls... WorkingSet: 75MB; PrivateBytes: 156MB; Pagefile(peak): 156MB(318MB)
+[2026-08-27 18:33:13.720752] [0x00005b28] [warning] SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[2026-08-27 18:33:13.767370] [0x00005b28] [info]    Detecting solid surfaces... WorkingSet: 88MB; PrivateBytes: 173MB; Pagefile(peak): 173MB(318MB)
+[2026-08-27 18:33:13.774044] [0x00005b28] [info]    Preparing fill surfaces... WorkingSet: 90MB; PrivateBytes: 174MB; Pagefile(peak): 174MB(318MB)
+[2026-08-27 18:33:13.774044] [0x00005b28] [info]    Discovering vertical shells... WorkingSet: 90MB; PrivateBytes: 174MB; Pagefile(peak): 174MB(318MB)
+[2026-08-27 18:33:13.792045] [0x00005b28] [info]    Processing external surfaces... WorkingSet: 90MB; PrivateBytes: 170MB; Pagefile(peak): 170MB(318MB)
+[2026-08-27 18:33:13.800544] [0x00005b28] [info]    Bridge over infill - Start WorkingSet: 90MB; PrivateBytes: 170MB; Pagefile(peak): 170MB(318MB)
+[2026-08-27 18:33:13.843045] [0x00005b28] [info]    Bridge over infill - Directions and expanded surfaces computed WorkingSet: 94MB; PrivateBytes: 174MB; Pagefile(peak): 174MB(318MB)
+[2026-08-27 18:33:13.851044] [0x00005b28] [info]    Bridge over infill - End WorkingSet: 93MB; PrivateBytes: 172MB; Pagefile(peak): 172MB(318MB)
+[2026-08-27 18:33:14.117545] [0x00005b28] [info]    Processing support tree mesh group 1 of 1 containing 1 meshes.
+[2026-08-27 18:33:14.131544] [0x00005b28] [info]    max_cantilever_dist=4.92201e+07
+[2026-08-27 18:33:14.231545] [0x00005b28] [info]    Tree support overhang detection done. 10 layers with overhangs. nEnforced=10
+[2026-08-27 18:33:14.253045] [0x00005b28] [info]    Precalculating collision took3.48 ms. Precalculating avoidance took 17.468 ms.
+[2026-08-27 18:33:14.930797] [0x00005b28] [info]    Time spent with creating influence areas' subtasks: Increasing areas 295 ms merging areas: 291 ms
+[2026-08-27 18:33:16.486315] [0x00005b28] [info]    Total time used creating Tree support for the currently grouped meshes: 2368.62 ms. Different subtasks:
+Calculating Avoidance: 135.193 ms Creating inital influence areas: 16.938 ms Influence area creation: 661.136ms Placement of Points in InfluenceAreas: 9.843ms Drawing result as support 1545.51 ms
+[2026-08-27 18:33:16.988314] [0x00005b28] [info]    Total time of organic tree support: 2870.62 ms
+[2026-08-27 18:33:17.178317] [0x00005b28] [info]    Slicing process finished. WorkingSet: 192MB; PrivateBytes: 276MB; Pagefile(peak): 276MB(389MB)
+[2026-08-27 18:33:17.178694] [0x00005b28] [info]    print::process: first time_using_cache is 1 secs.
+[2026-08-27 18:33:17.178795] [0x00005b28] [info]    process finished, will export gcode temporily to C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\slicer-wanne-petg-tree-support-no-repair/plate_1.gcode
+
+[2026-08-27 18:33:17.178845] [0x00005b28] [info]    Slic3r::GCodeProcessorResult::reset 639: this=0000004BFB8CD258 reset finished
+[2026-08-27 18:33:17.178845] [0x00005b28] [info]    Will export G-code to C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\slicer-wanne-petg-tree-support-no-repair/plate_1.gcode soon
+[2026-08-27 18:33:17.179348] [0x00005b28] [info]    Exporting G-code... WorkingSet: 192MB; PrivateBytes: 276MB; Pagefile(peak): 276MB(389MB)
+[2026-08-27 18:33:17.179849] [0x00005b28] [info]    Slic3r::GCodeProcessorResult::reset 639: this=0000004BFB8CD258 reset finished
+[2026-08-27 18:33:17.587358] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.587858] [0x00005b28] [warning] [P2 Fan] layer_id=0 <= before_layers(0), speed=0
+[2026-08-27 18:33:17.605357] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.605357] [0x000003e8] [warning] [P2 Fan] layer_id=1 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.624358] [0x000036c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.624358] [0x000036c4] [warning] [P2 Fan] layer_id=2 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.640857] [0x00002b24] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.640857] [0x00002b24] [warning] [P2 Fan] layer_id=3 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.651358] [0x00005f50] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.651358] [0x00005f50] [warning] [P2 Fan] layer_id=4 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.667358] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.667858] [0x000003e8] [warning] [P2 Fan] layer_id=5 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.677359] [0x000036c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.677859] [0x000036c4] [warning] [P2 Fan] layer_id=6 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.690358] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.690358] [0x00005b28] [warning] [P2 Fan] layer_id=7 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.707857] [0x000008c0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.707857] [0x000008c0] [warning] [P2 Fan] layer_id=8 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.717358] [0x00005f50] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.717358] [0x00005f50] [warning] [P2 Fan] layer_id=9 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.731858] [0x00003eac] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.732358] [0x00003eac] [warning] [P2 Fan] layer_id=10 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.746858] [0x000036cc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.746858] [0x000036cc] [warning] [P2 Fan] layer_id=11 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.757857] [0x00002b24] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.758360] [0x00002b24] [warning] [P2 Fan] layer_id=12 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.772857] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.772857] [0x000003e8] [warning] [P2 Fan] layer_id=13 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.786358] [0x000036c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.786858] [0x000036c4] [warning] [P2 Fan] layer_id=14 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.797358] [0x00006394] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.797358] [0x00006394] [warning] [P2 Fan] layer_id=15 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.813859] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.813859] [0x00005b28] [warning] [P2 Fan] layer_id=16 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.831357] [0x000046a8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.831357] [0x000046a8] [warning] [P2 Fan] layer_id=17 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.850357] [0x000008c0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.850357] [0x000008c0] [warning] [P2 Fan] layer_id=18 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.866858] [0x00005a28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.866858] [0x00005a28] [warning] [P2 Fan] layer_id=19 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.886857] [0x00005f50] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.887358] [0x00005f50] [warning] [P2 Fan] layer_id=20 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.907358] [0x000008c0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.907858] [0x000008c0] [warning] [P2 Fan] layer_id=21 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.927361] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.927859] [0x00005b28] [warning] [P2 Fan] layer_id=22 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.952857] [0x00005f50] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.952857] [0x00005f50] [warning] [P2 Fan] layer_id=23 >= after_layers(0), speed=0
+[2026-08-27 18:33:17.980358] [0x000036c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:17.980358] [0x000036c4] [warning] [P2 Fan] layer_id=24 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.006857] [0x00003eac] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.006857] [0x00003eac] [warning] [P2 Fan] layer_id=25 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.040857] [0x000008c0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.040857] [0x000008c0] [warning] [P2 Fan] layer_id=26 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.069358] [0x00003eac] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.069358] [0x00003eac] [warning] [P2 Fan] layer_id=27 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.111859] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.111859] [0x00005b28] [warning] [P2 Fan] layer_id=28 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.151858] [0x00002fb8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.152359] [0x00002fb8] [warning] [P2 Fan] layer_id=29 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.197358] [0x000036c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.197358] [0x000036c4] [warning] [P2 Fan] layer_id=30 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.236858] [0x00002fb8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.237359] [0x00002fb8] [warning] [P2 Fan] layer_id=31 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.282358] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.282358] [0x000003e8] [warning] [P2 Fan] layer_id=32 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.327358] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.327860] [0x00005b28] [warning] [P2 Fan] layer_id=33 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.376357] [0x00002b24] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.376357] [0x00002b24] [warning] [P2 Fan] layer_id=34 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.434871] [0x00005f50] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.435372] [0x00005f50] [warning] [P2 Fan] layer_id=35 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.500871] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.501371] [0x00005b28] [warning] [P2 Fan] layer_id=36 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.587371] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.587371] [0x000003e8] [warning] [P2 Fan] layer_id=37 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.662871] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.663372] [0x00005b28] [warning] [P2 Fan] layer_id=38 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.770370] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.770870] [0x000003e8] [warning] [P2 Fan] layer_id=39 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.862370] [0x00003eac] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.862870] [0x00003eac] [warning] [P2 Fan] layer_id=40 >= after_layers(0), speed=0
+[2026-08-27 18:33:18.959371] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:18.959872] [0x000003e8] [warning] [P2 Fan] layer_id=41 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.022871] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.023371] [0x00005b28] [warning] [P2 Fan] layer_id=42 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.114370] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.114870] [0x000003e8] [warning] [P2 Fan] layer_id=43 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.166872] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.167371] [0x00005b28] [warning] [P2 Fan] layer_id=44 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.234372] [0x000036c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.234871] [0x000036c4] [warning] [P2 Fan] layer_id=45 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.262873] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.263372] [0x000003e8] [warning] [P2 Fan] layer_id=46 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.279370] [0x000036cc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.279872] [0x000036cc] [warning] [P2 Fan] layer_id=47 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.290872] [0x00002fb8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.290872] [0x00002fb8] [warning] [P2 Fan] layer_id=48 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.295871] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.296373] [0x00005b28] [warning] [P2 Fan] layer_id=49 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.301872] [0x00005a28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.302371] [0x00005a28] [warning] [P2 Fan] layer_id=50 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.308870] [0x00002fb8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.308870] [0x00002fb8] [warning] [P2 Fan] layer_id=51 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.316871] [0x000046a8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.317371] [0x000046a8] [warning] [P2 Fan] layer_id=52 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.326871] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.327372] [0x00005b28] [warning] [P2 Fan] layer_id=53 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.333871] [0x00002b24] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.333871] [0x00002b24] [warning] [P2 Fan] layer_id=54 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.348871] [0x00005a28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.348871] [0x00005a28] [warning] [P2 Fan] layer_id=55 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.351372] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.351871] [0x00005b28] [warning] [P2 Fan] layer_id=56 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.359870] [0x000046a8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.360371] [0x000046a8] [warning] [P2 Fan] layer_id=57 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.366871] [0x00002fb8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.366871] [0x00002fb8] [warning] [P2 Fan] layer_id=58 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.373370] [0x000008c0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.373370] [0x000008c0] [warning] [P2 Fan] layer_id=59 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.376871] [0x00003eac] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.376871] [0x00003eac] [warning] [P2 Fan] layer_id=60 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.380373] [0x000036cc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.380871] [0x000036cc] [warning] [P2 Fan] layer_id=61 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.386870] [0x00003eac] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.386870] [0x00003eac] [warning] [P2 Fan] layer_id=62 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.390370] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.390370] [0x00005b28] [warning] [P2 Fan] layer_id=63 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.395372] [0x000036c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.395372] [0x000036c4] [warning] [P2 Fan] layer_id=64 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.397372] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.397871] [0x00005b28] [warning] [P2 Fan] layer_id=65 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.399871] [0x00003eac] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.399871] [0x00003eac] [warning] [P2 Fan] layer_id=66 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.402371] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.402371] [0x00005b28] [warning] [P2 Fan] layer_id=67 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.405371] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.405371] [0x000003e8] [warning] [P2 Fan] layer_id=68 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.407871] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.407871] [0x00005b28] [warning] [P2 Fan] layer_id=69 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.409871] [0x00003eac] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.410371] [0x00003eac] [warning] [P2 Fan] layer_id=70 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.412371] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.412371] [0x00005b28] [warning] [P2 Fan] layer_id=71 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.415374] [0x00003eac] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.415374] [0x00003eac] [warning] [P2 Fan] layer_id=72 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.417374] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.417874] [0x00005b28] [warning] [P2 Fan] layer_id=73 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.420874] [0x00003eac] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.420874] [0x00003eac] [warning] [P2 Fan] layer_id=74 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.422874] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.422874] [0x00005b28] [warning] [P2 Fan] layer_id=75 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.425375] [0x000008c0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.425375] [0x000008c0] [warning] [P2 Fan] layer_id=76 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.427875] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.427875] [0x00005b28] [warning] [P2 Fan] layer_id=77 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.430385] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.430385] [0x000003e8] [warning] [P2 Fan] layer_id=78 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.432384] [0x00006394] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.432384] [0x00006394] [warning] [P2 Fan] layer_id=79 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.434383] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.434884] [0x00005b28] [warning] [P2 Fan] layer_id=80 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.436884] [0x00005a28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.437384] [0x00005a28] [warning] [P2 Fan] layer_id=81 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.438884] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.439384] [0x00005b28] [warning] [P2 Fan] layer_id=82 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.441384] [0x00005f50] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.441384] [0x00005f50] [warning] [P2 Fan] layer_id=83 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.443383] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.443885] [0x00005b28] [warning] [P2 Fan] layer_id=84 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.445385] [0x000008c0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.445884] [0x000008c0] [warning] [P2 Fan] layer_id=85 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.447385] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.447385] [0x00005b28] [warning] [P2 Fan] layer_id=86 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.449884] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.449884] [0x000003e8] [warning] [P2 Fan] layer_id=87 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.451384] [0x00006394] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.451384] [0x00006394] [warning] [P2 Fan] layer_id=88 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.453884] [0x000046a8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.453884] [0x000046a8] [warning] [P2 Fan] layer_id=89 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.455884] [0x00006394] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.455884] [0x00006394] [warning] [P2 Fan] layer_id=90 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.457883] [0x000036c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.458384] [0x000036c4] [warning] [P2 Fan] layer_id=91 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.460383] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.460383] [0x00005b28] [warning] [P2 Fan] layer_id=92 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.462384] [0x000036c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.462884] [0x000036c4] [warning] [P2 Fan] layer_id=93 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.464884] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.464884] [0x00005b28] [warning] [P2 Fan] layer_id=94 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.467384] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.467384] [0x000003e8] [warning] [P2 Fan] layer_id=95 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.469384] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.469384] [0x00005b28] [warning] [P2 Fan] layer_id=96 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.471883] [0x000008c0] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.471883] [0x000008c0] [warning] [P2 Fan] layer_id=97 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.473884] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.474384] [0x00005b28] [warning] [P2 Fan] layer_id=98 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.476384] [0x00005f50] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.476884] [0x00005f50] [warning] [P2 Fan] layer_id=99 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.478884] [0x000036cc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.478884] [0x000036cc] [warning] [P2 Fan] layer_id=100 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.481384] [0x00005f50] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.481384] [0x00005f50] [warning] [P2 Fan] layer_id=101 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.483884] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.483884] [0x000003e8] [warning] [P2 Fan] layer_id=102 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.486384] [0x000036cc] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.486384] [0x000036cc] [warning] [P2 Fan] layer_id=103 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.488384] [0x00006394] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.488384] [0x00006394] [warning] [P2 Fan] layer_id=104 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.490885] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.491384] [0x00005b28] [warning] [P2 Fan] layer_id=105 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.493885] [0x00003eac] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.493885] [0x00003eac] [warning] [P2 Fan] layer_id=106 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.496384] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.496384] [0x00005b28] [warning] [P2 Fan] layer_id=107 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.498884] [0x00005f50] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.498884] [0x00005f50] [warning] [P2 Fan] layer_id=108 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.501384] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.501384] [0x00005b28] [warning] [P2 Fan] layer_id=109 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.503884] [0x00003eac] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.504384] [0x00003eac] [warning] [P2 Fan] layer_id=110 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.506884] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.506884] [0x00005b28] [warning] [P2 Fan] layer_id=111 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.514384] [0x00005f50] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.514384] [0x00005f50] [warning] [P2 Fan] layer_id=112 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.515383] [0x00002fb8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.515383] [0x00002fb8] [warning] [P2 Fan] layer_id=113 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.515383] [0x00006394] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.515383] [0x00006394] [warning] [P2 Fan] layer_id=114 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.515884] [0x00006394] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.515884] [0x00006394] [warning] [P2 Fan] layer_id=115 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.516384] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.516384] [0x00005b28] [warning] [P2 Fan] layer_id=116 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.516384] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.516384] [0x00005b28] [warning] [P2 Fan] layer_id=117 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.516884] [0x000003e8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.516884] [0x000003e8] [warning] [P2 Fan] layer_id=118 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.516884] [0x00006394] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.517384] [0x00006394] [warning] [P2 Fan] layer_id=119 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.517384] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.517384] [0x00005b28] [warning] [P2 Fan] layer_id=120 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.517884] [0x00002fb8] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.517884] [0x00002fb8] [warning] [P2 Fan] layer_id=121 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.517884] [0x00005b28] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.517884] [0x00005b28] [warning] [P2 Fan] layer_id=122 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.518384] [0x000036c4] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.518384] [0x000036c4] [warning] [P2 Fan] layer_id=123 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.524384] [0x00005f50] [warning] [P2 Fan Config] before_layers=0, after_layers=0, before_speed=0, after_speed=0
+[2026-08-27 18:33:19.524384] [0x00005f50] [warning] [P2 Fan] layer_id=124 >= after_layers(0), speed=0
+[2026-08-27 18:33:19.808383] [0x00005b28] [info]    Slic3r::GCodeProcessorResult::reset 639: this=0000004BFB8CD258 reset finished
+[2026-08-27 18:33:19.816384] [0x00005b28] [info]    rename_file from C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\slicer-wanne-petg-tree-support-no-repair/plate_1.gcode.tmp to C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\slicer-wanne-petg-tree-support-no-repair/plate_1.gcode successfully
+[2026-08-27 18:33:19.816884] [0x00005b28] [info]    Exporting G-code finished WorkingSet: 743MB; PrivateBytes: 868MB; Pagefile(peak): 868MB(908MB)
+[2026-08-27 18:33:19.819884] [0x00005b28] [info]    export_gcode finished: time_using_cache update to 3 secs.
+[2026-08-27 18:33:19.819884] [0x00005b28] [info]    Slicing result exported to C:\Users\h4rds\Documents\ChatGPT\AI3D Model\outputs\benchmark-b-spuelenablage\benchmark-b-spuelenablage-v004-r01\slicer-wanne-petg-tree-support-no-repair/plate_1.gcode
+
+[2026-08-27 18:33:19.819884] [0x00005b28] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 1
+[2026-08-27 18:33:19.819884] [0x00005b28] [info]    Slic3r::CLI::run, Finished
+
+[2026-08-27 18:33:19.820384] [0x00005b28] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 1 to 0
+[2026-08-27 18:33:19.820384] [0x00005b28] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:33:19.820384] [0x00005b28] [info]    Slic3r::PrintObject::~PrintObject: this=000002135B4E5E00, m_shared_object 0000000000000000
+[2026-08-27 18:33:19.949884] [0x00005b28] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:33:19.950267] [0x00005b28] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0

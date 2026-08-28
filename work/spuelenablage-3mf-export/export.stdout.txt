@@ -1,0 +1,167 @@
+[2026-08-27 18:22:48.304461] [0x000053e4] [trace]   Initializing StaticPrintConfigs
+[2026-08-27 18:22:48.312461] [0x000053e4] [warning] cli mode, Current AnycubicSlicerNext Version 1.4.1.2
+[2026-08-27 18:22:48.312656] [0x000053e4] [info]    Will start to read model file now, file count :1
+
+[2026-08-27 18:22:48.312768] [0x000053e4] [info]    allow_multicolor_oneplate 1, allow_rotations 1 skip_modified_gcodes 0 avoid_extrusion_cali_region 0 loaded_filament_ids size 0, clone_objects size 0, skip_useless_pick 0, allow_newer_file 0
+[2026-08-27 18:22:48.312768] [0x000053e4] [info]    plate_to_slice=0, normative_check=1, use_first_fila_as_default=0
+[2026-08-27 18:22:48.312768] [0x000053e4] [info]    read model file:C:\Users\h4rds\Documents\spuelenablage.3mf
+
+[2026-08-27 18:22:48.313273] [0x000053e4] [info]    model 0000002AEB6CD3A0, id 3, backup_path empty, set to C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3
+[2026-08-27 18:22:48.313273] [0x000053e4] [info]    create /3D/Objects in "C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3"
+[2026-08-27 18:22:48.313773] [0x000053e4] [info]    create /Metadata in "C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3"
+[2026-08-27 18:22:48.314272] [0x000053e4] [info]    create /lock.txt in "C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3"
+[2026-08-27 18:22:48.314772] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1609import 3mf IMPORT_STAGE_OPEN, m_load_restore=0
+
+[2026-08-27 18:22:48.314772] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1645import 3mf IMPORT_STAGE_READ_FILES
+
+[2026-08-27 18:22:49.490279] [0x000053e4] [info]    load_3mf found metadata key = Application, value = BambuStudio-1.4.1.2
+[2026-08-27 18:22:49.490279] [0x000053e4] [info]    load_3mf found metadata key = BambuStudio:3mfVersion, value = 1
+[2026-08-27 18:22:49.490279] [0x000053e4] [info]    load_3mf found metadata key = Copyright, value = 
+[2026-08-27 18:22:49.490279] [0x000053e4] [info]    load_3mf found metadata key = CreationDate, value = 2026-08-27
+[2026-08-27 18:22:49.490781] [0x000053e4] [info]    load_3mf found metadata key = Description, value = 
+[2026-08-27 18:22:49.490781] [0x000053e4] [info]    load_3mf found metadata key = Designer, value = 
+[2026-08-27 18:22:49.490781] [0x000053e4] [info]    load_3mf found metadata key = DesignerCover, value = 
+[2026-08-27 18:22:49.490781] [0x000053e4] [info]    load_3mf found metadata key = DesignerUserId, value = 
+[2026-08-27 18:22:49.490781] [0x000053e4] [info]    load_3mf found metadata key = License, value = 
+[2026-08-27 18:22:49.491279] [0x000053e4] [info]    load_3mf found metadata key = ModificationDate, value = 2026-08-27
+[2026-08-27 18:22:49.491279] [0x000053e4] [info]    load_3mf found metadata key = Origin, value = 
+[2026-08-27 18:22:49.491279] [0x000053e4] [info]    load_3mf found metadata key = Thumbnail_Middle, value = /Metadata/plate_1.png
+[2026-08-27 18:22:49.491279] [0x000053e4] [info]    load_3mf found metadata key = Thumbnail_Small, value = /Metadata/plate_1_small.png
+[2026-08-27 18:22:49.491279] [0x000053e4] [info]    load_3mf found metadata key = Title, value = 
+[2026-08-27 18:22:49.491779] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 1th file [Content_Types].xml, total=14
+[2026-08-27 18:22:49.491779] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1901, [Content_Types].xml skipped, already parsed or a directory or not supported
+
+[2026-08-27 18:22:49.491779] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 2th file Metadata/plate_1.png, total=14
+[2026-08-27 18:22:49.499279] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_extract_file_from_archive, extract  "C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/plate_1.png" from 3mf Metadata/plate_1.png, ret 1
+
+[2026-08-27 18:22:49.499279] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 3th file Metadata/plate_1_small.png, total=14
+[2026-08-27 18:22:49.501779] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_extract_file_from_archive, extract  "C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/plate_1_small.png" from 3mf Metadata/plate_1_small.png, ret 1
+
+[2026-08-27 18:22:49.502278] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 4th file Metadata/plate_no_light_1.png, total=14
+[2026-08-27 18:22:49.504279] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_extract_file_from_archive, extract  "C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/plate_no_light_1.png" from 3mf Metadata/plate_no_light_1.png, ret 1
+
+[2026-08-27 18:22:49.504279] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 5th file Metadata/top_1.png, total=14
+[2026-08-27 18:22:49.511280] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_extract_file_from_archive, extract  "C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/top_1.png" from 3mf Metadata/top_1.png, ret 1
+
+[2026-08-27 18:22:49.511280] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 6th file Metadata/pick_1.png, total=14
+[2026-08-27 18:22:49.513779] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_extract_file_from_archive, extract  "C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/pick_1.png" from 3mf Metadata/pick_1.png, ret 1
+
+[2026-08-27 18:22:49.513779] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 7th file 3D/3dmodel.model, total=14
+[2026-08-27 18:22:49.513779] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1901, 3D/3dmodel.model skipped, already parsed or a directory or not supported
+
+[2026-08-27 18:22:49.513779] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 8th file 3D/_rels/3dmodel.model.rels, total=14
+[2026-08-27 18:22:49.514279] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1901, 3D/_rels/3dmodel.model.rels skipped, already parsed or a directory or not supported
+
+[2026-08-27 18:22:49.514279] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 9th file 3D/Objects/benchmark-b-spuelenablage-v003-r03.stl_1.model, total=14
+[2026-08-27 18:22:49.514279] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1901, 3D/Objects/benchmark-b-spuelenablage-v003-r03.stl_1.model skipped, already parsed or a directory or not supported
+
+[2026-08-27 18:22:49.514279] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 10th file Metadata/custom_gcode_per_layer.xml, total=14
+[2026-08-27 18:22:49.514779] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 11th file Metadata/project_settings.config, total=14
+[2026-08-27 18:22:49.520778] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_extract_project_config_from_archive, extract  C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/_temp_3.config from 3mf Metadata/project_settings.config, ret 1
+
+[2026-08-27 18:22:49.522778] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_extract_project_config_from_archive, load project config file successfully from C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/_temp_3.config
+
+[2026-08-27 18:22:49.522778] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 12th file Metadata/model_settings.config, total=14
+[2026-08-27 18:22:49.522778] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 13th file Metadata/slice_info.config, total=14
+[2026-08-27 18:22:49.522778] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1796extract 14th file _rels/.rels, total=14
+[2026-08-27 18:22:49.522778] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1901, _rels/.rels skipped, already parsed or a directory or not supported
+
+[2026-08-27 18:22:49.523278] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1958, process group colors, size 0
+
+[2026-08-27 18:22:49.523278] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:1973, begin to assemble objects, size 1
+
+[2026-08-27 18:22:49.523278] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_generate_volumes_new: line 4745, subobject_id 1, shared_mesh_id 1
+[2026-08-27 18:22:49.787279] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_generate_volumes_new: line 4745, subobject_id 2, shared_mesh_id 2
+[2026-08-27 18:22:49.789278] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:2173import 3mf IMPORT_STAGE_LOADING_PLATES, m_plater_data size 1, m_backup_path C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3
+
+[2026-08-27 18:22:49.789278] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:2218, plate 1, thumbnail_file=C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/plate_1.png, no_light_thumbnail_file=C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/plate_no_light_1.png
+[2026-08-27 18:22:49.789278] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:2219, top_thumbnail_file=C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/top_1.png, pick_thumbnail_file=C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/pick_1.png
+[2026-08-27 18:22:49.789278] [0x000053e4] [info]    Slic3r::_BBS_3MF_Importer::_load_model_from_file:2276import 3mf IMPORT_STAGE_FINISH
+
+[2026-08-27 18:22:49.804081] [0x000053e4] [info]    the first file is a 3mf, version 1.4.1.02, got plate count 1
+[2026-08-27 18:22:49.804226] [0x000053e4] [warning] read_plate_size_from_config, file D:\Program Files\AnycubicSlicerNext\resources/profiles/Anycubic/machine/Anycubic Kobra S1.json missing plate_width or plate_depth key.
+[2026-08-27 18:22:49.804226] [0x000053e4] [info]    current_printer_name Anycubic Kobra S1 0.4 nozzle, current_process_name 0.24mm Standard @Anycubic Kobra S1 0.4 nozzle
+[2026-08-27 18:22:49.804226] [0x000053e4] [info]    no inherits_group: use system name the same as current name
+[2026-08-27 18:22:49.804729] [0x000053e4] [info]    old printable size from 3mf: {250, 250, 250}
+[2026-08-27 18:22:49.804729] [0x000053e4] [info]    old extruder_clearance_height_to_rod 40, extruder_clearance_height_to_lid 240, extruder_clearance_radius 60}
+[2026-08-27 18:22:49.804729] [0x000053e4] [info]    Slic3r::CLI::run:before load settings, file count=0
+
+[2026-08-27 18:22:49.804729] [0x000053e4] [info]    Slic3r::CLI::run::<lambda_45b08019745bcc83912ac9227defcd06>::operator ():load setting file D:\Program Files\AnycubicSlicerNext\resources/profiles/Anycubic/machine/Anycubic Kobra S1 0.4 nozzle.json, with rule 1
+
+[2026-08-27 18:22:49.805729] [0x000053e4] [info]    no substitutions performed from file D:\Program Files\AnycubicSlicerNext\resources/profiles/Anycubic/machine/Anycubic Kobra S1 0.4 nozzle.json
+
+[2026-08-27 18:22:49.805729] [0x000053e4] [info]    Slic3r::CLI::run::<lambda_45b08019745bcc83912ac9227defcd06>::operator ():load setting file D:\Program Files\AnycubicSlicerNext\resources/profiles/Anycubic/process/0.24mm Standard @Anycubic Kobra S1 0.4 nozzle.json, with rule 1
+
+[2026-08-27 18:22:49.813228] [0x000053e4] [info]    no substitutions performed from file D:\Program Files\AnycubicSlicerNext\resources/profiles/Anycubic/process/0.24mm Standard @Anycubic Kobra S1 0.4 nozzle.json
+
+[2026-08-27 18:22:49.813228] [0x000053e4] [info]    current printer Anycubic Kobra S1 0.4 nozzle, new printer , current process 0.24mm Standard @Anycubic Kobra S1 0.4 nozzle, new process 
+[2026-08-27 18:22:49.813228] [0x000053e4] [info]    current printer inherits Anycubic Kobra S1 0.4 nozzle, new printer inherits , current process inherits 0.24mm Standard @Anycubic Kobra S1 0.4 nozzle, new process inherits 
+[2026-08-27 18:22:49.813228] [0x000053e4] [info]    index 0, current print compatible printer Anycubic Kobra S1 0.4 nozzle
+[2026-08-27 18:22:49.813729] [0x000053e4] [info]    old printer Anycubic Kobra S1 0.4 nozzle, inherited from Anycubic Kobra S1 0.4 nozzle, old process 0.24mm Standard @Anycubic Kobra S1 0.4 nozzle, inherited from 0.24mm Standard @Anycubic Kobra S1 0.4 nozzle ,compatible 1
+[2026-08-27 18:22:49.813729] [0x000053e4] [warning] no filament colors found in projects
+[2026-08-27 18:22:49.813729] [0x000053e4] [info]    total 1 models, 0 objects
+
+[2026-08-27 18:22:49.814728] [0x000053e4] [info]    old printable size {250, 250, 250}, new printable size {250, 250, 250}, extract the same, no need shrink
+[2026-08-27 18:22:49.814728] [0x000053e4] [info]    translate_old 0, shrink_to_new_bed 0, old bed size {250, 250, 250}
+[2026-08-27 18:22:49.814728] [0x000053e4] [info]    Slic3r::GUI::PartPlateList::reset_size:before size: plate_width 0, plate_depth 0, plate_height 0
+[2026-08-27 18:22:49.814728] [0x000053e4] [info]    Slic3r::GUI::PartPlateList::reset_size:after size: plate_width 250, plate_depth 250, plate_height 250
+[2026-08-27 18:22:49.814728] [0x000053e4] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: plate_id 0, before, origin {0,0,0}, plate_width 0, plate_depth 0, plate_height 0
+[2026-08-27 18:22:49.814728] [0x000053e4] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {0,0,0}, plate_width 250, plate_depth 250, plate_height 250
+[2026-08-27 18:22:49.815229] [0x000053e4] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:22:49.815229] [0x000053e4] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: plate_id 1, before, origin {0,0,0}, plate_width 0, plate_depth 0, plate_height 0
+[2026-08-27 18:22:49.815229] [0x000053e4] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {300,0,0}, plate_width 250, plate_depth 250, plate_height 250
+[2026-08-27 18:22:49.815229] [0x000053e4] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:22:49.815229] [0x000053e4] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:22:49.815229] [0x000053e4] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:22:49.815728] [0x000053e4] [error]   Slic3r::GUI::PartPlate::calc_exclude_triangles:Unable to create exclude triangles
+
+[2026-08-27 18:22:49.815728] [0x000053e4] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:22:49.815728] [0x000053e4] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:22:49.815728] [0x000053e4] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:22:49.816228] [0x000053e4] [error]   Slic3r::GUI::PartPlate::calc_exclude_triangles:Unable to create exclude triangles
+
+[2026-08-27 18:22:49.816228] [0x000053e4] [info]    Slic3r::GUI::PartPlateList::update_plate_cols:m_plate_count 1, m_plate_cols change to 1
+[2026-08-27 18:22:49.816228] [0x000053e4] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: plate_id 0, before, origin {0,0,0}, plate_width 250, plate_depth 250, plate_height 250
+[2026-08-27 18:22:49.816228] [0x000053e4] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {0,0,0}, plate_width 250, plate_depth 250, plate_height 250
+[2026-08-27 18:22:49.816228] [0x000053e4] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: plate_id 1, before, origin {300,0,0}, plate_width 250, plate_depth 250, plate_height 250
+[2026-08-27 18:22:49.816228] [0x000053e4] [info]    Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {300,0,0}, plate_width 250, plate_depth 250, plate_height 250
+[2026-08-27 18:22:49.816729] [0x000053e4] [info]    PartPlate same shape, skip directly
+[2026-08-27 18:22:49.816729] [0x000053e4] [info]    Slic3r::GUI::PartPlateList::load_from_3mf_structure: plate 0, gcode_file , is_sliced_valid 0, toolpath_outside 0, is_support_used 0 is_label_object_enabled 0
+[2026-08-27 18:22:49.816729] [0x000053e4] [info]    Slic3r::GUI::PartPlateList::load_from_3mf_structure: plate 1, load thumbnail from C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/plate_1.png.
+[2026-08-27 18:22:49.817229] [0x000053e4] [info]    read png file C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/plate_1.png, size 18837
+[2026-08-27 18:22:49.817229] [0x000053e4] [info]    png's cols 512, rows 512, color_type 6, bit_depth 8, bytes_per_pixel 4, rowbytes 2048
+[2026-08-27 18:22:49.817728] [0x000053e4] [info]    filter_type 0, compression_type 0, interlace_type 0, rowbytes 2048
+[2026-08-27 18:22:49.818728] [0x000053e4] [info]    Slic3r::GUI::PartPlateList::load_from_3mf_structure: plate 1 after load, width 512, height 512, size 1048576!
+[2026-08-27 18:22:49.819228] [0x000053e4] [info]    Slic3r::GUI::PartPlateList::load_from_3mf_structure: plate 1, load no_light_thumbnail_file from C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/plate_no_light_1.png.
+[2026-08-27 18:22:49.819228] [0x000053e4] [info]    read png file C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/plate_no_light_1.png, size 3157
+[2026-08-27 18:22:49.819228] [0x000053e4] [info]    png's cols 512, rows 512, color_type 6, bit_depth 8, bytes_per_pixel 4, rowbytes 2048
+[2026-08-27 18:22:49.819729] [0x000053e4] [info]    filter_type 0, compression_type 0, interlace_type 0, rowbytes 2048
+[2026-08-27 18:22:49.820728] [0x000053e4] [info]    Slic3r::GUI::PartPlateList::load_from_3mf_structure: plate 1, load top_thumbnail from C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/top_1.png.
+[2026-08-27 18:22:49.821048] [0x000053e4] [info]    read png file C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/top_1.png, size 19865
+[2026-08-27 18:22:49.821048] [0x000053e4] [info]    png's cols 512, rows 512, color_type 6, bit_depth 8, bytes_per_pixel 4, rowbytes 2048
+[2026-08-27 18:22:49.821048] [0x000053e4] [info]    filter_type 0, compression_type 0, interlace_type 0, rowbytes 2048
+[2026-08-27 18:22:49.822733] [0x000053e4] [info]    Slic3r::GUI::PartPlateList::load_from_3mf_structure: plate 1, load pick_thumbnail from C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/pick_1.png.
+[2026-08-27 18:22:49.822733] [0x000053e4] [info]    read png file C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3/Metadata/pick_1.png, size 1667
+[2026-08-27 18:22:49.822733] [0x000053e4] [info]    png's cols 512, rows 512, color_type 6, bit_depth 8, bytes_per_pixel 4, rowbytes 2048
+[2026-08-27 18:22:49.823234] [0x000053e4] [info]    filter_type 0, compression_type 0, interlace_type 0, rowbytes 2048
+[2026-08-27 18:22:49.824233] [0x000053e4] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:22:49.824233] [0x000053e4] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:22:49.824793] [0x000053e4] [info]    Slic3r::GUI::PartPlate::add_instance: plate 0 , m_ready_for_slice changes to 1
+[2026-08-27 18:22:49.824877] [0x000053e4] [info]    PartPlate same shape, skip directly
+[2026-08-27 18:22:49.827879] [0x000053e4] [info]    plate 1, object bbox: min {4.67301, 76.7303, 0} - max {244.673, 174.23, 130}
+[2026-08-27 18:22:49.966880] [0x000053e4] [info]    plate 1, has wipe tower, wipe bbox: min {160, 198.927, 0} - max {200, 228.584, 0}
+[2026-08-27 18:22:49.967234] [0x000053e4] [info]    plate 1,  has_wipe_tower 1, wipe_x 165, wipe_y 198.927, width 30, depth 29.6569
+[2026-08-27 18:22:49.967234] [0x000053e4] [info]    will start transforms, commands count 0
+
+[2026-08-27 18:22:49.967234] [0x000053e4] [info]    finished model pre-process commands
+
+[2026-08-27 18:22:49.967234] [0x000053e4] [info]    before arrange, need_arrange=0, duplicate_count 0, filament_color_changed 0
+[2026-08-27 18:22:50.116737] [0x000053e4] [info]    Model successfully exported to C:\Users\h4rds\Documents\ChatGPT\AI3D Model\work\spuelenablage-3mf-export/obj_1_benchmark-b-spuelenablage-v003-r03.stl
+
+[2026-08-27 18:22:50.117736] [0x000053e4] [info]    Slic3r::Model::remove_backup_path_if_existmodel 0000014F5B2349A0, id 3 remove backup_path C:\Users\h4rds\AppData\Local\Temp/anycubicslicer_model/08_27_4/18_22_48#20648#3
+[2026-08-27 18:22:50.119238] [0x000053e4] [info]    Slic3r::CLI::run, Finished
+
+[2026-08-27 18:22:50.119238] [0x000053e4] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:22:50.119238] [0x000053e4] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-08-27 18:22:50.119737] [0x000053e4] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-08-27 18:22:50.119737] [0x000053e4] [info]    Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0

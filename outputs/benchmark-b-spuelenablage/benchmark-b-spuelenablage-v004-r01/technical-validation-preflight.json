@@ -1,0 +1,120 @@
+{
+  "candidate": "benchmark-b-spuelenablage-v004-r01",
+  "insert": {
+    "boundary_edges": 0,
+    "bounds_mm": [
+      [
+        -120.0,
+        -42.5,
+        0.0
+      ],
+      [
+        117.5,
+        42.5,
+        103.0
+      ]
+    ],
+    "components": 1,
+    "euler_number": -358,
+    "extents_mm": [
+      237.5,
+      85.0,
+      103.0
+    ],
+    "faces": 836044,
+    "is_volume": true,
+    "maximum_edge_incidence": 2,
+    "nonmanifold_edges": 0,
+    "signed_volume_mm3": 91713.10416666667,
+    "surface_area_mm2": 99129.10756760139,
+    "vertices": 417664,
+    "watertight": true,
+    "winding_consistent": true,
+    "zero_area_faces": 0
+  },
+  "outputs_sha256": {
+    "assembly_glb": "10dc0a4ab67293536363d245ffe40c0de33632ad6403ec5523ca566353a639b1",
+    "insert_3mf": "3725acd55bb148af34192476f1ff6f37ab84944ba78e9bd45a783f99ae7e1d63",
+    "insert_glb": "06312d526601e2ada387cc07ee79f7f96204e78d77cc9a9ec066bc824f0addba",
+    "insert_stl": "f9034469bd9c85971b2c5534f2222bcb7b790ac115684a28126ff4054eb88bd4",
+    "tray_3mf": "5c2abb57b2da5454be34d69e9e4e0b241b095bb13fbe91567c39952b97680d8a",
+    "tray_glb": "eb66ffd71d2a269f11305364a47f3bb6672a2861c901d5634588b80d9e27f869",
+    "tray_stl": "10c76aec4616db93a29642c4dc2b4fd5a862626b1ae036b4ba05b25f19256e61"
+  },
+  "source_3mf": "/mnt/c/Users/h4rds/Documents/spuelenablage.3mf",
+  "source_3mf_sha256": "3ed01ac3e2ad8a2a0283bfdccbf206255013aeb62753e5e8a869c81fa90ddf05",
+  "support_positions_xy_mm": [
+    [
+      -96.5,
+      -15.751289
+    ],
+    [
+      -47.5,
+      -15.751289
+    ],
+    [
+      -2.0,
+      -21.813467
+    ],
+    [
+      47.0,
+      -21.813467
+    ],
+    [
+      92.5,
+      -15.751289
+    ],
+    [
+      -96.5,
+      20.621778
+    ],
+    [
+      -47.5,
+      20.621778
+    ],
+    [
+      -2.0,
+      14.5596
+    ],
+    [
+      47.0,
+      14.5596
+    ],
+    [
+      92.5,
+      20.621778
+    ]
+  ],
+  "tray": {
+    "boundary_edges": 0,
+    "bounds_mm": [
+      [
+        -120.0,
+        -55.0,
+        0.0
+      ],
+      [
+        120.0,
+        42.5,
+        30.0
+      ]
+    ],
+    "components": 1,
+    "euler_number": -8,
+    "extents_mm": [
+      240.0,
+      97.5,
+      30.0
+    ],
+    "faces": 763992,
+    "is_volume": true,
+    "maximum_edge_incidence": 2,
+    "nonmanifold_edges": 0,
+    "signed_volume_mm3": 155643.95833333334,
+    "surface_area_mm2": 91923.75632030322,
+    "vertices": 381988,
+    "watertight": true,
+    "winding_consistent": true,
+    "zero_area_faces": 0
+  }
+}
