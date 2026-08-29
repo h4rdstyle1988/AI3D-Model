@@ -15,7 +15,7 @@ param(
 
 $ErrorActionPreference = "Continue"
 $PSDefaultParameterValues["*:ErrorAction"] = "Stop"
-$WatcherVersion = "R03.4"
+$WatcherVersion = "R03.5"
 
 if ($PollSeconds -lt 5) { throw "PollSeconds muss mindestens 5 sein." }
 if ($HeartbeatSeconds -lt 60 -or $HeartbeatSeconds -gt 120) { throw "HeartbeatSeconds muss zwischen 60 und 120 liegen." }
@@ -252,16 +252,8 @@ function Sync-RuntimeFromRemote {
     }
     if (-not $watcherChanged) { return $false }
 
-    $helper = Join-Path $runtimeDir "restart-runtime-watcher.ps1"
-    if (-not (Test-Path $helper)) {
-        Write-Log "Watcher aktualisiert, Restart-Helper fehlt; Neustart wird nicht automatisch ausgefuehrt." "WARN"
-        return $false
-    }
-
-    Publish-Status -Phase "RESTARTING" -Detail "Neue Watcher-Version aus origin/master installiert."
-    $restartArgs = "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File `"$helper`" -ParentPid $PID -AgentRoot `"$AgentRoot`" -WorkerDir `"$WorkerDir`" -SchedulerTaskName `"$SchedulerTaskName`""
-    Start-Process -FilePath "powershell.exe" -ArgumentList $restartArgs -WindowStyle Hidden
-    Write-Log "Selbstupdate installiert; kontrollierter Neustart eingeleitet."
+    Publish-Status -Phase "RESTARTING" -Detail "Neue Watcher-Version aus origin/master installiert; Launcher-Reload angefordert."
+    Write-Log "Selbstupdate installiert; Launcher-Reload-Code 75 wird angefordert."
     return $true
 }
 
@@ -359,7 +351,7 @@ try {
             Fetch-Master
 
             if (Sync-RuntimeFromRemote) {
-                break
+                exit 75
             }
 
             $state = Read-State
