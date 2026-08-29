@@ -5,6 +5,25 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+
+# Task Scheduler / non-interactive shells can start without HOME even though USERPROFILE exists.
+# Codex needs a resolvable home directory for its config/auth state and PATH aliases.
+if ([string]::IsNullOrWhiteSpace($env:USERPROFILE)) {
+    $env:USERPROFILE = [Environment]::GetFolderPath("UserProfile")
+}
+if ([string]::IsNullOrWhiteSpace($env:HOME)) {
+    $env:HOME = $env:USERPROFILE
+}
+if ([string]::IsNullOrWhiteSpace($env:USERPROFILE) -or -not (Test-Path $env:USERPROFILE)) {
+    throw "Gueltiges Benutzerprofil konnte nicht ermittelt werden. USERPROFILE='$env:USERPROFILE' HOME='$env:HOME'"
+}
+
+# Falls der Default-Workerpfad wegen eines beim Start fehlenden USERPROFILE leer/falsch gebildet wurde,
+# korrigiere nur diesen Default. Ein explizit uebergebener WorkerDir bleibt unveraendert.
+if ([string]::IsNullOrWhiteSpace($WorkerDir) -or $WorkerDir -eq "\Documents\ChatGPT\AI3D Model-worker") {
+    $WorkerDir = Join-Path $env:USERPROFILE "Documents\ChatGPT\AI3D Model-worker"
+}
+
 $stateDir = Join-Path $env:LOCALAPPDATA "AI3D-Model"
 $stateFile = Join-Path $stateDir "ruediger-last-task.txt"
 New-Item -ItemType Directory -Force -Path $stateDir | Out-Null
@@ -14,11 +33,20 @@ function Invoke-Git([string[]]$Args) {
     if ($LASTEXITCODE -ne 0) { throw "git failed: git $($Args -join ' ')" }
 }
 
-if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
+$gitCommand = Get-Command git -ErrorAction SilentlyContinue
+if (-not $gitCommand) {
     throw "Git wurde nicht gefunden."
 }
-if (-not (Get-Command codex -ErrorAction SilentlyContinue)) {
+$codexCommand = Get-Command codex -ErrorAction SilentlyContinue
+if (-not $codexCommand) {
     throw "Codex CLI wurde nicht gefunden."
+}
+$CodexExe = $codexCommand.Source
+if ([string]::IsNullOrWhiteSpace($CodexExe)) {
+    $CodexExe = $codexCommand.Path
+}
+if ([string]::IsNullOrWhiteSpace($CodexExe) -or -not (Test-Path $CodexExe)) {
+    throw "Codex CLI wurde aufgeloest, aber die EXE ist nicht erreichbar: '$CodexExe'"
 }
 
 if (-not (Test-Path (Join-Path $WorkerDir ".git"))) {
@@ -29,6 +57,8 @@ if (-not (Test-Path (Join-Path $WorkerDir ".git"))) {
 }
 
 Write-Host "Ruediger-Watcher aktiv. Worker: $WorkerDir"
+Write-Host "Codex CLI: $CodexExe"
+Write-Host "Codex HOME: $env:HOME"
 
 while ($true) {
     try {
@@ -84,7 +114,8 @@ Aendere ausschliesslich Dateien, die fuer diesen Auftrag erforderlich sind.
 
         Push-Location $WorkerDir
         try {
-            & codex --sandbox workspace-write --ask-for-approval never exec $prompt
+            Write-Host "Starte Codex fuer: $taskPath"
+            & $CodexExe --sandbox workspace-write --ask-for-approval never exec $prompt
             $codexExit = $LASTEXITCODE
         }
         finally {
