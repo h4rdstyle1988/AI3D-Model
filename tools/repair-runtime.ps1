@@ -13,7 +13,10 @@ $logs = Join-Path $AgentRoot "logs"
 New-Item -ItemType Directory -Force -Path $AgentRoot,(Join-Path $AgentRoot "worker"),$runtime,$state,$logs,(Join-Path $AgentRoot "temp"),(Join-Path $AgentRoot "toolchain") | Out-Null
 
 if (-not (Get-Command git -ErrorAction SilentlyContinue)) { throw "Git fehlt." }
-if (-not (Get-Command codex -ErrorAction SilentlyContinue)) { throw "Codex CLI fehlt." }
+$codexVisibleHere = [bool](Get-Command codex -ErrorAction SilentlyContinue)
+if (-not $codexVisibleHere) {
+    Write-Output "Codex ist in dieser Administrator-PowerShell nicht im PATH. Das ist kein Migrationsfehler; die Codex-Pruefung erfolgt nach dem Neustart im Scheduler-/Watcher-Kontext."
+}
 
 function Get-ProcessTable {
     return @(Get-CimInstance Win32_Process -ErrorAction SilentlyContinue)
@@ -132,9 +135,15 @@ $installer = Join-Path $worker "tools\install-runtime-watcher.ps1"
 & powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $installer -RepoRoot $worker -AgentRoot $AgentRoot -SchedulerTaskName $SchedulerTaskName
 if ($LASTEXITCODE -ne 0) { throw "Runtime-Installation fehlgeschlagen." }
 
-$preflight = Join-Path $runtime "cad-toolchain-preflight.ps1"
-& powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $preflight -AgentRoot $AgentRoot
-if ($LASTEXITCODE -ne 0) { throw "Preflight STOPP." }
+if ($codexVisibleHere) {
+    $preflight = Join-Path $runtime "cad-toolchain-preflight.ps1"
+    & powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $preflight -AgentRoot $AgentRoot
+    if ($LASTEXITCODE -ne 0) { throw "Preflight STOPP." }
+    Write-Output "Interaktiver Preflight PASS."
+}
+else {
+    Write-Output "Interaktiver Preflight wird uebersprungen; der R03-Watcher prueft Git/Codex im Scheduler-Kontext beim Start."
+}
 
 if ($task) {
     try {
@@ -143,14 +152,21 @@ if ($task) {
         Write-Output "Scheduler-Aktion auf aktuelle Runtime gesetzt."
     }
     catch {
-        Write-Warning "Scheduler-Aktion konnte nicht geaendert werden: $($_.Exception.Message)"
+        throw "Scheduler-Aktion konnte nicht aktualisiert werden: $($_.Exception.Message)"
     }
+
     $task = Get-ScheduledTask -TaskName $SchedulerTaskName -ErrorAction Stop
     Start-ScheduledTask -InputObject $task
-    Write-Output "Scheduler gestartet: $SchedulerTaskName"
+    Start-Sleep -Seconds 3
+    $task = Get-ScheduledTask -TaskName $SchedulerTaskName -ErrorAction Stop
+    $info = Get-ScheduledTaskInfo -TaskName $SchedulerTaskName -ErrorAction SilentlyContinue
+    Write-Output "Scheduler gestartet: $SchedulerTaskName; State=$($task.State); LastTaskResult=$($info.LastTaskResult)"
+    if ($task.State -ne "Running") {
+        throw "R03-Watcher ist nach dem Neustart nicht im Status Running."
+    }
 }
 else {
-    Write-Warning "Scheduler '$SchedulerTaskName' wurde nicht gefunden. Runtime ist repariert, automatischer Start fehlt."
+    throw "Scheduler '$SchedulerTaskName' wurde nicht gefunden."
 }
 
 Write-Output "REPAIR PASS"
