@@ -15,7 +15,7 @@ param(
 
 $ErrorActionPreference = "Continue"
 $PSDefaultParameterValues["*:ErrorAction"] = "Stop"
-$WatcherVersion = "R03.5"
+$WatcherVersion = "R03.6"
 
 if ($PollSeconds -lt 5) { throw "PollSeconds muss mindestens 5 sein." }
 if ($HeartbeatSeconds -lt 60 -or $HeartbeatSeconds -gt 120) { throw "HeartbeatSeconds muss zwischen 60 und 120 liegen." }
@@ -269,7 +269,8 @@ function Run-Codex {
     try {
         $psi = New-Object Diagnostics.ProcessStartInfo
         $psi.FileName = "cmd.exe"
-        $psi.Arguments = "/d /s /c `"`"$Exe`" -c windows.sandbox=`"unelevated`" --sandbox workspace-write --ask-for-approval never exec < `"$pf`" > `"$codexOut`" 2> `"$codexErr`"`""
+        $psi.Arguments = "/d /s /c `"`"$Exe`" -c windows.sandbox=`"unelevated`" --sandbox workspace-write --ask-for-approval never exec --skip-git-repo-check -C `"$WorkerDir`" < `"$pf`" > `"$codexOut`" 2> `"$codexErr`"`""
+        $psi.WorkingDirectory = $WorkerDir
         $psi.UseShellExecute = $false
         $psi.CreateNoWindow = $true
         $proc = New-Object Diagnostics.Process
