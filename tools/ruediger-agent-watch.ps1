@@ -14,7 +14,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$WatcherVersion = "R03"
+$WatcherVersion = "R03.1"
 
 if ($PollSeconds -lt 5) { throw "PollSeconds muss mindestens 5 sein." }
 if ($HeartbeatSeconds -lt 60 -or $HeartbeatSeconds -gt 120) { throw "HeartbeatSeconds muss zwischen 60 und 120 liegen." }
@@ -62,8 +62,17 @@ function Invoke-GitSafe {
     )
     $lastMessage = ""
     for ($attempt=1; $attempt -le $Retries; $attempt++) {
-        $output = (& git.exe @GitArgs 2>&1 | Out-String)
-        if ($LASTEXITCODE -eq 0) {
+        $oldErrorActionPreference = $ErrorActionPreference
+        try {
+            $ErrorActionPreference = "Continue"
+            $rawOutput = @(& git.exe @GitArgs 2>&1)
+            $gitExitCode = [int]$LASTEXITCODE
+            $output = (($rawOutput | ForEach-Object { $_.ToString() }) -join "`r`n")
+        }
+        finally {
+            $ErrorActionPreference = $oldErrorActionPreference
+        }
+        if ($gitExitCode -eq 0) {
             if ($output.Trim()) { Write-Log ("git: " + $output.Trim()) "DEBUG" }
             return $output
         }
@@ -249,8 +258,8 @@ function Sync-RuntimeFromRemote {
     }
 
     Publish-Status -Phase "RESTARTING" -Detail "Neue Watcher-Version aus origin/master installiert."
-    $args = "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File `"$helper`" -ParentPid $PID -AgentRoot `"$AgentRoot`" -WorkerDir `"$WorkerDir`" -SchedulerTaskName `"$SchedulerTaskName`""
-    Start-Process -FilePath "powershell.exe" -ArgumentList $args -WindowStyle Hidden
+    $restartArgs = "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File `"$helper`" -ParentPid $PID -AgentRoot `"$AgentRoot`" -WorkerDir `"$WorkerDir`" -SchedulerTaskName `"$SchedulerTaskName`""
+    Start-Process -FilePath "powershell.exe" -ArgumentList $restartArgs -WindowStyle Hidden
     Write-Log "Selbstupdate installiert; kontrollierter Neustart eingeleitet."
     return $true
 }
