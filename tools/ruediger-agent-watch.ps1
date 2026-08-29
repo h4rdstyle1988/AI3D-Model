@@ -60,7 +60,14 @@ while ($true) {
         $stem = [IO.Path]::GetFileNameWithoutExtension($taskPath).ToLowerInvariant() -replace '[^a-z0-9-]+','-'
         $shortBlob = $taskBlob.Substring(0, [Math]::Min(8, $taskBlob.Length))
         $branch = "ruediger/$stem-$shortBlob"
-        & git -C $WorkerDir branch -D $branch 2>$null | Out-Null
+
+        # Nur loeschen, wenn der lokale Branch wirklich existiert. Ein erstmaliger Lauf darf hier nicht abbrechen.
+        & git -C $WorkerDir show-ref --verify --quiet "refs/heads/$branch"
+        $branchExists = ($LASTEXITCODE -eq 0)
+        if ($branchExists) {
+            Invoke-Git @("-C", $WorkerDir, "branch", "-D", $branch)
+        }
+
         Invoke-Git @("-C", $WorkerDir, "checkout", "-b", $branch, "origin/master")
 
         $prompt = @"
