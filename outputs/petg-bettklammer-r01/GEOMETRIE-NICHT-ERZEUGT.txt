@@ -1,0 +1,3 @@
+NICHT ERZEUGT: petg-nubsi-r01 CAD/STL, gemeinsame Druckplattengeometrie und Nubsi-Meshvalidierung.
+GRUND: Die fünf laut TASK-PETG-BETTKLAMMER-R01.md ausschließlich verbindlichen Original-Referenzfotos fehlen.
+STATUS: NUTZERENTSCHEIDUNG ERFORDERLICH; keine Ersatzform und keine Maße wurden geraten.

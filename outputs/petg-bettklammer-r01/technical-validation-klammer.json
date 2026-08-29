@@ -1,0 +1,33 @@
+﻿{
+    "revision":  "R01",
+    "part":  "Klammer",
+    "stl":  "petg-bettklammer-r01.stl",
+    "triangles":  552,
+    "bounds_mm":  {
+                      "x":  [
+                                0,
+                                26.4
+                            ],
+                      "y":  [
+                                0,
+                                20
+                            ],
+                      "z":  [
+                                0,
+                                40
+                            ]
+                  },
+    "dimensions_mm":  {
+                          "width":  20,
+                          "overall_height":  40,
+                          "outer_depth":  26.4,
+                          "clear_depth":  22.4,
+                          "wall":  2
+                      },
+    "topology":  {
+                     "undirected_edges":  828,
+                     "nonmanifold_or_boundary_edges":  0,
+                     "watertight":  true
+                 },
+    "status":  "PASS"
+}
