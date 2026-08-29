@@ -15,7 +15,7 @@ param(
 
 $ErrorActionPreference = "Continue"
 $PSDefaultParameterValues["*:ErrorAction"] = "Stop"
-$WatcherVersion = "R03.6"
+$WatcherVersion = "R03.7"
 
 if ($PollSeconds -lt 5) { throw "PollSeconds muss mindestens 5 sein." }
 if ($HeartbeatSeconds -lt 60 -or $HeartbeatSeconds -gt 120) { throw "HeartbeatSeconds muss zwischen 60 und 120 liegen." }
@@ -62,7 +62,11 @@ function Invoke-GitSafe {
         [int]$Retries = 1
     )
     $lastMessage = ""
-    for ($attempt=1; $attempt -le $Retries; $attempt++) {
+    $isPush = ($GitArgs -contains "push")
+    $attempt = 0
+
+    while ($true) {
+        $attempt++
         $oldErrorActionPreference = $ErrorActionPreference
         try {
             $ErrorActionPreference = "Continue"
@@ -73,17 +77,67 @@ function Invoke-GitSafe {
         finally {
             $ErrorActionPreference = $oldErrorActionPreference
         }
+
         if ($gitExitCode -eq 0) {
             if ($output.Trim()) { Write-Log ("git: " + $output.Trim()) "DEBUG" }
             return $output
         }
+
         $lastMessage = $output.Trim()
-        if ($attempt -lt $Retries) {
-            Write-Log "Git-Versuch $attempt/$Retries fehlgeschlagen; erneuter Versuch." "WARN"
-            Start-Sleep -Seconds ([Math]::Min(10,2*$attempt))
+
+        if ($isPush -and $lastMessage -match '(?i)stale info' -and ($GitArgs -contains "--force-with-lease")) {
+            try {
+                $pushIndex = [Array]::IndexOf($GitArgs,"push")
+                $remoteSeen = $false
+                $branchName = ""
+                for ($i=$pushIndex+1; $i -lt $GitArgs.Count; $i++) {
+                    $arg = [string]$GitArgs[$i]
+                    if ($arg.StartsWith("-")) { continue }
+                    if (-not $remoteSeen) {
+                        $remoteSeen = $true
+                        continue
+                    }
+                    $branchName = $arg
+                    break
+                }
+                if ($branchName) {
+                    if ($branchName.Contains(":")) { $branchName = ($branchName -split ':')[-1] }
+                    $branchName = $branchName -replace '^refs/heads/',''
+                    $oldRefreshPreference = $ErrorActionPreference
+                    try {
+                        $ErrorActionPreference = "Continue"
+                        $refreshOutput = @(& git.exe -C $WorkerDir fetch origin "refs/heads/${branchName}:refs/remotes/origin/${branchName}" 2>&1)
+                        $refreshExit = [int]$LASTEXITCODE
+                    }
+                    finally {
+                        $ErrorActionPreference = $oldRefreshPreference
+                    }
+                    if ($refreshExit -eq 0) {
+                        Write-Log "Force-with-lease aktualisiert: origin/$branchName" "INFO"
+                    }
+                    else {
+                        Write-Log ("Lease-Refresh fehlgeschlagen: " + (($refreshOutput | ForEach-Object { $_.ToString() }) -join " | ")) "WARN"
+                    }
+                }
+            }
+            catch {
+                Write-Log "Lease-Refresh Ausnahme: $($_.Exception.Message)" "WARN"
+            }
         }
+
+        if ($isPush) {
+            Write-Log "Git-Push fehlgeschlagen; lokales CAD-Ergebnis bleibt erhalten. Nur der Push wird erneut versucht (Versuch $attempt)." "WARN"
+            Start-Sleep -Seconds ([Math]::Min(30,[Math]::Max(2,2*$attempt)))
+            continue
+        }
+
+        if ($attempt -ge $Retries) {
+            throw "git failed: git $($GitArgs -join ' ') :: $lastMessage"
+        }
+
+        Write-Log "Git-Versuch $attempt/$Retries fehlgeschlagen; erneuter Versuch." "WARN"
+        Start-Sleep -Seconds ([Math]::Min(10,2*$attempt))
     }
-    throw "git failed: git $($GitArgs -join ' ') :: $lastMessage"
 }
 
 function Ensure-Worker {
