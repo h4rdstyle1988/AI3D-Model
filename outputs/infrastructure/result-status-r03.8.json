@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-INFRA-R03-8-LOCAL-GENERATED-WRITE.md",
+  "revision": "R03.8",
+  "status": "OFFEN",
+  "main_files": [
+    "tools/ruediger-agent-watch.ps1",
+    "outputs/infrastructure/INFRASTRUCTURE-REPORT-R03.8.md",
+    "outputs/infrastructure/result-status-r03.8.json"
+  ],
+  "validations": [
+    {
+      "name": "powershell_syntax",
+      "status": "PASS",
+      "evidence": "PowerShell-Parser meldet keine Syntaxfehler."
+    },
+    {
+      "name": "codex_add_dir",
+      "status": "PASS",
+      "evidence": "Run-Codex verwendet --add-dir mit D:\\3D-Models\\generated."
+    },
+    {
+      "name": "sandbox_parameters_preserved",
+      "status": "PASS",
+      "evidence": "workspace-write, --ask-for-approval never, --skip-git-repo-check und -C WorkerDir sind erhalten; keine Sandbox-Lockerung."
+    },
+    {
+      "name": "protected_watcher_logic",
+      "status": "PASS",
+      "evidence": "Push-Retry-, Queue-, Live-Status-, Self-Update-, Lock- und Preflight-Logik sind im Diff unverändert."
+    },
+    {
+      "name": "product_files_unchanged",
+      "status": "PASS",
+      "evidence": "Keine Produkt-, Geometrie-, CAD-, STL-, 3MF- oder Nutzermaßdatei geändert."
+    },
+    {
+      "name": "remote_branch_verification",
+      "status": "OFFEN",
+      "evidence": "Sandbox verweigert .git/index.lock; GitHub-Remote war über den konfigurierten Proxy nicht erreichbar."
+    }
+  ],
+  "open_real_tests": [
+    "Ergebnisbranch durch den umgebenden Watcher committen, pushen und Remote-HEAD gegen lokalen HEAD verifizieren.",
+    "Realen Codex-Lauf mit Schreibtest in D:\\3D-Models\\generated durchführen."
+  ],
+  "nutzerentscheidung_erforderlich": false,
+  "nutzerentscheidung_grund": "Keine fachliche Entscheidung erforderlich; offen sind ausschließlich technische Laufzeit- und Remote-Prüfungen.",
+  "final_product_approval": false
+}
