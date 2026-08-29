@@ -1,4 +1,4 @@
-# TASK – PETG-Bettklammer für Filztasche – R01
+# TASK – PETG-Bettklammer + separater Nubsi – R01
 
 Status: **KONSTRUKTIONSAUFTRAG / TESTREVISION**
 Quelle: Nutzerfreigabe vom 2026-08-29
@@ -6,9 +6,14 @@ GitHub Issue: #1
 
 ## Auftrag
 
-Konstruiere eine erste druckbare Testrevision **R01** einer PETG-Klammer, die eine Filztasche über der oberen Chromkante eines Bett-Kopfteils hält.
+Konstruiere eine erste druckbare Testrevision **R01** bestehend aus zwei **separaten PETG-Bauteilen**, die gemeinsam auf derselben Druckplatte gedruckt werden:
 
-## VERBINDLICH – vom Nutzer vorgegeben / bestätigt
+1. PETG-Klammer für die Filztasche am Bett-Kopfteil.
+2. Kleiner PETG-Nubsi/Noppen nach den vom Nutzer bereitgestellten Referenzfotos.
+
+Die beiden Bauteile dürfen geometrisch NICHT miteinander verbunden werden.
+
+## VERBINDLICH – KLAMMER
 
 - Material: **PETG**
 - Klammerbreite: **20 mm**
@@ -17,70 +22,74 @@ Konstruiere eine erste druckbare Testrevision **R01** einer PETG-Klammer, die ei
 - Bettprofil / Chromleiste: **20,0 mm tief** – vom Nutzer gemessen/bestätigt
 - Filzdicke an der Klemmstelle: **2,0 mm** – vom Nutzer gemessen/bestätigt
 - Vorhandener Chromüberstand gegenüber der angrenzenden Bettfläche: **2,0 mm** – vom Nutzer gemessen/bestätigt
-- Der 2,0-mm-Chromüberstand sitzt **direkt oben an der Chromleiste** und läuft dort als **rechteckige Kante** entlang; Ansicht von vorne rechteckig – vom Nutzer bestätigt
-- Grundprinzip: federnde, von oben aufgeschobene **U-Klammer** über Chromprofil + Filz
-- Der vorhandene 2,0-mm-Chromüberstand dient als Haltepunkt für die Widerhaken/Zacken.
-- Die Zacken sitzen auf der **langen Innenseite des betreffenden Klammerschenkels**.
-- Ausführung der Zacken: **viele kleine, direkt aneinandergereihte Zacken / eine feine Verzahnung**, nicht wenige weit auseinanderliegende Einzelzacken.
-- Keine zusätzlichen Funktionen, Halterungen, Führungen oder Befestigungsprinzipien ergänzen.
+- Der 2,0-mm-Chromüberstand sitzt direkt oben an der Chromleiste und läuft als rechteckige gerade Kante entlang.
+- Grundprinzip: federnde, von oben aufgeschobene **U-Klammer** über Chromprofil + Filz.
+- Die Verzahnung sitzt auf der **langen Innenseite des betreffenden Klammerschenkels**.
+- Verzahnung: **viele kleine, direkt aneinandergereihte Zacken / feine Verzahnung**, nicht wenige weit auseinanderliegende Einzelzacken.
+- Keine zusätzlichen Funktionen oder Befestigungsprinzipien ergänzen.
 
-## TECHNISCH NOTWENDIG
+## TECHNISCH NOTWENDIG – KLAMMER
 
-- Die lichte Aufnahme muss **20,0 mm Chromprofil + 2,0 mm Filz** aufnehmen.
-- Die ursprünglich genannten 20 mm Tiefe dürfen deshalb NICHT als fertige lichte Innenweite oder zwingendes Außenmaß interpretiert werden.
-- Nur das technisch notwendige Montagespiel für PETG/FDM ergänzen. Den tatsächlich gewählten Wert dokumentieren und ausdrücklich als technisch festgelegt kennzeichnen.
-- Übergang über den Klammerbogen mit belastungsgerechten Radien ausführen; keine scharf belastete 90°-Innenecke.
-- Die feine Verzahnung auf der langen Innenseite so ausrichten, dass sie beim Aufschieben über den vorhandenen **2,0-mm-Chromüberstand** gleiten kann und gegen Abziehen nach oben greift.
-- Zahnfüße verrunden bzw. konstruktiv so auslegen, dass keine unnötige Kerbwirkung entsteht.
-- PETG-Federwirkung und Belastung des Klammerbogens prüfen.
-- Druckorientierung so festlegen, dass die Federwirkung nicht unnötig durch ungünstige Layerorientierung geschwächt wird.
+- Lichte Aufnahme muss 20,0 mm Chromprofil + 2,0 mm Filz aufnehmen.
+- Nur technisch notwendiges PETG/FDM-Montagespiel ergänzen und dokumentieren.
+- Belastungsgerechter Klammerbogen ohne scharf belastete 90°-Innenecke.
+- Verzahnung so ausrichten, dass sie beim Aufschieben über den 2,0-mm-Chromüberstand gleitet und gegen Abziehen nach oben greift.
+- Zahnfüße kerbarm auslegen.
+- PETG-Federwirkung und geeignete Druckorientierung prüfen.
+- Die zuletzt erzeugte Feinverzahnung mit 18 direkt aneinandergereihten Zähnen, 1,4 mm Teilung und 0,6 mm Eingriff darf als technischer R01-Stand weiterverwendet werden, sofern die erneute SOLL/IST-Prüfung keine Abweichung von den verbindlichen Vorgaben ergibt.
 
-## TECHNISCHE FESTLEGUNG DURCH CHATGPT – IM RAHMEN DER NUTZERVORGABE
+## VERBINDLICH – NUBSI/NOPPEN
 
-- Die bisherige Ausführung mit nur vier Einzelzacken auf diskreten Höhen ist **nicht mehr zulässig**.
-- R01 soll eine **kleine, regelmäßig aneinandergereihte Verzahnung entlang der langen Innenseite** erhalten.
-- Exakte Zahnsteigung, Zahnhöhe und Anzahl dürfen technisch so gewählt werden, dass die Verzahnung mit PETG/FDM zuverlässig druckbar bleibt und die bestätigten Produktmaße/Funktionen unverändert bleiben.
-- Diese Detailwerte sind im SOLL/IST-Bericht als **technisch festgelegt** zu dokumentieren.
+Referenzform sind ausschließlich die **fünf vom Nutzer am 2026-08-29 bereitgestellten Fotos des realen schwarzen Bauteils**. Von ChatGPT erzeugte Visualisierungen/Zeichnungen sind ausdrücklich **KEINE Konstruktionsreferenz**.
 
-## GEOMETRISCHE KLÄRUNG VOM 2026-08-29
+Vom Nutzer gemessen:
 
-Die zuvor offenen Geometriepunkte sind durch den Nutzer geklärt:
+- Material des Nachbaus: **PETG**
+- Steckschaft-Durchmesser: **6,0 mm**
+- Steckschaft-Länge: **4,0 mm**, gemessen von der Unterkante bis zum Kragen
+- größter Außendurchmesser Kopf/Kragen: **11,0 mm**
+- Steckschaft: **gerader, durchgehender Zylinder ohne Stufe**
+- oberhalb des Schafts sitzt der auf den Fotos erkennbare Kragen/Kopf
+- Formcharakter des Kopfes: nach den realen Referenzfotos rekonstruieren; keine zusätzliche Stufe, Rastung, Nut oder sonstige Funktion erfinden
+- Nubsi bleibt ein **separates Bauteil** und wird lediglich zusammen mit der Klammer auf derselben Druckplatte angeordnet.
 
-- Gesamthöhe der Klammer: **40 mm von ganz oben bis ganz unten**.
-- Horizontaler Chromüberstand: **2,0 mm**.
-- Lage: Überstand **direkt oben an der Chromleiste**.
-- Form: **rechteckige, gerade Kante**; keine schräge oder gerundete Sonderkontur vorgegeben.
-- Verzahnung: **auf der langen Innenseite, klein und direkt aneinandergereiht**.
+## TECHNISCH NOTWENDIG – NUBSI
 
-Für diese Punkte besteht kein STOPP-Grund mehr. Sollte bei der tatsächlichen CAD-Konstruktion eine **andere, bisher nicht benannte** konstruktiv relevante Information fehlen, gilt weiterhin die STOPPREGEL; nicht raten.
+- Nicht vorgegebene, rein formbildende Radien/Höhen des Kopfes dürfen nur aus den realen Fotos abgeleitet werden, soweit dies eindeutig möglich ist.
+- Keine erfundene Präzision: aus Fotos abgeleitete Werte im Bericht als **aus Referenzfoto abgeleitet/geschätzt** kennzeichnen.
+- Der verbindliche 6,0-mm-Schaft darf nicht eigenmächtig wegen angenommener FDM-Passung verkleinert/vergrößert werden. Falls ein anderes Fertigmaß für die reale Passung technisch erforderlich erscheint: als OFFEN melden, nicht still ändern.
+- FDM-taugliche Druckorientierung bestimmen; Support nur wenn erreichbar und entfernbar.
+
+## GEMEINSAME DRUCKPLATTE
+
+- Klammer und Nubsi als **zwei separate STL-Bauteile** erzeugen.
+- Zusätzlich einen gemeinsamen Druckplatten-/Anordnungsstand dokumentieren, sodass beide in PETG in einem Druckjob gedruckt werden können.
+- Zwischen den Bauteilen ausreichenden Abstand für einen kollisionsfreien FDM-Druck vorsehen; Abstand ist technisch festzulegen und zu dokumentieren.
+- Keine geometrische Verbindung zwischen Klammer und Nubsi.
 
 ## ZIEL VON R01
 
-R01 ist ausdrücklich ein **kleiner, materialarmer Passungs- und Funktionstest am realen Bett**.
-
-R01 darf NICHT als final freigegeben bezeichnet werden, nur weil:
-- STL erzeugt wurde,
-- Mesh watertight ist,
-- Maße formal stimmen oder
-- ein Validator PASS meldet.
-
-Die finale Freigabe erfolgt ausschließlich durch den Nutzer nach realem Test.
+R01 ist ein materialarmer Passungs- und Funktionstest. Ein technischer PASS ersetzt keine reale Nutzerfreigabe.
 
 ## AUSGABE
 
 Erzeuge und dokumentiere:
 
-1. parametrische Quelldatei / reproduzierbaren CAD-Konstruktionsstand,
-2. STL der Testrevision R01,
-3. SOLL/IST-Maßbericht,
-4. tatsächlich gewählte lichte Innenweite und Montagespiel,
-5. Zahnanzahl, Zahnsteigung, Zahnhöhe/Eingriff und Orientierung der feinen Verzahnung,
-6. kurze FDM-/PETG-Prüfung inklusive empfohlener Druckorientierung,
-7. Revisionseintrag mit **GEÄNDERT / UNVERÄNDERT / ENTFERNT / OFFEN**,
-8. klare Trennung von **VERBINDLICH / TECHNISCH NOTWENDIG / OFFEN**.
+1. parametrische/reproduzierbare CAD-Stände für Klammer und Nubsi,
+2. **STL Klammer R01**,
+3. **STL Nubsi R01**,
+4. gemeinsamen Druckplatten-/Anordnungsstand für beide PETG-Bauteile,
+5. SOLL/IST-Maßbericht für beide Teile,
+6. technische Festlegungen und aus Fotos abgeleitete Werte klar kennzeichnen,
+7. FDM-/PETG-Prüfung inklusive Druckorientierungen,
+8. technische Mesh-/STL-Validierung beider Einzelteile,
+9. Revisionseintrag mit **GEÄNDERT / UNVERÄNDERT / ENTFERNT / OFFEN**,
+10. keine finale Nutzerfreigabe behaupten.
 
-## STOPPREGEL
+## STOPP-/ESKALATIONSREGEL
 
-Wenn eine konstruktiv relevante Information nicht aus diesen bestätigten Angaben oder der realen Geometrie eindeutig ableitbar ist: **nicht raten**. Punkt als OFFEN markieren und beim Nutzer nachfragen.
+Technische STOPPs und Detailentscheidungen, die die verbindliche Produktidee und Nutzermaße nicht verändern, sind zunächst durch ChatGPT/Birgit zu prüfen bzw. technisch zu entscheiden und sollen den Nutzer nicht unnötig blockieren.
+
+Nur wenn eine verbindliche Nutzeranforderung geändert werden müsste, eine reale nicht ableitbare Information zwingend fehlt oder eine echte Produkt-/Freigabeentscheidung notwendig ist, als **NUTZERENTSCHEIDUNG ERFORDERLICH** markieren.
 
 Keine stillen Nebenänderungen und keine zusätzlichen Features.
