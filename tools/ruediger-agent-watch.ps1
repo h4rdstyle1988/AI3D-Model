@@ -15,7 +15,7 @@ param(
 
 $ErrorActionPreference = "Continue"
 $PSDefaultParameterValues["*:ErrorAction"] = "Stop"
-$WatcherVersion = "R03.3"
+$WatcherVersion = "R03.4"
 
 if ($PollSeconds -lt 5) { throw "PollSeconds muss mindestens 5 sein." }
 if ($HeartbeatSeconds -lt 60 -or $HeartbeatSeconds -gt 120) { throw "HeartbeatSeconds muss zwischen 60 und 120 liegen." }
@@ -268,11 +268,16 @@ function Sync-RuntimeFromRemote {
 function Run-Codex {
     param([string]$Exe,[string]$Prompt,$Task,[string]$Branch)
     $pf = Join-Path $tempDir "codex-prompt-$PID.txt"
+    $codexOut = Join-Path $tempDir "codex-last.stdout.log"
+    $codexErr = Join-Path $tempDir "codex-last.stderr.log"
+    $codexCombined = Join-Path $logDir "codex-last-error.log"
+    $script:LastCodexError = ""
     [IO.File]::WriteAllText($pf,$Prompt,(New-Object Text.UTF8Encoding($false)))
+    Remove-Item -LiteralPath $codexOut,$codexErr -Force -ErrorAction SilentlyContinue
     try {
         $psi = New-Object Diagnostics.ProcessStartInfo
         $psi.FileName = "cmd.exe"
-        $psi.Arguments = "/d /s /c `"`"$Exe`" -c windows.sandbox=`"unelevated`" --sandbox workspace-write --ask-for-approval never exec < `"$pf`"`""
+        $psi.Arguments = "/d /s /c `"`"$Exe`" -c windows.sandbox=`"unelevated`" --sandbox workspace-write --ask-for-approval never exec < `"$pf`" > `"$codexOut`" 2> `"$codexErr`"`""
         $psi.UseShellExecute = $false
         $psi.CreateNoWindow = $true
         $proc = New-Object Diagnostics.Process
@@ -289,7 +294,20 @@ function Run-Codex {
             Start-Sleep 5
         }
         $proc.WaitForExit()
-        return [int]$proc.ExitCode
+        $exitCode = [int]$proc.ExitCode
+        if ($exitCode -ne 0) {
+            $stderr = ""
+            $stdout = ""
+            if (Test-Path -LiteralPath $codexErr) { $stderr = Get-Content -LiteralPath $codexErr -Raw -ErrorAction SilentlyContinue }
+            if (Test-Path -LiteralPath $codexOut) { $stdout = Get-Content -LiteralPath $codexOut -Raw -ErrorAction SilentlyContinue }
+            $full = ("STDERR:`r`n$stderr`r`nSTDOUT:`r`n$stdout").Trim()
+            [IO.File]::WriteAllText($codexCombined,$full,(New-Object Text.UTF8Encoding($false)))
+            $brief = $full -replace "`r?`n"," | "
+            if ($brief.Length -gt 1800) { $brief = $brief.Substring($brief.Length-1800) }
+            $script:LastCodexError = $brief
+            Write-Log "Codex Exit $exitCode: $brief" "ERROR"
+        }
+        return $exitCode
     }
     finally {
         Remove-Item -LiteralPath $pf -Force -ErrorAction SilentlyContinue
@@ -389,6 +407,7 @@ Keine finale Nutzerfreigabe behaupten. Nur taskbezogene Dateien aendern.
 
             if ($code -ne 0) {
                 Ensure-Preflight -Force
+                if ($script:LastCodexError) { throw "Codex Exit $code :: $script:LastCodexError" }
                 throw "Codex Exit $code"
             }
             if (-not ((& git -C $WorkerDir status --porcelain | Out-String).Trim())) { throw "Keine Ergebnisdateien" }
