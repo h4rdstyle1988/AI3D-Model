@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ruediger live status",
+  "type": "object",
+  "required": ["schema_version", "watcher_version", "updated_at", "phase", "pid"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "watcher_version": {"type": "string"},
+    "updated_at": {"type": "string"},
+    "phase": {"enum": ["START", "TASK_GEFUNDEN", "ARBEITET", "VALIDIERT", "FERTIG", "WARTET", "FEHLER_RETRY", "RESTARTING", "DIAGNOSTIC_PASS"]},
+    "task": {"type": ["string", "null"]},
+    "task_blob": {"type": ["string", "null"]},
+    "branch": {"type": ["string", "null"]},
+    "detail": {"type": ["string", "null"]},
+    "machine": {"type": ["string", "null"]},
+    "pid": {"type": "integer"}
+  },
+  "additionalProperties": false
+}
