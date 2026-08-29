@@ -74,6 +74,11 @@ function Test-WorkerSafeToStop {
     $master = (& git -C $worker rev-parse origin/master 2>$null | Out-String).Trim()
     if ($LASTEXITCODE -eq 0 -and $master -and $head -eq $master) { return $true }
 
+    $uniqueLocal = (& git -C $worker rev-list --count "origin/master..HEAD" 2>$null | Out-String).Trim()
+    if ($LASTEXITCODE -eq 0 -and $uniqueLocal -match '^\d+$' -and [int]$uniqueLocal -eq 0) {
+        return $true
+    }
+
     $branch = (& git -C $worker symbolic-ref -q --short HEAD 2>$null | Out-String).Trim()
     if ($LASTEXITCODE -ne 0 -or -not $branch) {
         return $true
