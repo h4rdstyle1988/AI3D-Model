@@ -1,0 +1,57 @@
+Kuerbis 20 mm R01 - R03.8 Testdruck-Bereitstellung
+==================================================
+
+Status: PASS - lokal bereitgestellt und geprueft
+Task: tasks/TASK-KUERBIS-20MM-R01-PRINT-RELEASE-R03-8.md
+Revision: R01-PRINT-RELEASE-R03.8
+Referenzcommit: 455914037523924f523f38070c213c34eaaf6fdf
+Referenzbranch: ruediger/task-kuerbis-20mm-r01-6b5f4e28
+
+Hauptdatei:
+- kuerbis-20mm-r01-zweifarbig.3mf
+
+Unveraendert uebernommene Dateien und gepruefte SHA256-Werte:
+- kuerbis-20mm-r01-koerper.stl
+  b08f5c257c02d2a7efa1abc6a4cf67f2eca6364f99534f4789df18f0beac7d40
+- kuerbis-20mm-r01-stiel.stl
+  94813de8374724ced640ec15b3f879c6fe64f756f91e4c7732b6ed162e4dfe93
+- kuerbis-20mm-r01-zweifarbig.3mf
+  9b220f28e2bd78d722301881288d7a8794b9581e3d6bbed035c0afcaeb814e6c
+
+Slicer-Zielparameter:
+- Zielgeraet: Anycubic Kobra S1 mit ACE Pro
+- Koerper: PLA Matt Desert Tan
+- Stiel: PLA Metal Kupfer
+- Duese: 0,4 mm
+- Layerhoehe: 0,12 mm
+- Erste Schicht: 0,20 mm
+- Aussenwaende: 3 = 1,2 mm
+- Top/Bottom: 4 Schichten
+- Infill: 5 % Gyroid
+- Support: zunaechst AUS
+- Brim: zunaechst AUS
+- Orientierung: normal auf flacher Kuerbisunterseite
+
+3MF-Pruefung:
+- Zwei getrennt anwaehlbare Meshobjekte vorhanden.
+- Zwei Build-Items vorhanden.
+- Objekt 1: Kuerbiskoerper - PLA Matt Desert Tan
+- Objekt 2: Stiel - PLA Metal Kupfer
+
+Lokaler Zielpfad:
+D:\3D-Models\generated\kuerbis-20mm-r01-print-release\
+
+Bereitstellungsstatus:
+- Zielordner: PASS
+- Alle vier geforderten Dateien vorhanden: PASS
+- Lokale SHA256-Pruefung aller drei Binaerdateien: PASS
+
+Offener realer Test:
+- Testdruck auf Anycubic Kobra S1 mit ACE Pro
+- Reale Druckqualitaetspruefung
+
+NUTZERENTSCHEIDUNG_ERFORDERLICH: false
+Grund: Keine Produktentscheidung offen; die freigegebenen Originaldateien wurden
+unveraendert technisch bereitgestellt.
+
+Dies ist keine finale Produktfreigabe.

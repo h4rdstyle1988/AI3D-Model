@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-KUERBIS-20MM-R01-PRINT-RELEASE-R03-8.md",
+  "revision": "R01-PRINT-RELEASE-R03.8",
+  "status": "PASS",
+  "reference": {
+    "commit": "455914037523924f523f38070c213c34eaaf6fdf",
+    "branch": "ruediger/task-kuerbis-20mm-r01-6b5f4e28"
+  },
+  "main_files": [
+    "outputs/kuerbis-20mm-r01-print-release-r03-8/kuerbis-20mm-r01-zweifarbig.3mf",
+    "outputs/kuerbis-20mm-r01-print-release-r03-8/kuerbis-20mm-r01-koerper.stl",
+    "outputs/kuerbis-20mm-r01-print-release-r03-8/kuerbis-20mm-r01-stiel.stl",
+    "outputs/kuerbis-20mm-r01-print-release-r03-8/PRINT-RELEASE.txt",
+    "outputs/kuerbis-20mm-r01-print-release-r03-8/RESULT-REPORT.md"
+  ],
+  "validations": {
+    "geometry_unchanged": "PASS_BY_IDENTICAL_SHA256",
+    "no_reconstruction_remesh_or_reexport": "PASS",
+    "three_mf_structure": {
+      "status": "PASS",
+      "model_entry": "3D/3dmodel.model",
+      "resource_mesh_objects": 2,
+      "build_items": 2,
+      "objects": [
+        "Kuerbiskoerper - PLA Matt Desert Tan",
+        "Stiel - PLA Metal Kupfer"
+      ]
+    },
+    "local_target_path": {
+      "path": "D:\\3D-Models\\generated\\kuerbis-20mm-r01-print-release\\",
+      "status": "PASS",
+      "exists": true,
+      "exact_required_file_count": 4,
+      "all_four_files_present": true
+    },
+    "local_hashes": [
+      {
+        "file": "kuerbis-20mm-r01-koerper.stl",
+        "expected": "b08f5c257c02d2a7efa1abc6a4cf67f2eca6364f99534f4789df18f0beac7d40",
+        "actual": "b08f5c257c02d2a7efa1abc6a4cf67f2eca6364f99534f4789df18f0beac7d40",
+        "status": "PASS"
+      },
+      {
+        "file": "kuerbis-20mm-r01-stiel.stl",
+        "expected": "94813de8374724ced640ec15b3f879c6fe64f756f91e4c7732b6ed162e4dfe93",
+        "actual": "94813de8374724ced640ec15b3f879c6fe64f756f91e4c7732b6ed162e4dfe93",
+        "status": "PASS"
+      },
+      {
+        "file": "kuerbis-20mm-r01-zweifarbig.3mf",
+        "expected": "9b220f28e2bd78d722301881288d7a8794b9581e3d6bbed035c0afcaeb814e6c",
+        "actual": "9b220f28e2bd78d722301881288d7a8794b9581e3d6bbed035c0afcaeb814e6c",
+        "status": "PASS"
+      }
+    ]
+  },
+  "open_real_tests": [
+    "Testdruck auf Anycubic Kobra S1 mit ACE Pro",
+    "Reale Druckqualitaetspruefung"
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Keine Produktentscheidung offen; reine technische Bereitstellung abgeschlossen.",
+  "final_product_approval_claimed": false
+}
