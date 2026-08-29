@@ -15,7 +15,7 @@ param(
 
 $ErrorActionPreference = "Continue"
 $PSDefaultParameterValues["*:ErrorAction"] = "Stop"
-$WatcherVersion = "R03.7"
+$WatcherVersion = "R03.8"
 
 if ($PollSeconds -lt 5) { throw "PollSeconds muss mindestens 5 sein." }
 if ($HeartbeatSeconds -lt 60 -or $HeartbeatSeconds -gt 120) { throw "HeartbeatSeconds muss zwischen 60 und 120 liegen." }
@@ -313,6 +313,7 @@ function Sync-RuntimeFromRemote {
 
 function Run-Codex {
     param([string]$Exe,[string]$Prompt,$Task,[string]$Branch)
+    $localGeneratedDir = "D:\3D-Models\generated"
     $pf = Join-Path $tempDir "codex-prompt-$PID.txt"
     $codexOut = Join-Path $tempDir "codex-last.stdout.log"
     $codexErr = Join-Path $tempDir "codex-last.stderr.log"
@@ -321,9 +322,12 @@ function Run-Codex {
     [IO.File]::WriteAllText($pf,$Prompt,(New-Object Text.UTF8Encoding($false)))
     Remove-Item -LiteralPath $codexOut,$codexErr -Force -ErrorAction SilentlyContinue
     try {
+        if (-not (Test-Path -LiteralPath $localGeneratedDir -PathType Container)) {
+            New-Item -ItemType Directory -Path $localGeneratedDir | Out-Null
+        }
         $psi = New-Object Diagnostics.ProcessStartInfo
         $psi.FileName = "cmd.exe"
-        $psi.Arguments = "/d /s /c `"`"$Exe`" -c windows.sandbox=`"unelevated`" --sandbox workspace-write --ask-for-approval never exec --skip-git-repo-check -C `"$WorkerDir`" < `"$pf`" > `"$codexOut`" 2> `"$codexErr`"`""
+        $psi.Arguments = "/d /s /c `"`"$Exe`" -c windows.sandbox=`"unelevated`" --sandbox workspace-write --ask-for-approval never --add-dir `"$localGeneratedDir`" exec --skip-git-repo-check -C `"$WorkerDir`" < `"$pf`" > `"$codexOut`" 2> `"$codexErr`"`""
         $psi.WorkingDirectory = $WorkerDir
         $psi.UseShellExecute = $false
         $psi.CreateNoWindow = $true
