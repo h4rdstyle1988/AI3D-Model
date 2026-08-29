@@ -28,9 +28,13 @@ $stateDir = Join-Path $env:LOCALAPPDATA "AI3D-Model"
 $stateFile = Join-Path $stateDir "ruediger-last-task.txt"
 New-Item -ItemType Directory -Force -Path $stateDir | Out-Null
 
-function Invoke-Git([string[]]$Args) {
-    & git @Args
-    if ($LASTEXITCODE -ne 0) { throw "git failed: git $($Args -join ' ')" }
+function Invoke-Git {
+    param([Parameter(Mandatory = $true)][string[]]$GitArgs)
+
+    & git @GitArgs
+    if ($LASTEXITCODE -ne 0) {
+        throw "git failed: git $($GitArgs -join ' ')"
+    }
 }
 
 $gitCommand = Get-Command git -ErrorAction SilentlyContinue
@@ -53,7 +57,7 @@ if (-not (Test-Path (Join-Path $WorkerDir ".git"))) {
     if (Test-Path $WorkerDir) {
         throw "WorkerDir existiert bereits, ist aber kein Git-Repository: $WorkerDir"
     }
-    Invoke-Git @("clone", $RepoUrl, $WorkerDir)
+    Invoke-Git -GitArgs @("clone", $RepoUrl, $WorkerDir)
 }
 
 Write-Host "Ruediger-Watcher aktiv. Worker: $WorkerDir"
@@ -62,7 +66,7 @@ Write-Host "Codex HOME: $env:HOME"
 
 while ($true) {
     try {
-        Invoke-Git @("-C", $WorkerDir, "fetch", "origin", "master")
+        Invoke-Git -GitArgs @("-C", $WorkerDir, "fetch", "origin", "master")
 
         $taskPath = (& git -C $WorkerDir show "origin/master:tasks/CURRENT_TASK.txt" 2>$null | Out-String).Trim()
         if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($taskPath) -or $taskPath -eq "NONE") {
@@ -83,9 +87,9 @@ while ($true) {
         }
 
         # DEDIZIERTER Worker: Hier sind Reset/Clean erlaubt, der normale Benutzer-Arbeitsbaum bleibt unberuehrt.
-        Invoke-Git @("-C", $WorkerDir, "checkout", "--detach", "origin/master")
-        Invoke-Git @("-C", $WorkerDir, "reset", "--hard", "origin/master")
-        Invoke-Git @("-C", $WorkerDir, "clean", "-fd")
+        Invoke-Git -GitArgs @("-C", $WorkerDir, "checkout", "--detach", "origin/master")
+        Invoke-Git -GitArgs @("-C", $WorkerDir, "reset", "--hard", "origin/master")
+        Invoke-Git -GitArgs @("-C", $WorkerDir, "clean", "-fd")
 
         $stem = [IO.Path]::GetFileNameWithoutExtension($taskPath).ToLowerInvariant() -replace '[^a-z0-9-]+','-'
         $shortBlob = $taskBlob.Substring(0, [Math]::Min(8, $taskBlob.Length))
@@ -95,10 +99,10 @@ while ($true) {
         & git -C $WorkerDir show-ref --verify --quiet "refs/heads/$branch"
         $branchExists = ($LASTEXITCODE -eq 0)
         if ($branchExists) {
-            Invoke-Git @("-C", $WorkerDir, "branch", "-D", $branch)
+            Invoke-Git -GitArgs @("-C", $WorkerDir, "branch", "-D", $branch)
         }
 
-        Invoke-Git @("-C", $WorkerDir, "checkout", "-b", $branch, "origin/master")
+        Invoke-Git -GitArgs @("-C", $WorkerDir, "checkout", "-b", $branch, "origin/master")
 
         $prompt = @"
 Lies zuerst AGENTS.md und danach die aktive Auftragsdatei '$taskPath' vollstaendig.
@@ -131,9 +135,9 @@ Aendere ausschliesslich Dateien, die fuer diesen Auftrag erforderlich sind.
             throw "Codex hat keine Ergebnisdateien erzeugt."
         }
 
-        Invoke-Git @("-C", $WorkerDir, "add", "-A")
-        Invoke-Git @("-C", $WorkerDir, "commit", "-m", "Ruediger result for $taskPath")
-        Invoke-Git @("-C", $WorkerDir, "push", "-u", "origin", $branch, "--force-with-lease")
+        Invoke-Git -GitArgs @("-C", $WorkerDir, "add", "-A")
+        Invoke-Git -GitArgs @("-C", $WorkerDir, "commit", "-m", "Ruediger result for $taskPath")
+        Invoke-Git -GitArgs @("-C", $WorkerDir, "push", "-u", "origin", $branch, "--force-with-lease")
 
         Set-Content -Path $stateFile -Value $taskKey -Encoding UTF8
         Write-Host "Task abgeschlossen und gepusht: $branch"
