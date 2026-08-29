@@ -9,7 +9,8 @@ $ErrorActionPreference = "Stop"
 if (-not $WorkerDir) { $WorkerDir = Join-Path $AgentRoot "worker\AI3D-Model-worker" }
 
 $logDir = Join-Path $AgentRoot "logs"
-New-Item -ItemType Directory -Force -Path $logDir | Out-Null
+$tempDir = Join-Path $AgentRoot "temp"
+New-Item -ItemType Directory -Force -Path $logDir,$tempDir | Out-Null
 $launcherLog = Join-Path $logDir "ruediger-launcher.log"
 
 function Write-LauncherLog {
@@ -87,11 +88,24 @@ try {
     }
 
     Write-LauncherLog "Starte Watcher: '$watcher'"
-    $watcherOutput = (& powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $watcher -AgentRoot $AgentRoot -WorkerDir $WorkerDir -SchedulerTaskName $SchedulerTaskName 2>&1 | Out-String)
-    $exitCode = $LASTEXITCODE
-    if ($watcherOutput.Trim()) {
-        Add-Content -LiteralPath $launcherLog -Value $watcherOutput.TrimEnd() -Encoding UTF8
+    $stdoutPath = Join-Path $tempDir "ruediger-watcher-$PID.out.log"
+    $stderrPath = Join-Path $tempDir "ruediger-watcher-$PID.err.log"
+    Remove-Item -LiteralPath $stdoutPath,$stderrPath -Force -ErrorAction SilentlyContinue
+
+    $watcherArgs = "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File `"$watcher`" -AgentRoot `"$AgentRoot`" -WorkerDir `"$WorkerDir`" -SchedulerTaskName `"$SchedulerTaskName`""
+    $proc = Start-Process -FilePath "powershell.exe" -ArgumentList $watcherArgs -WindowStyle Hidden -RedirectStandardOutput $stdoutPath -RedirectStandardError $stderrPath -PassThru -Wait
+    $exitCode = [int]$proc.ExitCode
+
+    foreach ($path in @($stdoutPath,$stderrPath)) {
+        if (Test-Path -LiteralPath $path) {
+            $text = Get-Content -LiteralPath $path -Raw -ErrorAction SilentlyContinue
+            if ($text -and $text.Trim()) {
+                Add-Content -LiteralPath $launcherLog -Value $text.TrimEnd() -Encoding UTF8
+            }
+            Remove-Item -LiteralPath $path -Force -ErrorAction SilentlyContinue
+        }
     }
+
     Write-LauncherLog "Watcher beendet; ExitCode=$exitCode" $(if($exitCode -eq 0){"INFO"}else{"ERROR"})
     exit $exitCode
 }
