@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ruediger result status",
+  "type": "object",
+  "required": ["schema_version", "task", "revision", "status", "main_files", "validations", "open_real_tests", "user_decisions"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "task": { "type": "string", "pattern": "^tasks/.+\\.md$" },
+    "revision": { "type": "string", "minLength": 1 },
+    "status": { "enum": ["PASS", "STOPP", "OFFEN"] },
+    "main_files": { "type": "array", "items": { "type": "string" } },
+    "validations": { "type": "array", "items": { "type": "object", "required": ["name", "status"], "properties": { "name": { "type": "string" }, "status": { "enum": ["PASS", "FAIL", "OFFEN", "SKIPPED"] }, "evidence": { "type": "string" } }, "additionalProperties": false } },
+    "open_real_tests": { "type": "array", "items": { "type": "string" } },
+    "user_decisions": { "type": "array", "items": { "type": "string" } },
+    "technical_open_points": { "type": "array", "items": { "type": "string" } },
+    "final_product_approval": { "const": false }
+  },
+  "additionalProperties": false
+}

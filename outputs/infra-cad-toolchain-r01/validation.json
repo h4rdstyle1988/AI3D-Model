@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-INFRA-CAD-TOOLCHAIN-R01.md",
+  "revision": "R01",
+  "performed_at": "2026-08-29T14:35:10+02:00",
+  "checks": [
+    { "name": "PowerShell parser: cad-toolchain-preflight.ps1", "status": "PASS", "evidence": "0 parser errors" },
+    { "name": "PowerShell parser: ruediger-agent-watch.ps1", "status": "PASS", "evidence": "0 parser errors" },
+    { "name": "Toolchain preflight repeatability", "status": "PASS", "evidence": "Two runs returned overall PASS and the same optional_missing set; see both toolchain-preflight.json files." },
+    { "name": "Git reachable", "status": "PASS", "evidence": "Resolved to C:/Program Files/Git/cmd/git.exe; diagnostic log records successful discovery." },
+    { "name": "Codex reachable", "status": "PASS", "evidence": "Resolved to the installed Codex executable; diagnostic log records successful discovery." },
+    { "name": "Watcher DiagnosticOnly startup", "status": "PASS", "evidence": "Exit 0 using an isolated LOCALAPPDATA under this output directory; log retained under AI3D-Model/logs." },
+    { "name": "Optional tools do not cause global STOPP", "status": "PASS", "evidence": "OpenSCAD, Python/CadQuery, mesh checker and slicer CLI are OFFEN while overall remains PASS." },
+    { "name": "Heartbeat implementation", "status": "PASS", "evidence": "Codex is a separate process; WaitForExit uses the configurable 90 s default and logs ARBEITET without writing to process streams; final state logs FERTIG or FEHLER." },
+    { "name": "OpenSCAD CLI smoke", "status": "SKIPPED", "evidence": "Executable not found in PATH or standard user/system locations." },
+    { "name": "CadQuery import/export smoke", "status": "SKIPPED", "evidence": "py launcher reports no installed Python; no interpreter available." },
+    { "name": "Slicer CLI smoke", "status": "SKIPPED", "evidence": "No supported CLI executable found; no GUI executable was assumed to support CLI operation." },
+    { "name": "Saved Windows Scheduler task context", "status": "OFFEN", "evidence": "Cannot impersonate the saved scheduler account from the repository sandbox; DiagnosticOnly passed in the local isolated process context." },
+    { "name": "Product geometry unchanged", "status": "PASS", "evidence": "git status contains no changed CAD, STL, 3MF or other product geometry file." }
+  ],
+  "final_product_approval": false
+}

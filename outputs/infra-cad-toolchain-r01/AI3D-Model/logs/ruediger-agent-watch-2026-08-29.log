@@ -1,0 +1,8 @@
+﻿2026-08-29 14:35:09.084 +02:00 [INFO] START process=26340 user=CodexSandboxOffline machine=GAMECENTER diagnostic=True
+2026-08-29 14:35:09.090 +02:00 [INFO] ENV USERPROFILE='C:\Users\h4rds' HOME='C:\Users\h4rds' LOCALAPPDATA='C:\Users\h4rds\Documents\ChatGPT\AI3D Model-worker\outputs\infra-cad-toolchain-r01' WorkerDir='C:\Users\h4rds\Documents\ChatGPT\AI3D Model-worker'
+2026-08-29 14:35:09.091 +02:00 [INFO] Log-Aufbewahrung: 7 Tage
+2026-08-29 14:35:09.096 +02:00 [INFO] Git CLI: C:\Program Files\Git\cmd\git.exe
+2026-08-29 14:35:09.098 +02:00 [INFO] Codex CLI: C:\Users\h4rds\AppData\Local\OpenAI\Codex\bin\fac60c5e9a2ae3df\codex.exe
+2026-08-29 14:35:09.100 +02:00 [INFO] Codex HOME: C:\Users\h4rds
+2026-08-29 14:35:10.255 +02:00 [INFO] PREFLIGHT PASS: optional_offen=openscad,python,mesh_checker,slicer_cli status=C:\Users\h4rds\Documents\ChatGPT\AI3D Model-worker\outputs\infra-cad-toolchain-r01\AI3D-Model\toolchain-preflight.json
+2026-08-29 14:35:10.257 +02:00 [INFO] DIAGNOSTIC PASS: Scheduler-Kontext kann PowerShell, Benutzerprofil, Logpfad, Git und Codex CLI erreichen. Keine Task verarbeitet.

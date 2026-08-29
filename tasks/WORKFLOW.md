@@ -14,6 +14,18 @@ Ziel: Der Nutzer klärt Anforderungen mit ChatGPT. ChatGPT legt die verbindliche
 8. Erst nach dieser Remote-Verifikation darf der lokale Worker auf den kompakten Ruhemodus reduziert werden. Projektordner `outputs/` und `work/` bleiben dann nicht lokal ausgecheckt.
 9. Das Ergebnis ist auf GitHub verfügbar und kann von ChatGPT gegen die verbindliche Spezifikation geprüft werden.
 
+Vor jedem Codex-Lauf schreibt der Watcher den maschinenlesbaren Toolstatus nach `%LOCALAPPDATA%\AI3D-Model\toolchain-preflight.json`. Git und Codex sind verbindlich; OpenSCAD, Python/CadQuery, Meshprüfung und Slicer-CLI werden als optionale Wege ausgewiesen und blockieren nur, wenn die konkrete Task keinen reproduzierbaren Ersatzweg besitzt.
+
+Während eines Codex-Laufs meldet der Watcher standardmäßig alle 90 Sekunden `ARBEITET`; Abschlusszustände sind `FERTIG` oder `FEHLER`. Im Leerlauf wartet der Watcher im Poll-Intervall. Die umgeleitete Codex-Ausgabe bleibt in den tageweise bereinigten Logs erhalten und wird nach Prozessende ausgegeben.
+
+## Ergebnisstatus
+
+Jeder Ergebnisbranch enthält eine taskbezogene JSON-Statusdatei nach `tasks/RESULT-STATUS.schema.json`. Technische offene Punkte gehören in `technical_open_points`, echte ausstehende Produktentscheidungen ausschließlich in `user_decisions`. `final_product_approval` bleibt immer `false`; weder Merge noch finale Freigabe erfolgen automatisch.
+
+## Referenzen
+
+Das verbindliche Schema und der Ersatzweg für nicht übertragbare Binärdateien stehen in `references/README.md` und `references/manifest.schema.json`. Tasks müssen konkrete Pfade unter `references/<projekt>/` nennen.
+
 ## Lokale Speicherregeln
 
 - Watcher-Logs werden tageweise unter `%LOCALAPPDATA%\AI3D-Model\logs` gespeichert.

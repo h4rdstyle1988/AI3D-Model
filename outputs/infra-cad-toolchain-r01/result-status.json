@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-INFRA-CAD-TOOLCHAIN-R01.md",
+  "revision": "R01",
+  "status": "PASS",
+  "main_files": [
+    "tools/cad-toolchain-preflight.ps1",
+    "tools/ruediger-agent-watch.ps1",
+    "references/README.md",
+    "references/manifest.schema.json",
+    "tasks/RESULT-STATUS.schema.json",
+    "outputs/infra-cad-toolchain-r01/INFRASTRUCTURE-REPORT.md"
+  ],
+  "validations": [
+    { "name": "PowerShell parser checks", "status": "PASS", "evidence": "outputs/infra-cad-toolchain-r01/validation.json" },
+    { "name": "Preflight and DiagnosticOnly", "status": "PASS", "evidence": "outputs/infra-cad-toolchain-r01/validation.json" },
+    { "name": "OpenSCAD/CadQuery/slicer smoke tests", "status": "SKIPPED", "evidence": "Optional executables unavailable; see toolchain-preflight.json." }
+  ],
+  "open_real_tests": ["OpenSCAD CLI smoke test", "CadQuery import/export smoke test", "Supported slicer CLI smoke test", "Scheduler task under its saved account/context"],
+  "user_decisions": [],
+  "technical_open_points": ["Optional CAD and slicer executables are not installed or discoverable."],
+  "final_product_approval": false
+}

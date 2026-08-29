@@ -1,0 +1,52 @@
+﻿{
+    "schema_version":  1,
+    "generated_at":  "2026-08-29T14:35:10.1346449+02:00",
+    "repo_root":  "C:\\Users\\h4rds\\Documents\\ChatGPT\\AI3D Model-worker",
+    "overall":  "PASS",
+    "blocking_missing":  [
+
+                         ],
+    "optional_missing":  [
+                             "openscad",
+                             "python",
+                             "mesh_checker",
+                             "slicer_cli"
+                         ],
+    "tools":  {
+                  "git":  {
+                              "status":  "PASS",
+                              "path":  "C:\\Program Files\\Git\\cmd\\git.exe",
+                              "version":  "git version 2.55.0.windows.3"
+                          },
+                  "codex":  {
+                                "status":  "PASS",
+                                "path":  "C:\\Users\\h4rds\\AppData\\Local\\OpenAI\\Codex\\bin\\fac60c5e9a2ae3df\\codex.exe",
+                                "version":  null
+                            },
+                  "openscad":  {
+                                   "status":  "OFFEN",
+                                   "path":  null,
+                                   "version":  null
+                               },
+                  "python":  {
+                                 "status":  "OFFEN",
+                                 "path":  null,
+                                 "version":  null
+                             },
+                  "cadquery":  {
+                                   "available":  false,
+                                   "status":  "OFFEN"
+                               },
+                  "mesh_check":  {
+                                     "methods":  [
+
+                                                 ],
+                                     "status":  "OFFEN"
+                                 },
+                  "slicer_cli":  {
+                                     "status":  "OFFEN",
+                                     "path":  null,
+                                     "note":  "Eine gefundene GUI-EXE gilt erst nach separat erfolgreichem CLI-Smoke-Test als automatisierbar."
+                                 }
+              }
+}

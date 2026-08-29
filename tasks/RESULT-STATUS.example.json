@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-EXAMPLE-R01.md",
+  "revision": "R01",
+  "status": "OFFEN",
+  "main_files": [],
+  "validations": [],
+  "open_real_tests": [],
+  "user_decisions": [],
+  "technical_open_points": ["Beispiel ersetzen; technische Punkte sind keine Nutzerentscheidung."],
+  "final_product_approval": false
+}

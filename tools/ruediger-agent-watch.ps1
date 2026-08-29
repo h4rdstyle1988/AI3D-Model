@@ -3,6 +3,7 @@ param(
     [string]$WorkerDir = "$env:USERPROFILE\Documents\ChatGPT\AI3D Model-worker",
     [int]$PollSeconds = 60,
     [int]$LogRetentionDays = 7,
+    [ValidateRange(60, 120)][int]$HeartbeatSeconds = 90,
     [switch]$DiagnosticOnly
 )
 
@@ -124,6 +125,38 @@ function Assert-RemoteBranchContainsHead {
     Write-WatcherLog "Remote-Verifikation PASS: $Branch @ $localHead"
 }
 
+function Invoke-ToolchainPreflight {
+    $preflight = Join-Path $WorkerDir "tools\cad-toolchain-preflight.ps1"
+    if (-not (Test-Path -LiteralPath $preflight)) {
+        throw "Toolchain-Preflight fehlt: $preflight"
+    }
+    $output = Join-Path $stateDir "toolchain-preflight.json"
+    & powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $preflight -RepoRoot $WorkerDir -OutputPath $output | Out-Null
+    if ($LASTEXITCODE -ne 0) { throw "Verbindliche Preflight-Werkzeuge Git/Codex fehlen. Siehe $output" }
+    $summary = Get-Content -Raw -LiteralPath $output -Encoding UTF8 | ConvertFrom-Json
+    Write-WatcherLog "PREFLIGHT $($summary.overall): optional_offen=$($summary.optional_missing -join ',') status=$output"
+}
+
+function Invoke-CodexWithHeartbeat {
+    param([Parameter(Mandatory = $true)][string]$Prompt)
+    $runId = Get-Date -Format "yyyyMMdd-HHmmss"
+    $stdout = Join-Path $logDir "codex-$runId.stdout.log"
+    $stderr = Join-Path $logDir "codex-$runId.stderr.log"
+    $quotedPrompt = '"' + ($Prompt -replace '"', '\"') + '"'
+    $arguments = "--sandbox workspace-write --ask-for-approval never exec $quotedPrompt"
+    $process = Start-Process -FilePath $CodexExe -ArgumentList $arguments -WorkingDirectory $WorkerDir -NoNewWindow -PassThru -RedirectStandardOutput $stdout -RedirectStandardError $stderr
+    $started = Get-Date
+    while (-not $process.WaitForExit($HeartbeatSeconds * 1000)) {
+        $elapsed = [int]((Get-Date) - $started).TotalSeconds
+        Write-WatcherLog "ARBEITET task=$taskPath process=$($process.Id) elapsed_seconds=$elapsed"
+    }
+    $process.WaitForExit()
+    if (Test-Path -LiteralPath $stdout) { Get-Content -LiteralPath $stdout | Write-Host }
+    if (Test-Path -LiteralPath $stderr) { Get-Content -LiteralPath $stderr | Write-Warning }
+    Write-WatcherLog "$(if ($process.ExitCode -eq 0) { 'FERTIG' } else { 'FEHLER' }) task=$taskPath process=$($process.Id) exit=$($process.ExitCode)"
+    return $process.ExitCode
+}
+
 try {
     Write-WatcherLog "START process=$PID user=$([Environment]::UserName) machine=$env:COMPUTERNAME diagnostic=$DiagnosticOnly"
     Write-WatcherLog "ENV USERPROFILE='$env:USERPROFILE' HOME='$env:HOME' LOCALAPPDATA='$env:LOCALAPPDATA' WorkerDir='$WorkerDir'"
@@ -148,6 +181,10 @@ try {
     }
     Write-WatcherLog "Codex CLI: $CodexExe"
     Write-WatcherLog "Codex HOME: $env:HOME"
+
+    if (Test-Path (Join-Path $WorkerDir "tools\cad-toolchain-preflight.ps1")) {
+        Invoke-ToolchainPreflight
+    }
 
     if ($DiagnosticOnly) {
         Write-WatcherLog "DIAGNOSTIC PASS: Scheduler-Kontext kann PowerShell, Benutzerprofil, Logpfad, Git und Codex CLI erreichen. Keine Task verarbeitet."
@@ -222,6 +259,7 @@ try {
             }
 
             Invoke-Git -GitArgs @("-C", $WorkerDir, "checkout", "-b", $branch, "origin/master")
+            Invoke-ToolchainPreflight
 
             $prompt = @"
 Lies zuerst AGENTS.md und danach die aktive Auftragsdatei '$taskPath' vollstaendig.
@@ -238,8 +276,7 @@ Aendere ausschliesslich Dateien, die fuer diesen Auftrag erforderlich sind.
             Push-Location $WorkerDir
             try {
                 Write-WatcherLog "Starte Codex fuer: $taskPath"
-                & $CodexExe --sandbox workspace-write --ask-for-approval never exec $prompt
-                $codexExit = $LASTEXITCODE
+                $codexExit = Invoke-CodexWithHeartbeat -Prompt $prompt
             }
             finally {
                 Pop-Location

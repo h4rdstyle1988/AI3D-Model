@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI3D reference manifest",
+  "type": "object",
+  "required": ["schema_version", "project", "references"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "project": { "type": "string", "minLength": 1 },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["repo_path", "availability", "kind", "description"],
+        "properties": {
+          "repo_path": { "type": "string", "pattern": "^references/[^/]+/.+" },
+          "availability": { "enum": ["AVAILABLE", "NOT_TRANSFERRED", "MISSING"] },
+          "kind": { "enum": ["REAL_REFERENCE", "GENERATED", "DERIVED"] },
+          "description": { "type": "string", "minLength": 1 },
+          "sha256": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" },
+          "source": { "type": "string" },
+          "captured_at": { "type": ["string", "null"] },
+          "handoff": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
