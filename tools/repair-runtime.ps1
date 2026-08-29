@@ -148,9 +148,9 @@ else {
 if ($task) {
     try {
         $launcher = Join-Path $runtime "restart-runtime-watcher.ps1"
-        $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File `"$launcher`" -AgentRoot `"$AgentRoot`" -WorkerDir `"$worker`" -SchedulerTaskName `"$SchedulerTaskName`""
+        $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-NoProfile -NonInteractive -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$launcher`" -AgentRoot `"$AgentRoot`" -WorkerDir `"$worker`" -SchedulerTaskName `"$SchedulerTaskName`""
         Set-ScheduledTask -TaskName $SchedulerTaskName -Action $action | Out-Null
-        Write-Output "Scheduler-Aktion auf dynamischen R03-Codex-Launcher gesetzt."
+        Write-Output "Scheduler-Aktion auf versteckten dynamischen R03-Codex-Launcher gesetzt."
     }
     catch {
         throw "Scheduler-Aktion konnte nicht aktualisiert werden: $($_.Exception.Message)"
