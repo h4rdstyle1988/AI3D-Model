@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "task": "tasks/TASK-INFRA-CAD-TOOLCHAIN-R01.md",
+  "revision": "R01",
+  "status": "OFFEN",
+  "main_files": [
+    "tools/ruediger-agent-watch.ps1",
+    "tools/toolchain-preflight.ps1",
+    "tools/setup-cad-toolchains.ps1",
+    "references/README.md",
+    "docs/RESULT-STATUS.schema.json",
+    "outputs/infra-cad-toolchain-r01/INFRASTRUKTURBERICHT.md"
+  ],
+  "validations": [
+    {"name": "watcher_powershell_parse", "status": "PASS", "evidence": "PowerShell language parser returned no errors"},
+    {"name": "toolchain_preflight", "status": "PASS", "evidence": "outputs/infra-cad-toolchain-r01/toolchain-preflight.json"},
+    {"name": "d_worker_end_to_end", "status": "OFFEN", "evidence": "D: outside current writable sandbox"},
+    {"name": "openscad_smoke", "status": "OFFEN", "evidence": "OpenSCAD not installed"},
+    {"name": "cadquery_export_smoke", "status": "OFFEN", "evidence": "Python/CadQuery not installed"}
+  ],
+  "open_real_tests": ["Scheduler diagnostic on D:", "Full fetch/task/Codex/commit/push cycle", "90-second heartbeat during long run"],
+  "user_decisions": [],
+  "technical_open_points": ["Provide winget/App Installer through supported Microsoft mechanism", "Install OpenSCAD and Python/CadQuery", "Verify whether installed Anycubic version exposes a supported CLI"],
+  "final_product_approval": false
+}

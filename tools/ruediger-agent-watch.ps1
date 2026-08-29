@@ -1,8 +1,10 @@
 param(
     [string]$RepoUrl = "https://github.com/h4rdstyle1988/AI3D-Model.git",
-    [string]$WorkerDir = "$env:USERPROFILE\Documents\ChatGPT\AI3D Model-worker",
+    [string]$AgentRoot = "D:\AI3D-Agent",
+    [string]$WorkerDir = "",
     [int]$PollSeconds = 60,
     [int]$LogRetentionDays = 7,
+    [ValidateRange(60,120)][int]$HeartbeatSeconds = 90,
     [switch]$DiagnosticOnly
 )
 
@@ -21,15 +23,17 @@ if ([string]::IsNullOrWhiteSpace($env:LOCALAPPDATA)) {
     throw "LOCALAPPDATA konnte nicht ermittelt werden."
 }
 
-if ([string]::IsNullOrWhiteSpace($WorkerDir) -or $WorkerDir -eq "\Documents\ChatGPT\AI3D Model-worker") {
-    $WorkerDir = Join-Path $env:USERPROFILE "Documents\ChatGPT\AI3D Model-worker"
+if ([string]::IsNullOrWhiteSpace($WorkerDir)) {
+    $WorkerDir = Join-Path $AgentRoot "worker\AI3D-Model"
 }
 
-$stateDir = Join-Path $env:LOCALAPPDATA "AI3D-Model"
+$stateDir = Join-Path $AgentRoot "state"
 $stateFile = Join-Path $stateDir "ruediger-last-task.txt"
-$logDir = Join-Path $stateDir "logs"
-$libraryOutputDir = Join-Path $stateDir "project-library"
-New-Item -ItemType Directory -Force -Path $stateDir, $logDir, $libraryOutputDir | Out-Null
+$logDir = Join-Path $AgentRoot "logs"
+$libraryOutputDir = Join-Path $AgentRoot "outputs\project-library"
+$cacheDir = Join-Path $AgentRoot "cache"
+$tempDir = Join-Path $AgentRoot "temp"
+New-Item -ItemType Directory -Force -Path $AgentRoot, $stateDir, $logDir, $libraryOutputDir, $cacheDir, $tempDir, (Split-Path -Parent $WorkerDir), (Join-Path $AgentRoot "toolchains") | Out-Null
 
 function Remove-ExpiredLogs {
     $cutoff = (Get-Date).AddDays(-$LogRetentionDays)
@@ -124,9 +128,45 @@ function Assert-RemoteBranchContainsHead {
     Write-WatcherLog "Remote-Verifikation PASS: $Branch @ $localHead"
 }
 
+function Invoke-ToolchainPreflight {
+    $preflight = Join-Path $WorkerDir "tools\toolchain-preflight.ps1"
+    $preflightRepoRoot = $WorkerDir
+    if (-not (Test-Path -LiteralPath $preflight)) {
+        $preflight = Join-Path (Split-Path -Parent $PSScriptRoot) "tools\toolchain-preflight.ps1"
+        $preflightRepoRoot = Split-Path -Parent $PSScriptRoot
+    }
+    $output = Join-Path $stateDir "toolchain-preflight.json"
+    if (-not (Test-Path -LiteralPath $preflight)) { Write-WatcherLog -Level "WARN" -Message "Toolchain-Preflight fehlt: $preflight"; return }
+    & powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $preflight -RepoRoot $preflightRepoRoot -OutputPath $output | Out-Null
+    if ($LASTEXITCODE -ne 0) { throw "Toolchain-Preflight fehlgeschlagen." }
+    $summary = Get-Content -Raw -LiteralPath $output | ConvertFrom-Json
+    $available = @($summary.tools | Where-Object available | ForEach-Object name) -join ","
+    $missing = @($summary.tools | Where-Object { -not $_.available } | ForEach-Object name) -join ","
+    Write-WatcherLog "PREFLIGHT $($summary.status): vorhanden=[$available] optional-fehlend=[$missing] json='$output'"
+}
+
+function Invoke-CodexWithHeartbeat {
+    param([string]$Executable, [string]$PromptText)
+    $job = Start-Job -ScriptBlock {
+        param($Exe, $Prompt, $Directory)
+        Set-Location -LiteralPath $Directory
+        & $Exe --sandbox workspace-write --ask-for-approval never exec $Prompt
+        [pscustomobject]@{ Marker="CODEX_EXIT"; ExitCode=$LASTEXITCODE }
+    } -ArgumentList $Executable, $PromptText, $WorkerDir
+    try {
+        while (-not (Wait-Job -Job $job -Timeout $HeartbeatSeconds)) { Write-WatcherLog "ARBEITET: Codex-Prozess fuer aktive Task laeuft weiter." }
+        $received = @(Receive-Job -Job $job)
+        $exitRecord = $received | Where-Object { $_.Marker -eq "CODEX_EXIT" } | Select-Object -Last 1
+        $received | Where-Object { $_.Marker -ne "CODEX_EXIT" } | ForEach-Object { Write-Host $_ }
+        if (-not $exitRecord) { throw "Codex-Exitcode konnte nicht ermittelt werden." }
+        return [int]$exitRecord.ExitCode
+    }
+    finally { Remove-Job -Job $job -Force -ErrorAction SilentlyContinue }
+}
+
 try {
     Write-WatcherLog "START process=$PID user=$([Environment]::UserName) machine=$env:COMPUTERNAME diagnostic=$DiagnosticOnly"
-    Write-WatcherLog "ENV USERPROFILE='$env:USERPROFILE' HOME='$env:HOME' LOCALAPPDATA='$env:LOCALAPPDATA' WorkerDir='$WorkerDir'"
+    Write-WatcherLog "ENV USERPROFILE='$env:USERPROFILE' HOME='$env:HOME' AgentRoot='$AgentRoot' WorkerDir='$WorkerDir'"
     Write-WatcherLog "Log-Aufbewahrung: $LogRetentionDays Tage"
 
     $gitCommand = Get-Command git -ErrorAction SilentlyContinue
@@ -150,7 +190,8 @@ try {
     Write-WatcherLog "Codex HOME: $env:HOME"
 
     if ($DiagnosticOnly) {
-        Write-WatcherLog "DIAGNOSTIC PASS: Scheduler-Kontext kann PowerShell, Benutzerprofil, Logpfad, Git und Codex CLI erreichen. Keine Task verarbeitet."
+        Invoke-ToolchainPreflight
+        Write-WatcherLog "FERTIG: DIAGNOSTIC PASS. Scheduler-Kontext kann PowerShell, Benutzerprofil, D:-Ablage, Logpfad, Git und Codex CLI erreichen. Keine Task verarbeitet."
         exit 0
     }
 
@@ -181,6 +222,7 @@ try {
                     Enter-CompactWorkerMode
                     Update-LocalProjectLibrary
                     $compactReady = $true
+                    Write-WatcherLog "WARTET: Keine aktive Task."
                 }
                 Start-Sleep -Seconds $PollSeconds
                 continue
@@ -199,6 +241,7 @@ try {
                     Enter-CompactWorkerMode
                     Update-LocalProjectLibrary
                     $compactReady = $true
+                    Write-WatcherLog "WARTET: Aktive Task wurde bereits verarbeitet."
                 }
                 Start-Sleep -Seconds $PollSeconds
                 continue
@@ -222,6 +265,7 @@ try {
             }
 
             Invoke-Git -GitArgs @("-C", $WorkerDir, "checkout", "-b", $branch, "origin/master")
+            Invoke-ToolchainPreflight
 
             $prompt = @"
 Lies zuerst AGENTS.md und danach die aktive Auftragsdatei '$taskPath' vollstaendig.
@@ -233,13 +277,13 @@ Erzeuge alle im Auftrag geforderten CAD-/STL-/Pruef-/Revisionsdateien im Reposit
 Fuehre technische Validierungen aus, soweit die lokale Toolchain sie erlaubt.
 Keine finale Nutzerfreigabe behaupten.
 Aendere ausschliesslich Dateien, die fuer diesen Auftrag erforderlich sind.
+Erzeuge RESULT-STATUS.json gemaess docs/RESULT-STATUS.schema.json; technische offene Punkte sind keine Nutzerentscheidungen.
 "@
 
             Push-Location $WorkerDir
             try {
                 Write-WatcherLog "Starte Codex fuer: $taskPath"
-                & $CodexExe --sandbox workspace-write --ask-for-approval never exec $prompt
-                $codexExit = $LASTEXITCODE
+                $codexExit = Invoke-CodexWithHeartbeat -Executable $CodexExe -PromptText $prompt
             }
             finally {
                 Pop-Location
@@ -260,7 +304,7 @@ Aendere ausschliesslich Dateien, die fuer diesen Auftrag erforderlich sind.
             Assert-RemoteBranchContainsHead -Branch $branch
 
             Set-Content -Path $stateFile -Value $taskKey -Encoding UTF8
-            Write-WatcherLog "Task abgeschlossen und auf GitHub verifiziert: $branch"
+            Write-WatcherLog "FERTIG: Task abgeschlossen und auf GitHub verifiziert: $branch"
 
             # Erst NACH verifiziertem Remote-Push lokale Projekt-Arbeitsdaten aus dem sichtbaren Worker entfernen.
             Invoke-Git -GitArgs @("-C", $WorkerDir, "checkout", "--detach", "origin/master")
@@ -269,7 +313,7 @@ Aendere ausschliesslich Dateien, die fuer diesen Auftrag erforderlich sind.
             $compactReady = $true
         }
         catch {
-            Write-WatcherLog -Level "WARN" -Message ("LOOP ERROR: " + $_.Exception.Message)
+            Write-WatcherLog -Level "WARN" -Message ("FEHLER: " + $_.Exception.Message)
         }
 
         Start-Sleep -Seconds $PollSeconds
@@ -277,7 +321,7 @@ Aendere ausschliesslich Dateien, die fuer diesen Auftrag erforderlich sind.
 }
 catch {
     try {
-        Write-WatcherLog -Level "ERROR" -Message ("FATAL: " + $_.Exception.Message)
+        Write-WatcherLog -Level "ERROR" -Message ("FEHLER FATAL: " + $_.Exception.Message)
     }
     catch {
         Write-Error $_

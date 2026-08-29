@@ -16,7 +16,8 @@ Ziel: Der Nutzer klärt Anforderungen mit ChatGPT. ChatGPT legt die verbindliche
 
 ## Lokale Speicherregeln
 
-- Watcher-Logs werden tageweise unter `%LOCALAPPDATA%\AI3D-Model\logs` gespeichert.
+- Verbindlicher Stamm ist `D:\AI3D-Agent` mit `worker\AI3D-Model`, `outputs`, `logs`, `cache`, `temp`, `state` und `toolchains`.
+- Watcher-Logs werden tageweise unter `D:\AI3D-Agent\logs` gespeichert; der maschinenlesbare Toolstatus liegt unter `D:\AI3D-Agent\state\toolchain-preflight.json`.
 - Logdateien älter als **7 Tage** werden automatisch gelöscht.
 - Alte Projekt-Arbeitsstände sollen **nicht dauerhaft lokal liegen**. GitHub ist die dauerhafte Projektablage.
 - Der Worker darf Projektdateien während eines aktiven Auftrags temporär auschecken. Nach verifiziertem Push wird er wieder auf einen kompakten Sparse-Checkout mit nur Steuerdateien (`tasks/`, `tools/`, `library/` und Root-Metadaten) reduziert.
@@ -45,5 +46,11 @@ Ziel: Der Nutzer klärt Anforderungen mit ChatGPT. ChatGPT legt die verbindliche
 - Ein neuer Nutzerentscheid bleibt dem Nutzer vorbehalten.
 
 ## Einmalige lokale Einrichtung
+
+Scheduler-Argumente dürfen keinen alten `-WorkerDir` auf C: enthalten. Vor dem produktiven Betrieb wird `powershell -NoProfile -ExecutionPolicy Bypass -File tools/ruediger-agent-watch.ps1 -DiagnosticOnly` ausgeführt. Erst nach erfolgreichem D:-Diagnoselauf und einem vollständigen Fetch/Task/Codex/Commit/Push-Durchlauf darf der frühere C:-Worker als Altbestand gelten; Löschung bleibt Nutzerentscheidung.
+
+Vor jedem Codex-Lauf schreibt der Watcher einen Toolchain-Preflight. Fehlende optionale CAD-/Slicer-Werkzeuge werden protokolliert, blockieren Git/Codex aber nicht. Während Codex arbeitet, erscheint standardmäßig alle 90 Sekunden `ARBEITET`; Abschluss und Fehler bleiben als `FERTIG` bzw. `FEHLER` unterscheidbar.
+
+Jeder Ergebnisbranch enthält zusätzlich eine `RESULT-STATUS.json` gemäß `docs/RESULT-STATUS.schema.json`. Technische offene Punkte stehen in `technical_open_points`, echte Nutzerentscheidungen ausschließlich in `user_decisions`; `final_product_approval` bleibt `false`.
 
 Der Watcher muss einmal auf dem PC gestartet bzw. als Autostart-/Task-Scheduler-Aufgabe eingerichtet werden. Danach überwacht er den aktiven Auftrag selbstständig. Vor der produktiven Konstruktion wird der Scheduler zunächst im Diagnosemodus geprüft.

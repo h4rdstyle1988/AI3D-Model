@@ -1,0 +1,67 @@
+﻿{
+    "schema_version":  "1.0",
+    "generated_at":  "2026-08-29T14:42:24.0548957+02:00",
+    "repo_root":  "C:\\Users\\h4rds\\Documents\\ChatGPT\\AI3D Model-worker",
+    "status":  "PASS",
+    "required_missing":  [
+
+                         ],
+    "tools":  [
+                  {
+                      "name":  "git",
+                      "required":  true,
+                      "available":  true,
+                      "path":  "C:\\Program Files\\Git\\cmd\\git.exe",
+                      "version":  "git version 2.55.0.windows.3",
+                      "note":  ""
+                  },
+                  {
+                      "name":  "codex",
+                      "required":  true,
+                      "available":  true,
+                      "path":  "C:\\Users\\h4rds\\AppData\\Local\\OpenAI\\Codex\\bin\\fac60c5e9a2ae3df\\codex.exe",
+                      "version":  null,
+                      "note":  ""
+                  },
+                  {
+                      "name":  "openscad",
+                      "required":  false,
+                      "available":  false,
+                      "path":  "",
+                      "version":  null,
+                      "note":  ""
+                  },
+                  {
+                      "name":  "python",
+                      "required":  false,
+                      "available":  false,
+                      "path":  "",
+                      "version":  null,
+                      "note":  ""
+                  },
+                  {
+                      "name":  "anycubic_slicer_next",
+                      "required":  false,
+                      "available":  true,
+                      "path":  "D:\\Program Files\\AnycubicSlicerNext\\AnycubicSlicerNext.exe",
+                      "version":  null,
+                      "note":  "GUI presence does not prove a supported CLI"
+                  }
+              ],
+    "cadquery":  {
+                     "name":  "cadquery",
+                     "required":  false,
+                     "available":  false,
+                     "python":  null,
+                     "version":  null,
+                     "note":  "isolated environment expected under D:\\AI3D-Agent\\toolchains\\cadquery-venv"
+                 },
+    "mesh_validation":  {
+                            "available":  false,
+                            "repo_paths":  [
+                                               "work/validate_anycubic_roundtrip.py",
+                                               "work/validate_benchmark_b_candidate.py"
+                                           ],
+                            "note":  "Scripts present, but no Python runtime"
+                        }
+}
