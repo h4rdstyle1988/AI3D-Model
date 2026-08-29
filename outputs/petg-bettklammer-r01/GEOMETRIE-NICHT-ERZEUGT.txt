@@ -1,0 +1,6 @@
+STOPP / OFFEN
+
+Keine CAD- oder STL-Geometrie erzeugt.
+Grund: Lage, Maß und Form des als Haltepunkt vorgeschriebenen Chromüberstands sowie die eindeutige Seitenzuordnung sind nicht angegeben. Zahnposition und wirksamer Eingriff wären damit geraten und würden gegen die STOPPREGEL der aktiven Task verstoßen.
+
+Siehe STOPP-OFFEN.md.
