@@ -13,8 +13,9 @@ param(
     [switch]$NoSelfUpdate
 )
 
-$ErrorActionPreference = "Stop"
-$WatcherVersion = "R03.1"
+$ErrorActionPreference = "Continue"
+$PSDefaultParameterValues["*:ErrorAction"] = "Stop"
+$WatcherVersion = "R03.2"
 
 if ($PollSeconds -lt 5) { throw "PollSeconds muss mindestens 5 sein." }
 if ($HeartbeatSeconds -lt 60 -or $HeartbeatSeconds -gt 120) { throw "HeartbeatSeconds muss zwischen 60 und 120 liegen." }
