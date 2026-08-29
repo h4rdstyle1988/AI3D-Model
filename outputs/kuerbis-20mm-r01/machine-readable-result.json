@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-29T19:44:18.767896+00:00",
+  "task": "tasks/TASK-KUERBIS-20MM-R01.md",
+  "revision": "R01",
+  "status": "PASS",
+  "final_user_approval": false,
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "grund": "Keine echte Nutzerentscheidung offen; reale Druck- und Sichtpruefung bleibt Nutzerfreigabe.",
+  "dimensions": {
+    "body_outer_diameter_mm": 19.830175936508418,
+    "body_height_mm": 14.58,
+    "overall_height_mm": 19.75,
+    "specified_wall_mm": 1.2,
+    "wall_implementation": "3 x 0.4 mm slicer perimeter; solid CAD envelope, 5% gyroid infill"
+  },
+  "meshes": {
+    "body": {
+      "vertices": 15554,
+      "triangles": 31104,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "minimum_triangle_area_mm2": 0.016695484672285123,
+      "signed_volume_mm3": 2566.819192577183,
+      "bounds_mm": [
+        [
+          -10.0,
+          9.711754143126589
+        ],
+        [
+          -9.909053350513718,
+          9.9211225859947
+        ],
+        [
+          0.0,
+          14.58
+        ]
+      ]
+    },
+    "stem": {
+      "vertices": 1602,
+      "triangles": 3200,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "minimum_triangle_area_mm2": 0.00934615262715099,
+      "signed_volume_mm3": 22.705986897224346,
+      "bounds_mm": [
+        [
+          -1.3095145097546796,
+          1.4751402393179642
+        ],
+        [
+          -1.5665838277740773,
+          1.4328668779971996
+        ],
+        [
+          13.75,
+          19.75
+        ]
+      ]
+    }
+  },
+  "connection": {
+    "type": "intentional volumetric overlap for fused single print",
+    "axial_overlap_mm": 0.8300000000000001,
+    "pass": true
+  },
+  "multi_material": {
+    "format": "3MF",
+    "object_count": 2,
+    "build_item_count": 2,
+    "separately_selectable": true,
+    "body_material": "PLA Matt Desert Tan",
+    "stem_material": "PLA Metal Kupfer"
+  },
+  "print_profile": {
+    "nozzle_mm": 0.4,
+    "layer_height_mm": 0.12,
+    "first_layer_mm": 0.2,
+    "walls": 3,
+    "top_bottom_layers": 4,
+    "infill_percent": 5,
+    "infill_pattern": "Gyroid",
+    "support": "off initially",
+    "brim": "off initially",
+    "outer_wall_speed_mm_s": "30-40",
+    "small_perimeter_speed_mm_s": "20-30",
+    "seam": "rear/rib valley",
+    "orientation": "flat pumpkin underside on build plate"
+  },
+  "support_audit": {
+    "flat_contact_diameter_mm": 6.505969308834218,
+    "stem_min_diameter_mm": 1.5,
+    "critical_bridge": false,
+    "support_expected": false,
+    "note": "Analytical geometry audit; slicer/physical confirmation remains open."
+  },
+  "open_real_tests": [
+    "Slicer import: confirm two selectable parts and assign both named filaments",
+    "Slice with target printer/profile: inspect first layers, seam, small-perimeter preview and support detection",
+    "Print and visually assess rib/skin visibility and stem bond",
+    "Final product approval by user"
+  ],
+  "files": {
+    "kuerbis-20mm-r01-koerper.stl": {
+      "sha256": "b08f5c257c02d2a7efa1abc6a4cf67f2eca6364f99534f4789df18f0beac7d40",
+      "bytes": 1555284
+    },
+    "kuerbis-20mm-r01-stiel.stl": {
+      "sha256": "94813de8374724ced640ec15b3f879c6fe64f756f91e4c7732b6ed162e4dfe93",
+      "bytes": 160084
+    },
+    "kuerbis-20mm-r01-zweifarbig.3mf": {
+      "sha256": "9b220f28e2bd78d722301881288d7a8794b9581e3d6bbed035c0afcaeb814e6c",
+      "bytes": 375548
+    }
+  }
+}
