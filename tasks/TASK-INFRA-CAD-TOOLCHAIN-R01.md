@@ -7,6 +7,16 @@ Quelle: Nutzerfreigabe 2026-08-29 nach druckbereiter PETG-Klammer + Nubsi R01
 
 Den lokalen Rüdiger/Codex-Workflow für künftige 3D-Konstruktionsaufträge schneller, transparenter und robuster machen. Dieser Auftrag darf **keine Produktgeometrie** der Bettklammer oder des Nubsi verändern.
 
+## VERBINDLICHER LOKALER ABLAGEORT
+
+- Der Nutzer hat `D:\AI3D-Agent` als verbindlichen lokalen Stammordner festgelegt.
+- Ziel: große bzw. wachsende Agent-/Worker-/Projekt-Ausgaben sollen nicht weiter unnötig Laufwerk C: füllen.
+- Künftiger dedizierter Worker, lokale Ausgaben, Cache-/Arbeitsdaten und sinnvoll verlagerbare projektbezogene Daten sollen unter `D:\AI3D-Agent` organisiert werden.
+- Bestehende Daten auf C: **nicht blind löschen oder verschieben**. Zuerst Bestand, aktive Pfade und Abhängigkeiten prüfen; dann kontrolliert migrieren bzw. neue Pfade umstellen.
+- Windows-/Codex-Systemdaten, die technisch an `%LOCALAPPDATA%` oder andere Systempfade gebunden sind, nur dann verlagern, wenn dies unterstützt und sicher ist. Keine riskanten Junction-/Symlink-Tricks ohne technische Notwendigkeit.
+- Der GitHub-Repository-Workflow bleibt erhalten; `D:\AI3D-Agent` ist die lokale Arbeits-/Ablagestruktur.
+- Nach erfolgreicher Migration dokumentieren, welche alten C:-Ordner gefahrlos gelöscht werden können. Nicht eigenmächtig Nutzerdaten löschen.
+
 ## VERBINDLICH
 
 1. **OpenSCAD CLI prüfen und bevorzugt verfügbar machen**
@@ -48,6 +58,13 @@ Den lokalen Rüdiger/Codex-Workflow für künftige 3D-Konstruktionsaufträge sch
    - Kein Spam im Sekundentakt. Zielbereich für sichtbaren Arbeits-Heartbeat: etwa 60–120 Sekunden.
    - Heartbeat darf den Codex-Prozess nicht unterbrechen oder dessen Ausgabe beschädigen.
 
+8. **Lokale Datenstruktur auf D: umstellen**
+   - `D:\AI3D-Agent` als Stammordner anlegen/verwenden.
+   - Eine klare Unterstruktur für Worker, Outputs, Logs, Cache/Temp und ggf. Toolchain-Umgebungen festlegen, soweit diese Daten tatsächlich zum Agent-Workflow gehören.
+   - Watcher/Scheduler so anpassen, dass der dedizierte Worker künftig unter D: arbeitet.
+   - Vorhandenen C:-Worker erst nach erfolgreicher Validierung des D:-Workers als Altbestand kennzeichnen.
+   - Repository-/Task-Kompatibilität und Git-Push müssen nach der Umstellung unverändert funktionieren.
+
 ## SICHERHEIT / ÄNDERUNGSSCHUTZ
 
 - Bestehenden funktionierenden Watcher nicht blind ersetzen.
@@ -57,6 +74,7 @@ Den lokalen Rüdiger/Codex-Workflow für künftige 3D-Konstruktionsaufträge sch
 - Keine Produktdateien/Geometrien ändern.
 - Keine bestehenden Revisionen überschreiben.
 - Keine Installation oder Systemänderung erzwingen, wenn dafür eine echte Nutzer-/Adminfreigabe erforderlich ist.
+- Keine Nutzerdaten auf C: eigenmächtig löschen.
 
 ## VALIDIERUNG
 
@@ -64,6 +82,7 @@ Nach Umsetzung mindestens prüfen/dokumentieren:
 
 - Watcher startet im Scheduler-Kontext weiterhin erfolgreich.
 - Git und Codex weiterhin erreichbar.
+- Neuer D:-Worker unter `D:\AI3D-Agent` funktioniert einschließlich Fetch, Task-Erkennung, Codex-Lauf, Commit und Push.
 - Neue Toolchain-Erkennung liefert reproduzierbare Ergebnisse.
 - Falls OpenSCAD verfügbar/eingerichtet: CLI-Smoke-Test.
 - Falls Python/CadQuery verfügbar/eingerichtet: Import- und Export-Smoke-Test.
