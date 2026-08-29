@@ -1,0 +1,76 @@
+﻿{
+    "revision":  "R01",
+    "validator":  "repository PowerShell ASCII-STL topology validator",
+    "results":  [
+                    {
+                        "file":  "petg-bettklammer-r01.stl",
+                        "triangles":  424,
+                        "bounds_min":  [
+                                           0,
+                                           0,
+                                           0
+                                       ],
+                        "bounds_max":  [
+                                           26.4,
+                                           20,
+                                           40
+                                       ],
+                        "size":  [
+                                     26.4,
+                                     20,
+                                     40
+                                 ],
+                        "degenerate_triangles":  0,
+                        "non_two_manifold_edges":  0,
+                        "signed_volume_mm3":  3825.8356633864228,
+                        "watertight":  true
+                    },
+                    {
+                        "file":  "petg-nubsi-r01.stl",
+                        "triangles":  3456,
+                        "bounds_min":  [
+                                           -5.5,
+                                           -5.5,
+                                           0
+                                       ],
+                        "bounds_max":  [
+                                           5.5,
+                                           5.5,
+                                           8
+                                       ],
+                        "size":  [
+                                     11,
+                                     11,
+                                     8
+                                 ],
+                        "degenerate_triangles":  0,
+                        "non_two_manifold_edges":  0,
+                        "signed_volume_mm3":  365.647811573724,
+                        "watertight":  true
+                    },
+                    {
+                        "file":  "petg-bettklammer-und-nubsi-r01-druckplatte.stl",
+                        "triangles":  3880,
+                        "bounds_min":  [
+                                           0,
+                                           0,
+                                           0
+                                       ],
+                        "bounds_max":  [
+                                           47.4,
+                                           20,
+                                           40
+                                       ],
+                        "size":  [
+                                     47.4,
+                                     20,
+                                     40
+                                 ],
+                        "degenerate_triangles":  0,
+                        "non_two_manifold_edges":  0,
+                        "signed_volume_mm3":  4191.4834749602105,
+                        "watertight":  true
+                    }
+                ],
+    "overall_pass":  true
+}

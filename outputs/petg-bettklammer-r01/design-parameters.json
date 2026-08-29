@@ -1,0 +1,31 @@
+﻿{
+    "revision":  "R01",
+    "units":  "mm",
+    "material":  "PETG",
+    "clip":  {
+                 "width":  20,
+                 "total_height":  40,
+                 "wall":  2,
+                 "profile_depth":  20,
+                 "felt":  2,
+                 "mounting_clearance":  0.4,
+                 "clear_opening":  22.4,
+                 "outer_width":  26.4,
+                 "teeth":  18,
+                 "pitch":  1.4,
+                 "engagement":  0.6,
+                 "inner_bend_radius":  11.2
+             },
+    "nubsi":  {
+                  "shaft_diameter":  6,
+                  "shaft_length":  4,
+                  "head_max_diameter":  11,
+                  "head_height":  4,
+                  "total_height":  8,
+                  "head_value_class":  "FOTOABGELEITET / TECHNISCH FESTGELEGT"
+              },
+    "plate":  {
+                  "minimum_edge_gap":  10,
+                  "connected":  false
+              }
+}
