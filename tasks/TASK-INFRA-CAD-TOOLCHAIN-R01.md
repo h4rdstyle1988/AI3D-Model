@@ -1,0 +1,89 @@
+# TASK – CAD-/Rüdiger-Toolchain beschleunigen – R01
+
+Status: **INFRASTRUKTUR-AUFTRAG**
+Quelle: Nutzerfreigabe 2026-08-29 nach druckbereiter PETG-Klammer + Nubsi R01
+
+## Ziel
+
+Den lokalen Rüdiger/Codex-Workflow für künftige 3D-Konstruktionsaufträge schneller, transparenter und robuster machen. Dieser Auftrag darf **keine Produktgeometrie** der Bettklammer oder des Nubsi verändern.
+
+## VERBINDLICH
+
+1. **OpenSCAD CLI prüfen und bevorzugt verfügbar machen**
+   - Zuerst feststellen, ob OpenSCAD bereits installiert, aber im Scheduler-/Watcher-Kontext nicht im PATH ist.
+   - Falls vorhanden: Pfad robust erkennen/verwenden, keine unnötige Neuinstallation.
+   - Falls nicht vorhanden: eine sichere, reproduzierbare Installationsmöglichkeit vorbereiten bzw. ausführen, soweit ohne Nutzerinteraktion/Admin-Freigabe möglich.
+   - Keine dubiosen Downloadquellen. Wenn eine Installation zwingend Admin-/GUI-Freigabe benötigt: sauber als NUTZERAKTION dokumentieren, nicht umgehen.
+
+2. **Python + CadQuery als zweite CAD-Schiene prüfen/einrichten**
+   - Vorhandene Python-Installationen/Launcher/venv/Conda prüfen, nicht blind neu installieren.
+   - CadQuery in isolierter, projektbezogener Umgebung bevorzugen, damit das System nicht unnötig verändert wird.
+   - Funktions-Smoke-Test: einfacher parametrischer Körper muss erzeugbar/exportierbar sein.
+   - OpenSCAD bleibt für einfache parametrische Konstruktionen zulässig; CadQuery ist zusätzliche, nicht erzwungene Schiene.
+
+3. **Toolchain-Preflight in den Watcher integrieren**
+   - Vor einem Codex-Konstruktionslauf kompakt feststellen und loggen: Git, Codex, OpenSCAD, Python/CadQuery, verfügbarer Mesh-/STL-Prüfweg und CLI-Slicer.
+   - Fehlendes optionales Werkzeug darf einen Auftrag nicht pauschal blockieren, wenn ein vorhandener reproduzierbarer Ersatzweg genügt.
+   - Ergebnis für Rüdiger maschinenlesbar/leicht auffindbar bereitstellen, damit er nicht bei jedem Auftrag dieselben Tools erneut suchen muss.
+
+4. **Referenzbilder standardisieren**
+   - Künftige projektbezogene Referenzen nach einem eindeutigen Schema unter `references/<projekt>/` verwalten.
+   - Tasks müssen konkrete Repo-Pfade nennen statt nur „Fotos wurden bereitgestellt“.
+   - Originalreferenzen schützen; keine KI-generierten Bilder als reale Referenz umdeuten.
+   - Wenn Binärdateien nicht über den aktuellen Remote-Workflow übertragen werden können, einen dokumentierten Ersatzweg/Manifest-Mechanismus schaffen, der Rüdiger die tatsächlich verfügbare Referenzlage eindeutig mitteilt.
+
+5. **Ergebnis-/SOLL-IST-Rückführung verbessern**
+   - Jeder Rüdiger-Ergebnisbranch soll einen kompakten maschinenlesbaren Status enthalten: Task, Revision, PASS/STOPP/OFFEN, erzeugte Hauptdateien, Validierungen, offene reale Tests und echte Nutzerentscheidungen.
+   - Technische/infrastrukturelle STOPPs nicht fälschlich als Nutzerentscheidung markieren.
+   - Keine automatische finale Produktfreigabe und kein automatisches Merge nach master.
+
+6. **Slicer-CLI prüfen**
+   - Ermitteln, ob Anycubic Slicer Next oder eine kompatible vorhandene Slicer-CLI lokal automatisierbar erreichbar ist.
+   - Keine Annahme, dass eine GUI-Anwendung eine unterstützte CLI besitzt.
+   - Falls keine geeignete CLI vorhanden ist: dokumentieren; keine riskante oder fremde Software nur für diesen Punkt installieren.
+   - Ziel ist später automatisierbare Prüfung von Bauraum, Orientierung, Supportbedarf und – soweit verlässlich verfügbar – Druckzeit/Material.
+
+7. **Heartbeat/Status für PowerShell-Watcher**
+   - Während längerer Codex-Läufe soll der sichtbare Watcher in sinnvollen Abständen einen knappen Status ausgeben, damit klar unterscheidbar ist: ARBEITET / WARTET / FERTIG / FEHLER.
+   - Kein Spam im Sekundentakt. Zielbereich für sichtbaren Arbeits-Heartbeat: etwa 60–120 Sekunden.
+   - Heartbeat darf den Codex-Prozess nicht unterbrechen oder dessen Ausgabe beschädigen.
+
+## SICHERHEIT / ÄNDERUNGSSCHUTZ
+
+- Bestehenden funktionierenden Watcher nicht blind ersetzen.
+- Vor Änderung aktuellen Stand prüfen und nur gezielt ändern.
+- Keine breiten `kill`, `reset`, `clean` oder Änderungen am normalen Benutzer-Arbeitsbaum.
+- Der dedizierte Worker bleibt getrennt.
+- Keine Produktdateien/Geometrien ändern.
+- Keine bestehenden Revisionen überschreiben.
+- Keine Installation oder Systemänderung erzwingen, wenn dafür eine echte Nutzer-/Adminfreigabe erforderlich ist.
+
+## VALIDIERUNG
+
+Nach Umsetzung mindestens prüfen/dokumentieren:
+
+- Watcher startet im Scheduler-Kontext weiterhin erfolgreich.
+- Git und Codex weiterhin erreichbar.
+- Neue Toolchain-Erkennung liefert reproduzierbare Ergebnisse.
+- Falls OpenSCAD verfügbar/eingerichtet: CLI-Smoke-Test.
+- Falls Python/CadQuery verfügbar/eingerichtet: Import- und Export-Smoke-Test.
+- Heartbeat funktioniert ohne den Worker-Lauf zu stören.
+- Fehlende optionale Tools werden klar gemeldet, ohne unnötigen STOPP.
+- Referenzschema und Ergebnisstatus sind dokumentiert.
+
+## AUSGABE
+
+Erzeuge einen Infrastrukturbericht mit:
+
+- **GEÄNDERT**
+- **UNVERÄNDERT**
+- **INSTALLIERT / BEREITS VORHANDEN**
+- **VALIDIERT**
+- **OFFEN**
+- **NUTZERAKTION ERFORDERLICH** nur wenn wirklich unvermeidbar
+
+Zusätzlich alle erforderlichen Skript-/Dokumentationsänderungen im Ergebnisbranch ablegen.
+
+## ESKALATION
+
+Technische Detailentscheidungen selbstständig treffen, solange keine bestätigte Produktidee verändert und keine riskante Systemänderung vorgenommen wird. Nur echte Admin-/GUI-Freigaben, nicht automatisierbare lokale Benutzeraktionen oder Produktentscheidungen an den Nutzer eskalieren.
