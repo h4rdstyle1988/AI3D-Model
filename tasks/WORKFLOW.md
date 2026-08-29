@@ -1,43 +1,86 @@
-# Automatischer Übergabe-Workflow
+# Automatischer Übergabe-Workflow R03
 
-Ziel: Der Nutzer beschreibt ChatGPT den gewünschten Druckauftrag. ChatGPT klärt konstruktiv relevante Unklarheiten, hält die Anforderungen fest und aktiviert die Konstruktion erst nach ausdrücklicher Nutzerfreigabe. Rüdiger/Codex arbeitet danach selbstständig im separaten Worker-Clone. Ergebnisse werden auf GitHub zurückgeführt und von ChatGPT gegen die freigegebene Spezifikation geprüft.
+Ziel: Der Nutzer beschreibt ChatGPT den Druckauftrag. ChatGPT klärt nur konstruktiv relevante Unklarheiten, dokumentiert die freigegebene Spezifikation und reiht sie nach ausdrücklicher Nutzerfreigabe in eine einzige FIFO-Queue ein. Rüdiger/Codex arbeitet danach selbstständig im separaten Worker-Clone. Ergebnisse werden auf GitHub zurückgeführt und von ChatGPT gegen die letzte freigegebene Spezifikation geprüft.
 
 ## Verbindlicher Ablauf
 
 1. Nutzer übermittelt Idee, Maße, Bilder, Material-/Druckvorgaben und sonstige Anforderungen.
-2. ChatGPT prüft, ob Funktion, Maße, Orientierung und Anschlussgeometrie eindeutig genug sind. Fehlende konstruktiv relevante Angaben werden vor der Konstruktion beim Nutzer geklärt; technische Details, die die bestätigte Produktidee nicht verändern, werden nicht unnötig an den Nutzer eskaliert.
-3. Vor Nutzerfreigabe darf eine Task als ENTWURF dokumentiert werden, aber weder `tasks/CURRENT_TASK.txt` noch `tasks/TASK_QUEUE.txt` dürfen diesen Entwurf zur Ausführung freigeben.
-4. Erst nach ausdrücklicher Nutzerfreigabe wird der Auftrag ausführbar:
-   - falls kein Auftrag läuft: als aktiver Task,
-   - falls bereits ein Auftrag läuft: FIFO in `tasks/TASK_QUEUE.txt`.
-5. Der lokale Watcher erkennt aktive und bereits freigegebene wartende Tasks.
+2. ChatGPT prüft Funktion, Maße, Orientierung, Anschlussgeometrie und Referenzen. Fehlende konstruktiv relevante Angaben werden vor der Konstruktion geklärt; rein technische Details werden nicht unnötig eskaliert.
+3. Vor Nutzerfreigabe darf eine Task als ENTWURF unter `tasks/` liegen, aber nicht in `tasks/TASK_QUEUE.txt` stehen.
+4. Erst nach ausdrücklicher Nutzerfreigabe wird der Task-Pfad hinten an `tasks/TASK_QUEUE.txt` angefügt.
+5. Der lokale Watcher liest ausschließlich die Queue und nimmt den ersten noch nicht verarbeiteten Eintrag.
 6. Rüdiger/Codex liest `AGENTS.md` und die konkrete Task vollständig und konstruiert ausschließlich die freigegebene Anforderung.
 7. Technisch notwendige Details darf Rüdiger selbst lösen, solange keine verbindlichen Nutzermaße, Funktionen oder die Produktidee verändert und keine neue Funktion ergänzt wird.
-8. Nach erfolgreichem Lauf committet und pusht der Watcher ausschließlich den Worker-Stand auf einen eigenen Branch `ruediger/...` und verifiziert den Remote-Commit.
-9. Erst nach erfolgreicher Remote-Verifikation gilt der Arbeitslauf technisch als abgeschlossen.
-10. Wenn weitere freigegebene Tasks in `tasks/TASK_QUEUE.txt` stehen, nimmt der Watcher den nächsten noch nicht verarbeiteten Eintrag selbstständig auf. Ein laufender Task wird niemals durch einen neuen Auftrag überschrieben.
+8. Nach erfolgreichem Lauf committet und pusht der Watcher den Worker-Stand auf einen eigenen Branch `ruediger/...` und verifiziert den Remote-SHA.
+9. Erst nach erfolgreicher Remote-Verifikation wird der Task im lokalen Zustand als verarbeitet markiert.
+10. Danach wird ohne manuelles Umschalten sofort der nächste unverarbeitete Queue-Eintrag bewertet.
 11. ChatGPT prüft das Ergebnis gegen die letzte vom Nutzer freigegebene Spezifikation. Technische Validierung und Übereinstimmung mit der Nutzeridee werden getrennt bewertet.
-12. Nur der Nutzer gibt die finale Produktfreigabe. Keine KI, kein Validator und kein erfolgreicher STL-Export ersetzt diese Freigabe.
+12. Nur der Nutzer gibt die finale Produktfreigabe.
 
-## Task-Steuerung
+## Eine Queue statt zwei Steuerdateien
 
-- `tasks/CURRENT_TASK.txt`: exakt ein aktiver relativer Task-Pfad oder `NONE`.
-- `tasks/TASK_QUEUE.txt`: null oder mehr bereits freigegebene wartende Task-Pfade, ein Pfad pro Zeile, FIFO-Reihenfolge.
-- Nicht freigegebene Entwürfe dürfen in `tasks/` liegen, aber weder aktiv noch queued sein.
-- Task-Identität wird mindestens aus Task-Pfad + Blob-SHA gebildet. Eine geänderte Task-Version ist ein neuer Arbeitsstand.
-- Erfolgreich verarbeitete Queue-Einträge müssen lokal robust nachverfolgt werden; ein einzelner `lastKey` reicht für mehrere Tasks nicht aus.
-- Ein Fehler oder STOPP darf einen Queue-Eintrag nicht stillschweigend als erledigt markieren.
+- `tasks/TASK_QUEUE.txt` ist die einzige ausführbare Steuerquelle.
+- `tasks/CURRENT_TASK.txt` ist ab R03 nur noch eine Migrationsdatei und enthält dauerhaft `NONE`.
+- Neue Aufträge werden niemals in einen aktiven Slot geschrieben, sondern immer hinten an die Queue angefügt.
+- Bereits verarbeitete Einträge dürfen zur Nachvollziehbarkeit in der Queue stehen bleiben; der lokale State überspringt sie über Task-Pfad + Blob-SHA.
+- Eine geänderte Task-Datei ist ein neuer Arbeitsstand und darf nur nach erneuter Nutzerfreigabe als ausführbar gelten.
+
+## Laufzeit und Geschwindigkeit
+
+- Standard-Polling: 30 Sekunden.
+- Heartbeat bei längerem Codex-Lauf: 90 Sekunden.
+- Nach erfolgreichem Task kein zusätzlicher Polling-Wartezyklus; die nächste Queue-Task wird sofort bewertet.
+- Vollständiger Toolchain-Preflight wird bis zu 6 Stunden gecacht, solange der letzte Status PASS ist.
+- Nach Codex-/Toolchain-Fehler wird ein vollständiger Preflight erzwungen.
+
+## Selbstupdate
+
+Der R03-Watcher vergleicht nach jedem erfolgreichen `fetch origin master` die produktiven Runtime-Skripte mit `origin/master`:
+
+- `tools/ruediger-agent-watch.ps1`
+- `tools/cad-toolchain-preflight.ps1`
+- `tools/repair-runtime.ps1`
+- `tools/restart-runtime-watcher.ps1`
+
+Geänderte Runtime-Dateien werden nach `D:\AI3D-Agent\runtime` übernommen. Wenn der Watcher selbst geändert wurde, startet `restart-runtime-watcher.ps1` nach dem Ende der alten Instanz den bestehenden Scheduler `AI3D-Ruediger-Agent` erneut. Falls das nicht möglich ist, startet der Helper die Runtime direkt.
+
+Ein exklusives Lockfile unter `D:\AI3D-Agent\state` verhindert parallele Doppelinstanzen.
+
+## Automatische Fehlerbehandlung
+
+- Git-Fetch/Push: mehrere Versuche mit kurzer Wartezeit.
+- Fehlt ein gültiger dedizierter Worker, wird ein vorhandener ungültiger Ordner mit Zeitstempel gesichert und der Worker neu geklont.
+- State-Datei wird vor Änderungen gesichert; eine unlesbare State-Datei wird nicht still überschrieben.
+- Technische Fehler bleiben unverarbeitet und werden nach dem Poll-Intervall erneut versucht.
+- Kein Fehler darf einen Task still als erledigt markieren.
+
+## Live-Status
+
+Der Watcher publiziert auf dem separaten Branch `ruediger/live-status` die Datei `RUEDIGER_STATUS.json`. Der Statusbranch ist reine Telemetrie und wird nicht in `master` gemerged.
+
+Mögliche Phasen:
+- `START`
+- `TASK_GEFUNDEN`
+- `ARBEITET`
+- `VALIDIERT`
+- `FERTIG`
+- `WARTET`
+- `FEHLER_RETRY`
+- `RESTARTING`
+- `DIAGNOSTIC_PASS`
+
+Damit kann ChatGPT den echten Rüdiger-Status direkt über GitHub prüfen, ohne aus indirekten Branch-/Commit-Signalen raten zu müssen.
 
 ## STOPP-/Entscheidungslogik
 
-Rüdiger soll technische Probleme soweit möglich selbst lösen. Ein Ergebnis darf als `NUTZERENTSCHEIDUNG_ERFORDERLICH` nur zurückkommen, wenn mindestens einer dieser Fälle vorliegt:
+`NUTZERENTSCHEIDUNG_ERFORDERLICH` nur wenn mindestens einer dieser Fälle vorliegt:
 - ein verbindliches Nutzermaß oder eine verbindliche Funktion müsste geändert werden,
 - zwei verbindliche Anforderungen widersprechen sich,
 - eine echte Produktentscheidung zwischen unterschiedlichen Funktionen/Formen ist nötig,
 - ein erforderliches reales Maß/Referenzdatum fehlt und ist nicht eindeutig aus vorhandenen Dateien/Bildern ableitbar,
 - finale Nutzerfreigabe steht an.
 
-Reine Toolchain-, CAD-, Mesh-, Script-, Support-, Druckorientierungs- oder Berechnungsprobleme sind zunächst technische Aufgaben und keine Nutzerentscheidung, solange die freigegebene Produktidee unverändert bleiben kann.
+Reine Toolchain-, CAD-, Mesh-, Script-, Support-, Druckorientierungs- oder Berechnungsprobleme sind zunächst technische Aufgaben.
 
 ## Ergebnisstatus
 
@@ -49,22 +92,19 @@ Jeder neue Rüdiger-Auftrag soll einen kompakten maschinenlesbaren Status liefer
 - offene reale Tests,
 - `NUTZERENTSCHEIDUNG_ERFORDERLICH: true/false` samt präzisem Grund.
 
-Keine automatische finale Produktfreigabe und kein automatisches Merge.
+Keine automatische finale Produktfreigabe und kein automatisches Merge der Produkt-Branches.
 
-## Lokale Speicherregeln
+## Standard-Taskformat
 
-- Produktive Runtime liegt unter `D:\AI3D-Agent`; der laufende Watcher soll außerhalb eines mutablen Worker-Clones unter `D:\AI3D-Agent\runtime` betrieben werden.
-- Projektarbeitsdaten des Workers sind temporär. GitHub ist die dauerhafte Projektablage.
-- Lokale Projektdateien dürfen erst nach erfolgreichem Push und Remote-Verifikation aus dem sichtbaren Worker-Arbeitsbaum entfernt werden.
-- Der normale Benutzer-Arbeitsbaum wird nicht automatisch resettet, bereinigt oder überschrieben.
-- Logs werden zeitlich begrenzt aufbewahrt; keine Nutzerdaten breit löschen.
+Neue Tasks sollen `tasks/TASK-TEMPLATE.md` als Struktur verwenden. Verbindliche Nutzerangaben, technisch notwendige Umsetzung, Referenzen, Validierung, Freigabe-Gate und offene Nutzerentscheidungen bleiben klar getrennt.
 
-## Projektbibliothek
+## Notfall-Reparatur
 
-- Die dauerhafte Projektübersicht wird aus `library/projects.json` erzeugt.
-- Nur tatsächlich freigegebene/archivierte Produkte gehören in die Kunden-/Projektbibliothek.
-- Reale Produktbilder werden bevorzugt; fehlen sie, bleibt der Eintrag entsprechend OFFEN.
-- Interne Testrevisionen, technische STOPPs und Rüdiger-Arbeitsstände bleiben intern.
+Der manuelle Notfallweg ist ein einziger Befehl aus dem aktuellen Worker-Clone:
+
+`powershell.exe -NoProfile -ExecutionPolicy Bypass -File D:\AI3D-Agent\worker\AI3D-Model-worker\tools\repair-runtime.ps1`
+
+Das Skript stoppt den vorhandenen Scheduler kontrolliert, prüft/rekonstruiert bei Bedarf den dedizierten Worker, synchronisiert die Runtime, führt den Preflight aus und startet den Scheduler wieder. Es verändert keinen normalen Benutzer-Arbeitsbaum.
 
 ## Sicherheitsregeln
 
