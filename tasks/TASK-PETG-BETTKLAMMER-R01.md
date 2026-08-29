@@ -9,7 +9,7 @@ GitHub Issue: #1
 Konstruiere eine erste druckbare Testrevision **R01** bestehend aus zwei **separaten PETG-Bauteilen**, die gemeinsam auf derselben Druckplatte gedruckt werden:
 
 1. PETG-Klammer für die Filztasche am Bett-Kopfteil.
-2. Kleiner PETG-Nubsi/Noppen nach den vom Nutzer bereitgestellten Referenzfotos.
+2. Kleiner PETG-Nubsi/Noppen nach der verbindlich übertragenen Fotoreferenz.
 
 Die beiden Bauteile dürfen geometrisch NICHT miteinander verbunden werden.
 
@@ -40,24 +40,35 @@ Die beiden Bauteile dürfen geometrisch NICHT miteinander verbunden werden.
 
 ## VERBINDLICH – NUBSI/NOPPEN
 
-Referenzform sind ausschließlich die **fünf vom Nutzer am 2026-08-29 bereitgestellten Fotos des realen schwarzen Bauteils**. Von ChatGPT erzeugte Visualisierungen/Zeichnungen sind ausdrücklich **KEINE Konstruktionsreferenz**.
+Die fünf Originalfotos des Nutzers vom 2026-08-29 wurden von ChatGPT/Birgit direkt geprüft. Ihre für die Konstruktion relevanten Bildinformationen sind verbindlich in folgender Repository-Referenz übertragen:
+
+`tasks/references/NUBSI-R01-PHOTO-REFERENCE.md`
+
+**Diese Referenz ist für Rüdiger der autorisierte Ersatz für den fehlenden direkten Bildzugriff.** Ein erneuter STOPP allein wegen fehlender Bilddateien ist daher nicht zulässig, solange die dort beschriebene Geometrie ohne Änderung der verbindlichen Nutzermaße konstruiert werden kann.
+
+Von ChatGPT früher erzeugte Visualisierungen/Zeichnungen/Datenblätter sind ausdrücklich **KEINE Konstruktionsreferenz**.
 
 Vom Nutzer gemessen:
 
 - Material des Nachbaus: **PETG**
 - Steckschaft-Durchmesser: **6,0 mm**
-- Steckschaft-Länge: **4,0 mm**, gemessen von der Unterkante bis zum Kragen
-- größter Außendurchmesser Kopf/Kragen: **11,0 mm**
+- Steckschaft-Länge: **4,0 mm**, gemessen von der Unterkante bis zur Unterseite/Basis des Kopfes
+- größter Außendurchmesser Kopf: **11,0 mm**
 - Steckschaft: **gerader, durchgehender Zylinder ohne Stufe**
-- oberhalb des Schafts sitzt der auf den Fotos erkennbare Kragen/Kopf
-- Formcharakter des Kopfes: nach den realen Referenzfotos rekonstruieren; keine zusätzliche Stufe, Rastung, Nut oder sonstige Funktion erfinden
+- oberhalb des Schafts sitzt unmittelbar der auf den Fotos erkennbare Kopf
+- Formcharakter des Kopfes gemäß `tasks/references/NUBSI-R01-PHOTO-REFERENCE.md` rekonstruieren
+- keine zusätzliche Stufe, Rastung, Nut oder sonstige Funktion erfinden
 - Nubsi bleibt ein **separates Bauteil** und wird lediglich zusammen mit der Klammer auf derselben Druckplatte angeordnet.
 
 ## TECHNISCH NOTWENDIG – NUBSI
 
-- Nicht vorgegebene, rein formbildende Radien/Höhen des Kopfes dürfen nur aus den realen Fotos abgeleitet werden, soweit dies eindeutig möglich ist.
-- Keine erfundene Präzision: aus Fotos abgeleitete Werte im Bericht als **aus Referenzfoto abgeleitet/geschätzt** kennzeichnen.
+- Die Fotoreferenz beschreibt einen rotationssymmetrischen Nubsi mit geradem Ø-6-mm-Schaft und glatt gewölbtem/kuppelförmigem Kopf bis Ø 11 mm.
+- Der in der Fotoreferenz genannte Kopf-Höhenkorridor von ca. **3,5–4,5 mm** ist **fotoabgeleitet**, nicht vom Nutzer gemessen. Innerhalb dieses Korridors ist die R01-Kopfkontur technisch festzulegen.
+- Eine dünne umlaufende sichtbare Randkante gehört zur Kopfkontur und darf **nicht als separate Schaftstufe/Kragen** modelliert werden.
+- Nicht vorgegebene, rein formbildende Radien/Höhen des Kopfes sind als **FOTOABGELEITET / TECHNISCH FESTGELEGT** zu kennzeichnen.
+- Keine erfundene Präzision behaupten.
 - Der verbindliche 6,0-mm-Schaft darf nicht eigenmächtig wegen angenommener FDM-Passung verkleinert/vergrößert werden. Falls ein anderes Fertigmaß für die reale Passung technisch erforderlich erscheint: als OFFEN melden, nicht still ändern.
+- Keine Hohlräume/Bohrungen ergänzen.
 - FDM-taugliche Druckorientierung bestimmen; Support nur wenn erreichbar und entfernbar.
 
 ## GEMEINSAME DRUCKPLATTE
@@ -90,6 +101,8 @@ Erzeuge und dokumentiere:
 
 Technische STOPPs und Detailentscheidungen, die die verbindliche Produktidee und Nutzermaße nicht verändern, sind zunächst durch ChatGPT/Birgit zu prüfen bzw. technisch zu entscheiden und sollen den Nutzer nicht unnötig blockieren.
 
-Nur wenn eine verbindliche Nutzeranforderung geändert werden müsste, eine reale nicht ableitbare Information zwingend fehlt oder eine echte Produkt-/Freigabeentscheidung notwendig ist, als **NUTZERENTSCHEIDUNG ERFORDERLICH** markieren.
+Die fehlenden Originalbilddateien im Worker-Kontext sind durch `tasks/references/NUBSI-R01-PHOTO-REFERENCE.md` technisch aufgelöst. Dieser Punkt darf nicht erneut als Nutzerentscheidung eskaliert werden.
+
+Nur wenn eine verbindliche Nutzeranforderung geändert werden müsste, eine reale nicht ableitbare Information trotz der übertragenen Fotoreferenz zwingend fehlt oder eine echte Produkt-/Freigabeentscheidung notwendig ist, als **NUTZERENTSCHEIDUNG ERFORDERLICH** markieren.
 
 Keine stillen Nebenänderungen und keine zusätzlichen Features.
