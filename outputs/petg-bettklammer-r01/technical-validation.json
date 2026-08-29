@@ -1,0 +1,32 @@
+{
+  "revision": "R01",
+  "stl": "petg-bettklammer-r01.stl",
+  "triangle_count": 364,
+  "watertight_edge_test": true,
+  "nonmanifold_or_open_edges": 0,
+  "bounds_mm": {
+    "x": [
+      0.0,
+      26.4
+    ],
+    "y": [
+      0.0,
+      20.0
+    ],
+    "z": [
+      0.0,
+      40.0
+    ]
+  },
+  "required": {
+    "width_mm": 20.0,
+    "height_mm": 40.0,
+    "wall_mm": 2.0,
+    "clear_gap_mm": 22.4,
+    "assembly_clearance_mm": 0.4,
+    "tooth_count": 4,
+    "tooth_engagement_mm": 1.0
+  },
+  "status": "PASS_TECHNICAL",
+  "note": "Technischer Mesh-/Mass-Pass ist keine finale Nutzerfreigabe."
+}
