@@ -38,8 +38,8 @@ function Resolve-CodexExe {
         Sort-Object LastWriteTime -Descending)
 
     foreach ($candidate in $candidates) {
-        $host = Join-Path $candidate.DirectoryName "codex-code-mode-host.exe"
-        if (Test-Path -LiteralPath $host -PathType Leaf) {
+        $codeModeHost = Join-Path $candidate.DirectoryName "codex-code-mode-host.exe"
+        if (Test-Path -LiteralPath $codeModeHost -PathType Leaf) {
             return $candidate.FullName
         }
     }
@@ -61,8 +61,8 @@ if ($ParentPid -gt 0) {
     catch {}
 
     $self = $MyInvocation.MyCommand.Path
-    $args = "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File `"$self`" -AgentRoot `"$AgentRoot`" -WorkerDir `"$WorkerDir`" -SchedulerTaskName `"$SchedulerTaskName`""
-    Start-Process -FilePath "powershell.exe" -ArgumentList $args -WindowStyle Hidden
+    $launchArgs = "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File `"$self`" -AgentRoot `"$AgentRoot`" -WorkerDir `"$WorkerDir`" -SchedulerTaskName `"$SchedulerTaskName`""
+    Start-Process -FilePath "powershell.exe" -ArgumentList $launchArgs -WindowStyle Hidden
     exit 0
 }
 
@@ -75,8 +75,8 @@ try {
     }
 
     $codexDir = Split-Path $codex -Parent
-    $host = Join-Path $codexDir "codex-code-mode-host.exe"
-    Write-LauncherLog "Codex='$codex'; CodeModeHostExists=$(Test-Path -LiteralPath $host -PathType Leaf)"
+    $codeModeHost = Join-Path $codexDir "codex-code-mode-host.exe"
+    Write-LauncherLog "Codex='$codex'; CodeModeHostExists=$(Test-Path -LiteralPath $codeModeHost -PathType Leaf)"
 
     $env:Path = "$codexDir;$env:Path"
     if (-not $env:HOME -and $env:USERPROFILE) { $env:HOME = $env:USERPROFILE }
