@@ -3,13 +3,19 @@
 Status: **INFRASTRUKTUR-AUFTRAG**
 Quelle: Nutzerfreigabe 2026-08-29 nach druckbereiter PETG-Klammer + Nubsi R01
 
+## AKTUELLER NUTZERSTAND
+
+- Nutzer bestätigt: `D:\AI3D-Agent` **existiert bereits**.
+- Diesen Punkt nicht erneut als STOPP/NUTZERAKTION behandeln.
+- Nächster technischer Schritt ist die kontrollierte Umstellung und Ende-zu-Ende-Validierung des lokalen Workflows auf diesen vorhandenen D:-Pfad.
+
 ## Ziel
 
 Den lokalen Rüdiger/Codex-Workflow für künftige 3D-Konstruktionsaufträge schneller, transparenter und robuster machen. Dieser Auftrag darf **keine Produktgeometrie** der Bettklammer oder des Nubsi verändern.
 
 ## VERBINDLICHER LOKALER ABLAGEORT
 
-- Der Nutzer hat `D:\AI3D-Agent` als verbindlichen lokalen Stammordner festgelegt.
+- Der Nutzer hat `D:\AI3D-Agent` als verbindlichen lokalen Stammordner festgelegt; der Ordner ist bereits vorhanden.
 - Ziel: große bzw. wachsende Agent-/Worker-/Projekt-Ausgaben sollen nicht weiter unnötig Laufwerk C: füllen.
 - Künftiger dedizierter Worker, lokale Ausgaben, Cache-/Arbeitsdaten und sinnvoll verlagerbare projektbezogene Daten sollen unter `D:\AI3D-Agent` organisiert werden.
 - Bestehende Daten auf C: **nicht blind löschen oder verschieben**. Zuerst Bestand, aktive Pfade und Abhängigkeiten prüfen; dann kontrolliert migrieren bzw. neue Pfade umstellen.
@@ -58,12 +64,15 @@ Den lokalen Rüdiger/Codex-Workflow für künftige 3D-Konstruktionsaufträge sch
    - Kein Spam im Sekundentakt. Zielbereich für sichtbaren Arbeits-Heartbeat: etwa 60–120 Sekunden.
    - Heartbeat darf den Codex-Prozess nicht unterbrechen oder dessen Ausgabe beschädigen.
 
-8. **Lokale Datenstruktur auf D: umstellen**
-   - `D:\AI3D-Agent` als Stammordner anlegen/verwenden.
+8. **Lokale Datenstruktur auf D: umstellen und real validieren**
+   - Vorhandenen Stammordner `D:\AI3D-Agent` verwenden; nicht erneut anlegen müssen.
    - Eine klare Unterstruktur für Worker, Outputs, Logs, Cache/Temp und ggf. Toolchain-Umgebungen festlegen, soweit diese Daten tatsächlich zum Agent-Workflow gehören.
    - Watcher/Scheduler so anpassen, dass der dedizierte Worker künftig unter D: arbeitet.
+   - Im lokalen Benutzer-/Scheduler-Kontext einen Diagnose- und anschließend echten Ende-zu-Ende-Lauf durchführen: Fetch -> Task-Erkennung -> Codex -> Commit -> Push -> Remote-Verifikation.
+   - Heartbeat bei einem ausreichend langen Lauf real beobachten/validieren.
    - Vorhandenen C:-Worker erst nach erfolgreicher Validierung des D:-Workers als Altbestand kennzeichnen.
    - Repository-/Task-Kompatibilität und Git-Push müssen nach der Umstellung unverändert funktionieren.
+   - Falls der aktuelle Codex-Worker selbst nicht aus seiner Sandbox nach D: schreiben darf, darf dies nicht erneut als Produkt-/Nutzer-STOPP enden: stattdessen den vorhandenen lokalen Watcher/Scheduler-Weg für die Migration/Validierung nutzen oder präzise nur die tatsächlich nötige einmalige Benutzeraktion ausgeben.
 
 ## SICHERHEIT / ÄNDERUNGSSCHUTZ
 
