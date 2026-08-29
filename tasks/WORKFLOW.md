@@ -51,6 +51,15 @@ Jeder neue Rüdiger-Auftrag soll einen kompakten maschinenlesbaren Status liefer
 
 Keine automatische finale Produktfreigabe und kein automatisches Merge.
 
+Das maschinenlesbare Schema liegt unter `tools/result-status.schema.json`. Technische Fehler erhalten `STOPP` oder `OFFEN`, aber `user_decision_required: false`, solange keine der oben genannten echten Nutzerentscheidungen vorliegt.
+
+## Referenzbilder
+
+- Verbindliches Schema: `references/<projekt>/` mit `manifest.json`.
+- Jede freigegebene Task nennt konkrete Referenzpfade; pauschale Hinweise auf bereitgestellte Fotos reichen nicht.
+- `kind: original` bezeichnet ausschließlich reale Referenzen, `kind: ai_generated` ausschließlich KI-Bilder.
+- Nicht übertragbare Binärdateien werden mit Quelle, geplantem Pfad, Status und `available: false` manifestiert.
+
 ## Lokale Speicherregeln
 
 - Produktive Runtime liegt unter `D:\AI3D-Agent`; der laufende Watcher soll außerhalb eines mutablen Worker-Clones unter `D:\AI3D-Agent\runtime` betrieben werden.

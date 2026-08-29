@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-INFRA-CAD-TOOLCHAIN-R02.md",
+  "revision": "R02",
+  "status": "OFFEN",
+  "main_files": [
+    "tools/ruediger-agent-watch.ps1",
+    "tools/cad-toolchain-preflight.ps1",
+    "tools/install-runtime-watcher.ps1",
+    "tools/result-status.schema.json",
+    "references/reference-manifest.schema.json",
+    "outputs/infrastructure/R02-INFRASTRUCTURE-REPORT.md",
+    "outputs/infrastructure/R02-toolchain-preflight.json"
+  ],
+  "validations": [
+    {"name": "powershell_parse", "status": "PASS"},
+    {"name": "preflight_optional_tools", "status": "PASS"},
+    {"name": "active_task_selection", "status": "PASS"},
+    {"name": "fifo_selection_after_processed_active", "status": "PASS"},
+    {"name": "historic_d_drive_e2e_remote", "status": "PASS", "remote_commit": "11a32a0d0edb27658ce10f7544e4c64a9f383e94"},
+    {"name": "r02_then_cube_live_e2e", "status": "OFFEN"}
+  ],
+  "open_real_tests": [
+    "R02 branch push and remote verification by the runtime watcher",
+    "automatic queued cube CAD/STL/result/commit/push/remote verification without CURRENT_TASK change"
+  ],
+  "user_decision_required": false,
+  "user_decision_reason": null,
+  "final_user_approval": false
+}

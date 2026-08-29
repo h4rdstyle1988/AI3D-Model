@@ -1,0 +1,59 @@
+﻿{
+    "schema_version":  2,
+    "generated_at":  "2026-08-29T17:19:06.9282197+02:00",
+    "status":  "PASS",
+    "agent_root":  "D:\\AI3D-Agent",
+    "tools":  {
+                  "git":  {
+                              "path":  "C:\\Program Files\\Git\\cmd\\git.exe",
+                              "available":  true,
+                              "required":  true
+                          },
+                  "codex":  {
+                                "path":  "C:\\Users\\h4rds\\AppData\\Local\\OpenAI\\Codex\\bin\\fac60c5e9a2ae3df\\codex.exe",
+                                "available":  true,
+                                "required":  true
+                            },
+                  "openscad":  {
+                                   "path":  null,
+                                   "available":  false,
+                                   "required":  false
+                               },
+                  "python":  {
+                                 "path":  null,
+                                 "available":  false,
+                                 "required":  false
+                             },
+                  "cadquery":  {
+                                   "python":  null,
+                                   "available":  false,
+                                   "required":  false
+                               },
+                  "mesh_validation":  {
+                                          "modules":  [
+
+                                                      ],
+                                          "available":  false,
+                                          "fallback":  "repo binary-STL validator",
+                                          "required":  false
+                                      },
+                  "slicers":  [
+                                  {
+                                      "path":  null,
+                                      "name":  "Anycubic Slicer Next",
+                                      "cli_verified":  false
+                                  },
+                                  {
+                                      "path":  null,
+                                      "name":  "PrusaSlicer console",
+                                      "cli_verified":  true
+                                  },
+                                  {
+                                      "path":  null,
+                                      "name":  "OrcaSlicer",
+                                      "cli_verified":  true
+                                  }
+                              ]
+              },
+    "policy":  "Optionale Tools blockieren nicht bei reproduzierbarem Ersatzweg; GUI ist kein CLI-Nachweis."
+}
