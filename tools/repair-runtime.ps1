@@ -15,7 +15,7 @@ New-Item -ItemType Directory -Force -Path $AgentRoot,(Join-Path $AgentRoot "work
 if (-not (Get-Command git -ErrorAction SilentlyContinue)) { throw "Git fehlt." }
 $codexVisibleHere = [bool](Get-Command codex -ErrorAction SilentlyContinue)
 if (-not $codexVisibleHere) {
-    Write-Output "Codex ist in dieser Administrator-PowerShell nicht im PATH. Das ist kein Migrationsfehler; die Codex-Pruefung erfolgt nach dem Neustart im Scheduler-/Watcher-Kontext."
+    Write-Output "Codex ist in dieser Administrator-PowerShell nicht im PATH. Das ist kein Migrationsfehler; der Scheduler-Launcher sucht Codex dynamisch unter OpenAI\\Codex\\bin."
 }
 
 function Get-ProcessTable {
@@ -142,14 +142,15 @@ if ($codexVisibleHere) {
     Write-Output "Interaktiver Preflight PASS."
 }
 else {
-    Write-Output "Interaktiver Preflight wird uebersprungen; der R03-Watcher prueft Git/Codex im Scheduler-Kontext beim Start."
+    Write-Output "Interaktiver Preflight wird uebersprungen; der Scheduler-Launcher setzt den Codex-PATH vor dem R03-Watcher."
 }
 
 if ($task) {
     try {
-        $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File `"$runtime\ruediger-agent-watch.ps1`" -AgentRoot `"$AgentRoot`" -WorkerDir `"$worker`" -SchedulerTaskName `"$SchedulerTaskName`""
+        $launcher = Join-Path $runtime "restart-runtime-watcher.ps1"
+        $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File `"$launcher`" -AgentRoot `"$AgentRoot`" -WorkerDir `"$worker`" -SchedulerTaskName `"$SchedulerTaskName`""
         Set-ScheduledTask -TaskName $SchedulerTaskName -Action $action | Out-Null
-        Write-Output "Scheduler-Aktion auf aktuelle Runtime gesetzt."
+        Write-Output "Scheduler-Aktion auf dynamischen R03-Codex-Launcher gesetzt."
     }
     catch {
         throw "Scheduler-Aktion konnte nicht aktualisiert werden: $($_.Exception.Message)"
@@ -157,7 +158,7 @@ if ($task) {
 
     $task = Get-ScheduledTask -TaskName $SchedulerTaskName -ErrorAction Stop
     Start-ScheduledTask -InputObject $task
-    Start-Sleep -Seconds 3
+    Start-Sleep -Seconds 4
     $task = Get-ScheduledTask -TaskName $SchedulerTaskName -ErrorAction Stop
     $info = Get-ScheduledTaskInfo -TaskName $SchedulerTaskName -ErrorAction SilentlyContinue
     Write-Output "Scheduler gestartet: $SchedulerTaskName; State=$($task.State); LastTaskResult=$($info.LastTaskResult)"
