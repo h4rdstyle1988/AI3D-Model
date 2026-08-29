@@ -297,7 +297,7 @@ function Run-Codex {
             $brief = $full -replace "`r?`n"," | "
             if ($brief.Length -gt 1800) { $brief = $brief.Substring($brief.Length-1800) }
             $script:LastCodexError = $brief
-            Write-Log "Codex Exit $exitCode: $brief" "ERROR"
+            Write-Log "Codex Exit ${exitCode}: $brief" "ERROR"
         }
         return $exitCode
     }
