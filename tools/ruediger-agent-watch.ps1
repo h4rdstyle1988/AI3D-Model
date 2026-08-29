@@ -1,9 +1,11 @@
 param(
     [string]$RepoUrl = "https://github.com/h4rdstyle1988/AI3D-Model.git",
-    [string]$WorkerDir = "$env:USERPROFILE\Documents\ChatGPT\AI3D Model-worker",
+    [string]$AgentRoot = "D:\AI3D-Agent",
+    [string]$WorkerDir = "",
     [int]$PollSeconds = 60,
     [int]$LogRetentionDays = 7,
-    [switch]$DiagnosticOnly
+    [switch]$DiagnosticOnly,
+    [int]$HeartbeatSeconds = 90
 )
 
 $ErrorActionPreference = "Stop"
@@ -21,15 +23,21 @@ if ([string]::IsNullOrWhiteSpace($env:LOCALAPPDATA)) {
     throw "LOCALAPPDATA konnte nicht ermittelt werden."
 }
 
-if ([string]::IsNullOrWhiteSpace($WorkerDir) -or $WorkerDir -eq "\Documents\ChatGPT\AI3D Model-worker") {
-    $WorkerDir = Join-Path $env:USERPROFILE "Documents\ChatGPT\AI3D Model-worker"
+if ([string]::IsNullOrWhiteSpace($WorkerDir)) {
+    $WorkerDir = Join-Path $AgentRoot "worker\AI3D-Model-worker"
 }
 
-$stateDir = Join-Path $env:LOCALAPPDATA "AI3D-Model"
+$stateDir = Join-Path $AgentRoot "state"
 $stateFile = Join-Path $stateDir "ruediger-last-task.txt"
-$logDir = Join-Path $stateDir "logs"
-$libraryOutputDir = Join-Path $stateDir "project-library"
-New-Item -ItemType Directory -Force -Path $stateDir, $logDir, $libraryOutputDir | Out-Null
+$logDir = Join-Path $AgentRoot "logs"
+$libraryOutputDir = Join-Path $AgentRoot "outputs\project-library"
+$cacheDir = Join-Path $AgentRoot "cache"
+$tempDir = Join-Path $AgentRoot "temp"
+$toolchainDir = Join-Path $AgentRoot "toolchain"
+if (-not (Test-Path $AgentRoot -PathType Container)) {
+    throw "Verbindlicher AgentRoot fehlt: $AgentRoot"
+}
+New-Item -ItemType Directory -Force -Path $stateDir, $logDir, $libraryOutputDir, $cacheDir, $tempDir, $toolchainDir | Out-Null
 
 function Remove-ExpiredLogs {
     $cutoff = (Get-Date).AddDays(-$LogRetentionDays)
@@ -124,9 +132,51 @@ function Assert-RemoteBranchContainsHead {
     Write-WatcherLog "Remote-Verifikation PASS: $Branch @ $localHead"
 }
 
+function Invoke-ToolchainPreflight {
+    $preflight = Join-Path $WorkerDir "tools\cad-toolchain-preflight.ps1"
+    $preflightOutput = Join-Path $stateDir "toolchain-preflight.json"
+    if (-not (Test-Path $preflight)) {
+        Write-WatcherLog -Level "WARN" -Message "Toolchain-Preflight fehlt: $preflight"
+        return
+    }
+    & powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $preflight -AgentRoot $AgentRoot -OutputPath $preflightOutput
+    if ($LASTEXITCODE -ne 0) { throw "Toolchain-Preflight fehlgeschlagen." }
+    Write-WatcherLog "Toolchain-Preflight: $preflightOutput"
+}
+
+function Invoke-CodexWithHeartbeat {
+    param([string]$Executable, [string]$PromptText)
+
+    $job = Start-Job -ScriptBlock {
+        param($Exe, $Prompt)
+        & $Exe --sandbox workspace-write --ask-for-approval never exec $Prompt
+        [pscustomobject]@{ RuedigerCodexExitCode = $LASTEXITCODE }
+    } -ArgumentList $Executable, $PromptText
+    $nextHeartbeat = (Get-Date).AddSeconds($HeartbeatSeconds)
+    $exitCode = $null
+    try {
+        while ($job.State -in @("Running", "NotStarted")) {
+            if ((Get-Date) -ge $nextHeartbeat) {
+                Write-WatcherLog "ARBEITET: Codex laeuft fuer Task weiter (job=$($job.Id))."
+                $nextHeartbeat = (Get-Date).AddSeconds($HeartbeatSeconds)
+            }
+            Start-Sleep -Seconds 5
+        }
+        $remaining = @(Receive-Job -Job $job)
+        foreach ($item in $remaining) {
+            if ($null -ne $item.RuedigerCodexExitCode) { $exitCode = [int]$item.RuedigerCodexExitCode }
+            else { Write-Output $item }
+        }
+        if ($job.State -ne "Completed") { throw "Codex-Job Status=$($job.State)" }
+        if ($null -eq $exitCode) { throw "Codex-Exitcode fehlt." }
+        return $exitCode
+    }
+    finally { Remove-Job -Job $job -Force -ErrorAction SilentlyContinue }
+}
+
 try {
     Write-WatcherLog "START process=$PID user=$([Environment]::UserName) machine=$env:COMPUTERNAME diagnostic=$DiagnosticOnly"
-    Write-WatcherLog "ENV USERPROFILE='$env:USERPROFILE' HOME='$env:HOME' LOCALAPPDATA='$env:LOCALAPPDATA' WorkerDir='$WorkerDir'"
+    Write-WatcherLog "ENV USERPROFILE='$env:USERPROFILE' HOME='$env:HOME' LOCALAPPDATA='$env:LOCALAPPDATA' AgentRoot='$AgentRoot' WorkerDir='$WorkerDir'"
     Write-WatcherLog "Log-Aufbewahrung: $LogRetentionDays Tage"
 
     $gitCommand = Get-Command git -ErrorAction SilentlyContinue
@@ -150,7 +200,8 @@ try {
     Write-WatcherLog "Codex HOME: $env:HOME"
 
     if ($DiagnosticOnly) {
-        Write-WatcherLog "DIAGNOSTIC PASS: Scheduler-Kontext kann PowerShell, Benutzerprofil, Logpfad, Git und Codex CLI erreichen. Keine Task verarbeitet."
+        Invoke-ToolchainPreflight
+        Write-WatcherLog "DIAGNOSTIC PASS: Scheduler-Kontext kann PowerShell, Benutzerprofil, D:-Ablage, Logpfad, Git und Codex CLI erreichen. Keine Task verarbeitet."
         exit 0
     }
 
@@ -222,6 +273,7 @@ try {
             }
 
             Invoke-Git -GitArgs @("-C", $WorkerDir, "checkout", "-b", $branch, "origin/master")
+            Invoke-ToolchainPreflight
 
             $prompt = @"
 Lies zuerst AGENTS.md und danach die aktive Auftragsdatei '$taskPath' vollstaendig.
@@ -238,8 +290,7 @@ Aendere ausschliesslich Dateien, die fuer diesen Auftrag erforderlich sind.
             Push-Location $WorkerDir
             try {
                 Write-WatcherLog "Starte Codex fuer: $taskPath"
-                & $CodexExe --sandbox workspace-write --ask-for-approval never exec $prompt
-                $codexExit = $LASTEXITCODE
+                $codexExit = Invoke-CodexWithHeartbeat -Executable $CodexExe -PromptText $prompt
             }
             finally {
                 Pop-Location

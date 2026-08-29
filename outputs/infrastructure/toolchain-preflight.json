@@ -1,0 +1,46 @@
+﻿{
+    "schema_version":  1,
+    "generated_at":  "2026-08-29T14:51:50.9086723+02:00",
+    "agent_root":  "D:\\AI3D-Agent",
+    "status":  "PASS",
+    "policy":  "Optionale Werkzeuge blockieren nicht, wenn ein reproduzierbarer Ersatzweg vorhanden ist.",
+    "tools":  {
+                  "git":  {
+                              "required":  true,
+                              "available":  true,
+                              "path":  "C:\\Program Files\\Git\\cmd\\git.exe"
+                          },
+                  "codex":  {
+                                "required":  true,
+                                "available":  true,
+                                "path":  "C:\\Users\\h4rds\\AppData\\Local\\OpenAI\\Codex\\bin\\fac60c5e9a2ae3df\\codex.exe"
+                            },
+                  "openscad":  {
+                                   "required":  false,
+                                   "available":  false,
+                                   "path":  null
+                               },
+                  "python":  {
+                                 "required":  false,
+                                 "available":  false,
+                                 "path":  null
+                             },
+                  "cadquery":  {
+                                   "required":  false,
+                                   "available":  false,
+                                   "python":  null
+                               },
+                  "mesh_validation":  {
+                                          "required":  false,
+                                          "available":  false,
+                                          "modules":  [
+
+                                                      ]
+                                      },
+                  "cli_slicer":  {
+                                     "required":  false,
+                                     "available":  false,
+                                     "path":  null
+                                 }
+              }
+}

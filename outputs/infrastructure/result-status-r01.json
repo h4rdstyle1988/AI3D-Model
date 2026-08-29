@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-INFRA-CAD-TOOLCHAIN-R01.md",
+  "revision": "R01",
+  "status": "OFFEN",
+  "main_files": [
+    "tools/ruediger-agent-watch.ps1",
+    "tools/cad-toolchain-preflight.ps1",
+    "tools/initialize-ai3d-agent.ps1",
+    "references/README.md",
+    "references/reference-manifest.schema.json",
+    "outputs/infrastructure/INFRASTRUCTURE-REPORT-R01.md",
+    "outputs/infrastructure/toolchain-preflight.json",
+    "outputs/infrastructure/result-status.schema.json"
+  ],
+  "validations": [
+    { "name": "powershell_syntax", "status": "PASS", "evidence": "Alle drei Infrastruktur-Skripte ohne Parserfehler." },
+    { "name": "required_tool_preflight", "status": "PASS", "evidence": "Git und Codex im aktuellen Benutzerkontext erkannt." },
+    { "name": "d_root_exists", "status": "PASS", "evidence": "D:\\AI3D-Agent als Verzeichnis gelesen." },
+    { "name": "d_worker_e2e", "status": "OFFEN", "evidence": "D:-Schreibzugriff ist in der aktuellen Codex-Sandbox nicht gestattet." },
+    { "name": "scheduler_context", "status": "OFFEN", "evidence": "Keine passende Scheduler-Aufgabe im sichtbaren Kontext gefunden." },
+    { "name": "heartbeat_observation", "status": "OFFEN", "evidence": "Implementiert, noch nicht in einem langen realen Lauf beobachtet." }
+  ],
+  "open_real_tests": [
+    "Scheduler-Diagnose im tatsächlichen lokalen Scheduler-Kontext",
+    "D:-E2E: Fetch, Task-Erkennung, Codex, Commit, Push und Remote-HEAD-Verifikation",
+    "Heartbeat während eines mindestens 90 Sekunden langen Codex-Laufs beobachten"
+  ],
+  "user_decisions": [],
+  "technical_blockers": [
+    "Aktuelle Workspace-Sandbox hat keinen Schreibzugriff auf D:\\AI3D-Agent.",
+    "Scheduler-Aufgabe ist im aktuellen Kontext nicht sichtbar."
+  ],
+  "final_product_approval": false
+}
