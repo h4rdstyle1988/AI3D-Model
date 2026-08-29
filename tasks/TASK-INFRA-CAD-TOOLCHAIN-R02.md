@@ -10,10 +10,11 @@ Status: **INFRASTRUKTUR-AUFTRAG**
 - Lokaler Runtime-Watcher wurde für stabilen Betrieb außerhalb des mutablen Workers verwendet.
 - Codex-stdin musste lokal auf einen UTF-8-sicheren Weg umgestellt werden; diese bewährte Lösung soll sauber ins Repo zurückgeführt werden.
 - Alte R01-Berichte, die D:-E2E noch als OFFEN melden, gelten insoweit als überholt.
+- `tasks/TASK_QUEUE.txt` existiert als FIFO-Warteschlange. Der bereits vom Nutzer freigegebene Testwürfel steht dort und darf den laufenden R02-Auftrag nicht verdrängen.
 
 ## Ziel
 
-Die noch fehlenden Toolchain-Punkte technisch abschließen und den nun real validierten lokalen Betrieb reproduzierbar im Repository abbilden. Keine Produktdateien ändern.
+Die noch fehlenden Toolchain-Punkte technisch abschließen und den nun real validierten lokalen Betrieb reproduzierbar im Repository abbilden. Zusätzlich den Übergabeprozess so absichern, dass ein freigegebener Auftrag weder verloren gehen noch einen laufenden Auftrag überschreiben kann. Keine Produktdateien ändern.
 
 ## VERBINDLICH
 
@@ -61,6 +62,33 @@ Die noch fehlenden Toolchain-Punkte technisch abschließen und den nun real vali
    - Klar trennen: GEÄNDERT / UNVERÄNDERT / INSTALLIERT / VALIDIERT / OFFEN / NUTZERAKTION.
    - C:-Altbestand nicht löschen. Nur als potenziell entfernbar markieren, wenn technisch sicher belegt.
 
+9. **Selbstständigen Auftrags-Workflow mit FIFO-Queue absichern**
+   - `tasks/CURRENT_TASK.txt` bleibt der explizit aktive Auftrag.
+   - `tasks/TASK_QUEUE.txt` enthält null oder mehr bereits freigegebene, wartende Tasks; ein relativer Task-Pfad pro Zeile, Reihenfolge = FIFO.
+   - Ein laufender Auftrag darf niemals durch einen neuen Nutzerauftrag überschrieben werden.
+   - Wenn der aktive Task bereits erfolgreich verarbeitet und remote verifiziert wurde, muss der Watcher selbstständig den ersten noch nicht verarbeiteten Queue-Eintrag auswählen und ausführen, ohne dass der Nutzer oder ChatGPT `CURRENT_TASK` manuell umschalten muss.
+   - Dafür robuste lokale Zustandsführung verwenden (mehr als nur ein einzelner `lastKey`), sodass mehrere Queue-Aufträge nacheinander genau einmal verarbeitet werden können.
+   - Task-Identität mindestens aus Task-Pfad + Blob-SHA bilden. Eine geänderte Task-Revision muss als neuer Arbeitsstand erkannt werden.
+   - Queue-Einträge dürfen bei Fehlern/STOPP nicht stillschweigend als erfolgreich erledigt markiert werden.
+   - Nach erfolgreichem Push muss der Remote-Branch verifiziert sein, bevor ein Auftrag als verarbeitet gilt.
+   - Ein technischer Fehler darf die Queue nicht zerstören. Zustand und Ursache protokollieren.
+   - Der bereits in `tasks/TASK_QUEUE.txt` eingetragene Testwürfel ist nach R02 der erste reale Queue-Test.
+
+10. **Freigabe-Gate zwischen Nutzer/ChatGPT und Rüdiger verbindlich machen**
+   - Anforderungen dürfen vor Nutzerfreigabe als Entwurf/Spezifikation dokumentiert werden, aber nicht zur Konstruktion aktiviert oder in die ausführbare Queue eingestellt werden.
+   - Erst nach ausdrücklicher Nutzerfreigabe darf ChatGPT den Konstruktionsauftrag aktivieren/einreihen.
+   - Rüdiger erzeugt CAD/STL/Druckdateien erst aus einem freigegebenen aktiven/queued Task.
+   - Rüdiger darf technisch notwendige Details selbst lösen, solange dadurch keine verbindliche Nutzeranforderung verändert oder neue Funktion erfunden wird.
+   - Bei technischen STOPPs zuerst technisch sauber dokumentieren; nur echte Änderungen an Funktion, verbindlichen Maßen, Produktidee, fehlende reale Referenzdaten oder widersprüchliche Anforderungen als `NUTZERENTSCHEIDUNG_ERFORDERLICH` kennzeichnen.
+   - Keine Rückfrage an den Nutzer wegen rein technischer Umsetzungsdetails, die innerhalb der freigegebenen Spezifikation lösbar sind.
+
+11. **Ende-zu-Ende-Abnahmetest des endgültigen Workflows**
+   - Nach Implementierung R02 selbst erfolgreich remote verifizieren.
+   - Danach ohne manuelle Änderung von `CURRENT_TASK` den freigegebenen Würfel aus `TASK_QUEUE.txt` automatisch aufnehmen.
+   - Für den Würfel muss der Ablauf nachweisbar sein: Queue-Erkennung -> Codex -> reproduzierbare CAD-Quelle -> STL -> SOLL/IST/Validierung -> Commit -> Push -> Remote-Verifikation.
+   - Keine zusätzliche Geometrie erfinden.
+   - Wenn dieser Queue-Test nicht vollständig PASS ist, Infrastrukturstatus bleibt OFFEN und die konkrete Ursache wird dokumentiert.
+
 ## Validierung
 
 Mindestens dokumentieren:
@@ -72,12 +100,15 @@ Mindestens dokumentieren:
 - Python/CadQuery-Smoke-Test falls verfügbar/eingerichtet.
 - Slicer-CLI-Inventar.
 - Referenzschema und Ergebnisstatusschema.
-- Keine Produktgeometrie geändert.
+- Queue verarbeitet mehrere freigegebene Aufträge genau einmal und ohne Überschreiben.
+- Freigabe-Gate verhindert Konstruktion vor Nutzerfreigabe.
+- R02 -> queued Testwürfel läuft ohne manuelle Task-Umschaltung.
+- Keine Produktgeometrie außerhalb des ausdrücklich freigegebenen Würfeltests geändert.
 
 ## Sicherheit
 
 - Keine breiten Kill/Reset/Clean-Aktionen außerhalb des dedizierten Workers.
 - Keine Nutzerdaten löschen.
-- Keine Produktgeometrie ändern.
+- Keine bestehende Produktgeometrie ändern.
 - Keine riskanten Systemänderungen oder dubiosen Downloads.
 - Nur echte unvermeidbare Admin-/GUI-Freigabe an Nutzer eskalieren.
