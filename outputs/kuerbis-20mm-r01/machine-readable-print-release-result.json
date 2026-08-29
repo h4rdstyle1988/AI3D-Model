@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-KUERBIS-20MM-R01-PRINT-RELEASE.md",
+  "revision": "R01-PRINT-RELEASE",
+  "status": "STOPP",
+  "reference": {
+    "commit": "455914037523924f523f38070c213c34eaaf6fdf",
+    "branch": "ruediger/task-kuerbis-20mm-r01-6b5f4e28"
+  },
+  "main_files": [
+    {
+      "path": "outputs/kuerbis-20mm-r01/kuerbis-20mm-r01-zweifarbig.3mf",
+      "sha256_expected": "9b220f28e2bd78d722301881288d7a8794b9581e3d6bbed035c0afcaeb814e6c",
+      "sha256_actual": "9b220f28e2bd78d722301881288d7a8794b9581e3d6bbed035c0afcaeb814e6c",
+      "hash_status": "PASS"
+    },
+    {
+      "path": "outputs/kuerbis-20mm-r01/kuerbis-20mm-r01-koerper.stl",
+      "sha256_expected": "b08f5c257c02d2a7efa1abc6a4cf67f2eca6364f99534f4789df18f0beac7d40",
+      "sha256_actual": "b08f5c257c02d2a7efa1abc6a4cf67f2eca6364f99534f4789df18f0beac7d40",
+      "hash_status": "PASS"
+    },
+    {
+      "path": "outputs/kuerbis-20mm-r01/kuerbis-20mm-r01-stiel.stl",
+      "sha256_expected": "94813de8374724ced640ec15b3f879c6fe64f756f91e4c7732b6ed162e4dfe93",
+      "sha256_actual": "94813de8374724ced640ec15b3f879c6fe64f756f91e4c7732b6ed162e4dfe93",
+      "hash_status": "PASS"
+    },
+    {
+      "path": "outputs/kuerbis-20mm-r01/PRINT-RELEASE.txt",
+      "role": "slicer_targets_and_release_notes"
+    }
+  ],
+  "validations": {
+    "binary_sha256": "PASS",
+    "geometry_unchanged_from_reference": "PASS_BY_IDENTICAL_SHA256",
+    "three_mf_structure": {
+      "status": "PASS",
+      "model_entry": "3D/3dmodel.model",
+      "resource_mesh_objects": 2,
+      "build_items": 2,
+      "objects": [
+        "Kuerbiskoerper - PLA Matt Desert Tan",
+        "Stiel - PLA Metal Kupfer"
+      ]
+    },
+    "local_target_path": {
+      "path": "D:\\3D-Models\\generated\\kuerbis-20mm-r01-print-release\\",
+      "status": "STOPP",
+      "exists": false,
+      "files_present": false,
+      "reason": "Access denied while creating the target directory in the current execution environment."
+    }
+  },
+  "open_real_tests": [
+    "Test print on Anycubic Kobra S1 with ACE Pro",
+    "Real print-quality inspection"
+  ],
+  "user_decision_required": false,
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "user_decision_reason": "No product decision is open; only local filesystem write permission blocks the requested copy.",
+  "final_product_approval_claimed": false
+}
