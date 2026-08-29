@@ -14,6 +14,25 @@ function Resolve-Tool {
     return $null
 }
 
+function Test-PythonImport {
+    param(
+        [Parameter(Mandatory = $true)][string]$PythonExe,
+        [Parameter(Mandatory = $true)][string]$Module
+    )
+
+    # Fehlende optionale Python-Module sind ein erwartbarer Preflight-Befund und
+    # duerfen bei globalem ErrorActionPreference=Stop den gesamten Lauf nicht abbrechen.
+    $oldPreference = $ErrorActionPreference
+    try {
+        $ErrorActionPreference = "SilentlyContinue"
+        & $PythonExe -c "import $Module" *> $null
+        return ($LASTEXITCODE -eq 0)
+    }
+    finally {
+        $ErrorActionPreference = $oldPreference
+    }
+}
+
 $openScad = Resolve-Tool "openscad" @("C:\Program Files\OpenSCAD\openscad.exe", "C:\Program Files (x86)\OpenSCAD\openscad.exe")
 $python = Resolve-Tool "python"
 if (-not $python) {
@@ -37,11 +56,9 @@ $slicer = Resolve-Tool "prusa-slicer-console" $slicerCandidates
 $cadQuery = $false
 $meshModules = @()
 if ($python) {
-    & $python -c "import cadquery" 2>$null
-    $cadQuery = ($LASTEXITCODE -eq 0)
+    $cadQuery = Test-PythonImport -PythonExe $python -Module "cadquery"
     foreach ($module in @("trimesh", "numpy", "meshio")) {
-        & $python -c "import $module" 2>$null
-        if ($LASTEXITCODE -eq 0) { $meshModules += $module }
+        if (Test-PythonImport -PythonExe $python -Module $module) { $meshModules += $module }
     }
 }
 
