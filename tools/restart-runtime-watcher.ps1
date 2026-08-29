@@ -49,21 +49,52 @@ function Resolve-CodexExe {
     return $null
 }
 
+function Test-WatcherProcess {
+    try {
+        $all = @(Get-CimInstance Win32_Process -ErrorAction Stop)
+        return [bool]($all | Where-Object {
+            $_.CommandLine -and $_.CommandLine -match "ruediger-agent-watch\.ps1"
+        } | Select-Object -First 1)
+    }
+    catch { return $false }
+}
+
 if ($ParentPid -gt 0) {
     $ErrorActionPreference = "SilentlyContinue"
     try { Wait-Process -Id $ParentPid -Timeout 60 } catch {}
-    Start-Sleep -Seconds 2
 
-    try {
-        $task = Get-ScheduledTask -TaskName $SchedulerTaskName -ErrorAction Stop
-        Start-ScheduledTask -InputObject $task -ErrorAction Stop
+    $deadline = (Get-Date).AddSeconds(30)
+    $task = $null
+    do {
+        $task = Get-ScheduledTask -TaskName $SchedulerTaskName -ErrorAction SilentlyContinue
+        if ($task -and $task.State -ne "Running") { break }
+        Start-Sleep -Seconds 1
+    } while ((Get-Date) -lt $deadline)
+
+    if ($task -and $task.State -ne "Running") {
+        try {
+            Start-ScheduledTask -InputObject $task -ErrorAction Stop
+            Start-Sleep -Seconds 3
+            $task = Get-ScheduledTask -TaskName $SchedulerTaskName -ErrorAction Stop
+            if ($task.State -eq "Running") {
+                Write-LauncherLog "SELF-RESTART PASS via Scheduler: $SchedulerTaskName"
+                exit 0
+            }
+        }
+        catch {
+            Write-LauncherLog ("SELF-RESTART Scheduler fehlgeschlagen: " + $_.Exception.Message) "WARN"
+        }
+    }
+
+    if (Test-WatcherProcess) {
+        Write-LauncherLog "SELF-RESTART: Watcher laeuft bereits; kein zweiter Start."
         exit 0
     }
-    catch {}
 
     $self = $MyInvocation.MyCommand.Path
     $launchArgs = "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File `"$self`" -AgentRoot `"$AgentRoot`" -WorkerDir `"$WorkerDir`" -SchedulerTaskName `"$SchedulerTaskName`""
     Start-Process -FilePath "powershell.exe" -ArgumentList $launchArgs -WindowStyle Hidden
+    Write-LauncherLog "SELF-RESTART Fallback: Launcher direkt gestartet."
     exit 0
 }
 
