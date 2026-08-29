@@ -118,27 +118,37 @@ try {
         throw "Ruediger-Watcher fehlt: $watcher"
     }
 
-    Write-LauncherLog "Starte Watcher: '$watcher'"
-    $stdoutPath = Join-Path $tempDir "ruediger-watcher-$PID.out.log"
-    $stderrPath = Join-Path $tempDir "ruediger-watcher-$PID.err.log"
-    Remove-Item -LiteralPath $stdoutPath,$stderrPath -Force -ErrorAction SilentlyContinue
+    $launchIteration = 0
+    while ($true) {
+        $launchIteration++
+        Write-LauncherLog "Starte Watcher: '$watcher' iteration=$launchIteration"
+        $stdoutPath = Join-Path $tempDir "ruediger-watcher-$PID-$launchIteration.out.log"
+        $stderrPath = Join-Path $tempDir "ruediger-watcher-$PID-$launchIteration.err.log"
+        Remove-Item -LiteralPath $stdoutPath,$stderrPath -Force -ErrorAction SilentlyContinue
 
-    $watcherArgs = "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File `"$watcher`" -AgentRoot `"$AgentRoot`" -WorkerDir `"$WorkerDir`" -SchedulerTaskName `"$SchedulerTaskName`""
-    $proc = Start-Process -FilePath "powershell.exe" -ArgumentList $watcherArgs -WindowStyle Hidden -RedirectStandardOutput $stdoutPath -RedirectStandardError $stderrPath -PassThru -Wait
-    $exitCode = [int]$proc.ExitCode
+        $watcherArgs = "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File `"$watcher`" -AgentRoot `"$AgentRoot`" -WorkerDir `"$WorkerDir`" -SchedulerTaskName `"$SchedulerTaskName`""
+        $proc = Start-Process -FilePath "powershell.exe" -ArgumentList $watcherArgs -WindowStyle Hidden -RedirectStandardOutput $stdoutPath -RedirectStandardError $stderrPath -PassThru -Wait
+        $exitCode = [int]$proc.ExitCode
 
-    foreach ($path in @($stdoutPath,$stderrPath)) {
-        if (Test-Path -LiteralPath $path) {
-            $text = Get-Content -LiteralPath $path -Raw -ErrorAction SilentlyContinue
-            if ($text -and $text.Trim()) {
-                Add-Content -LiteralPath $launcherLog -Value $text.TrimEnd() -Encoding UTF8
+        foreach ($path in @($stdoutPath,$stderrPath)) {
+            if (Test-Path -LiteralPath $path) {
+                $text = Get-Content -LiteralPath $path -Raw -ErrorAction SilentlyContinue
+                if ($text -and $text.Trim()) {
+                    Add-Content -LiteralPath $launcherLog -Value $text.TrimEnd() -Encoding UTF8
+                }
+                Remove-Item -LiteralPath $path -Force -ErrorAction SilentlyContinue
             }
-            Remove-Item -LiteralPath $path -Force -ErrorAction SilentlyContinue
         }
-    }
 
-    Write-LauncherLog "Watcher beendet; ExitCode=$exitCode" $(if($exitCode -eq 0){"INFO"}else{"ERROR"})
-    exit $exitCode
+        if ($exitCode -eq 75) {
+            Write-LauncherLog "Watcher fordert Runtime-Reload an; neue Watcher-Version wird im selben Scheduler-Lauf gestartet."
+            Start-Sleep -Seconds 1
+            continue
+        }
+
+        Write-LauncherLog "Watcher beendet; ExitCode=$exitCode" $(if($exitCode -eq 0){"INFO"}else{"ERROR"})
+        exit $exitCode
+    }
 }
 catch {
     Write-LauncherLog ("LAUNCHER FEHLER: " + $_.Exception.Message) "ERROR"
