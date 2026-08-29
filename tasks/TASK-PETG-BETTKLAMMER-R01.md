@@ -12,14 +12,14 @@ Konstruiere eine erste druckbare Testrevision **R01** einer PETG-Klammer, die ei
 
 - Material: **PETG**
 - Klammerbreite: **20 mm**
-- Schenkellänge: **40 mm**
-- Bezug der Schenkellänge: **40 mm von ganz oben nach ganz unten** der Klammer, vom Nutzer am 2026-08-29 klargestellt
+- Schenkellänge / Gesamthöhe: **40 mm von ganz oben nach ganz unten** der Klammer
 - Material-/Wandstärke: **2,0 mm**
 - Bettprofil / Chromleiste: **20,0 mm tief** – vom Nutzer gemessen/bestätigt
 - Filzdicke an der Klemmstelle: **2,0 mm** – vom Nutzer gemessen/bestätigt
 - Vorhandener Chromüberstand gegenüber der angrenzenden Bettfläche: **2,0 mm** – vom Nutzer gemessen/bestätigt
+- Der 2,0-mm-Chromüberstand sitzt **direkt oben an der Chromleiste** und läuft dort als **rechteckige Kante** entlang; Ansicht von vorne rechteckig – vom Nutzer bestätigt
 - Grundprinzip: federnde, von oben aufgeschobene **U-Klammer** über Chromprofil + Filz
-- Die Chromleiste steht auf der Bettseite über. Dieser vorhandene **2,0-mm-Überstand** dient als Haltepunkt für die Widerhaken/Zacken.
+- Der vorhandene 2,0-mm-Chromüberstand dient als Haltepunkt für die Widerhaken/Zacken.
 - **Mehrere Zacken/Widerhaken** vorsehen, damit die Haltewirkung verteilt wird und die Klammer nicht unnötig stark überdehnt werden muss.
 - Keine zusätzlichen Funktionen, Halterungen, Führungen oder Befestigungsprinzipien ergänzen.
 
@@ -44,16 +44,16 @@ Für R01 als Ausgangspunkt:
 
 Diese Werte sind technische Vorschläge. Falls die CAD-/FDM-Prüfung eine Abweichung erforderlich macht, begründen und dokumentieren; keine stillen Änderungen.
 
-## NOCH OFFEN NACH NUTZERKLÄRUNG VOM 2026-08-29
+## GEOMETRISCHE KLÄRUNG VOM 2026-08-29
 
-Falls für die konkrete Zahnposition weiterhin geometrisch erforderlich, sind nur noch folgende Punkte offen und dürfen nicht geraten werden:
+Die zuvor offenen Geometriepunkte sind durch den Nutzer geklärt:
 
-- vertikale Lage der greifbaren Unterkante des Chromüberstands relativ zur Profiloberkante,
-- Form der greifbaren Unterkante (z. B. scharf, gerundet oder gefast) einschließlich Maß, soweit für die Funktion relevant,
-- eindeutige Seitenzuordnung im Querschnitt, falls diese aus vorhandenen Referenzbildern/Geometrien nicht eindeutig ableitbar ist.
+- Gesamthöhe der Klammer: **40 mm von ganz oben bis ganz unten**.
+- Horizontaler Chromüberstand: **2,0 mm**.
+- Lage: Überstand **direkt oben an der Chromleiste**.
+- Form: **rechteckige, gerade Kante**; keine schräge oder gerundete Sonderkontur vorgegeben.
 
-Die zuvor offene Frage, wie die 40-mm-Schenkellänge zu beziehen ist, ist geschlossen: **Gesamtausdehnung der Klammer von oben nach unten = 40 mm**.
-Der zuvor offene horizontale Überstand ist ebenfalls geschlossen: **Chromüberstand = 2,0 mm**.
+Für diese Punkte besteht kein STOPP-Grund mehr. Sollte bei der tatsächlichen CAD-Konstruktion eine **andere, bisher nicht benannte** konstruktiv relevante Information fehlen, gilt weiterhin die STOPPREGEL; nicht raten.
 
 ## ZIEL VON R01
 
