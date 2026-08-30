@@ -1,0 +1,14 @@
+STATUS: STOPP / OFFEN
+
+Keine CAD-, STL-, GLB-, 3MF-, Rohmesh- oder Render-Geometrie erzeugt.
+
+Grund: Das verbindliche erste Referenz-Gate ist fehlgeschlagen. Die Datei
+tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R04.jpg.b64 ist ein abgeschnittener
+10.013-Byte-Text mit dem literalen Marker [...truncated...]. Sie ist nicht
+strikt als Base64 decodierbar und kann daher nicht die freigegebene
+31.028-Byte-JPEG-Datei mit SHA-256
+1b039abd4e83ddeff1fe707d07bca5d492b3fbb956857599936b317cf22b4a29
+herstellen. Trellis und alle nachgelagerten Schritte sind damit unzulässig.
+
+NUTZERENTSCHEIDUNG_ERFORDERLICH: true
+FINALE_PRODUKTFREIGABE: false

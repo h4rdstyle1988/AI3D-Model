@@ -1,0 +1,151 @@
+{
+  "schema": "ai3d-task-result-v1",
+  "task": {
+    "path": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-RETRY-REF-CLEAN-R04.md",
+    "blob_sha1": "68df6b5ca7759d63a6b25a686db4278d27a07a10",
+    "product_revision": "R02",
+    "retry_revision": "R04"
+  },
+  "generated_at": "2026-08-30T15:59:16.0840609+02:00",
+  "status": "STOPP",
+  "PASS_STOPP_OFFEN": "STOPP",
+  "pass": false,
+  "open": true,
+  "phase_reached": "REFERENCE_PREFLIGHT",
+  "final_product_approval": false,
+  "references": {
+    "ref_clean": {
+      "source": "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R04.jpg.b64",
+      "authorization": "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-AUTH-R04.md",
+      "repository_bytes": 10013,
+      "repository_sha256": "d7a7bc276318dea54458311c844d5f7532e8be038687f50064bad28fe6304b85",
+      "git_blob_sha1": "a1123c4910a3c524658873031eca255dd902f91a",
+      "expected_decoded_bytes": 31028,
+      "expected_decoded_sha256": "1b039abd4e83ddeff1fe707d07bca5d492b3fbb956857599936b317cf22b4a29",
+      "expected_dimensions_px": [512, 512],
+      "expected_mode": "RGB",
+      "expected_format": "JPEG",
+      "literal_truncation_marker_present": true,
+      "truncation_marker_index": 9996,
+      "valid_base64_prefix_characters": 9996,
+      "valid_prefix_decoded_bytes": 7497,
+      "valid_prefix_jpeg_soi": true,
+      "valid_prefix_jpeg_eoi": false,
+      "base64_strict": false,
+      "base64_error": "Error: Only base64 data is allowed",
+      "decoded_bytes": null,
+      "decoded_sha256": null,
+      "hash_match": false,
+      "strict_decode_complete": false,
+      "matching_copy_found_in_checked_roots": false,
+      "matching_historical_git_blob_found": false,
+      "status": "FAIL"
+    },
+    "ref_seam": {
+      "source": "tasks/TASK-HERBST-IGEL-R01-REF-SEAM.jpg.b64",
+      "decoded_bytes": 11788,
+      "expected_decoded_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "actual_decoded_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "hash_match": true,
+      "dimensions_px": [384, 384],
+      "mode": "RGB",
+      "format": "JPEG",
+      "strict_decode_complete": true,
+      "role": "SEAM_ONLY_NOT_PRIMARY_FORM_SOURCE",
+      "status": "PASS"
+    },
+    "old_damaged_ref_clean_used": false,
+    "r03_raw_jpeg_used": false,
+    "ref_seam_used_as_primary": false,
+    "secondary_multiview_used_as_primary": false
+  },
+  "trellis": {
+    "executed": false,
+    "status": "NOT_RUN_DUE_TO_REFERENCE_GATE",
+    "tool": null,
+    "command": null,
+    "gpu": null,
+    "seed": null,
+    "resolution": null,
+    "raw_mesh": null
+  },
+  "optic_gate": {
+    "status": "NOT_RUN_DUE_TO_REFERENCE_GATE",
+    "raw_geometry_renders": []
+  },
+  "cad_processing": {
+    "status": "NOT_RUN_DUE_TO_REFERENCE_GATE",
+    "source": null
+  },
+  "technical_validation": {
+    "status": "NOT_RUN_DUE_TO_REFERENCE_GATE",
+    "body_stl_watertight": "NOT_RUN",
+    "back_stl_watertight": "NOT_RUN",
+    "two_manifold": "NOT_RUN",
+    "open_edges": "NOT_RUN",
+    "unintended_multiple_shells": "NOT_RUN",
+    "self_intersections": "NOT_RUN",
+    "wall_thickness": "NOT_RUN",
+    "pin_diameter_10_mm": "NOT_RUN",
+    "engagement_depth_20_mm": "NOT_RUN",
+    "socket_clearance": "NOT_RUN",
+    "full_engagement_collision": "NOT_RUN",
+    "internal_reinforcement_print_through": "NOT_RUN",
+    "enclosed_support": "NOT_RUN",
+    "maximum_dimension_approximately_200_mm": "NOT_RUN"
+  },
+  "main_files": [
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r04-stopp/REFERENCE-GATE-R04.md",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r04-stopp/REVISION-R02-R04.md",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r04-stopp/GEOMETRY-NOT-CREATED.txt",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r04-stopp/VALIDIERUNG-R02-R04.json",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r04-stopp/result-status.json",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r04-stopp/reports/reference-gate-audit-r04.json",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r04-stopp/reproduction-scripts/verify_reference_gate_r04.py"
+  ],
+  "intentionally_not_generated": [
+    "Trellis raw mesh",
+    "raw mesh geometry renders",
+    "reproducible CAD/processing source",
+    "herbst-igel-r02-koerper.stl",
+    "herbst-igel-r02-ruecken.stl",
+    "assembly GLB or 3MF",
+    "final geometry renders"
+  ],
+  "validations": {
+    "task_and_queue_identity": "PASS",
+    "primary_ref_clean_base64_transport": "FAIL",
+    "primary_ref_clean_hash": "FAIL",
+    "primary_ref_clean_size": "FAIL",
+    "primary_ref_clean_jpeg_signature": "FAIL",
+    "primary_ref_clean_dimensions_and_mode": "FAIL",
+    "primary_ref_clean_strict_decode": "FAIL",
+    "seam_reference_hash_and_strict_decode": "PASS",
+    "lossless_recovery_from_existing_bytes": "FAIL",
+    "forbidden_reference_substitution_avoided": "PASS",
+    "trellis_not_started_after_failed_reference_gate": "PASS",
+    "cad_stl_not_started_after_failed_reference_gate": "PASS",
+    "previous_results_preserved": "PASS",
+    "only_task_related_files_changed": "PASS"
+  },
+  "changed": [
+    "new isolated R04 STOPP documentation",
+    "reproducible R04 reference transport and recovery audit"
+  ],
+  "unchanged": [
+    "R02 product revision",
+    "all confirmed geometry and user dimensions",
+    "all prior R01/R02/R03 artifacts and STOPP states"
+  ],
+  "removed": [],
+  "open_real_tests": [
+    "provide the exact authorized 31028-byte REF-CLEAN with SHA-256 1b039abd4e83ddeff1fe707d07bca5d492b3fbb956857599936b317cf22b4a29 or explicitly approve another concrete primary source",
+    "run Trellis and optical gate after the reference passes",
+    "run CAD/STL and technical validation only after optical PASS",
+    "perform slicer, print, fit, glue, support-removal and surface tests",
+    "obtain final user optical and product/print approval"
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": true,
+  "nutzerentscheidung_grund": "Die erforderliche reale Primärreferenz fehlt unter der freigegebenen Dateiidentität und kann nicht eindeutig rekonstruiert werden. Fortsetzung erfordert die exakten autorisierten Bytes oder die ausdrückliche Freigabe einer anderen konkreten Primärquelle."
+}
+

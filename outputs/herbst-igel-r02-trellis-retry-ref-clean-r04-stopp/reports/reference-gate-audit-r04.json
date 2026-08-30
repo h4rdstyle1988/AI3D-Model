@@ -1,0 +1,80 @@
+{
+  "schema": "ai3d-reference-gate-audit-v1",
+  "task": {
+    "path": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-RETRY-REF-CLEAN-R04.md",
+    "blob_sha1": "68df6b5ca7759d63a6b25a686db4278d27a07a10",
+    "product_revision": "R02",
+    "retry_revision": "R04"
+  },
+  "queue": {
+    "entries": [
+      "tasks/TASK-HERBST-IGEL-R02-TRELLIS-RETRY-REF-CLEAN-R04.md"
+    ],
+    "task_is_fifo_head": true,
+    "current_task_migration_value": "NONE"
+  },
+  "ref_clean": {
+    "source": "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R04.jpg.b64",
+    "repository_bytes": 10013,
+    "repository_sha256": "d7a7bc276318dea54458311c844d5f7532e8be038687f50064bad28fe6304b85",
+    "git_blob_sha1": "a1123c4910a3c524658873031eca255dd902f91a",
+    "base64_strict": false,
+    "base64_error": "Error: Only base64 data is allowed",
+    "decoded_bytes": null,
+    "decoded_sha256": null,
+    "expected_decoded_sha256": "1b039abd4e83ddeff1fe707d07bca5d492b3fbb956857599936b317cf22b4a29",
+    "hash_match": false,
+    "expected_decoded_bytes": 31028,
+    "expected_unwrapped_base64_characters": 41372,
+    "literal_truncation_marker_present": true,
+    "truncation_marker_index_compact": 9996,
+    "valid_base64_prefix_characters": 9996,
+    "valid_prefix_decoded_bytes": 7497,
+    "valid_prefix_jpeg_soi": true,
+    "valid_prefix_jpeg_eoi": false,
+    "expected_size_match": false,
+    "expected_dimensions_match": false,
+    "expected_mode_match": false,
+    "status": "FAIL"
+  },
+  "ref_seam": {
+    "source": "tasks/TASK-HERBST-IGEL-R01-REF-SEAM.jpg.b64",
+    "repository_bytes": 15720,
+    "repository_sha256": "ab021447f628b79811481d124acc2f0d5c72cef9602b840443a8cdcf422c0b17",
+    "git_blob_sha1": "c7dd9a9af21a6c57bb818916fbe85096fa00b03e",
+    "base64_strict": true,
+    "base64_error": null,
+    "decoded_bytes": 11788,
+    "decoded_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+    "expected_decoded_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+    "hash_match": true,
+    "jpeg_soi": true,
+    "jpeg_eoi": true,
+    "strict_full_decode": true,
+    "format": "JPEG",
+    "mode": "RGB",
+    "dimensions_px": [
+      384,
+      384
+    ],
+    "error": null,
+    "status": "PASS"
+  },
+  "recovery": {
+    "searched_filesystem_roots": [
+      "D:\\AI3D-Agent\\worker\\AI3D-Model-worker",
+      "D:/AI3D-Agent",
+      "D:/3D-Models/generated"
+    ],
+    "filesystem_files_with_expected_byte_size": [],
+    "all_git_objects_with_expected_decoded_byte_size": [],
+    "matching_filesystem_copy_found": false,
+    "matching_git_object_found": false,
+    "authorized_identity_recoverable_from_repository": false
+  },
+  "reference_gate": "FAIL",
+  "required_action": "STOPP_BEFORE_TRELLIS",
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": true,
+  "nutzerentscheidung_grund": "Die autorisierte 31028-Byte-REF-CLEAN mit dem festgelegten SHA-256 ist im freigegebenen Repository-Blob nicht vorhanden und nicht eindeutig rekonstruierbar.",
+  "final_product_approval": false
+}
