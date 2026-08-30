@@ -1,0 +1,170 @@
+{
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": true,
+  "artifact_hashes": {
+    "source_sha256": "e681d7fd9f605ed717315c472d5447d1f8c7476d71768a47a25825bef1fe6bbc",
+    "stl_sha256": "08bd966afcd4ea51ab5241486e63c88c505298d97da3474c957642e817f8fa8d",
+    "validator_sha256": "5da796fea26138e3d7afd35c1a8d8dc9d76e9cfe5e7c56d099cdcbff124d7ec3"
+  },
+  "dimensions": {
+    "arm_section_height_cad_mm": 10.0,
+    "arm_section_height_stl_mm": 10.0,
+    "arm_section_width_cad_mm": 12.0,
+    "arm_section_width_stl_mm": 12.0,
+    "main_bend_inner_radius_cad_mm": 6.0,
+    "overall_bounds_mm": [
+      [
+        -5.0,
+        98.0
+      ],
+      [
+        -6.0,
+        6.0
+      ],
+      [
+        0.0,
+        92.0
+      ]
+    ],
+    "plug_corner_to_corner_cad_mm": 10.27683479157534,
+    "plug_flat_to_flat_cad_mm": 8.9,
+    "plug_flat_to_flat_stl_mm": 8.89999962,
+    "plug_length_cad_mm": 18.0,
+    "plug_sections_stl": [
+      {
+        "corner_to_corner_y_mm": 10.27683448,
+        "flat_to_flat_x_mm": 8.89999962,
+        "z_mm": 1.0
+      },
+      {
+        "corner_to_corner_y_mm": 10.27683448,
+        "flat_to_flat_x_mm": 8.89999962,
+        "z_mm": 9.0
+      },
+      {
+        "corner_to_corner_y_mm": 10.27683448,
+        "flat_to_flat_x_mm": 8.89999962,
+        "z_mm": 17.0
+      }
+    ],
+    "projection_to_stop_start_cad_mm": 90.0,
+    "root_transition_cad_mm": {
+      "length": 12.0,
+      "z_end": 30.0,
+      "z_start": 18.0
+    },
+    "stop_inner_radius_cad_mm": 4.0,
+    "stop_maximum_x_cad_mm": 98.0
+  },
+  "final_product_approval": "NOT_CLAIMED",
+  "main_files": {
+    "print_report": "DRUCKORIENTIERUNG-UND-SLICER.md",
+    "renders": [
+      "render-3-4-ansicht.png",
+      "render-seitenansicht.png",
+      "render-steckzapfen-uebergang.png"
+    ],
+    "soll_ist": "SOLL-IST-REPORT.md",
+    "source_geometry": "source/build_spuelenablage_lappenhalter_r01.py",
+    "stl": "spuelenablage-lappenhalter-r01.stl",
+    "validator": "source/validate_spuelenablage_lappenhalter_r01.py"
+  },
+  "mechanical_assessment": {
+    "arm_section_modulus_gain_percent": 87.5,
+    "assessment": "PLAUSIBLE_GEOMETRIC_IMPROVEMENT_PHYSICAL_TEST_REQUIRED",
+    "critical_section": "unchanged hex plug exit at z=18 mm and immediately above it",
+    "limitation": "No fracture surface, material coupon, creep result or physical test was available.",
+    "load_normalization": "section comparison at equal bending moment; no unapproved service load assumed",
+    "new_arm_section_modulus_mm3": 200.0,
+    "nominal_arm_stress_reduction_percent": 46.666666666666664,
+    "old_arm_section_modulus_mm3": 106.66666666666667,
+    "plug_section_modulus_mm3": 84.79459206673778,
+    "root_force_flow": "12 mm monotone quintic morph; zero first/second endpoint derivatives; then full 12 x 10 mm section"
+  },
+  "mesh_topology": {
+    "boundary_edges": 0,
+    "components": 1,
+    "duplicate_faces": 0,
+    "edges_with_exactly_two_faces": 24840,
+    "euler_characteristic": 2,
+    "faces": 16560,
+    "finite_vertices": true,
+    "minimum_double_triangle_area_mm2": 0.04885935656746079,
+    "nonmanifold_edges": 0,
+    "positive_consistent_volume": true,
+    "signed_volume_mm3": 19230.70304141456,
+    "unique_edges": 24840,
+    "vertices": 8282,
+    "watertight_2_manifold": true,
+    "zero_area_faces": 0
+  },
+  "nutzerentscheidung_grund": "Finale Produktfreigabe erst nach realem Steck-, Biege-, Nass- und Kriechtest durch den Nutzer; keine offene CAD-Entscheidung.",
+  "open_real_tests": [
+    "8.90 mm plug insertion force and removal",
+    "real honeycomb axial free space at least approximately 18.5-19 mm",
+    "PETG print quality and support removal",
+    "wet-cloth bending test",
+    "creep and wet-cycle test",
+    "final product approval by user"
+  ],
+  "open_status": "OFFEN",
+  "open_status_reason": "Reale Steck-, Freiraum-, Druck-, Nass- und Kriechtests sowie finale Nutzerfreigabe stehen aus.",
+  "print": {
+    "infill_allowed_range_percent": [
+      25,
+      35
+    ],
+    "infill_pattern": "Gyroid (Cubic acceptable)",
+    "infill_percent": 30,
+    "layer_height_mm": 0.2,
+    "material": "PETG",
+    "nozzle_mm": 0.4,
+    "one_hundred_percent_infill": "NOT_RECOMMENDED",
+    "orientation": "side lying, local Y to printer Z",
+    "support": "localized build-plate support under plug only; externally accessible",
+    "walls": 5
+  },
+  "revision": "R01",
+  "schema": "ai3d.spuelenablage-lappenhalter.validation-revision.v1",
+  "self_intersections": {
+    "basis": [
+      "single ordered closed sweep shell",
+      "monotone straight root morph",
+      "main bend inner radius remains positive at 6 mm",
+      "end transition inner radius remains positive at 4 mm",
+      "non-returning separated path sections",
+      "one 2-manifold component, no duplicate or degenerate faces"
+    ],
+    "exhaustive_triangle_pair_test": false,
+    "status": "PASS_BY_ANALYTIC_SWEEP_AND_ENVELOPE_PROOF"
+  },
+  "status": "PASS",
+  "task": {
+    "approval_identity_verified": true,
+    "blob_sha": "6035fd3c381ced7e52bef73f5df6c9b190e1edfa",
+    "path": "tasks/TASK-SPUELENABLAGE-LAPPENHALTER-R01.md",
+    "sha256": "3737f70f48083dd69243e6660dd6d5a8945d3313b94c84828b117fca57467c8d"
+  },
+  "technical_pass": true,
+  "validations": {
+    "arm_section_12_x_10": true,
+    "no_extra_mounts_features_or_base": true,
+    "no_self_intersection_by_analytic_sweep_envelope": true,
+    "no_shape_changing_repair": true,
+    "one_component": true,
+    "one_straight_hex_plug_only": true,
+    "plug_constant_sections_1_9_17": true,
+    "plug_flat_exact_8_90": true,
+    "plug_straight_length_exact_18_cad": true,
+    "positive_consistent_volume": true,
+    "projection_exact_90_cad": true,
+    "required_renders_exist": true,
+    "root_transition_tangent_no_step": true,
+    "single_closed_shell_euler_2": true,
+    "stl_binary_count_matches": true,
+    "watertight_2_manifold": true,
+    "zero_boundary_edges": true,
+    "zero_degenerate_faces": true,
+    "zero_duplicate_faces": true,
+    "zero_nonmanifold_edges": true
+  }
+}

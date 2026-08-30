@@ -1,0 +1,65 @@
+{
+  "arm": {
+    "main_inner_radius_mm": 6.0,
+    "main_section_height_mm": 10.0,
+    "main_section_width_mm": 12.0,
+    "projection_to_stop_start_mm": 90.0,
+    "vertical_bend_start_above_plug_mm": 50.0
+  },
+  "artifacts": {
+    "renders": [
+      "render-3-4-ansicht.png",
+      "render-seitenansicht.png",
+      "render-steckzapfen-uebergang.png"
+    ],
+    "stl": "spuelenablage-lappenhalter-r01.stl",
+    "stl_sha256": "08bd966afcd4ea51ab5241486e63c88c505298d97da3474c957642e817f8fa8d"
+  },
+  "generation": {
+    "boolean_repairs": false,
+    "mesh_smoothing": false,
+    "method": "single closed analytic section sweep",
+    "ring_points": 72,
+    "shape_changing_repair": false
+  },
+  "material": "PETG",
+  "model_id": "spuelenablage-lappenhalter-r01",
+  "nozzle_mm": 0.4,
+  "plug": {
+    "corner_to_corner_mm": 5.13841739578767,
+    "count": 1,
+    "flat_to_flat_mm": 8.9,
+    "shape": "straight regular hexagonal prism",
+    "straight_length_mm": 18.0,
+    "taper": false
+  },
+  "print_orientation": {
+    "orientation": "side lying; local Y becomes printer Z",
+    "reason": "keeps service bending tension/compression predominantly within X-Z layer planes",
+    "support": "localized, accessible support under the narrower hex plug"
+  },
+  "revision": "R01",
+  "root_transition": {
+    "end_derivatives_zero": true,
+    "end_z_mm": 30.0,
+    "interpolation": "quintic smoothstep radial morph",
+    "length_mm": 12.0,
+    "start_z_mm": 18.0,
+    "step_or_sharp_notch": false
+  },
+  "schema": "ai3d.spuelenablage-lappenhalter.design-parameters.v1",
+  "stop": {
+    "function_preserved": true,
+    "inner_radius_mm": 4.0,
+    "maximum_x_mm": 98.0,
+    "rise_above_arm_top_mm": 8.0,
+    "start_x_mm": 90.0
+  },
+  "task": {
+    "approval_identity_verified": true,
+    "blob_sha": "6035fd3c381ced7e52bef73f5df6c9b190e1edfa",
+    "path": "tasks/TASK-SPUELENABLAGE-LAPPENHALTER-R01.md",
+    "sha256": "3737f70f48083dd69243e6660dd6d5a8945d3313b94c84828b117fca57467c8d"
+  },
+  "units": "mm"
+}
