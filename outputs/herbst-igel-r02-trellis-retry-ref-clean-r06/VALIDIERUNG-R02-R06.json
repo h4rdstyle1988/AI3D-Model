@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-RETRY-REF-CLEAN-R06.md",
+  "task_blob_sha": "4816056a56ebb7dd24e4150c260a11cc93257c9a",
+  "product_revision": "R02",
+  "technical_retry": "R06",
+  "status": "STOPP",
+  "stop_phase": "OPTIK_GATE",
+  "reference_gate": {
+    "status": "PASS",
+    "clean_bytes": 17344,
+    "clean_sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+    "clean_format": "JPEG",
+    "clean_mode": "RGB",
+    "clean_size_px": [512, 512],
+    "clean_strict_decode": true,
+    "seam_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+    "seam_strict_decode": true
+  },
+  "trellis": {
+    "status": "PASS",
+    "tool": "Trellis Studio native CLI image-to-3D GGUF/Vulkan",
+    "executable_sha256": "57f49f7746b88b4468009f626bb6f41fc7b7969d894567cb14553e1893457bfc",
+    "gpu": "Vulkan0 AMD Radeon RX 7800 XT 16368 MB",
+    "seed": 42,
+    "resolution": 512,
+    "background_removal": "BiRefNet",
+    "texture": false,
+    "returncode": 0,
+    "raw_glb": {
+      "path": "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/trellis-raw/herbst-igel-r02-trellis-raw-r06.glb",
+      "bytes": 15687328,
+      "sha256": "81d5bea62c13cd2c4d85b9a803a1dd7aa9c951262f35a8ea3a421baecb38a13d"
+    },
+    "raw_ply": {
+      "path": "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/trellis-raw/herbst-igel-r02-trellis-raw-r06.ply",
+      "bytes": 16557141,
+      "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+      "vertices": 436742,
+      "triangles": 870466,
+      "degenerate_triangles": 0,
+      "extents_normalized": [0.6284455060958862, 0.6203994452953339, 0.5001586377620697]
+    }
+  },
+  "raw_render_gate": {
+    "status": "PASS",
+    "source_is_untouched_raw_ply": true,
+    "views": ["3q_front", "left", "right", "rear", "top", "bottom"]
+  },
+  "optic_gate": {
+    "status": "FAIL",
+    "pass_items": [
+      "recognizable_autumn_hedgehog",
+      "compact_low_silhouette",
+      "short_snout_and_nose_geometry",
+      "two_round_ears",
+      "round_eye_geometry",
+      "four_short_feet_across_side_views",
+      "overlapping_leaf_spine_back",
+      "exactly_one_maple_leaf_on_reference_side",
+      "no_second_complete_maple_leaf_on_opposite_side"
+    ],
+    "fail_items": [
+      "clear_round_body_and_face",
+      "reference_like_leaf_spine_direction",
+      "natural_body_back_boundary_per_ref_seam"
+    ],
+    "reason": "Leaf/spine forms hang over forehead, eye region and face; the clear reference face and authoritative REF-SEAM boundary are not preserved."
+  },
+  "cad_fdm_phase": {
+    "status": "NOT_RUN_BY_GATE",
+    "cad_source_created": false,
+    "body_stl_created": false,
+    "back_stl_created": false,
+    "assembly_created": false,
+    "technical_validation_run": false
+  },
+  "main_files": [
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/reference-audit/reference-gate-audit-r06.json",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/trellis-raw/herbst-igel-r02-trellis-raw-r06.glb",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/trellis-raw/herbst-igel-r02-trellis-raw-r06.ply",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/renders-optik-gate/raw-contact-sheet.png",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/renders-optik-gate/optic-gate-soll-ist-r06.png",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/SOLL-IST-OPTIK-GATE-R06.md"
+  ],
+  "open_real_tests": [
+    "No physical print or fit test is applicable before an optic PASS and CAD/FDM preparation."
+  ],
+  "nutzerentscheidung_erforderlich": false,
+  "nutzerentscheidung_grund": "No user dimension or function is missing; STOPP is the mandated technical consequence of OPTIK-FAIL.",
+  "final_user_approval_claimed": false
+}

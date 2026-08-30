@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "source_is_untouched_trellis_raw": true,
+  "source": "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/trellis-raw/herbst-igel-r02-trellis-raw-r06.ply",
+  "source_bytes": 16557141,
+  "source_sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+  "vertices": 436742,
+  "triangles": 870466,
+  "all_faces_triangular": true,
+  "bounds_min": [
+    -0.23905783891677856,
+    -0.17113235592842102,
+    -0.21962818503379822
+  ],
+  "bounds_max": [
+    0.38938766717910767,
+    0.44926708936691284,
+    0.2805304527282715
+  ],
+  "extents": [
+    0.6284455060958862,
+    0.6203994452953339,
+    0.5001586377620697
+  ],
+  "degenerate_triangles": 0,
+  "surface_area_normalized_units2": 1.1084796569079232,
+  "renders": [
+    {
+      "path": "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/renders-optik-gate/raw-3q-front.png",
+      "camera_vector": [
+        -1.0,
+        -1.0,
+        0.35
+      ]
+    },
+    {
+      "path": "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/renders-optik-gate/raw-left.png",
+      "camera_vector": [
+        0.0,
+        -1.0,
+        0.12
+      ]
+    },
+    {
+      "path": "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/renders-optik-gate/raw-right.png",
+      "camera_vector": [
+        0.0,
+        1.0,
+        0.12
+      ]
+    },
+    {
+      "path": "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/renders-optik-gate/raw-rear.png",
+      "camera_vector": [
+        1.0,
+        0.0,
+        0.12
+      ]
+    },
+    {
+      "path": "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/renders-optik-gate/raw-top.png",
+      "camera_vector": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "path": "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/renders-optik-gate/raw-bottom.png",
+      "camera_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    }
+  ]
+}

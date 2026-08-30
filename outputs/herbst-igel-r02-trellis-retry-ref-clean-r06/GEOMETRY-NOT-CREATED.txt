@@ -1,0 +1,12 @@
+STATUS: STOPP
+TASK: tasks/TASK-HERBST-IGEL-R02-TRELLIS-RETRY-REF-CLEAN-R06.md
+PRODUCT_REVISION: R02
+TECHNICAL_RETRY: R06
+OPTIK_GATE: FAIL
+
+CAD-, Schalen-, STL- und Montagegeometrie wurden nicht erzeugt. Dies ist die
+verbindliche Folge des Optik-Gates und kein Toolchain- oder Transportfehler.
+Keine parametrische Ersatzfigur wurde erstellt.
+
+NUTZERENTSCHEIDUNG_ERFORDERLICH: false
+

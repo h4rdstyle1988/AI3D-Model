@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "tool": "Trellis Studio native CLI image-to-3D (GGUF/Vulkan)",
+  "executable": "C:\\Users\\h4rds\\AppData\\Local\\trellis-studio\\runtime\\trellis-cli.exe",
+  "executable_sha256": "57f49f7746b88b4468009f626bb6f41fc7b7969d894567cb14553e1893457bfc",
+  "models": "C:\\Users\\h4rds\\AppData\\Local\\trellis-studio\\models",
+  "input": "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/reference-audit/ref-clean-r06.jpg",
+  "input_sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+  "gpu_argument": 0,
+  "seed": 42,
+  "resolution": 512,
+  "background_removal": "BiRefNet",
+  "texture": false,
+  "command": [
+    "C:\\Users\\h4rds\\AppData\\Local\\trellis-studio\\runtime\\trellis-cli.exe",
+    "--image",
+    "D:\\AI3D-Agent\\worker\\AI3D-Model-worker\\outputs\\herbst-igel-r02-trellis-retry-ref-clean-r06\\reference-audit\\ref-clean-r06.jpg",
+    "--output",
+    "D:\\AI3D-Agent\\worker\\AI3D-Model-worker\\outputs\\herbst-igel-r02-trellis-retry-ref-clean-r06\\trellis-raw\\herbst-igel-r02-trellis-raw-r06.glb",
+    "--models",
+    "C:\\Users\\h4rds\\AppData\\Local\\trellis-studio\\models",
+    "--gpu",
+    "0",
+    "--seed",
+    "42",
+    "--res",
+    "512",
+    "--birefnet",
+    "--no-texture",
+    "--require-gpu"
+  ],
+  "started_utc": "2026-08-30T15:57:36.910825+00:00",
+  "finished_utc": "2026-08-30T16:01:42.409778+00:00",
+  "elapsed_seconds": 245.498953,
+  "returncode": 0,
+  "log": "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/trellis-raw/trellis-cli-seed42-res512-r06.log",
+  "outputs": {
+    "glb": {
+      "path": "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/trellis-raw/herbst-igel-r02-trellis-raw-r06.glb",
+      "bytes": 15687328,
+      "sha256": "81d5bea62c13cd2c4d85b9a803a1dd7aa9c951262f35a8ea3a421baecb38a13d"
+    },
+    "ply": {
+      "path": "outputs/herbst-igel-r02-trellis-retry-ref-clean-r06/trellis-raw/herbst-igel-r02-trellis-raw-r06.ply",
+      "bytes": 16557141,
+      "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6"
+    }
+  },
+  "status": "PASS"
+}
