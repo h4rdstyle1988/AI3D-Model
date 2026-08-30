@@ -1,0 +1,133 @@
+{
+  "schema": "ai3d-task-result-v1",
+  "task": {
+    "path": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-REBUILD.md",
+    "blob_sha": "d34558dab04d099d04ed9242dd6399038b21e464",
+    "revision": "R02"
+  },
+  "status": "STOPP",
+  "phase_reached": "TRELLIS_RAW_OPTIK_GATE",
+  "pass": false,
+  "open": true,
+  "final_product_approval": false,
+  "references": {
+    "ref_clean": {
+      "source": "tasks/TASK-HERBST-IGEL-R01-REF-CLEAN.jpg.b64",
+      "decoded_sha256": "f3017009739284e1bfd6e8502e9d9258eb74dbf52074c425a73ff41fc8bac328",
+      "expected_sha256": "f3017009739284e1bfd6e8502e9d9258eb74dbf52074c425a73ff41fc8bac328",
+      "hash_match": true,
+      "dimensions_px": [320, 320],
+      "strict_decode_complete": false,
+      "strict_decode_error": "OSError: broken data stream when reading image file",
+      "last_nonuniform_row_y": 128,
+      "rows_after_last_nonuniform": 191
+    },
+    "ref_seam": {
+      "source": "tasks/TASK-HERBST-IGEL-R01-REF-SEAM.jpg.b64",
+      "decoded_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "expected_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "hash_match": true,
+      "dimensions_px": [384, 384],
+      "strict_decode_complete": true
+    }
+  },
+  "trellis": {
+    "executed": true,
+    "tool": "Trellis Studio native CLI (GGUF/Vulkan image-to-3D)",
+    "executable": "C:\\Users\\h4rds\\AppData\\Local\\trellis-studio\\runtime\\trellis-cli.exe",
+    "executable_sha256": "57f49f7746b88b4468009f626bb6f41fc7b7969d894567cb14553e1893457bfc",
+    "models_directory": "C:\\Users\\h4rds\\AppData\\Local\\trellis-studio\\models",
+    "gpu": "Vulkan0 AMD Radeon RX 7800 XT 16368 MB",
+    "seed": 42,
+    "resolution": 512,
+    "background_removal": "birefnet",
+    "texture": false,
+    "successful_command": "trellis-cli.exe --image work/herbst-igel-r02-trellis-rebuild/references/ref-clean.jpg --output outputs/herbst-igel-r02-trellis-rebuild/trellis-raw/herbst-igel-r02-trellis-raw.glb --models C:/Users/h4rds/AppData/Local/trellis-studio/models --gpu 0 --seed 42 --res 512 --birefnet --no-texture --require-gpu",
+    "first_attempt": {
+      "status": "TECHNICAL_FAILURE_RETRIED",
+      "exit_status_hex": "0xC0000409"
+    },
+    "retry": {
+      "status": "PASS",
+      "elapsed_seconds": 235.8,
+      "active_voxels_res32": 1546,
+      "decoded_voxels_res512": 591088,
+      "holes_filled_by_trellis": 571
+    }
+  },
+  "raw_geometry": {
+    "glb": {
+      "path": "outputs/herbst-igel-r02-trellis-rebuild/trellis-raw/herbst-igel-r02-trellis-raw.glb",
+      "bytes": 21706780,
+      "sha256": "e05453958feac7f828d6b6c25d0a3d409aa9df2d2654966bcd9dcbe971d946be"
+    },
+    "ply": {
+      "path": "outputs/herbst-igel-r02-trellis-rebuild/trellis-raw/herbst-igel-r02-trellis-raw.ply",
+      "bytes": 22923298,
+      "sha256": "a9c843d1478d9118971db15a870a35549ecd1cf1dd54cb57fd9cd1344c6ca87e",
+      "vertices": 591659,
+      "triangles": 1217170,
+      "degenerate_triangles": 0,
+      "normalized_extents": [0.9999676943, 0.9999697804, 0.1815855205]
+    }
+  },
+  "optic_gate": {
+    "status": "FAIL",
+    "comparison": "outputs/herbst-igel-r02-trellis-rebuild/renders-optik-gate/optic-gate-soll-ist.png",
+    "actual_impression": "vertical brush/leaf-like object with shaft and background plane; not a hedgehog",
+    "criteria": {
+      "general_silhouette": "FAIL",
+      "head_body_proportion": "FAIL",
+      "snout": "FAIL",
+      "ears": "FAIL",
+      "belly_feet_pose": "FAIL",
+      "spine_back_flow": "FAIL",
+      "spine_density_direction_overlap": "FAIL",
+      "exactly_one_visible_maple_leaf": "FAIL",
+      "seam_applicable": "FAIL",
+      "unambiguously_hedgehog": "FAIL"
+    }
+  },
+  "technical_validation": {
+    "status": "NOT_RUN_DUE_TO_OPTIC_GATE",
+    "body_stl_watertight": "NOT_RUN",
+    "back_stl_watertight": "NOT_RUN",
+    "two_manifold": "NOT_RUN",
+    "open_edges": "NOT_RUN",
+    "unintended_multiple_shells": "NOT_RUN",
+    "self_intersections": "NOT_RUN",
+    "wall_thickness": "NOT_RUN",
+    "pin_diameter_10_mm": "NOT_RUN",
+    "engagement_depth_20_mm": "NOT_RUN",
+    "socket_clearance": "NOT_RUN",
+    "full_engagement_collision": "NOT_RUN",
+    "internal_reinforcement_print_through": "NOT_RUN",
+    "enclosed_support": "NOT_RUN",
+    "maximum_dimension_approximately_200_mm": "NOT_RUN"
+  },
+  "main_files": [
+    "outputs/herbst-igel-r02-trellis-rebuild/trellis-raw/herbst-igel-r02-trellis-raw.glb",
+    "outputs/herbst-igel-r02-trellis-rebuild/trellis-raw/herbst-igel-r02-trellis-raw.ply",
+    "outputs/herbst-igel-r02-trellis-rebuild/renders-optik-gate/optic-gate-soll-ist.png",
+    "outputs/herbst-igel-r02-trellis-rebuild/renders-optik-gate/raw-contact-sheet.png",
+    "outputs/herbst-igel-r02-trellis-rebuild/SOLL-IST-OPTIK-GATE.md",
+    "outputs/herbst-igel-r02-trellis-rebuild/TRELLIS-REPRODUKTION.md",
+    "outputs/herbst-igel-r02-trellis-rebuild/REVISION-R02.md",
+    "outputs/herbst-igel-r02-trellis-rebuild/reports/raw-gate-inspection.json"
+  ],
+  "intentionally_not_generated": [
+    "herbst-igel-r02-koerper.stl",
+    "herbst-igel-r02-ruecken.stl",
+    "assembly GLB or 3MF",
+    "technical CAD/mesh source",
+    "final-geometry renders"
+  ],
+  "open_real_tests": [
+    "visual review after a valid new Trellis reconstruction",
+    "FDM print test",
+    "pin/socket fit and glue test",
+    "assembled seam visibility test"
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": true,
+  "nutzerentscheidung_grund": "A complete primary REF-CLEAN is missing in the actual approved byte stream. Continuing requires either a newly approved complete REF-CLEAN hash or explicit approval of another concrete primary Trellis input; REF-SEAM cannot be silently repurposed."
+}

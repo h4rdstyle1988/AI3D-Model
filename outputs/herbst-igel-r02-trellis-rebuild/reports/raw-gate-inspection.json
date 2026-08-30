@@ -1,0 +1,54 @@
+{
+  "reference_clean": {
+    "path": "outputs/herbst-igel-r02-trellis-rebuild/reference-audit/ref-clean-decoded.jpg",
+    "bytes": 11536,
+    "sha256": "f3017009739284e1bfd6e8502e9d9258eb74dbf52074c425a73ff41fc8bac328",
+    "width_px": 320,
+    "height_px": 320,
+    "strict_decode_complete": false,
+    "strict_decode_error": "OSError: broken data stream when reading image file",
+    "last_nonuniform_row_y": 128,
+    "rows_after_last_nonuniform": 191
+  },
+  "reference_seam": {
+    "path": "outputs/herbst-igel-r02-trellis-rebuild/reference-audit/ref-seam-decoded.jpg",
+    "bytes": 11788,
+    "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+    "width_px": 384,
+    "height_px": 384,
+    "strict_decode_complete": true,
+    "strict_decode_error": null,
+    "last_nonuniform_row_y": 383,
+    "rows_after_last_nonuniform": 0
+  },
+  "raw_ply": {
+    "path": "outputs/herbst-igel-r02-trellis-rebuild/trellis-raw/herbst-igel-r02-trellis-raw.ply",
+    "bytes": 22923298,
+    "sha256": "a9c843d1478d9118971db15a870a35549ecd1cf1dd54cb57fd9cd1344c6ca87e",
+    "vertices": 591659,
+    "triangles": 1217170,
+    "all_faces_triangular": true,
+    "bounds_min": [
+      -0.4999878704547882,
+      -0.4999780058860779,
+      -0.09051147103309631
+    ],
+    "bounds_max": [
+      0.49997979402542114,
+      0.499991774559021,
+      0.09107404947280884
+    ],
+    "extents": [
+      0.9999676942825317,
+      0.9999697804450989,
+      0.18158552050590515
+    ],
+    "degenerate_triangles": 0,
+    "surface_area_normalized_units2": 1.9310972690582275
+  },
+  "raw_glb": {
+    "path": "outputs/herbst-igel-r02-trellis-rebuild/trellis-raw/herbst-igel-r02-trellis-raw.glb",
+    "bytes": 21706780,
+    "sha256": "e05453958feac7f828d6b6c25d0a3d409aa9df2d2654966bcd9dcbe971d946be"
+  }
+}
