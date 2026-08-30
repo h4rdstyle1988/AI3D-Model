@@ -1,0 +1,232 @@
+{
+  "schema": "ai3d.herbst-igel.self-intersection-audit.v1",
+  "generated_at": "2026-08-30T11:00:04.362585+00:00",
+  "task": "TASK-HERBST-IGEL-R01-VALIDATION-AUDIT-R03",
+  "revision": "R03",
+  "source_result_commit": "7b825beac856c0fee120bf080a9b747cb6418313",
+  "method_statement": "Direct accelerated broadphase plus actual triangle-triangle narrowphase; watertight/manifold/component properties are not used as proof of self-intersection freedom.",
+  "parts": {
+    "koerper": {
+      "status": "STOPP",
+      "triangles": 968614,
+      "broadphase": {
+        "method": "Morton-ordered binary AABB BVH; leaf size 8; recursive unique node-pair traversal",
+        "leaf_size_triangles": 8,
+        "aabb_tolerance_mm": 1e-06,
+        "aabb_candidate_pairs": 7057051,
+        "naive_all_pairs_not_run": 469106056191
+      },
+      "topology_filter": {
+        "method": "exclude any triangle pair sharing a coordinate-welded vertex; shared-edge pairs are thereby excluded too",
+        "coordinate_weld_tolerance_mm": 1e-05,
+        "pairs_excluded": 5938271
+      },
+      "narrowphase": {
+        "method": "3D triangle-triangle separating-axis test: 2 face normals, 9 edge-edge axes, 6 coplanar in-plane edge axes",
+        "intersection_tolerance_mm": 1e-06,
+        "pairs_tested": 1118780,
+        "coplanar_intersections_included": true,
+        "nonadjacent_point_or_edge_contacts_count_as_intersections": true
+      },
+      "true_self_intersection_pairs": 21,
+      "sample_triangle_index_pairs": [
+        [
+          968497,
+          968502
+        ],
+        [
+          968496,
+          968502
+        ],
+        [
+          968441,
+          968497
+        ],
+        [
+          968441,
+          968496
+        ],
+        [
+          968440,
+          968497
+        ],
+        [
+          968439,
+          968497
+        ],
+        [
+          968439,
+          968496
+        ],
+        [
+          968272,
+          968278
+        ],
+        [
+          968193,
+          968272
+        ],
+        [
+          968271,
+          968193
+        ],
+        [
+          968271,
+          968277
+        ],
+        [
+          968271,
+          968278
+        ],
+        [
+          968191,
+          968272
+        ],
+        [
+          968191,
+          968271
+        ],
+        [
+          968105,
+          968111
+        ],
+        [
+          968105,
+          968109
+        ],
+        [
+          968105,
+          968110
+        ],
+        [
+          967872,
+          967903
+        ],
+        [
+          967872,
+          967906
+        ],
+        [
+          967872,
+          967905
+        ]
+      ],
+      "elapsed_seconds": 59.36
+    },
+    "ruecken": {
+      "status": "STOPP",
+      "triangles": 575736,
+      "broadphase": {
+        "method": "Morton-ordered binary AABB BVH; leaf size 8; recursive unique node-pair traversal",
+        "leaf_size_triangles": 8,
+        "aabb_tolerance_mm": 1e-06,
+        "aabb_candidate_pairs": 4300232,
+        "naive_all_pairs_not_run": 165735682980
+      },
+      "topology_filter": {
+        "method": "exclude any triangle pair sharing a coordinate-welded vertex; shared-edge pairs are thereby excluded too",
+        "coordinate_weld_tolerance_mm": 1e-05,
+        "pairs_excluded": 3553063
+      },
+      "narrowphase": {
+        "method": "3D triangle-triangle separating-axis test: 2 face normals, 9 edge-edge axes, 6 coplanar in-plane edge axes",
+        "intersection_tolerance_mm": 1e-06,
+        "pairs_tested": 747169,
+        "coplanar_intersections_included": true,
+        "nonadjacent_point_or_edge_contacts_count_as_intersections": true
+      },
+      "true_self_intersection_pairs": 22772,
+      "sample_triangle_index_pairs": [
+        [
+          575723,
+          482236
+        ],
+        [
+          402175,
+          575702
+        ],
+        [
+          394139,
+          575695
+        ],
+        [
+          569240,
+          566352
+        ],
+        [
+          569240,
+          566353
+        ],
+        [
+          569314,
+          566434
+        ],
+        [
+          569314,
+          566435
+        ],
+        [
+          566436,
+          563389
+        ],
+        [
+          566436,
+          563394
+        ],
+        [
+          566436,
+          563390
+        ],
+        [
+          569314,
+          563389
+        ],
+        [
+          569314,
+          563394
+        ],
+        [
+          569314,
+          563391
+        ],
+        [
+          569314,
+          563390
+        ],
+        [
+          569318,
+          563394
+        ],
+        [
+          571626,
+          563394
+        ],
+        [
+          566440,
+          563394
+        ],
+        [
+          563091,
+          554049
+        ],
+        [
+          563091,
+          554050
+        ],
+        [
+          563085,
+          554049
+        ]
+      ],
+      "elapsed_seconds": 34.515
+    }
+  },
+  "true_self_intersection_pairs_total": 22793,
+  "result": "STOPP",
+  "tool": {
+    "script": "outputs/herbst-igel-r01-audit-r03/audit_herbst_igel_r03.py",
+    "python": "3.12.10",
+    "numpy": "2.4.2",
+    "pillow": "12.1.1"
+  }
+}

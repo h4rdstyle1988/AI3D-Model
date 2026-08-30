@@ -1,0 +1,350 @@
+{
+  "schema": "ai3d.herbst-igel.audit-status.v1",
+  "generated_at": "2026-08-30T11:07:33.197632+00:00",
+  "task": "TASK-HERBST-IGEL-R01-VALIDATION-AUDIT-R03",
+  "task_path": "tasks/TASK-HERBST-IGEL-R01-VALIDATION-AUDIT-R03.md",
+  "revision": "R03",
+  "source_result": {
+    "commit": "7b825beac856c0fee120bf080a9b747cb6418313",
+    "revision": "R01",
+    "geometry_changed": false
+  },
+  "result": "STOPP",
+  "stopp_reasons": [
+    "Direct self-intersection audit found 21 true pairs in the body STL.",
+    "Direct self-intersection audit found 22772 true pairs in the back STL.",
+    "Outer-skin audit found a non-tessellation analytic reinforcement protrusion in the back part."
+  ],
+  "final_product_approval": false,
+  "main_files": [
+    "outputs/herbst-igel-r01-audit-r03/AUDIT-SOLL-IST.md",
+    "outputs/herbst-igel-r01-audit-r03/audit-status.json",
+    "outputs/herbst-igel-r01-audit-r03/self-intersection-report.json",
+    "outputs/herbst-igel-r01-audit-r03/seam-overlay.png",
+    "outputs/herbst-igel-r01-audit-r03/visual-compare.png",
+    "outputs/herbst-igel-r01-audit-r03/audit_herbst_igel_r03.py"
+  ],
+  "artifact_provenance": {
+    "body_stl": {
+      "commit": "7b825beac856c0fee120bf080a9b747cb6418313",
+      "path": "outputs/herbst-igel-r01/herbst-igel-r01-koerper.stl",
+      "git_blob_sha1": "afabfcba71c5e56e3e8c2c52e585916f0f1f8261",
+      "git_lfs": true,
+      "lfs_oid_sha256": "ecab728a7a194bf6ded12d03163b0ef31c02456e06a2ff77c124f4571b99e7a8",
+      "declared_size_bytes": 48430784,
+      "actual_size_bytes": 48430784,
+      "sha256_verified": true
+    },
+    "back_stl": {
+      "commit": "7b825beac856c0fee120bf080a9b747cb6418313",
+      "path": "outputs/herbst-igel-r01/herbst-igel-r01-ruecken.stl",
+      "git_blob_sha1": "d03c06479ceaaa286635807a132afa6b483338df",
+      "git_lfs": true,
+      "lfs_oid_sha256": "5f3085a7b498c2003e0c6a3cfb694f2f48f52ea74774f0c92f310eca53973df9",
+      "declared_size_bytes": 28786884,
+      "actual_size_bytes": 28786884,
+      "sha256_verified": true
+    },
+    "assembly_glb": {
+      "commit": "7b825beac856c0fee120bf080a9b747cb6418313",
+      "path": "outputs/herbst-igel-r01/herbst-igel-r01-montage.glb",
+      "git_blob_sha1": "63d718ebda0f4e4739aecf60e8d1a2f8a1c4ccf9",
+      "git_lfs": true,
+      "lfs_oid_sha256": "40d851b9a4148ca207ed77e42e62b4bb7919d9cd8ded4bb5ba5c4d8824fdbbad",
+      "declared_size_bytes": 37054352,
+      "actual_size_bytes": 37054352,
+      "sha256_verified": true
+    },
+    "frozen_parametric_source": {
+      "commit": "7b825beac856c0fee120bf080a9b747cb6418313",
+      "path": "outputs/herbst-igel-r01/herbst-igel-r01-parametric.py",
+      "git_blob_sha1": "cd98d04242c44c726b4f59843cf58b8850548b96",
+      "git_lfs": false,
+      "actual_size_bytes": 45096,
+      "sha256": "7acd2b1b462bdd61320c47e9d009a10c69abfe3682863ed49c137548d809010f"
+    },
+    "design_parameters": {
+      "commit": "7b825beac856c0fee120bf080a9b747cb6418313",
+      "path": "outputs/herbst-igel-r01/design-parameters.json",
+      "git_blob_sha1": "5896809b2a873953407f61a096edcd54a66308a0",
+      "git_lfs": false,
+      "actual_size_bytes": 842,
+      "sha256": "1332e927bf9ecd8399b29a86355d1c99e52254c0682a867531ad8c2cd5af1f0d"
+    },
+    "final_3q_render": {
+      "commit": "7b825beac856c0fee120bf080a9b747cb6418313",
+      "path": "outputs/herbst-igel-r01/renders/render-3q-front.png",
+      "git_blob_sha1": "b1ff7305deef97f7cb48329137b0297df82bc51c",
+      "git_lfs": false,
+      "actual_size_bytes": 110517,
+      "sha256": "ffb5f198ab28e39dc66ae689ab9874df688c0ede6a1617c24d408430b15c6492"
+    },
+    "ref_clean": {
+      "commit": "7b825beac856c0fee120bf080a9b747cb6418313",
+      "path": "outputs/herbst-igel-r01/TASK-HERBST-IGEL-R01-REF-CLEAN.jpg",
+      "git_blob_sha1": "4c21f8ae3f1eff53c2368faf4253df8481c8023f",
+      "git_lfs": false,
+      "actual_size_bytes": 11536,
+      "sha256": "f3017009739284e1bfd6e8502e9d9258eb74dbf52074c425a73ff41fc8bac328"
+    },
+    "ref_seam": {
+      "commit": "7b825beac856c0fee120bf080a9b747cb6418313",
+      "path": "outputs/herbst-igel-r01/TASK-HERBST-IGEL-R01-REF-SEAM.jpg",
+      "git_blob_sha1": "7efaa6569deee71c65954a93be4da7dd58c8e2c9",
+      "git_lfs": false,
+      "actual_size_bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    }
+  },
+  "validations": {
+    "checks": {
+      "immutable_result_stl_oids_verified": true,
+      "self_intersections_zero": false,
+      "outer_reinforcement_no_bulge": false,
+      "repository_task_blob_exact": true,
+      "exactly_two_parts": true,
+      "peg_diameter_10_0_mm": true,
+      "engagement_20_0_mm": true,
+      "socket_diameter_10_4_mm": true,
+      "socket_depth_20_4_mm": true,
+      "nominal_wall_1_6_mm": true,
+      "maximum_extent_approximately_200_mm": true,
+      "one_maple_leaf": true,
+      "no_latch_clamp_taper_or_extra_function": true,
+      "required_visual_evidence_created": true
+    },
+    "self_intersections": {
+      "status": "STOPP",
+      "true_pairs_total": 22793,
+      "report": "self-intersection-report.json"
+    },
+    "outer_skin_reinforcement": {
+      "status": "STOPP",
+      "basis": "Frozen R01 parametric outer surface evaluated against samples from the actual immutable final STL; no product mesh was regenerated.",
+      "sampling": "Every STL vertex and every triangle centroid in the connector region; comparison envelope sampled from the same final STL away from the connector; complete analytic support volume additionally sampled at 0.25 mm with exact bridge corners.",
+      "tessellation_separation_rule": "The STL comparison uses the off-connector tessellation maximum plus 0.05 mm numerical guard. Independently, any analytic support protrusion above 1e-6 mm is STOPP and is not classified as tessellation.",
+      "parts": {
+        "koerper": {
+          "comparison": "actual final STL vertices plus triangle centroids versus frozen source outer_sdf with connector reinforcement omitted",
+          "connector_region": {
+            "x_mm": [
+              14.7912,
+              52.1912
+            ],
+            "radial_about_yz_connector_axis_mm": 52.0,
+            "sample_points": 291046
+          },
+          "maximum_outward_implicit_deviation_mm": 0.038009,
+          "tessellation_baseline_maximum_outward_deviation_mm": 0.552556,
+          "reinforcement_specific_excess_over_tessellation_envelope_mm": 0.0,
+          "pass_threshold_mm": 0.602556,
+          "analytic_support_containment": {
+            "method": "complete support-volume 0.25 mm lattice plus exact evaluation of all bridge-box corners against the connector-free outer form",
+            "grid_step_mm": 0.25,
+            "inside_support_grid_samples": 433245,
+            "grid_maximum_outer_sdf_mm": -0.933702588,
+            "exact_bridge_corner_maximum_outer_sdf_mm": -0.927528858,
+            "exact_bridge_corner_argmax_mm": [
+              25.3912,
+              -46.0,
+              73.0
+            ],
+            "maximum_reinforcement_outward_deviation_mm": 0.0,
+            "strict_zero_guard_mm": 1e-06,
+            "status": "PASS"
+          },
+          "status": "PASS",
+          "interpretation": "No connector-region STL deviation exceeds the tessellation envelope and the analytic reinforcement remains inside the unreinforced outer form."
+        },
+        "ruecken": {
+          "comparison": "actual final STL vertices plus triangle centroids versus frozen source outer_sdf with connector reinforcement omitted",
+          "connector_region": {
+            "x_mm": [
+              14.7912,
+              52.1912
+            ],
+            "radial_about_yz_connector_axis_mm": 52.0,
+            "sample_points": 449337
+          },
+          "maximum_outward_implicit_deviation_mm": 0.474501,
+          "tessellation_baseline_maximum_outward_deviation_mm": 0.47802,
+          "reinforcement_specific_excess_over_tessellation_envelope_mm": 0.0,
+          "pass_threshold_mm": 0.52802,
+          "analytic_support_containment": {
+            "method": "complete support-volume 0.25 mm lattice plus exact evaluation of all bridge-box corners against the connector-free outer form",
+            "grid_step_mm": 0.25,
+            "inside_support_grid_samples": 541863,
+            "grid_maximum_outer_sdf_mm": -0.005422071,
+            "exact_bridge_corner_maximum_outer_sdf_mm": 0.009059259,
+            "exact_bridge_corner_argmax_mm": [
+              33.3912,
+              -46.0,
+              73.0
+            ],
+            "maximum_reinforcement_outward_deviation_mm": 0.009059259,
+            "strict_zero_guard_mm": 1e-06,
+            "status": "STOPP"
+          },
+          "status": "STOPP",
+          "interpretation": "The analytic reinforcement exceeds the unreinforced outer form; this is not a tessellation-only deviation."
+        }
+      }
+    },
+    "task_blob": {
+      "status": "PASS",
+      "repository_blob_sha1": "09cb6285e81881adb9d3811a118a7b73f706d83b",
+      "expected_repository_blob_sha1": "09cb6285e81881adb9d3811a118a7b73f706d83b",
+      "repository_blob_source": "git rev-parse 7b825beac856c0fee120bf080a9b747cb6418313:tasks/TASK-HERBST-IGEL-R01-RETRY-REF-AUTH-R02.md",
+      "worktree_raw_bytes_blob_style_sha1_optional": "7834e73a9dc494ed9a96f0daefbfeecfd99a374f",
+      "worktree_git_filtered_sha1_optional": "09cb6285e81881adb9d3811a118a7b73f706d83b",
+      "commit_blob_bytes": 1172,
+      "worktree_bytes": 1194,
+      "worktree_crlf_count": 22,
+      "normalized_worktree_equals_commit_blob": true,
+      "cause": "Confirmed CRLF worktree conversion: the prior validator hashed raw worktree bytes, while Git's repository blob stores LF bytes."
+    },
+    "measurements": {
+      "part_count": 2,
+      "glb_scene_nodes": 2,
+      "glb_meshes": 2,
+      "assembly_bounds_mm": {
+        "min": [
+          -109.0049,
+          -54.374,
+          0.0048
+        ],
+        "max": [
+          90.5246,
+          53.6413,
+          163.2554
+        ],
+        "extents": [
+          199.5295,
+          108.0153,
+          163.2506
+        ],
+        "maximum_extent": 199.5295
+      },
+      "connector_from_final_stl_mm": {
+        "peg_diameter_median": 9.999999,
+        "peg_diameter_min": 9.999985,
+        "peg_diameter_max": 10.000013,
+        "peg_effective_length": 19.999998,
+        "socket_diameter_median": 10.399998,
+        "socket_diameter_min": 10.399989,
+        "socket_diameter_max": 10.400017,
+        "socket_depth": 20.4,
+        "diametral_clearance": 0.399999
+      },
+      "wall_mesh_ray_probes": {
+        "raw_hits_mm": {
+          "body_torso_visible_side": [
+            47.0439,
+            48.6223,
+            131.3777,
+            132.9535
+          ],
+          "body_head_visible_side": [
+            42.5289,
+            44.3085,
+            115.6921,
+            117.4704
+          ],
+          "back_rear_axis": [
+            55.195,
+            57.8645
+          ],
+          "back_upper_rear_axis": [
+            49.9313,
+            52.3569
+          ]
+        },
+        "sampled_shell_thicknesses_mm": [
+          1.5784,
+          1.5758,
+          1.7796,
+          1.7783,
+          2.6695,
+          2.4256
+        ],
+        "sampled_minimum_mm": 1.5758,
+        "nominal_base_wall_mm": 1.6,
+        "note": "The frozen source uses a 1.600 mm implicit inward offset; STL ray samples include the documented 1 mm tessellation error."
+      },
+      "semantic_source_checks": {
+        "decorative_maple_leaf_count": 1,
+        "ordinary_spine_leaf_count": 54,
+        "secondary_multiview_used": false,
+        "connector_assignment": "peg on body; socket on back",
+        "no_second_maple_leaf": true,
+        "no_rast_clamp_taper_or_extra_function": true,
+        "basis": "Frozen result source contains one straight cylindrical glued peg/socket pair plus local boss/collar/bridges; no latch, snap, clamp or taper primitive/path is present."
+      }
+    },
+    "visual_evidence": {
+      "status": "PASS",
+      "status_scope": "Required evidence files were generated; this is not an optical conformance or product approval.",
+      "optical_conformance": "OFFEN",
+      "seam_overlay": "seam-overlay.png",
+      "visual_compare": "visual-compare.png",
+      "projection": {
+        "type": "perspective",
+        "camera_mm": [
+          -250.0,
+          -260.0,
+          175.0
+        ],
+        "target_mm": [
+          0.0,
+          0.0,
+          78.0
+        ],
+        "focal_parameter": 1.75,
+        "visible_side_filter": "y <= 1.0 mm"
+      },
+      "alignment": {
+        "method": "uniform 2D scale and translation fitting the final 3/4-render foreground bounding box inside the REF-SEAM foreground bounding box; aspect ratio preserved",
+        "reference_foreground_bbox_px": [
+          76,
+          48,
+          383,
+          335
+        ],
+        "final_render_foreground_bbox_px": [
+          94,
+          122,
+          492,
+          545
+        ],
+        "uniform_scale": 0.678487,
+        "no_nonuniform_warp": true
+      },
+      "seam_extraction": {
+        "basis": "actual final body STL vertices at the exterior edge of the final split surface",
+        "seam_residual_tolerance_mm": 0.18,
+        "outer_surface_band_mm": 0.8,
+        "projected_unique_pixels": 254
+      },
+      "pixel_deviation_native_ref_seam_px": {
+        "metric": "symmetric nearest-line distance after documented silhouette alignment",
+        "mean": 88.9,
+        "maximum": 156.1,
+        "precision_note": "Rounded to 0.1 px; diagnostic only because the reference and derived model silhouettes are not geometrically identical and no calibrated camera exists."
+      },
+      "optical_product_approval": false
+    },
+    "references": {
+      "clean_sha256": "f3017009739284e1bfd6e8502e9d9258eb74dbf52074c425a73ff41fc8bac328",
+      "seam_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "secondary_multiview_used": false
+    }
+  },
+  "open_real_tests": [
+    "Optical user comparison and final product approval using seam-overlay.png and visual-compare.png",
+    "FDM test print at 0.12 mm layer height (optionally adaptive to 0.08 mm)",
+    "Physical Ø10.0/Ø10.4 fit and glue test with the selected PLA batches",
+    "Slicer-specific support accessibility/removal check"
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "No binding product dimension, function or visible geometry was changed. Remaining optical approval and physical print/fit checks stay explicitly open for the user."
+}
