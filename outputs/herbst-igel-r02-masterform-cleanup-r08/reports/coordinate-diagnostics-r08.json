@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "operation": "read_only_coordinate_and_seam_diagnostics",
+  "mesh_projection": {
+    "reference_side_camera": "-Y",
+    "screen_horizontal": "+X (front to rear)",
+    "screen_vertical": "+Z",
+    "mapping": "REF-SEAM foreground bbox mapped affinely to the used-vertex X/Z bounds",
+    "reference_foreground_bbox_px": [
+      72,
+      45,
+      383,
+      338
+    ]
+  },
+  "body_region_extraction": {
+    "method": "shortest 8-connected center path through the blue REF-SEAM annotation, closed against the left/bottom foreground bounds",
+    "body_mask_pixels": 25547,
+    "blue_seam_pixels": 1274
+  },
+  "mapping_counts": {
+    "triangle_centers_in_mapped_body_region": 261545,
+    "triangle_centers_outside_mapped_body_region": 608921
+  },
+  "cross_sections": [
+    {
+      "y": -0.15,
+      "half_band": 0.0024815977811813356,
+      "vertex_samples": 1959
+    },
+    {
+      "y": -0.1,
+      "half_band": 0.0024815977811813356,
+      "vertex_samples": 4529
+    },
+    {
+      "y": -0.05,
+      "half_band": 0.0024815977811813356,
+      "vertex_samples": 3987
+    },
+    {
+      "y": 0.0,
+      "half_band": 0.0024815977811813356,
+      "vertex_samples": 3447
+    },
+    {
+      "y": 0.05,
+      "half_band": 0.0024815977811813356,
+      "vertex_samples": 3488
+    },
+    {
+      "y": 0.1,
+      "half_band": 0.0024815977811813356,
+      "vertex_samples": 2967
+    },
+    {
+      "y": 0.2,
+      "half_band": 0.0024815977811813356,
+      "vertex_samples": 3485
+    }
+  ],
+  "outputs": [
+    "diagnostics/seed42-side-ref-seam-mapping-r08.png",
+    "diagnostics/ref-seam-mesh-overlay-r08.png",
+    "diagnostics/ref-seam-body-mask-r08.png",
+    "diagnostics/coordinate-front-yz-depth-x.png",
+    "diagnostics/coordinate-left-xz-depth-y.png",
+    "diagnostics/coordinate-top-xy-depth-z.png",
+    "diagnostics/cross-section-y--0.15.png",
+    "diagnostics/cross-section-y--0.10.png",
+    "diagnostics/cross-section-y--0.05.png",
+    "diagnostics/cross-section-y-+0.00.png",
+    "diagnostics/cross-section-y-+0.05.png",
+    "diagnostics/cross-section-y-+0.10.png",
+    "diagnostics/cross-section-y-+0.20.png"
+  ]
+}

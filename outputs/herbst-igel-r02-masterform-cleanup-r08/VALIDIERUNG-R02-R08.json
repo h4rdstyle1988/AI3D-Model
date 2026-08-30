@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MASTERFORM-CLEANUP-R08.md",
+  "task_blob_sha": "aabfa0fb824ddd85375b9ffa3f88eb51b7bf9b99",
+  "product_revision": "R02",
+  "technical_revision": "R08",
+  "status": "STOPP",
+  "stop_phase": "OPTIK_GATE",
+  "reference_gate": {
+    "status": "PASS",
+    "clean_sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+    "clean_bytes": 17344,
+    "seam_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+    "seam_bytes": 11788
+  },
+  "seed_42_source": {
+    "status": "PASS_BYTE_IDENTICAL_TO_R07",
+    "path": "outputs/herbst-igel-r02-masterform-cleanup-r08/source-r07/herbst-igel-r02-trellis-raw-seed-42.ply",
+    "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "bytes": 16557141,
+    "vertices": 436742,
+    "triangles": 870466,
+    "boundary_edges": 8608,
+    "nonmanifold_edges": 5079
+  },
+  "hidden_body_surface": {
+    "fully_available": false,
+    "sampled_body_pixels": 24326,
+    "pixels_with_confirmed_four_or_more_depth_layers": 759,
+    "confirmed_coverage_percent": 3.12,
+    "local_reconstruction_required": true
+  },
+  "cleanup_attempt": {
+    "status": "NON_MASTER",
+    "path": "outputs/herbst-igel-r02-masterform-cleanup-r08/masterform/herbst-igel-r02-masterform-cleanup-attempt-r08-NON-MASTER.ply",
+    "sha256": "0bd6c4f7362caf5a37e8fd11c835eb3147de432fb5db4bc6af9996f449784ba4",
+    "vertices": 436374,
+    "triangles": 870466,
+    "selected_vertices": 39552,
+    "moved_vertices": 39045,
+    "unchanged_vertices_exact": 397329,
+    "max_displacement_normalized": 0.0870771972218858,
+    "outside_edit_mask_changed": false,
+    "protected_back_and_maple_changed": false,
+    "protected_face_feature_masks_changed": false,
+    "degenerate_triangles": 17,
+    "boundary_edges": 8608,
+    "nonmanifold_edges": 5079,
+    "watertight": false
+  },
+  "actual_render_gate": {
+    "status": "PASS",
+    "source_is_cleanup_attempt_geometry": true,
+    "views": ["3q_front", "left", "right", "rear", "top", "bottom"],
+    "render_count": 6,
+    "contact_sheet": "outputs/herbst-igel-r02-masterform-cleanup-r08/renders-masterform/masterform-contact-sheet-r08.png",
+    "soll_ist_sheet": "outputs/herbst-igel-r02-masterform-cleanup-r08/renders-masterform/soll-ist-masterform-r08.png"
+  },
+  "optic_gate": {
+    "status": "FAIL",
+    "failed_criteria": [
+      "free_round_face",
+      "reference_like_leaf_spine_direction_and_density_at_face_transition",
+      "no_forehead_eye_snout_overhang",
+      "natural_ref_seam_body_back_boundary"
+    ],
+    "passed_protected_criteria": [
+      "compact_low_silhouette",
+      "short_snout_and_nose",
+      "two_ears",
+      "large_round_eyes_as_geometry",
+      "four_short_feet",
+      "arched_back",
+      "exactly_one_visible_maple_leaf_on_reference_side",
+      "no_second_maple_leaf"
+    ],
+    "reason": "Real cleanup-attempt renders retain fused/folded leaf geometry across forehead and face; stronger local projection already produces surface artifacts, while continuous hidden body skin is absent."
+  },
+  "cad_fdm_phase": {
+    "status": "NOT_RUN_BY_GATE",
+    "approved_master_created": false,
+    "split_created": false,
+    "body_stl_created": false,
+    "back_stl_created": false,
+    "assembly_created": false,
+    "connector_created": false,
+    "wall_thickness_validation_run": false,
+    "fit_support_print_validation_run": false
+  },
+  "main_files": [
+    "outputs/herbst-igel-r02-masterform-cleanup-r08/SOLL-IST-OPTIK-GATE-R08.md",
+    "outputs/herbst-igel-r02-masterform-cleanup-r08/REVISION-R02-R08.md",
+    "outputs/herbst-igel-r02-masterform-cleanup-r08/VALIDIERUNG-R02-R08.json",
+    "outputs/herbst-igel-r02-masterform-cleanup-r08/renders-masterform/soll-ist-masterform-r08.png",
+    "outputs/herbst-igel-r02-masterform-cleanup-r08/reports/hidden-body-surface-analysis-r08.json",
+    "outputs/herbst-igel-r02-masterform-cleanup-r08/reports/masterform-cleanup-operation-r08.json"
+  ],
+  "open_real_tests": [
+    "No physical print, fit, support or material test is applicable before a future optical PASS and authorized CAD/FDM phase."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "No user dimension or product choice is missing; STOPP is the mandated technical result of the failed R08 optical gate.",
+  "final_user_approval_claimed": false
+}

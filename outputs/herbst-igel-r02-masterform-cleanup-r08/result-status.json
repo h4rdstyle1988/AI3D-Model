@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MASTERFORM-CLEANUP-R08.md",
+  "task_blob_sha": "aabfa0fb824ddd85375b9ffa3f88eb51b7bf9b99",
+  "revision": {
+    "product": "R02",
+    "technical": "R08"
+  },
+  "status": "STOPP",
+  "gate": "OPTIK_GATE",
+  "gate_result": "FAIL",
+  "summary": "Local REF-SEAM-guided cleanup was executed and rendered from real geometry, but fused leaf/spine surfaces still cover the face. Continuous hidden body skin was confirmed on only 3.12 percent of sampled seam-defined body pixels. Split/CAD/STL therefore did not run.",
+  "main_files": [
+    "outputs/herbst-igel-r02-masterform-cleanup-r08/SOLL-IST-OPTIK-GATE-R08.md",
+    "outputs/herbst-igel-r02-masterform-cleanup-r08/REVISION-R02-R08.md",
+    "outputs/herbst-igel-r02-masterform-cleanup-r08/VALIDIERUNG-R02-R08.json",
+    "outputs/herbst-igel-r02-masterform-cleanup-r08/renders-masterform/soll-ist-masterform-r08.png",
+    "outputs/herbst-igel-r02-masterform-cleanup-r08/masterform/herbst-igel-r02-masterform-cleanup-attempt-r08-NON-MASTER.ply",
+    "outputs/herbst-igel-r02-masterform-cleanup-r08/artifact-manifest.json"
+  ],
+  "validations": {
+    "reference_gate": "PASS",
+    "r07_seed42_hash_gate": "PASS",
+    "hidden_body_surface_continuity": "FAIL",
+    "local_cleanup_execution": "PASS_NON_MASTER_ATTEMPT",
+    "six_real_geometry_renders": "PASS",
+    "optic_gate": "FAIL",
+    "cad_fdm_validation": "NOT_RUN_BY_GATE"
+  },
+  "artifacts_not_created_by_gate": [
+    "approved masterform",
+    "body STL",
+    "back STL",
+    "assembly 3MF or GLB",
+    "connector and receptacle"
+  ],
+  "open_real_tests": [
+    "Physical print, fit, support and material tests remain inapplicable before an optical PASS and CAD/FDM preparation."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Technical STOPP required by the approved task; no missing product decision.",
+  "final_user_approval_claimed": false
+}

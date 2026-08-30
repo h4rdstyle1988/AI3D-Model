@@ -1,0 +1,21 @@
+TASK: tasks/TASK-HERBST-IGEL-R02-MASTERFORM-CLEANUP-R08.md
+PRODUCT_REVISION: R02
+TECHNICAL_REVISION: R08
+STATUS: STOPP
+STOP_PHASE: OPTIK_GATE
+
+Nicht erzeugt:
+- freigegebene MASTERFORM
+- Split entlang REF-SEAM
+- Koerper-Hohlschale
+- Ruecken-Hohlschale
+- Zapfen / Klebeaufnahme
+- STL-Dateien
+- 3MF-/GLB-Montagedatei
+- Support-/Passungs-/FDM-Freigabe
+
+Grund: Der reale lokale Cleanup-Versuch besteht das verbindliche OPTIK_GATE nicht.
+Eine Fortsetzung waere entgegen Schritt 9/10 des freigegebenen Auftrags.
+
+NUTZERENTSCHEIDUNG_ERFORDERLICH: false
+FINALE_NUTZERFREIGABE_BEHAUPTET: false

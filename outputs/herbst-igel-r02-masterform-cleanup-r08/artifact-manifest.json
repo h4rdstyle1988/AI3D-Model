@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MASTERFORM-CLEANUP-R08.md",
+  "manifest_self_excluded": true,
+  "artifact_count": 49,
+  "artifacts": [
+    {
+      "path": "CAD-STL-NOT-CREATED.txt",
+      "bytes": 584,
+      "sha256": "fe43ab586fedc3507b3863bb2409b87e878cc683169f742fd4d986877bfaaeaa"
+    },
+    {
+      "path": "diagnostics/cleanup-selection-r08.png",
+      "bytes": 6562,
+      "sha256": "162c78bc8b97ba1d77d598d2be26bc2b83e0e6d5cdcd2fd154456ad825a4b0db"
+    },
+    {
+      "path": "diagnostics/coordinate-front-yz-depth-x.png",
+      "bytes": 405405,
+      "sha256": "f7072cdd4e7ddb8f9454e88bbae332d428e89bd7dd97cdcf520a23761f8eca0f"
+    },
+    {
+      "path": "diagnostics/coordinate-left-xz-depth-y.png",
+      "bytes": 405055,
+      "sha256": "ea045fd33c69aad84c65fcc44cd8caa9a9dbaf55ffd74d6c473efa521eeb731f"
+    },
+    {
+      "path": "diagnostics/coordinate-top-xy-depth-z.png",
+      "bytes": 379777,
+      "sha256": "628b72a2622ed421a07889fe97b1282271de41892b31b0c69797da7b405de6bc"
+    },
+    {
+      "path": "diagnostics/cross-section-y-+0.00.png",
+      "bytes": 11378,
+      "sha256": "a4ebeff8cf5e9ee1daa1e9c8a9e9101b5bdb776bdf2083c03eb62a2fcafed55f"
+    },
+    {
+      "path": "diagnostics/cross-section-y-+0.05.png",
+      "bytes": 11110,
+      "sha256": "f422cbb7e391607b2b00453e66e35ca883c18d3b7bf62681332204515ac5c86f"
+    },
+    {
+      "path": "diagnostics/cross-section-y-+0.10.png",
+      "bytes": 10806,
+      "sha256": "55756c248a9e63da8be8475c2e695188c1a4891a74bba681f6a7f89e71947cad"
+    },
+    {
+      "path": "diagnostics/cross-section-y-+0.20.png",
+      "bytes": 11238,
+      "sha256": "77e273e7808bab739623962ed5b6651595aad034b45e9d643d35ca6154313592"
+    },
+    {
+      "path": "diagnostics/cross-section-y--0.05.png",
+      "bytes": 11831,
+      "sha256": "7abc04ed4b4dbf5c6eb3bb97de639aa3826eb9b11dcc500d746fea0af229f6cc"
+    },
+    {
+      "path": "diagnostics/cross-section-y--0.10.png",
+      "bytes": 12471,
+      "sha256": "71f274036c1f050369d7fa0d0f462252437f11f9afe764f141b6bea7e21d112a"
+    },
+    {
+      "path": "diagnostics/cross-section-y--0.15.png",
+      "bytes": 8805,
+      "sha256": "e4e4d0ae61b26407885f1f651daff00bc778ff1d26a07e5158cec2c96f12fdec"
+    },
+    {
+      "path": "diagnostics/hidden-layers-front-r08.png",
+      "bytes": 10765,
+      "sha256": "947b16f2c32c4e147370abc230e42081193faac11aa704c2a4e8ec7addea3086"
+    },
+    {
+      "path": "diagnostics/hidden-layers-reference-side-r08.png",
+      "bytes": 10754,
+      "sha256": "cea0ff543f3a2236b75c5c23ba0db2623a223e5acb0b60625576005259b3679e"
+    },
+    {
+      "path": "diagnostics/ref-seam-body-mask-r08.png",
+      "bytes": 5102,
+      "sha256": "48a8131d01f4b66f11120bd2eddd30f8865f9239d64309359d22449d8ea65a1a"
+    },
+    {
+      "path": "diagnostics/ref-seam-mesh-overlay-r08.png",
+      "bytes": 304167,
+      "sha256": "8992cd18f2a59ce463a3e6e68bca4d6b4aef6e0e670055d27a645b9ae047923c"
+    },
+    {
+      "path": "diagnostics/seed42-side-ref-seam-mapping-r08.png",
+      "bytes": 6471,
+      "sha256": "552fce5a2ca527d157079f6ff717cc4d901faba73bb276642d278486e8e9274f"
+    },
+    {
+      "path": "masterform/herbst-igel-r02-masterform-cleanup-attempt-r08-NON-MASTER.ply",
+      "bytes": 16552725,
+      "sha256": "0bd6c4f7362caf5a37e8fd11c835eb3147de432fb5db4bc6af9996f449784ba4"
+    },
+    {
+      "path": "reference-audit/ref-clean-r08.jpg",
+      "bytes": 17344,
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "path": "reference-audit/ref-seam-r08.jpg",
+      "bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "path": "REFERENCE-GATE-R08.md",
+      "bytes": 1166,
+      "sha256": "d246671f500dbbeee1ece4508e0caa9c196e779e841db5e4733e69bac5da47cc"
+    },
+    {
+      "path": "renders-masterform/masterform-3q-front.png",
+      "bytes": 365176,
+      "sha256": "6d869481de4836c6ca661a1ec28d9dd3f06e8c41a1ba498f53dd0449f5e4b53a"
+    },
+    {
+      "path": "renders-masterform/masterform-bottom.png",
+      "bytes": 386708,
+      "sha256": "033649312a52fe862d6d917de413e4de7373add960626057eb50f4a62c284b05"
+    },
+    {
+      "path": "renders-masterform/masterform-contact-sheet-r08.png",
+      "bytes": 847774,
+      "sha256": "ab7cc5f13673027a80cd5dbbd93755868fbf2fee8d345646f0ee78d8ddd7348e"
+    },
+    {
+      "path": "renders-masterform/masterform-left.png",
+      "bytes": 378996,
+      "sha256": "c53861001bd047c2c266d7b96a87cecf45cc4c8c592adebea2803ae6375ed2ab"
+    },
+    {
+      "path": "renders-masterform/masterform-rear.png",
+      "bytes": 364923,
+      "sha256": "4a6540dcae70143cc258019a9ca076e02b7aa10da02d72865825264a1a6f013d"
+    },
+    {
+      "path": "renders-masterform/masterform-right.png",
+      "bytes": 346057,
+      "sha256": "18598fdc205804405c73e102d0a06bc490995d71a16e1501e5246bdbffdeb682"
+    },
+    {
+      "path": "renders-masterform/masterform-top.png",
+      "bytes": 362629,
+      "sha256": "f1f74deb1ec80f822157a2fe9894c1854e1c0bc1ec30b7d26b79cfdba28d5bb0"
+    },
+    {
+      "path": "renders-masterform/raw-seed42-3q-front-comparison.png",
+      "bytes": 362619,
+      "sha256": "bb7efe90d5fbfb48bf26a39191614be4294d4c7f31b05198544329b9dcbfe312"
+    },
+    {
+      "path": "renders-masterform/soll-ist-masterform-r08.png",
+      "bytes": 891206,
+      "sha256": "fb2d6fb1acfc1ac33636341b9339ba0bfdc091f87113fbe6327764cca0689b12"
+    },
+    {
+      "path": "reports/cleanup-attempt-mesh-validation-r08.json",
+      "bytes": 1273,
+      "sha256": "5cd7ea1b87cc81130881506090a582877abd223d87afa7084668dc97a82185c2"
+    },
+    {
+      "path": "reports/coordinate-diagnostics-r08.json",
+      "bytes": 2214,
+      "sha256": "70e3b74d342e674856ae4c254ee9da0283adf8f3c838a88665b2d3edfe5a4e2d"
+    },
+    {
+      "path": "reports/hidden-body-surface-analysis-r08.json",
+      "bytes": 1704,
+      "sha256": "e8945a98a288af611d2dd4155238837ace277a232dd7a500d70764caa3477f43"
+    },
+    {
+      "path": "reports/masterform-cleanup-operation-r08.json",
+      "bytes": 3987,
+      "sha256": "32b9349d43e5a428357ce07b7d0b13b135b47f71446b9ccbac2dd7b9f5f046ac"
+    },
+    {
+      "path": "reports/masterform-render-r08.json",
+      "bytes": 1865,
+      "sha256": "de03c77909bfa35754b6814e4ccb9c6a8999cf41e25e69ca54842e88d560c5c1"
+    },
+    {
+      "path": "reports/seed42-precleanup-inspection-r08.json",
+      "bytes": 37098,
+      "sha256": "7db3273b988192c211ee3fa856b2bbdb48ed19867b7690e28814eb80c6386f5b"
+    },
+    {
+      "path": "reproduction-scripts/analyze_hidden_body_r08.py",
+      "bytes": 6561,
+      "sha256": "054c09ff1648feb01bb20b9dfe094b35f77ca4c00010af27e71d54b8fae9e5b1"
+    },
+    {
+      "path": "reproduction-scripts/cleanup_masterform_r08.py",
+      "bytes": 15370,
+      "sha256": "870e5cae4594fe900cb6773481b891d1ca5ab2660e8533d795025b6eda6e2e97"
+    },
+    {
+      "path": "reproduction-scripts/inspect_seed42_r08.py",
+      "bytes": 9245,
+      "sha256": "8038ad45b7e8015874416c6493ab4fda4bde673c93c3b51b2a5523d2b25ef76c"
+    },
+    {
+      "path": "reproduction-scripts/render_coordinate_diagnostics_r08.py",
+      "bytes": 10674,
+      "sha256": "64caf8980918eb7b5302956f3ec82d508818e3d3d3912d233a4495f0bc1ccb24"
+    },
+    {
+      "path": "reproduction-scripts/render_masterform_r08.py",
+      "bytes": 6502,
+      "sha256": "84173f9e8d431ba1def54ecadcfe73c99219a22efc1c20234c011e7a0ef65543"
+    },
+    {
+      "path": "reproduction-scripts/validate_cleanup_attempt_r08.py",
+      "bytes": 2274,
+      "sha256": "cae79979c85d88a62231d841c21e8610b7340f1b25c01f86f1344737db8dee89"
+    },
+    {
+      "path": "reproduction-scripts/write_artifact_manifest_r08.py",
+      "bytes": 1335,
+      "sha256": "3605d3d14977c1b0dc5abe87e6f37aa540a1b8b77f1deb4c496ec3b09a71971c"
+    },
+    {
+      "path": "REPRODUKTION-R08.md",
+      "bytes": 1326,
+      "sha256": "ad826d8f0110bf240572fd89b8d0246497870d53c81ff0650dd2cb8487a81ac2"
+    },
+    {
+      "path": "result-status.json",
+      "bytes": 1940,
+      "sha256": "725b754e0089fa214538a3f67f16a7216e6634680326a61e8b4ef72cd34b86b3"
+    },
+    {
+      "path": "REVISION-R02-R08.md",
+      "bytes": 1864,
+      "sha256": "348d35bfa7b46bee440546f18784efb2df6449ed67752ee6451aa72423f54d46"
+    },
+    {
+      "path": "SOLL-IST-OPTIK-GATE-R08.md",
+      "bytes": 3677,
+      "sha256": "cc634664dfed4ca6b136fe9adeb357d78416e9ff878eb444665c938216781109"
+    },
+    {
+      "path": "source-r07/herbst-igel-r02-trellis-raw-seed-42.ply",
+      "bytes": 16557141,
+      "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6"
+    },
+    {
+      "path": "VALIDIERUNG-R02-R08.json",
+      "bytes": 4395,
+      "sha256": "fda583b8f84d927b89559f30513715c012a5352e3c43d8d85f46014af78f3907"
+    }
+  ]
+}

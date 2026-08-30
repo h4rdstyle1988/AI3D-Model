@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "source_geometry": "outputs/herbst-igel-r02-masterform-cleanup-r08/masterform/herbst-igel-r02-masterform-cleanup-attempt-r08-NON-MASTER.ply",
+  "source_is_actual_cleanup_attempt_geometry": true,
+  "master_status": "NON_MASTER_OPTIK_GATE_FAIL",
+  "views": [
+    {
+      "view": "3q-front",
+      "camera_vector": [
+        -1.0,
+        -1.0,
+        0.35
+      ],
+      "path": "outputs/herbst-igel-r02-masterform-cleanup-r08/renders-masterform/masterform-3q-front.png"
+    },
+    {
+      "view": "left",
+      "camera_vector": [
+        0.0,
+        -1.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-masterform-cleanup-r08/renders-masterform/masterform-left.png"
+    },
+    {
+      "view": "right",
+      "camera_vector": [
+        0.0,
+        1.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-masterform-cleanup-r08/renders-masterform/masterform-right.png"
+    },
+    {
+      "view": "rear",
+      "camera_vector": [
+        1.0,
+        0.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-masterform-cleanup-r08/renders-masterform/masterform-rear.png"
+    },
+    {
+      "view": "top",
+      "camera_vector": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "path": "outputs/herbst-igel-r02-masterform-cleanup-r08/renders-masterform/masterform-top.png"
+    },
+    {
+      "view": "bottom",
+      "camera_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "path": "outputs/herbst-igel-r02-masterform-cleanup-r08/renders-masterform/masterform-bottom.png"
+    }
+  ],
+  "contact_sheet": "outputs/herbst-igel-r02-masterform-cleanup-r08/renders-masterform/masterform-contact-sheet-r08.png",
+  "soll_ist_sheet": "outputs/herbst-igel-r02-masterform-cleanup-r08/renders-masterform/soll-ist-masterform-r08.png"
+}

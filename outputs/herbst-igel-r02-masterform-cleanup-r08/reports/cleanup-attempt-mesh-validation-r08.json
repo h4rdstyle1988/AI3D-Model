@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MASTERFORM-CLEANUP-R08.md",
+  "mesh": "outputs/herbst-igel-r02-masterform-cleanup-r08/masterform/herbst-igel-r02-masterform-cleanup-attempt-r08-NON-MASTER.ply",
+  "sha256": "0bd6c4f7362caf5a37e8fd11c835eb3147de432fb5db4bc6af9996f449784ba4",
+  "bytes": 16552725,
+  "vertices": 436374,
+  "triangles": 870466,
+  "bounds_min_normalized": [
+    -0.23905783891677856,
+    -0.17113235592842102,
+    -0.21962818503379822
+  ],
+  "bounds_max_normalized": [
+    0.38938766717910767,
+    0.44926708936691284,
+    0.2805304527282715
+  ],
+  "extents_normalized": [
+    0.6284455060958862,
+    0.6203994452953339,
+    0.5001586377620697
+  ],
+  "degenerate_triangles_area_le_1e_12": 17,
+  "edge_incidence": {
+    "unique_edges": 1307402,
+    "boundary_edges_incidence_1": 8608,
+    "manifold_edges_incidence_2": 1293715,
+    "nonmanifold_edges_incidence_gt_2": 5079,
+    "maximum_edge_incidence": 4
+  },
+  "watertight": false,
+  "status": "NON_MASTER_OPTIK_GATE_FAIL",
+  "cad_fdm_validation_applicable": false,
+  "reason": "The task stops before split/CAD/STL when the actual cleanup geometry fails OPTIK_GATE. Raw inherited topology is recorded, not repaired or presented as printable."
+}

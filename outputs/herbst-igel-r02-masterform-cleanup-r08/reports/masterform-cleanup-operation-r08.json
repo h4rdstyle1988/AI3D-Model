@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MASTERFORM-CLEANUP-R08.md",
+  "operation": "local_ref_seam_guided_taubin_relaxation",
+  "source": {
+    "path": "outputs/herbst-igel-r02-masterform-cleanup-r08/source-r07/herbst-igel-r02-trellis-raw-seed-42.ply",
+    "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "vertices": 436742,
+    "triangles": 870466,
+    "unused_vertices_removed": 368
+  },
+  "seam_transfer": {
+    "projection": "reference side -Y; affine X/Z mapping against used Seed-42 bounds",
+    "band_px_inward": 78,
+    "lower_z_guard_normalized": -0.105,
+    "protected_reference_features": [
+      {
+        "name": "front_ear",
+        "center_px": [
+          103,
+          154
+        ],
+        "radius_px": 24
+      },
+      {
+        "name": "reference_side_ear",
+        "center_px": [
+          226,
+          174
+        ],
+        "radius_px": 30
+      },
+      {
+        "name": "front_eye",
+        "center_px": [
+          111,
+          210
+        ],
+        "radius_px": 18
+      },
+      {
+        "name": "reference_side_eye",
+        "center_px": [
+          205,
+          207
+        ],
+        "radius_px": 19
+      },
+      {
+        "name": "nose",
+        "center_px": [
+          79,
+          231
+        ],
+        "radius_px": 23
+      },
+      {
+        "name": "front_foot",
+        "center_px": [
+          124,
+          300
+        ],
+        "radius_px": 30
+      },
+      {
+        "name": "reference_side_foot",
+        "center_px": [
+          212,
+          306
+        ],
+        "radius_px": 34
+      }
+    ]
+  },
+  "relaxation": {
+    "envelope_projection": {
+      "method": "35 px robust median plus 3 px Gaussian outer-envelope projection",
+      "outward_tolerance_normalized": 0.0045,
+      "operations": [
+        {
+          "name": "reference_side_y_min",
+          "moved_vertices": 545,
+          "source_depth_range": [
+            -0.17113235592842102,
+            0.44926708936691284
+          ]
+        },
+        {
+          "name": "opposite_side_y_max",
+          "moved_vertices": 6323,
+          "source_depth_range": [
+            -0.17113235592842102,
+            0.44926708936691284
+          ]
+        },
+        {
+          "name": "front_x_min",
+          "moved_vertices": 11109,
+          "source_depth_range": [
+            -0.23905783891677856,
+            0.38938766717910767
+          ]
+        },
+        {
+          "name": "top_z_max",
+          "moved_vertices": 6871,
+          "source_depth_range": [
+            -0.21962818503379822,
+            0.2805304527282715
+          ]
+        }
+      ],
+      "moved_vertices_union": 14126,
+      "max_projection_displacement_normalized": 0.08728754573021917
+    },
+    "method": "weighted Taubin neighbor relaxation on original connectivity",
+    "iterations": 64,
+    "lambda": 0.42,
+    "mu": -0.435,
+    "selected_vertices": 39552,
+    "moved_vertices": 39045,
+    "unchanged_vertices_exact": 397329,
+    "max_displacement_normalized": 0.0870771972218858,
+    "mean_displacement_selected_normalized": 0.004741801547902859,
+    "p95_displacement_selected_normalized": 0.027893710996847502,
+    "faces_and_connectivity_changed": false,
+    "vertices_outside_edit_mask_changed": false
+  },
+  "output": {
+    "path": "outputs/herbst-igel-r02-masterform-cleanup-r08/masterform/herbst-igel-r02-masterform-cleanup-attempt-r08-NON-MASTER.ply",
+    "bytes": 16552725,
+    "sha256": "0bd6c4f7362caf5a37e8fd11c835eb3147de432fb5db4bc6af9996f449784ba4",
+    "vertices": 436374,
+    "triangles": 870466
+  },
+  "protected_geometry": {
+    "back_outside_ref_seam": "exact vertex preservation",
+    "nose_eyes_ears_feet": "reference-space protection masks; exact vertex preservation",
+    "maple_leaf": "outside body-side cleanup mask; exact vertex preservation"
+  }
+}
