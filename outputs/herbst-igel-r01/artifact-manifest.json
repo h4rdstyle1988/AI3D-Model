@@ -1,0 +1,108 @@
+{
+  "schema": "ai3d.herbst-igel.artifact-manifest.v1",
+  "task": "TASK-HERBST-IGEL-R01-RETRY-REF-AUTH-R02",
+  "revision": "R01",
+  "result": "PASS",
+  "files": [
+    {
+      "path": "outputs/herbst-igel-r01/design-parameters.json",
+      "bytes": 868,
+      "sha256": "4049975f2db30d55bbe544a421c30017a21129b641a178954fe6a164773d02b4"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/herbst-igel-r01-koerper.stl",
+      "bytes": 48430784,
+      "sha256": "ecab728a7a194bf6ded12d03163b0ef31c02456e06a2ff77c124f4571b99e7a8"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/herbst-igel-r01-montage.glb",
+      "bytes": 37054352,
+      "sha256": "40d851b9a4148ca207ed77e42e62b4bb7919d9cd8ded4bb5ba5c4d8824fdbbad"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/herbst-igel-r01-parametric.py",
+      "bytes": 45096,
+      "sha256": "7acd2b1b462bdd61320c47e9d009a10c69abfe3682863ed49c137548d809010f"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/herbst-igel-r01-ruecken.stl",
+      "bytes": 28786884,
+      "sha256": "5f3085a7b498c2003e0c6a3cfb694f2f48f52ea74774f0c92f310eca53973df9"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/independent-mesh-validation.json",
+      "bytes": 3317,
+      "sha256": "49c88d50380e8d7d760a5959bb2bf270f43f1dbf105d567b65c0186053f67fb7"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/renders/render-3q-front.png",
+      "bytes": 110517,
+      "sha256": "ffb5f198ab28e39dc66ae689ab9874df688c0ede6a1617c24d408430b15c6492"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/renders/render-back.png",
+      "bytes": 47350,
+      "sha256": "81b1563f9877d18205215ffaa8e66f281dc6fd2bbc986e113e20797ac474fcb4"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/renders/render-bottom.png",
+      "bytes": 14069,
+      "sha256": "be5e37969176491058af5b30cea8847fa04e7639214253d8540e49d66e6335b0"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/renders/render-side-opposite.png",
+      "bytes": 37535,
+      "sha256": "199456a5e3a43d6e375c41f8fdf610210fba7d2e91b981473ac5f5c4b01f65df"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/renders/render-side-visible.png",
+      "bytes": 126602,
+      "sha256": "41ab53c43e4015b5a5019a7c0b85a667341c8d2943ab94ae30ae4dc455ba9316"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/renders/render-top.png",
+      "bytes": 91855,
+      "sha256": "3053f7e388701da608e13a4b563c50711d9a8a4a2554f88894bd869fcc90034a"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/reproduction-commands.md",
+      "bytes": 544,
+      "sha256": "777295c34af423ab3f322c945b446a570fdca88982b0e893740a9d0c902bcf77"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/REVISION-R01.md",
+      "bytes": 919,
+      "sha256": "e1666f43da951b1114ff804e08a44741b40eb638a6205621ce9b727ffe927abf"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/SOLL-IST-BERICHT.md",
+      "bytes": 3335,
+      "sha256": "77a557635f90b9a556be7c4c66d739f03d9b11176fbb410355629959103c8fdd"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/TASK-HERBST-IGEL-R01-REF-CLEAN.jpg",
+      "bytes": 11536,
+      "sha256": "f3017009739284e1bfd6e8502e9d9258eb74dbf52074c425a73ff41fc8bac328"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/TASK-HERBST-IGEL-R01-REF-SEAM.jpg",
+      "bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/technical-validation-preflight.json",
+      "bytes": 2916,
+      "sha256": "87069c30b1e7a5dca8729c281df3c513d401be9e0b1689037575bb355fccc4ad"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/validate_herbst_igel_r01.py",
+      "bytes": 11352,
+      "sha256": "6330b582e2560e62f4f3a1b49d279d24f92c642750de0cf127351465e6ff5de5"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/validation-and-revision-status.json",
+      "bytes": 5963,
+      "sha256": "69b731e33defc3ff87a8f5da1a6688028306941249858b555fa3ae2f23a3dc41"
+    }
+  ]
+}

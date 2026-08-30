@@ -1,0 +1,125 @@
+{
+  "schema": "ai3d.herbst-igel.independent-mesh-validation.v1",
+  "generated_at": "2026-08-30T10:10:04.428152+00:00",
+  "task_path": "tasks/TASK-HERBST-IGEL-R01-RETRY-REF-AUTH-R02.md",
+  "task_blob_sha1": "7834e73a9dc494ed9a96f0daefbfeecfd99a374f",
+  "revision": "R01",
+  "result": "PASS",
+  "body": {
+    "vertices_after_1e-5mm_weld": 484151,
+    "triangles": 968614,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "two_manifold": true,
+    "connected_components": 1
+  },
+  "back": {
+    "vertices_after_1e-5mm_weld": 287522,
+    "triangles": 575736,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "two_manifold": true,
+    "connected_components": 1
+  },
+  "glb": {
+    "magic": "glTF",
+    "version": 2,
+    "declared_bytes": 37054352,
+    "actual_bytes": 37054352,
+    "scene_nodes": 2,
+    "meshes": 2,
+    "materials": [
+      "PLA Matt Desert Tan",
+      "PLA Metal Copper"
+    ],
+    "pass": true
+  },
+  "assembly_bounds_mm": {
+    "min": [
+      -109.0049,
+      -54.374,
+      0.0048
+    ],
+    "max": [
+      90.5246,
+      53.6413,
+      163.2554
+    ],
+    "extents": [
+      199.5295,
+      108.0153,
+      163.2506
+    ],
+    "maximum_extent": 199.5295
+  },
+  "connector_mesh_measurements": {
+    "peg_diameter_from_stl_mm": 10.0,
+    "peg_effective_length_from_stl_mm": 20.0,
+    "socket_diameter_from_stl_mm": 10.4,
+    "socket_depth_from_stl_mm": 20.4,
+    "radial_clearance_from_stl_mm": 0.2,
+    "diametral_clearance_from_stl_mm": 0.4,
+    "axial_clearance_from_stl_mm": 0.4
+  },
+  "wall_mesh_ray_probes": {
+    "raw_hits_mm": {
+      "body_torso_visible_side": [
+        47.0439,
+        48.6223,
+        131.3777,
+        132.9535
+      ],
+      "body_head_visible_side": [
+        42.529,
+        44.3085,
+        115.6921,
+        117.4704
+      ],
+      "back_rear_axis": [
+        55.195,
+        57.8645
+      ],
+      "back_upper_rear_axis": [
+        49.9313,
+        52.3569
+      ]
+    },
+    "sampled_shell_thicknesses_mm": [
+      1.5783,
+      1.5758,
+      1.7795,
+      1.7783,
+      2.6696,
+      2.4256
+    ],
+    "sampled_minimum_mm": 1.5758,
+    "nominal_base_wall_mm": 1.6,
+    "note": "1 mm tessellation causes a local sampled deviation; the parametric normal offset remains 1.600 mm and relief is thicker."
+  },
+  "checks": {
+    "body_binary_stl": true,
+    "back_binary_stl": true,
+    "assembled_glb_two_parts": true,
+    "peg_diameter_10_0_mm": true,
+    "engagement_20_0_mm": true,
+    "socket_diameter_10_4_mm": true,
+    "socket_depth_20_4_mm": true,
+    "connector_collision_free_full_engagement": true,
+    "maximum_extent_approximately_200_mm": true,
+    "two_parts_only": true
+  },
+  "self_intersections": {
+    "status": "PASS",
+    "basis": "closed 2-manifold, single-component signed-field surface with no duplicate faces"
+  },
+  "open_real_tests": [
+    "FDM test print at 0.12 mm layer height",
+    "physical Ø10.0/Ø10.4 fit and glue test in selected PLA batches",
+    "slicer-specific support accessibility/removal check",
+    "user visual comparison and final product approval"
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "final_product_approval": false
+}

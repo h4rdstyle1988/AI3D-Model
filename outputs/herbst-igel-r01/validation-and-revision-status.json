@@ -1,0 +1,188 @@
+{
+  "schema": "ai3d.herbst-igel.validation.v1",
+  "generated_at": "2026-08-30T10:06:16.800740+00:00",
+  "task": "TASK-HERBST-IGEL-R01-RETRY-REF-AUTH-R02",
+  "task_path": "tasks/TASK-HERBST-IGEL-R01-RETRY-REF-AUTH-R02.md",
+  "task_blob_sha1": "7834e73a9dc494ed9a96f0daefbfeecfd99a374f",
+  "revision": "R01",
+  "result": "PASS",
+  "final_product_approval": false,
+  "references": {
+    "clean": {
+      "name": "CLEAN",
+      "source": "tasks/TASK-HERBST-IGEL-R01-REF-CLEAN.jpg.b64",
+      "decoded": "outputs/herbst-igel-r01/TASK-HERBST-IGEL-R01-REF-CLEAN.jpg",
+      "expected_sha256": "f3017009739284e1bfd6e8502e9d9258eb74dbf52074c425a73ff41fc8bac328",
+      "actual_sha256": "f3017009739284e1bfd6e8502e9d9258eb74dbf52074c425a73ff41fc8bac328",
+      "pass": true
+    },
+    "seam": {
+      "name": "SEAM",
+      "source": "tasks/TASK-HERBST-IGEL-R01-REF-SEAM.jpg.b64",
+      "decoded": "outputs/herbst-igel-r01/TASK-HERBST-IGEL-R01-REF-SEAM.jpg",
+      "expected_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "actual_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "pass": true
+    },
+    "secondary_multiview_used": false
+  },
+  "parts": {
+    "koerper": {
+      "vertices": 484151,
+      "triangles": 968614,
+      "edge_incidence_histogram": {
+        "2": 1452921
+      },
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "two_manifold": true,
+      "connected_components": 1,
+      "surface_area_mm2": 110109.079,
+      "signed_volume_abs_mm3": 108044.017,
+      "mesh_cleanup": {
+        "components_before": 11,
+        "removed_vertices": 164,
+        "boundary_loops_filled": 13,
+        "boundary_edges_before": 72,
+        "post_snap_welded_vertices": 0,
+        "post_snap_removed_faces": 0
+      }
+    },
+    "ruecken": {
+      "vertices": 287522,
+      "triangles": 575736,
+      "edge_incidence_histogram": {
+        "2": 863604
+      },
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "two_manifold": true,
+      "connected_components": 1,
+      "surface_area_mm2": 67946.54,
+      "signed_volume_abs_mm3": 116309.218,
+      "mesh_cleanup": {
+        "components_before": 27,
+        "removed_vertices": 530,
+        "boundary_loops_filled": 27,
+        "boundary_edges_before": 128,
+        "post_snap_welded_vertices": 298,
+        "post_snap_removed_faces": 28
+      }
+    }
+  },
+  "assembly": {
+    "min_mm": [
+      -109.005,
+      -54.374,
+      0.005
+    ],
+    "max_mm": [
+      90.525,
+      53.641,
+      163.255
+    ],
+    "extents_mm": [
+      199.529,
+      108.015,
+      163.251
+    ],
+    "maximum_extent_mm": 199.529
+  },
+  "dimensions": {
+    "nominal_base_wall_mm": 1.6,
+    "wall_generation": "implicit inward normal-distance offset; visible relief is locally thicker",
+    "wall_ray_probe_raw_hits_mm": {
+      "body_torso_visible_side": [
+        47.0439,
+        48.6223,
+        131.3777,
+        132.9535
+      ],
+      "body_head_visible_side": [
+        42.529,
+        44.3085,
+        115.6921,
+        117.4704
+      ],
+      "back_rear_axis": [
+        55.195,
+        57.8645
+      ],
+      "back_upper_rear_axis": [
+        49.9313,
+        52.3569
+      ]
+    },
+    "peg_diameter_mm": 10.0,
+    "peg_exposed_length_and_effective_engagement_mm": 20.0,
+    "socket_diameter_mm": 10.4,
+    "socket_depth_mm": 20.4,
+    "radial_clearance_mm": 0.2,
+    "diametral_clearance_mm": 0.4,
+    "axial_bottom_clearance_mm": 0.4,
+    "connector_center_mm": [
+      26.7912,
+      0.0,
+      76.0
+    ],
+    "sampled_wall_thicknesses_mm": [
+      1.5783,
+      1.5758,
+      1.7795,
+      1.7783,
+      2.6696,
+      2.4256
+    ],
+    "sampled_minimum_wall_mm": 1.5758,
+    "wall_measurement_note": "1 mm tessellation causes a local sampled deviation; the parametric normal offset remains 1.600 mm and relief is thicker."
+  },
+  "checks": {
+    "reference_hashes": true,
+    "body_watertight": true,
+    "body_two_manifold": true,
+    "body_single_component": true,
+    "back_watertight": true,
+    "back_two_manifold": true,
+    "back_single_component": true,
+    "part_count_two": true,
+    "decorative_maple_leaf_count_one": true,
+    "peg_diameter_exact": true,
+    "engagement_exact": true,
+    "shell_nominal_exact": true,
+    "assembly_extent_approx_200": true,
+    "positive_clearance": true,
+    "no_secondary_multiview_used": true
+  },
+  "self_intersection_assurance": {
+    "status": "PASS",
+    "method": "single continuous signed-field extraction per part; degenerate faces removed; edge-incidence and connected-component audit"
+  },
+  "support_access": {
+    "status": "PASS",
+    "reason": "both shells have a large assembly opening; no support is trapped in a closed inaccessible cavity"
+  },
+  "open_real_tests": [
+    "FDM test print at 0.12 mm layer height",
+    "physical Ø10.0/Ø10.4 fit and glue test in selected PLA batches",
+    "slicer-specific support accessibility/removal check",
+    "user visual comparison and final product approval"
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "No binding dimension/function was changed; only bounded CAD, FDM clearance, support and orientation decisions were made.",
+  "independent_mesh_validation": {
+    "result": "PASS",
+    "file": "outputs/herbst-igel-r01/independent-mesh-validation.json",
+    "connector_mesh_measurements": {
+      "peg_diameter_from_stl_mm": 10.0,
+      "peg_effective_length_from_stl_mm": 20.0,
+      "socket_diameter_from_stl_mm": 10.4,
+      "socket_depth_from_stl_mm": 20.4,
+      "radial_clearance_from_stl_mm": 0.2,
+      "diametral_clearance_from_stl_mm": 0.4,
+      "axial_clearance_from_stl_mm": 0.4
+    },
+    "sampled_minimum_wall_mm": 1.5758
+  }
+}
