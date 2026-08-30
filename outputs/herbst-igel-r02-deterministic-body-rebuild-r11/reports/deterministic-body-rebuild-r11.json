@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-DETERMINISTIC-BODY-REBUILD-R11.md",
+  "task_blob_sha": "a924b68969a2f82e7e75a924a5e13227b1211d77",
+  "technical_revision": "R11",
+  "operation": "single_deterministic_variable_width_implicit_body_rebuild",
+  "hash_gate": {
+    "seed42": {
+      "expected_sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+      "external_sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+      "staged_sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+      "status": "PASS"
+    },
+    "ref_clean": {
+      "expected_sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+      "external_sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+      "staged_sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+      "status": "PASS"
+    },
+    "ref_seam": {
+      "expected_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "external_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "staged_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "status": "PASS"
+    }
+  },
+  "source": {
+    "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/source-seed42/herbst-igel-r02-trellis-raw-seed-42.ply",
+    "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "vertices": 436742,
+    "triangles": 870466,
+    "bounds_min": [
+      -0.23905783891677856,
+      -0.17113235592842102,
+      -0.21962818503379822
+    ],
+    "bounds_max": [
+      0.38938766717910767,
+      0.44926708936691284,
+      0.2805304527282715
+    ]
+  },
+  "roi": {
+    "authority": "REF-CLEAN and REF-SEAM only; R08-R10 diagnostics not geometry",
+    "projection": "established affine Seed-42 X/Z to REF-SEAM foreground bbox",
+    "foreground_bbox_px": [
+      72,
+      45,
+      383,
+      338
+    ],
+    "body_pixels": 25547,
+    "seam_crossing_band_pixels": 1444,
+    "lower_body_guard_normalized": -0.105,
+    "roi_problem_triangles": 198697,
+    "removed_source_triangles": 181949,
+    "protected_exact_feature_triangles": 16748,
+    "retained_source_triangles": 688517,
+    "outside_roi_source_triangles": 671769,
+    "outside_roi_faces_preserved_exact": true,
+    "source_vertex_coordinates_modified": 0,
+    "protected_feature_definitions": [
+      {
+        "name": "front_ear",
+        "center_px": [
+          103,
+          154
+        ],
+        "radius_px": 18
+      },
+      {
+        "name": "reference_side_ear",
+        "center_px": [
+          226,
+          174
+        ],
+        "radius_px": 23
+      },
+      {
+        "name": "front_eye",
+        "center_px": [
+          111,
+          210
+        ],
+        "radius_px": 12,
+        "window_px": 7
+      },
+      {
+        "name": "reference_side_eye",
+        "center_px": [
+          205,
+          207
+        ],
+        "radius_px": 13,
+        "window_px": 8
+      },
+      {
+        "name": "nose",
+        "center_px": [
+          79,
+          231
+        ],
+        "radius_px": 16,
+        "window_px": 9
+      }
+    ],
+    "protected_feature_depth_bands": [
+      {
+        "name": "front_ear",
+        "low_y": -0.02106263302266598,
+        "high_y": 0.17991953819990159,
+        "triangles_in_guard": 18610,
+        "triangles_in_exterior_bands": 6700
+      },
+      {
+        "name": "reference_side_ear",
+        "low_y": -0.1464325177669525,
+        "high_y": 0.4096834361553192,
+        "triangles_in_guard": 14609,
+        "triangles_in_exterior_bands": 5260
+      },
+      {
+        "name": "front_eye",
+        "low_y": -0.12081647664308548,
+        "high_y": 0.2478879764676094,
+        "triangles_in_guard": 5376,
+        "triangles_in_exterior_bands": 1936
+      },
+      {
+        "name": "reference_side_eye",
+        "low_y": -0.13535024017095565,
+        "high_y": 0.40367695093154904,
+        "triangles_in_guard": 3960,
+        "triangles_in_exterior_bands": 1426
+      },
+      {
+        "name": "nose",
+        "low_y": -0.11219793736934662,
+        "high_y": 0.07605042859911919,
+        "triangles_in_guard": 12078,
+        "triangles_in_exterior_bands": 4348
+      }
+    ],
+    "feature_exterior_threshold": -0.035
+  },
+  "fixed_boundary_measurement": {
+    "method": "per-X robust 5/95-percentile envelope in unchanged lower face band",
+    "x_centers": [
+      -0.22,
+      -0.18,
+      -0.14,
+      -0.1,
+      -0.06,
+      -0.01999999999999999,
+      0.01999999999999999,
+      0.060000000000000026,
+      0.1
+    ],
+    "sample_counts": [
+      15029,
+      20168,
+      12761,
+      10585,
+      8955,
+      8762,
+      9275,
+      10020,
+      8310
+    ],
+    "low_y": [
+      -0.13137134909629822,
+      -0.12899064123630524,
+      -0.13288459181785583,
+      -0.1490511953830719,
+      -0.1604660153388977,
+      -0.15886672139167785,
+      -0.15056510865688325,
+      -0.16470902115106584,
+      -0.13499925136566163
+    ],
+    "high_y": [
+      0.16524369716644283,
+      0.21951844096183776,
+      0.291403591632843,
+      0.33620567321777345,
+      0.3695361614227295,
+      0.40162131786346433,
+      0.41719236373901364,
+      0.423653444647789,
+      0.43238133788108823
+    ],
+    "center_y": [
+      0.016936174035072304,
+      0.04526389986276626,
+      0.07925949990749359,
+      0.09357723891735077,
+      0.1045350730419159,
+      0.12137729823589324,
+      0.13331362754106518,
+      0.12947221174836157,
+      0.14869104325771332
+    ],
+    "radius_y": [
+      0.14830752313137052,
+      0.1742545410990715,
+      0.21214409172534943,
+      0.2426284343004227,
+      0.2650010883808136,
+      0.28024401962757106,
+      0.28387873619794846,
+      0.29418123289942744,
+      0.2836902946233749
+    ]
+  },
+  "rebuild": {
+    "method": "one smooth variable-width SDF visual body hull, marching tetrahedra",
+    "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/masterform/herbst-igel-r02-masterform-deterministic-r11-NON-APPROVED.ply",
+    "sha256": "3c46c86571c33467dade868c33a63ef69f34110defdda48d54799d01eb708c38",
+    "bytes": 19096766,
+    "local_surface": {
+      "vertices": 131056,
+      "triangles": 256330,
+      "degenerate_triangles": 0,
+      "boundary_edges": 668,
+      "nonmanifold_edges": 0,
+      "watertight_edge_incidence": false,
+      "bounds_min": [
+        -0.2400417914864826,
+        -0.16094247639561876,
+        -0.14358462877155395
+      ],
+      "bounds_max": [
+        0.09000106882747436,
+        0.3638121110477871,
+        0.14719969990797568
+      ]
+    },
+    "protected_feature_integration": {
+      "method": "small bilateral surface windows covered by exact exterior Seed-42 feature bands",
+      "windows": [
+        {
+          "name": "front_eye",
+          "center_px": [
+            111,
+            210
+          ],
+          "radius_px": 7,
+          "removed_rebuild_triangles": 1087
+        },
+        {
+          "name": "reference_side_eye",
+          "center_px": [
+            205,
+            207
+          ],
+          "radius_px": 8,
+          "removed_rebuild_triangles": 2212
+        },
+        {
+          "name": "nose",
+          "center_px": [
+            79,
+            231
+          ],
+          "radius_px": 9,
+          "removed_rebuild_triangles": 2430
+        }
+      ],
+      "total_removed_rebuild_triangles": 5729
+    },
+    "combined_vertices": 567798,
+    "combined_triangles": 944847,
+    "coordinate_preservation_report": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/reports/roi-coordinate-preservation-r11.json",
+    "status": "NON_APPROVED_PENDING_OPTIK_GATE"
+  },
+  "forbidden_methods_used": {
+    "new_seed": false,
+    "global_rebuild": false,
+    "planar_caps": false,
+    "triangle_fans": false,
+    "convex_hull_visible_surface": false,
+    "multiple_competing_variants": false
+  },
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-DETERMINISTIC-BODY-REBUILD-R11.md",
+  "status": "PASS_FOR_REBUILD_AND_VALIDATION",
+  "python": "3.12.10",
+  "modules": {
+    "numpy": true,
+    "Pillow": true,
+    "scipy": false,
+    "trimesh": false,
+    "cadquery": false
+  },
+  "deterministic_fallbacks": [
+    "repository PLY reader/writer",
+    "NumPy signed-distance and marching-tetrahedra surface extraction",
+    "NumPy edge-incidence and non-coplanar triangle-crossing validator",
+    "Pillow real-geometry raster renders"
+  ],
+  "cad_fdm_tools_required": false,
+  "reason": "The binary optic gate failed before CAD/FDM authorization."
+}

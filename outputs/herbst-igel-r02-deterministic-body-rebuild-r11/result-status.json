@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-DETERMINISTIC-BODY-REBUILD-R11.md",
+  "task_blob_sha": "a924b68969a2f82e7e75a924a5e13227b1211d77",
+  "product_revision": "R02",
+  "technical_revision": "R11",
+  "status": "STOPP",
+  "gate": "OPTIK_GATE",
+  "summary": "Deterministic local body rebuild executed twice within the same ROI; the final real-geometry candidate still fails the binary visual and connected-mesh gates.",
+  "main_files": {
+    "non_approved_master": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/masterform/herbst-igel-r02-masterform-deterministic-r11-NON-APPROVED.ply",
+    "validation": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/VALIDIERUNG-R02-R11.json",
+    "reconstruction_report": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/reports/deterministic-body-rebuild-r11.json",
+    "renders": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/masterform-contact-sheet-r11.png",
+    "soll_ist": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/soll-ist-optik-gate-r11.png"
+  },
+  "validations": {
+    "hash_gate": true,
+    "outside_roi_coordinates_unchanged": true,
+    "six_real_geometry_views": true,
+    "optic_gate": false,
+    "mesh_gate": false,
+    "cad_fdm_generated": false
+  },
+  "open_real_tests": [
+    "Physical print, fit, support, material and 200 mm production-scale tests remain inapplicable before an optical PASS."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Technical deterministic-rebuild and optic-gate stop; no user dimension or product choice is missing.",
+  "final_user_approval_claimed": false
+}

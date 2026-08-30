@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-DETERMINISTIC-BODY-REBUILD-R11.md",
+  "task_blob_sha": "a924b68969a2f82e7e75a924a5e13227b1211d77",
+  "source_vertex_count": 436742,
+  "result_vertex_count": 567798,
+  "source_vertex_prefix_exact": true,
+  "source_vertex_coordinates_modified": 0,
+  "outside_roi_faces_preserved_exact": true,
+  "outside_roi_source_triangle_count": 671769,
+  "roi_problem_triangle_count": 198697,
+  "removed_source_triangle_count": 181949,
+  "status": "PASS"
+}

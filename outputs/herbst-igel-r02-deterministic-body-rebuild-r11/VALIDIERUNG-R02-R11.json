@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-DETERMINISTIC-BODY-REBUILD-R11.md",
+  "task_blob_sha": "a924b68969a2f82e7e75a924a5e13227b1211d77",
+  "product_revision": "R02",
+  "technical_revision": "R11",
+  "status": "STOPP",
+  "stop_phase": "OPTIK_GATE",
+  "reference_gate": {
+    "status": "PASS",
+    "clean_sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+    "seam_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+  },
+  "seed_42_source": {
+    "status": "PASS_BYTE_IDENTICAL",
+    "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "expected_sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "vertices": 436742,
+    "triangles": 870466
+  },
+  "roi_and_coordinate_preservation": {
+    "status": "PASS",
+    "source_vertex_prefix_exact": true,
+    "source_vertex_coordinates_modified": 0,
+    "outside_roi_faces_preserved_exact": true,
+    "outside_roi_source_triangles": 671769
+  },
+  "mesh_geometry": {
+    "master_sha256": "3c46c86571c33467dade868c33a63ef69f34110defdda48d54799d01eb708c38",
+    "combined": {
+      "vertices": 567798,
+      "triangles": 944847,
+      "degenerate_triangles": 0,
+      "boundary_edges": 11125,
+      "nonmanifold_edges": 3598,
+      "watertight_edge_incidence": false,
+      "bounds_min": [
+        -0.2400417923927307,
+        -0.17113235592842102,
+        -0.21962818503379822
+      ],
+      "bounds_max": [
+        0.38938766717910767,
+        0.44926708936691284,
+        0.2805304527282715
+      ],
+      "absolute_dihedral_degrees": {
+        "samples": 1406291,
+        "median": 1.031734585762024,
+        "p95": 7.444407939910889,
+        "maximum": 89.5296630859375
+      }
+    },
+    "local_rebuild": {
+      "vertices": 131056,
+      "triangles": 256330,
+      "degenerate_triangles": 0,
+      "boundary_edges": 668,
+      "nonmanifold_edges": 0,
+      "watertight_edge_incidence": false,
+      "bounds_min": [
+        -0.2400417923927307,
+        -0.16094247996807098,
+        -0.14358462393283844
+      ],
+      "bounds_max": [
+        0.09000106900930405,
+        0.363812118768692,
+        0.14719970524311066
+      ],
+      "absolute_dihedral_degrees": {
+        "samples": 384161,
+        "median": 0.21028928458690643,
+        "p95": 5.222846984863281,
+        "maximum": 66.57859802246094
+      }
+    },
+    "retained_source_triangles": 688517,
+    "local_rebuild_triangles": 256330,
+    "cross_intersections": {
+      "method": "3D center-grid broadphase plus Moller segment/triangle narrowphase",
+      "cell_size_normalized": 0.012,
+      "candidate_pairs_narrowphase_or_distance_screened": 4319120,
+      "confirmed_non_coplanar_cross_intersections": 253,
+      "stopped_after_threshold": true,
+      "coplanar_overlap_counted": false,
+      "status": "FAIL",
+      "retained_source_triangles_in_local_broadphase": 123068
+    },
+    "status": "FAIL",
+    "reason": "Open boundary edges and confirmed source/rebuild crossings prevent one valid connected master body."
+  },
+  "real_geometry_render_gate": {
+    "status": "PASS",
+    "source_is_actual_reconstructed_geometry": true,
+    "required_six_views_exist": true,
+    "preliminary_front_sides": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/preliminary-front-sides-r11.png",
+    "contact_sheet": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/masterform-contact-sheet-r11.png",
+    "soll_ist_sheet": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/soll-ist-optik-gate-r11.png"
+  },
+  "optic_gate": {
+    "status": "FAIL",
+    "failed_criteria": [
+      "free_round_reference_like_face",
+      "forehead_free_of_leaf_spine_geometry",
+      "both_eyes_fully_free_and_cleanly_integrated",
+      "both_ears_fully_free_and_cleanly_integrated",
+      "ref_seam_visual_continuity",
+      "no_visible_hard_patch_transition"
+    ],
+    "passed_criteria": [
+      "snout_and_nose_source_coordinates_not_moved",
+      "four_feet_source_coordinates_not_moved",
+      "back_outside_roi_preserved",
+      "single_existing_maple_leaf_preserved",
+      "no_second_maple_leaf_created"
+    ],
+    "reason": "The real R11 front/side renders retain a hard forehead/seam shelf; eye and ear relief is not fully free or organically integrated. The binary R11 gate therefore fails."
+  },
+  "cad_fdm_phase": {
+    "status": "NOT_RUN_BY_OPTIK_GATE",
+    "approved_master_created": false,
+    "split_created": false,
+    "body_stl_created": false,
+    "back_stl_created": false,
+    "connector_created": false,
+    "shell_and_wall_validation_run": false
+  },
+  "open_real_tests": [
+    "Physical print, fit, support, material and 200 mm production-scale tests remain inapplicable before an optical PASS."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Technical deterministic-rebuild and optic-gate stop; no user dimension or product choice is missing.",
+  "final_user_approval_claimed": false
+}

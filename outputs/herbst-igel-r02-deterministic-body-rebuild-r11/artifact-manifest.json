@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-DETERMINISTIC-BODY-REBUILD-R11.md",
+  "task_blob_sha": "a924b68969a2f82e7e75a924a5e13227b1211d77",
+  "status": "STOPP",
+  "artifact_count_excluding_manifest": 29,
+  "artifacts": [
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/CAD-STL-NOT-CREATED.txt",
+      "bytes": 464,
+      "sha256": "4a8a450aa02a29e4f79734a67a0d47d35e5954718ad71f200839f68c2ce113b3"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/diagnostics/roi-definition-r11.png",
+      "bytes": 151008,
+      "sha256": "f97c1d6e09bcb4525de5c1ffcd98134345bf4f955aaecc175a8741b18a7a4364"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/masterform/herbst-igel-r02-masterform-deterministic-r11-NON-APPROVED.ply",
+      "bytes": 19096766,
+      "sha256": "3c46c86571c33467dade868c33a63ef69f34110defdda48d54799d01eb708c38"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/reference-audit/ref-clean-r11.jpg",
+      "bytes": 17344,
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/reference-audit/ref-seam-r11.jpg",
+      "bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/masterform-3q-front.png",
+      "bytes": 203334,
+      "sha256": "c507e8a2e4e0f4d4566be1ee0640cf62a87784fc800fb8c4743d70876f10370c"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/masterform-bottom.png",
+      "bytes": 238090,
+      "sha256": "fedfa592cf15d8f99e21b34baa26150d338c01f9c3862ad2c41f30c5c28c1ee9"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/masterform-contact-sheet-r11.png",
+      "bytes": 663090,
+      "sha256": "2cf703dfb1c375dc19570ad2ec13ecadacd838f358c2e751f58b7dcde3cf6a3e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/masterform-left.png",
+      "bytes": 224819,
+      "sha256": "443d76cb77954c3c96c886bef84d52ab6c662ab6aea14b644d498fe7784d3ce2"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/masterform-rear.png",
+      "bytes": 203199,
+      "sha256": "9e22c8ea9176429eb3247f9ad1391b6550a833f5c4660598e33b6edffc03f628"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/masterform-right.png",
+      "bytes": 208508,
+      "sha256": "527a9abb7e694f8f9d3f725e7664b81d86d3f136d37a725751fdc7a23a17fae9"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/masterform-top.png",
+      "bytes": 215245,
+      "sha256": "db1531725f143131266b11cedb15e68199bb17b4acb7fd23c611d7dcbdfb5991"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/preliminary-front-sides-r11.png",
+      "bytes": 326518,
+      "sha256": "7d2c3e7401fef22c552308b191312474957857004684860651c89ac4eadfc403"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/raw-seed42-3q-front-comparison.png",
+      "bytes": 218550,
+      "sha256": "e89dcd7d3bf3aff206bc2da6f376f217f0b648b38d51380b8236a916d62028f5"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/renders-optik-gate/soll-ist-optik-gate-r11.png",
+      "bytes": 769768,
+      "sha256": "5b2d1742f7e554419fec2c0074639f88ac98709180497c482e8b6f286d92b0f9"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/reports/deterministic-body-rebuild-r11.json",
+      "bytes": 8252,
+      "sha256": "7054a0650807edc4dd2883cd4aa1f0f98d981c8b0773433511c3903a90aee9df"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/reports/real-geometry-renders-r11.json",
+      "bytes": 2478,
+      "sha256": "0b6ce92bfc9916af280d55a7b770bb50a800624f0984311dd788e88c5df73e8b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/reports/roi-coordinate-preservation-r11.json",
+      "bytes": 519,
+      "sha256": "edabae1d06c5e4e6d9a916b6c5193dea1c60a4040c1bef61724bf08d2087ccab"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/reports/toolchain-preflight-r11.json",
+      "bytes": 661,
+      "sha256": "199711fbde72fcd629cd42489391edecfc27904cd03e3e4dea65eefcaf85c208"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/reproduction-scripts/reconstruct_deterministic_body_r11.py",
+      "bytes": 19706,
+      "sha256": "b54a8fc554fdaac25c5d01f7d4288e8e9d04ad8d52dc4ebb49aac42c512471ec"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/reproduction-scripts/render_optik_gate_r11.py",
+      "bytes": 4188,
+      "sha256": "a3d56ff51663535e5c29c6ca548eaaf3d81ed970725e4bcc612772b46ea20e9b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/reproduction-scripts/validate_r11.py",
+      "bytes": 8977,
+      "sha256": "6355f6ea48fb0ed591a734dd479f89283586ccbda85a64581026a6b3dd7d7a01"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/reproduction-scripts/write_artifact_manifest_r11.py",
+      "bytes": 1344,
+      "sha256": "48629a12a939a4e8ee670ee39e4c585f8bc640df2e006f29dbb6ad4f95485b4a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/REPRODUKTION-R11.md",
+      "bytes": 1012,
+      "sha256": "3ce783e7af40511727571a6406795e822cf741a42ebdf8849c28f0daae28edab"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/result-status.json",
+      "bytes": 1712,
+      "sha256": "9794b0a91f627b772286d57b191c7db49d8fd33f746c830a171ef163ba6863a7"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/REVISION-R02-R11.md",
+      "bytes": 2070,
+      "sha256": "867395d809454e96cb582182784e73586243b0e3784b1e0e22444d2cd29355d2"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/SOLL-IST-OPTIK-GATE-R11.md",
+      "bytes": 2532,
+      "sha256": "7c155b7bcd91ec787ae7c2624e360273d3e196c21abb91e8907ab3c060e9891d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/source-seed42/herbst-igel-r02-trellis-raw-seed-42.ply",
+      "bytes": 16557141,
+      "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-deterministic-body-rebuild-r11/VALIDIERUNG-R02-R11.json",
+      "bytes": 5172,
+      "sha256": "a474bf5732ab5006c924fa6d256c22be38823eacf518d3a748c8bd18f37a8afd"
+    }
+  ]
+}

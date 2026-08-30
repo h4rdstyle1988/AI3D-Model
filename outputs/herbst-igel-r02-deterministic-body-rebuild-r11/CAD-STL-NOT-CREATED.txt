@@ -1,0 +1,12 @@
+STATUS: NICHT ERZEUGT
+GRUND: R11 OPTIK_GATE FAIL und MESH_GATE FAIL.
+
+Gemäß freigegebenem Auftrag wurden kein REF-SEAM-Split, keine 1,6-mm-
+Hohlschalen, kein Ø10,0 x 20,0-mm-Klebeverbinder, keine Produktionsskalierung,
+keine CAD-Fertigungsdatei und keine STL erzeugt.
+
+Die vorhandene PLY ist ausschließlich ein reproduzierbarer NON-APPROVED-
+Diagnosekandidat und keine Druckdatei.
+
+NUTZERENTSCHEIDUNG_ERFORDERLICH: false
+FINALE_NUTZERFREIGABE_BEHAUPTET: false
