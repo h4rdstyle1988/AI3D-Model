@@ -1,0 +1,136 @@
+{
+  "schema": "ai3d-task-result-v1",
+  "task": {
+    "path": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-RETRY-REF-CLEAN-R03.md",
+    "blob_sha1": "7b68bdd653edadba3d71cc2e4949466490a9ad3a",
+    "product_revision": "R02",
+    "retry_revision": "R03"
+  },
+  "generated_at": "2026-08-30T15:39:53.2328827+02:00",
+  "status": "STOPP",
+  "PASS_STOPP_OFFEN": "STOPP",
+  "pass": false,
+  "open": true,
+  "phase_reached": "REFERENCE_PREFLIGHT",
+  "final_product_approval": false,
+  "references": {
+    "ref_clean": {
+      "source": "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R03.jpg",
+      "authorization": "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-AUTH-R03.md",
+      "expected_sha256": "2d127f873be82c7247f4c67345821d68edd2a0f8a0c2dab20d24a5e27a3ce8a2",
+      "actual_sha256": "965117ec3a950c33146e0a6c0f6beddbfd4a3f365de9d27ed22389234a13e4f4",
+      "hash_match": false,
+      "expected_bytes": 40823,
+      "actual_bytes": 10809,
+      "size_match": false,
+      "expected_dimensions_px": [512, 512],
+      "actual_dimensions_px": null,
+      "expected_format": "RGB JPEG",
+      "actual_format": "UNIDENTIFIED_BINARY",
+      "jpeg_soi_present": false,
+      "strict_decode_complete": false,
+      "strict_decode_errors": [
+        "PIL.UnidentifiedImageError: cannot identify image file",
+        "System.Drawing.ArgumentException: Invalid parameter"
+      ],
+      "git_blob_sha1": "a2ba8ccfb73f932398c4ab9bdb023b8771266799",
+      "matching_copy_found_in_allowed_roots": false,
+      "matching_historical_blob_found": false,
+      "status": "FAIL"
+    },
+    "ref_seam": {
+      "source": "tasks/TASK-HERBST-IGEL-R01-REF-SEAM.jpg.b64",
+      "expected_decoded_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "actual_decoded_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "hash_match": true,
+      "decoded_bytes": 11788,
+      "dimensions_px": [384, 384],
+      "mode": "RGB",
+      "strict_decode_complete": true,
+      "role": "SEAM_ONLY_NOT_PRIMARY_FORM_SOURCE",
+      "status": "PASS"
+    },
+    "old_damaged_ref_clean_used": false,
+    "secondary_multiview_used_as_primary": false
+  },
+  "trellis": {
+    "executed": false,
+    "status": "NOT_RUN_DUE_TO_REFERENCE_GATE",
+    "tool": null,
+    "command": null,
+    "gpu": null,
+    "seed": null,
+    "resolution": null,
+    "raw_mesh": null
+  },
+  "optic_gate": {
+    "status": "NOT_RUN_DUE_TO_REFERENCE_GATE",
+    "raw_geometry_renders": []
+  },
+  "cad_processing": {
+    "status": "NOT_RUN_DUE_TO_REFERENCE_GATE",
+    "source": null
+  },
+  "technical_validation": {
+    "status": "NOT_RUN_DUE_TO_REFERENCE_GATE",
+    "body_stl_watertight": "NOT_RUN",
+    "back_stl_watertight": "NOT_RUN",
+    "two_manifold": "NOT_RUN",
+    "open_edges": "NOT_RUN",
+    "unintended_multiple_shells": "NOT_RUN",
+    "self_intersections": "NOT_RUN",
+    "wall_thickness": "NOT_RUN",
+    "pin_diameter_10_mm": "NOT_RUN",
+    "engagement_depth_20_mm": "NOT_RUN",
+    "socket_clearance": "NOT_RUN",
+    "full_engagement_collision": "NOT_RUN",
+    "internal_reinforcement_print_through": "NOT_RUN",
+    "enclosed_support": "NOT_RUN",
+    "maximum_dimension_approximately_200_mm": "NOT_RUN"
+  },
+  "main_files": [
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r03-stopp/REFERENCE-GATE-R03.md",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r03-stopp/REVISION-R02-R03.md",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r03-stopp/GEOMETRY-NOT-CREATED.txt",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r03-stopp/VALIDIERUNG-R02-R03.json",
+    "outputs/herbst-igel-r02-trellis-retry-ref-clean-r03-stopp/result-status.json"
+  ],
+  "intentionally_not_generated": [
+    "Trellis raw mesh",
+    "raw mesh geometry renders",
+    "reproducible CAD/processing source",
+    "herbst-igel-r02-koerper.stl",
+    "herbst-igel-r02-ruecken.stl",
+    "assembly GLB or 3MF",
+    "final geometry renders"
+  ],
+  "validations": {
+    "task_and_queue_identity": "PASS",
+    "ref_clean_hash": "FAIL",
+    "ref_clean_size": "FAIL",
+    "ref_clean_strict_decode": "FAIL",
+    "ref_seam_hash_and_strict_decode": "PASS",
+    "forbidden_reference_substitution_avoided": "PASS",
+    "previous_results_not_overwritten": "PASS",
+    "no_geometry_after_failed_reference_gate": "PASS"
+  },
+  "changed": [
+    "new isolated R03 STOPP documentation",
+    "actual REF-CLEAN byte/hash/signature/decode audit"
+  ],
+  "unchanged": [
+    "R02 product revision",
+    "all confirmed geometry and user dimensions",
+    "all previous R01/R02 artifacts and STOPP states"
+  ],
+  "removed": [],
+  "open_real_tests": [
+    "valid primary REF-CLEAN supply or explicit alternative-source approval",
+    "Trellis reconstruction and optical gate after valid reference",
+    "CAD/STL/assembly and technical validation only after optical PASS",
+    "slicer and physical print/fit/support/surface tests",
+    "independent user optical and final product/print approval"
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": true,
+  "nutzerentscheidung_grund": "The required real primary form reference is absent under the approved file identity and cannot be derived unambiguously. Continuing requires the exact authorized bytes or explicit approval of another concrete primary source."
+}

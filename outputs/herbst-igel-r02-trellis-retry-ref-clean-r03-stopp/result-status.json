@@ -1,0 +1,39 @@
+{
+  "schema": "ai3d-result-status-v1",
+  "task": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-RETRY-REF-CLEAN-R03.md",
+  "task_blob_sha1": "7b68bdd653edadba3d71cc2e4949466490a9ad3a",
+  "product_revision": "R02",
+  "retry_revision": "R03",
+  "status": "STOPP",
+  "PASS_STOPP_OFFEN": "STOPP",
+  "phase_reached": "REFERENCE_PREFLIGHT",
+  "final_product_approval": false,
+  "main_files": [
+    "REFERENCE-GATE-R03.md",
+    "REVISION-R02-R03.md",
+    "GEOMETRY-NOT-CREATED.txt",
+    "VALIDIERUNG-R02-R03.json",
+    "result-status.json"
+  ],
+  "validations": {
+    "task_and_queue_identity": "PASS",
+    "primary_ref_clean_sha256": "FAIL",
+    "primary_ref_clean_size": "FAIL",
+    "primary_ref_clean_strict_decode": "FAIL",
+    "seam_reference_sha256_and_strict_decode": "PASS",
+    "forbidden_reference_substitution_avoided": "PASS",
+    "trellis_not_started_after_failed_reference_gate": "PASS",
+    "cad_stl_not_started_after_failed_reference_gate": "PASS",
+    "previous_results_preserved": "PASS",
+    "only_task_related_files_changed": "PASS"
+  },
+  "open_real_tests": [
+    "provide the exact authorized 40823-byte REF-CLEAN with SHA-256 2d127f873be82c7247f4c67345821d68edd2a0f8a0c2dab20d24a5e27a3ce8a2 or explicitly approve another concrete primary source",
+    "run Trellis and optical gate after the reference passes",
+    "run CAD/STL and technical validation only after optical PASS",
+    "perform slicer, print, fit, support-removal and surface tests",
+    "obtain final user optical and product/print approval"
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": true,
+  "nutzerentscheidung_grund": "A required real primary reference is missing under the approved file identity and cannot be derived unambiguously; continuing requires the exact authorized bytes or explicit approval of another concrete primary source."
+}

@@ -1,0 +1,11 @@
+STATUS: STOPP
+
+Keine CAD-, STL-, GLB-, 3MF-, Rohmesh- oder Render-Geometrie erzeugt.
+
+Grund: Das verbindliche erste Referenz-Gate ist fehlgeschlagen. Die Datei
+tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R03.jpg stimmt nicht mit dem freigegebenen
+SHA-256 und der freigegebenen Dateigröße überein und ist nicht als JPEG/Bild
+decodierbar. Trellis und alle nachgelagerten Schritte sind daher unzulässig.
+
+NUTZERENTSCHEIDUNG_ERFORDERLICH: true
+FINALE_PRODUKTFREIGABE: false
