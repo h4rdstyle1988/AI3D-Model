@@ -1,0 +1,90 @@
+{
+  "task": "TASK-HERBST-IGEL-R01",
+  "status": "DRAFT_NOT_QUEUED",
+  "date": "2026-08-30",
+  "release_gate": "Do not add to tasks/TASK_QUEUE.txt until user explicitly says 'gib es weiter an Rüdiger'.",
+  "references": {
+    "authoritative_visual": "tasks/TASK-HERBST-IGEL-R01-REF-CLEAN.jpg.b64",
+    "authoritative_seam": "tasks/TASK-HERBST-IGEL-R01-REF-SEAM.jpg.b64",
+    "secondary_multiview": "tasks/TASK-HERBST-IGEL-R01-REF-MULTIVIEW-SECONDARY.jpg.b64",
+    "secondary_rule": "Secondary multiview is AI-generated and non-authoritative. If it conflicts with primary references, ignore it. Do not duplicate the decorative maple leaf."
+  },
+  "binding": {
+    "theme": "autumn hedgehog decoration",
+    "pose": "standing/sitting on own feet as reference, no base",
+    "size": {
+      "max_overall_extent_mm": 200,
+      "qualifier": "approximate; uniform proportional scaling from reference"
+    },
+    "parts": 2,
+    "body": {
+      "material": "PLA Matt Desert Tan",
+      "construction": "hollow shell"
+    },
+    "back": {
+      "material": "PLA Metal Copper",
+      "construction": "hollow shell, spines/leaves integral"
+    },
+    "shell_thickness_mm": 1.6,
+    "seam": "exactly along user's blue marked natural body/back boundary",
+    "connector": {
+      "count": 1,
+      "position": "centered",
+      "peg_diameter_mm": 10.0,
+      "engagement_depth_mm": 20.0,
+      "hidden": true,
+      "glued_by_user": true,
+      "snap_fit": false,
+      "taper": false,
+      "clamp_fit": false,
+      "peg_side": "technical decision by Rüdiger based on printability; document",
+      "socket_clearance": "technical FDM/glue-fit decision; document; not a user dimension"
+    },
+    "eyes_nose": "model as paintable body geometry; user paints after printing; no third filament color",
+    "support": "minimum technically necessary only; none trapped in inaccessible cavities",
+    "no_extra_features": true
+  },
+  "print_target": {
+    "process": "FDM",
+    "nozzle_mm": 0.4,
+    "layer_height_mm": 0.12,
+    "adaptive_layer_min_mm": 0.08,
+    "surface_goal": "fine, visually smooth, low stair-stepping while preserving reference texture"
+  },
+  "outputs": [
+    "reproducible CAD/source",
+    "herbst-igel-r01-koerper.stl",
+    "herbst-igel-r01-ruecken.stl",
+    "assembled 3MF or GLB",
+    "multi-angle renders from actual final geometry",
+    "SOLL/IST report",
+    "machine-readable validation/revision report"
+  ],
+  "validation": {
+    "mesh": [
+      "watertight each part",
+      "2-manifold each part",
+      "no self intersections",
+      "no unintended duplicate shells"
+    ],
+    "dimensions": [
+      "shell thickness",
+      "peg diameter 10.0 mm",
+      "engagement depth 20.0 mm",
+      "socket size and actual clearance",
+      "assembled max extent approx 200 mm"
+    ],
+    "visual": [
+      "silhouette",
+      "face",
+      "ears",
+      "feet/belly pose",
+      "spine field",
+      "single visible decorative maple leaf",
+      "blue seam path",
+      "no visible connector"
+    ],
+    "release": "No final print/product approval without ChatGPT SOLL/IST then user approval"
+  },
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false
+}
