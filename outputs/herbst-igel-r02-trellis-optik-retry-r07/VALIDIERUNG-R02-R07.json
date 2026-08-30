@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-OPTIK-RETRY-R07.md",
+  "task_blob_sha": "fe7cae0d613379fbd22e00b12320f764ee8818ed",
+  "product_revision": "R02",
+  "technical_retry": "R07",
+  "status": "STOPP",
+  "stop_phase": "OPTIK_GATE",
+  "reference_gate": {
+    "status": "PASS",
+    "clean_bytes": 17344,
+    "clean_sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+    "clean_format": "JPEG",
+    "clean_mode": "RGB",
+    "clean_size_px": [512, 512],
+    "clean_strict_decode": true,
+    "seam_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+    "seam_strict_decode": true
+  },
+  "trellis_candidate_gate": {
+    "status": "PASS",
+    "tool": "Trellis Studio native CLI image-to-3D GGUF/Vulkan",
+    "executable_sha256": "57f49f7746b88b4468009f626bb6f41fc7b7969d894567cb14553e1893457bfc",
+    "gpu": "Vulkan0 AMD Radeon RX 7800 XT 16368 MB",
+    "resolution": 512,
+    "background_removal": "BiRefNet",
+    "texture": false,
+    "seeds_tested": [42, 7, 123, 777],
+    "all_returncodes_zero": true,
+    "all_raw_candidates_archived_unchanged": true,
+    "seed_42_r06_ply_byte_identical": true,
+    "candidate_count": 4
+  },
+  "raw_render_gate": {
+    "status": "PASS",
+    "source_is_untouched_raw_ply": true,
+    "views_per_candidate": ["3q_front", "left", "right", "rear", "top", "bottom"],
+    "render_count": 24,
+    "contact_sheet_count": 4,
+    "comparison_sheet": "outputs/herbst-igel-r02-trellis-optik-retry-r07/renders-optik-gate/candidate-comparison-r07.png"
+  },
+  "optic_gate": {
+    "status": "FAIL",
+    "best_candidate_seed": 42,
+    "best_candidate_status": "FAIL",
+    "comparison_report": "outputs/herbst-igel-r02-trellis-optik-retry-r07/reports/candidate-optic-comparison-r07.json",
+    "reason": "No candidate simultaneously preserves a free round face, reference-like leaf/spine direction and density, exactly one visible maple leaf, and the natural REF-SEAM body/back boundary."
+  },
+  "cad_fdm_phase": {
+    "status": "NOT_RUN_BY_GATE",
+    "cad_source_created": false,
+    "body_stl_created": false,
+    "back_stl_created": false,
+    "assembly_created": false,
+    "technical_stl_validation_run": false,
+    "reason": "Task authorizes CAD/FDM preparation only after an unambiguous optic PASS."
+  },
+  "main_files": [
+    "outputs/herbst-igel-r02-trellis-optik-retry-r07/reference-audit/reference-gate-audit-r07.json",
+    "outputs/herbst-igel-r02-trellis-optik-retry-r07/reports/raw-mesh-inspection-r07.json",
+    "outputs/herbst-igel-r02-trellis-optik-retry-r07/reports/candidate-optic-comparison-r07.json",
+    "outputs/herbst-igel-r02-trellis-optik-retry-r07/renders-optik-gate/candidate-comparison-r07.png",
+    "outputs/herbst-igel-r02-trellis-optik-retry-r07/SOLL-IST-OPTIK-GATE-R07.md",
+    "outputs/herbst-igel-r02-trellis-optik-retry-r07/TRELLIS-REPRODUKTION-R07.md"
+  ],
+  "open_real_tests": [
+    "No physical print or fit test is applicable before optic PASS and CAD/FDM preparation."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "No user dimension or product choice is missing; STOPP is the mandated technical consequence of OPTIK-FAIL.",
+  "final_user_approval_claimed": false
+}

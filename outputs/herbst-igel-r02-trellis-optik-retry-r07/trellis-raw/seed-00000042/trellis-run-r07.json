@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-OPTIK-RETRY-R07.md",
+  "task_blob_sha": "fe7cae0d613379fbd22e00b12320f764ee8818ed",
+  "tool": "Trellis Studio native CLI image-to-3D (GGUF/Vulkan)",
+  "executable": "C:\\Users\\h4rds\\AppData\\Local\\trellis-studio\\runtime\\trellis-cli.exe",
+  "executable_sha256": "57f49f7746b88b4468009f626bb6f41fc7b7969d894567cb14553e1893457bfc",
+  "models": "C:\\Users\\h4rds\\AppData\\Local\\trellis-studio\\models",
+  "input": "outputs/herbst-igel-r02-trellis-optik-retry-r07/reference-audit/ref-clean-r07.jpg",
+  "input_sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+  "gpu_argument": 0,
+  "seed": 42,
+  "seed_selection_reason": "Distinct deterministic latent RNG state; seed 42 retained as the R06 comparison baseline.",
+  "resolution": 512,
+  "background_removal": "BiRefNet",
+  "background_variation": "none; controlled seed comparison with identical authorized preprocessing",
+  "texture": false,
+  "command": [
+    "C:\\Users\\h4rds\\AppData\\Local\\trellis-studio\\runtime\\trellis-cli.exe",
+    "--image",
+    "D:\\AI3D-Agent\\worker\\AI3D-Model-worker\\outputs\\herbst-igel-r02-trellis-optik-retry-r07\\reference-audit\\ref-clean-r07.jpg",
+    "--output",
+    "D:\\AI3D-Agent\\worker\\AI3D-Model-worker\\outputs\\herbst-igel-r02-trellis-optik-retry-r07\\trellis-raw\\seed-00000042\\herbst-igel-r02-trellis-raw-seed-42.glb",
+    "--models",
+    "C:\\Users\\h4rds\\AppData\\Local\\trellis-studio\\models",
+    "--gpu",
+    "0",
+    "--seed",
+    "42",
+    "--res",
+    "512",
+    "--bg-removal",
+    "birefnet",
+    "--dump-bg",
+    "--no-texture",
+    "--require-gpu"
+  ],
+  "started_utc": "2026-08-30T17:33:02.917055+00:00",
+  "finished_utc": "2026-08-30T17:37:02.202274+00:00",
+  "elapsed_seconds": 239.285219,
+  "returncode": 0,
+  "log": "outputs/herbst-igel-r02-trellis-optik-retry-r07/trellis-raw/seed-00000042/trellis-cli-seed-42-res512-r07.log",
+  "outputs": {
+    "glb": {
+      "path": "outputs/herbst-igel-r02-trellis-optik-retry-r07/trellis-raw/seed-00000042/herbst-igel-r02-trellis-raw-seed-42.glb",
+      "bytes": 15687328,
+      "sha256": "28c0b12344857143c8f964c2bda8d66173676c97f0cbee2b8903e5a59011a0dc"
+    },
+    "ply": {
+      "path": "outputs/herbst-igel-r02-trellis-optik-retry-r07/trellis-raw/seed-00000042/herbst-igel-r02-trellis-raw-seed-42.ply",
+      "bytes": 16557141,
+      "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6"
+    },
+    "png_cutout": {
+      "path": "outputs/herbst-igel-r02-trellis-optik-retry-r07/trellis-raw/seed-00000042/herbst-igel-r02-trellis-raw-seed-42_cutout.png",
+      "bytes": 258496,
+      "sha256": "fc24c21784259dba9641c7093b726147117312d724696a5cb67f38c04c01e22e"
+    }
+  },
+  "status": "PASS"
+}

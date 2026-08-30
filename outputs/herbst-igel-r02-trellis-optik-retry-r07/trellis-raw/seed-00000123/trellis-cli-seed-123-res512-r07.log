@@ -1,0 +1,54 @@
+[trellis] generating model with seed 123
+[1/6] preprocess D:\AI3D-Agent\worker\AI3D-Model-worker\outputs\herbst-igel-r02-trellis-optik-retry-r07\reference-audit\ref-clean-r07.jpg (BiRefNet bg removal, 512)
+ggml_vulkan: Found 2 Vulkan devices:
+ggml_vulkan: 0 = AMD Radeon RX 7800 XT (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | warp size: 64 | shared memory: 32768 | int dot: 1 | matrix cores: KHR_coopmat
+ggml_vulkan: 1 = AMD Radeon(TM) Graphics (AMD proprietary driver) | uma: 1 | fp16: 1 | bf16: 0 | warp size: 32 | shared memory: 32768 | int dot: 1 | matrix cores: none
+[trellis] using Vulkan0 (16368 MB)
+[deform_vk] using AMD Radeon RX 7800 XT
+      bg-removal cutout -> D:\AI3D-Agent\worker\AI3D-Model-worker\outputs\herbst-igel-r02-trellis-optik-retry-r07\trellis-raw\seed-00000123\herbst-igel-r02-trellis-raw-seed-123_cutout.png
+[2/6] DINOv3 conditioning
+[trellis] using Vulkan0 (16368 MB)
+      cond tokens=1029
+      [stats] cond_512 (DINOv3@512) n=1053696 mean=-0.0000 std=1.0000 min=-29.329 max=24.278 nan/inf=0
+[3/6] sparse-structure flow + decode
+[trellis] using Vulkan0 (16368 MB)
+      [flow] [....................]  0/12    0.0s  starting    
+      [flow] [#...................]  1/12   17.3s  ~190s left  
+      [flow] [###.................]  2/12   33.8s  ~169s left  
+      [flow] [#####...............]  3/12   50.3s  ~151s left  
+      [flow] [######..............]  4/12   66.8s  ~134s left  
+      [flow] [########............]  5/12   83.3s  ~117s left  
+      [flow] [##########..........]  6/12   99.8s  ~100s left  
+      [flow] [###########.........]  7/12  116.4s  ~83s left   
+      [flow] [#############.......]  8/12  132.9s  ~66s left   
+      [flow] [###############.....]  9/12  149.4s  ~50s left   
+      [flow] [################....] 10/12  166.0s  ~33s left   
+      [flow] [##################..] 11/12  174.2s  ~16s left   
+      [flow] [####################] 12/12  182.5s  ~0s left    
+      [flow] 12 steps, 22 forwards, 182.5s
+[trellis] using Vulkan0 (16368 MB)
+      active voxels @res32 = 3841
+[4/7] shape SLAT flow (512)
+[trellis] using Vulkan0 (16368 MB)
+      [flow] [....................]  0/12    0.0s  starting    
+      [flow] [#...................]  1/12   15.7s  ~173s left  
+      [flow] [###.................]  2/12   31.2s  ~156s left  
+      [flow] [#####...............]  3/12   46.7s  ~140s left  
+      [flow] [######..............]  4/12   62.2s  ~124s left  
+      [flow] [########............]  5/12   77.7s  ~109s left  
+      [flow] [##########..........]  6/12   93.4s  ~93s left   
+      [flow] [###########.........]  7/12  109.1s  ~78s left   
+      [flow] [#############.......]  8/12  124.9s  ~62s left   
+      [flow] [###############.....]  9/12  132.7s  ~44s left   
+      [flow] [################....] 10/12  140.5s  ~28s left   
+      [flow] [##################..] 11/12  148.4s  ~13s left   
+      [flow] [####################] 12/12  156.2s  ~0s left    
+      [flow] 12 steps, 20 forwards, 156.2s
+      [stats] slat (res32) n=122912 mean=-0.2283 std=5.4919 min=-24.313 max=22.333 nan/inf=0
+[5/7] FlexiDualGrid shape decode -> mesh @res512
+[trellis] using Vulkan0 (16368 MB)
+      decoded voxels @res512 = 1054157
+      mesh V=1054157 F=2095920
+      filled 1671 small holes -> V=1055828 F=2106066
+[7/7] write D:\AI3D-Agent\worker\AI3D-Model-worker\outputs\herbst-igel-r02-trellis-optik-retry-r07\trellis-raw\seed-00000123\herbst-igel-r02-trellis-raw-seed-123.glb
+done in 358.2s -> D:\AI3D-Agent\worker\AI3D-Model-worker\outputs\herbst-igel-r02-trellis-optik-retry-r07\trellis-raw\seed-00000123\herbst-igel-r02-trellis-raw-seed-123.glb (+ D:\AI3D-Agent\worker\AI3D-Model-worker\outputs\herbst-igel-r02-trellis-optik-retry-r07\trellis-raw\seed-00000123\herbst-igel-r02-trellis-raw-seed-123.ply)

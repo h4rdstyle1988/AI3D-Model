@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-OPTIK-RETRY-R07.md",
+  "task_blob_sha": "fe7cae0d613379fbd22e00b12320f764ee8818ed",
+  "clean": {
+    "sources": [
+      "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R04.part01.b64",
+      "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R04.part02.b64",
+      "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R04.part03.b64",
+      "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R04.part04.b64"
+    ],
+    "part_base64_lengths": [
+      6000,
+      6000,
+      6000,
+      5128
+    ],
+    "part_base64_sha256": [
+      "0f1e6764e5c855a8cbe1e3febdcff9e3a9c1944b720465cf2fe72c054421a209",
+      "9ed43657311f5289e30620dcb373fe319e4d79fb5bad13637681d9de68eebcb9",
+      "87dcfea20bc0042010a3658776516d11d1b5edddd7f9d7c910d4fbb6d069ae91",
+      "58189c709483bb5f8ebfe42e50cf96dcb631869c1b6a4a71f3cfa34826a9a32c"
+    ],
+    "concatenated_base64_length": 23128,
+    "output": "outputs/herbst-igel-r02-trellis-optik-retry-r07/reference-audit/ref-clean-r07.jpg",
+    "expected": {
+      "bytes": 17344,
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+      "format": "JPEG",
+      "mode": "RGB",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "actual": {
+      "bytes": 17344,
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+      "format": "JPEG",
+      "mode": "RGB",
+      "size": [
+        512,
+        512
+      ],
+      "strict_decode_complete": true
+    },
+    "checks": {
+      "bytes": true,
+      "sha256": true,
+      "format": true,
+      "mode": true,
+      "size": true,
+      "strict_base64_decode": true,
+      "strict_image_decode": true
+    },
+    "status": "PASS"
+  },
+  "seam": {
+    "source": "tasks/TASK-HERBST-IGEL-R01-REF-SEAM.jpg.b64",
+    "output": "outputs/herbst-igel-r02-trellis-optik-retry-r07/reference-audit/ref-seam-r07.jpg",
+    "expected_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+    "actual": {
+      "bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "format": "JPEG",
+      "mode": "RGB",
+      "size": [
+        384,
+        384
+      ],
+      "strict_decode_complete": true
+    },
+    "checks": {
+      "sha256": true,
+      "strict_base64_decode": true,
+      "strict_image_decode": true
+    },
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

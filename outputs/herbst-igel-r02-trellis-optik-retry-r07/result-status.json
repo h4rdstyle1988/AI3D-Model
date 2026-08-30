@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-OPTIK-RETRY-R07.md",
+  "task_blob_sha": "fe7cae0d613379fbd22e00b12320f764ee8818ed",
+  "revision": "R02",
+  "technical_retry": "R07",
+  "status": "STOPP",
+  "phase": "OPTIK_GATE",
+  "reference_gate": "PASS",
+  "trellis_native_candidates": "PASS",
+  "candidate_count": 4,
+  "seeds_tested": [42, 7, 123, 777],
+  "raw_render_views": "PASS",
+  "optic_gate": "FAIL",
+  "best_candidate_seed": 42,
+  "best_candidate_gate": "FAIL",
+  "cad_fdm": "NOT_RUN_BY_GATE",
+  "body_stl_created": false,
+  "back_stl_created": false,
+  "assembly_created": false,
+  "main_report": "outputs/herbst-igel-r02-trellis-optik-retry-r07/VALIDIERUNG-R02-R07.json",
+  "main_files": [
+    "outputs/herbst-igel-r02-trellis-optik-retry-r07/SOLL-IST-OPTIK-GATE-R07.md",
+    "outputs/herbst-igel-r02-trellis-optik-retry-r07/renders-optik-gate/candidate-comparison-r07.png",
+    "outputs/herbst-igel-r02-trellis-optik-retry-r07/reports/candidate-optic-comparison-r07.json"
+  ],
+  "open_real_tests": [
+    "Physical print, fit and FDM validation remain unavailable before an optic PASS."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Technical optic-gate STOPP; no missing user datum or product decision.",
+  "finale_nutzerfreigabe_behauptet": false
+}

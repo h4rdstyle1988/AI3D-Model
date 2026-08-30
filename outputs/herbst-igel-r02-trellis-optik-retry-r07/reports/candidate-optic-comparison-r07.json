@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-OPTIK-RETRY-R07.md",
+  "task_blob_sha": "fe7cae0d613379fbd22e00b12320f764ee8818ed",
+  "product_revision": "R02",
+  "technical_retry": "R07",
+  "authoritative_references": {
+    "ref_clean_sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+    "ref_seam_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+  },
+  "selection_rule": "Best agreement with REF-CLEAN and REF-SEAM only; every mandatory optic criterion must pass unambiguously.",
+  "best_candidate_seed": 42,
+  "best_candidate_gate": "FAIL",
+  "overall_optic_gate": "FAIL",
+  "candidates": [
+    {
+      "seed": 42,
+      "rank": 1,
+      "gate": "FAIL",
+      "comparison_to_r06": "PLY byte-identical to R06 baseline",
+      "passes": ["autumn_hedgehog_impression", "compact_low_silhouette", "short_snout_and_nose_geometry", "two_round_ears", "round_eye_geometry", "four_short_feet_across_views", "arched_overlapping_back", "exactly_one_maple_leaf_reference_side", "no_second_maple_leaf"],
+      "fails": ["clear_round_body_and_free_face", "reference_like_leaf_spine_direction_and_density", "no_unnatural_forehead_eye_snout_occlusion", "natural_body_back_boundary_per_ref_seam"],
+      "reason": "Best overall match, but the R06 facial overhang and REF-SEAM violation are reproduced exactly."
+    },
+    {
+      "seed": 7,
+      "rank": 2,
+      "gate": "FAIL",
+      "passes": ["autumn_hedgehog_impression", "compact_low_silhouette", "short_snout_and_nose_geometry", "two_round_ears", "round_eye_geometry", "four_short_feet_across_views", "arched_overlapping_back", "no_second_maple_leaf"],
+      "fails": ["clear_round_body_and_free_face", "reference_like_leaf_spine_direction_and_density", "no_unnatural_forehead_eye_snout_occlusion", "exactly_one_maple_leaf_reference_side", "natural_body_back_boundary_per_ref_seam"],
+      "reason": "Radial crown-like spines cross the forehead and central face; the distinct single maple leaf is absent."
+    },
+    {
+      "seed": 123,
+      "rank": 3,
+      "gate": "FAIL",
+      "passes": ["autumn_hedgehog_impression", "compact_low_silhouette", "short_snout_and_nose_geometry", "two_round_ears", "round_eye_geometry", "four_short_feet_across_views", "arched_overlapping_back", "no_second_maple_leaf"],
+      "fails": ["clear_round_body_and_free_face", "reference_like_leaf_spine_direction_and_density", "no_unnatural_forehead_eye_snout_occlusion", "exactly_one_maple_leaf_reference_side", "natural_body_back_boundary_per_ref_seam"],
+      "reason": "The face is still crowned and crossed by spine forms; direction, seam boundary, and the single maple leaf do not match."
+    },
+    {
+      "seed": 777,
+      "rank": 4,
+      "gate": "FAIL",
+      "passes": ["autumn_hedgehog_impression", "short_snout_and_nose_geometry", "two_round_ears", "round_eye_geometry", "arched_overlapping_back", "no_second_maple_leaf", "no_unnatural_forehead_eye_snout_occlusion"],
+      "fails": ["compact_low_silhouette", "clear_round_body_and_free_face", "four_short_visible_feet", "reference_like_leaf_spine_direction_and_density", "exactly_one_maple_leaf_reference_side", "natural_body_back_boundary_per_ref_seam"],
+      "reason": "A large unwanted planar background/base is part of the raw mesh; the candidate also lacks the distinct single maple leaf."
+    }
+  ],
+  "cad_fdm_authorized": false,
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "No required user datum is missing; STOPP is mandated by the failed optic gate."
+}

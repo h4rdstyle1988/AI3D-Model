@@ -1,0 +1,335 @@
+{
+  "candidate": "herbst-igel-r02-trellis-optik-retry-r07-stopp",
+  "file_count": 65,
+  "files": [
+    {
+      "bytes": 431,
+      "path": "GEOMETRY-NOT-CREATED.txt",
+      "sha256": "aeab7ce489b2d2df8dd7be10f518cf80fe5e887a56dda4490d226d583e2cf2f4"
+    },
+    {
+      "bytes": 17344,
+      "path": "reference-audit/ref-clean-r07.jpg",
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "bytes": 11788,
+      "path": "reference-audit/ref-seam-r07.jpg",
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "bytes": 2464,
+      "path": "reference-audit/reference-gate-audit-r07.json",
+      "sha256": "b52a955ed43af7467091cb3356984a7e21a7801f266330ea9516e114278e40cf"
+    },
+    {
+      "bytes": 992,
+      "path": "REFERENCE-GATE-R07.md",
+      "sha256": "2f887c5f9a8a08fb9f7d1b90a2ef6bea68771fb51e1ac60341957acd035738df"
+    },
+    {
+      "bytes": 1084475,
+      "path": "renders-optik-gate/candidate-comparison-r07.png",
+      "sha256": "b0c46ce6bb425c5b7b5126f8291de0a94886b605a7c9c382e93a259c837022ed"
+    },
+    {
+      "bytes": 354051,
+      "path": "renders-optik-gate/seed-00000007/raw-3q-front.png",
+      "sha256": "d0dbe380829633211ddc0414d07fc1b524a8a5ba333897f86069a60bee82ccd5"
+    },
+    {
+      "bytes": 250824,
+      "path": "renders-optik-gate/seed-00000007/raw-bottom.png",
+      "sha256": "8a8d46c0aa8ba876ffaff8b088930c252fd1a38df4a36bfa672a1afc4e5bb2a7"
+    },
+    {
+      "bytes": 774585,
+      "path": "renders-optik-gate/seed-00000007/raw-contact-sheet.png",
+      "sha256": "ec44b021a7ce993a99a7859447c530d2171c568833316baeea94d9e29c0c47dc"
+    },
+    {
+      "bytes": 369052,
+      "path": "renders-optik-gate/seed-00000007/raw-left.png",
+      "sha256": "cd2b3d10a032991608f823bb34672b393196b80ce2d43300ccea789a28cdc695"
+    },
+    {
+      "bytes": 291564,
+      "path": "renders-optik-gate/seed-00000007/raw-rear.png",
+      "sha256": "b3d3efcb9c43ddd46f3d9ad2e6793be48f8f251bd8a47ebaaf4cce5325d10c3a"
+    },
+    {
+      "bytes": 361153,
+      "path": "renders-optik-gate/seed-00000007/raw-right.png",
+      "sha256": "c9a641e6c1d4a99f1a9d826bb30cf03ef8d9d061add13080a47e9514bcdafe64"
+    },
+    {
+      "bytes": 300759,
+      "path": "renders-optik-gate/seed-00000007/raw-top.png",
+      "sha256": "7bb1b9e678d9c9aa74fad694c49f7c8564f9fdd632d0517c0d480967c4a74c15"
+    },
+    {
+      "bytes": 311149,
+      "path": "renders-optik-gate/seed-00000042/raw-3q-front.png",
+      "sha256": "169c229b280799c43ec6c4d2793b28a7656942b34be4fb00fb669d5b45699641"
+    },
+    {
+      "bytes": 329394,
+      "path": "renders-optik-gate/seed-00000042/raw-bottom.png",
+      "sha256": "60ac4a14f9edf378815099b3c31af1ac2f3a78ca4246766f372bc30f8ba063eb"
+    },
+    {
+      "bytes": 772505,
+      "path": "renders-optik-gate/seed-00000042/raw-contact-sheet.png",
+      "sha256": "2bb71077d9c2ad27ac58a0b5427a985bcf3900f5dc58b3f9de5b7553f136c909"
+    },
+    {
+      "bytes": 320395,
+      "path": "renders-optik-gate/seed-00000042/raw-left.png",
+      "sha256": "4a2be3b3b67bd5e8c279817499a7d245f05347e198bfe3fb5e1832893ac0e04e"
+    },
+    {
+      "bytes": 310297,
+      "path": "renders-optik-gate/seed-00000042/raw-rear.png",
+      "sha256": "8aa062e52db1abec653fc53efcc13bc92724b2c74dfe73eae6ea448ee6daf077"
+    },
+    {
+      "bytes": 290539,
+      "path": "renders-optik-gate/seed-00000042/raw-right.png",
+      "sha256": "b136e47cc6bdd2eb93ba8ca6d9136b1311ce328ef4bbd83bb64f25388475e718"
+    },
+    {
+      "bytes": 300825,
+      "path": "renders-optik-gate/seed-00000042/raw-top.png",
+      "sha256": "566b89918fd342d9080c37913aa8898dcb5f789e336739e2152333fa65ba5ed7"
+    },
+    {
+      "bytes": 352075,
+      "path": "renders-optik-gate/seed-00000123/raw-3q-front.png",
+      "sha256": "ec77ae3b224a8d47e2ae564f4c316c316200c1e43dffe03aa0deea449518c456"
+    },
+    {
+      "bytes": 264979,
+      "path": "renders-optik-gate/seed-00000123/raw-bottom.png",
+      "sha256": "108cf481cfd0a1c9451c97ef3109adaec4f8e3c037499421138793542edb9652"
+    },
+    {
+      "bytes": 801677,
+      "path": "renders-optik-gate/seed-00000123/raw-contact-sheet.png",
+      "sha256": "2028a09b258a04ec26623149cac15f8d906721f1a4358ab7afb7bc1b7a239969"
+    },
+    {
+      "bytes": 375306,
+      "path": "renders-optik-gate/seed-00000123/raw-left.png",
+      "sha256": "7b22adbed9c2ba78087c8fd50b5de36fb3ea882161e0aac89c5e5eefc8d4c048"
+    },
+    {
+      "bytes": 307081,
+      "path": "renders-optik-gate/seed-00000123/raw-rear.png",
+      "sha256": "0693c4292d2737dbba77a4104d257b46e8aa1be9f2c896afe3c071a95ef7ddd8"
+    },
+    {
+      "bytes": 380678,
+      "path": "renders-optik-gate/seed-00000123/raw-right.png",
+      "sha256": "a293b5b0abb2a7aa43a676a59028ba9156e1bdbd605f06467d5c4a8c8b07d0ed"
+    },
+    {
+      "bytes": 316270,
+      "path": "renders-optik-gate/seed-00000123/raw-top.png",
+      "sha256": "3afffb312327a40505194fe4fa4bafc744e81c2cd71e478231bc058415ccf759"
+    },
+    {
+      "bytes": 56252,
+      "path": "renders-optik-gate/seed-00000777/raw-3q-front.png",
+      "sha256": "a9468c8382c9325c241b2192b7a00145b0457a42b6f6d4fa78a85ff06ec317d0"
+    },
+    {
+      "bytes": 64919,
+      "path": "renders-optik-gate/seed-00000777/raw-bottom.png",
+      "sha256": "2a24fe5ee0514514155e456de1ce82cc9df5c022a7e934a12fcb61a4a44150c9"
+    },
+    {
+      "bytes": 203332,
+      "path": "renders-optik-gate/seed-00000777/raw-contact-sheet.png",
+      "sha256": "c7dc1da83486a98a9192bbd6d997005a02052eaa08813f1108fbd3e29608c1a9"
+    },
+    {
+      "bytes": 82802,
+      "path": "renders-optik-gate/seed-00000777/raw-left.png",
+      "sha256": "10ee20da7e2d6b4e55faafa7fdd845663fc3c4fc68accabceae2182d75ebfa09"
+    },
+    {
+      "bytes": 94689,
+      "path": "renders-optik-gate/seed-00000777/raw-rear.png",
+      "sha256": "9a1128105a4f00ac2d3e19a9bde8464b630728f37b3d3513b6a50e30f8ab5e62"
+    },
+    {
+      "bytes": 81774,
+      "path": "renders-optik-gate/seed-00000777/raw-right.png",
+      "sha256": "4cf62d2b98854ff6ce601b8982b44d6d068bc95b1a74066dead4469635085c63"
+    },
+    {
+      "bytes": 93519,
+      "path": "renders-optik-gate/seed-00000777/raw-top.png",
+      "sha256": "8d9fef0b680001120da3dab0fa457cada0641013adda38bc6c10726d9e9e2500"
+    },
+    {
+      "bytes": 3562,
+      "path": "reports/candidate-optic-comparison-r07.json",
+      "sha256": "0d0b0fd023813f16286a82899d782f2204061beb34a5567239842497c4fbc347"
+    },
+    {
+      "bytes": 9537,
+      "path": "reports/raw-mesh-inspection-r07.json",
+      "sha256": "9a1353d84180e2a2403c017d83555f528f02406d42a48a9333778543b6c6bd1a"
+    },
+    {
+      "bytes": 8369,
+      "path": "reproduction-scripts/render_and_inspect_candidates_r07.py",
+      "sha256": "f8c10c8469fb7f33e83d52c8756afd26876c4c21cee41b83c11d697985ab594b"
+    },
+    {
+      "bytes": 4648,
+      "path": "reproduction-scripts/run_trellis_candidates_r07.py",
+      "sha256": "e92b914678c0033bd99613a80e14c47922e23e01c8ea410cde3a09e1bdf68705"
+    },
+    {
+      "bytes": 4023,
+      "path": "reproduction-scripts/verify_references_r07.py",
+      "sha256": "c41dbcba122dd85356d3e719e43d2466224888009547f5463171de26e87a7615"
+    },
+    {
+      "bytes": 1948,
+      "path": "reproduction-scripts/write_artifact_manifest_r07.py",
+      "sha256": "f32b2ddaeac1506e45671fb6fc75a3b89147994b7471ebf58faaeaa631c45dfc"
+    },
+    {
+      "bytes": 1319,
+      "path": "result-status.json",
+      "sha256": "eab0693728b13cd1f374ac0ffa1eb7edfeba08738aa21d0225d97208f0aaa61c"
+    },
+    {
+      "bytes": 1177,
+      "path": "REVISION-R02-R07.md",
+      "sha256": "72ce8332dfdb511b6641f6f1a5058690c2f68a3e101ee59e8d08bbc7e96ffbfd"
+    },
+    {
+      "bytes": 4090,
+      "path": "SOLL-IST-OPTIK-GATE-R07.md",
+      "sha256": "b3cb1e3df44e1a3a335a1a442bc4ab779338d9e58259c4df4cb3c0024cf7827f"
+    },
+    {
+      "bytes": 35017780,
+      "path": "trellis-raw/seed-00000007/herbst-igel-r02-trellis-raw-seed-7.glb",
+      "sha256": "c91495a1682e4e5b733a1a2415d0f038512c8e3deb96c98d17c46c92c7c0f2ae"
+    },
+    {
+      "bytes": 36960778,
+      "path": "trellis-raw/seed-00000007/herbst-igel-r02-trellis-raw-seed-7.ply",
+      "sha256": "020b37f90366be26dfeb812495275136a429b599f2d3a10c1460af75a7c6393c"
+    },
+    {
+      "bytes": 258496,
+      "path": "trellis-raw/seed-00000007/herbst-igel-r02-trellis-raw-seed-7_cutout.png",
+      "sha256": "fc24c21784259dba9641c7093b726147117312d724696a5cb67f38c04c01e22e"
+    },
+    {
+      "bytes": 3825,
+      "path": "trellis-raw/seed-00000007/trellis-cli-seed-7-res512-r07.log",
+      "sha256": "27f08a61ee4d5310d91ea546e6be6b97567d4b53e931e72e93863e53b9ced9bc"
+    },
+    {
+      "bytes": 2835,
+      "path": "trellis-raw/seed-00000007/trellis-run-r07.json",
+      "sha256": "d77765880f4217216f2fa06bd3f78ff8a2a2dee38c906fe3fc0dc7d60e24fc37"
+    },
+    {
+      "bytes": 15687328,
+      "path": "trellis-raw/seed-00000042/herbst-igel-r02-trellis-raw-seed-42.glb",
+      "sha256": "28c0b12344857143c8f964c2bda8d66173676c97f0cbee2b8903e5a59011a0dc"
+    },
+    {
+      "bytes": 16557141,
+      "path": "trellis-raw/seed-00000042/herbst-igel-r02-trellis-raw-seed-42.ply",
+      "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6"
+    },
+    {
+      "bytes": 258496,
+      "path": "trellis-raw/seed-00000042/herbst-igel-r02-trellis-raw-seed-42_cutout.png",
+      "sha256": "fc24c21784259dba9641c7093b726147117312d724696a5cb67f38c04c01e22e"
+    },
+    {
+      "bytes": 3825,
+      "path": "trellis-raw/seed-00000042/trellis-cli-seed-42-res512-r07.log",
+      "sha256": "61c7012fb5b5e94a0d445be59f28b984d9e03fbb388ebdc71009f658a8efc31a"
+    },
+    {
+      "bytes": 2842,
+      "path": "trellis-raw/seed-00000042/trellis-run-r07.json",
+      "sha256": "3240eecb24e7eb1304340ed941733b4d10881e0997396cd8725574d9c8672433"
+    },
+    {
+      "bytes": 37943560,
+      "path": "trellis-raw/seed-00000123/herbst-igel-r02-trellis-raw-seed-123.glb",
+      "sha256": "23ce02888be0fd99eaaf22cbdefef8788e6734c5b5c6be5624f01c7c4c9a875a"
+    },
+    {
+      "bytes": 40048975,
+      "path": "trellis-raw/seed-00000123/herbst-igel-r02-trellis-raw-seed-123.ply",
+      "sha256": "3f0e02bb0a23fb8a9530439047ddf2eab7ad105fbeb1b096a48162fc0cce0613"
+    },
+    {
+      "bytes": 258496,
+      "path": "trellis-raw/seed-00000123/herbst-igel-r02-trellis-raw-seed-123_cutout.png",
+      "sha256": "fc24c21784259dba9641c7093b726147117312d724696a5cb67f38c04c01e22e"
+    },
+    {
+      "bytes": 3838,
+      "path": "trellis-raw/seed-00000123/trellis-cli-seed-123-res512-r07.log",
+      "sha256": "b46130f542e67500ab4c6096b1695cafafa4ba31fc8cd595d740b349def0bf21"
+    },
+    {
+      "bytes": 2849,
+      "path": "trellis-raw/seed-00000123/trellis-run-r07.json",
+      "sha256": "079aebeb5abdb216bcc6515379dc013fc61c050bf205b578a96686a72d9ac30c"
+    },
+    {
+      "bytes": 20444644,
+      "path": "trellis-raw/seed-00000777/herbst-igel-r02-trellis-raw-seed-777.glb",
+      "sha256": "52541b8d1df165a46ab4e2f9812fad1aee6197463cb0270e95c8f1956f276d41"
+    },
+    {
+      "bytes": 21594770,
+      "path": "trellis-raw/seed-00000777/herbst-igel-r02-trellis-raw-seed-777.ply",
+      "sha256": "29e71d286e6a7ee3c617c2324c7f07c3b02033fbd0eaae834e10eebbb7652e5c"
+    },
+    {
+      "bytes": 258496,
+      "path": "trellis-raw/seed-00000777/herbst-igel-r02-trellis-raw-seed-777_cutout.png",
+      "sha256": "fc24c21784259dba9641c7093b726147117312d724696a5cb67f38c04c01e22e"
+    },
+    {
+      "bytes": 3831,
+      "path": "trellis-raw/seed-00000777/trellis-cli-seed-777-res512-r07.log",
+      "sha256": "6afac8c1e646297fbeb8c8d853b2012399eae0143754b1c1d1360dc5dec99557"
+    },
+    {
+      "bytes": 2849,
+      "path": "trellis-raw/seed-00000777/trellis-run-r07.json",
+      "sha256": "d48bbf1a19d8f748f4a2368ad04ccd2c944048aa00e587a32a3004dd691c50f5"
+    },
+    {
+      "bytes": 2415,
+      "path": "TRELLIS-REPRODUKTION-R07.md",
+      "sha256": "daaaeaffc4d3240ca0ff0e8e676f2c40e2157afc61420533dab05b04ade3faa2"
+    },
+    {
+      "bytes": 3235,
+      "path": "VALIDIERUNG-R02-R07.json",
+      "sha256": "c22f6fb309a3e102eb23216ef1d9d24508498f6096de9228e5c21a76772b9df3"
+    }
+  ],
+  "schema": "ai3d.artifact-manifest.v1",
+  "task": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-OPTIK-RETRY-R07.md",
+  "task_blob_sha": "fe7cae0d613379fbd22e00b12320f764ee8818ed",
+  "total_bytes": 235289916
+}

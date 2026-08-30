@@ -1,0 +1,9 @@
+STOPP am verbindlichen OPTIK-GATE.
+
+Die vier nativen Trellis-Rohkandidaten wurden erzeugt und unverändert archiviert.
+Keiner besteht das Optik-Gate eindeutig. Deshalb wurden keine CAD-/FDM-Geometrie,
+keine zwei Hohlschalen, keine Koerper-/Ruecken-STL, keine Montage-GLB/3MF und
+keine Steckverbindung erzeugt.
+
+Dies ist die vorgeschriebene Gate-Folge und kein Toolchain- oder Referenzfehler.
+NUTZERENTSCHEIDUNG_ERFORDERLICH: false
