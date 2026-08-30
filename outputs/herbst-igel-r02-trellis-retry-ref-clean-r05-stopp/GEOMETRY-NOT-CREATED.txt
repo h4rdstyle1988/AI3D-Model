@@ -1,0 +1,13 @@
+STATUS: STOPP / OFFEN
+PHASE: REFERENZ-PREFLIGHT
+
+Keine Trellis-, CAD-, Mesh-, STL-, GLB-, 3MF- oder Render-Geometrie erzeugt.
+Grund: Die zwingende REF-CLEAN ist nach exaktem R05-Concatenate/Decode nur
+40820 statt 40823 Byte lang, hat nicht den autorisierten SHA-256 und besteht
+den strikten JPEG-Decode nicht. Technische Reparaturkandidaten treffen die
+autorisierte Bildidentitaet nicht. Der Auftrag verbietet die Fortsetzung vor
+einem erfolgreichen Referenz-Gate.
+
+NUTZERENTSCHEIDUNG_ERFORDERLICH: true
+FINALE_PRODUKTFREIGABE: false
+

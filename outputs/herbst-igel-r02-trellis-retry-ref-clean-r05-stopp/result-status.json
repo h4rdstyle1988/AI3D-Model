@@ -1,0 +1,44 @@
+{
+  "schema": "ai3d-result-status-v1",
+  "task": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-RETRY-REF-CLEAN-R05.md",
+  "task_blob_sha1": "0ebad9ce7405b87e8d858dd9f89a6de97bb02890",
+  "product_revision": "R02",
+  "retry_revision": "R05",
+  "status": "STOPP",
+  "PASS_STOPP_OFFEN": "STOPP",
+  "phase_reached": "REFERENCE_PREFLIGHT",
+  "final_product_approval": false,
+  "main_files": [
+    "REFERENCE-GATE-R05.md",
+    "REVISION-R02-R05.md",
+    "GEOMETRY-NOT-CREATED.txt",
+    "VALIDIERUNG-R02-R05.json",
+    "result-status.json",
+    "reports/reference-gate-audit-r05.json",
+    "reproduction-scripts/verify_reference_gate_r05.py"
+  ],
+  "validations": {
+    "task_and_queue_identity": "PASS",
+    "primary_ref_clean_base64_concat_and_single_decode": "PASS",
+    "primary_ref_clean_size": "FAIL",
+    "primary_ref_clean_sha256": "FAIL",
+    "primary_ref_clean_strict_decode": "FAIL",
+    "seam_reference_sha256_and_strict_decode": "PASS",
+    "authorized_identity_recoverable_from_existing_bytes": "FAIL",
+    "forbidden_reference_substitution_avoided": "PASS",
+    "trellis_not_started_after_failed_reference_gate": "PASS",
+    "cad_stl_not_started_after_failed_reference_gate": "PASS",
+    "previous_results_preserved": "PASS",
+    "only_task_related_files_changed": "PASS"
+  },
+  "open_real_tests": [
+    "supply the exact authorized 40823-byte REF-CLEAN or approve another concrete primary source",
+    "Trellis reconstruction and optical gate after a valid reference",
+    "CAD/STL/assembly and technical validation only after optical PASS",
+    "slicer and physical print/fit/glue/support/surface tests",
+    "final user optical and product/print approval"
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": true,
+  "nutzerentscheidung_grund": "Die autorisierte 40823-Byte-REF-CLEAN mit dem festgelegten SHA-256 fehlt real; der freigegebene R05-Transport ist um drei dekodierte Bytes unvollständig und nicht byteidentisch rekonstruierbar."
+}
+

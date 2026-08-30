@@ -1,0 +1,121 @@
+{
+  "schema": "ai3d-reference-gate-audit-v1",
+  "task": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-RETRY-REF-CLEAN-R05.md",
+  "task_blob_sha1": "0ebad9ce7405b87e8d858dd9f89a6de97bb02890",
+  "queue_head": "tasks/TASK-HERBST-IGEL-R02-TRELLIS-RETRY-REF-CLEAN-R05.md",
+  "current_task_migration_file": "NONE",
+  "ref_clean": {
+    "source_parts": [
+      "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R05.part01.b64",
+      "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R05.part02.b64",
+      "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R05.part03.b64",
+      "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R05.part04.b64",
+      "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R05.part05.b64",
+      "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R05.part06.b64",
+      "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R05.part07.b64",
+      "tasks/TASK-HERBST-IGEL-R02-REF-CLEAN-R05.part08.b64"
+    ],
+    "part_bytes": [
+      6996,
+      7000,
+      7000,
+      7000,
+      7000,
+      7000,
+      7000,
+      5432
+    ],
+    "part_git_blob_sha1": [
+      "0e573f4aa0fb34ee0159921fc7191f17ed886494",
+      "201cfd41405b3f55c8d6f857946c01889992e4d9",
+      "f3f82aa2af90362fb2d248ed8cc40aad71e35b81",
+      "b7489648aa52eb3661144d44f0748f18a394f440",
+      "3da446659bce761635c931fd5aed5b22b1268e78",
+      "803a27b4fa4f542b6925a239b8b2548c6e5727e1",
+      "2cc1bb6bce63a0518ad84145d99b5220a572d69e",
+      "cd2f9bf25eb61066143f6401ee5acf422686864c"
+    ],
+    "concatenated_base64_bytes": 54428,
+    "expected_base64_bytes_for_40823_byte_payload": 54432,
+    "base64_byte_deficit": 4,
+    "strict_base64_decode": true,
+    "base64_error": null,
+    "decoded_bytes": 40820,
+    "expected_decoded_bytes": 40823,
+    "decoded_byte_deficit": 3,
+    "decoded_sha256": "6d43cf922b2edc3b049a30b682c16f77be62a369f23ba691551b3a8c9490b586",
+    "expected_sha256": "2d127f873be82c7247f4c67345821d68edd2a0f8a0c2dab20d24a5e27a3ce8a2",
+    "hash_match": false,
+    "jpeg_soi": true,
+    "jpeg_eoi": true,
+    "strict_decode_complete": false,
+    "strict_decode_error": "UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x0000018500160360>",
+    "image": null,
+    "transport_diagnosis": {
+      "second_dqt_marker_offset": 89,
+      "second_dqt_declared_length": 67,
+      "expected_next_marker_offset": 158,
+      "actual_sof0_marker_offset": 155,
+      "missing_decoded_bytes_within_second_dqt": 3
+    },
+    "standard_dqt_repair_candidate": {
+      "method": "insert standard repeated DQT tail 0x14 0x14 0x14 at decoded offset 155",
+      "bytes": 40823,
+      "sha256": "4d5d46465e2ab1f61636bc8045fa8ed392555f6e3a2fe873d9cc97836b7dd980",
+      "hash_match": false,
+      "strict_decode_complete": true,
+      "image": {
+        "format": "JPEG",
+        "dimensions_px": [
+          512,
+          512
+        ],
+        "mode": "RGB"
+      },
+      "decode_error": null,
+      "accepted_as_reference": false
+    },
+    "constrained_dqt_recovery": {
+      "search_space": "three quantization values 1..30 at all 62 DQT insertion boundaries",
+      "attempts": 1674000,
+      "target_match": null,
+      "status": "FAIL"
+    },
+    "matching_historical_git_blobs": [],
+    "checked_local_roots": [
+      "D:/AI3D-Agent/worker/AI3D-Model-worker",
+      "D:/AI3D-Agent",
+      "D:/3D-Models/generated",
+      "C:/Users/h4rds/Downloads",
+      "C:/Users/h4rds/Desktop",
+      "C:/Users/h4rds/Pictures",
+      "C:/Users/h4rds/AppData/Local/Temp",
+      "C:/Users/h4rds/.codex"
+    ],
+    "matching_local_files": [],
+    "authorized_identity_recoverable": false,
+    "status": "FAIL"
+  },
+  "ref_seam": {
+    "source": "tasks/TASK-HERBST-IGEL-R01-REF-SEAM.jpg.b64",
+    "decoded_bytes": 11788,
+    "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+    "expected_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+    "hash_match": true,
+    "strict_decode_complete": true,
+    "image": {
+      "format": "JPEG",
+      "dimensions_px": [
+        384,
+        384
+      ],
+      "mode": "RGB"
+    },
+    "role": "SEAM_ONLY_NOT_PRIMARY_FORM_SOURCE",
+    "status": "PASS"
+  },
+  "gate": "FAIL",
+  "decision": "STOPP_BEFORE_TRELLIS",
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": true,
+  "nutzerentscheidung_grund": "Die exakt autorisierte 40823-Byte-REF-CLEAN ist aus dem freigegebenen Transport und den vorhandenen lokalen Quellen nicht byteidentisch wiederherstellbar."
+}
