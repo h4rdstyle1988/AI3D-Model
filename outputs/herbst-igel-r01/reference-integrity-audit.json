@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R01.md",
+  "revision": "R01",
+  "task_blob_sha": "69fbc9d4cd70255c0014e890e58ebc05633fd678",
+  "status": "STOPP",
+  "references": [
+    {
+      "role": "authoritative_visual",
+      "source": "tasks/TASK-HERBST-IGEL-R01-REF-CLEAN.jpg.b64",
+      "source_sha256": "72232b0e5b91af4213a75ad480d82d919397f25e6f9e3898353aba740638de07",
+      "base64_characters": 15606,
+      "base64_length_modulo_4": 2,
+      "strict_base64_decode": "FAIL_EXCESS_PADDING",
+      "manifest_decoded_sha256": "8fc5ea79cee2ee2d4afac14ed2741a922e2159c68ff9cd87c3c7fdb377e2ac4c",
+      "permissive_decoded_sha256": "8ac51036e4cefe2a0b89306d3139b2f24dabd26e4c3ebd0e2898037513ce5a67",
+      "jpeg_start_hex": "ffd8",
+      "jpeg_end_hex": "fd90",
+      "integrity_match": false
+    },
+    {
+      "role": "authoritative_seam",
+      "source": "tasks/TASK-HERBST-IGEL-R01-REF-SEAM.jpg.b64",
+      "source_sha256": "db88ddf11d2b59c2ce19cfaa14905f221da54baca4acb69d9fed70354807dfd3",
+      "base64_characters": 15724,
+      "base64_length_modulo_4": 0,
+      "strict_base64_decode": "PASS",
+      "decoded_bytes": 11791,
+      "decoded_image_pixels": [384, 384],
+      "manifest_decoded_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "actual_decoded_sha256": "5924437732c1266b0af91ee5ad556d7ff8270fe639b05f7d529ac5ad7ddcfc1d",
+      "jpeg_start_hex": "ffd8",
+      "jpeg_end_hex": "ffd9",
+      "integrity_match": false
+    },
+    {
+      "role": "secondary_multiview",
+      "source": "tasks/TASK-HERBST-IGEL-R01-REF-MULTIVIEW-SECONDARY.jpg.b64",
+      "source_sha256": "44974ebdd5ebf34daa6e602e561df596754e14186ccd82f44f21fff79dab4804",
+      "base64_characters": 18190,
+      "base64_length_modulo_4": 2,
+      "strict_base64_decode": "FAIL_EXCESS_PADDING",
+      "manifest_decoded_sha256": "176b02bf201599563dd1af57bc07b9b00a1db5eef3e492999090b4954cc02482",
+      "permissive_decoded_sha256": "25de8321cdab19a77d044ac2c173e729f38e7ec39449ad058e3730906d033d55",
+      "jpeg_start_hex": "d21a",
+      "jpeg_end_hex": "fd90",
+      "image_decode": "FAIL_NOT_AN_IMAGE",
+      "integrity_match": false
+    }
+  ],
+  "git_object_recovery": {
+    "all_local_blobs": 752,
+    "candidate_blobs_checked": 134,
+    "candidate_size_range_bytes": [5000, 2000000],
+    "raw_sha256_matches": 0,
+    "base64_decoded_sha256_matches": 0,
+    "matching_alternate_history_versions": 0
+  },
+  "quarantined_diagnostic_artifact": {
+    "path": "outputs/herbst-igel-r01/INVALID-DO-NOT-USE-REF-SEAM.bin",
+    "sha256": "5924437732c1266b0af91ee5ad556d7ff8270fe639b05f7d529ac5ad7ddcfc1d",
+    "status": "INVALID_DO_NOT_USE",
+    "reason": "Dekodierbarer Diagnoseinhalt stimmt nicht mit dem verbindlichen Manifest-SHA-256 überein."
+  },
+  "safe_to_construct": false,
+  "nutzerentscheidung_erforderlich": true,
+  "nutzerentscheidung_grund": "Autoritative Referenzdaten fehlen oder widersprechen ihren verbindlichen Manifest-Hashes; geschützte Außenform und Trennlinie dürfen nicht geraten werden.",
+  "final_product_approval": false
+}

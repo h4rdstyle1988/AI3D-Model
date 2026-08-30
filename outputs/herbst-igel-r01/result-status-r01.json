@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R01.md",
+  "revision": "R01",
+  "task_blob_sha": "69fbc9d4cd70255c0014e890e58ebc05633fd678",
+  "status": "STOPP",
+  "main_files": [
+    "outputs/herbst-igel-r01/PREFLIGHT-STOPP-REPORT.md",
+    "outputs/herbst-igel-r01/reference-integrity-audit.json",
+    "outputs/herbst-igel-r01/GEOMETRY-NOT-CREATED.txt",
+    "outputs/herbst-igel-r01/INVALID-DO-NOT-USE-REF-SEAM.bin",
+    "outputs/herbst-igel-r01/result-status-r01.json"
+  ],
+  "requested_geometry_files": [
+    {
+      "path": "outputs/herbst-igel-r01/herbst-igel-r01-koerper.stl",
+      "status": "NOT_CREATED"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/herbst-igel-r01-ruecken.stl",
+      "status": "NOT_CREATED"
+    },
+    {
+      "path": "outputs/herbst-igel-r01/herbst-igel-r01-montage.glb",
+      "status": "NOT_CREATED"
+    }
+  ],
+  "validations": [
+    {
+      "name": "queue_release",
+      "status": "PASS",
+      "evidence": "tasks/TASK-HERBST-IGEL-R01.md ist in tasks/TASK_QUEUE.txt enthalten; tasks/CURRENT_TASK.txt enthält NONE."
+    },
+    {
+      "name": "task_identity",
+      "status": "PASS",
+      "evidence": "Git-Blob-SHA 69fbc9d4cd70255c0014e890e58ebc05633fd678."
+    },
+    {
+      "name": "reference_clean_integrity",
+      "status": "STOPP",
+      "evidence": "Ungültige Base64-Länge/überschüssiges Padding; permissiv dekodierter SHA-256 weicht vom Manifest ab und JPEG-Ende ist beschädigt."
+    },
+    {
+      "name": "reference_seam_integrity",
+      "status": "STOPP",
+      "evidence": "Dekodierter SHA-256 5924437732c1266b0af91ee5ad556d7ff8270fe639b05f7d529ac5ad7ddcfc1d statt Manifest-SHA-256 b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4."
+    },
+    {
+      "name": "reference_multiview_integrity",
+      "status": "STOPP",
+      "evidence": "Ungültige Base64-Länge und dekodierter Inhalt besitzt keinen JPEG-Header."
+    },
+    {
+      "name": "local_reference_recovery",
+      "status": "STOPP",
+      "evidence": "Kein passender Roh- oder dekodierter SHA-256 in erreichbarer Historie oder 752 lokalen Git-Blobs."
+    },
+    {
+      "name": "protected_geometry_unchanged",
+      "status": "PASS",
+      "evidence": "Keine CAD-, Mesh-, STL-, 3MF-, GLB-, Render- oder Druckdatei erzeugt; keine Nutzermaße oder Produktfunktionen verändert."
+    }
+  ],
+  "open_real_tests": [
+    "Originale REF-CLEAN-, REF-SEAM- und REF-MULTIVIEW-Dateien erneut bereitstellen und exakt gegen ein korrigiertes Manifest verifizieren.",
+    "Korrigierte Task-Version erneut ausdrücklich freigeben und queuen.",
+    "Erst danach CAD, Mesh, Maße, Montage, Druckorientierung, Support und optische SOLL/IST-Übereinstimmung prüfen.",
+    "Finale Produkt- und Druckfreigabe durch den Nutzer nach Sicht- und Realtest."
+  ],
+  "geometry_artifacts_generated": false,
+  "nutzerentscheidung_erforderlich": true,
+  "nutzerentscheidung_grund": "Ein erforderliches reales Referenzdatum fehlt bzw. widerspricht dem verbindlichen Manifest. Die geschützte Referenzoptik und Trennlinie können nicht eindeutig abgeleitet werden.",
+  "final_product_approval": false
+}

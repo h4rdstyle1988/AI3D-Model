@@ -1,0 +1,13 @@
+TASK: tasks/TASK-HERBST-IGEL-R01.md
+REVISION: R01
+STATUS: STOPP
+
+Keine CAD-, STL-, 3MF-, GLB-, Render- oder Druckdatei erzeugt.
+
+Grund: Keine der drei gespeicherten Referenzquellen reproduziert den im verbindlichen
+Referenzmanifest genannten SHA-256-Wert. REF-CLEAN und REF-MULTIVIEW sind außerdem
+formal beschädigt. Eine Konstruktion würde geschützte Optik, Proportionen und die
+verbindliche Trennlinie durch nicht erlaubte Annahmen ersetzen.
+
+NUTZERENTSCHEIDUNG_ERFORDERLICH: true
+FINALE_PRODUKTFREIGABE: false
