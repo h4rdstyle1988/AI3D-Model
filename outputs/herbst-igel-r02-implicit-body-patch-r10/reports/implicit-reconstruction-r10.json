@@ -1,0 +1,339 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-IMPLICIT-BODY-PATCH-R10.md",
+  "task_blob_sha": "18406bd6fc9d50ad033ed7cc41d1d5a8fe257383",
+  "operation": "local_smooth_implicit_body_reconstruction",
+  "source": {
+    "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/source-seed42/herbst-igel-r02-trellis-raw-seed-42.ply",
+    "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "expected_sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "byte_identical_seed42_gate": true,
+    "vertices": 436742,
+    "triangles": 870466,
+    "bounds_min": [
+      -0.23905783891677856,
+      -0.17113235592842102,
+      -0.21962818503379822
+    ],
+    "bounds_max": [
+      0.38938766717910767,
+      0.44926708936691284,
+      0.2805304527282715
+    ]
+  },
+  "problem_zone": {
+    "authority": "REF-CLEAN + REF-SEAM + copied R08/R09 diagnostics",
+    "projection": "unchanged R08/R09 affine X/Z transfer",
+    "lower_body_guard_normalized": -0.105,
+    "body_mask_pixels": 25547,
+    "protected_features": [
+      {
+        "name": "front_ear",
+        "center_px": [
+          103,
+          154
+        ],
+        "radius_px": 24
+      },
+      {
+        "name": "reference_side_ear",
+        "center_px": [
+          226,
+          174
+        ],
+        "radius_px": 30
+      },
+      {
+        "name": "front_eye",
+        "center_px": [
+          111,
+          210
+        ],
+        "radius_px": 18
+      },
+      {
+        "name": "reference_side_eye",
+        "center_px": [
+          205,
+          207
+        ],
+        "radius_px": 19
+      },
+      {
+        "name": "nose",
+        "center_px": [
+          79,
+          231
+        ],
+        "radius_px": 23
+      },
+      {
+        "name": "front_foot",
+        "center_px": [
+          124,
+          300
+        ],
+        "radius_px": 30
+      },
+      {
+        "name": "reference_side_foot",
+        "center_px": [
+          212,
+          306
+        ],
+        "radius_px": 34
+      }
+    ]
+  },
+  "adjacent_body_depth_measurement": {
+    "anchor_triangles": 10009,
+    "robust_y_percentiles": [
+      -0.1328873723745346,
+      0.38740418553352357
+    ],
+    "center_y": 0.1272584065794945,
+    "radius_y": 0.26014577895402907
+  },
+  "methods": {
+    "sdf": {
+      "description": "Gaussian-smoothed signed-distance field; closed marching-tetrahedra zero set"
+    },
+    "rbf": {
+      "description": "Gaussian RBF interpolation; closed marching-tetrahedra zero set",
+      "control_points": 324,
+      "gaussian_epsilon_normalized": 0.085,
+      "tikhonov_regularization": 0.00025,
+      "field_rmse_in_body_bbox": 0.015049324595324728,
+      "field_p95_abs_error_in_body_bbox": 0.03348981550226998
+    }
+  },
+  "variants": {
+    "sdf": {
+      "method": "Gaussian-smoothed signed-distance visual hull",
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/variants/herbst-igel-r02-implicit-sdf-r10-NON-APPROVED.ply",
+      "sha256": "7684693bf9cd27d3a0d503a1403c9c80a68cdcde33b37595e8b96350affe2750",
+      "bytes": 17045354,
+      "implicit_surface": {
+        "vertices": 75636,
+        "triangles": 137660,
+        "degenerate_triangles": 0,
+        "boundary_edges": 940,
+        "nonmanifold_edges": 0,
+        "watertight_edge_incidence": false,
+        "bounds_min": [
+          -0.24001697281151727,
+          -0.14175403165037706,
+          -0.1507300124164679
+        ],
+        "bounds_max": [
+          0.09659461559771096,
+          0.39627084480936603,
+          0.1470344182841702
+        ],
+        "faces_removed_for_measured_eye_nose_windows": 13595
+      },
+      "selection": {
+        "problem_triangles": 188722,
+        "removed_source_triangles": 169923,
+        "retained_source_triangles": 700543,
+        "retained_exterior_feature_triangles_in_problem": 18799,
+        "outside_roi_source_triangles": 681744,
+        "outside_roi_faces_preserved_exact": true,
+        "source_vertex_coordinates_modified": 0,
+        "feature_depth_measurements": [
+          {
+            "name": "front_ear",
+            "triangles_in_projected_guard": 29862,
+            "exterior_depth_quantiles_y": [
+              -0.04390861749649049,
+              0.19762269020080567
+            ],
+            "retained_exterior_depth_triangles": 7168
+          },
+          {
+            "name": "reference_side_ear",
+            "triangles_in_projected_guard": 24179,
+            "exterior_depth_quantiles_y": [
+              -0.1490851479768753,
+              0.41670915961265564
+            ],
+            "retained_exterior_depth_triangles": 5804
+          },
+          {
+            "name": "front_eye",
+            "triangles_in_projected_guard": 12109,
+            "exterior_depth_quantiles_y": [
+              -0.12472835570573806,
+              0.2584665286540985
+            ],
+            "retained_exterior_depth_triangles": 2906
+          },
+          {
+            "name": "reference_side_eye",
+            "triangles_in_projected_guard": 8164,
+            "exterior_depth_quantiles_y": [
+              -0.14140905916690827,
+              0.41185468912124634
+            ],
+            "retained_exterior_depth_triangles": 1960
+          },
+          {
+            "name": "nose",
+            "triangles_in_projected_guard": 20419,
+            "exterior_depth_quantiles_y": [
+              -0.12839339315891266,
+              0.109692602455616
+            ],
+            "retained_exterior_depth_triangles": 4902
+          },
+          {
+            "name": "front_foot",
+            "triangles_in_projected_guard": 39805,
+            "exterior_depth_quantiles_y": [
+              -0.07574330240488053,
+              0.2718968212604523
+            ],
+            "retained_exterior_depth_triangles": 9554
+          },
+          {
+            "name": "reference_side_foot",
+            "triangles_in_projected_guard": 24302,
+            "exterior_depth_quantiles_y": [
+              -0.11099682807922363,
+              0.40801158905029294
+            ],
+            "retained_exterior_depth_triangles": 5834
+          }
+        ]
+      },
+      "combined_vertices": 512378,
+      "combined_triangles": 838203,
+      "field_rmse_vs_smoothed_sdf_inside_roi": 0.0,
+      "preliminary_numeric_score_lower_is_better": 0.9400000000000001
+    },
+    "rbf": {
+      "method": "Gaussian radial-basis implicit visual hull",
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/variants/herbst-igel-r02-implicit-rbf-r10-NON-APPROVED.ply",
+      "sha256": "dc8f75804d9c8d4bfdc777e18af6fa844beac13cd8df610c78303eadb39ac5bc",
+      "bytes": 16981519,
+      "implicit_surface": {
+        "vertices": 73964,
+        "triangles": 134293,
+        "degenerate_triangles": 0,
+        "boundary_edges": 1007,
+        "nonmanifold_edges": 0,
+        "watertight_edge_incidence": false,
+        "bounds_min": [
+          -0.2468602534692954,
+          -0.13725773715326056,
+          -0.1508879674511271
+        ],
+        "bounds_max": [
+          0.0977448511696589,
+          0.39177455031224956,
+          0.14361451130761563
+        ],
+        "faces_removed_for_measured_eye_nose_windows": 13577
+      },
+      "selection": {
+        "problem_triangles": 188722,
+        "removed_source_triangles": 169923,
+        "retained_source_triangles": 700543,
+        "retained_exterior_feature_triangles_in_problem": 18799,
+        "outside_roi_source_triangles": 681744,
+        "outside_roi_faces_preserved_exact": true,
+        "source_vertex_coordinates_modified": 0,
+        "feature_depth_measurements": [
+          {
+            "name": "front_ear",
+            "triangles_in_projected_guard": 29862,
+            "exterior_depth_quantiles_y": [
+              -0.04390861749649049,
+              0.19762269020080567
+            ],
+            "retained_exterior_depth_triangles": 7168
+          },
+          {
+            "name": "reference_side_ear",
+            "triangles_in_projected_guard": 24179,
+            "exterior_depth_quantiles_y": [
+              -0.1490851479768753,
+              0.41670915961265564
+            ],
+            "retained_exterior_depth_triangles": 5804
+          },
+          {
+            "name": "front_eye",
+            "triangles_in_projected_guard": 12109,
+            "exterior_depth_quantiles_y": [
+              -0.12472835570573806,
+              0.2584665286540985
+            ],
+            "retained_exterior_depth_triangles": 2906
+          },
+          {
+            "name": "reference_side_eye",
+            "triangles_in_projected_guard": 8164,
+            "exterior_depth_quantiles_y": [
+              -0.14140905916690827,
+              0.41185468912124634
+            ],
+            "retained_exterior_depth_triangles": 1960
+          },
+          {
+            "name": "nose",
+            "triangles_in_projected_guard": 20419,
+            "exterior_depth_quantiles_y": [
+              -0.12839339315891266,
+              0.109692602455616
+            ],
+            "retained_exterior_depth_triangles": 4902
+          },
+          {
+            "name": "front_foot",
+            "triangles_in_projected_guard": 39805,
+            "exterior_depth_quantiles_y": [
+              -0.07574330240488053,
+              0.2718968212604523
+            ],
+            "retained_exterior_depth_triangles": 9554
+          },
+          {
+            "name": "reference_side_foot",
+            "triangles_in_projected_guard": 24302,
+            "exterior_depth_quantiles_y": [
+              -0.11099682807922363,
+              0.40801158905029294
+            ],
+            "retained_exterior_depth_triangles": 5834
+          }
+        ]
+      },
+      "combined_vertices": 510706,
+      "combined_triangles": 834836,
+      "field_rmse_vs_smoothed_sdf_inside_roi": 0.019525654696546272,
+      "preliminary_numeric_score_lower_is_better": 1.0265256546965464
+    }
+  },
+  "preliminary_numeric_selection": "sdf",
+  "selected_master": {
+    "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/masterform/herbst-igel-r02-masterform-implicit-r10-NON-APPROVED.ply",
+    "sha256": "7684693bf9cd27d3a0d503a1403c9c80a68cdcde33b37595e8b96350affe2750",
+    "bytes": 17045354,
+    "status": "NON_APPROVED_PENDING_OPTIK_GATE"
+  },
+  "protected_geometry": {
+    "all_seed42_vertex_coordinates": "unchanged",
+    "outside_roi_source_faces": "retained exactly",
+    "back_and_maple_leaf_outside_problem_mask": "retained source geometry",
+    "feet_below_guard": "retained source geometry",
+    "feature_cores": "actual outer Seed-42 depth layers retained inside unchanged measured guards"
+  },
+  "forbidden_methods_used": {
+    "planar_caps": false,
+    "triangle_fans": false,
+    "convex_hull_visible_surface": false,
+    "block_hole_filler": false
+  },
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false
+}

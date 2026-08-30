@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-IMPLICIT-BODY-PATCH-R10.md",
+  "task_blob_sha": "18406bd6fc9d50ad033ed7cc41d1d5a8fe257383",
+  "product_revision": "R02",
+  "technical_revision": "R10",
+  "status": "STOPP",
+  "stop_phase": "OPTIK_GATE",
+  "reference_gate": {
+    "status": "PASS",
+    "clean_sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+    "seam_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+  },
+  "seed_42_source": {
+    "status": "PASS_BYTE_IDENTICAL_TO_R08_R09",
+    "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "expected_sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "vertices": 436742,
+    "triangles": 870466
+  },
+  "reconstruction": {
+    "status": "EXECUTED_TWO_VARIANTS_NON_MASTER",
+    "methods": [
+      "sdf",
+      "rbf"
+    ],
+    "selected": "sdf",
+    "master_sha256": "7684693bf9cd27d3a0d503a1403c9c80a68cdcde33b37595e8b96350affe2750",
+    "source_vertex_prefix_exact": true,
+    "outside_roi_source_faces_preserved_exact": true,
+    "implicit_local_surface": {
+      "vertices": 75636,
+      "triangles": 137660,
+      "degenerate_triangles": 0,
+      "boundary_edges": 940,
+      "nonmanifold_edges": 0,
+      "watertight_edge_incidence": false,
+      "bounds_min": [
+        -0.24001696705818176,
+        -0.14175403118133545,
+        -0.15073001384735107
+      ],
+      "bounds_max": [
+        0.09659461677074432,
+        0.39627084136009216,
+        0.1470344215631485
+      ],
+      "absolute_dihedral_degrees": {
+        "samples": 206020,
+        "median": 0.02797645330429077,
+        "p95": 7.848394870758057,
+        "maximum": 63.614105224609375
+      }
+    },
+    "local_cross_intersections": {
+      "method": "3D center-grid broadphase plus Moller segment/triangle narrowphase",
+      "cell_size_normalized": 0.012,
+      "candidate_pairs_narrowphase_or_distance_screened": 1736691,
+      "confirmed_non_coplanar_cross_intersections": 209,
+      "stopped_after_threshold": false,
+      "coplanar_overlap_counted": false,
+      "status": "FAIL"
+    }
+  },
+  "real_geometry_render_gate": {
+    "status": "PASS",
+    "source_is_actual_reconstructed_geometry": true,
+    "required_six_views_exist": true,
+    "variant_screening_exists": true,
+    "soll_ist_exists": true,
+    "files": [
+      {
+        "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-3q-front.png",
+        "exists": true,
+        "bytes": 188785,
+        "sha256": "771bbbb667f88d0680f9d69c4fa03e13624faf2acfb78154157b075e3b2ce851"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-left.png",
+        "exists": true,
+        "bytes": 221934,
+        "sha256": "caf682a7da73dc0f713510ee094540cabf663fa70f35fd3b1ec2d2a066cb29dc"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-right.png",
+        "exists": true,
+        "bytes": 203183,
+        "sha256": "a3805e743d937badcb120c6151f1e4e3ca852a43577ad27487ee238b4e12d48f"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-rear.png",
+        "exists": true,
+        "bytes": 200024,
+        "sha256": "91cf0daf7202eeccca362c874d8adc92343bec2281c0c98f4e9a31358d29c676"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-top.png",
+        "exists": true,
+        "bytes": 221923,
+        "sha256": "b8ae848347cd07ae9cab5a7782c70ccf7ae7b10530730da0e48629dd38f8e8c0"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-bottom.png",
+        "exists": true,
+        "bytes": 245122,
+        "sha256": "b996ef04cf1c63c21287c4a72f8c371631e67a7b4fc586e9c4b3220b14655bdd"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-contact-sheet-r10.png",
+        "exists": true,
+        "bytes": 662099,
+        "sha256": "4125ce01c3e16daa216c76932adeec5c8c1371250c75424cd0b9ca8d17023157"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/soll-ist-optik-gate-r10.png",
+        "exists": true,
+        "bytes": 761482,
+        "sha256": "1cb8695dbbd19aee642eab3e73473d14be0e383eeecb758e6c36f1afdf2e7014"
+      }
+    ]
+  },
+  "optic_gate": {
+    "status": "FAIL",
+    "failed_criteria": [
+      "free_round_reference_like_face",
+      "no_leaf_spine_overlap_of_forehead_eyes_snout",
+      "short_soft_snout_and_nose_clearly_retained",
+      "both_round_ears_and_eye_forms_clearly_retained",
+      "ref_seam_visual_continuity",
+      "no_visible_patch_hole_step_or_repair"
+    ],
+    "passed_protected_criteria": [
+      "four_short_feet_retained_in_source_geometry",
+      "arched_back_outside_roi_retained",
+      "one_visible_maple_leaf_retained",
+      "no_second_maple_leaf_added"
+    ],
+    "reason": "Real R10 renders show that the smooth low-frequency body field is present, but eyes/nose are not cleanly integrated, feature windows are visibly open, residual fused leaf/spine geometry reaches the forehead/face transition, and REF-SEAM remains discontinuous. SDF and RBF variants fail the same protected-feature integration gate."
+  },
+  "cad_fdm_phase": {
+    "status": "NOT_RUN_BY_OPTIK_GATE",
+    "manufacturing_artifacts_found": [],
+    "approved_master_created": false,
+    "split_created": false,
+    "body_stl_created": false,
+    "back_stl_created": false,
+    "connector_created": false,
+    "shell_and_wall_validation_run": false
+  },
+  "open_real_tests": [
+    "Physical print, fit, support, material and 200 mm production-scale tests remain inapplicable before an optical PASS."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Technical gate stop; no user dimension or product decision is missing.",
+  "final_user_approval_claimed": false
+}

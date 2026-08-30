@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-IMPLICIT-BODY-PATCH-R10.md",
+  "task_blob_sha": "18406bd6fc9d50ad033ed7cc41d1d5a8fe257383",
+  "revision": {
+    "product": "R02",
+    "technical": "R10"
+  },
+  "status": "STOPP",
+  "gate": "OPTIK_GATE",
+  "gate_result": "FAIL",
+  "summary": "Two smooth local implicit Seed-42 reconstructions (SDF and Gaussian RBF) were generated and screened. The selected SDF candidate preserves source coordinates outside the ROI but does not integrate the protected eyes/nose/ears without visible openings and residual face-zone overlap, so CAD/FDM did not run.",
+  "main_files": [
+    "outputs/herbst-igel-r02-implicit-body-patch-r10/SOLL-IST-OPTIK-GATE-R10.md",
+    "outputs/herbst-igel-r02-implicit-body-patch-r10/REVISION-R02-R10.md",
+    "outputs/herbst-igel-r02-implicit-body-patch-r10/VALIDIERUNG-R02-R10.json",
+    "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/soll-ist-optik-gate-r10.png",
+    "outputs/herbst-igel-r02-implicit-body-patch-r10/masterform/herbst-igel-r02-masterform-implicit-r10-NON-APPROVED.ply",
+    "outputs/herbst-igel-r02-implicit-body-patch-r10/artifact-manifest.json"
+  ],
+  "validations": {
+    "reference_gate": "PASS",
+    "seed42_hash_gate": "PASS",
+    "two_implicit_variants": "PASS_EXECUTED_NON_MASTER",
+    "outside_roi_coordinate_preservation": "PASS",
+    "six_real_geometry_renders": "PASS",
+    "local_open_edge_gate": "FAIL",
+    "local_cross_intersection_gate": "FAIL",
+    "optic_gate": "FAIL",
+    "cad_fdm_validation": "NOT_RUN_BY_GATE"
+  },
+  "artifacts_not_created_by_gate": [
+    "approved masterform",
+    "REF-SEAM split",
+    "body STL",
+    "back STL",
+    "assembly 3MF or GLB",
+    "connector and receptacle"
+  ],
+  "open_real_tests": [
+    "Physical print, fit, support, material and 200 mm production-scale tests remain inapplicable before an optical PASS."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Technical gate stop; no user dimension or product decision is missing.",
+  "final_user_approval_claimed": false
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-BODY-SURFACE-RECONSTRUCTION-R09.md",
+  "task_blob_sha": "ef3a16cc80c255d0e05c1a5e3773f2c9497c4c73",
+  "operation": "local_ref_seam_body_surface_reconstruction",
+  "source": {
+    "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/source-r08/herbst-igel-r02-trellis-raw-seed-42.ply",
+    "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "vertices": 436742,
+    "triangles": 870466
+  },
+  "selection": {
+    "projection": "unchanged R08 affine X/Z transfer to authoritative REF-SEAM",
+    "lower_body_guard_normalized": -0.105,
+    "removed_source_triangles": 137183,
+    "retained_source_triangles": 733283,
+    "retained_source_vertices": 369562,
+    "retained_source_vertex_coordinates_modified": 0,
+    "protected_reference_features": [
+      {
+        "name": "front_ear",
+        "center_px": [
+          103,
+          154
+        ],
+        "radius_px": 24
+      },
+      {
+        "name": "reference_side_ear",
+        "center_px": [
+          226,
+          174
+        ],
+        "radius_px": 30
+      },
+      {
+        "name": "front_eye",
+        "center_px": [
+          111,
+          210
+        ],
+        "radius_px": 18
+      },
+      {
+        "name": "reference_side_eye",
+        "center_px": [
+          205,
+          207
+        ],
+        "radius_px": 19
+      },
+      {
+        "name": "nose",
+        "center_px": [
+          79,
+          231
+        ],
+        "radius_px": 23
+      },
+      {
+        "name": "front_foot",
+        "center_px": [
+          124,
+          300
+        ],
+        "radius_px": 30
+      },
+      {
+        "name": "reference_side_foot",
+        "center_px": [
+          212,
+          306
+        ],
+        "radius_px": 34
+      }
+    ]
+  },
+  "adjacent_body_depth_measurement": {
+    "anchor_triangles": 10009,
+    "robust_y_percentiles": [
+      -0.1328873723745346,
+      0.38740418553352357
+    ],
+    "center_y": 0.1272584065794945,
+    "radius_y": 0.26014577895402907
+  },
+  "patch": {
+    "method": "REF-SEAM silhouette constrained two-sided rounded distance-field patch",
+    "grid_step_reference_pixels": 1,
+    "lower_overlap_guard_normalized": -0.155,
+    "center_y_from_adjacent_body": 0.1272584065794945,
+    "radius_y_from_adjacent_body": 0.26014577895402907,
+    "surface_inset_normalized": 0.0025,
+    "vertices": 46016,
+    "triangles": 90336
+  },
+  "output": {
+    "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/masterform/herbst-igel-r02-masterform-reconstructed-r09-NON-APPROVED.ply",
+    "sha256": "cda7fbd40bcaca15c59fcad58981154b6176bca7b59af982dbddd574f7cb78f8",
+    "bytes": 16500322,
+    "vertices": 482758,
+    "triangles": 823619,
+    "status": "NON_APPROVED_PENDING_OPTIK_GATE"
+  },
+  "protected_geometry": {
+    "all_source_vertex_coordinates": "unchanged",
+    "outside_local_problem_zone": "source triangles retained",
+    "nose_eyes_ears_feet": "source triangles retained by unchanged R08 measured masks",
+    "maple_leaf_and_back": "outside REF-SEAM body selection; source triangles retained"
+  },
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false
+}

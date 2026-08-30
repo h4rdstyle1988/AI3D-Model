@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-IMPLICIT-BODY-PATCH-R10.md",
+  "task_blob_sha": "18406bd6fc9d50ad033ed7cc41d1d5a8fe257383",
+  "revision": {
+    "product": "R02",
+    "technical": "R10"
+  },
+  "status": "STOPP",
+  "file_count_excluding_manifest": 39,
+  "files": [
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/CAD-STL-NOT-CREATED.txt",
+      "bytes": 325,
+      "sha256": "d1c0ba8efb43ccf9306566f71a62aa67c6eed7c81d5f5e82bb710dd18302725e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/diagnostics/problem-mask-and-controls-r10.png",
+      "bytes": 7380,
+      "sha256": "5e4573f6c3732f5ded43b597806704e6f284f123d076d876735d0aafa174ec5c"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/masterform/herbst-igel-r02-masterform-implicit-r10-NON-APPROVED.ply",
+      "bytes": 17045354,
+      "sha256": "7684693bf9cd27d3a0d503a1403c9c80a68cdcde33b37595e8b96350affe2750"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/reference-audit/ref-clean-r10.jpg",
+      "bytes": 17344,
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/reference-audit/ref-seam-r10.jpg",
+      "bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-3q-front.png",
+      "bytes": 188785,
+      "sha256": "771bbbb667f88d0680f9d69c4fa03e13624faf2acfb78154157b075e3b2ce851"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-bottom.png",
+      "bytes": 245122,
+      "sha256": "b996ef04cf1c63c21287c4a72f8c371631e67a7b4fc586e9c4b3220b14655bdd"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-contact-sheet-r10.png",
+      "bytes": 662099,
+      "sha256": "4125ce01c3e16daa216c76932adeec5c8c1371250c75424cd0b9ca8d17023157"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-left.png",
+      "bytes": 221934,
+      "sha256": "caf682a7da73dc0f713510ee094540cabf663fa70f35fd3b1ec2d2a066cb29dc"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-rear.png",
+      "bytes": 200024,
+      "sha256": "91cf0daf7202eeccca362c874d8adc92343bec2281c0c98f4e9a31358d29c676"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-right.png",
+      "bytes": 203183,
+      "sha256": "a3805e743d937badcb120c6151f1e4e3ca852a43577ad27487ee238b4e12d48f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-top.png",
+      "bytes": 221923,
+      "sha256": "b8ae848347cd07ae9cab5a7782c70ccf7ae7b10530730da0e48629dd38f8e8c0"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/raw-seed42-3q-front-comparison.png",
+      "bytes": 218550,
+      "sha256": "e89dcd7d3bf3aff206bc2da6f376f217f0b648b38d51380b8236a916d62028f5"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/soll-ist-optik-gate-r10.png",
+      "bytes": 761482,
+      "sha256": "1cb8695dbbd19aee642eab3e73473d14be0e383eeecb758e6c36f1afdf2e7014"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-rbf-3q-front.png",
+      "bytes": 133586,
+      "sha256": "2c87d051a3d31142b80e48e3d1a4683219a12b221c301d592f5f0b0195050c8a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-rbf-left.png",
+      "bytes": 149388,
+      "sha256": "8f8f06faadd3210c3a5cac778cde10f12d71454002f440287ecc863940e369cc"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-rbf-right.png",
+      "bytes": 141601,
+      "sha256": "41fed21a730a494a2eb9856ff5ec330161453e889c8b1336704f7e6069611811"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-screening-r10.png",
+      "bytes": 588325,
+      "sha256": "d753117b1a68fcaca751138234048ffffd59c9ac1744674ef5c0fc105106a7dc"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-sdf-3q-front.png",
+      "bytes": 134629,
+      "sha256": "b1cef366646f88509dae993dd3996a2a168737c96301476db766010454599a39"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-sdf-left.png",
+      "bytes": 151807,
+      "sha256": "ba4fa78e9ad7236a45496ca51a82c56ca53521a309282135a858f9cd27865594"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-sdf-right.png",
+      "bytes": 143907,
+      "sha256": "c827210dbcdf0c6fa719b99f80614ac309fe682480ab97a8e35f4060962fbc6b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/reports/implicit-reconstruction-r10.json",
+      "bytes": 11137,
+      "sha256": "1a4390b28d69322e0369db6fc0215c9b2f2f54eba7a35341fd1635379d84059d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/reports/real-geometry-renders-r10.json",
+      "bytes": 4473,
+      "sha256": "efe15f41961258f6b711bfe8a4a7ec6806a79af05b2f92d26a3d7a8a892327a8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/reports/toolchain-preflight-r10.json",
+      "bytes": 2916,
+      "sha256": "a8e2239775583832c771906e15c0180d0c91f4a7624c26b2ff1ba34ae65ff1a1"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/reproduction-scripts/reconstruct_implicit_body_r10.py",
+      "bytes": 32053,
+      "sha256": "3149882db6a485356b4267396ba339c1d8df08d30c628b53e89564cc49092299"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/reproduction-scripts/render_optik_gate_r10.py",
+      "bytes": 8489,
+      "sha256": "0816b6d80d02e1d06bfac3371dc11d2d0d3e194df7e7f76bffbffc333847b0af"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/reproduction-scripts/validate_r10.py",
+      "bytes": 14974,
+      "sha256": "2ff007696924c0577f46b4879273f2d3d0d2730cdfc71b5478c9b041adc919c9"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/reproduction-scripts/verify_artifact_manifest_r10.py",
+      "bytes": 1823,
+      "sha256": "949c2ef97e12c67dcca8e62733b3221e8fc9c30b69e8c14f012c4fdf6c5bb58a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/reproduction-scripts/write_artifact_manifest_r10.py",
+      "bytes": 1534,
+      "sha256": "8bd5aee64366d445b913634ff0f3bf251051729b476907080c3a6c48915bcf00"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/REPRODUKTION-R10.md",
+      "bytes": 2086,
+      "sha256": "964ffe673b3fddafab2379d84a5b47f40842c16dd72a4da01abf8b75791b399e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/result-status.json",
+      "bytes": 2129,
+      "sha256": "b625b22ce5e218023829cf28fd07baa7793d9e4d383f7248c4a67f793d9dafb9"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/REVISION-R02-R10.md",
+      "bytes": 2781,
+      "sha256": "4b2e5bef846ddaa157a28aa42ef82592b715a26aef8374be5f9801d42fe87863"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/SOLL-IST-OPTIK-GATE-R10.md",
+      "bytes": 2822,
+      "sha256": "ae5303a688e345732de59bf6abc054b46aededcbb592f998c1147e51b2b87565"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/source-diagnostics/body-surface-reconstruction-r09.json",
+      "bytes": 3278,
+      "sha256": "5c816359e091f12101afdb39824c6a581b75e9a2466f8b9f1ad4f10752040952"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/source-diagnostics/hidden-body-surface-analysis-r08.json",
+      "bytes": 1704,
+      "sha256": "e8945a98a288af611d2dd4155238837ace277a232dd7a500d70764caa3477f43"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/source-seed42/herbst-igel-r02-trellis-raw-seed-42.ply",
+      "bytes": 16557141,
+      "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/VALIDIERUNG-R02-R10.json",
+      "bytes": 6199,
+      "sha256": "19468a34127955fa92700a1c242bdda46e472d0e447697f442cd1f6e54b89dae"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/variants/herbst-igel-r02-implicit-rbf-r10-NON-APPROVED.ply",
+      "bytes": 16981519,
+      "sha256": "dc8f75804d9c8d4bfdc777e18af6fa844beac13cd8df610c78303eadb39ac5bc"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/variants/herbst-igel-r02-implicit-sdf-r10-NON-APPROVED.ply",
+      "bytes": 17045354,
+      "sha256": "7684693bf9cd27d3a0d503a1403c9c80a68cdcde33b37595e8b96350affe2750"
+    }
+  ]
+}

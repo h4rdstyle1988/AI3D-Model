@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-IMPLICIT-BODY-PATCH-R10.md",
+  "source_geometry": "outputs/herbst-igel-r02-implicit-body-patch-r10/masterform/herbst-igel-r02-masterform-implicit-r10-NON-APPROVED.ply",
+  "source_geometry_sha256": "7684693bf9cd27d3a0d503a1403c9c80a68cdcde33b37595e8b96350affe2750",
+  "source_is_actual_reconstructed_geometry": true,
+  "approval_status": "NON_APPROVED_PENDING_OPTIK_GATE",
+  "preliminary_variant_screening": {
+    "variants": {
+      "sdf": {
+        "source_geometry": "outputs/herbst-igel-r02-implicit-body-patch-r10/variants/herbst-igel-r02-implicit-sdf-r10-NON-APPROVED.ply",
+        "sha256": "7684693bf9cd27d3a0d503a1403c9c80a68cdcde33b37595e8b96350affe2750",
+        "views": [
+          {
+            "view": "3q-front",
+            "camera_vector": [
+              -1.0,
+              -1.0,
+              0.35
+            ],
+            "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-sdf-3q-front.png"
+          },
+          {
+            "view": "left",
+            "camera_vector": [
+              0.0,
+              -1.0,
+              0.12
+            ],
+            "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-sdf-left.png"
+          },
+          {
+            "view": "right",
+            "camera_vector": [
+              0.0,
+              1.0,
+              0.12
+            ],
+            "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-sdf-right.png"
+          }
+        ]
+      },
+      "rbf": {
+        "source_geometry": "outputs/herbst-igel-r02-implicit-body-patch-r10/variants/herbst-igel-r02-implicit-rbf-r10-NON-APPROVED.ply",
+        "sha256": "dc8f75804d9c8d4bfdc777e18af6fa844beac13cd8df610c78303eadb39ac5bc",
+        "views": [
+          {
+            "view": "3q-front",
+            "camera_vector": [
+              -1.0,
+              -1.0,
+              0.35
+            ],
+            "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-rbf-3q-front.png"
+          },
+          {
+            "view": "left",
+            "camera_vector": [
+              0.0,
+              -1.0,
+              0.12
+            ],
+            "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-rbf-left.png"
+          },
+          {
+            "view": "right",
+            "camera_vector": [
+              0.0,
+              1.0,
+              0.12
+            ],
+            "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-rbf-right.png"
+          }
+        ]
+      }
+    },
+    "contact_sheet": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/variant-screening-r10.png"
+  },
+  "selected_views": [
+    {
+      "view": "3q-front",
+      "camera_vector": [
+        -1.0,
+        -1.0,
+        0.35
+      ],
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-3q-front.png"
+    },
+    {
+      "view": "left",
+      "camera_vector": [
+        0.0,
+        -1.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-left.png"
+    },
+    {
+      "view": "right",
+      "camera_vector": [
+        0.0,
+        1.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-right.png"
+    },
+    {
+      "view": "rear",
+      "camera_vector": [
+        1.0,
+        0.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-rear.png"
+    },
+    {
+      "view": "top",
+      "camera_vector": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-top.png"
+    },
+    {
+      "view": "bottom",
+      "camera_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "path": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-bottom.png"
+    }
+  ],
+  "contact_sheet": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/masterform-contact-sheet-r10.png",
+  "soll_ist_sheet": "outputs/herbst-igel-r02-implicit-body-patch-r10/renders-optik-gate/soll-ist-optik-gate-r10.png"
+}

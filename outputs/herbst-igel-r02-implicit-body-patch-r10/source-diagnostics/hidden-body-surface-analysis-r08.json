@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MASTERFORM-CLEANUP-R08.md",
+  "method": {
+    "surface_samples": "all triangle centers of untouched R07 Seed-42 PLY",
+    "reference_side_projection": "X/Z mapped to REF-SEAM body polygon; Y quantized to 160 depth bins",
+    "cluster_rule": "one-bin gaps closed; contiguous occupied depth bands counted",
+    "confirmed_hidden_body_signature": ">=4 separated depth bands (covering sheet front/back plus body front/back)",
+    "limitations": "Three bands are ambiguous at fused contacts; triangle-center sampling may undercount very thin layers."
+  },
+  "reference_side_body_region": {
+    "body_polygon_pixels": 25547,
+    "pixels_with_any_surface_sample": 24326,
+    "pixels_two_layers_ordinary_closed_body": 21941,
+    "pixels_three_layers_ambiguous": 1149,
+    "pixels_ge_four_layers_confirmed_hidden_body": 759,
+    "pixels_le_one_layer_insufficient": 1698,
+    "confirmed_hidden_body_coverage_of_body_polygon_percent": 2.971,
+    "confirmed_hidden_body_coverage_of_sampled_body_percent": 3.12
+  },
+  "front_projection": {
+    "grid_yz": [
+      320,
+      320
+    ],
+    "active_bins": 53132,
+    "bins_ge_four_depth_layers": 301,
+    "max_depth_layers": 6
+  },
+  "conclusion": {
+    "hidden_body_surface_fully_available": false,
+    "reason": "Confirmed underlying four-layer geometry is sparse rather than continuous across the seam-defined face; removing all overhangs would therefore leave gaps requiring reconstruction.",
+    "local_reconstruction_required": true
+  },
+  "outputs": [
+    "diagnostics/hidden-layers-reference-side-r08.png",
+    "diagnostics/hidden-layers-front-r08.png"
+  ]
+}

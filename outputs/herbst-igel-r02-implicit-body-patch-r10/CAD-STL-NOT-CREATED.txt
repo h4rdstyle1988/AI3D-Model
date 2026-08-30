@@ -1,0 +1,5 @@
+STOPP: OPTIK_GATE FAIL in R10.
+Kein REF-SEAM-Split, keine Hohlschalen, kein Verbinder, keine CAD-/STL-/3MF-Datei erzeugt.
+Grund: sichtbare Merkmalsfenster/Übergänge, Restüberdeckung, 940 lokale Randkanten und 209 bestätigte lokale Kreuzungen.
+NUTZERENTSCHEIDUNG_ERFORDERLICH: false
+Keine finale Nutzerfreigabe behauptet.
