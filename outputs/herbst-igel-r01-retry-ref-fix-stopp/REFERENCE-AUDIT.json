@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-30T07:07:39.1552917+02:00",
+  "task": "tasks/TASK-HERBST-IGEL-R01-RETRY-REF-FIX.md",
+  "task_revision": "R01-RETRY-REF-FIX",
+  "git": {
+    "head": "99372dc7443ed24ff7b51d24655073a8d7e7c480",
+    "branch": "ruediger/task-herbst-igel-r01-retry-ref-fix-8552dc92",
+    "retry_task_blob_sha1": "8552dc925239ee6197ba05f087e5914902aacc50",
+    "main_task_blob_sha1": "69fbc9d4cd70255c0014e890e58ebc05633fd678",
+    "reference_manifest_blob_sha1": "ef44f5b7af24980db3ea5b2af85f2f99fa57130e"
+  },
+  "decoder": "System.Convert.FromBase64String; independent confirmation with Python base64.b64decode",
+  "references": [
+    {
+      "id": "REF-CLEAN",
+      "role": "authoritative visible appearance",
+      "source": "tasks/TASK-HERBST-IGEL-R01-REF-CLEAN.jpg.b64",
+      "source_blob_sha1": "0518d07e1d60c41d8d0959b724c2a94cf8360bac",
+      "decoded_format": "JPEG",
+      "decoded_dimensions_px": [320, 320],
+      "decoded_mode": "RGB",
+      "decoded_bytes": 11536,
+      "expected_sha256": "d3e7465d9f2d5164836cf5b4d238e04e37778eac995d35123edd6cee04ad9836",
+      "actual_sha256": "f3017009739284e1bfd6e8502e9d9258eb74dbf52074c425a73ff41fc8bac328",
+      "hash_match": false,
+      "used_for_construction": false
+    },
+    {
+      "id": "REF-SEAM",
+      "role": "authoritative seam",
+      "source": "tasks/TASK-HERBST-IGEL-R01-REF-SEAM.jpg.b64",
+      "source_blob_sha1": "c7dd9a9af21a6c57bb818916fbe85096fa00b03e",
+      "decoded_format": "JPEG",
+      "decoded_dimensions_px": [384, 384],
+      "decoded_mode": "RGB",
+      "decoded_bytes": 11788,
+      "expected_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "actual_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "hash_match": true,
+      "used_for_construction": false
+    },
+    {
+      "id": "REF-MULTIVIEW-SECONDARY",
+      "role": "explicitly excluded secondary reference",
+      "source": "tasks/TASK-HERBST-IGEL-R01-REF-MULTIVIEW-SECONDARY.jpg.b64",
+      "decoded": false,
+      "hashed": false,
+      "used_for_construction": false,
+      "reason": "Use is explicitly prohibited by the approved retry task."
+    }
+  ],
+  "status": "STOPP",
+  "blocking_condition": "REF-CLEAN does not match the mandatory SHA-256 in the active reference manifest.",
+  "construction_started": false
+}

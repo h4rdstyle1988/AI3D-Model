@@ -1,0 +1,12 @@
+TASK: tasks/TASK-HERBST-IGEL-R01-RETRY-REF-FIX.md
+REVISION: R01-RETRY-REF-FIX
+STATUS: STOPP
+
+Keine CAD-, STL-, GLB-/3MF-, Render- oder Druckdateien erzeugt.
+Grund: REF-CLEAN SHA-256 stimmt nicht mit dem aktiven Referenzmanifest überein.
+
+Erwartet: d3e7465d9f2d5164836cf5b4d238e04e37778eac995d35123edd6cee04ad9836
+Ist:      f3017009739284e1bfd6e8502e9d9258eb74dbf52074c425a73ff41fc8bac328
+
+NUTZERENTSCHEIDUNG_ERFORDERLICH: true
+FINALE_PRODUKTFREIGABE: false

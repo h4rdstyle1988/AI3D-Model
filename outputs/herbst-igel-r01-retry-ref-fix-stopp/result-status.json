@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-30T07:07:39.1552917+02:00",
+  "task": "tasks/TASK-HERBST-IGEL-R01-RETRY-REF-FIX.md",
+  "task_revision": "R01-RETRY-REF-FIX",
+  "task_blob_sha1": "8552dc925239ee6197ba05f087e5914902aacc50",
+  "status": "STOPP",
+  "pass_stopp_offen": "STOPP",
+  "summary": "Mandatory REF-CLEAN SHA-256 verification failed before construction.",
+  "main_files": [
+    "outputs/herbst-igel-r01-retry-ref-fix-stopp/REFERENCE-AUDIT.json",
+    "outputs/herbst-igel-r01-retry-ref-fix-stopp/CONFLICT-REPORT.md",
+    "outputs/herbst-igel-r01-retry-ref-fix-stopp/GEOMETRY-NOT-CREATED.txt",
+    "outputs/herbst-igel-r01-retry-ref-fix-stopp/result-status.json"
+  ],
+  "validations": [
+    {
+      "id": "queue_contains_retry_task",
+      "status": "PASS",
+      "result": "tasks/TASK-HERBST-IGEL-R01-RETRY-REF-FIX.md is present after the main task in tasks/TASK_QUEUE.txt"
+    },
+    {
+      "id": "current_task_migration_file",
+      "status": "PASS",
+      "result": "tasks/CURRENT_TASK.txt contains NONE"
+    },
+    {
+      "id": "ref_clean_sha256",
+      "status": "FAIL",
+      "expected": "d3e7465d9f2d5164836cf5b4d238e04e37778eac995d35123edd6cee04ad9836",
+      "actual": "f3017009739284e1bfd6e8502e9d9258eb74dbf52074c425a73ff41fc8bac328"
+    },
+    {
+      "id": "ref_seam_sha256",
+      "status": "PASS",
+      "expected": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4",
+      "actual": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "id": "secondary_multiview_exclusion",
+      "status": "PASS",
+      "result": "Reference was not decoded or used."
+    },
+    {
+      "id": "cad_mesh_stl_render_validation",
+      "status": "NOT_RUN",
+      "reason": "Construction is prohibited until all mandatory reference hashes match."
+    }
+  ],
+  "produced_geometry": false,
+  "required_outputs_not_created": [
+    "reproducible CAD/source",
+    "herbst-igel-r01-koerper.stl",
+    "herbst-igel-r01-ruecken.stl",
+    "assembled 3MF or GLB",
+    "multi-angle renders from final geometry",
+    "geometry SOLL/IST report"
+  ],
+  "open_real_tests": [
+    "No geometry exists; dimensional, fit, print and optical tests remain pending after a corrected and newly approved reference state."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": true,
+  "nutzerentscheidung_grund": "The mandatory authoritative REF-CLEAN byte state is missing or its manifest hash is wrong; the intended authoritative state cannot be determined technically without changing the approved task state.",
+  "FINALE_PRODUKTFREIGABE": false
+}
