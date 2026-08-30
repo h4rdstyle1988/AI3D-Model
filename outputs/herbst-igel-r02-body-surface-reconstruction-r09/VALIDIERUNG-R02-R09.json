@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-BODY-SURFACE-RECONSTRUCTION-R09.md",
+  "task_blob_sha": "ef3a16cc80c255d0e05c1a5e3773f2c9497c4c73",
+  "product_revision": "R02",
+  "technical_revision": "R09",
+  "status": "STOPP",
+  "stop_phase": "OPTIK_GATE",
+  "reference_gate": {
+    "status": "PASS",
+    "clean_sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+    "seam_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+  },
+  "seed_42_source": {
+    "status": "PASS_BYTE_IDENTICAL_TO_R08",
+    "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "expected_sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "vertices": 436742,
+    "triangles": 870466
+  },
+  "reconstruction": {
+    "status": "EXECUTED_NON_MASTER",
+    "sha256": "cda7fbd40bcaca15c59fcad58981154b6176bca7b59af982dbddd574f7cb78f8",
+    "source_vertex_coordinates_preserved": true,
+    "source_and_patch_face_partition_valid": true,
+    "removed_source_triangles_local_zone": 137183,
+    "retained_source_triangles": 733283,
+    "patch_vertices": 46016,
+    "patch_triangles": 90336,
+    "mesh": {
+      "vertices": 482758,
+      "used_vertices": 415568,
+      "triangles": 823619,
+      "degenerate_triangles": 0,
+      "boundary_edges": 12296,
+      "nonmanifold_edges": 3875,
+      "watertight_edge_incidence": false,
+      "bounds_min_normalized": [
+        -0.23905783891677856,
+        -0.17113235592842102,
+        -0.21962818503379822
+      ],
+      "bounds_max_normalized": [
+        0.38938766717910767,
+        0.44926708936691284,
+        0.2805304527282715
+      ],
+      "extents_normalized": [
+        0.6284455060958862,
+        0.6203994750976562,
+        0.5001586675643921
+      ]
+    }
+  },
+  "real_geometry_render_gate": {
+    "status": "PASS",
+    "source_is_reconstructed_geometry": true,
+    "required_six_views_exist": true,
+    "soll_ist_exists": true,
+    "files": [
+      {
+        "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-3q-front.png",
+        "exists": true,
+        "bytes": 187746,
+        "sha256": "af3bed0447c657293ec2b773c9638fe6ad0634e1db4b30c5e0c4816664af78ce"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-left.png",
+        "exists": true,
+        "bytes": 209760,
+        "sha256": "0d33cac624135846db54968e5d38f720a295892ad0e495260c6964ad53f6f38a"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-right.png",
+        "exists": true,
+        "bytes": 197660,
+        "sha256": "cfc1b48922db1be08d2b16faa7a88c3232803fae069e4f28e43488ff43533e64"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-rear.png",
+        "exists": true,
+        "bytes": 196677,
+        "sha256": "7ae0ade3388a000d5bc6b339d763cee08dcddb649a628b25c62d566595498f8f"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-top.png",
+        "exists": true,
+        "bytes": 215834,
+        "sha256": "7a413224fab34458f3253bab70c276da9702efb3925d1fbd5d23166449d2d98d"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-bottom.png",
+        "exists": true,
+        "bytes": 238307,
+        "sha256": "518c451da33d9476839f3aaec88d6d8098ab1319975aa3762414e32d88fcfffd"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-contact-sheet-r09.png",
+        "exists": true,
+        "bytes": 667986,
+        "sha256": "a68f9e562bcbe19f1d7877810a88651f003fbd9227bf28345298b91198d38282"
+      },
+      {
+        "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/soll-ist-optik-gate-r09.png",
+        "exists": true,
+        "bytes": 761271,
+        "sha256": "7360e867bcba7c71249924f6b5f6fc4d938c3c28ac8bc21608e68dd6528e9730"
+      }
+    ]
+  },
+  "optic_gate": {
+    "status": "FAIL",
+    "failed_criteria": [
+      "free_round_reference_like_face",
+      "no_leaf_spine_overlap_of_forehead_eyes_snout",
+      "ref_seam_visual_continuity",
+      "no_visible_patch_bulge_dent_hard_step_or_hole_repair"
+    ],
+    "passed_protected_criteria": [
+      "four_short_feet_retained_across_views",
+      "arched_back_retained",
+      "one_visible_maple_leaf_retained",
+      "no_second_maple_leaf_added"
+    ],
+    "reason": "Actual R09 renders show a hard fan/block-like reconstructed face transition, residual fused leaf/spine structures in the face zone, and discontinuities that do not plausibly follow REF-SEAM."
+  },
+  "cad_fdm_phase": {
+    "status": "NOT_RUN_BY_OPTIK_GATE",
+    "manufacturing_artifacts_found": [],
+    "approved_master_created": false,
+    "split_created": false,
+    "body_stl_created": false,
+    "back_stl_created": false,
+    "connector_created": false,
+    "shell_and_wall_validation_run": false
+  },
+  "open_real_tests": [
+    "Physical print, fit, support, material and 200 mm production-scale tests remain inapplicable before an optical PASS."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Technical gate stop; no user dimension or product decision is missing.",
+  "final_user_approval_claimed": false
+}

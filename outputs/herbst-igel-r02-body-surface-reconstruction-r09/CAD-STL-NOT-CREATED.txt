@@ -1,0 +1,22 @@
+TASK: tasks/TASK-HERBST-IGEL-R02-BODY-SURFACE-RECONSTRUCTION-R09.md
+REVISION: R02 / R09
+STATUS: STOPP
+STOP_PHASE: OPTIK_GATE
+OPTIK_GATE: FAIL
+
+Nicht erzeugt:
+- freigegebene Masterform
+- REF-SEAM-Split
+- zwei 1,6-mm-Hohlschalen
+- Körper-STL
+- Rücken-/Stachelschalen-STL
+- Ø10,0 x 20,0 mm Klebeverbinder und Aufnahme
+- Montage-3MF/GLB
+
+Grund: Die realen R09-Geometrie-Renders zeigen einen harten fächer-/blockartigen
+Rekonstruktionsübergang, Restüberdeckungen im Gesicht und keine plausible
+REF-SEAM-Kontinuität. R09 schreibt bei Optik-FAIL STOPP vor CAD/FDM vor.
+
+NUTZERENTSCHEIDUNG_ERFORDERLICH: false
+FINALE_NUTZERFREIGABE_BEHAUPTET: false
+

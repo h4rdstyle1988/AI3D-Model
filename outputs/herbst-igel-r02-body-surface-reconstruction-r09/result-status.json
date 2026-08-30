@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-BODY-SURFACE-RECONSTRUCTION-R09.md",
+  "task_blob_sha": "ef3a16cc80c255d0e05c1a5e3773f2c9497c4c73",
+  "revision": {
+    "product": "R02",
+    "technical": "R09"
+  },
+  "status": "STOPP",
+  "gate": "OPTIK_GATE",
+  "gate_result": "FAIL",
+  "summary": "A local REF-SEAM-constrained body-surface reconstruction was executed from the byte-identical Seed-42 source and rendered from real geometry. The result retains hard fan/block-like transitions, residual face-zone overlap and implausible seam discontinuities, so CAD/FDM did not run.",
+  "main_files": [
+    "outputs/herbst-igel-r02-body-surface-reconstruction-r09/SOLL-IST-OPTIK-GATE-R09.md",
+    "outputs/herbst-igel-r02-body-surface-reconstruction-r09/REVISION-R02-R09.md",
+    "outputs/herbst-igel-r02-body-surface-reconstruction-r09/VALIDIERUNG-R02-R09.json",
+    "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/soll-ist-optik-gate-r09.png",
+    "outputs/herbst-igel-r02-body-surface-reconstruction-r09/masterform/herbst-igel-r02-masterform-reconstructed-r09-NON-APPROVED.ply",
+    "outputs/herbst-igel-r02-body-surface-reconstruction-r09/artifact-manifest.json"
+  ],
+  "validations": {
+    "reference_gate": "PASS",
+    "r08_seed42_hash_gate": "PASS",
+    "local_surface_reconstruction_execution": "PASS_NON_MASTER_ATTEMPT",
+    "source_vertex_coordinate_preservation": "PASS",
+    "six_real_geometry_renders": "PASS",
+    "soll_ist_render": "PASS",
+    "optic_gate": "FAIL",
+    "cad_fdm_validation": "NOT_RUN_BY_GATE"
+  },
+  "artifacts_not_created_by_gate": [
+    "approved masterform",
+    "REF-SEAM split",
+    "body STL",
+    "back STL",
+    "assembly 3MF or GLB",
+    "connector and receptacle"
+  ],
+  "open_real_tests": [
+    "Physical print, fit, support, material and 200 mm production-scale tests remain inapplicable before an optical PASS."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Technical STOPP required by the approved task; no missing product decision.",
+  "final_user_approval_claimed": false
+}

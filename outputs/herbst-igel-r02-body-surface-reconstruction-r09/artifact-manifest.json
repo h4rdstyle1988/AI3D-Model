@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-BODY-SURFACE-RECONSTRUCTION-R09.md",
+  "task_blob_sha": "ef3a16cc80c255d0e05c1a5e3773f2c9497c4c73",
+  "revision": "R02-R09",
+  "status": "STOPP_OPTIK_GATE_FAIL",
+  "manifest_self_excluded": true,
+  "artifact_count": 27,
+  "artifacts": [
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/CAD-STL-NOT-CREATED.txt",
+      "role": "result_document",
+      "bytes": 649,
+      "sha256": "b339943015d694ac4c13a12426f5022d008370b9b6198a49ab5c2147e02100c5"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/diagnostics/reconstruction-selection-r09.png",
+      "role": "selection_diagnostic",
+      "bytes": 6207,
+      "sha256": "79057a8c73f72686651327cb9a7c02cfbefbee0248d1f5c01226aa8b192bc725"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/masterform/herbst-igel-r02-masterform-reconstructed-r09-NON-APPROVED.ply",
+      "role": "non_master_geometry_attempt",
+      "bytes": 16500322,
+      "sha256": "cda7fbd40bcaca15c59fcad58981154b6176bca7b59af982dbddd574f7cb78f8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/reference-audit/ref-clean-r09.jpg",
+      "role": "authoritative_reference_copy",
+      "bytes": 17344,
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/reference-audit/ref-seam-r09.jpg",
+      "role": "authoritative_reference_copy",
+      "bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-3q-front.png",
+      "role": "real_geometry_optic_gate_render",
+      "bytes": 187746,
+      "sha256": "af3bed0447c657293ec2b773c9638fe6ad0634e1db4b30c5e0c4816664af78ce"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-bottom.png",
+      "role": "real_geometry_optic_gate_render",
+      "bytes": 238307,
+      "sha256": "518c451da33d9476839f3aaec88d6d8098ab1319975aa3762414e32d88fcfffd"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-contact-sheet-r09.png",
+      "role": "real_geometry_optic_gate_render",
+      "bytes": 667986,
+      "sha256": "a68f9e562bcbe19f1d7877810a88651f003fbd9227bf28345298b91198d38282"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-left.png",
+      "role": "real_geometry_optic_gate_render",
+      "bytes": 209760,
+      "sha256": "0d33cac624135846db54968e5d38f720a295892ad0e495260c6964ad53f6f38a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-rear.png",
+      "role": "real_geometry_optic_gate_render",
+      "bytes": 196677,
+      "sha256": "7ae0ade3388a000d5bc6b339d763cee08dcddb649a628b25c62d566595498f8f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-right.png",
+      "role": "real_geometry_optic_gate_render",
+      "bytes": 197660,
+      "sha256": "cfc1b48922db1be08d2b16faa7a88c3232803fae069e4f28e43488ff43533e64"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/masterform-top.png",
+      "role": "real_geometry_optic_gate_render",
+      "bytes": 215834,
+      "sha256": "7a413224fab34458f3253bab70c276da9702efb3925d1fbd5d23166449d2d98d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/raw-seed42-3q-front-comparison.png",
+      "role": "real_geometry_optic_gate_render",
+      "bytes": 219110,
+      "sha256": "872ac1df6f5679aa3f6ea372df04cd5d1168573145e07d00db545a3c43510489"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/renders-optik-gate/soll-ist-optik-gate-r09.png",
+      "role": "real_geometry_optic_gate_render",
+      "bytes": 761271,
+      "sha256": "7360e867bcba7c71249924f6b5f6fc4d938c3c28ac8bc21608e68dd6528e9730"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/reports/body-surface-reconstruction-r09.json",
+      "role": "technical_report",
+      "bytes": 3278,
+      "sha256": "5c816359e091f12101afdb39824c6a581b75e9a2466f8b9f1ad4f10752040952"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/reports/real-geometry-renders-r09.json",
+      "role": "technical_report",
+      "bytes": 2027,
+      "sha256": "088bdee1e68dd43e6783fbf6518ac8c7bc679fb806f23c1a9870d209c15390fc"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/reports/toolchain-preflight-r09.json",
+      "role": "technical_report",
+      "bytes": 2916,
+      "sha256": "e2f0323ffdb9ec130bfc3d914dc181c5c8f2faed7ec107a01eb4ae715e7e2a33"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/reproduction-scripts/reconstruct_body_surface_r09.py",
+      "role": "reproduction_source",
+      "bytes": 17688,
+      "sha256": "2c00dac2a06d72c064d3b3a69b97a456b3ecba0d1158d877020dc9f06072f55e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/reproduction-scripts/render_optik_gate_r09.py",
+      "role": "reproduction_source",
+      "bytes": 6976,
+      "sha256": "e6d8d849b3ab563ed1d93c866a4c6c55f0f2d3c8c74fcc8ead247fb1ffc7ce86"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/reproduction-scripts/validate_r09.py",
+      "role": "reproduction_source",
+      "bytes": 7513,
+      "sha256": "e0268df67d1fa605f6447acd19fd6914968152a9fdfb7238443bff28cc3c6940"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/reproduction-scripts/write_artifact_manifest_r09.py",
+      "role": "reproduction_source",
+      "bytes": 2364,
+      "sha256": "e0e901d499ab274d6923a0fc60e876b45db72ac71802b3e653a6453057e39eb0"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/REPRODUKTION-R09.md",
+      "role": "result_document",
+      "bytes": 1138,
+      "sha256": "13c89176501ef801993eb1811d268829831ff2a511fb0df1147cb3e3424410cb"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/result-status.json",
+      "role": "result_document",
+      "bytes": 2097,
+      "sha256": "f92674d0f820dbea3d96686ff789a6a1e670a4663b00bd97e2861c378f34f408"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/REVISION-R02-R09.md",
+      "role": "result_document",
+      "bytes": 2293,
+      "sha256": "f7c426114fe95d72ddb03222dbb59f4d1cea051c04013b35693a65dc6353e24d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/SOLL-IST-OPTIK-GATE-R09.md",
+      "role": "result_document",
+      "bytes": 2345,
+      "sha256": "84643ed37c864ec4a9d4bcedef66e5f055e688262a9112e155194cda7a0138e3"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/source-r08/herbst-igel-r02-trellis-raw-seed-42.ply",
+      "role": "source_geometry",
+      "bytes": 16557141,
+      "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-body-surface-reconstruction-r09/VALIDIERUNG-R02-R09.json",
+      "role": "result_document",
+      "bytes": 5610,
+      "sha256": "6991d6646405f6cde4c8c45adbc2f449789195a8e01898d07dc5c00fda09b76e"
+    }
+  ],
+  "final_user_approval_claimed": false
+}
