@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "task_blob_sha": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+  "axis": "+X through the central seam origin",
+  "male_pin_diameter_mm_exact": 10.0,
+  "male_pin_radius_mm_exact": 5.0,
+  "engagement_start_x_mm": 0.0,
+  "engagement_end_x_mm": 20.0,
+  "engagement_mm_exact": 20.0,
+  "socket_diameter_mm": 10.3,
+  "diametral_glue_clearance_mm": 0.3,
+  "radial_glue_clearance_mm": 0.15,
+  "receiver_outer_diameter_mm_technical": 13.0,
+  "front": {
+    "type": "integral male pin",
+    "diameter_mm": 10.0,
+    "radius_mm": 5.0,
+    "engagement_start_x_mm": 0.0,
+    "engagement_end_x_mm": 20.0,
+    "engagement_mm": 20.0
+  },
+  "back": {
+    "type": "integral blind glue socket",
+    "socket_diameter_mm": 10.3,
+    "socket_depth_mm": 20.0,
+    "receiver_outer_diameter_mm": 13.0,
+    "diametral_glue_clearance_mm": 0.3,
+    "radial_glue_clearance_mm": 0.15
+  },
+  "status": "PASS"
+}

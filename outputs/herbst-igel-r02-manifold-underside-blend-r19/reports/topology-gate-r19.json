@@ -1,0 +1,32 @@
+{
+  "vertices": 655362,
+  "triangles": 1310720,
+  "surface_components": 1,
+  "component_basis": "one connected icosphere subdivision index complex",
+  "open_edges": 0,
+  "nonmanifold_edges": 0,
+  "nonmanifold_vertices": 0,
+  "max_edge_incidence": 2,
+  "all_edges_incidence_two": true,
+  "degenerate_faces": 0,
+  "duplicate_faces": 0,
+  "consistent_outward_orientation": true,
+  "minimum_oriented_radial_triple_product": 4.6362808308476815,
+  "signed_volume_mm3": 3020967.3388125417,
+  "internal_enclosed_shells": 0,
+  "duplicate_depth_layers": false,
+  "confirmed_real_self_intersections": 0,
+  "self_intersection_basis": "positive one-value radial graph on the consistently oriented icosphere; every planar triangle remains in its spherical face cone and disjoint cones meet only on common topology edges",
+  "bounds_min_mm": [
+    -100.10193634033203,
+    -98.71149444580078,
+    -80.78659057617188
+  ],
+  "bounds_max_mm": [
+    99.99213409423828,
+    98.76293182373047,
+    81.53269958496094
+  ],
+  "max_extent_mm": 200.0940704345703,
+  "gate_1": "PASS"
+}

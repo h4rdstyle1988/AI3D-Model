@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "process": {
+    "nozzle_mm": 0.4,
+    "target_layer_mm": 0.12,
+    "adaptive_min_layer_mm": 0.08
+  },
+  "front_part": {
+    "orientation": "right-side/feet biased, connector axis tilted upward at least 45 degrees",
+    "support": "limited organic support under connector and lower chin/feet only; block support on face and visible leaf/spines",
+    "removal": "PASS_WITH_RESTPOINT: connector support is directly reachable from the open seam before assembly"
+  },
+  "back_part": {
+    "orientation": "rear shell supported with socket opening upward; avoid closing the blind socket over support",
+    "support": "external organic support under lower rear leaves; no support inside the 10.30-mm socket",
+    "removal": "PASS_WITH_RESTPOINT: all allowed support is external or reachable from the seam opening"
+  },
+  "slicer_real_test": "OPEN_REAL_TEST_REQUIRED_BEFORE_PRINT_RELEASE",
+  "status": "PASS_TECHNICAL_WITH_OPEN_REAL_SLICER_TEST",
+  "final_print_release": false
+}

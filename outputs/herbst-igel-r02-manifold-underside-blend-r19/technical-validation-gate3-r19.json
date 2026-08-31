@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "task_blob_sha": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+  "revision": "R02/R19",
+  "exactly_two_print_parts": true,
+  "wall_mm_nominal": 1.6,
+  "wall_method": "radial inward offset 1.6 mm; connector-axis cap reference separation 1.6 mm",
+  "front_topology": {
+    "vertices": 395760,
+    "triangles": 791512,
+    "expected_boundary_surface_components": 2,
+    "component_interpretation": "one exterior boundary plus one closed cavity boundary of a single printable solid",
+    "open_edges": 0,
+    "nonmanifold_edges": 0,
+    "nonmanifold_vertices": 0,
+    "max_edge_incidence": 2,
+    "orientation_conflict_edges": 0,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "signed_material_volume_mm3": 76744.97486798,
+    "bounds_min_mm": [
+      -100.10193634033203,
+      -96.13494110107422,
+      -80.77452087402344
+    ],
+    "bounds_max_mm": [
+      20.0,
+      79.12456512451172,
+      72.81654357910156
+    ],
+    "max_extent_mm": 175.25950622558594,
+    "pass": true
+  },
+  "back_topology": {
+    "vertices": 926712,
+    "triangles": 1853416,
+    "expected_boundary_surface_components": 2,
+    "component_interpretation": "one exterior boundary plus one closed cavity boundary of a single printable solid",
+    "open_edges": 0,
+    "nonmanifold_edges": 0,
+    "nonmanifold_vertices": 0,
+    "max_edge_incidence": 2,
+    "orientation_conflict_edges": 0,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "signed_material_volume_mm3": 123464.7067078591,
+    "bounds_min_mm": [
+      -49.469573974609375,
+      -98.71149444580078,
+      -80.78659057617188
+    ],
+    "bounds_max_mm": [
+      99.99213409423828,
+      98.76293182373047,
+      81.53269958496094
+    ],
+    "max_extent_mm": 197.47442626953125,
+    "pass": true
+  },
+  "connector": {
+    "schema_version": 1,
+    "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+    "task_blob_sha": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+    "axis": "+X through the central seam origin",
+    "male_pin_diameter_mm_exact": 10.0,
+    "male_pin_radius_mm_exact": 5.0,
+    "engagement_start_x_mm": 0.0,
+    "engagement_end_x_mm": 20.0,
+    "engagement_mm_exact": 20.0,
+    "socket_diameter_mm": 10.3,
+    "diametral_glue_clearance_mm": 0.3,
+    "radial_glue_clearance_mm": 0.15,
+    "receiver_outer_diameter_mm_technical": 13.0,
+    "front": {
+      "type": "integral male pin",
+      "diameter_mm": 10.0,
+      "radius_mm": 5.0,
+      "engagement_start_x_mm": 0.0,
+      "engagement_end_x_mm": 20.0,
+      "engagement_mm": 20.0
+    },
+    "back": {
+      "type": "integral blind glue socket",
+      "socket_diameter_mm": 10.3,
+      "socket_depth_mm": 20.0,
+      "receiver_outer_diameter_mm": 13.0,
+      "diametral_glue_clearance_mm": 0.3,
+      "radial_glue_clearance_mm": 0.15
+    },
+    "status": "PASS"
+  },
+  "exports": [
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/cad-mesh-source/herbst-igel-r02-r19-front-body-hollow.ply",
+      "bytes": 15039155,
+      "sha256": "b2c522c8f9581d07b2ff1fb8439c395731ccb9285db518bc08c1d2d5b0b23b99"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/cad-mesh-source/herbst-igel-r02-r19-back-spine-shell-hollow.ply",
+      "bytes": 35215330,
+      "sha256": "5d6fb8ff8c630b76c4c3dcafb6eb4cdaaefe35eb03b2830e740623171d778359"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/stl/herbst-igel-r02-r19-front-body-hollow.stl",
+      "bytes": 39575684,
+      "sha256": "1afa08a76806e4faa6f5014a12ce807270dd010f0028a03134214a31b2ac3029"
+    },
+    {
+      "path": "D:\\3D-Models\\generated\\_ruediger-local-large-artifacts\\herbst-igel-r19\\herbst-igel-r02-r19-back-spine-shell-hollow.stl",
+      "bytes": 92670884,
+      "sha256": "252bd9dd2c80a0305a687f86e7505861d25ce4a059828aa8548229e4d6b726b9"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/assembly/herbst-igel-r02-r19-assembly.3mf",
+      "bytes": 37171072,
+      "sha256": "bf4de2e1ac6a3987b873a04c3527bf0f60219e135c57dcb54092c093731f0092"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/assembly/herbst-igel-r02-r19-assembly.glb",
+      "bytes": 47610628,
+      "sha256": "9601f3972327402a967f7ba7229ec084e54d09d8e05faef1f14d2ec30e63cbe5"
+    }
+  ],
+  "assembly_3mf_objects": 2,
+  "assembly_glb_nodes": 2,
+  "open_real_tests": [
+    "Real slicer preview at 0.12 mm / adaptive 0.08 mm.",
+    "Printed wall-thickness coupon or section measurement.",
+    "Real Ø10.0-mm pin / Ø10.30-mm socket glue-fit coupon.",
+    "Support removal check without contact damage to face, leaf or spine relief.",
+    "Dry assembly and user final product approval."
+  ],
+  "status": "PASS_TECHNICAL_OPEN_REAL_TESTS",
+  "final_user_approval_claimed": false
+}

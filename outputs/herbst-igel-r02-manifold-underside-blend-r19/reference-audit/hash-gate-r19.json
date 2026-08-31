@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "task_blob_sha": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+  "source_commit": "51a0456673f7afc562f09743c7c26506e1c08058",
+  "expected": {
+    "seed42": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "r17": "d9c63f96e44245c3aebd583457418f3d82afbb6cd1a73163bfe7f70983d3fa29",
+    "ref_clean": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+    "ref_seam": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+  },
+  "actual": {
+    "seed42": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "r17": "d9c63f96e44245c3aebd583457418f3d82afbb6cd1a73163bfe7f70983d3fa29",
+    "ref_clean": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+    "ref_seam": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+  },
+  "status": "PASS"
+}

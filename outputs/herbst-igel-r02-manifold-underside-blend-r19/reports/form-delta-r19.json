@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "task_blob_sha": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+  "comparison": "bidirectional local visible-depth delta and two-pixel-dilated silhouette",
+  "resolution_px": 384,
+  "views": {
+    "front": {
+      "visible_depth_delta_mm": {
+        "median": 0.023689985228529054,
+        "p95": 0.19457874389934757,
+        "p99": 20.087932512294163,
+        "maximum": 184.95774306822625
+      },
+      "silhouette_iou": 0.9894847308217022,
+      "source_only_pixel_fraction": 0.0016266134956448735,
+      "candidate_only_pixel_fraction": 0.010872074719277994
+    },
+    "left": {
+      "visible_depth_delta_mm": {
+        "median": 0.023026963318962146,
+        "p95": 0.19566201497502494,
+        "p99": 14.560227649993807,
+        "maximum": 186.65546328090537
+      },
+      "silhouette_iou": 0.9931062704608411,
+      "source_only_pixel_fraction": 0.0013430705951481576,
+      "candidate_only_pixel_fraction": 0.006589440107445647
+    },
+    "right": {
+      "visible_depth_delta_mm": {
+        "median": 0.026190872050477765,
+        "p95": 0.23724085945572967,
+        "p99": 62.98166119429915,
+        "maximum": 184.97907013890125
+      },
+      "silhouette_iou": 0.9888500582459644,
+      "source_only_pixel_fraction": 0.0006448660342819104,
+      "candidate_only_pixel_fraction": 0.011212348144449992
+    },
+    "rear": {
+      "visible_depth_delta_mm": {
+        "median": 0.027943939674159424,
+        "p95": 0.3882445606064948,
+        "p99": 107.9966473970272,
+        "maximum": 183.023787818579
+      },
+      "silhouette_iou": 0.9919701867446313,
+      "source_only_pixel_fraction": 0.001183882723547942,
+      "candidate_only_pixel_fraction": 0.008513660977166505
+    },
+    "top": {
+      "visible_depth_delta_mm": {
+        "median": 0.029390309210810983,
+        "p95": 0.25830630683572187,
+        "p99": 19.11613667447882,
+        "maximum": 148.7021206236907
+      },
+      "silhouette_iou": 0.9984503160248392,
+      "source_only_pixel_fraction": 0.001272954693882069,
+      "candidate_only_pixel_fraction": 0.0069735778882235085
+    },
+    "bottom": {
+      "visible_depth_delta_mm": {
+        "median": 108.48213057746906,
+        "p95": 148.3008606235273,
+        "p99": 152.64327138358888,
+        "maximum": 160.00837268448473
+      },
+      "silhouette_iou": 0.9984503160248392,
+      "source_only_pixel_fraction": 0.001272954693882069,
+      "candidate_only_pixel_fraction": 0.0069735778882235085
+    },
+    "3q-front": {
+      "visible_depth_delta_mm": {
+        "median": 0.030567300427264854,
+        "p95": 0.23480746650999373,
+        "p99": 13.457112051362541,
+        "maximum": 239.2992219848469
+      },
+      "silhouette_iou": 0.9972347773940275,
+      "source_only_pixel_fraction": 0.003520383799571335,
+      "candidate_only_pixel_fraction": 0.002987328839383877
+    }
+  },
+  "minimum_silhouette_iou": 0.9888500582459644,
+  "maximum_view_p95_mm": 148.3008606235273,
+  "maximum_non_bottom_view_p95_mm": 0.3882445606064948,
+  "bottom_depth_metric_status": "DIAGNOSTIC_ONLY_SOURCE_HAS_INVALID_MULTIPLE_DEPTH_LAYERS",
+  "bottom_roi_radial_patch_p95_mm": 0.07382676931744919,
+  "renders": [
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-front.png",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-left.png",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-right.png",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-rear.png",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-top.png",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-bottom.png",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-3q-front.png"
+  ]
+}

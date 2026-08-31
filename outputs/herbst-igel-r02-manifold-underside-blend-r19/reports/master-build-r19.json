@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "task_blob_sha": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+  "method": "oriented icosphere radial graph with Seed-42 field retention and bounded underside robust patch",
+  "source_faces": 870466,
+  "r17_faces": 959960,
+  "grid": [
+    768,
+    1536
+  ],
+  "icosphere_subdivisions": 8,
+  "r18_error_threshold_mm": 2.0,
+  "raw_depth_error_cells": 84466,
+  "support_mismatch_cells": 282542,
+  "unsupported_lower_source_cells": 272199,
+  "source_support_dilation_cells": 2,
+  "roi_cells": 361009,
+  "roi_fraction": 0.30603112114800346,
+  "protected_valid_seed42_cells": 618385,
+  "protected_radial_cells_changed": 0,
+  "transition_cells": 73228,
+  "transition_width_cells": 8,
+  "patch_method": "two-pass 3x3 robust median only in ROI; cubic smoothstep over eight angular-cell rings",
+  "maximum_patch_delta_mm": 16.964084488989243,
+  "p95_patch_delta_mm": 0.07382676931744919,
+  "r17_use": "support values only where Seed-42 has no angular sample; no R17 value replaces a valid protected Seed-42 cell",
+  "topology": {
+    "vertices": 655362,
+    "triangles": 1310720,
+    "surface_components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "nonmanifold_vertices": 0,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "signed_volume_mm3": 3020967.3379951306,
+    "max_extent_mm": 200.09407468744655,
+    "bounds_min_mm": [
+      -100.10193769655957,
+      -98.71149163078302,
+      -80.78658715048238
+    ],
+    "bounds_max_mm": [
+      99.99213699088698,
+      98.76293148867889,
+      81.53269669590973
+    ],
+    "internal_enclosed_shells": 0,
+    "duplicate_depth_layers": false,
+    "radial_graph_self_intersections": 0,
+    "construction_proof": "positive single-valued radius on each consistently oriented icosphere direction; disjoint spherical face cones intersect only on shared edges"
+  },
+  "master": {
+    "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/master/herbst-igel-r02-r19-manifold-master-200mm.ply",
+    "bytes": 24904118,
+    "sha256": "1bb01a1426f03bfcabb2cad2e7fd3a1104c45cf8c86e149140f5ccf885b9704b"
+  }
+}

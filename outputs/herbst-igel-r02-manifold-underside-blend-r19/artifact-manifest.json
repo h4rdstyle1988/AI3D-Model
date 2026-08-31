@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "artifacts": [
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/assembly/herbst-igel-r02-r19-assembly.3mf",
+      "bytes": 37171072,
+      "sha256": "bf4de2e1ac6a3987b873a04c3527bf0f60219e135c57dcb54092c093731f0092"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/assembly/herbst-igel-r02-r19-assembly.glb",
+      "bytes": 47610628,
+      "sha256": "9601f3972327402a967f7ba7229ec084e54d09d8e05faef1f14d2ec30e63cbe5"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/cad-mesh-source/herbst-igel-r02-r19-back-spine-shell-hollow.ply",
+      "bytes": 35215330,
+      "sha256": "5d6fb8ff8c630b76c4c3dcafb6eb4cdaaefe35eb03b2830e740623171d778359"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/cad-mesh-source/herbst-igel-r02-r19-front-body-hollow.ply",
+      "bytes": 15039155,
+      "sha256": "b2c522c8f9581d07b2ff1fb8439c395731ccb9285db518bc08c1d2d5b0b23b99"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/independent-validation-master-r19.json",
+      "bytes": 383,
+      "sha256": "48d15749eb98a93837f8adee0f22f724f6e3fb89e02735d8ce9e353f73982b99"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/inputs/herbst-igel-r02-r17-screened-mls-d-200mm.ply",
+      "bytes": 18217157,
+      "sha256": "d9c63f96e44245c3aebd583457418f3d82afbb6cd1a73163bfe7f70983d3fa29"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/inputs/seed42-optically-best-source.ply",
+      "bytes": 16557141,
+      "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/LOCAL-LARGE-ARTIFACTS.json",
+      "bytes": 470,
+      "sha256": "2e1cb0c8bb011e719472ee96823b9d80ada52e4a17c5ba08458c7fd1b21b9fb5"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/master/herbst-igel-r02-r19-manifold-master-200mm.ply",
+      "bytes": 24904118,
+      "sha256": "1bb01a1426f03bfcabb2cad2e7fd3a1104c45cf8c86e149140f5ccf885b9704b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reference-audit/hash-gate-r19.json",
+      "bytes": 961,
+      "sha256": "57229740d0e70db4a6d48a8af0c2ab44edffc8d518c9d247246de4445705d814"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reference-audit/ref-clean-r19.jpg",
+      "bytes": 17344,
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reference-audit/ref-seam-r19.jpg",
+      "bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/actual-ref-seam-overlay-r19.png",
+      "bytes": 159434,
+      "sha256": "6b451998fd7c9cf37f33d172e3c9f7824cbe699b1a689decaaaf477ed2bad5b7"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/actual-ref-seam-soll-ist-r19.png",
+      "bytes": 427753,
+      "sha256": "51fceba294d9f4f257e02a5f7c0f742bcd89f02b95d797d7526646941d5b0ef8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/candidate-r19-3q-front.png",
+      "bytes": 155638,
+      "sha256": "5e1b1b10f99450a516deb4d39be97046248ab31f8a7fde1251402587abd38ac7"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/candidate-r19-bottom.png",
+      "bytes": 108986,
+      "sha256": "6ed4c07825fe7048f025765a8e49bcc0983c77c009378ad496f3cf13b224c8ea"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/candidate-r19-front.png",
+      "bytes": 163119,
+      "sha256": "eba373f7736fedb01f8948c62e079d546ba349726b1e3719ff577a5aa52fb51d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/candidate-r19-left.png",
+      "bytes": 162962,
+      "sha256": "4682e340fd5ce139d72b491c2fbc880b623c523a30b524806d8e3583ef7abb6c"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/candidate-r19-rear.png",
+      "bytes": 179178,
+      "sha256": "1e2b70df7be7f3e9a9e298790f3a17b6e9bbd9b3cf294f83a732ca5cb96dee7d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/candidate-r19-right.png",
+      "bytes": 171469,
+      "sha256": "416a5e7c206e2a8a046f7425c627a5c6ec81d7e45888037d2f542ca423bcbc10"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/candidate-r19-seven-view-contact-sheet.png",
+      "bytes": 1094405,
+      "sha256": "5e85009a763af16c01970a7879bdf05c7c3ea5d582695a33b69d5f4611242635"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/candidate-r19-top.png",
+      "bytes": 154445,
+      "sha256": "32b40821958cba5febc4ab006532f25e7ffa94fe33aec6c22cd59c764d2167f2"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/ref-seam-overlay-r19.png",
+      "bytes": 157010,
+      "sha256": "bbdc889e64497f57c8bda21465cdf03873af42cf1802ba56a454f281e737d70a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/ref-seam-soll-ist-r19.png",
+      "bytes": 425594,
+      "sha256": "37009e7e5ab80fd4865cff5b3db13ddb447c29204643dd3514d1239edb54bfe9"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-3q-front.png",
+      "bytes": 308403,
+      "sha256": "61250bcde7bddfb3ef2d7cb9fab256156744d1a1f504b3cf6b87c5a40c510d92"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-bottom.png",
+      "bytes": 272320,
+      "sha256": "a4304540010fb4d90a3262631d21f1767f520478c03af5cc283f74cc77c67ec0"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-front.png",
+      "bytes": 317640,
+      "sha256": "9a41d9cb19c9449119f3d09f343ae63331a9915c484892a9fa64c5e9314952dc"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-left.png",
+      "bytes": 317640,
+      "sha256": "b9838a2077cce9a1252717f2ba39c6c6616382cd66b706e6906b0ed1fa7898d1"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-rear.png",
+      "bytes": 355045,
+      "sha256": "38a887d2c89797e54289b5f5ea78a13da6d623ce1532954f290dcb337c93fcab"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-right.png",
+      "bytes": 335522,
+      "sha256": "2a254e398174ad2755549d41cdc2e799f60dda45e7e3f61478a143ee545dd98f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-seven-view-contact-sheet.png",
+      "bytes": 2228815,
+      "sha256": "482139bfa0f1ec66121c3d7421091a523a2dd8047c795d42230caf602fa12bf0"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-top.png",
+      "bytes": 302686,
+      "sha256": "6cce5e2cc1d71b26ae516e18c9823e1eae1de2b986d8153139c93f8431832949"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-ref-clean-source-master-r19.png",
+      "bytes": 604449,
+      "sha256": "9c2105a2203076bf5ef94aa900c0a45679bfb94f504dc08583fe248a3e88dc90"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/source-r19-3q-front.png",
+      "bytes": 154724,
+      "sha256": "838b16940d1757a5123cdb400740e4bff66063015516f9300dace7fa50b22fea"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/source-r19-bottom.png",
+      "bytes": 165821,
+      "sha256": "a651897e8d4730c2221eedb066756bc342c21e47d2010e7dbdbea2b5736c1448"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/source-r19-front.png",
+      "bytes": 157135,
+      "sha256": "dd52d800ad64b7508cb498df2b9742d786a6ad95bd5baeb29f3dd59dfc007a33"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/source-r19-left.png",
+      "bytes": 157837,
+      "sha256": "c1c8725cf372ff5ccc68f9080f891d26654d17c75dc6f656eb17441c1e661d99"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/source-r19-rear.png",
+      "bytes": 178389,
+      "sha256": "d95b2ed2923b673e51feee3623a224619cadfea22ce9c3501eb619dda43d5789"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/source-r19-right.png",
+      "bytes": 166646,
+      "sha256": "512891111067b7a046d906ffe7e7881a4a9e50f8b4cb53ca193a38fd0d913326"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/source-r19-top.png",
+      "bytes": 150707,
+      "sha256": "eff07ded9aca766025768589664698b74279a4be7735d716cb38063b1763392b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/underside-source-vs-master-closeup-r19.png",
+      "bytes": 337202,
+      "sha256": "f6f0f0b534146991ff5e0b058c8f65bdf989560d854388a7c763969825d07cde"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate3/back-part-3q.png",
+      "bytes": 178764,
+      "sha256": "390914ea54bcbe60bdb6c100758c5dd2b5c15196d92979e512fce1d4c5491bfb"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate3/back-part-seam.png",
+      "bytes": 174131,
+      "sha256": "56ea2f37d0b787d8d6eeba06a374b1ea147337ef72b7c63b0a124ee5eb9a2f09"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate3/front-part-3q.png",
+      "bytes": 145530,
+      "sha256": "77a034ded2f1fd8ba0c626f4a899d253d3f9a968680d730d89eefe335693fcb0"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate3/front-part-seam.png",
+      "bytes": 151587,
+      "sha256": "74985498cf3e3c3b222527aa80e2657df34c48ea56f8a62fd43d3f5f720a559a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate3/gate3-two-parts-contact-sheet.png",
+      "bytes": 644953,
+      "sha256": "8393fe7a2a2b283c8ea6063a08f1f6b0931902db0b81b7c398794833e6bf3d92"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reports/connector-validation-r19.json",
+      "bytes": 1008,
+      "sha256": "331356cb28fb2ff5d6b917d266b7580afd6ef71e75780fbdb3382f67f98f52d9"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reports/fdm-orientation-support-r19.json",
+      "bytes": 1093,
+      "sha256": "f889f5149cb8c678d6949d521a1f6cdda6d16a5295b6a5ed543512007ada71fe"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reports/form-delta-r19.json",
+      "bytes": 4070,
+      "sha256": "4964b3128f99cfd8c176b0737aa5c8944e2d46c52f37768af177ecd14f92f5d5"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reports/form-protection-gate-r19.json",
+      "bytes": 3092,
+      "sha256": "b9e9fd459fb5bfcf3bd700713f2b1c68ca5db10bbfad37eed1ed8de65b5ca018"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reports/geometry-change-status-r19.json",
+      "bytes": 2073,
+      "sha256": "261ea370e2ca64f2bf780ce287128031ad0c3493388b7194083c41d15a15b8b2"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reports/master-build-r19.json",
+      "bytes": 2224,
+      "sha256": "74d4887c151bcabd08d4b16e6a7ac05bef0098874ae14ee21bd4607a26b82663"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reports/ref-seam-proof-r19.json",
+      "bytes": 2062,
+      "sha256": "488ca765b6ae539a51648c9678769adf86ac0e7d5331b17d2f475ec5289af923"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reports/topology-gate-r19.json",
+      "bytes": 1091,
+      "sha256": "dcc0650f219a6bf33e07a9671de31d4bb52b5caca8b8b7959e0d0f01791fda95"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reproduction-scripts/finalize_r19.py",
+      "bytes": 14377,
+      "sha256": "dce77ab6b38e9424a72577a6f9c56d237ff40d84845b325ac52abd0b6bc18bbd"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reproduction-scripts/r19_gate3.py",
+      "bytes": 26175,
+      "sha256": "251d25aae687c7324eee9dcb2dacbe596013f52ba0e921591f07ccf629a61bf4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reproduction-scripts/r19_master.py",
+      "bytes": 21157,
+      "sha256": "ff5e8d1febeb860d02ebe225e9203801cd2f6cd580ae254297a6d534937c6e4c"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reproduction-scripts/validate_master_r19.py",
+      "bytes": 18706,
+      "sha256": "122c18372a3024fe85fbb5a63eaadff08cd2937b58f974c9bf202a7a1e3d6533"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reproduction-scripts/validate_r19.py",
+      "bytes": 12719,
+      "sha256": "937999d983ffc7d3363f484b4cc30aee092f75b50131b9f3ff44b2699170b37b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/REPRODUKTION-R19.md",
+      "bytes": 1057,
+      "sha256": "b29984e95eafe4ae2178e978d479fb6d63d7c9a553f4af1b8a626da2f18c8ea9"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/result-status.json",
+      "bytes": 2862,
+      "sha256": "0b8985270292c408cde25255ea2f08637948ee55ded147705e8687fb05e20cee"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/REVISION-R02-R19.md",
+      "bytes": 3834,
+      "sha256": "0bb9b6aefe1af214b0821dc184f1ad1bb5286cb145cc32a01c3ba6cea34c6627"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/stl/herbst-igel-r02-r19-front-body-hollow.stl",
+      "bytes": 39575684,
+      "sha256": "1afa08a76806e4faa6f5014a12ce807270dd010f0028a03134214a31b2ac3029"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/technical-validation-gate3-r19.json",
+      "bytes": 5016,
+      "sha256": "6fa2cfc7f74ac8b718341ea28cc2eadbd2e8d9ce435d12b53e88cd728d656462"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-manifold-underside-blend-r19/technical-validation-r19.json",
+      "bytes": 745,
+      "sha256": "790be2bdc918fbafe45c5d8b7e1da206e6f99d02541d6cd39b6cbab436e08568"
+    }
+  ]
+}

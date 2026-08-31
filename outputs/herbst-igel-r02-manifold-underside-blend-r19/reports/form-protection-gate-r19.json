@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "task_blob_sha": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+  "comparison_basis": [
+    "byte-identical Seed-42 input",
+    "authoritative REF-CLEAN and REF-SEAM",
+    "seven real mesh geometry views",
+    "separate underside close-up",
+    "quantitative silhouette and depth delta"
+  ],
+  "quantitative": {
+    "minimum_seven_view_silhouette_iou": 0.9888500582459644,
+    "maximum_non_bottom_visible_depth_p95_mm": 0.3882445606064948,
+    "bottom_roi_radial_patch_p95_mm": 0.07382676931744919,
+    "bottom_orthographic_depth_metric": "DIAGNOSTIC_ONLY_SOURCE_HAS_INVALID_MULTIPLE_DEPTH_LAYERS",
+    "protected_seed42_radial_cells_changed": 0
+  },
+  "visual_checks": {
+    "clean_overall_impression": "PASS",
+    "no_impacts_holes_scars_runners_steps_or_rough_patch": "PASS",
+    "face_free": "PASS",
+    "eyes_nose_ears_feet_readable": "PASS",
+    "back_and_leaf_character_retained": "PASS",
+    "exactly_one_visible_maple_leaf": "PASS",
+    "ref_seam_plausible": "PASS",
+    "underside": "PASS_WITH_RESTPOINT_CLEAN_SIMPLIFICATION_OF_HIDDEN_RELIEF"
+  },
+  "rest_points": [
+    "The lower central relief is deliberately simplified inside the bounded ROI; no ridge, step, hole or rough repair remains.",
+    "The master is a topology-required dense radial re-indexing; protected Seed-42 radial samples are unchanged, while triangle identities cannot be retained because the source contains distributed open/nonmanifold defects."
+  ],
+  "evidence": {
+    "candidate_contact_sheet": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/candidate-r19-seven-view-contact-sheet.png",
+    "soll_ist_contact_sheet": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-seven-view-contact-sheet.png",
+    "underside_closeup": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/underside-source-vs-master-closeup-r19.png",
+    "ref_clean_triplet": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-ref-clean-source-master-r19.png",
+    "ref_seam_overlay": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/ref-seam-overlay-r19.png",
+    "ref_seam_pair": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/ref-seam-soll-ist-r19.png",
+    "actual_ref_seam_overlay": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/actual-ref-seam-overlay-r19.png",
+    "actual_ref_seam_pair": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/actual-ref-seam-soll-ist-r19.png",
+    "actual_ref_seam_geometry": {
+      "direction_x_threshold": -0.4,
+      "boundary_edges": 1468,
+      "visible_boundary_edges_in_3q_view": 655,
+      "construction": "actual selected icosphere edges; green line is geometry, not affine marking"
+    }
+  },
+  "gate_2": "PASS_WITH_RESTPOINTS",
+  "gate_2_pass_for_gate_3": true,
+  "gate_3_cad_fdm_authorized": true
+}

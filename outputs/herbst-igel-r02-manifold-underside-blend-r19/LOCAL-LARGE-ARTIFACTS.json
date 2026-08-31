@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "threshold_bytes": 90000000,
+  "artifacts": [
+    {
+      "path": "D:\\3D-Models\\generated\\_ruediger-local-large-artifacts\\herbst-igel-r19\\herbst-igel-r02-r19-back-spine-shell-hollow.stl",
+      "bytes": 92670884,
+      "sha256": "252bd9dd2c80a0305a687f86e7505861d25ce4a059828aa8548229e4d6b726b9"
+    }
+  ],
+  "status": "LOCAL_LARGE_ARTIFACTS_PRESENT"
+}

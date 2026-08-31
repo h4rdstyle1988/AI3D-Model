@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "task_blob_sha": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+  "product_revision": "R02",
+  "technical_revision": "R19",
+  "status": "PASS",
+  "gates": {
+    "gate_1_topology": "PASS",
+    "gate_2_form_protection": "PASS_WITH_RESTPOINTS",
+    "gate_3_cad_fdm": "PASS_TECHNICAL_OPEN_REAL_TESTS"
+  },
+  "main_files": [
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/master/herbst-igel-r02-r19-manifold-master-200mm.ply",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/cad-mesh-source/herbst-igel-r02-r19-front-body-hollow.ply",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/cad-mesh-source/herbst-igel-r02-r19-back-spine-shell-hollow.ply",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/stl/herbst-igel-r02-r19-front-body-hollow.stl",
+    "D:\\3D-Models\\generated\\_ruediger-local-large-artifacts\\herbst-igel-r19\\herbst-igel-r02-r19-back-spine-shell-hollow.stl",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/assembly/herbst-igel-r02-r19-assembly.3mf",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/assembly/herbst-igel-r02-r19-assembly.glb",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/soll-ist-r19-seven-view-contact-sheet.png",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/underside-source-vs-master-closeup-r19.png",
+    "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/actual-ref-seam-soll-ist-r19.png"
+  ],
+  "validations": [
+    "R18 source/master/reference SHA-256 gate PASS",
+    "R19 ROI derived from R18 depth error, bottom visibility and source support",
+    "Protected valid Seed-42 radial cells changed: 0",
+    "Gate 1 independent indexed topology and radial self-intersection proof PASS",
+    "Gate 2 seven real geometry views, underside close-up, REF-CLEAN and REF-SEAM PASS_WITH_RESTPOINTS",
+    "Exactly two hollow print parts; both edge-manifold and consistently oriented",
+    "Ø10.0-mm connector and 20.0-mm engagement exact by construction and output-coordinate audit",
+    "STL, 3MF and GLB structural validation"
+  ],
+  "open_real_tests": [
+    "Real slicer preview at 0.12 mm / adaptive 0.08 mm.",
+    "Printed wall-thickness coupon or section measurement.",
+    "Real Ø10.0-mm pin / Ø10.30-mm socket glue-fit coupon.",
+    "Support removal check without contact damage to face, leaf or spine relief.",
+    "Dry assembly and user final product approval."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "All remaining items are real slicer, print, fit, support-removal and final user approval tests; no product choice or binding datum is missing.",
+  "final_user_approval_claimed": false
+}

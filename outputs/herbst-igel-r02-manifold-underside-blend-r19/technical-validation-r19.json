@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "task_blob_sha": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+  "revision": "R02/R19",
+  "input_hash_gate": "PASS",
+  "gate_1_topology": "PASS",
+  "gate_2_form_protection": "PASS_WITH_RESTPOINTS",
+  "gate_3_cad_fdm": "PASS_TECHNICAL_OPEN_REAL_TESTS",
+  "exactly_two_print_parts": true,
+  "wall_mm_nominal": 1.6,
+  "connector_diameter_mm_exact": 10.0,
+  "connector_engagement_mm_exact": 20.0,
+  "glue_clearance_diametral_mm": 0.3,
+  "ref_seam": "PASS_PLAUSIBLE_REF_SEAM",
+  "fdm_orientation_support": "PASS_TECHNICAL_WITH_OPEN_REAL_SLICER_TEST",
+  "overall": "PASS_WITH_OPEN_REAL_TESTS",
+  "final_user_approval_claimed": false
+}

@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "task_blob_sha_expected": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+  "task_blob_sha_actual": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+  "revision": "R02/R19",
+  "checks": {
+    "task_blob_matches": true,
+    "result_status_pass": true,
+    "final_user_approval_not_claimed": true,
+    "front_mesh_pass": true,
+    "back_mesh_pass": true,
+    "front_wall_sample_pass": true,
+    "back_wall_sample_pass": true,
+    "front_pin_coordinates_pass": true,
+    "back_socket_coordinates_pass": true,
+    "front_stl_pass": true,
+    "back_stl_pass": true,
+    "3mf_two_objects_pass": true,
+    "3mf_geometry_counts_pass": true,
+    "glb_pass": true,
+    "manifest_pass": true,
+    "no_file_over_90mb": true,
+    "local_large_artifact_pass": true
+  },
+  "front_mesh": {
+    "vertices": 395760,
+    "triangles": 791512,
+    "expected_boundary_surface_components": 2,
+    "component_interpretation": "one exterior boundary plus one closed cavity boundary of a single printable solid",
+    "open_edges": 0,
+    "nonmanifold_edges": 0,
+    "nonmanifold_vertices": 0,
+    "max_edge_incidence": 2,
+    "orientation_conflict_edges": 0,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "signed_material_volume_mm3": 76744.9751415054,
+    "bounds_min_mm": [
+      -100.10193634033203,
+      -96.13494110107422,
+      -80.77452087402344
+    ],
+    "bounds_max_mm": [
+      20.0,
+      79.12456512451172,
+      72.81654357910156
+    ],
+    "max_extent_mm": 175.25950622558594,
+    "pass": true
+  },
+  "back_mesh": {
+    "vertices": 926712,
+    "triangles": 1853416,
+    "expected_boundary_surface_components": 2,
+    "component_interpretation": "one exterior boundary plus one closed cavity boundary of a single printable solid",
+    "open_edges": 0,
+    "nonmanifold_edges": 0,
+    "nonmanifold_vertices": 0,
+    "max_edge_incidence": 2,
+    "orientation_conflict_edges": 0,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "signed_material_volume_mm3": 123464.70731558122,
+    "bounds_min_mm": [
+      -49.469573974609375,
+      -98.71149444580078,
+      -80.78659057617188
+    ],
+    "bounds_max_mm": [
+      99.99213409423828,
+      98.76293182373047,
+      81.53269958496094
+    ],
+    "max_extent_mm": 197.47442626953125,
+    "pass": true
+  },
+  "front_wall_sample": {
+    "sampled_outer_vertices": 2048,
+    "matching_inner_vertices": 2048,
+    "nominal_radial_offset_mm": 1.6,
+    "pass": true
+  },
+  "back_wall_sample": {
+    "sampled_outer_vertices": 2048,
+    "matching_inner_vertices": 2048,
+    "nominal_radial_offset_mm": 1.6,
+    "pass": true
+  },
+  "front_pin_coordinate_audit": {
+    "matched_vertices": 2936,
+    "x_min_mm": 0.0,
+    "x_max_mm": 20.0,
+    "radius_min_mm": 4.999999759341193,
+    "radius_max_mm": 5.000000258209223,
+    "diameter_nominal_mm": 10.0,
+    "pass": true
+  },
+  "back_socket_coordinate_audit": {
+    "matched_vertices": 2936,
+    "x_min_mm": 0.0,
+    "x_max_mm": 20.0,
+    "radius_min_mm": 5.1499997430355196,
+    "radius_max_mm": 5.150000257140022,
+    "diameter_nominal_mm": 10.3,
+    "pass": true
+  },
+  "front_stl": {
+    "header": "Herbst-Igel R02 R19 FRONT",
+    "triangles": 791512,
+    "bytes": 39575684,
+    "expected_bytes": 39575684,
+    "length_pass": true
+  },
+  "back_stl": {
+    "header": "Herbst-Igel R02 R19 BACK",
+    "triangles": 1853416,
+    "bytes": 92670884,
+    "expected_bytes": 92670884,
+    "length_pass": true
+  },
+  "assembly_3mf": {
+    "entries": [
+      "3D/3dmodel.model",
+      "[Content_Types].xml",
+      "_rels/.rels"
+    ],
+    "counts": {
+      "<object ": 2,
+      "<item ": 2,
+      "<vertex ": 1322472,
+      "<triangle ": 2644928
+    },
+    "compressed_model_bytes": 37170356,
+    "uncompressed_model_bytes": 195883735,
+    "bytes": 37171072
+  },
+  "assembly_glb": {
+    "magic": "glTF",
+    "version": 2,
+    "declared_length": 47610628,
+    "actual_length": 47610628,
+    "json_chunk_type": "JSON",
+    "bin_chunk_type_hex": "42494e00",
+    "bin_declared_bytes": 47608800,
+    "bin_actual_bytes": 47608800,
+    "nodes": 2,
+    "meshes": 2,
+    "materials": 2,
+    "buffers": [
+      {
+        "byteLength": 47608800
+      }
+    ],
+    "pass": true
+  },
+  "manifest_failures": [],
+  "local_large_artifact_failures": [],
+  "open_real_tests": [
+    "Real slicer preview at 0.12 mm / adaptive 0.08 mm.",
+    "Printed wall-thickness coupon or section measurement.",
+    "Real Ø10.0-mm pin / Ø10.30-mm socket glue-fit coupon.",
+    "Support removal check without contact damage to face, leaf or spine relief.",
+    "Dry assembly and user final product approval."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "final_user_approval_claimed": false,
+  "overall": "PASS"
+}

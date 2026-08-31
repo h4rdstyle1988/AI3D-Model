@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "task_blob_sha": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+  "reference": "outputs/herbst-igel-r02-manifold-underside-blend-r19/reference-audit/ref-seam-r19.jpg",
+  "construction": "existing icosphere small-circle edge loop around the front; no cut triangles and no global surface change",
+  "direction_x_threshold": -0.4,
+  "front_outer_faces": 391352,
+  "back_outer_faces": 919368,
+  "partition_complete": true,
+  "shared_boundary_edges": 1468,
+  "front": {
+    "outer": {
+      "edges": 1468,
+      "vertices": 1468,
+      "degree_min": 0,
+      "degree_max": 2,
+      "closed_loop_components": 1,
+      "all_vertices_degree_two": true
+    },
+    "inner": {
+      "edges": 1468,
+      "vertices": 1468,
+      "degree_min": 0,
+      "degree_max": 2,
+      "closed_loop_components": 1,
+      "all_vertices_degree_two": true
+    },
+    "outer_x_range_mm": [
+      -49.469573974609375,
+      -27.51024055480957
+    ],
+    "inner_x_range_mm": [
+      -48.82628881168408,
+      -26.872338767193543
+    ]
+  },
+  "back": {
+    "outer": {
+      "edges": 1468,
+      "vertices": 1468,
+      "degree_min": 0,
+      "degree_max": 2,
+      "closed_loop_components": 1,
+      "all_vertices_degree_two": true
+    },
+    "inner": {
+      "edges": 1468,
+      "vertices": 1468,
+      "degree_min": 0,
+      "degree_max": 2,
+      "closed_loop_components": 1,
+      "all_vertices_degree_two": true
+    },
+    "outer_x_range_mm": [
+      -49.469573974609375,
+      -27.51024055480957
+    ],
+    "inner_x_range_mm": [
+      -48.82628881168408,
+      -26.872338767193543
+    ]
+  },
+  "visual_evidence_affine_reference": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/ref-seam-soll-ist-r19.png",
+  "visual_evidence_actual_geometry": "outputs/herbst-igel-r02-manifold-underside-blend-r19/renders-gate-evidence/actual-ref-seam-soll-ist-r19.png",
+  "status": "PASS_PLAUSIBLE_REF_SEAM"
+}

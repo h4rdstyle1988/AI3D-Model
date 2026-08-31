@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "task_blob_sha": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+  "master_sha256": "1bb01a1426f03bfcabb2cad2e7fd3a1104c45cf8c86e149140f5ccf885b9704b",
+  "gate_1": "PASS",
+  "gate_2": "PASS_WITH_RESTPOINTS",
+  "gate_3_authorized": true,
+  "final_user_approval_claimed": false
+}

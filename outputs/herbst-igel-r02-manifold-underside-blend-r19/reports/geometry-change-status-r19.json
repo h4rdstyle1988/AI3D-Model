@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-MANIFOLD-UNDERSIDE-BLEND-R19.md",
+  "task_blob_sha": "7e77f3057866d63e26d063ed3cd670d6112b7b0f",
+  "revision": "R02/R19",
+  "GEAENDERT": [
+    "Seed-42 exterior re-indexed as one oriented dense radial manifold because the source contains distributed open/nonmanifold defects.",
+    "Underside ROI rebuilt from R18 depth error and support evidence; only this region receives a two-pass robust median and eight-cell smoothstep blend.",
+    "Clean central underside simplification replaces R18 ridges, MLS rough patch and excessive depth displacement.",
+    "REF-SEAM split, two 1.6-mm hollow print parts and the required central glue connector were constructed after Gate 1 and Gate 2 passed."
+  ],
+  "UNVERAENDERT": [
+    "Protected valid Seed-42 radial samples outside the ROI: zero changed cells.",
+    "Approximately 200-mm overall size and proportional character.",
+    "Exactly two print parts and assigned tan/copper materials.",
+    "Face remains free; eyes, nose, ears and feet remain readable.",
+    "Exactly one visible maple leaf; back/leaf character retained.",
+    "Required connector diameter 10.0 mm and engagement 20.0 mm."
+  ],
+  "ENTFERNT": [
+    "R18 transition ridges and depth-clamp artefacts are not present in the R19 master.",
+    "Discarded R19 diagnostic prototype with unsupported -108.92-mm underside extrapolation.",
+    "No confirmed production geometry or user dimension was removed."
+  ],
+  "OFFEN": [
+    "Real slicer preview at 0.12 mm / adaptive 0.08 mm.",
+    "Printed wall-thickness coupon or section measurement.",
+    "Real Ø10.0-mm pin / Ø10.30-mm socket glue-fit coupon.",
+    "Support removal check without contact damage to face, leaf or spine relief.",
+    "Dry assembly and user final product approval."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "All remaining items are real slicer, print, fit, support-removal and final user approval tests; no product choice or binding datum is missing."
+}
