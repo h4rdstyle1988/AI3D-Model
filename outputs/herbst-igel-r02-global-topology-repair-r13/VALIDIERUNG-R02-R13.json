@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-GLOBAL-TOPOLOGY-REPAIR-R13.md",
+  "task_blob_sha": "b21a7d611c36c7e2a0b826f3a9f8d329cddfd242",
+  "product_revision": "R02",
+  "technical_revision": "R13",
+  "status": "STOPP",
+  "stop_phase": "FORM_PROTECTION_AND_OPTIK_GATE",
+  "reference_and_seed_hash_gate": {
+    "status": "PASS",
+    "seed42_sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+    "ref_clean_sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+    "ref_seam_sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+  },
+  "mesh_gate_before_optic_gate": {
+    "status": "PASS",
+    "vertices": 1192404,
+    "triangles": 2384816,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "degenerate_faces": 0,
+    "confirmed_self_or_cross_intersections": 0,
+    "connected_surfaces": 1,
+    "orientable": true
+  },
+  "outside_roi_form_protection": {
+    "status": "FAIL",
+    "node_sampling_bound_p95_mm": 0.14620980616446655,
+    "node_sampling_bound_max_mm": 0.2924196123289419,
+    "surface_area_ratio_repaired_to_seed42": 60.461194963848826,
+    "reason": "The heightfield connects different Seed-42 depth layers. Node extrema alone meet tolerance, but the actual visible surface is not protected."
+  },
+  "optic_gate": {
+    "status": "FAIL",
+    "failed_criteria": [
+      "free_round_reference_like_face",
+      "forehead_free_of_leaf_spine_geometry",
+      "both_eyes_clear_and_integrated",
+      "both_ears_clear_and_integrated",
+      "snout_and_nose_cleanly_integrated",
+      "plausible_back_structure",
+      "one_maple_leaf_unambiguously_visible",
+      "ref_seam_visual_continuity",
+      "no_visible_repair_artifact"
+    ],
+    "passed_criteria": ["four_short_feet_remain_represented", "real_geometry_six_views_exist"],
+    "soll_ist_report": "outputs/herbst-igel-r02-global-topology-repair-r13/reports/soll-ist-binary-r13.json",
+    "soll_ist_sheet": "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/soll-ist-optik-gate-r13.png"
+  },
+  "attempted_technical_methods": [
+    {"method": "double_heightfield", "mesh_gate": "PASS", "form_gate": "FAIL", "optic_gate": "FAIL", "selected_as_non_approved_evidence": true},
+    {"method": "radial_icosphere_envelope", "mesh_gate": "PASS", "form_gate": "FAIL", "optic_gate": "FAIL", "reason": "non-star-shaped figure became bulbous and foot/leaf spaces joined"},
+    {"method": "three_axis_visual_volume", "mesh_gate": "FAIL", "form_gate": "FAIL", "optic_gate": "FAIL", "reason": "voxel point contacts and loss of facial relief"}
+  ],
+  "cad_fdm_phase": {
+    "status": "NOT_RUN_BY_FORM_AND_OPTIK_GATE",
+    "approved_master_created": false,
+    "split_created": false,
+    "hollow_shells_created": false,
+    "connector_created": false,
+    "stl_created": false,
+    "three_mf_created": false,
+    "glb_created": false,
+    "fdm_validation_run": false
+  },
+  "open_real_tests": [
+    "No physical print, fit, wall, support, material or 200 mm production-scale test is applicable before form and optic PASS."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "The stop is caused by technically insufficient surface reconstruction; no product dimension, function or real reference datum is missing.",
+  "final_user_approval_claimed": false
+}

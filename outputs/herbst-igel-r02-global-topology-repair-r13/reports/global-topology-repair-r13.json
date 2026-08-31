@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-GLOBAL-TOPOLOGY-REPAIR-R13.md",
+  "task_blob_sha": "b21a7d611c36c7e2a0b826f3a9f8d329cddfd242",
+  "product_revision": "R02",
+  "technical_revision": "R13",
+  "hash_gate": {
+    "expected": {
+      "seed42": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+      "ref_clean": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+      "ref_seam": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    "actual": {
+      "seed42": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+      "ref_clean": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+      "ref_seam": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    "status": "PASS"
+  },
+  "method": "deterministic_seed42_outer_double_heightfield_with_ref_seam_single_surface_rebuild",
+  "grid": {
+    "requested_step_normalized": 0.00065,
+    "actual_step_x_normalized": 0.0006498919401198289,
+    "actual_step_z_normalized": 0.0006495566724182833,
+    "grid_nodes": [
+      968,
+      771
+    ],
+    "observed_nodes": 584438,
+    "closed_projected_nodes": 599589,
+    "projection_components_removed": 0
+  },
+  "face_rebuild": {
+    "authority": "REF-CLEAN/REF-SEAM and fixed R11 measured body-width profiles",
+    "foreground_bbox_px": [
+      72,
+      45,
+      383,
+      338
+    ],
+    "body_pixels": 25547,
+    "seam_band_pixels": 4391,
+    "grid_nodes_changed": 150742,
+    "projected_source_nodes_removed_in_roi": 9982,
+    "projected_body_nodes_added_from_reference_in_roi": 6596,
+    "grid_nodes_full_body_weight": 134104,
+    "max_y_change_normalized": 0.5237601199830949,
+    "protected_features": [
+      {
+        "name": "front_ear",
+        "center_px": [
+          103,
+          154
+        ],
+        "radius_px": 18
+      },
+      {
+        "name": "reference_side_ear",
+        "center_px": [
+          226,
+          174
+        ],
+        "radius_px": 23
+      },
+      {
+        "name": "front_eye",
+        "center_px": [
+          111,
+          210
+        ],
+        "radius_px": 12
+      },
+      {
+        "name": "reference_side_eye",
+        "center_px": [
+          205,
+          207
+        ],
+        "radius_px": 13
+      },
+      {
+        "name": "nose",
+        "center_px": [
+          79,
+          231
+        ],
+        "radius_px": 16
+      }
+    ],
+    "lower_body_guard_normalized": -0.105,
+    "single_surface_integration": true
+  },
+  "surface_construction": {
+    "active_cells": 593658,
+    "used_grid_nodes": 596202,
+    "silhouette_boundary_segments": 5092
+  },
+  "master": {
+    "path": "outputs/herbst-igel-r02-global-topology-repair-r13/masterform/herbst-igel-r02-masterform-r13-NON-APPROVED.ply",
+    "sha256": "bfa387397544e0c56208ba0227b97a33eeeaae648ef0299a4d8d2c66da430795",
+    "bytes": 45311637,
+    "normalized_geometry": true
+  },
+  "topology_audit": "outputs/herbst-igel-r02-global-topology-repair-r13/reports/topology-audit-r13.json",
+  "form_deviation_report": "outputs/herbst-igel-r02-global-topology-repair-r13/reports/global-form-deviation-r13.json",
+  "render_report": "outputs/herbst-igel-r02-global-topology-repair-r13/reports/real-geometry-renders-r13.json",
+  "mesh_gate": "PASS",
+  "form_protection_gate": "FAIL",
+  "optic_gate": "PENDING_MANUAL_BINARY_REVIEW",
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-GLOBAL-TOPOLOGY-REPAIR-R13.md",
+  "task_blob_sha": "b21a7d611c36c7e2a0b826f3a9f8d329cddfd242",
+  "product_revision": "R02",
+  "technical_revision": "R13",
+  "status": "STOPP",
+  "gate": "FORM_PROTECTION_AND_OPTIK_GATE",
+  "summary": "A closed connected orientable zero-error topology was produced, but its depth-layer bridges violate visible-form protection and the REF-CLEAN/REF-SEAM optical gate. Manufacturing outputs remain blocked.",
+  "main_files": {
+    "non_approved_master": "outputs/herbst-igel-r02-global-topology-repair-r13/masterform/herbst-igel-r02-masterform-r13-NON-APPROVED.ply",
+    "validation": "outputs/herbst-igel-r02-global-topology-repair-r13/VALIDIERUNG-R02-R13.json",
+    "topology_audit": "outputs/herbst-igel-r02-global-topology-repair-r13/reports/topology-audit-r13.json",
+    "form_deviation": "outputs/herbst-igel-r02-global-topology-repair-r13/reports/global-form-deviation-r13.json",
+    "soll_ist": "outputs/herbst-igel-r02-global-topology-repair-r13/reports/soll-ist-binary-r13.json",
+    "renders": "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-contact-sheet-r13.png",
+    "soll_ist_sheet": "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/soll-ist-optik-gate-r13.png",
+    "revision_report": "outputs/herbst-igel-r02-global-topology-repair-r13/REVISION-R02-R13.md"
+  },
+  "validations": {
+    "hash_gate": true,
+    "mesh_gate": true,
+    "outside_roi_form_protection": false,
+    "optic_gate": false,
+    "cad_fdm_generated": false
+  },
+  "open_real_tests": ["Physical production tests remain blocked by the failed form and optic gates."],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Technical reconstruction failure; no user choice or missing binding measurement.",
+  "final_user_approval_claimed": false
+}

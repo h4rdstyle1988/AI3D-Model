@@ -1,0 +1,8 @@
+STOPP durch FORM_PROTECTION_GATE FAIL und OPTIK_GATE FAIL.
+
+Gemäß R13 wurden kein freigegebener Master, kein Split, keine 1,6-mm-Hohlschalen,
+kein Ø10,0 × 20,0-mm-Klebeverbinder, keine STL/3MF/GLB und keine FDM-Validierung
+erzeugt. Die vorhandene PLY ist ausschließlich ein NON-APPROVED technischer
+Prüfstand. Keine finale Nutzerfreigabe wird behauptet.
+
+NUTZERENTSCHEIDUNG_ERFORDERLICH: false

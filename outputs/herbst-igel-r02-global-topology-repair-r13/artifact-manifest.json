@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-GLOBAL-TOPOLOGY-REPAIR-R13.md",
+  "task_blob_sha": "b21a7d611c36c7e2a0b826f3a9f8d329cddfd242",
+  "product_revision": "R02",
+  "technical_revision": "R13",
+  "status": "STOPP",
+  "files": [
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/CAD-STL-3MF-GLB-FDM-NOT-CREATED.txt",
+      "bytes": 400,
+      "sha256": "93d42a72247213f8461afd679e6fb5e2a43496ccfa13fff489cd24bca3e627ff"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/diagnostics/roi-and-heightfield-diagnostic-r13.png",
+      "bytes": 150378,
+      "sha256": "ff62c825fc5af1c2468770203ce1c9f43187d656e7fec4ad3053ad14e713cb3b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/INTERMEDIATE-ARTIFACTS-NON-APPROVED.md",
+      "bytes": 710,
+      "sha256": "7e94758099b187c55b35cabb84db5741d4a12e30567bc114ab6ba9ebd1cd4f0f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/masterform/heightfield-r13.npz",
+      "bytes": 6105071,
+      "sha256": "99a7c282eb97a24d20745ed421410f0d39fffd8f0f752c9e92ace9e60429d70e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/masterform/herbst-igel-r02-masterform-r13-NON-APPROVED.ply",
+      "bytes": 45311637,
+      "sha256": "bfa387397544e0c56208ba0227b97a33eeeaae648ef0299a4d8d2c66da430795"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/masterform/herbst-igel-r02-masterform-r13.ply",
+      "bytes": 45311637,
+      "sha256": "bfa387397544e0c56208ba0227b97a33eeeaae648ef0299a4d8d2c66da430795"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/masterform/radial-field-r13.npz",
+      "bytes": 1885170,
+      "sha256": "33db6056935a5d062de167043acaa4771440570cb2703efbd391c99312a2e041"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/masterform/visual-volume-r13.npz",
+      "bytes": 113493,
+      "sha256": "22996c6a57e81a585f72997b258cc7e00405fa5ff7989124ed9ac7a3d95af375"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/reference-audit/ref-clean-r13.jpg",
+      "bytes": 17344,
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/reference-audit/ref-seam-r13.jpg",
+      "bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-3q-front.png",
+      "bytes": 117390,
+      "sha256": "957dbccb0d64a9244d5a11b484a9aea45b9b25ae858fd3d8e041d67739544c43"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-bottom.png",
+      "bytes": 131022,
+      "sha256": "e9d20d67f75585c4f6e65c5818d88df8c43f0f0444ff866fbc97574b3d09e2aa"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-contact-sheet-r13.png",
+      "bytes": 537489,
+      "sha256": "ed3a6ba096341c4f7a897de8a0a315718bc90ea6c4a583c17daa8785ce036220"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-left.png",
+      "bytes": 98496,
+      "sha256": "c3aaf3fe56d24869685260d6a677b292fa0f954715512851f6099b70d4741ddf"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-rear.png",
+      "bytes": 119632,
+      "sha256": "a9b8896e8308760de590653c0a107caf67feea7e8a45ef801d53f5f3cfeeb6fe"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-right.png",
+      "bytes": 89220,
+      "sha256": "64c942c3f7ece246be8c7b4bcbe87e4daea021f32e11c94f0651fff257ddcd07"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-top.png",
+      "bytes": 129279,
+      "sha256": "2dca90c5d5180422433669d404a18cdd6b9766590d3b41eeade67fcb41583622"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/soll-ist-optik-gate-r13.png",
+      "bytes": 656981,
+      "sha256": "641904d9f9c51ebc5b468ee2178a513d0158547f1c3c6219aaadf270b61c6e22"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/reports/evidence-validation-r13.json",
+      "bytes": 2477,
+      "sha256": "9062d6e32a1f19e91dd758c852fc2fb462908089bd5e3b813e3671530f1fb343"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/reports/global-form-deviation-r13.json",
+      "bytes": 1035,
+      "sha256": "9db44fe9990c07b669c8a85a100b2c35e6b79336427b21fd82311bbc77f697cc"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/reports/global-topology-repair-r13.json",
+      "bytes": 3529,
+      "sha256": "121fbf7f97272110a4b169f5f2b41ff970c7d5243c89b2af2d2151c3c4d22b5e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/reports/real-geometry-renders-r13.json",
+      "bytes": 2012,
+      "sha256": "d15f4af1f04ea9ebfb37ac2fee6d657626e39b4acaa604241da52ed89d138178"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/reports/soll-ist-binary-r13.json",
+      "bytes": 2469,
+      "sha256": "6b094942aa1785e6653a041a4ab4f4dcb1b76c5bf3d99c8452bfbb64102fbe38"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/reports/topology-audit-r13.json",
+      "bytes": 1510,
+      "sha256": "c7638284fa083654a560e5faf8b33acf6b28be8a080994bdffaff6232107ea4a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/reproduction-scripts/build_r13.py",
+      "bytes": 38086,
+      "sha256": "410afc6fa06df91edc881ad84ab367a3c4f10f0cda7625b14d2dcf0df02d97ec"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/reproduction-scripts/build_spherical_r13.py",
+      "bytes": 13840,
+      "sha256": "82294dd50529915f71ed5c32df4a8aa45028acdf52e03354cf22a887ea3836ce"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/reproduction-scripts/build_voxel_r13.py",
+      "bytes": 11413,
+      "sha256": "3e4511f256562aafac3bf5a33a11332334eb10c6745887f492767d25ea2afa1f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/reproduction-scripts/validate_r13.py",
+      "bytes": 4965,
+      "sha256": "3e131363fb7737619ffd7d721169fdbe087dd0c0f6d64a3c8087dd015d758348"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/REPRODUKTION-R13.md",
+      "bytes": 866,
+      "sha256": "53959fbfbad78f49c78826f39f18d535b25a48421200e86c73449820ccd8c426"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/result-status.json",
+      "bytes": 1898,
+      "sha256": "9742daf0dc59ac766e35f4abc0604ddb30dee2f09a45e9512f4d60271179e807"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/REVISION-R02-R13.md",
+      "bytes": 2409,
+      "sha256": "f4c4132dc5eb4475e014fdedac7e360684558596d0f617fbd9c26358e0a26851"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-global-topology-repair-r13/VALIDIERUNG-R02-R13.json",
+      "bytes": 3349,
+      "sha256": "08992880ff483d774b15c0297038e62cff5f56ec9ce4d0b01292f68c3491d0e4"
+    }
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "final_user_approval_claimed": false
+}

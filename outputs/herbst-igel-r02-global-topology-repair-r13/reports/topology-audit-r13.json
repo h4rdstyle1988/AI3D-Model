@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-GLOBAL-TOPOLOGY-REPAIR-R13.md",
+  "task_blob_sha": "b21a7d611c36c7e2a0b826f3a9f8d329cddfd242",
+  "before_seed42": {
+    "vertices": 436742,
+    "triangles": 870466,
+    "used_vertices": 436374,
+    "boundary_edges": 8608,
+    "nonmanifold_edges": 5079,
+    "max_edge_incidence": 4,
+    "degenerate_faces": 0,
+    "bounds_min": [
+      -0.23905783891677856,
+      -0.17113235592842102,
+      -0.21962818503379822
+    ],
+    "bounds_max": [
+      0.38938766717910767,
+      0.44926708936691284,
+      0.2805304527282715
+    ],
+    "surface_area_normalized2": 1.1084797382354736,
+    "all_edges_incidence_two": false
+  },
+  "after_repaired_master": {
+    "vertices": 1192404,
+    "triangles": 2384816,
+    "used_vertices": 1192404,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "max_edge_incidence": 2,
+    "degenerate_faces": 0,
+    "bounds_min": [
+      -0.23905783891677856,
+      -0.17095601558685303,
+      -0.21962818503379822
+    ],
+    "bounds_max": [
+      0.38938766717910767,
+      0.44926708936691284,
+      0.2805304527282715
+    ],
+    "surface_area_normalized2": 67.02000956693108,
+    "all_edges_incidence_two": true
+  },
+  "single_connected_surface": true,
+  "orientable": true,
+  "confirmed_self_or_cross_intersections": 0,
+  "intersection_proof": "strict double-heightfield ordering plus simple projected boundary; top>bottom at every used node",
+  "status": "PASS"
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-GLOBAL-TOPOLOGY-REPAIR-R13.md",
+  "comparison": "Seed-42 visible exterior envelope -> repaired master outside R11/R12 ROI",
+  "final_scale_mm_per_normalized_unit": 318.2455727028218,
+  "outside_roi_grid_nodes": 375968,
+  "measured_node_displacement_mm": {
+    "median": 0.0,
+    "p95": 0.0,
+    "maximum": 8.833089057492299e-15
+  },
+  "sampling_half_cell_diagonal_mm": 0.14620980616446655,
+  "conservative_surface_bound_mm": {
+    "p95": 0.14620980616446655,
+    "maximum": 0.2924196123289419
+  },
+  "requirements_mm": {
+    "p95_max": 0.15,
+    "maximum_max": 0.4
+  },
+  "status": "FAIL",
+  "local_exceedances": [],
+  "surface_area_ratio_repaired_to_seed42": 60.461194963848826,
+  "surface_area_gate_max_ratio": 1.25,
+  "failure_reason": "Although envelope nodes outside ROI retain their measured extrema, connections between different Seed-42 depth layers create excessive real surface area and therefore do not protect the visible surface."
+}

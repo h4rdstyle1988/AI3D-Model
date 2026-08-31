@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-GLOBAL-TOPOLOGY-REPAIR-R13.md",
+  "status": "PASS_EVIDENCE_SET_FOR_STOPP",
+  "checks": {
+    "required_files_present": true,
+    "master_sha256_matches_build_report": true,
+    "mesh_boundary_edges_zero": true,
+    "mesh_nonmanifold_edges_zero": true,
+    "mesh_degenerate_faces_zero": true,
+    "mesh_single_connected_orientable": true,
+    "confirmed_cross_intersections_zero": true,
+    "form_gate_fails": true,
+    "optic_gate_fails": true,
+    "overall_status_stopp": true,
+    "manufacturing_outputs_absent": true,
+    "final_user_approval_not_claimed": true,
+    "nutzerentscheidung_false": true
+  },
+  "missing": [],
+  "forbidden_manufacturing_outputs": [],
+  "image_checks": {
+    "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-contact-sheet-r13.png": {
+      "size": [
+        1560,
+        1040
+      ],
+      "format": "PNG",
+      "valid": true
+    },
+    "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/soll-ist-optik-gate-r13.png": {
+      "size": [
+        1560,
+        1040
+      ],
+      "format": "PNG",
+      "valid": true
+    },
+    "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-3q-front.png": {
+      "size": [
+        1100,
+        1100
+      ],
+      "format": "PNG",
+      "valid": true
+    },
+    "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-left.png": {
+      "size": [
+        1100,
+        1100
+      ],
+      "format": "PNG",
+      "valid": true
+    },
+    "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-right.png": {
+      "size": [
+        1100,
+        1100
+      ],
+      "format": "PNG",
+      "valid": true
+    },
+    "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-rear.png": {
+      "size": [
+        1100,
+        1100
+      ],
+      "format": "PNG",
+      "valid": true
+    },
+    "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-top.png": {
+      "size": [
+        1100,
+        1100
+      ],
+      "format": "PNG",
+      "valid": true
+    },
+    "outputs/herbst-igel-r02-global-topology-repair-r13/renders-optik-gate/masterform-bottom.png": {
+      "size": [
+        1100,
+        1100
+      ],
+      "format": "PNG",
+      "valid": true
+    }
+  }
+}

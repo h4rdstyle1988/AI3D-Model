@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-GLOBAL-TOPOLOGY-REPAIR-R13.md",
+  "product_revision": "R02",
+  "technical_revision": "R13",
+  "source_is_real_geometry": true,
+  "mesh_gate_before_optic_gate": "PASS",
+  "criteria": [
+    {"criterion": "one_closed_orientable_2_manifold_surface", "pass": true, "evidence": "0 boundary edges, 0 nonmanifold edges, 0 degenerate faces; connected double-heightfield construction"},
+    {"criterion": "confirmed_self_or_cross_intersections_zero", "pass": true, "evidence": "strict ordered top/bottom heightfields and simple common boundary"},
+    {"criterion": "outside_roi_visible_form_protected", "pass": false, "evidence": "node extrema meet the numeric sampling bound, but real surface area is 60.461x Seed-42 because different depth layers are connected"},
+    {"criterion": "face_free_and_round_like_ref_clean", "pass": false, "evidence": "3/4-front remains visually obstructed and not reference-like"},
+    {"criterion": "forehead_free_of_leaf_spine_shelf", "pass": false, "evidence": "hard upper forehead/seam overhang remains in real 3/4 render"},
+    {"criterion": "both_eyes_clear_and_organically_integrated", "pass": false, "evidence": "both eyes are not unambiguously clear across front/side renders"},
+    {"criterion": "both_ears_clear_and_organically_integrated", "pass": false, "evidence": "ear relief is not clearly preserved and integrated"},
+    {"criterion": "short_soft_snout_and_nose_clear", "pass": false, "evidence": "side nose silhouette remains, but front/3/4 integration is not clean"},
+    {"criterion": "four_short_feet_preserved", "pass": true, "evidence": "paired feet remain represented across front and side views"},
+    {"criterion": "arched_plausible_back_structure", "pass": false, "evidence": "depth-layer connections flatten or over-densify the visible back surface"},
+    {"criterion": "exactly_one_visible_maple_leaf", "pass": false, "evidence": "the existing reference-side leaf is not unambiguously readable in the repaired real geometry"},
+    {"criterion": "ref_seam_visually_plausible_without_hard_step", "pass": false, "evidence": "hard transition/overhang remains"},
+    {"criterion": "repair_not_visible_as_patch_cap_fan_or_block", "pass": false, "evidence": "depth-layer bridging remains visibly artificial"}
+  ],
+  "mesh_gate": "PASS",
+  "form_protection_gate": "FAIL",
+  "optic_gate": "FAIL",
+  "overall": "STOPP",
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false
+}
