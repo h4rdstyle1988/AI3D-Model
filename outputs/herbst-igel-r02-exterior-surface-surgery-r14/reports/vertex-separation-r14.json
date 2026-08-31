@@ -1,0 +1,3605 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "source_vertex": 1090,
+      "new_vertex": 436742,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 5255,
+      "new_vertex": 436743,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 5280,
+      "new_vertex": 436744,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 6464,
+      "new_vertex": 436745,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 6466,
+      "new_vertex": 436746,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 6466,
+      "new_vertex": 436747,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 6677,
+      "new_vertex": 436748,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 6678,
+      "new_vertex": 436749,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 7258,
+      "new_vertex": 436750,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 9602,
+      "new_vertex": 436751,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 9669,
+      "new_vertex": 436752,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 10732,
+      "new_vertex": 436753,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 10733,
+      "new_vertex": 436754,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 11521,
+      "new_vertex": 436755,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 11560,
+      "new_vertex": 436756,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 11567,
+      "new_vertex": 436757,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 11585,
+      "new_vertex": 436758,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12551,
+      "new_vertex": 436759,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12552,
+      "new_vertex": 436760,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 12556,
+      "new_vertex": 436761,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 12556,
+      "new_vertex": 436762,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12561,
+      "new_vertex": 436763,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 12562,
+      "new_vertex": 436764,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 12563,
+      "new_vertex": 436765,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 12564,
+      "new_vertex": 436766,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 12565,
+      "new_vertex": 436767,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12621,
+      "new_vertex": 436768,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12635,
+      "new_vertex": 436769,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 12770,
+      "new_vertex": 436770,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12771,
+      "new_vertex": 436771,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 12772,
+      "new_vertex": 436772,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12777,
+      "new_vertex": 436773,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12779,
+      "new_vertex": 436774,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 12783,
+      "new_vertex": 436775,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 12801,
+      "new_vertex": 436776,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12801,
+      "new_vertex": 436777,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12804,
+      "new_vertex": 436778,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12810,
+      "new_vertex": 436779,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12814,
+      "new_vertex": 436780,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12846,
+      "new_vertex": 436781,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 12851,
+      "new_vertex": 436782,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12854,
+      "new_vertex": 436783,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12857,
+      "new_vertex": 436784,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12876,
+      "new_vertex": 436785,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12878,
+      "new_vertex": 436786,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12884,
+      "new_vertex": 436787,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 12886,
+      "new_vertex": 436788,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12887,
+      "new_vertex": 436789,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12888,
+      "new_vertex": 436790,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 12889,
+      "new_vertex": 436791,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12890,
+      "new_vertex": 436792,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 12891,
+      "new_vertex": 436793,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 8
+    },
+    {
+      "source_vertex": 12893,
+      "new_vertex": 436794,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12893,
+      "new_vertex": 436795,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 12895,
+      "new_vertex": 436796,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12895,
+      "new_vertex": 436797,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12898,
+      "new_vertex": 436798,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 12899,
+      "new_vertex": 436799,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 12900,
+      "new_vertex": 436800,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12901,
+      "new_vertex": 436801,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 12904,
+      "new_vertex": 436802,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12906,
+      "new_vertex": 436803,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12908,
+      "new_vertex": 436804,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 12910,
+      "new_vertex": 436805,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 12911,
+      "new_vertex": 436806,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 12928,
+      "new_vertex": 436807,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 8
+    },
+    {
+      "source_vertex": 12931,
+      "new_vertex": 436808,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 13054,
+      "new_vertex": 436809,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 13059,
+      "new_vertex": 436810,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 13098,
+      "new_vertex": 436811,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 13110,
+      "new_vertex": 436812,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 13111,
+      "new_vertex": 436813,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 13111,
+      "new_vertex": 436814,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 13111,
+      "new_vertex": 436815,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 13112,
+      "new_vertex": 436816,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 13113,
+      "new_vertex": 436817,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 13113,
+      "new_vertex": 436818,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 13116,
+      "new_vertex": 436819,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 13120,
+      "new_vertex": 436820,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 13121,
+      "new_vertex": 436821,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 13122,
+      "new_vertex": 436822,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 13122,
+      "new_vertex": 436823,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 13125,
+      "new_vertex": 436824,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 13156,
+      "new_vertex": 436825,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 13190,
+      "new_vertex": 436826,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 13193,
+      "new_vertex": 436827,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 13195,
+      "new_vertex": 436828,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 13201,
+      "new_vertex": 436829,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 13202,
+      "new_vertex": 436830,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 13204,
+      "new_vertex": 436831,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 13211,
+      "new_vertex": 436832,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 13221,
+      "new_vertex": 436833,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 13221,
+      "new_vertex": 436834,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 13222,
+      "new_vertex": 436835,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 13402,
+      "new_vertex": 436836,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 14037,
+      "new_vertex": 436837,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 14730,
+      "new_vertex": 436838,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 14739,
+      "new_vertex": 436839,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 14770,
+      "new_vertex": 436840,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 14781,
+      "new_vertex": 436841,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 14806,
+      "new_vertex": 436842,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 14807,
+      "new_vertex": 436843,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 14824,
+      "new_vertex": 436844,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 14845,
+      "new_vertex": 436845,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 14989,
+      "new_vertex": 436846,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 14990,
+      "new_vertex": 436847,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 14990,
+      "new_vertex": 436848,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 14990,
+      "new_vertex": 436849,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 14993,
+      "new_vertex": 436850,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 14997,
+      "new_vertex": 436851,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 15016,
+      "new_vertex": 436852,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 8
+    },
+    {
+      "source_vertex": 15083,
+      "new_vertex": 436853,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 15086,
+      "new_vertex": 436854,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 15097,
+      "new_vertex": 436855,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 15112,
+      "new_vertex": 436856,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 15268,
+      "new_vertex": 436857,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 15286,
+      "new_vertex": 436858,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 15299,
+      "new_vertex": 436859,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 15307,
+      "new_vertex": 436860,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 15311,
+      "new_vertex": 436861,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 15328,
+      "new_vertex": 436862,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 15329,
+      "new_vertex": 436863,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 15370,
+      "new_vertex": 436864,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 15372,
+      "new_vertex": 436865,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 15375,
+      "new_vertex": 436866,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 15382,
+      "new_vertex": 436867,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 15384,
+      "new_vertex": 436868,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 15384,
+      "new_vertex": 436869,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 15401,
+      "new_vertex": 436870,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 15412,
+      "new_vertex": 436871,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 15413,
+      "new_vertex": 436872,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 15413,
+      "new_vertex": 436873,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 15416,
+      "new_vertex": 436874,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 15424,
+      "new_vertex": 436875,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 15443,
+      "new_vertex": 436876,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 16079,
+      "new_vertex": 436877,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 18224,
+      "new_vertex": 436878,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 26449,
+      "new_vertex": 436879,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 26538,
+      "new_vertex": 436880,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 26538,
+      "new_vertex": 436881,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 26573,
+      "new_vertex": 436882,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 29201,
+      "new_vertex": 436883,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 29401,
+      "new_vertex": 436884,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 35257,
+      "new_vertex": 436885,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 37176,
+      "new_vertex": 436886,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 37848,
+      "new_vertex": 436887,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 39313,
+      "new_vertex": 436888,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 39395,
+      "new_vertex": 436889,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 40120,
+      "new_vertex": 436890,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 40121,
+      "new_vertex": 436891,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 40411,
+      "new_vertex": 436892,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 43995,
+      "new_vertex": 436893,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 43995,
+      "new_vertex": 436894,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 43998,
+      "new_vertex": 436895,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 47811,
+      "new_vertex": 436896,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 50040,
+      "new_vertex": 436897,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 50935,
+      "new_vertex": 436898,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 51064,
+      "new_vertex": 436899,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 53276,
+      "new_vertex": 436900,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 53353,
+      "new_vertex": 436901,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 53926,
+      "new_vertex": 436902,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 54049,
+      "new_vertex": 436903,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 54139,
+      "new_vertex": 436904,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 54147,
+      "new_vertex": 436905,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 54157,
+      "new_vertex": 436906,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 54359,
+      "new_vertex": 436907,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 54362,
+      "new_vertex": 436908,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 57860,
+      "new_vertex": 436909,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 57888,
+      "new_vertex": 436910,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 57943,
+      "new_vertex": 436911,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 57974,
+      "new_vertex": 436912,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 57998,
+      "new_vertex": 436913,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 58241,
+      "new_vertex": 436914,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 58250,
+      "new_vertex": 436915,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 58311,
+      "new_vertex": 436916,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 58341,
+      "new_vertex": 436917,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 58342,
+      "new_vertex": 436918,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 61647,
+      "new_vertex": 436919,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 63973,
+      "new_vertex": 436920,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 64499,
+      "new_vertex": 436921,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 65375,
+      "new_vertex": 436922,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 65385,
+      "new_vertex": 436923,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 66047,
+      "new_vertex": 436924,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 68486,
+      "new_vertex": 436925,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 68488,
+      "new_vertex": 436926,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 68489,
+      "new_vertex": 436927,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 69192,
+      "new_vertex": 436928,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 70122,
+      "new_vertex": 436929,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 74927,
+      "new_vertex": 436930,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 75893,
+      "new_vertex": 436931,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 77083,
+      "new_vertex": 436932,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 78506,
+      "new_vertex": 436933,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 78707,
+      "new_vertex": 436934,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 79253,
+      "new_vertex": 436935,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 80672,
+      "new_vertex": 436936,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 80878,
+      "new_vertex": 436937,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 81843,
+      "new_vertex": 436938,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 81847,
+      "new_vertex": 436939,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 82694,
+      "new_vertex": 436940,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 83968,
+      "new_vertex": 436941,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 83971,
+      "new_vertex": 436942,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 84318,
+      "new_vertex": 436943,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 84323,
+      "new_vertex": 436944,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 84325,
+      "new_vertex": 436945,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 84337,
+      "new_vertex": 436946,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 85166,
+      "new_vertex": 436947,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 85171,
+      "new_vertex": 436948,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 85171,
+      "new_vertex": 436949,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85175,
+      "new_vertex": 436950,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85176,
+      "new_vertex": 436951,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 85180,
+      "new_vertex": 436952,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 85180,
+      "new_vertex": 436953,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 85181,
+      "new_vertex": 436954,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85182,
+      "new_vertex": 436955,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 85183,
+      "new_vertex": 436956,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 85191,
+      "new_vertex": 436957,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85194,
+      "new_vertex": 436958,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85194,
+      "new_vertex": 436959,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 85198,
+      "new_vertex": 436960,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85199,
+      "new_vertex": 436961,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85199,
+      "new_vertex": 436962,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 85204,
+      "new_vertex": 436963,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85204,
+      "new_vertex": 436964,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 85205,
+      "new_vertex": 436965,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 85210,
+      "new_vertex": 436966,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 85228,
+      "new_vertex": 436967,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 85324,
+      "new_vertex": 436968,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 85324,
+      "new_vertex": 436969,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 85329,
+      "new_vertex": 436970,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85343,
+      "new_vertex": 436971,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85370,
+      "new_vertex": 436972,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 85371,
+      "new_vertex": 436973,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 85374,
+      "new_vertex": 436974,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85374,
+      "new_vertex": 436975,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85386,
+      "new_vertex": 436976,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 85388,
+      "new_vertex": 436977,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 85388,
+      "new_vertex": 436978,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85389,
+      "new_vertex": 436979,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85390,
+      "new_vertex": 436980,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 85394,
+      "new_vertex": 436981,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 85492,
+      "new_vertex": 436982,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85502,
+      "new_vertex": 436983,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 85512,
+      "new_vertex": 436984,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 85513,
+      "new_vertex": 436985,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 85542,
+      "new_vertex": 436986,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 85543,
+      "new_vertex": 436987,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 85544,
+      "new_vertex": 436988,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 85546,
+      "new_vertex": 436989,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 85548,
+      "new_vertex": 436990,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85552,
+      "new_vertex": 436991,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 85557,
+      "new_vertex": 436992,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 85562,
+      "new_vertex": 436993,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 85568,
+      "new_vertex": 436994,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 85594,
+      "new_vertex": 436995,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 85595,
+      "new_vertex": 436996,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 85599,
+      "new_vertex": 436997,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 85604,
+      "new_vertex": 436998,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 85605,
+      "new_vertex": 436999,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 85615,
+      "new_vertex": 437000,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 86439,
+      "new_vertex": 437001,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 86440,
+      "new_vertex": 437002,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 86446,
+      "new_vertex": 437003,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 89581,
+      "new_vertex": 437004,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 90108,
+      "new_vertex": 437005,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 90191,
+      "new_vertex": 437006,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 90881,
+      "new_vertex": 437007,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 91277,
+      "new_vertex": 437008,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 93442,
+      "new_vertex": 437009,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 95073,
+      "new_vertex": 437010,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 95133,
+      "new_vertex": 437011,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 95210,
+      "new_vertex": 437012,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 95351,
+      "new_vertex": 437013,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 95352,
+      "new_vertex": 437014,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 95365,
+      "new_vertex": 437015,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 101199,
+      "new_vertex": 437016,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 101806,
+      "new_vertex": 437017,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 101812,
+      "new_vertex": 437018,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 102513,
+      "new_vertex": 437019,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 103262,
+      "new_vertex": 437020,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 103519,
+      "new_vertex": 437021,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 103522,
+      "new_vertex": 437022,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 106106,
+      "new_vertex": 437023,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 107377,
+      "new_vertex": 437024,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 107560,
+      "new_vertex": 437025,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 107562,
+      "new_vertex": 437026,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 107562,
+      "new_vertex": 437027,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 107563,
+      "new_vertex": 437028,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 107570,
+      "new_vertex": 437029,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 107574,
+      "new_vertex": 437030,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 107576,
+      "new_vertex": 437031,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 107580,
+      "new_vertex": 437032,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 107720,
+      "new_vertex": 437033,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 107732,
+      "new_vertex": 437034,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 107732,
+      "new_vertex": 437035,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 107742,
+      "new_vertex": 437036,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 107745,
+      "new_vertex": 437037,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 107748,
+      "new_vertex": 437038,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 107749,
+      "new_vertex": 437039,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 8
+    },
+    {
+      "source_vertex": 107805,
+      "new_vertex": 437040,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 107805,
+      "new_vertex": 437041,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 107826,
+      "new_vertex": 437042,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 107827,
+      "new_vertex": 437043,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 108075,
+      "new_vertex": 437044,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 108709,
+      "new_vertex": 437045,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 110093,
+      "new_vertex": 437046,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 110096,
+      "new_vertex": 437047,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 110101,
+      "new_vertex": 437048,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 110108,
+      "new_vertex": 437049,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 110117,
+      "new_vertex": 437050,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 110132,
+      "new_vertex": 437051,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 110133,
+      "new_vertex": 437052,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 110138,
+      "new_vertex": 437053,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 112751,
+      "new_vertex": 437054,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 113558,
+      "new_vertex": 437055,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 113636,
+      "new_vertex": 437056,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 115003,
+      "new_vertex": 437057,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 115070,
+      "new_vertex": 437058,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 115070,
+      "new_vertex": 437059,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 115087,
+      "new_vertex": 437060,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 115993,
+      "new_vertex": 437061,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 119040,
+      "new_vertex": 437062,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 122924,
+      "new_vertex": 437063,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 124262,
+      "new_vertex": 437064,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 124280,
+      "new_vertex": 437065,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 128453,
+      "new_vertex": 437066,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 128463,
+      "new_vertex": 437067,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 129225,
+      "new_vertex": 437068,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 131483,
+      "new_vertex": 437069,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 133223,
+      "new_vertex": 437070,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 134648,
+      "new_vertex": 437071,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 134761,
+      "new_vertex": 437072,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 136818,
+      "new_vertex": 437073,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 142141,
+      "new_vertex": 437074,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 147074,
+      "new_vertex": 437075,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 147077,
+      "new_vertex": 437076,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 153356,
+      "new_vertex": 437077,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 154103,
+      "new_vertex": 437078,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 156413,
+      "new_vertex": 437079,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 159359,
+      "new_vertex": 437080,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 159657,
+      "new_vertex": 437081,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 160360,
+      "new_vertex": 437082,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 160998,
+      "new_vertex": 437083,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 162749,
+      "new_vertex": 437084,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 165960,
+      "new_vertex": 437085,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 167512,
+      "new_vertex": 437086,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 167515,
+      "new_vertex": 437087,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 167671,
+      "new_vertex": 437088,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 169669,
+      "new_vertex": 437089,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 169689,
+      "new_vertex": 437090,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 172246,
+      "new_vertex": 437091,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 174584,
+      "new_vertex": 437092,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 174850,
+      "new_vertex": 437093,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 175030,
+      "new_vertex": 437094,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 175355,
+      "new_vertex": 437095,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 175549,
+      "new_vertex": 437096,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 175569,
+      "new_vertex": 437097,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 176571,
+      "new_vertex": 437098,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 178168,
+      "new_vertex": 437099,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 178171,
+      "new_vertex": 437100,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 179696,
+      "new_vertex": 437101,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 179975,
+      "new_vertex": 437102,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 180747,
+      "new_vertex": 437103,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 181178,
+      "new_vertex": 437104,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 181256,
+      "new_vertex": 437105,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 182885,
+      "new_vertex": 437106,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 183668,
+      "new_vertex": 437107,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 188523,
+      "new_vertex": 437108,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 188624,
+      "new_vertex": 437109,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 189518,
+      "new_vertex": 437110,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 190763,
+      "new_vertex": 437111,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 190903,
+      "new_vertex": 437112,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 190904,
+      "new_vertex": 437113,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 195350,
+      "new_vertex": 437114,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 195764,
+      "new_vertex": 437115,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 199379,
+      "new_vertex": 437116,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 201266,
+      "new_vertex": 437117,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 202416,
+      "new_vertex": 437118,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 202469,
+      "new_vertex": 437119,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 203236,
+      "new_vertex": 437120,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 209302,
+      "new_vertex": 437121,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 211499,
+      "new_vertex": 437122,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 211785,
+      "new_vertex": 437123,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 211785,
+      "new_vertex": 437124,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 212661,
+      "new_vertex": 437125,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 212704,
+      "new_vertex": 437126,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 214530,
+      "new_vertex": 437127,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 214556,
+      "new_vertex": 437128,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 214910,
+      "new_vertex": 437129,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 215805,
+      "new_vertex": 437130,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 216216,
+      "new_vertex": 437131,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 216238,
+      "new_vertex": 437132,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 217260,
+      "new_vertex": 437133,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 217548,
+      "new_vertex": 437134,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 217812,
+      "new_vertex": 437135,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 218883,
+      "new_vertex": 437136,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 220173,
+      "new_vertex": 437137,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 220184,
+      "new_vertex": 437138,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 222159,
+      "new_vertex": 437139,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 222168,
+      "new_vertex": 437140,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 223295,
+      "new_vertex": 437141,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 224666,
+      "new_vertex": 437142,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 229128,
+      "new_vertex": 437143,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 231136,
+      "new_vertex": 437144,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 231230,
+      "new_vertex": 437145,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 231244,
+      "new_vertex": 437146,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 232235,
+      "new_vertex": 437147,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 232329,
+      "new_vertex": 437148,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 232355,
+      "new_vertex": 437149,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 234926,
+      "new_vertex": 437150,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 234926,
+      "new_vertex": 437151,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 234930,
+      "new_vertex": 437152,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 234932,
+      "new_vertex": 437153,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 234933,
+      "new_vertex": 437154,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 234937,
+      "new_vertex": 437155,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 234938,
+      "new_vertex": 437156,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 234943,
+      "new_vertex": 437157,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 234991,
+      "new_vertex": 437158,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 235009,
+      "new_vertex": 437159,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 235043,
+      "new_vertex": 437160,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 235533,
+      "new_vertex": 437161,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 236527,
+      "new_vertex": 437162,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 237310,
+      "new_vertex": 437163,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 237328,
+      "new_vertex": 437164,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 237363,
+      "new_vertex": 437165,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 237723,
+      "new_vertex": 437166,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 240248,
+      "new_vertex": 437167,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 240254,
+      "new_vertex": 437168,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 240954,
+      "new_vertex": 437169,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 241082,
+      "new_vertex": 437170,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 241085,
+      "new_vertex": 437171,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 244733,
+      "new_vertex": 437172,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 249470,
+      "new_vertex": 437173,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 249559,
+      "new_vertex": 437174,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 251317,
+      "new_vertex": 437175,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 253556,
+      "new_vertex": 437176,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 254535,
+      "new_vertex": 437177,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 255447,
+      "new_vertex": 437178,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 255641,
+      "new_vertex": 437179,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 257064,
+      "new_vertex": 437180,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 257877,
+      "new_vertex": 437181,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 258247,
+      "new_vertex": 437182,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 262188,
+      "new_vertex": 437183,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 263588,
+      "new_vertex": 437184,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 263612,
+      "new_vertex": 437185,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 263641,
+      "new_vertex": 437186,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 268239,
+      "new_vertex": 437187,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 268356,
+      "new_vertex": 437188,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 272757,
+      "new_vertex": 437189,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 272765,
+      "new_vertex": 437190,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 273639,
+      "new_vertex": 437191,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 273651,
+      "new_vertex": 437192,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 274038,
+      "new_vertex": 437193,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 274685,
+      "new_vertex": 437194,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 277760,
+      "new_vertex": 437195,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 277793,
+      "new_vertex": 437196,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 277793,
+      "new_vertex": 437197,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 280140,
+      "new_vertex": 437198,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 281513,
+      "new_vertex": 437199,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 281514,
+      "new_vertex": 437200,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 281516,
+      "new_vertex": 437201,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 288247,
+      "new_vertex": 437202,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 288590,
+      "new_vertex": 437203,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 290754,
+      "new_vertex": 437204,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 290769,
+      "new_vertex": 437205,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 290785,
+      "new_vertex": 437206,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 292946,
+      "new_vertex": 437207,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 294428,
+      "new_vertex": 437208,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 295116,
+      "new_vertex": 437209,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 296548,
+      "new_vertex": 437210,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 297178,
+      "new_vertex": 437211,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 298202,
+      "new_vertex": 437212,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 302052,
+      "new_vertex": 437213,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 303047,
+      "new_vertex": 437214,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 303063,
+      "new_vertex": 437215,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 303262,
+      "new_vertex": 437216,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 303266,
+      "new_vertex": 437217,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 305525,
+      "new_vertex": 437218,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 305538,
+      "new_vertex": 437219,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 307487,
+      "new_vertex": 437220,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 311997,
+      "new_vertex": 437221,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 314396,
+      "new_vertex": 437222,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 314684,
+      "new_vertex": 437223,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 314894,
+      "new_vertex": 437224,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 315507,
+      "new_vertex": 437225,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 315775,
+      "new_vertex": 437226,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 315778,
+      "new_vertex": 437227,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 317048,
+      "new_vertex": 437228,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 319136,
+      "new_vertex": 437229,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 320408,
+      "new_vertex": 437230,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 321015,
+      "new_vertex": 437231,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 321127,
+      "new_vertex": 437232,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 321983,
+      "new_vertex": 437233,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 322264,
+      "new_vertex": 437234,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 322289,
+      "new_vertex": 437235,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 324804,
+      "new_vertex": 437236,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 324815,
+      "new_vertex": 437237,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 328090,
+      "new_vertex": 437238,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 328694,
+      "new_vertex": 437239,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 328696,
+      "new_vertex": 437240,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 330966,
+      "new_vertex": 437241,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 335122,
+      "new_vertex": 437242,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 335131,
+      "new_vertex": 437243,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 335153,
+      "new_vertex": 437244,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 336206,
+      "new_vertex": 437245,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 337315,
+      "new_vertex": 437246,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 337323,
+      "new_vertex": 437247,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 337329,
+      "new_vertex": 437248,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 337337,
+      "new_vertex": 437249,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 339809,
+      "new_vertex": 437250,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 340149,
+      "new_vertex": 437251,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 340537,
+      "new_vertex": 437252,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 340601,
+      "new_vertex": 437253,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 342044,
+      "new_vertex": 437254,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 342085,
+      "new_vertex": 437255,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 342127,
+      "new_vertex": 437256,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 342323,
+      "new_vertex": 437257,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 342325,
+      "new_vertex": 437258,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 342725,
+      "new_vertex": 437259,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 343700,
+      "new_vertex": 437260,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 343705,
+      "new_vertex": 437261,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 344641,
+      "new_vertex": 437262,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 344642,
+      "new_vertex": 437263,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 349086,
+      "new_vertex": 437264,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 349939,
+      "new_vertex": 437265,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 351102,
+      "new_vertex": 437266,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 351123,
+      "new_vertex": 437267,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 353236,
+      "new_vertex": 437268,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 7
+    },
+    {
+      "source_vertex": 355734,
+      "new_vertex": 437269,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 355749,
+      "new_vertex": 437270,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 357806,
+      "new_vertex": 437271,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 359769,
+      "new_vertex": 437272,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 361544,
+      "new_vertex": 437273,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 367032,
+      "new_vertex": 437274,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 369210,
+      "new_vertex": 437275,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 369309,
+      "new_vertex": 437276,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 369830,
+      "new_vertex": 437277,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 369853,
+      "new_vertex": 437278,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 372486,
+      "new_vertex": 437279,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 374335,
+      "new_vertex": 437280,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 374544,
+      "new_vertex": 437281,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 375785,
+      "new_vertex": 437282,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 376627,
+      "new_vertex": 437283,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 376650,
+      "new_vertex": 437284,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 377937,
+      "new_vertex": 437285,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 380896,
+      "new_vertex": 437286,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 381401,
+      "new_vertex": 437287,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 381967,
+      "new_vertex": 437288,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 382853,
+      "new_vertex": 437289,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 382882,
+      "new_vertex": 437290,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 383877,
+      "new_vertex": 437291,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 384143,
+      "new_vertex": 437292,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 386155,
+      "new_vertex": 437293,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 386179,
+      "new_vertex": 437294,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 388325,
+      "new_vertex": 437295,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 389439,
+      "new_vertex": 437296,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 389444,
+      "new_vertex": 437297,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 390021,
+      "new_vertex": 437298,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 394710,
+      "new_vertex": 437299,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 397643,
+      "new_vertex": 437300,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 397654,
+      "new_vertex": 437301,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 397795,
+      "new_vertex": 437302,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 398674,
+      "new_vertex": 437303,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 400160,
+      "new_vertex": 437304,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 400161,
+      "new_vertex": 437305,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 5
+    },
+    {
+      "source_vertex": 401632,
+      "new_vertex": 437306,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 405937,
+      "new_vertex": 437307,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 406706,
+      "new_vertex": 437308,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 407544,
+      "new_vertex": 437309,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 407544,
+      "new_vertex": 437310,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 407666,
+      "new_vertex": 437311,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 412527,
+      "new_vertex": 437312,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 412542,
+      "new_vertex": 437313,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 412548,
+      "new_vertex": 437314,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 6
+    },
+    {
+      "source_vertex": 413520,
+      "new_vertex": 437315,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 413525,
+      "new_vertex": 437316,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 413528,
+      "new_vertex": 437317,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 415057,
+      "new_vertex": 437318,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 417031,
+      "new_vertex": 437319,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 419044,
+      "new_vertex": 437320,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 419174,
+      "new_vertex": 437321,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 419199,
+      "new_vertex": 437322,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 421603,
+      "new_vertex": 437323,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 421609,
+      "new_vertex": 437324,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 421838,
+      "new_vertex": 437325,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 425886,
+      "new_vertex": 437326,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 427004,
+      "new_vertex": 437327,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 427358,
+      "new_vertex": 437328,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 427359,
+      "new_vertex": 437329,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 427415,
+      "new_vertex": 437330,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    },
+    {
+      "source_vertex": 427555,
+      "new_vertex": 437331,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 427560,
+      "new_vertex": 437332,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 428303,
+      "new_vertex": 437333,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 428308,
+      "new_vertex": 437334,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 430414,
+      "new_vertex": 437335,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 430674,
+      "new_vertex": 437336,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 430724,
+      "new_vertex": 437337,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 2
+    },
+    {
+      "source_vertex": 430821,
+      "new_vertex": 437338,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 430843,
+      "new_vertex": 437339,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 1
+    },
+    {
+      "source_vertex": 430936,
+      "new_vertex": 437340,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 4
+    },
+    {
+      "source_vertex": 432225,
+      "new_vertex": 437341,
+      "coordinate_displacement_mm": 0.0,
+      "separated_face_count": 3
+    }
+  ]
+}

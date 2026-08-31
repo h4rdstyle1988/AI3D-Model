@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-EXTERIOR-SURFACE-SURGERY-R14.md",
+  "source_is_real_geometry": true,
+  "criteria": [
+    {
+      "criterion": "face_free_and_round_like_ref_clean",
+      "pass": null,
+      "status": "NOT_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "forehead_free",
+      "pass": null,
+      "status": "NOT_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "both_eyes_clear",
+      "pass": null,
+      "status": "NOT_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "both_ears_clear",
+      "pass": null,
+      "status": "NOT_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "snout_and_nose_clear",
+      "pass": null,
+      "status": "NOT_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "four_short_feet_preserved",
+      "pass": null,
+      "status": "NOT_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "arched_plausible_back",
+      "pass": null,
+      "status": "NOT_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "exactly_one_visible_maple_leaf",
+      "pass": null,
+      "status": "NOT_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "ref_seam_plausible",
+      "pass": null,
+      "status": "NOT_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "no_visible_repair_artifact",
+      "pass": null,
+      "status": "NOT_EVALUATED_BY_GATE1_FAIL"
+    }
+  ],
+  "gate_1_topology": "FAIL",
+  "gate_2_form_protection": "NOT_RUN",
+  "gate_3_optic": "NOT_RUN",
+  "gate_4_cad_fdm": "NOT_RUN",
+  "overall": "STOPP",
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-EXTERIOR-SURFACE-SURGERY-R14.md",
+  "method": "edge-incidence patches + face normals + six-view ray-bin exposure + local nonmanifold pair selection",
+  "six_view_visibility": [
+    {
+      "view": "3q-front",
+      "exposed_face_centers": 47336,
+      "resolution": 160,
+      "depth_tolerance_normalized": 0.0005
+    },
+    {
+      "view": "left",
+      "exposed_face_centers": 60399,
+      "resolution": 160,
+      "depth_tolerance_normalized": 0.0005
+    },
+    {
+      "view": "right",
+      "exposed_face_centers": 60310,
+      "resolution": 160,
+      "depth_tolerance_normalized": 0.0005
+    },
+    {
+      "view": "rear",
+      "exposed_face_centers": 59288,
+      "resolution": 160,
+      "depth_tolerance_normalized": 0.0005
+    },
+    {
+      "view": "top",
+      "exposed_face_centers": 56105,
+      "resolution": 160,
+      "depth_tolerance_normalized": 0.0005
+    },
+    {
+      "view": "bottom",
+      "exposed_face_centers": 57139,
+      "resolution": 160,
+      "depth_tolerance_normalized": 0.0005
+    }
+  ],
+  "initial_manifold_edge_patches": 1705,
+  "initial_main_patch_faces": 863406,
+  "initial_micro_patch_faces": 7060,
+  "active_faces_after_local_edge_separation": 865420,
+  "rejected_branch_faces": 5046,
+  "rejected_faces_with_any_exposure_hit": 1256,
+  "active_components_after_edge_separation": 127,
+  "largest_active_component_faces": 865262,
+  "visible_faces_outside_largest_component": 32,
+  "confirmed_r11_r12_roi": {
+    "selection": {
+      "roi_problem_triangles": 198697,
+      "removed_source_triangles": 181949,
+      "protected_exact_feature_triangles": 16748,
+      "retained_source_triangles": 688517,
+      "outside_roi_source_triangles": 671769,
+      "outside_roi_faces_preserved_exact": true,
+      "source_vertex_coordinates_modified": 0,
+      "protected_feature_definitions": [
+        {
+          "name": "front_ear",
+          "center_px": [
+            103,
+            154
+          ],
+          "radius_px": 18
+        },
+        {
+          "name": "reference_side_ear",
+          "center_px": [
+            226,
+            174
+          ],
+          "radius_px": 23
+        },
+        {
+          "name": "front_eye",
+          "center_px": [
+            111,
+            210
+          ],
+          "radius_px": 12,
+          "window_px": 7
+        },
+        {
+          "name": "reference_side_eye",
+          "center_px": [
+            205,
+            207
+          ],
+          "radius_px": 13,
+          "window_px": 8
+        },
+        {
+          "name": "nose",
+          "center_px": [
+            79,
+            231
+          ],
+          "radius_px": 16,
+          "window_px": 9
+        }
+      ],
+      "protected_feature_depth_bands": [
+        {
+          "name": "front_ear",
+          "low_y": -0.021062632401784263,
+          "high_y": 0.1799195412794749,
+          "triangles_in_guard": 18610,
+          "triangles_in_exterior_bands": 6700
+        },
+        {
+          "name": "reference_side_ear",
+          "low_y": -0.1464325149854024,
+          "high_y": 0.4096834174791972,
+          "triangles_in_guard": 14609,
+          "triangles_in_exterior_bands": 5260
+        },
+        {
+          "name": "front_eye",
+          "low_y": -0.12081647415955861,
+          "high_y": 0.2478879789511363,
+          "triangles_in_guard": 5376,
+          "triangles_in_exterior_bands": 1936
+        },
+        {
+          "name": "reference_side_eye",
+          "low_y": -0.13535024205843607,
+          "high_y": 0.40367694854736325,
+          "triangles_in_guard": 3960,
+          "triangles_in_exterior_bands": 1426
+        },
+        {
+          "name": "nose",
+          "low_y": -0.11219793736934662,
+          "high_y": 0.07605042894681295,
+          "triangles_in_guard": 12078,
+          "triangles_in_exterior_bands": 4348
+        }
+      ],
+      "feature_exterior_threshold": -0.035
+    },
+    "foreground_bbox_px": [
+      72,
+      45,
+      383,
+      338
+    ],
+    "body_pixels": 25547,
+    "seam_pixels": 1444,
+    "lower_guard_normalized": -0.105,
+    "problem_triangles": 198697,
+    "fusion_triangles_marked_for_removal_if_gate1_passed": 181949,
+    "roi_rebuild_executed": false,
+    "reason": "Gate 1 remains impossible without a forbidden global bottom cap/depth bridge; ordered gates stop before ROI rebuild and optics."
+  },
+  "classification_status": "PASS_DIAGNOSTIC_NOT_A_GATE_PASS"
+}

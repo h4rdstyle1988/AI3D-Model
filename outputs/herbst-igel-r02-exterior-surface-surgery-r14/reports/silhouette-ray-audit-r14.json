@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-EXTERIOR-SURFACE-SURGERY-R14.md",
+  "status": "DIAGNOSTIC_ONLY_GATE2_NOT_RUN",
+  "outside_roi_masking": "not applied because Gate 1 failed before formal Gate 2",
+  "views": [
+    {
+      "view": "3q-front",
+      "source_pixels": 50626,
+      "candidate_pixels": 50626,
+      "xor_pixels": 0,
+      "xor_over_union_percent": 0.0,
+      "method": "real face-centroid ray-bin silhouette diagnostic with 5px conservative dilation"
+    },
+    {
+      "view": "left",
+      "source_pixels": 53652,
+      "candidate_pixels": 53652,
+      "xor_pixels": 0,
+      "xor_over_union_percent": 0.0,
+      "method": "real face-centroid ray-bin silhouette diagnostic with 5px conservative dilation"
+    },
+    {
+      "view": "right",
+      "source_pixels": 53606,
+      "candidate_pixels": 53606,
+      "xor_pixels": 0,
+      "xor_over_union_percent": 0.0,
+      "method": "real face-centroid ray-bin silhouette diagnostic with 5px conservative dilation"
+    },
+    {
+      "view": "rear",
+      "source_pixels": 54573,
+      "candidate_pixels": 54573,
+      "xor_pixels": 0,
+      "xor_over_union_percent": 0.0,
+      "method": "real face-centroid ray-bin silhouette diagnostic with 5px conservative dilation"
+    },
+    {
+      "view": "top",
+      "source_pixels": 50833,
+      "candidate_pixels": 50833,
+      "xor_pixels": 0,
+      "xor_over_union_percent": 0.0,
+      "method": "real face-centroid ray-bin silhouette diagnostic with 5px conservative dilation"
+    },
+    {
+      "view": "bottom",
+      "source_pixels": 50836,
+      "candidate_pixels": 50836,
+      "xor_pixels": 0,
+      "xor_over_union_percent": 0.0,
+      "method": "real face-centroid ray-bin silhouette diagnostic with 5px conservative dilation"
+    }
+  ]
+}

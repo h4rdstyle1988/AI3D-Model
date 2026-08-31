@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-EXTERIOR-SURFACE-SURGERY-R14.md",
+  "comparison": "protected visible Seed-42 exterior <-> repaired exterior outside ROI",
+  "formal_bidirectional_point_to_triangle_status": "NOT_RUN_GATE1_FAIL",
+  "requirements_mm": {
+    "p95_max": 0.15,
+    "maximum_max": 0.4
+  },
+  "gate_1_precondition": "FAIL",
+  "geometric_blocker": {
+    "loop_id": 108,
+    "loop_edges": 1376,
+    "perimeter_mm": 635.5060881932208,
+    "extent_mm": [
+      168.53077981396427,
+      171.27714665038374,
+      10.52323284171598
+    ],
+    "centroid_to_nearest_seed42_vertex_mm": 59.2120366582587,
+    "same_layer_counter_ring": "none",
+    "interpretation": "A same-layer underside closure would introduce real exterior tens of millimetres from Seed-42 and fail the 0.40 mm maximum. Following another Seed-42 depth layer would create the explicitly forbidden long depth-layer bridge/double skin."
+  },
+  "surface_area_ratio_partial_candidate_to_seed42": 1.0005094336942821,
+  "r13_like_area_inflation": false,
+  "gate_2_form_protection": "NOT_RUN_BY_GATE1"
+}

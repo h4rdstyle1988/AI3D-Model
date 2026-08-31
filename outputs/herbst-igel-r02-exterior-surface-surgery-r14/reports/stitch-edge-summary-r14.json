@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-EXTERIOR-SURFACE-SURGERY-R14.md",
+  "new_stitch_edges": 2439,
+  "length_mm": {
+    "minimum": 0.01155482894626874,
+    "median": 0.8993518763250076,
+    "maximum": 1.2536411409250336
+  },
+  "maximum_ratio_to_local_median": 2.3391788288342004,
+  "maximum_normal_jump_deg": 59.69367150290399,
+  "all_length_checks_le_3x": true,
+  "all_normal_checks_le_60deg": true,
+  "complete_list": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/stitch-edges-r14.csv"
+}

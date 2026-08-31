@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-EXTERIOR-SURFACE-SURGERY-R14.md",
+  "task_blob_sha": "24e2f98d42250e59fa72f462f0b258c7dd8b65d0",
+  "before_seed42": {
+    "vertices": 436742,
+    "triangles": 870466,
+    "used_vertices": 436374,
+    "boundary_edges": 8608,
+    "nonmanifold_edges": 5079,
+    "max_edge_incidence": 4,
+    "degenerate_faces": 0,
+    "connected_face_surfaces": 1705,
+    "largest_surface_faces": 863406,
+    "surface_area_normalized2": 1.1084796569079232,
+    "bounds_min": [
+      -0.23905783891677856,
+      -0.17113235592842102,
+      -0.21962818503379822
+    ],
+    "bounds_max": [
+      0.38938766717910767,
+      0.44926708936691284,
+      0.2805304527282715
+    ]
+  },
+  "after_maximum_compliant_local_surgery": {
+    "vertices": 436928,
+    "triangles": 868969,
+    "used_vertices": 436928,
+    "boundary_edges": 9631,
+    "nonmanifold_edges": 0,
+    "max_edge_incidence": 2,
+    "degenerate_faces": 0,
+    "connected_face_surfaces": 127,
+    "largest_surface_faces": 868709,
+    "surface_area_normalized2": 1.1090443537945784,
+    "bounds_min": [
+      -0.23905783891677856,
+      -0.17113235592842102,
+      -0.21962818503379822
+    ],
+    "bounds_max": [
+      0.38938766717910767,
+      0.44926708936691284,
+      0.2805304527282715
+    ]
+  },
+  "orientability": {
+    "orientable": false,
+    "orientation_constraint_conflicts": 11452
+  },
+  "face_vertex_separations": {
+    "count": 600,
+    "all_coordinate_displacements_mm_zero": true
+  },
+  "new_local_stitch_faces": 3549,
+  "new_local_stitch_edges": 2439,
+  "confirmed_self_or_cross_intersections": null,
+  "intersection_test_status": "NOT_RUN_GATE1_BOUNDARY_AND_COMPONENT_PRECONDITION_FAIL",
+  "overlapping_double_skin_status": "UNRESOLVED_VISIBLE_MICRO_SHEETS_PREVENT_REMOVAL",
+  "gate_1_topology": "FAIL",
+  "failure_reasons": [
+    "boundary_edges=9631 (required 0)",
+    "connected_face_surfaces=127 (required exactly 1)",
+    "orientation_constraint_conflicts=11452 (required 0)",
+    "the dominant remaining loop is the open Seed-42 underside, not a local hole between adjacent same-layer rings"
+  ]
+}

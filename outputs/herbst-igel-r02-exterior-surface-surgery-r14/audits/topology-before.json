@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "source": "D:\\3D-Models\\generated\\herbst-igel-r02-r08-input\\outputs\\herbst-igel-r02-trellis-optik-retry-r07\\trellis-raw\\seed-00000042\\herbst-igel-r02-trellis-raw-seed-42.ply",
+  "source_sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+  "expected_sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+  "hash_gate": "PASS",
+  "vertices": 436742,
+  "triangles": 870466,
+  "bounds_min": [
+    -0.23905783891677856,
+    -0.17113235592842102,
+    -0.21962818503379822
+  ],
+  "bounds_max": [
+    0.38938766717910767,
+    0.44926708936691284,
+    0.2805304527282715
+  ],
+  "extents_normalized": [
+    0.6284455060958862,
+    0.6203994452953339,
+    0.5001586377620697
+  ],
+  "scale_for_200mm_max_extent": 318.2455727028218,
+  "surface_area_normalized2": 1.1084796569079232,
+  "surface_area_at_200mm_mm2": 112267.09072473343,
+  "signed_volume_normalized3": -0.022858247840783497,
+  "degenerate_faces": 0,
+  "boundary_edges": 8608,
+  "manifold_edges": 1293715,
+  "nonmanifold_edges": 5079,
+  "max_edge_incidence": 4,
+  "duplicate_face_groups": 0,
+  "duplicate_faces_excess": 0,
+  "edge_length_mm": {
+    "min": 0.004499562821877778,
+    "median": 0.5498743012746691,
+    "p95": 0.8636898532633026,
+    "p99": 0.9323651797173316,
+    "max": 1.4291881837712594
+  }
+}

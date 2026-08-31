@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-EXTERIOR-SURFACE-SURGERY-R14.md",
+  "task_blob_sha": "24e2f98d42250e59fa72f462f0b258c7dd8b65d0",
+  "status": "PASS_EVIDENCE_SET_FOR_STOPP",
+  "checks": {
+    "required_files_present": true,
+    "task_blob_matches_approved": true,
+    "hash_gate_pass": true,
+    "candidate_hash_matches_render_report": true,
+    "recomputed_vertices_match": true,
+    "recomputed_triangles_match": true,
+    "recomputed_boundary_edges_match": true,
+    "recomputed_nonmanifold_edges_match": true,
+    "recomputed_degenerate_faces_match": true,
+    "local_nonmanifold_self_correction_pass": true,
+    "local_stitch_lengths_pass": true,
+    "local_stitch_normals_pass": true,
+    "stitch_csv_count_matches": true,
+    "gate1_fails_open_nonorientable_disconnected": true,
+    "gate2_not_run_after_gate1": true,
+    "gate3_and_gate4_not_run": true,
+    "overall_status_stopp": true,
+    "manufacturing_outputs_absent": true,
+    "nutzerentscheidung_false": true,
+    "final_user_approval_not_claimed": true,
+    "revision_has_required_sections": true
+  },
+  "missing": [],
+  "forbidden_manufacturing_outputs": [],
+  "source_syntax": {
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reproduction-scripts/r14_mesh_probe.py": "PASS",
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reproduction-scripts/r14_surface_surgery.py": "PASS",
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reproduction-scripts/validate_r14.py": "PASS"
+  },
+  "image_checks": {
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reference-audit/ref-clean-r14.jpg": {
+      "valid": true,
+      "format": "JPEG",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reference-audit/ref-seam-r14.jpg": {
+      "valid": true,
+      "format": "JPEG",
+      "size": [
+        384,
+        384
+      ]
+    },
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-contact-sheet.png": {
+      "valid": true,
+      "format": "PNG",
+      "size": [
+        1500,
+        1000
+      ]
+    },
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/soll-ist-r14.png": {
+      "valid": true,
+      "format": "PNG",
+      "size": [
+        1500,
+        1000
+      ]
+    },
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-3q-front.png": {
+      "valid": true,
+      "format": "PNG",
+      "size": [
+        1000,
+        1000
+      ]
+    },
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-left.png": {
+      "valid": true,
+      "format": "PNG",
+      "size": [
+        1000,
+        1000
+      ]
+    },
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-right.png": {
+      "valid": true,
+      "format": "PNG",
+      "size": [
+        1000,
+        1000
+      ]
+    },
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-rear.png": {
+      "valid": true,
+      "format": "PNG",
+      "size": [
+        1000,
+        1000
+      ]
+    },
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-top.png": {
+      "valid": true,
+      "format": "PNG",
+      "size": [
+        1000,
+        1000
+      ]
+    },
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-bottom.png": {
+      "valid": true,
+      "format": "PNG",
+      "size": [
+        1000,
+        1000
+      ]
+    }
+  },
+  "candidate_recomputed_metrics": {
+    "vertices": 436928,
+    "triangles": 868969,
+    "used_vertices": 436928,
+    "boundary_edges": 9631,
+    "nonmanifold_edges": 0,
+    "max_edge_incidence": 2,
+    "degenerate_faces": 0,
+    "connected_face_surfaces": 127,
+    "largest_surface_faces": 868709,
+    "surface_area_normalized2": 1.1090443537945784,
+    "bounds_min": [
+      -0.23905783891677856,
+      -0.17113235592842102,
+      -0.21962818503379822
+    ],
+    "bounds_max": [
+      0.38938766717910767,
+      0.44926708936691284,
+      0.2805304527282715
+    ]
+  }
+}

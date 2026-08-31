@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-EXTERIOR-SURFACE-SURGERY-R14.md",
+  "task_blob_sha": "24e2f98d42250e59fa72f462f0b258c7dd8b65d0",
+  "product_revision": "R02",
+  "technical_revision": "R14",
+  "status": "STOPP",
+  "files": [
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/audits/topology-before.json",
+      "bytes": 1385,
+      "sha256": "3f7aef66b5dc861cbe8819107d351b2f0c15a48fa9f097e843792df5148a67fb"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/CAD-STL-3MF-GLB-FDM-NOT-CREATED.txt",
+      "bytes": 192,
+      "sha256": "03f3e9791e7c7e13447029c6a4f4f011fb5b5db0d0260c3eab101c28ccd1ef17"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/masterform/herbst-igel-r02-r14-local-surgery-PARTIAL-NON-APPROVED.ply",
+      "bytes": 16539912,
+      "sha256": "f6c82635080a5c97c350ba80e18dbda79424f34542ca3f87e66a7d9d665cb1c2"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reference-audit/hash-gate-r14.json",
+      "bytes": 673,
+      "sha256": "c3289e92b4930a5a5ef82e137d467b5b9f4576adad8f7bebed19c78da1792f72"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reference-audit/ref-clean-r14.jpg",
+      "bytes": 17344,
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reference-audit/ref-seam-r14.jpg",
+      "bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-3q-front.png",
+      "bytes": 189348,
+      "sha256": "86c08d1c4511e896ad5e95019f9633c85b93a30a54eb4e679fe09d98eb629f90"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-bottom.png",
+      "bytes": 228665,
+      "sha256": "7a619c70f01830003f10847ccb935ae815888ad2ac0d31e4923aa59de4235712"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-contact-sheet.png",
+      "bytes": 620634,
+      "sha256": "0871304b79a596a21c211dd3c2fae343d7cffc258f97a745692085eb43d994f1"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-left.png",
+      "bytes": 199884,
+      "sha256": "4663eee062a9eecc64665e3fdad80ea2f6c176a9af4006794fb2a4438a172914"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-rear.png",
+      "bytes": 184609,
+      "sha256": "3617c9d46dbf2c4889031b00fcee747ed3a316f2efbdb07b6b057f8746a9dcd6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-right.png",
+      "bytes": 187837,
+      "sha256": "a3a98221bfdf2bc90921cb603f4c020772373aed1e6f558aa132f9b7bd2c6edb"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-top.png",
+      "bytes": 197484,
+      "sha256": "3b4142ea00e1471efe792a04db4c0b68cd51229196e5887030085edc551dfa2e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/soll-ist-r14.png",
+      "bytes": 713665,
+      "sha256": "9bc1237907a904ce2b13dbfe08671c72b964dfd143890d88c6fcbe956c199bbe"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/boundary-loop-audit-r14.json",
+      "bytes": 1333067,
+      "sha256": "8bf01541936ac8d02d09e254b4f6cc2c7e4a35c861b5b163a06de2ba46b2f621"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/evidence-validation-r14.json",
+      "bytes": 4301,
+      "sha256": "06eac535196137695bfa094ac75098c783b3701bd60c0bf156420ec4e094480b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/exterior-classification-r14.json",
+      "bytes": 4606,
+      "sha256": "1b462817e995d8fe110804e0fa07b69b1ed5a299c1d3554b2c9920c2a0cecea1"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/nonmanifold-face-selection-r14.csv",
+      "bytes": 314450,
+      "sha256": "3384d6d617c1dd57a5298814dc78a97056b414dd09201ff39387a486f7203163"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/real-geometry-renders-r14.json",
+      "bytes": 2071,
+      "sha256": "98820674cba6ab193f6c882498d8a56070b8f0b945b00f616df8169b56ac63af"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/silhouette-ray-audit-r14.json",
+      "bytes": 1841,
+      "sha256": "c25fc0dfa1782f5012cf88d5df9188ad520ba1025327b0c26543079a215a695d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/soll-ist-binary-r14.json",
+      "bytes": 1647,
+      "sha256": "2e42f07786560618cffc1073a8c6380e48ba379b534d193bf5030739752f6ec5"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/stitch-edge-summary-r14.json",
+      "bytes": 547,
+      "sha256": "6873573402caad823e5e2cce49a5dcfee57b279a931a7bdb10792758c999ef94"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/stitch-edges-r14.csv",
+      "bytes": 246490,
+      "sha256": "02e3de78914c470c925dba6ff84f67c870cb02773d309d4539e7e278e4bffc99"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/surface-distance-outside-roi-r14.json",
+      "bytes": 1124,
+      "sha256": "8768a2e8fd4f27ee52364ca44bc83c5f5c36d276beb635e9a138c5c1277e24c7"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/topology-audit-r14.json",
+      "bytes": 2185,
+      "sha256": "0e24e37cb9d33b3ba0d30edd4e99008683a18b9045d17fb09c39ad0452fd4fd7"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/vertex-separation-r14.json",
+      "bytes": 90365,
+      "sha256": "5060cde809080c8f5a06b7558b15e605f702187f834be3bca9db668addfa1d8f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reproduction-scripts/r14_mesh_probe.py",
+      "bytes": 4770,
+      "sha256": "04b7d83791e93995c355a1ef154ddf224fb84d4ca802f3051200915946160150"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reproduction-scripts/r14_surface_surgery.py",
+      "bytes": 49065,
+      "sha256": "0139d2c878ce654bdcc9cb0268ddea286ae69d172d02d46f11d4f7b3b0e90c72"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reproduction-scripts/validate_r14.py",
+      "bytes": 7713,
+      "sha256": "e645cbd17691be2b907bf50bb38166336dfc5fab014c9d8fac1b95d4dd3a1877"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/REPRODUKTION-R14.md",
+      "bytes": 786,
+      "sha256": "f152fc7c89d773b99b35b04b9b802e0468609af065113755be6301a264e7a1ad"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/result-status.json",
+      "bytes": 1505,
+      "sha256": "2c841f26b5dd8f0fe13f3bb827650b6db768d9d07cf2af4e1fe3719fe8ce072d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/REVISION-R02-R14.md",
+      "bytes": 1250,
+      "sha256": "a8466807c9c3f8f69676eaefef4131ccc084223e410ae3241e2140baba8c4e51"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/VALIDIERUNG-R02-R14.json",
+      "bytes": 3338,
+      "sha256": "5dc14834a76d8f17520bc331ca5b1f255ded3c2c6380cbd424d7e996420c8bd5"
+    }
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "final_user_approval_claimed": false
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-EXTERIOR-SURFACE-SURGERY-R14.md",
+  "task_blob_sha": "24e2f98d42250e59fa72f462f0b258c7dd8b65d0",
+  "revision": "R02/R14",
+  "status": "STOPP",
+  "main_files": [
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/masterform/herbst-igel-r02-r14-local-surgery-PARTIAL-NON-APPROVED.ply",
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/VALIDIERUNG-R02-R14.json",
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/topology-audit-r14.json",
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/reports/surface-distance-outside-roi-r14.json",
+    "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/soll-ist-r14.png"
+  ],
+  "validations": {
+    "hash_gate": "PASS",
+    "gate_1_topology": "FAIL",
+    "gate_2_form_protection": "NOT_RUN",
+    "gate_3_optic": "NOT_RUN",
+    "gate_4_cad_fdm": "NOT_RUN"
+  },
+  "open_real_tests": [
+    "Gate 2 real bidirectional point-to-triangle audit remains inapplicable until Gate 1 passes.",
+    "Gate 3 independent optical review remains gated.",
+    "Physical print, wall, split, connector, fit, material, support and slicer tests remain gated by 1+2+3 PASS."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Technical incompatibility in the Seed-42 source outside the approved ROI; no product dimension, function, or reference datum is missing.",
+  "final_user_approval_claimed": false
+}

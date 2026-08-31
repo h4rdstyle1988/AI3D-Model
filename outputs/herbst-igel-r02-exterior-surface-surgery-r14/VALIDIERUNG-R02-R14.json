@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-EXTERIOR-SURFACE-SURGERY-R14.md",
+  "task_blob_sha": "24e2f98d42250e59fa72f462f0b258c7dd8b65d0",
+  "product_revision": "R02",
+  "technical_revision": "R14",
+  "status": "STOPP",
+  "stop_phase": "GATE_1_TOPOLOGY_AFTER_LOCAL_SELF_CORRECTION",
+  "reference_and_seed_hash_gate": {
+    "status": "PASS",
+    "actual_sha256": {
+      "seed42": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+      "ref_clean": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+      "ref_seam": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    }
+  },
+  "execution_sequence": {
+    "A_exterior_classification": "PASS_DIAGNOSTIC",
+    "B_local_topology_surgery_outside_roi": "STOPP_GLOBAL_UNDERSIDE_LOOP",
+    "C_face_body_roi": "NOT_RUN_BY_GATE1_ORDER",
+    "gate_1_topology": "FAIL",
+    "gate_2_form_protection": "NOT_RUN_BY_GATE1",
+    "gate_3_optic": "NOT_RUN_BY_GATE1_AND_GATE2",
+    "gate_4_cad_fdm": "NOT_RUN_BY_GATES_1_2_3"
+  },
+  "topology_after": {
+    "vertices": 436928,
+    "triangles": 868969,
+    "used_vertices": 436928,
+    "boundary_edges": 9631,
+    "nonmanifold_edges": 0,
+    "max_edge_incidence": 2,
+    "degenerate_faces": 0,
+    "connected_face_surfaces": 127,
+    "largest_surface_faces": 868709,
+    "surface_area_normalized2": 1.1090443537945784,
+    "bounds_min": [
+      -0.23905783891677856,
+      -0.17113235592842102,
+      -0.21962818503379822
+    ],
+    "bounds_max": [
+      0.38938766717910767,
+      0.44926708936691284,
+      0.2805304527282715
+    ]
+  },
+  "self_correction": {
+    "nonmanifold_face_pairing_iterations": 1,
+    "nonmanifold_edges_after": 0,
+    "vertex_separations": 600,
+    "locally_filled_boundary_loops": 1110,
+    "new_stitch_edges": 2439,
+    "remaining_methodic_blocker": {
+      "loop_id": 108,
+      "loop_edges": 1376,
+      "perimeter_mm": 635.5060881932208,
+      "extent_mm": [
+        168.53077981396427,
+        171.27714665038374,
+        10.52323284171598
+      ],
+      "centroid_to_nearest_seed42_vertex_mm": 59.2120366582587,
+      "same_layer_counter_ring": "none",
+      "interpretation": "A same-layer underside closure would introduce real exterior tens of millimetres from Seed-42 and fail the 0.40 mm maximum. Following another Seed-42 depth layer would create the explicitly forbidden long depth-layer bridge/double skin."
+    }
+  },
+  "manufacturing_outputs": {
+    "approved_master_created": false,
+    "split_created": false,
+    "hollow_shells_created": false,
+    "connector_created": false,
+    "stl_created": false,
+    "three_mf_created": false,
+    "glb_created": false,
+    "fdm_validation_run": false
+  },
+  "open_real_tests": [
+    "Gate 2 real bidirectional point-to-triangle audit remains inapplicable until Gate 1 passes.",
+    "Gate 3 independent optical review remains gated.",
+    "Physical print, wall, split, connector, fit, material, support and slicer tests remain gated by 1+2+3 PASS."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Technical incompatibility in the Seed-42 source outside the approved ROI; no product dimension, function, or reference datum is missing.",
+  "final_user_approval_claimed": false
+}

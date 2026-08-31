@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-EXTERIOR-SURFACE-SURGERY-R14.md",
+  "source_geometry": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/masterform/herbst-igel-r02-r14-local-surgery-PARTIAL-NON-APPROVED.ply",
+  "source_geometry_sha256": "f6c82635080a5c97c350ba80e18dbda79424f34542ca3f87e66a7d9d665cb1c2",
+  "source_is_real_partial_geometry": true,
+  "approved_master": false,
+  "views": [
+    {
+      "view": "3q-front",
+      "camera_vector": [
+        -1.0,
+        -1.0,
+        0.35
+      ],
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-3q-front.png"
+    },
+    {
+      "view": "left",
+      "camera_vector": [
+        0.0,
+        -1.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-left.png"
+    },
+    {
+      "view": "right",
+      "camera_vector": [
+        0.0,
+        1.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-right.png"
+    },
+    {
+      "view": "rear",
+      "camera_vector": [
+        1.0,
+        0.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-rear.png"
+    },
+    {
+      "view": "top",
+      "camera_vector": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-top.png"
+    },
+    {
+      "view": "bottom",
+      "camera_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "path": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-bottom.png"
+    }
+  ],
+  "contact_sheet": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/partial-r14-contact-sheet.png",
+  "soll_ist_sheet": "outputs/herbst-igel-r02-exterior-surface-surgery-r14/renders-gate-evidence/soll-ist-r14.png"
+}
