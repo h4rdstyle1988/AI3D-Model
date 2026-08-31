@@ -1,0 +1,53 @@
+{
+    "schema_version":  1,
+    "generated_at":  "2026-09-01T00:04:39.2268048+02:00",
+    "profile":  "documents-controlling",
+    "status":  "PASS",
+    "agent_root":  "D:\\Documents-Controlling-Agent",
+    "checks":  [
+                   {
+                       "name":  "powershell",
+                       "required":  true,
+                       "passed":  true,
+                       "detail":  "5.1.26100.9168"
+                   },
+                   {
+                       "name":  "git",
+                       "required":  true,
+                       "passed":  true,
+                       "detail":  "available"
+                   },
+                   {
+                       "name":  "codex",
+                       "required":  true,
+                       "passed":  true,
+                       "detail":  "available"
+                   },
+                   {
+                       "name":  "codex-code-mode-host",
+                       "required":  true,
+                       "passed":  true,
+                       "detail":  "available next to Codex"
+                   },
+                   {
+                       "name":  "git-identity",
+                       "required":  true,
+                       "passed":  true,
+                       "detail":  "git user.name/user.email configured"
+                   },
+                   {
+                       "name":  "python",
+                       "required":  false,
+                       "passed":  true,
+                       "detail":  "available but not required by the watcher"
+                   },
+                   {
+                       "name":  "cad-toolchain",
+                       "required":  false,
+                       "passed":  true,
+                       "detail":  "not applicable to Documents agent"
+                   }
+               ],
+    "required_failure_count":  0,
+    "cad_preflight_used":  false
+}

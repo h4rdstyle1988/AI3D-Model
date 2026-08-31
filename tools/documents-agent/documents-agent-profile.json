@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "profile": "documents-controlling",
+  "repo_url": "https://github.com/h4rdstyle1988/Documents-Controlling-clear.git",
+  "base_branch": "main",
+  "agent_root": "D:\\Documents-Controlling-Agent",
+  "worker_dir": "D:\\Documents-Controlling-Agent\\worker\\Documents-Controlling-clear-worker",
+  "scheduler_task_name": "Documents-Ruediger-Agent",
+  "live_status_branch": "ruediger/live-status",
+  "poll_seconds": 30,
+  "heartbeat_seconds": 90,
+  "fetch_retry_count": 3,
+  "log_retention_days": 7,
+  "preflight_kind": "generic-development",
+  "cad_preflight": false,
+  "paths": {
+    "runtime": "D:\\Documents-Controlling-Agent\\runtime",
+    "state": "D:\\Documents-Controlling-Agent\\state",
+    "task_state": "D:\\Documents-Controlling-Agent\\state\\documents-task-state.json",
+    "lock": "D:\\Documents-Controlling-Agent\\state\\documents-agent-watcher.lock",
+    "logs": "D:\\Documents-Controlling-Agent\\logs",
+    "temp": "D:\\Documents-Controlling-Agent\\temp"
+  }
+}
