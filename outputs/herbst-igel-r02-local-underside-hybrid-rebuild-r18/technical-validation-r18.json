@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-LOCAL-UNDERSIDE-HYBRID-REBUILD-R18.md",
+  "revision": "R02/R18",
+  "task_blob_sha": "0d88869426b14cf2b7da7c05ed328e9d0117cbdc",
+  "reference_hash_gate": "PASS",
+  "roi_definition": "PASS_TECHNICAL",
+  "small_medium_local_candidates_tested": 2,
+  "method_switch_after_repeated_failure": true,
+  "gate_1_topology_selected_diagnostic": "FAIL",
+  "gate_2_form_protection": "FAIL",
+  "gate_3_cad_fdm": "NOT_RUN_GATE_2_FAIL",
+  "stl_generated": false,
+  "assembly_3mf_or_glb_generated": false,
+  "split_hollow_connector_generated": false,
+  "overall": "STOPP",
+  "final_user_approval_claimed": false
+}

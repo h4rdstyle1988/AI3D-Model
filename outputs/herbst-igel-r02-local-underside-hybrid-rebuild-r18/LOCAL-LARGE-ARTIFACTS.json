@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-LOCAL-UNDERSIDE-HYBRID-REBUILD-R18.md",
+  "threshold_bytes": 90000000,
+  "local_directory": "D:\\3D-Models\\generated\\_ruediger-local-large-artifacts\\herbst-igel-r18",
+  "artifacts": [],
+  "status": "NOT_REQUIRED_NO_R18_FILE_EXCEEDS_90MB"
+}

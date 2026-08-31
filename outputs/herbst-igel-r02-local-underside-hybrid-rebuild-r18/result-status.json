@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-LOCAL-UNDERSIDE-HYBRID-REBUILD-R18.md",
+  "task_blob_sha": "0d88869426b14cf2b7da7c05ed328e9d0117cbdc",
+  "product_revision": "R02",
+  "technical_revision": "R18",
+  "status": "STOPP",
+  "gates": {
+    "gate_1_topology_selected_diagnostic": "FAIL",
+    "gate_2_form_protection": "FAIL",
+    "gate_3_cad_fdm": "NOT_RUN_GATE_2_FAIL"
+  },
+  "main_files": [
+    "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/candidates/herbst-igel-r02-r18-relief-transfer-c-200mm.ply",
+    "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reports/roi-definition-r18.json",
+    "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reports/topology-gate-r18.json",
+    "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reports/form-protection-gate-r18.json",
+    "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/underside-source-vs-candidate-closeup-r18.png",
+    "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-seven-view-contact-sheet.png",
+    "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-ref-clean-source-candidate-r18.png",
+    "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/ref-seam-overlay-r18.png"
+  ],
+  "validations": [
+    "R17 source/master/reference SHA-256 gate PASS",
+    "ROI derived from bottom visibility, normals, real R17 depth error and source edge incidence",
+    "Two direct local source-surgery candidates tested before method switch",
+    "Selected diagnostic Gate 1 FAIL",
+    "Gate 2 seven-view/source/REF-CLEAN/underside/REF-SEAM review FAIL",
+    "Gate 3 correctly not run"
+  ],
+  "open_real_tests": [
+    "No print, assembly, wall-thickness, connector, support, orientation or slicer test because Gate 2 failed.",
+    "A future technical method must combine exact outside-ROI Seed-42 surface retention with a single manifold underside without the measured transition ridges or retained MLS roughness."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "The blocker is technical local surface surgery/topology. No binding user dimension, function or reference datum is missing.",
+  "final_user_approval_claimed": false
+}

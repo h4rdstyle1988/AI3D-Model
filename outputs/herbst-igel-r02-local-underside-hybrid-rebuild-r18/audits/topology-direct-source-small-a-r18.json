@@ -1,0 +1,43 @@
+{
+  "attempt": "direct-source-small-a",
+  "method": "direct visible Seed-42 face retention inside local underside ROI; outside-ROI triangle coordinates unchanged (storage indices compacted only)",
+  "roi_faces": 248544,
+  "retained_roi_faces": 180206,
+  "removed_roi_hidden_or_double_faces": 68338,
+  "outside_roi_faces_changed": 0,
+  "visibility_tolerance_mm": 0.45,
+  "topology": {
+    "vertices": 429090,
+    "triangles": 802128,
+    "surface_components": 236,
+    "boundary_edges": 82623,
+    "nonmanifold_edges": 4285,
+    "nonmanifold_vertices": 5268,
+    "max_edge_incidence": 4,
+    "all_edges_incidence_two": false,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "surface_area_mm2": 103750.0120415404,
+    "signed_volume_mm3": -22481.02167274221,
+    "bounds_min_mm": [
+      -100.0,
+      -98.71968838626324,
+      -79.58663605842654
+    ],
+    "bounds_max_mm": [
+      100.0,
+      98.71968838626324,
+      79.58663605842654
+    ],
+    "max_extent_mm": 200.0,
+    "finite_coordinates": true,
+    "indexed_topology_pass": false
+  },
+  "gate_1": "FAIL",
+  "master": {
+    "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/candidates/herbst-igel-r02-r18-direct-source-small-a-200mm.ply",
+    "bytes": 15577138,
+    "sha256": "6b0163bb4519baccb7f9b7858f6a5b1b42e525ab3658e219ee1d2fb235ddd59d"
+  },
+  "bottom_render": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-candidates/direct-source-small-a/direct-source-small-a-bottom.png"
+}

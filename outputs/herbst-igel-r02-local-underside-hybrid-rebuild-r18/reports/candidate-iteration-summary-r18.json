@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-LOCAL-UNDERSIDE-HYBRID-REBUILD-R18.md",
+  "task_blob_sha": "0d88869426b14cf2b7da7c05ed328e9d0117cbdc",
+  "attempts": [
+    {
+      "attempt": "direct-source-small-a",
+      "method": "direct visible Seed-42 face retention inside local underside ROI; outside-ROI triangle coordinates unchanged (storage indices compacted only)",
+      "roi_faces": 248544,
+      "retained_roi_faces": 180206,
+      "removed_roi_hidden_or_double_faces": 68338,
+      "outside_roi_faces_changed": 0,
+      "visibility_tolerance_mm": 0.45,
+      "topology": {
+        "vertices": 429090,
+        "triangles": 802128,
+        "surface_components": 236,
+        "boundary_edges": 82623,
+        "nonmanifold_edges": 4285,
+        "nonmanifold_vertices": 5268,
+        "max_edge_incidence": 4,
+        "all_edges_incidence_two": false,
+        "degenerate_faces": 0,
+        "duplicate_faces": 0,
+        "surface_area_mm2": 103750.0120415404,
+        "signed_volume_mm3": -22481.02167274221,
+        "bounds_min_mm": [
+          -100.0,
+          -98.71968838626324,
+          -79.58663605842654
+        ],
+        "bounds_max_mm": [
+          100.0,
+          98.71968838626324,
+          79.58663605842654
+        ],
+        "max_extent_mm": 200.0,
+        "finite_coordinates": true,
+        "indexed_topology_pass": false
+      },
+      "gate_1": "FAIL",
+      "master": {
+        "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/candidates/herbst-igel-r02-r18-direct-source-small-a-200mm.ply",
+        "bytes": 15577138,
+        "sha256": "6b0163bb4519baccb7f9b7858f6a5b1b42e525ab3658e219ee1d2fb235ddd59d"
+      },
+      "bottom_render": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-candidates/direct-source-small-a/direct-source-small-a-bottom.png"
+    },
+    {
+      "attempt": "direct-source-medium-b",
+      "method": "direct visible Seed-42 face retention inside local underside ROI; outside-ROI triangle coordinates unchanged (storage indices compacted only)",
+      "roi_faces": 357473,
+      "retained_roi_faces": 268580,
+      "removed_roi_hidden_or_double_faces": 88893,
+      "outside_roi_faces_changed": 0,
+      "visibility_tolerance_mm": 0.8,
+      "topology": {
+        "vertices": 424104,
+        "triangles": 781573,
+        "surface_components": 559,
+        "boundary_edges": 92050,
+        "nonmanifold_edges": 4095,
+        "nonmanifold_vertices": 5012,
+        "max_edge_incidence": 4,
+        "all_edges_incidence_two": false,
+        "degenerate_faces": 0,
+        "duplicate_faces": 0,
+        "surface_area_mm2": 100956.79701733562,
+        "signed_volume_mm3": -58938.36151919855,
+        "bounds_min_mm": [
+          -100.0,
+          -98.71968838626324,
+          -79.58663605842654
+        ],
+        "bounds_max_mm": [
+          100.0,
+          98.71968838626324,
+          79.58663605842654
+        ],
+        "max_extent_mm": 200.0,
+        "finite_coordinates": true,
+        "indexed_topology_pass": false
+      },
+      "gate_1": "FAIL",
+      "master": {
+        "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/candidates/herbst-igel-r02-r18-direct-source-medium-b-200mm.ply",
+        "bytes": 15250092,
+        "sha256": "4989851c31c96ff6f47c56a7f12b0db3b585e33d294c4f9496dcf7ab7cc28fcb"
+      },
+      "bottom_render": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-candidates/direct-source-medium-b/direct-source-medium-b-bottom.png"
+    },
+    {
+      "attempt": "relief-transfer-c",
+      "method": "method switch: topology-preserving, boundary-fixed local vertical relief transfer from Seed-42 bottom visibility",
+      "topology": {
+        "vertices": 478107,
+        "triangles": 959960,
+        "surface_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "nonmanifold_vertices": 0,
+        "max_edge_incidence": 2,
+        "all_edges_incidence_two": true,
+        "degenerate_faces": 0,
+        "duplicate_faces": 0,
+        "surface_area_mm2": 453128.2985891176,
+        "signed_volume_mm3": 1227459.2757833612,
+        "bounds_min_mm": [
+          -100.36787414550781,
+          -98.80062103271484,
+          -81.47111206054687
+        ],
+        "bounds_max_mm": [
+          100.23919677734375,
+          98.8774642944336,
+          81.59463500976562
+        ],
+        "max_extent_mm": 200.60707092285156,
+        "finite_coordinates": true,
+        "indexed_topology_pass": true
+      },
+      "vertical_graph_audit": {
+        "construction": "R17 indexed manifold connectivity unchanged; ROI vertices move only along Z; boundary fixed through 12-ring smoothstep; upper clearance constrained",
+        "roi_faces": 187354,
+        "roi_vertices": 109013,
+        "boundary_vertices_fixed": 29337,
+        "moved_vertices": 70516,
+        "outside_roi_coordinates_byte_equal_in_float64": true,
+        "projected_zero_area_roi_faces": 0,
+        "target_vertices_clearance_clamped": 139201,
+        "minimum_sampled_clearance_mm": -58.80593813834367,
+        "maximum_abs_z_displacement_mm": 160.04216356256342,
+        "self_intersection_basis": "local vertical graph retained its R17 XY parameterization and no projected ROI face collapsed; the sampled protected-top clearance must additionally remain >= 0.799 mm"
+      },
+      "actual_self_intersection_check": {
+        "method": "R17 consistent-tetrahedron manifold invariant plus local one-to-one XY graph and protected top-depth clearance audit",
+        "confirmed_real_self_intersections": null,
+        "status": "FAIL"
+      },
+      "gate_1": "FAIL",
+      "master": {
+        "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/candidates/herbst-igel-r02-r18-relief-transfer-c-200mm.ply",
+        "bytes": 18217178,
+        "sha256": "013db421195a27c6b3a300957ff3ba4a2ecd72fe8421f634a60b9680c57a9d0d"
+      },
+      "form_delta": {
+        "comparison": "bidirectional local visible-depth match (2-pixel search) and 2-pixel-dilated silhouette",
+        "views": {
+          "front": {
+            "visible_depth_delta_mm": {
+              "median": 0.03415431350667575,
+              "p95": 4.484957055312283,
+              "p99": 136.58187476558157,
+              "maximum": 185.04958371118545
+            },
+            "silhouette_iou": 0.9711815561959655,
+            "source_only_pixel_fraction": 0.010310136393428978,
+            "candidate_only_pixel_fraction": 0.020089680500213276
+          },
+          "left": {
+            "visible_depth_delta_mm": {
+              "median": 0.03204479701369678,
+              "p95": 3.4907214807059104,
+              "p99": 126.40671691703947,
+              "maximum": 190.5461320029679
+            },
+            "silhouette_iou": 0.977228312554212,
+            "source_only_pixel_fraction": 0.013564777560639153,
+            "candidate_only_pixel_fraction": 0.013669282780674894
+          },
+          "right": {
+            "visible_depth_delta_mm": {
+              "median": 0.03858482493748028,
+              "p95": 4.605282107127413,
+              "p99": 45.82476664005933,
+              "maximum": 184.35828947292623
+            },
+            "silhouette_iou": 0.9769346084259498,
+            "source_only_pixel_fraction": 0.0089222021194107,
+            "candidate_only_pixel_fraction": 0.015993796846730423
+          },
+          "rear": {
+            "visible_depth_delta_mm": {
+              "median": 0.039018515395230935,
+              "p95": 2.9279094192950175,
+              "p99": 60.94129767159398,
+              "maximum": 183.0170772054102
+            },
+            "silhouette_iou": 0.9684177324664489,
+            "source_only_pixel_fraction": 0.015404495182279742,
+            "candidate_only_pixel_fraction": 0.023249188567707538
+          },
+          "top": {
+            "visible_depth_delta_mm": {
+              "median": 0.073063722693675,
+              "p95": 7.256015718218729,
+              "p99": 16.9143938783461,
+              "maximum": 137.10036378904897
+            },
+            "silhouette_iou": 0.9920952980271366,
+            "source_only_pixel_fraction": 0.0008059263184623368,
+            "candidate_only_pixel_fraction": 0.01171353183408958
+          },
+          "bottom": {
+            "visible_depth_delta_mm": {
+              "median": 0.2922777731780144,
+              "p95": 99.09876601908714,
+              "p99": 118.92241020627071,
+              "maximum": 153.19965341505545
+            },
+            "silhouette_iou": 0.9920952980271366,
+            "source_only_pixel_fraction": 0.0008059263184623368,
+            "candidate_only_pixel_fraction": 0.01171353183408958
+          },
+          "3q-front": {
+            "visible_depth_delta_mm": {
+              "median": 0.043174640801737496,
+              "p95": 3.6765673052494976,
+              "p99": 41.820988730986976,
+              "maximum": 239.49380236329395
+            },
+            "silhouette_iou": 0.9529258385320706,
+            "source_only_pixel_fraction": 0.006550947624742757,
+            "candidate_only_pixel_fraction": 0.03806660848390816
+          }
+        },
+        "render_directory": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence",
+        "seven_view_contact_sheet": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-seven-view-contact-sheet.png",
+        "soll_ist_pairs": [
+          "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-front.png",
+          "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-left.png",
+          "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-right.png",
+          "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-rear.png",
+          "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-top.png",
+          "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-bottom.png",
+          "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-3q-front.png"
+        ]
+      }
+    }
+  ],
+  "method_change_rule": {
+    "triggered": true,
+    "same_failure_after_two_local_variants": "Both direct source-retention variants retain open and nonmanifold defects outside the bounded underside ROI.",
+    "changed_from": "direct source face surgery",
+    "changed_to": "topology-preserving boundary-fixed relief transfer into R17 manifold connectivity"
+  },
+  "best_diagnostic_attempt": "relief-transfer-c",
+  "master_selected_for_gate_3": null
+}

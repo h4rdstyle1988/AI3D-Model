@@ -1,0 +1,5 @@
+R18 STOPP: Gate 1 and Gate 2 are not both PASS.
+
+Therefore no REF-SEAM split, hollow 1.6 mm shells, glue connector, STL,
+3MF/GLB assembly, support/orientation result, slicer result or print file was
+created. This is not a final user approval.

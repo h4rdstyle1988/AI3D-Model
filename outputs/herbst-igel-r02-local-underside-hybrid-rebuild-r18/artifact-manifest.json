@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-LOCAL-UNDERSIDE-HYBRID-REBUILD-R18.md",
+  "artifacts": [
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/audits/topology-direct-source-medium-b-r18.json",
+      "bytes": 1536,
+      "sha256": "75c17ae28f46c9cefbcdbfc968e394f3d57116b5f4695455213bdde8139fe31d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/audits/topology-direct-source-small-a-r18.json",
+      "bytes": 1532,
+      "sha256": "2371c9ab2a55752beba5f12325f9d0acf44e5a7e601ca458b1feeede95da790e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/audits/topology-relief-transfer-c-r18.json",
+      "bytes": 6326,
+      "sha256": "8616cdbc0cb763d4a5397470fc4d8baea7a2fdb73d7797da1d470ccff7bfa385"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/CAD-STL-3MF-GLB-FDM-NOT-CREATED.txt",
+      "bytes": 243,
+      "sha256": "1896b9d2d574dd0c609c57bcb378b617909956ba46631bd4c61cbeaa533152b8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/candidates/herbst-igel-r02-r18-direct-source-medium-b-200mm.ply",
+      "bytes": 15250092,
+      "sha256": "4989851c31c96ff6f47c56a7f12b0db3b585e33d294c4f9496dcf7ab7cc28fcb"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/candidates/herbst-igel-r02-r18-direct-source-small-a-200mm.ply",
+      "bytes": 15577138,
+      "sha256": "6b0163bb4519baccb7f9b7858f6a5b1b42e525ab3658e219ee1d2fb235ddd59d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/candidates/herbst-igel-r02-r18-relief-transfer-c-200mm.ply",
+      "bytes": 18217178,
+      "sha256": "013db421195a27c6b3a300957ff3ba4a2ecd72fe8421f634a60b9680c57a9d0d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/inputs/herbst-igel-r02-r17-screened-mls-d-200mm.ply",
+      "bytes": 18217157,
+      "sha256": "d9c63f96e44245c3aebd583457418f3d82afbb6cd1a73163bfe7f70983d3fa29"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/inputs/seed42-optically-best-source.ply",
+      "bytes": 16557141,
+      "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/LOCAL-LARGE-ARTIFACTS.json",
+      "bytes": 314,
+      "sha256": "659786e7be52fb2e5b28a2d2a569e8c3d76bda95cfecd686a94de7995f622320"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reference-audit/hash-gate-r18.json",
+      "bytes": 981,
+      "sha256": "a5b2bee7fb89ed7a6df8848a298cd439fc26d35bc00c2be49b6ac2948b6c065d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reference-audit/ref-clean-r18.jpg",
+      "bytes": 17344,
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reference-audit/ref-seam-r18.jpg",
+      "bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-candidates/direct-source-medium-b/direct-source-medium-b-bottom.png",
+      "bytes": 155716,
+      "sha256": "88835aa4b5db17d31466ccda1ab83034201ef9bd6bf4e6cb9d34e529a8f9a2c4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-candidates/direct-source-small-a/direct-source-small-a-bottom.png",
+      "bytes": 155352,
+      "sha256": "3473c4e8173386c962306c74a2363252e5ae8c32226b57ce98bc7a91f7cd3efe"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-3q-front.png",
+      "bytes": 175215,
+      "sha256": "fafea6cda9e09bc507a391ed57ea7ae9b796bb60f7fd96c79101a33cfbd26142"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-bottom.png",
+      "bytes": 172824,
+      "sha256": "e3ca259a85ec12b0e64d73037256a5d86e6280a70f547b68fc70207e92569f92"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-front.png",
+      "bytes": 162619,
+      "sha256": "a1eccd8c28e3861b87d38b9f0126469810743a05f767056502ec76bd193e4a47"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-left.png",
+      "bytes": 161258,
+      "sha256": "cfc3d278bd25679f7f23915d1fb42d279880dd32e7da018d71b6c05a3fdc4ed8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-rear.png",
+      "bytes": 173378,
+      "sha256": "65bbebdf5e78beb2685a614f68440aca63f483e76b0cbbd6388b1f04387c4832"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-right.png",
+      "bytes": 167137,
+      "sha256": "449c657f8d88230bddbb855176e939b099db83c9f1665c91262cc399ce1c5eef"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-seven-view-contact-sheet.png",
+      "bytes": 1165704,
+      "sha256": "2e2a0bed03cd755ac89e6661b1e6e80a3628bc983ed695d2fdf4c505da0d2867"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-top.png",
+      "bytes": 159797,
+      "sha256": "da64794f1f21f2e270a9447a71b43e0252ddc845c5487b2d6796ca7a1c808173"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/ref-seam-overlay-r18.png",
+      "bytes": 176739,
+      "sha256": "ac872d6a747b1657b616af1974bc7479f7997e37b201694a6e4a3c211be1efd4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/ref-seam-soll-ist-r18.png",
+      "bytes": 446602,
+      "sha256": "fea6707578f57f370ad48f60dbcc320351ae70c2b3f96346b43770bc4f42718d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-3q-front.png",
+      "bytes": 339596,
+      "sha256": "5251e6e8ea5be62eb91c6cde5364e34900c5136a2963935cff405a9465f06a55"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-bottom.png",
+      "bytes": 353110,
+      "sha256": "f3ad86b4ba1f82b5dd8895ef7f7fe37b4c7f17349ab62e286374d8d6a0aa94fd"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-front.png",
+      "bytes": 328925,
+      "sha256": "bd2dfaedb880248689306c2d5b2242305b2185328e4dded4f4c12562ba1edae6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-left.png",
+      "bytes": 327727,
+      "sha256": "4bc859d2f4ac063a38251929f38cbe424c259fe32d8adceab13cd6db6ce6579c"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-rear.png",
+      "bytes": 363110,
+      "sha256": "40b980ad4648178672a3a6dbf634e825e52bce8c1249e94c008f13b11b9f8fce"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-right.png",
+      "bytes": 345528,
+      "sha256": "aeb2f606f38411ceeefc7a2a7cc07f31bbf41666eb2e5e98f7476e0250ea9a3e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-top.png",
+      "bytes": 320282,
+      "sha256": "b76a34dfe9950537d9257ec0cb003b1b287f415ee6738c03c2002ac668161751"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-ref-clean-source-candidate-r18.png",
+      "bytes": 633470,
+      "sha256": "31a9c92b20e8a667e58f89ca03f0dd68fc47216bc08760574ce2b823be125243"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-3q-front.png",
+      "bytes": 157758,
+      "sha256": "7f97d76798c6fea2b09d7bffa8c6c6fcc32b7aa3450e9120c517fd7da0e86189"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-bottom.png",
+      "bytes": 170014,
+      "sha256": "4da21423c75fb2a9f3ee608258d0035289d404205903434cfc926a984d96fcd1"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-front.png",
+      "bytes": 159895,
+      "sha256": "d4b92829e4a3671700c4f9befbb5edad63d91a9c2e414e58b55781ecdad57e66"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-left.png",
+      "bytes": 160837,
+      "sha256": "9bec9ecf8792dc52774e5717cc814aa149eaafc5b80e6d479974e88e0600ff52"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-rear.png",
+      "bytes": 180488,
+      "sha256": "28396202e9504ad3751ab6da6c49240ac3c71ccf045ef79d01e45f5e286e0cd0"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-right.png",
+      "bytes": 170798,
+      "sha256": "e3d9e323e8f6e2245e7e374af9410fb42dbf2f41fb8b69d084ad164c41685de8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-top.png",
+      "bytes": 154714,
+      "sha256": "947673e48e89359e9e04493b2e79287d05debedbfd28389f67cf00f963f1ddaa"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/underside-source-vs-candidate-closeup-r18.png",
+      "bytes": 421860,
+      "sha256": "e89cb1948bf1d86162b15f2f7194153ba5b0655bb778d2b6a535838ea8c2bdcd"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reports/candidate-iteration-summary-r18.json",
+      "bytes": 10986,
+      "sha256": "ae0be908662f6cbc86d4c503728b0931bcb2da7f262ae3e9b2509b257f68174f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reports/form-delta-relief-transfer-c-r18.json",
+      "bytes": 3889,
+      "sha256": "1d5ba4168cbbe90562f13a644c9531209b8a4ae9276c408bb830d43fe68b7844"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reports/form-protection-gate-r18.json",
+      "bytes": 2406,
+      "sha256": "d6dd09fc55cf1452229eda61b29855b9fd72b92894dd74f96fe35f28ed43ebf0"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reports/roi-definition-r18.json",
+      "bytes": 1350,
+      "sha256": "d2b6e80650a0486a7db95fd57bbc7d96af8081f016ecfc021d546a57d21384af"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reports/topology-gate-r18.json",
+      "bytes": 684,
+      "sha256": "e6d458cb0f12273fcfbdb70d6e83430e99ca268ab05e7f7209424ae7270ec3a7"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reproduction-scripts/r18_local_hybrid.py",
+      "bytes": 40912,
+      "sha256": "4369a693c485794a77daffdea16b5aa87c0c5c225e253a3e2641a9fb69a24e80"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reproduction-scripts/validate_r18.py",
+      "bytes": 6429,
+      "sha256": "6e7479fc35756b9ef27334f2e8d845fa9a72c6a6aadf14ec876218ca9ab83454"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/REPRODUKTION-R18.md",
+      "bytes": 857,
+      "sha256": "8ba7f054b5466c48060a017a038a34b304d917fadd4659a9918b3c4cfb5822ec"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/result-status.json",
+      "bytes": 2360,
+      "sha256": "891ff4083d98561e7bf721f65a2c3a103c214c8b86d5582bc0ea6d7466bcd9ac"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/REVISION-R02-R18.md",
+      "bytes": 3460,
+      "sha256": "fb4b1b25db7bf362c32055d53d130891ba2433491f1b2dc752a6bb33ab529362"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/technical-validation-r18.json",
+      "bytes": 677,
+      "sha256": "480d5fd7ba765a61886e0709dd86b396e063b42be7a612e17decd73a6b88ceaa"
+    }
+  ]
+}

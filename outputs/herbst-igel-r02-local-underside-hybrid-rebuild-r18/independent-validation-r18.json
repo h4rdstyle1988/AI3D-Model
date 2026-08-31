@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-LOCAL-UNDERSIDE-HYBRID-REBUILD-R18.md",
+  "validator": "independent file/hash/indexed-edge validation; visual gate remains recorded FAIL",
+  "checks": [
+    {
+      "name": "task_blob",
+      "pass": true,
+      "actual": "0d88869426b14cf2b7da7c05ed328e9d0117cbdc"
+    },
+    {
+      "name": "hash:inputs/seed42-optically-best-source.ply",
+      "pass": true,
+      "actual": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6"
+    },
+    {
+      "name": "hash:inputs/herbst-igel-r02-r17-screened-mls-d-200mm.ply",
+      "pass": true,
+      "actual": "d9c63f96e44245c3aebd583457418f3d82afbb6cd1a73163bfe7f70983d3fa29"
+    },
+    {
+      "name": "hash:reference-audit/ref-clean-r18.jpg",
+      "pass": true,
+      "actual": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "name": "hash:reference-audit/ref-seam-r18.jpg",
+      "pass": true,
+      "actual": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/audits/topology-direct-source-medium-b-r18.json",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/audits/topology-direct-source-small-a-r18.json",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/audits/topology-relief-transfer-c-r18.json",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/CAD-STL-3MF-GLB-FDM-NOT-CREATED.txt",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/candidates/herbst-igel-r02-r18-direct-source-medium-b-200mm.ply",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/candidates/herbst-igel-r02-r18-direct-source-small-a-200mm.ply",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/candidates/herbst-igel-r02-r18-relief-transfer-c-200mm.ply",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/inputs/herbst-igel-r02-r17-screened-mls-d-200mm.ply",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/inputs/seed42-optically-best-source.ply",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/LOCAL-LARGE-ARTIFACTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reference-audit/hash-gate-r18.json",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reference-audit/ref-clean-r18.jpg",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reference-audit/ref-seam-r18.jpg",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-candidates/direct-source-medium-b/direct-source-medium-b-bottom.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-candidates/direct-source-small-a/direct-source-small-a-bottom.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-3q-front.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-bottom.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-front.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-left.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-rear.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-right.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-seven-view-contact-sheet.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/candidate-r18-top.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/ref-seam-overlay-r18.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/ref-seam-soll-ist-r18.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-3q-front.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-bottom.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-front.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-left.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-rear.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-right.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-r18-top.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/soll-ist-ref-clean-source-candidate-r18.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-3q-front.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-bottom.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-front.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-left.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-rear.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-right.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/source-r18-top.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/underside-source-vs-candidate-closeup-r18.png",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reports/candidate-iteration-summary-r18.json",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reports/form-delta-relief-transfer-c-r18.json",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reports/form-protection-gate-r18.json",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reports/roi-definition-r18.json",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reports/topology-gate-r18.json",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reproduction-scripts/r18_local_hybrid.py",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/reproduction-scripts/validate_r18.py",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/REPRODUKTION-R18.md",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/result-status.json",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/REVISION-R02-R18.md",
+      "pass": true
+    },
+    {
+      "name": "manifest:outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/technical-validation-r18.json",
+      "pass": true
+    },
+    {
+      "name": "status_is_stopp",
+      "pass": true
+    },
+    {
+      "name": "no_user_decision_required",
+      "pass": true
+    },
+    {
+      "name": "no_final_user_approval_claimed",
+      "pass": true
+    },
+    {
+      "name": "gate3_not_run",
+      "pass": true
+    },
+    {
+      "name": "required_renders",
+      "pass": true
+    },
+    {
+      "name": "gate3_files_absent",
+      "pass": true,
+      "files": []
+    },
+    {
+      "name": "no_git_artifact_over_90mb",
+      "pass": true,
+      "files": []
+    },
+    {
+      "name": "diagnostic_finite",
+      "pass": true
+    },
+    {
+      "name": "diagnostic_boundary_edges_zero",
+      "pass": true
+    },
+    {
+      "name": "diagnostic_nonmanifold_edges_zero",
+      "pass": true
+    },
+    {
+      "name": "diagnostic_degenerate_faces_zero",
+      "pass": true
+    },
+    {
+      "name": "required_reports",
+      "pass": true
+    }
+  ],
+  "status": "PASS"
+}

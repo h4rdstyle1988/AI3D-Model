@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-LOCAL-UNDERSIDE-HYBRID-REBUILD-R18.md",
+  "task_blob_sha": "0d88869426b14cf2b7da7c05ed328e9d0117cbdc",
+  "definition": {
+    "projection": "orthographic bottom visibility on shared Seed-42/R17 frame",
+    "resolution_px": 384,
+    "r17_visible_depth_error_threshold_mm": 2.0,
+    "source_bottom_depth_band_mm": 12.0,
+    "normal_rule": "source face normal Z < -0.05, or topology-defect adjacency, or directly bottom-visible",
+    "small_mask_dilation_px": 1,
+    "medium_mask_dilation_px": 4,
+    "reason": "R17 Gate-2 bottom depth mismatch intersected with the smallest source band that contains visible underside faces and adjacent boundary/nonmanifold evidence"
+  },
+  "source_faces": 870466,
+  "source_scale_to_200mm": 318.2455727028218,
+  "source_topology": {
+    "boundary_edges": 8608,
+    "nonmanifold_edges": 5079,
+    "topology_defect_faces": 20840
+  },
+  "raw_error_pixels": 52379,
+  "small_roi_faces": 248544,
+  "small_roi_fraction": 0.2855298196598144,
+  "medium_roi_faces": 357473,
+  "medium_roi_fraction": 0.41066853846100826,
+  "protected_rule": "Every source triangle outside each direct-surgery ROI retains its exact three coordinates (only storage indices are compacted); relief-transfer-c changes no R17 vertex outside its derived ROI."
+}

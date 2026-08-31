@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-LOCAL-UNDERSIDE-HYBRID-REBUILD-R18.md",
+  "task_blob_sha": "0d88869426b14cf2b7da7c05ed328e9d0117cbdc",
+  "selected_diagnostic_attempt": "relief-transfer-c",
+  "comparison_basis": [
+    "byte-identical Seed-42 source",
+    "authoritative REF-CLEAN",
+    "authoritative REF-SEAM",
+    "seven real geometry views",
+    "separate underside close-up"
+  ],
+  "quantitative": {
+    "minimum_seven_view_silhouette_iou": 0.9529258385320706,
+    "bottom_visible_depth_p95_mm": 99.09876601908714,
+    "outside_roi_r17_coordinates_changed": 0
+  },
+  "visual_checks": {
+    "r17_good_overall_form_at_least_preserved": "PASS_OUTSIDE_ROI_BYTE_IDENTICAL_TO_R17",
+    "underside_relief_not_replaced_by_smooth_closure": "FAIL_ONLY_PARTIAL_LOW_CONTRAST_RELIEF_TRANSFERRED_LARGE_SMOOTH_REGION_REMAINS",
+    "no_foot_runners": "FAIL_LOCAL_TRANSITION_RIDGES_REMAIN_VISIBLE",
+    "no_new_mls_or_patch_roughness": "FAIL_R17_MLS_ROUGHNESS_REMAINS_OUTSIDE_ROI_RELATIVE_TO_SOURCE",
+    "no_inflation_shrink_step_or_relief_smear": "FAIL_BOUNDARY_TRANSITION_AND_DEPTH_CLAMP_VISIBLE",
+    "exactly_one_visible_maple_leaf": "PASS_INHERITED_R17_OUTSIDE_ROI_NO_SECOND_ADDED",
+    "face_free_and_round_like_reference": "PASS_INHERITED_R17_OUTSIDE_ROI",
+    "ref_seam_visually_plausible": "OFFEN_AFFINE_OVERLAY_PRODUCED_BUT_NO_GATE_COMPLIANT_MASTER"
+  },
+  "underside_closeup": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/underside-source-vs-candidate-closeup-r18.png",
+  "ref_seam_overlay": "outputs/herbst-igel-r02-local-underside-hybrid-rebuild-r18/renders-gate-evidence/ref-seam-overlay-r18.png",
+  "observations": [
+    "The direct-source variants preserve source geometry exactly outside the ROI but cannot eliminate pre-existing outside-ROI open/nonmanifold defects.",
+    "The method-switched candidate preserves the R17 manifold connectivity and transfers bottom depth relief without modifying R17 coordinates outside the ROI.",
+    "The transferred depth field creates visible transition ridges and requires upper-clearance clamping; pre-existing R17 MLS roughness outside the ROI also remains relative to Seed-42.",
+    "Therefore no candidate simultaneously satisfies Gate 1 and all hard Gate-2 form-protection requirements."
+  ],
+  "gate_2": "FAIL",
+  "gate_3_cad_fdm_authorized": false
+}

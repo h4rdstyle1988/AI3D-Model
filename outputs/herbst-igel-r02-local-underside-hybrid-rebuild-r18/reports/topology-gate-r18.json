@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-LOCAL-UNDERSIDE-HYBRID-REBUILD-R18.md",
+  "task_blob_sha": "0d88869426b14cf2b7da7c05ed328e9d0117cbdc",
+  "selected_diagnostic_attempt": "relief-transfer-c",
+  "exactly_one_outer_master_component": true,
+  "watertight": true,
+  "two_manifold": true,
+  "open_edges": 0,
+  "nonmanifold_edges": 0,
+  "nonmanifold_vertices": 0,
+  "internal_enclosed_shells": 0,
+  "duplicate_depth_layers": false,
+  "confirmed_real_self_intersections": null,
+  "construction_evidence": "R17 consistent-tetrahedron manifold invariant plus local one-to-one XY graph and protected top-depth clearance audit",
+  "gate_1": "FAIL"
+}
