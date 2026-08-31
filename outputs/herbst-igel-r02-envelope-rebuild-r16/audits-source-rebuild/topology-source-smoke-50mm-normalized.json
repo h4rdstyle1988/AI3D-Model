@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-ENVELOPE-REBUILD-R16.md",
+  "task_blob_sha": "5d2d6ab9d3d2cb522e65e8a1de57dddc3e872e62",
+  "attempt": "source-smoke-50mm-normalized",
+  "method": "six-depth-map three-axis Boolean visual envelope; exposed cubical boundary only",
+  "grid": {
+    "requested_pitch_normalized": 0.05,
+    "shape_cells": [
+      14,
+      14,
+      12
+    ],
+    "actual_pitch_normalized": [
+      0.0484603932925633,
+      0.04788567466395241,
+      0.045846553146839136
+    ],
+    "actual_pitch_mm": [
+      15.422305616795791,
+      15.239403957690538,
+      14.590462562666177
+    ],
+    "source_to_200mm_scale": 318.2455727028218
+  },
+  "projection_fill": {
+    "yz_to_x": {
+      "observed_nodes": 145,
+      "closed_and_hole_filled_nodes": 152,
+      "interpolated_nodes": 7
+    },
+    "xz_to_y": {
+      "observed_nodes": 143,
+      "closed_and_hole_filled_nodes": 156,
+      "interpolated_nodes": 13
+    },
+    "xy_to_z": {
+      "observed_nodes": 154,
+      "closed_and_hole_filled_nodes": 170,
+      "interpolated_nodes": 16
+    }
+  },
+  "well_composed_repair": {
+    "initial_occupied_voxels": 564,
+    "volumetric_micro_closing": {
+      "closing_radius_voxels": 1,
+      "voxels_added": 649,
+      "voxels_removed": 629,
+      "net_voxel_change": 20
+    },
+    "final_occupied_voxels": 601,
+    "well_composed_blocks_repaired": 5,
+    "voxels_added_as_topology_microcorrection": 17,
+    "repair_iterations": 2
+  },
+  "construction": {
+    "occupied_voxels": 601,
+    "exposed_quads": {
+      "-x": 187,
+      "+x": 187,
+      "-y": 191,
+      "+y": 191,
+      "-z": 120,
+      "+z": 120
+    }
+  },
+  "topology": {
+    "vertices": 967,
+    "triangles": 1992,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 8,
+    "max_edge_incidence": 4,
+    "all_edges_incidence_two": false,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "surface_area_normalized2": 2.22671654329506,
+    "signed_volume_normalized3": 0.06394015827641479,
+    "orientable_outward": true,
+    "bounds_min": [
+      -0.2155974456242153,
+      -0.1482466812644686,
+      -0.19878163188695908
+    ],
+    "bounds_max": [
+      0.36592727388654434,
+      0.4263814147029604,
+      0.25968389958143234
+    ]
+  },
+  "actual_self_intersection_check": {
+    "method": "cubical-complex construction plus exhaustive edge/duplicate-face checks",
+    "tested_exposed_quads": 996,
+    "confirmed_self_intersections": null,
+    "status": "FAIL"
+  },
+  "status": "FAIL",
+  "master": {
+    "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/masterform-source-rebuild/herbst-igel-r02-r16-source-smoke-50mm-normalized-200mm.ply",
+    "sha256": "459f906e6163f4449a1d2c1edd933fbed261e45f8efa07158a65a89e62c3d7cd",
+    "bytes": 37833
+  }
+}

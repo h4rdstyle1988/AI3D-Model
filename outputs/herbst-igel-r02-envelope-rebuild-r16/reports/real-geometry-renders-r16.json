@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-ENVELOPE-REBUILD-R16.md",
+  "selected_attempt": "fine-b",
+  "source_geometry": "outputs/herbst-igel-r02-envelope-rebuild-r16/masterform/herbst-igel-r02-r16-envelope-master-200mm.ply",
+  "source_geometry_sha256": "482c3cbf1ba60a2681ba4d5420ff9cc4987ade524e3888a981144bf3caf0f3eb",
+  "source_is_actual_reconstructed_geometry": true,
+  "selected_views": [
+    {
+      "view": "3q-front",
+      "camera_vector": [
+        -1.0,
+        -1.0,
+        0.35
+      ],
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-3q-front.png"
+    },
+    {
+      "view": "left",
+      "camera_vector": [
+        0.0,
+        -1.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-left.png"
+    },
+    {
+      "view": "right",
+      "camera_vector": [
+        0.0,
+        1.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-right.png"
+    },
+    {
+      "view": "rear",
+      "camera_vector": [
+        1.0,
+        0.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-rear.png"
+    },
+    {
+      "view": "top",
+      "camera_vector": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-top.png"
+    },
+    {
+      "view": "bottom",
+      "camera_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-bottom.png"
+    }
+  ],
+  "contact_sheet": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-contact-sheet.png",
+  "soll_ist_sheet": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/soll-ist-r16.png"
+}

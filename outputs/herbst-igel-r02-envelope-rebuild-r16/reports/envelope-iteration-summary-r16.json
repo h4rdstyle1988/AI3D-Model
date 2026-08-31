@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-ENVELOPE-REBUILD-R16.md",
+  "task_blob_sha": "5d2d6ab9d3d2cb522e65e8a1de57dddc3e872e62",
+  "attempts": [
+    {
+      "attempt": "coarse-a",
+      "pitch_mm": [
+        0.44543429844097643,
+        0.4446832810192025,
+        0.44461807853869423
+      ],
+      "closing_radius_voxels": 1,
+      "gate_1": "PASS",
+      "gate_2": "FAIL"
+    },
+    {
+      "attempt": "fine-b",
+      "pitch_mm": [
+        0.3179650238473792,
+        0.3179378047866808,
+        0.3177111219897232
+      ],
+      "closing_radius_voxels": 2,
+      "gate_1": "PASS",
+      "gate_2": "FAIL"
+    },
+    {
+      "attempt": "fine-c-no-close",
+      "pitch_mm": [
+        0.3179650238473792,
+        0.3179378047866808,
+        0.3177111219897232
+      ],
+      "closing_radius_voxels": 0,
+      "gate_1": "FAIL",
+      "gate_1_failure": {
+        "connected_surface_components": 46,
+        "internal_enclosed_shells": 45
+      },
+      "gate_2": "NOT_RUN_GATE_1_FAIL"
+    }
+  ],
+  "technical_conclusion": "Closing is required to obtain one component, but the large Gate-2 depth and visual failures persist across the two closed resolutions. Further pitch-only iteration is not technically meaningful."
+}

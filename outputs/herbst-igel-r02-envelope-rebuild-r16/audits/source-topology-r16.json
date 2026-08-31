@@ -1,0 +1,23 @@
+{
+  "vertices": 436742,
+  "triangles": 870466,
+  "boundary_edges": 8608,
+  "nonmanifold_edges": 5079,
+  "max_edge_incidence": 4,
+  "all_edges_incidence_two": false,
+  "degenerate_faces": 0,
+  "duplicate_faces": 0,
+  "surface_area_normalized2": 1.1084796569079232,
+  "signed_volume_normalized3": -0.02285824784078352,
+  "orientable_outward": false,
+  "bounds_min": [
+    -0.23905783891677856,
+    -0.17113235592842102,
+    -0.21962818503379822
+  ],
+  "bounds_max": [
+    0.38938766717910767,
+    0.44926708936691284,
+    0.2805304527282715
+  ]
+}

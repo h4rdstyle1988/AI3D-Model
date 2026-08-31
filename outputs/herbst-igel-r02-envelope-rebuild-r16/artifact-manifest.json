@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-ENVELOPE-REBUILD-R16.md",
+  "task_blob_sha": "5d2d6ab9d3d2cb522e65e8a1de57dddc3e872e62",
+  "artifacts": [
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/audits/source-topology-r16.json",
+      "bytes": 568,
+      "sha256": "0103947abe873056d3321bf60a4e0279998eb603b2a299a9366441c8050e6c03"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/audits/topology-envelope-coarse-a-r16.json",
+      "bytes": 3413,
+      "sha256": "cbab633044ee6683a35b4e271c8a82e334b16f67cd76eb17d4a57776330de280"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/audits/topology-envelope-fine-b-r16.json",
+      "bytes": 3416,
+      "sha256": "5155a48c71666e2b88bdefee0949f45a3649113c7aacce7032aabf0dc5c5f554"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/audits/topology-envelope-fine-c-no-close-r16.json",
+      "bytes": 3812,
+      "sha256": "af83bb13c5ee6ee15eb0ae3be5f36898bc8f27a932e43544947e311c4a5cf090"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/audits-source-rebuild/topology-source-smoke-50mm-normalized.json",
+      "bytes": 2857,
+      "sha256": "84409c56343062d0a088508633cc5fac0ea66c8f830663ac868278a5665ee1b5"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/inputs/seed42-optically-best-source.ply",
+      "bytes": 16557141,
+      "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/masterform/herbst-igel-r02-r16-envelope-coarse-a-200mm.ply",
+      "bytes": 54741776,
+      "sha256": "8309d96fd1df87622cf1ae305f75d50356944803736812e4c5affa9127604fb6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/masterform/herbst-igel-r02-r16-envelope-fine-b-200mm.ply",
+      "bytes": 106984840,
+      "sha256": "482c3cbf1ba60a2681ba4d5420ff9cc4987ade524e3888a981144bf3caf0f3eb"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/masterform/herbst-igel-r02-r16-envelope-fine-c-no-close-200mm.ply",
+      "bytes": 152452400,
+      "sha256": "09a10bdbde15df1bb41b121c7b831a6da60d13eb21c0b916700e534ea800eb7a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/masterform/herbst-igel-r02-r16-envelope-master-200mm.ply",
+      "bytes": 106984840,
+      "sha256": "482c3cbf1ba60a2681ba4d5420ff9cc4987ade524e3888a981144bf3caf0f3eb"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/masterform-source-rebuild/herbst-igel-r02-r16-source-smoke-50mm-normalized-200mm.ply",
+      "bytes": 37833,
+      "sha256": "459f906e6163f4449a1d2c1edd933fbed261e45f8efa07158a65a89e62c3d7cd"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/reference-audit/hash-gate-r16-source.json",
+      "bytes": 729,
+      "sha256": "5f3f7e3d87e87712b765d37919222cb51379e83def0297785c27abcc0d56e438"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/reference-audit/hash-gate-r16.json",
+      "bytes": 729,
+      "sha256": "5f3f7e3d87e87712b765d37919222cb51379e83def0297785c27abcc0d56e438"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/reference-audit/ref-clean-r16.jpg",
+      "bytes": 17344,
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/reference-audit/ref-seam-r16.jpg",
+      "bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-3q-front.png",
+      "bytes": 14064,
+      "sha256": "38128473df02e63fe0a66d02e39e76d3fff641fd3075b42e0c6381e294dd41f1"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-bottom.png",
+      "bytes": 12815,
+      "sha256": "757097ce022a7e3d880b37bf57a57ae77b354e464fd8a4f4cf49b000290a7fe6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-contact-sheet.png",
+      "bytes": 134227,
+      "sha256": "4b48ca238b2e6734d403e1f2dd925eed7bde842659094cb6a6453f21ec891b87"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-left.png",
+      "bytes": 10899,
+      "sha256": "18634da2c53a3a793867bb1d6d73bea2e7a3bf0da7947a3ceffbdab48a10eee4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-rear.png",
+      "bytes": 11917,
+      "sha256": "6ffbab9267acdaefb4a35cc2e71c26438c816af5cdc971fa8a38a17a1a71cbcf"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-right.png",
+      "bytes": 10192,
+      "sha256": "1e192e57e2810f520416095f4fa453ca06823fa6f012eb89b51968fb72d00e1c"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-top.png",
+      "bytes": 13325,
+      "sha256": "51bac803f4ec2536cd5ee2a7c5b19389602f668dcd1e786a950a95a408b9c737"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/soll-ist-r16.png",
+      "bytes": 385363,
+      "sha256": "8aa5cc01daba229e12dcae3da42e0890a7db5f061809a2a85cdc82e3a1680edb"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/reports/bidirectional-form-protection-coarse-a-r16.json",
+      "bytes": 2862,
+      "sha256": "5fd8dc1d8ece759d03698bec5a7324c0a46c75a915951151eae4f7cb14f2503d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/reports/bidirectional-form-protection-fine-b-r16.json",
+      "bytes": 2863,
+      "sha256": "c5c6a5104803a75def9363003754bb7f99d5ed0b2535681526bc002efdabef9f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/reports/envelope-iteration-selection-r16.json",
+      "bytes": 1277,
+      "sha256": "3d8fa8f9068913ead15c6d070dd698f91a6019d06c44e1108116589239a844d5"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/reports/envelope-iteration-summary-r16.json",
+      "bytes": 1287,
+      "sha256": "8552e8151e4bc0e95ef85847b4343a04a4be77a64c946a7b434d477502869ce4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/reports/form-protection-gate-r16.json",
+      "bytes": 1772,
+      "sha256": "8e911cfaec88aa1c9858423670cf05c78f2b98f896edb0a13cdf66b0e014a16d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/reports/real-geometry-renders-r16.json",
+      "bytes": 2006,
+      "sha256": "7aae466f860e18bea66865d6ac1751d3cc6b8c454df1e8519362ade5c37f84b0"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/reproduction-scripts/finalize_r16_audit.py",
+      "bytes": 10298,
+      "sha256": "ab8cc5119d94a61007770f94a160c43d0bbcf3a48b79d54e47da2b0b290a2158"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/reproduction-scripts/r16_envelope_rebuild.py",
+      "bytes": 17961,
+      "sha256": "3469c3a2ce3a878879747eee4b66f3f98a5d92c1f7dde4dcec27173681ad7564"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/result-status.json",
+      "bytes": 1888,
+      "sha256": "8760abc355fbdb30b8d6a5ee51a3f828139be4117c6d97d55cd8efd1e26886ff"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/REVISION-R16.md",
+      "bytes": 4074,
+      "sha256": "d64ed1d6ca023d95b0765c56d48cbbca6dfc3abe1862e8b521fa782df3b56e4b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/technical-validation-r16.json",
+      "bytes": 1107,
+      "sha256": "1237c3dc55faff250adca6756371bd72ed30735df5701fc68d5da466786a544a"
+    }
+  ]
+}

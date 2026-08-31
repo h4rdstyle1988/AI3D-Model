@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-ENVELOPE-REBUILD-R16.md",
+  "task_blob_sha": "5d2d6ab9d3d2cb522e65e8a1de57dddc3e872e62",
+  "attempt": "fine-c-no-close",
+  "method": "six-depth-map three-axis Boolean visual envelope; exposed cubical boundary only",
+  "grid": {
+    "requested_pitch_normalized": 0.001,
+    "shape_cells": [
+      630,
+      622,
+      502
+    ],
+    "actual_pitch_normalized": [
+      0.0009991184516627838,
+      0.0009990329231809036,
+      0.0009983206342556172
+    ],
+    "actual_pitch_mm": [
+      0.3179650238473792,
+      0.3179378047866808,
+      0.3177111219897232
+    ],
+    "source_to_200mm_scale": 318.2455727028218
+  },
+  "projection_fill": {
+    "xz_to_y": {
+      "observed_nodes": 252921,
+      "closed_and_hole_filled_nodes": 253068,
+      "interpolated_nodes": 147
+    },
+    "yz_to_x": {
+      "observed_nodes": 250792,
+      "closed_and_hole_filled_nodes": 250924,
+      "interpolated_nodes": 132
+    },
+    "xy_to_z": {
+      "observed_nodes": 289086,
+      "closed_and_hole_filled_nodes": 289739,
+      "interpolated_nodes": 653
+    }
+  },
+  "well_composed_repair": {
+    "initial_occupied_voxels": 24537917,
+    "volumetric_micro_closing": {
+      "closing_radius_voxels": 0,
+      "voxels_added": 0,
+      "voxels_removed": 0,
+      "net_voxel_change": 0
+    },
+    "final_occupied_voxels": 24574176,
+    "well_composed_blocks_repaired": 38265,
+    "voxels_added_as_topology_microcorrection": 36259,
+    "repair_iterations": 4
+  },
+  "construction": {
+    "occupied_voxels": 24574176,
+    "exposed_quads": {
+      "-x": 719366,
+      "+x": 719366,
+      "-y": 727115,
+      "+y": 727115,
+      "-z": 561006,
+      "+z": 561006
+    },
+    "maximum_canonical_z_occupied_runs": 18,
+    "construction": "exhaustive exposed-cell boundary; no internal cell face emitted"
+  },
+  "topology": {
+    "vertices": 4005228,
+    "triangles": 8029948,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "max_edge_incidence": 2,
+    "all_edges_incidence_two": true,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "surface_area_normalized2": 4.005373586760152,
+    "signed_volume_normalized3": 0.02448757573660736,
+    "orientable_outward": true,
+    "bounds_min": [
+      -0.23955739814260996,
+      -0.1716318723900115,
+      -0.22012734535092604
+    ],
+    "bounds_max": [
+      0.38988722640493906,
+      0.4497666058285033,
+      0.2810296130453993
+    ]
+  },
+  "nonmanifold_vertices": 0,
+  "connected_surface_components": 46,
+  "component_vertex_sizes": [
+    4003392,
+    240,
+    236,
+    180,
+    176,
+    112,
+    112,
+    108,
+    92,
+    60,
+    56,
+    52,
+    48,
+    44,
+    28,
+    24,
+    16,
+    12,
+    12,
+    12,
+    12,
+    12,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "actual_self_intersection_check": {
+    "method": "exhaustive cubical-complex check: every emitted triangle is one half of a unique exposed cell face; internal faces are omitted; indexed edge incidence and duplicate-face checks are exhaustive",
+    "tested_exposed_quads": 4014974,
+    "duplicate_faces": 0,
+    "confirmed_self_intersections": 0,
+    "status": "PASS"
+  },
+  "watertight": true,
+  "two_manifold": true,
+  "internal_enclosed_shells": 45,
+  "overlapping_double_skin": false,
+  "status": "FAIL",
+  "master": {
+    "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/masterform/herbst-igel-r02-r16-envelope-fine-c-no-close-200mm.ply",
+    "sha256": "09a10bdbde15df1bb41b121c7b831a6da60d13eb21c0b916700e534ea800eb7a",
+    "bytes": 152452400
+  }
+}

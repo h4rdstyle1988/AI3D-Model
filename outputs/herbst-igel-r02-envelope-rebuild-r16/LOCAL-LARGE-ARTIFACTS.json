@@ -1,0 +1,14 @@
+{
+    "schema_version":  1,
+    "reason":  "GitHub hard limit \u003e100MB; raw PLY artifacts remain preserved locally, not product geometry changes.",
+    "task":  "tasks/TASK-HERBST-IGEL-R02-ENVELOPE-REBUILD-R16.md",
+    "task_blob":  "5d2d6ab9d3d2cb522e65e8a1de57dddc3e872e62",
+    "artifacts":  [
+                      {
+                          "path":  "outputs/herbst-igel-r02-envelope-rebuild-r16/masterform/herbst-igel-r02-r16-envelope-master-200mm.ply",
+                          "bytes":  106984840,
+                          "sha256":  "482c3cbf1ba60a2681ba4d5420ff9cc4987ade524e3888a981144bf3caf0f3eb",
+                          "local_backup":  "D:\\3D-Models\\generated\\_ruediger-local-large-artifacts\\herbst-igel-r16\\herbst-igel-r02-r16-envelope-master-200mm.ply"
+                      }
+                  ]
+}

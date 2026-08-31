@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-ENVELOPE-REBUILD-R16.md",
+  "attempt": "fine-b",
+  "comparison": "bidirectional visible depth and silhouette: Seed-42 optically best source vs R16 envelope",
+  "views": {
+    "3q-front": {
+      "common_depth_samples": 376502,
+      "bidirectional_visible_depth_delta_mm": {
+        "median": 0.44802317772039635,
+        "p95": 47.77343771369014,
+        "p99": 188.55059383288543,
+        "maximum": 240.54346608326804
+      },
+      "silhouette_iou": 0.9839382408897995,
+      "source_only_pixel_fraction": 0.006507145722066243,
+      "candidate_only_pixel_fraction": 0.009679574519572205
+    },
+    "left": {
+      "common_depth_samples": 341160,
+      "bidirectional_visible_depth_delta_mm": {
+        "median": 0.38271154158038184,
+        "p95": 24.162898287031698,
+        "p99": 152.23742349933565,
+        "maximum": 190.88739541104965
+      },
+      "silhouette_iou": 0.9907994702725308,
+      "source_only_pixel_fraction": 0.0032081061655242537,
+      "candidate_only_pixel_fraction": 0.006030941351280483
+    },
+    "right": {
+      "common_depth_samples": 337478,
+      "bidirectional_visible_depth_delta_mm": {
+        "median": 0.37317490630044114,
+        "p95": 23.149833452787064,
+        "p99": 151.62922976191282,
+        "maximum": 184.9116595781474
+      },
+      "silhouette_iou": 0.9906534923178987,
+      "source_only_pixel_fraction": 0.002807096339546373,
+      "candidate_only_pixel_fraction": 0.006576158628485305
+    },
+    "rear": {
+      "common_depth_samples": 346266,
+      "bidirectional_visible_depth_delta_mm": {
+        "median": 0.3834846203622121,
+        "p95": 22.081133834056573,
+        "p99": 153.34520627535443,
+        "maximum": 184.5625723165919
+      },
+      "silhouette_iou": 0.9889019625762526,
+      "source_only_pixel_fraction": 0.004278886799289153,
+      "candidate_only_pixel_fraction": 0.00687768166486933
+    },
+    "top": {
+      "common_depth_samples": 370960,
+      "bidirectional_visible_depth_delta_mm": {
+        "median": 0.3802819221608832,
+        "p95": 1.8742571736712919,
+        "p99": 87.99528515007738,
+        "maximum": 137.55410241518186
+      },
+      "silhouette_iou": 0.972958795604165,
+      "source_only_pixel_fraction": 0.01581237397856309,
+      "candidate_only_pixel_fraction": 0.011590418587301164
+    },
+    "bottom": {
+      "common_depth_samples": 370960,
+      "bidirectional_visible_depth_delta_mm": {
+        "median": 0.3802819221608832,
+        "p95": 1.8742571736712919,
+        "p99": 87.99528515007738,
+        "maximum": 137.55410241518186
+      },
+      "silhouette_iou": 0.972958795604165,
+      "source_only_pixel_fraction": 0.01581237397856309,
+      "candidate_only_pixel_fraction": 0.011590418587301164
+    }
+  }
+}

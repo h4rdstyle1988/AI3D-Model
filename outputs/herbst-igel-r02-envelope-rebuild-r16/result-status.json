@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-ENVELOPE-REBUILD-R16.md",
+  "task_blob_sha": "5d2d6ab9d3d2cb522e65e8a1de57dddc3e872e62",
+  "product_revision": "R02",
+  "technical_revision": "R16",
+  "status": "STOPP",
+  "gates": {
+    "gate_1_topology": "PASS",
+    "gate_2_form_protection": "FAIL",
+    "gate_3_cad_fdm": "NOT_RUN_GATE_2_FAIL"
+  },
+  "main_files": [
+    "outputs/herbst-igel-r02-envelope-rebuild-r16/masterform/herbst-igel-r02-r16-envelope-master-200mm.ply",
+    "outputs/herbst-igel-r02-envelope-rebuild-r16/audits/topology-envelope-fine-b-r16.json",
+    "outputs/herbst-igel-r02-envelope-rebuild-r16/reports/form-protection-gate-r16.json",
+    "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/envelope-r16-contact-sheet.png",
+    "outputs/herbst-igel-r02-envelope-rebuild-r16/renders-gate-evidence/soll-ist-r16.png",
+    "outputs/herbst-igel-r02-envelope-rebuild-r16/REVISION-R16.md"
+  ],
+  "validations": [
+    "Reference and source hash gate PASS",
+    "Gate 1 selected fine-b topology PASS",
+    "Gate 2 quantitative bidirectional visible-depth audit FAIL",
+    "Gate 2 real six-view and SOLL/IST inspection FAIL",
+    "No-close targeted iteration Gate 1 FAIL with 45 enclosed shells",
+    "Gate 3 correctly not run"
+  ],
+  "open_real_tests": [
+    "No print or physical fit test: manufacturing geometry was correctly not generated after Gate 2 FAIL.",
+    "A different deterministic exterior-surface reconstruction method must pass Gate 2 before split/hollow/connector work."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "The blocker is technical: the tested six-depth-map voxel envelope bridges visible depth layers and destroys readable exterior detail. No binding product dimension or function needs a user choice.",
+  "final_user_approval_claimed": false
+}

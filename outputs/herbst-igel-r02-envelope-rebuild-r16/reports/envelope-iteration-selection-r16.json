@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-ENVELOPE-REBUILD-R16.md",
+  "task_blob_sha": "5d2d6ab9d3d2cb522e65e8a1de57dddc3e872e62",
+  "method": "deterministic minimum-pitch selection among Gate-1-passing envelope attempts",
+  "attempts": [
+    {
+      "attempt": "coarse-a",
+      "pitch": 0.0014,
+      "gate_1": "PASS",
+      "master": {
+        "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/masterform/herbst-igel-r02-r16-envelope-coarse-a-200mm.ply",
+        "sha256": "8309d96fd1df87622cf1ae305f75d50356944803736812e4c5affa9127604fb6",
+        "bytes": 54741776
+      }
+    },
+    {
+      "attempt": "fine-b",
+      "pitch": 0.001,
+      "gate_1": "PASS",
+      "master": {
+        "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/masterform/herbst-igel-r02-r16-envelope-fine-b-200mm.ply",
+        "sha256": "482c3cbf1ba60a2681ba4d5420ff9cc4987ade524e3888a981144bf3caf0f3eb",
+        "bytes": 106984840
+      }
+    }
+  ],
+  "selected_attempt": "fine-b",
+  "selected_master": {
+    "path": "outputs/herbst-igel-r02-envelope-rebuild-r16/masterform/herbst-igel-r02-r16-envelope-master-200mm.ply",
+    "sha256": "482c3cbf1ba60a2681ba4d5420ff9cc4987ade524e3888a981144bf3caf0f3eb",
+    "bytes": 106984840
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-ENVELOPE-REBUILD-R16.md",
+  "task_blob_sha": "5d2d6ab9d3d2cb522e65e8a1de57dddc3e872e62",
+  "selected_attempt": "fine-b",
+  "comparison_basis": [
+    "byte-identical optically best Seed-42 source",
+    "authoritative REF-CLEAN",
+    "authoritative REF-SEAM",
+    "six real geometry renders plus SOLL/IST sheet"
+  ],
+  "quantitative_attempts": [
+    {
+      "attempt": "coarse-a",
+      "worst_visible_depth_p95_mm": 40.664764370314735,
+      "minimum_silhouette_iou": 0.9739071731724294,
+      "gate_2": "FAIL"
+    },
+    {
+      "attempt": "fine-b",
+      "worst_visible_depth_p95_mm": 47.77343771369014,
+      "minimum_silhouette_iou": 0.972958795604165,
+      "gate_2": "FAIL"
+    }
+  ],
+  "visual_checks": {
+    "face_free_and_round_like_reference": "FAIL",
+    "forehead_eyes_snout_uncovered": "FAIL",
+    "eyes_nose_ears_short_feet_preserved_and_readable": "FAIL",
+    "back_and_leaf_spine_character_preserved": "FAIL",
+    "exactly_one_visible_maple_leaf": "FAIL_NOT_READABLE",
+    "ref_seam_visually_plausible": "FAIL_NOT_READABLE",
+    "no_visible_remesh_inflation_shrink_step_or_smear": "FAIL"
+  },
+  "observations": [
+    "The outer silhouette remains close, but the envelope fills visible face and leaf relief into a largely opaque mass.",
+    "Fine-b improves median depth error over coarse-a but retains multi-millimetre to centimetre p95 errors in every oblique/side view.",
+    "The selected render does not show readable eyes, nose, ears, face boundary, or the single maple leaf.",
+    "Resolution iteration therefore cannot cure the projection-envelope method's depth-layer bridging."
+  ],
+  "gate_2": "FAIL",
+  "gate_3_cad_fdm_authorized": false
+}

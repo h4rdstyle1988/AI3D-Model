@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-ENVELOPE-REBUILD-R16.md",
+  "revision": "R16",
+  "task_blob_sha": "5d2d6ab9d3d2cb522e65e8a1de57dddc3e872e62",
+  "reference_hash_gate": "PASS",
+  "gate_1_topology": {
+    "status": "PASS",
+    "selected_attempt": "fine-b",
+    "connected_components": 1,
+    "watertight": true,
+    "two_manifold": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "nonmanifold_vertices": 0,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "confirmed_self_intersections": 0,
+    "internal_enclosed_shells": 0,
+    "overlapping_double_skin": false
+  },
+  "gate_2_form_protection": {
+    "status": "FAIL",
+    "report": "outputs/herbst-igel-r02-envelope-rebuild-r16/reports/form-protection-gate-r16.json",
+    "real_views": 6,
+    "soll_ist_present": true
+  },
+  "gate_3_cad_fdm": {
+    "status": "NOT_RUN_GATE_2_FAIL",
+    "stl_generated": false,
+    "assembly_3mf_or_glb_generated": false,
+    "split_hollow_connector_generated": false
+  },
+  "overall": "STOPP",
+  "final_user_approval_claimed": false
+}
