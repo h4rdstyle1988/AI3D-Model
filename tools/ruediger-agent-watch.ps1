@@ -15,7 +15,7 @@ param(
 
 $ErrorActionPreference = "Continue"
 $PSDefaultParameterValues["*:ErrorAction"] = "Stop"
-$WatcherVersion = "R03.10"
+$WatcherVersion = "R03.11"
 $env:GIT_TERMINAL_PROMPT = "0"
 
 if ($PollSeconds -lt 5) { throw "PollSeconds muss mindestens 5 sein." }
@@ -389,11 +389,17 @@ function Get-TaskBranch {
 function Try-RecoverLocalResult {
     param($Task,[string]$Branch,$State)
 
+    $expectedBranch = Get-TaskBranch $Task
+    if ($Branch -cne $expectedBranch) { return $false }
+
+    $dirty = (& git.exe -C $WorkerDir status --porcelain | Out-String).Trim()
+    if ($LASTEXITCODE -ne 0 -or $dirty) { return $false }
+
     & git.exe -C $WorkerDir show-ref --verify --quiet "refs/heads/$Branch"
     if ($LASTEXITCODE -ne 0) { return $false }
 
-    $commit = (& git.exe -C $WorkerDir rev-parse $Branch | Out-String).Trim()
-    if (-not $commit) { return $false }
+    $commit = (& git.exe -C $WorkerDir rev-parse --verify "${Branch}^{commit}" 2>$null | Out-String).Trim()
+    if ($LASTEXITCODE -ne 0 -or -not $commit) { return $false }
 
     $subject = (& git.exe -C $WorkerDir log -1 --format=%s $commit | Out-String).Trim()
     $expectedSubject = "Ruediger result for $($Task.path)"
@@ -403,6 +409,10 @@ function Try-RecoverLocalResult {
     if ($LASTEXITCODE -ne 0 -or -not $commitTaskBlob -or $commitTaskBlob -ne $Task.blob) { return $false }
 
     Invoke-GitSafe -GitArgs @("-C",$WorkerDir,"checkout",$Branch) | Out-Null
+    $checkedOutCommit = (& git.exe -C $WorkerDir rev-parse --verify HEAD | Out-String).Trim()
+    if ($LASTEXITCODE -ne 0 -or $checkedOutCommit -ne $commit) {
+        throw "Recovery-Checkout weicht vom geprueften Ergebnis-Commit ab: erwartet=$commit ist=$checkedOutCommit"
+    }
     if ((& git.exe -C $WorkerDir status --porcelain | Out-String).Trim()) {
         throw "Lokales abgeschlossenes Ergebnis ist unerwartet dirty: $Branch"
     }

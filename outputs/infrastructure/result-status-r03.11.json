@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-WATCHER-LOCAL-RECOVERY-HARDENING-R02.md",
+  "task_blob": "76d7b38f14a579efed372e22fab621ad2a9846ad",
+  "revision": "R03.11",
+  "status": "PASS",
+  "main_files": [
+    "tools/ruediger-agent-watch.ps1",
+    "tools/test-watcher-local-recovery-r03.11.ps1",
+    "status/WATCHER-R03.11-CHANGELOG.md",
+    "outputs/infrastructure/INFRASTRUCTURE-REPORT-R03.11.md",
+    "outputs/infrastructure/result-status-r03.11.json"
+  ],
+  "changed": [
+    "Recovery requires the exact task-derived branch name.",
+    "Recovery rejects a dirty working tree before checkout.",
+    "Recovery resolves and verifies the branch commit and checked-out HEAD.",
+    "Recovery requires the exact commit subject and task blob from the result commit.",
+    "Remote SHA must equal the local result commit before processed state is written.",
+    "Watcher version increased to R03.11.",
+    "Added isolated PowerShell recovery smoke test."
+  ],
+  "unchanged": [
+    "FIFO queue selection and approval gate.",
+    "Bounded Invoke-GitSafe push retry loop and FetchRetryCount limit.",
+    "CAD, mesh, product, print and user-dimension logic.",
+    "Normal result execution, preflight and self-update logic."
+  ],
+  "removed": [
+    "origin/master ancestor dependency from local result recovery.",
+    "Automatic recovery for dirty or non-matching local results."
+  ],
+  "validations": [
+    {
+      "name": "powershell_syntax_watcher",
+      "status": "PASS",
+      "evidence": "Windows PowerShell parser returned zero errors for tools/ruediger-agent-watch.ps1."
+    },
+    {
+      "name": "powershell_syntax_smoke_test",
+      "status": "PASS",
+      "evidence": "Windows PowerShell parser returned zero errors for tools/test-watcher-local-recovery-r03.11.ps1."
+    },
+    {
+      "name": "local_recovery_smoke",
+      "status": "PASS",
+      "evidence": "Eight cases passed, including advanced master without ancestor relation, exact branch/blob/subject, dirty rejection, remote SHA mismatch before state, bounded retry value, and successful exact recovery."
+    },
+    {
+      "name": "git_diff_check",
+      "status": "PASS",
+      "evidence": "git diff --check returned no whitespace errors."
+    },
+    {
+      "name": "product_and_queue_files_unchanged",
+      "status": "PASS",
+      "evidence": "No CAD, STL, mesh, product, user-dimension, TASK_QUEUE or CURRENT_TASK file changed."
+    }
+  ],
+  "open_real_tests": [
+    "Observe one production runtime restart with an existing local result commit and a real remote push."
+  ],
+  "nutzerentscheidung_erforderlich": false,
+  "nutzerentscheidung_grund": "No product requirement or user dimension must change; the only open item is a technical production observation.",
+  "final_product_approval": false
+}
