@@ -1,6 +1,6 @@
 # Automatischer Übergabe-Workflow R03
 
-Ziel: Der Nutzer beschreibt ChatGPT den Druckauftrag. ChatGPT klärt nur konstruktiv relevante Unklarheiten, dokumentiert die freigegebene Spezifikation und reiht sie nach ausdrücklicher Nutzerfreigabe in eine einzige FIFO-Queue ein. Rüdiger/Codex arbeitet danach selbstständig im separaten Worker-Clone. Ergebnisse werden auf GitHub zurückgeführt und von ChatGPT gegen die letzte freigegebene Spezifikation geprüft.
+Ziel: Der Nutzer beschreibt ChatGPT den Druckauftrag. ChatGPT klärt nur konstruktiv relevante Unklarheiten, dokumentiert die freigegebene Spezifikation und reiht sie nach ausdrücklicher Nutzerfreigabe in eine einzige FIFO-Queue ein. Hannes/Codex arbeitet danach selbstständig im separaten Worker-Clone. Ergebnisse werden auf GitHub zurückgeführt und von ChatGPT gegen die letzte freigegebene Spezifikation geprüft.
 
 ## Verbindlicher Ablauf
 
@@ -9,8 +9,8 @@ Ziel: Der Nutzer beschreibt ChatGPT den Druckauftrag. ChatGPT klärt nur konstru
 3. Vor Nutzerfreigabe darf eine Task als ENTWURF unter `tasks/` liegen, aber nicht in `tasks/TASK_QUEUE.txt` stehen.
 4. Erst nach ausdrücklicher Nutzerfreigabe wird der Task-Pfad hinten an `tasks/TASK_QUEUE.txt` angefügt.
 5. Der lokale Watcher liest ausschließlich die Queue und nimmt den ersten noch nicht verarbeiteten Eintrag.
-6. Rüdiger/Codex liest `AGENTS.md` und die konkrete Task vollständig und konstruiert ausschließlich die freigegebene Anforderung.
-7. Technisch notwendige Details darf Rüdiger selbst lösen, solange keine verbindlichen Nutzermaße, Funktionen oder die Produktidee verändert und keine neue Funktion ergänzt wird.
+6. Hannes/Codex liest `AGENTS.md` und die konkrete Task vollständig und konstruiert ausschließlich die freigegebene Anforderung.
+7. Technisch notwendige Details darf Hannes selbst lösen, solange keine verbindlichen Nutzermaße, Funktionen oder die Produktidee verändert und keine neue Funktion ergänzt wird.
 8. Nach erfolgreichem Lauf committet und pusht der Watcher den Worker-Stand auf einen eigenen Branch `ruediger/...` und verifiziert den Remote-SHA.
 9. Erst nach erfolgreicher Remote-Verifikation wird der Task im lokalen Zustand als verarbeitet markiert.
 10. Danach wird ohne manuelles Umschalten sofort der nächste unverarbeitete Queue-Eintrag bewertet.
@@ -49,6 +49,10 @@ Ein exklusives Lockfile unter `D:\AI3D-Agent\state` verhindert parallele Doppeli
 ## Automatische Fehlerbehandlung
 
 - Git-Fetch/Push: mehrere Versuche mit kurzer Wartezeit.
+- Vor dem Ergebnis-Commit prüft Hannes alle neuen und taskbezogenen Dateien gegen die Sicherheitsgrenze von 90.000.000 Byte.
+- Klar temporäre/diagnostische Großartefakte werden unter `D:\3D-Models\generated\_ruediger-local-large-artifacts\<task>` gesichert, aus dem Git-Ergebnis entfernt und mit Originalpfad, lokalem Pfad, Größe, SHA-256 und Grund manifestiert.
+- Verbindliche oder nicht eindeutig temporäre Großdateien werden nur nach verifizierter verlustfreier ZIP-Austauschdarstellung ersetzt. Ist keine Darstellung bis 90.000.000 Byte möglich, folgt ein technischer `STOPP`; Original und lokales Ergebnis bleiben erhalten.
+- Unmittelbar vor jedem Ergebnis-Push, auch beim lokalen Recovery, prüft Hannes den Commit-Baum erneut. Bei einer Datei über 100.000.000 Byte wird kein Push gestartet.
 - Fehlt ein gültiger dedizierter Worker, wird ein vorhandener ungültiger Ordner mit Zeitstempel gesichert und der Worker neu geklont.
 - State-Datei wird vor Änderungen gesichert; eine unlesbare State-Datei wird nicht still überschrieben.
 - Technische Fehler bleiben unverarbeitet und werden nach dem Poll-Intervall erneut versucht.
@@ -66,10 +70,12 @@ Mögliche Phasen:
 - `FERTIG`
 - `WARTET`
 - `FEHLER_RETRY`
+- `PUSH_RETRY`
+- `STOPP`
 - `RESTARTING`
 - `DIAGNOSTIC_PASS`
 
-Damit kann ChatGPT den echten Rüdiger-Status direkt über GitHub prüfen, ohne aus indirekten Branch-/Commit-Signalen raten zu müssen.
+Damit kann ChatGPT den echten Hannes-Status direkt über GitHub prüfen, ohne aus indirekten Branch-/Commit-Signalen raten zu müssen.
 
 ## STOPP-/Entscheidungslogik
 
@@ -84,7 +90,7 @@ Reine Toolchain-, CAD-, Mesh-, Script-, Support-, Druckorientierungs- oder Berec
 
 ## Ergebnisstatus
 
-Jeder neue Rüdiger-Auftrag soll einen kompakten maschinenlesbaren Status liefern mit mindestens:
+Jeder neue Hannes-Auftrag soll einen kompakten maschinenlesbaren Status liefern mit mindestens:
 - Task und Revision,
 - `PASS`, `STOPP` oder `OFFEN`,
 - Hauptausgabedateien,

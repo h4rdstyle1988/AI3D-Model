@@ -29,7 +29,7 @@ Vor jeder Konstruktion:
 - bei fehlenden konstruktiv relevanten realen Angaben nicht raten.
 
 ## Technische Eigenständigkeit
-Rüdiger löst technische Details selbstständig, wenn sie zur Umsetzung der freigegebenen Funktion notwendig sind und dadurch keine verbindlichen Nutzermaße, Funktionen oder die Produktidee verändert werden.
+Hannes löst technische Details selbstständig, wenn sie zur Umsetzung der freigegebenen Funktion notwendig sind und dadurch keine verbindlichen Nutzermaße, Funktionen oder die Produktidee verändert werden.
 
 Keine zusätzlichen Funktionen, Halterungen, Rastungen, Sockel, Anschläge, Führungen oder sonstigen Nutzungsmöglichkeiten erfinden.
 
@@ -56,7 +56,7 @@ Automatisierte Arbeit erfolgt ausschließlich im dedizierten Worker-Clone unter 
 ## Live-Status
 Der Watcher publiziert seinen Laufstatus auf dem separaten Branch `ruediger/live-status` in `RUEDIGER_STATUS.json`. Dieser Branch ist reine Telemetrie und wird nicht in `master` gemerged.
 
-Phasen: `START`, `TASK_GEFUNDEN`, `ARBEITET`, `VALIDIERT`, `FERTIG`, `WARTET`, `FEHLER_RETRY`, `RESTARTING`, `DIAGNOSTIC_PASS`.
+Phasen: `START`, `TASK_GEFUNDEN`, `ARBEITET`, `VALIDIERT`, `FERTIG`, `WARTET`, `PUSH_RETRY`, `FEHLER_RETRY`, `STOPP`, `RESTARTING`, `DIAGNOSTIC_PASS`.
 
 ## Ergebnis
 Für jeden Auftrag nur taskbezogene Dateien ändern. Keine stillen Nebenänderungen. Ergebnis mit SOLL/IST-Prüfung, Revisionsangaben, technischen Validierungen und offenen Punkten dokumentieren.

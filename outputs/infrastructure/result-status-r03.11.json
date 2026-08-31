@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "agent_name": "Hannes",
+  "task": "tasks/TASK-HANNES-GIT-HARDLIMIT-HARDENING-R03.md",
+  "revision": "R03.11",
+  "status": "PASS",
+  "main_files": [
+    "tools/ruediger-agent-watch.ps1",
+    "status/RUEDIGER_STATUS.schema.json",
+    "status/WATCHER-R03.11-CHANGELOG.md",
+    "outputs/infrastructure/HANNES-GIT-HARDLIMIT-HARDENING-REPORT-R03.11.md",
+    "outputs/infrastructure/result-status-r03.11.json"
+  ],
+  "limits_bytes": {
+    "normal_artifact": 90000000,
+    "github_hard_limit": 100000000
+  },
+  "validations": [
+    {
+      "name": "powershell_syntax",
+      "status": "PASS",
+      "evidence": "PowerShell-Parser meldet keine Syntaxfehler."
+    },
+    {
+      "name": "hardlimit_selftest",
+      "status": "PASS",
+      "evidence": "Temporäre Auslagerung, exakte Grenzdatei, Manifest, SHA-256-verifizierte ZIP-Rückgewinnung, STOPP mit erhaltenem Original und präventive Commit-Blockade wurden isoliert geprüft."
+    },
+    {
+      "name": "pre_commit_90mb_gate",
+      "status": "PASS",
+      "evidence": "Arbeitsbaum und Git-Index werden vor dem Ergebnis-Commit gegen 90000000 Byte geprüft."
+    },
+    {
+      "name": "pre_push_100mb_gate",
+      "status": "PASS",
+      "evidence": "Normaler Push und Recovery-Push prüfen den Commit-Baum vor Push gegen 100000000 Byte."
+    },
+    {
+      "name": "product_files_unchanged",
+      "status": "PASS",
+      "evidence": "Keine CAD-, Mesh-, STL-, 3MF-, Geometrie-, Druck- oder Nutzermaßdatei geändert."
+    },
+    {
+      "name": "git_diff_check",
+      "status": "PASS",
+      "evidence": "git diff --check meldet keine Whitespace-Fehler."
+    }
+  ],
+  "changed": [
+    "Watcher-Hardlimitprüfung und Auslagerungsworkflow",
+    "Hannes-Agentenname im Live-Status",
+    "Watcher-Version R03.11",
+    "Statusschema und Workflow-Dokumentation"
+  ],
+  "unchanged": [
+    "Produktlogik, Geometrie und Nutzermaße",
+    "Freigabe-Gate und FIFO-Queue",
+    "Kompatibilitätsnamen für Branch, Dateien, Scheduler und Runtime-Pfade",
+    "Begrenzte Push-Retries und Remote-SHA-Verifikation"
+  ],
+  "removed": [],
+  "open_real_tests": [
+    "R03.11 per bestehendem Self-Update/Restart in die produktive Runtime laden.",
+    "Realen normalen Ergebnis-Push und Remote-SHA-Verifikation beobachten.",
+    "Kontrollierten produktiven Großartefaktfall beobachten."
+  ],
+  "nutzerentscheidung_erforderlich": false,
+  "nutzerentscheidung_grund": "Keine fachliche oder produktbezogene Entscheidung erforderlich; offen sind nur technische Laufzeitprüfungen.",
+  "final_product_approval": false
+}

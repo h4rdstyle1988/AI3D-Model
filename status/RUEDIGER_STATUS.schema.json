@@ -1,13 +1,14 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Ruediger live status",
+  "title": "Hannes live status",
   "type": "object",
-  "required": ["schema_version", "watcher_version", "updated_at", "phase", "pid"],
+  "required": ["schema_version", "agent_name", "watcher_version", "updated_at", "phase", "pid"],
   "properties": {
     "schema_version": {"const": 1},
+    "agent_name": {"const": "Hannes"},
     "watcher_version": {"type": "string"},
     "updated_at": {"type": "string"},
-    "phase": {"enum": ["START", "TASK_GEFUNDEN", "ARBEITET", "VALIDIERT", "FERTIG", "WARTET", "FEHLER_RETRY", "RESTARTING", "DIAGNOSTIC_PASS"]},
+    "phase": {"enum": ["START", "TASK_GEFUNDEN", "ARBEITET", "VALIDIERT", "FERTIG", "WARTET", "PUSH_RETRY", "FEHLER_RETRY", "STOPP", "RESTARTING", "DIAGNOSTIC_PASS"]},
     "task": {"type": ["string", "null"]},
     "task_blob": {"type": ["string", "null"]},
     "branch": {"type": ["string", "null"]},
