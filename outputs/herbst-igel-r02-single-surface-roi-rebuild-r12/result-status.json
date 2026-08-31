@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-SINGLE-SURFACE-ROI-REBUILD-R12.md",
+  "task_blob_sha": "7c0db136c53ed5aa07e03ba7de178f12f669561d",
+  "product_revision": "R02",
+  "technical_revision": "R12",
+  "status": "STOPP",
+  "gate": "MESH_GATE_PRECONDITION",
+  "summary": "The byte/index-fixed outside-ROI Seed-42 geometry already contains 6671 boundary and 3528 nonmanifold edges. A local R12 rebuild cannot reach the mandatory all-zero mesh gate without violating hard rule 1.",
+  "main_files": {
+    "validation": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/VALIDIERUNG-R02-R12.json",
+    "soll_ist": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/reports/soll-ist-binary-r12.json",
+    "topology_audit": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/reports/r11-roi-boundary-audit-r12.json",
+    "diagnostic_sheet": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-topology-blocker-sheet-r12.png",
+    "revision_report": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/REVISION-R02-R12.md",
+    "optic_outputs_not_created": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/OPTIK-RENDERS-AND-SOLL-IST-SHEET-NOT-CREATED.txt",
+    "cad_stl_not_created": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/CAD-STL-NOT-CREATED.txt"
+  },
+  "validations": {
+    "hash_gate": true,
+    "r11_roi_loaded": true,
+    "outside_roi_coordinates_unchanged": true,
+    "outside_roi_indices_unchanged": true,
+    "healthy_boundary_ring": false,
+    "mesh_gate": false,
+    "optic_gate": false,
+    "cad_fdm_generated": false
+  },
+  "open_real_tests": [
+    "Optical comparison remains gated by the failed mesh precondition.",
+    "Physical print, fit, support, material, wall and 200 mm scale tests remain inapplicable before mesh and optical PASS."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Technically proven incompatibility between fixed outside-ROI geometry and the mandatory zero-nonmanifold mesh gate; no product dimension or function choice is missing.",
+  "final_user_approval_claimed": false
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-SINGLE-SURFACE-ROI-REBUILD-R12.md",
+  "task_blob_sha": "7c0db136c53ed5aa07e03ba7de178f12f669561d",
+  "product_revision": "R02",
+  "technical_revision": "R12",
+  "overall_status": "STOPP",
+  "all_binary_criteria_met": false,
+  "criteria": [
+    {
+      "key": "free_round_face",
+      "soll": "Gesicht rundlich und vollständig frei wie REF-CLEAN.",
+      "ist_erfuellt": false,
+      "status": "NOT_RUN_BY_MESH_GATE",
+      "reason": "6671 boundary edges and 3528 nonmanifold edges are incident only to the byte/index-fixed outside-ROI source. An ROI-only rebuild cannot alter their incidence."
+    },
+    {
+      "key": "forehead_free",
+      "soll": "Stirn frei; keine Blatt-/Stachel-/Seam-Regalkante davor.",
+      "ist_erfuellt": false,
+      "status": "NOT_RUN_BY_MESH_GATE",
+      "reason": "6671 boundary edges and 3528 nonmanifold edges are incident only to the byte/index-fixed outside-ROI source. An ROI-only rebuild cannot alter their incidence."
+    },
+    {
+      "key": "eyes_integrated",
+      "soll": "Beide Augen klar sichtbar und organisch in dieselbe Oberfläche integriert.",
+      "ist_erfuellt": false,
+      "status": "NOT_RUN_BY_MESH_GATE",
+      "reason": "6671 boundary edges and 3528 nonmanifold edges are incident only to the byte/index-fixed outside-ROI source. An ROI-only rebuild cannot alter their incidence."
+    },
+    {
+      "key": "ears_integrated",
+      "soll": "Beide Ohren klar sichtbar und organisch integriert.",
+      "ist_erfuellt": false,
+      "status": "NOT_RUN_BY_MESH_GATE",
+      "reason": "6671 boundary edges and 3528 nonmanifold edges are incident only to the byte/index-fixed outside-ROI source. An ROI-only rebuild cannot alter their incidence."
+    },
+    {
+      "key": "snout_nose_reference_like",
+      "soll": "Kurze weiche Schnauze und Nase referenznah.",
+      "ist_erfuellt": false,
+      "status": "NOT_RUN_BY_MESH_GATE",
+      "reason": "6671 boundary edges and 3528 nonmanifold edges are incident only to the byte/index-fixed outside-ROI source. An ROI-only rebuild cannot alter their incidence."
+    },
+    {
+      "key": "four_short_feet",
+      "soll": "Vier kurze Füße erhalten.",
+      "ist_erfuellt": false,
+      "status": "NOT_RUN_BY_MESH_GATE",
+      "reason": "6671 boundary edges and 3528 nonmanifold edges are incident only to the byte/index-fixed outside-ROI source. An ROI-only rebuild cannot alter their incidence."
+    },
+    {
+      "key": "back_preserved",
+      "soll": "Rücken außerhalb ROI unverändert und gewölbt mit Blatt-/Stachelstruktur.",
+      "ist_erfuellt": false,
+      "status": "NOT_RUN_BY_MESH_GATE",
+      "reason": "6671 boundary edges and 3528 nonmanifold edges are incident only to the byte/index-fixed outside-ROI source. An ROI-only rebuild cannot alter their incidence."
+    },
+    {
+      "key": "single_maple_leaf",
+      "soll": "Genau ein sichtbares Ahornblatt erhalten.",
+      "ist_erfuellt": false,
+      "status": "NOT_RUN_BY_MESH_GATE",
+      "reason": "6671 boundary edges and 3528 nonmanifold edges are incident only to the byte/index-fixed outside-ROI source. An ROI-only rebuild cannot alter their incidence."
+    },
+    {
+      "key": "ref_seam_continuous",
+      "soll": "REF-SEAM plausibel und ohne harten Absatz.",
+      "ist_erfuellt": false,
+      "status": "NOT_RUN_BY_MESH_GATE",
+      "reason": "6671 boundary edges and 3528 nonmanifold edges are incident only to the byte/index-fixed outside-ROI source. An ROI-only rebuild cannot alter their incidence."
+    },
+    {
+      "key": "repair_invisible",
+      "soll": "Reparatur optisch nicht als Flicken erkennbar.",
+      "ist_erfuellt": false,
+      "status": "NOT_RUN_BY_MESH_GATE",
+      "reason": "6671 boundary edges and 3528 nonmanifold edges are incident only to the byte/index-fixed outside-ROI source. An ROI-only rebuild cannot alter their incidence."
+    },
+    {
+      "key": "mesh_zero_defects",
+      "soll": "0 offene Reparaturnahtkanten, 0 nonmanifold Kanten, 0 bestätigte Kreuzungen.",
+      "ist_erfuellt": false,
+      "status": "FAIL",
+      "reason": "6671 boundary edges and 3528 nonmanifold edges are incident only to the byte/index-fixed outside-ROI source. An ROI-only rebuild cannot alter their incidence."
+    }
+  ],
+  "gate_order_enforced": true,
+  "optic_gate_run": false,
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false
+}

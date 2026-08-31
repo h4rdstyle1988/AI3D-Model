@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-SINGLE-SURFACE-ROI-REBUILD-R12.md",
+  "source_vertices": 436742,
+  "source_triangles": 870466,
+  "r11_roi_problem_triangles": 198697,
+  "outside_roi_triangles": 671769,
+  "r11_selection_crosscheck": {
+    "roi_problem_triangles": 198697,
+    "removed_source_triangles": 181949,
+    "protected_exact_feature_triangles": 16748,
+    "retained_source_triangles": 688517,
+    "outside_roi_source_triangles": 671769,
+    "outside_roi_faces_preserved_exact": true,
+    "source_vertex_coordinates_modified": 0,
+    "protected_feature_definitions": [
+      {
+        "name": "front_ear",
+        "center_px": [
+          103,
+          154
+        ],
+        "radius_px": 18
+      },
+      {
+        "name": "reference_side_ear",
+        "center_px": [
+          226,
+          174
+        ],
+        "radius_px": 23
+      },
+      {
+        "name": "front_eye",
+        "center_px": [
+          111,
+          210
+        ],
+        "radius_px": 12,
+        "window_px": 7
+      },
+      {
+        "name": "reference_side_eye",
+        "center_px": [
+          205,
+          207
+        ],
+        "radius_px": 13,
+        "window_px": 8
+      },
+      {
+        "name": "nose",
+        "center_px": [
+          79,
+          231
+        ],
+        "radius_px": 16,
+        "window_px": 9
+      }
+    ],
+    "protected_feature_depth_bands": [
+      {
+        "name": "front_ear",
+        "low_y": -0.02106263302266598,
+        "high_y": 0.17991953819990159,
+        "triangles_in_guard": 18610,
+        "triangles_in_exterior_bands": 6700
+      },
+      {
+        "name": "reference_side_ear",
+        "low_y": -0.1464325177669525,
+        "high_y": 0.4096834361553192,
+        "triangles_in_guard": 14609,
+        "triangles_in_exterior_bands": 5260
+      },
+      {
+        "name": "front_eye",
+        "low_y": -0.12081647664308548,
+        "high_y": 0.2478879764676094,
+        "triangles_in_guard": 5376,
+        "triangles_in_exterior_bands": 1936
+      },
+      {
+        "name": "reference_side_eye",
+        "low_y": -0.13535024017095565,
+        "high_y": 0.40367695093154904,
+        "triangles_in_guard": 3960,
+        "triangles_in_exterior_bands": 1426
+      },
+      {
+        "name": "nose",
+        "low_y": -0.11219793736934662,
+        "high_y": 0.07605042859911919,
+        "triangles_in_guard": 12078,
+        "triangles_in_exterior_bands": 4348
+      }
+    ],
+    "feature_exterior_threshold": -0.035
+  },
+  "source_topology": {
+    "boundary_edges_total": 8608,
+    "nonmanifold_edges_total": 5079,
+    "boundary_edges_strictly_outside_roi": 6671,
+    "nonmanifold_edges_strictly_outside_roi": 3528,
+    "boundary_edges_touched_by_roi": 1937,
+    "nonmanifold_edges_touched_by_roi": 1551
+  },
+  "healthy_ring_after_removing_all_r11_problem_triangles": {
+    "retained_triangles": 671769,
+    "boundary_edges": 8940,
+    "nonmanifold_edges": 3528,
+    "boundary_vertices": 9678,
+    "boundary_vertex_degree_histogram": {
+      "1": 1543,
+      "2": 8094,
+      "3": 16,
+      "4": 24,
+      "5": 1
+    },
+    "simple_closed_loops_possible": false
+  },
+  "fixed_outside_roi_gate_feasibility": {
+    "status": "FAIL",
+    "reason": "The byte/index-fixed outside-ROI source already contains open or nonmanifold edges; an all-zero full-mesh gate cannot be reached by an ROI-only rebuild.",
+    "immutable_invalid_edges": 10199,
+    "immutable_invalid_edge_bounds_min": [
+      -0.2388291358947754,
+      -0.1434668004512787,
+      -0.21962818503379822
+    ],
+    "immutable_invalid_edge_bounds_max": [
+      0.3841782808303833,
+      0.44765186309814453,
+      0.2800437808036804
+    ]
+  },
+  "reference_measurements": {
+    "foreground_bbox_px": [
+      72,
+      45,
+      383,
+      338
+    ],
+    "body_pixels": 25547,
+    "seam_band_pixels": 1444,
+    "blue_pixels": 1274
+  },
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false
+}

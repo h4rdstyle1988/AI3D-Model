@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-SINGLE-SURFACE-ROI-REBUILD-R12.md",
+  "diagnostic_only_not_optik_gate": true,
+  "source": "D:\\3D-Models\\generated\\herbst-igel-r02-r08-input\\outputs\\herbst-igel-r02-trellis-optik-retry-r07\\trellis-raw\\seed-00000042\\herbst-igel-r02-trellis-raw-seed-42.ply",
+  "immutable_invalid_edges": 10199,
+  "views": [
+    {
+      "view": "3q-front",
+      "camera": [
+        -1.0,
+        -1.0,
+        0.35
+      ],
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-invalid-edges-3q-front.png"
+    },
+    {
+      "view": "left",
+      "camera": [
+        0.0,
+        -1.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-invalid-edges-left.png"
+    },
+    {
+      "view": "right",
+      "camera": [
+        0.0,
+        1.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-invalid-edges-right.png"
+    },
+    {
+      "view": "rear",
+      "camera": [
+        1.0,
+        0.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-invalid-edges-rear.png"
+    },
+    {
+      "view": "top",
+      "camera": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-invalid-edges-top.png"
+    },
+    {
+      "view": "bottom",
+      "camera": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-invalid-edges-bottom.png"
+    }
+  ],
+  "contact_sheet": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-topology-blocker-sheet-r12.png",
+  "topology_audit": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/reports/r11-roi-boundary-audit-r12.json"
+}

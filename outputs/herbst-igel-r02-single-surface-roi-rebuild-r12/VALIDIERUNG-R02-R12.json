@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-SINGLE-SURFACE-ROI-REBUILD-R12.md",
+  "task_blob_sha": "7c0db136c53ed5aa07e03ba7de178f12f669561d",
+  "product_revision": "R02",
+  "technical_revision": "R12",
+  "status": "STOPP",
+  "stop_phase": "B_R11_ROI_HEALTHY_RING_PRECONDITION",
+  "reference_and_seed_hash_gate": {
+    "status": "PASS",
+    "actual_sha256": {
+      "seed42": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+      "ref_clean": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+      "ref_seam": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    "expected_sha256": {
+      "seed42": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+      "ref_clean": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859",
+      "ref_seam": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    "r12_task_blob_available": true,
+    "r11_task_blob_available": true,
+    "r11_roi_code_blob_available": true
+  },
+  "r11_roi_loaded": {
+    "status": "PASS",
+    "problem_triangles": 198697,
+    "outside_roi_triangles": 671769,
+    "foreground_bbox_px": [
+      72,
+      45,
+      383,
+      338
+    ],
+    "source_vertex_coordinates_modified": 0,
+    "source_faces_modified": 0
+  },
+  "healthy_ring_precondition": {
+    "status": "FAIL",
+    "retained_boundary_edges_after_roi_removal": 8940,
+    "retained_nonmanifold_edges_after_roi_removal": 3528,
+    "boundary_vertex_degree_histogram": {
+      "1": 1543,
+      "2": 8094,
+      "3": 16,
+      "4": 24,
+      "5": 1
+    },
+    "simple_closed_loops_possible": false,
+    "reason": "6671 boundary edges and 3528 nonmanifold edges are incident only to the byte/index-fixed outside-ROI source. An ROI-only rebuild cannot alter their incidence."
+  },
+  "mesh_gate_before_optik_gate": {
+    "status": "FAIL_PRECONDITION",
+    "candidate_created": false,
+    "source_boundary_edges_total": 8608,
+    "source_nonmanifold_edges_total": 5079,
+    "immutable_outside_roi_boundary_edges": 6671,
+    "immutable_outside_roi_nonmanifold_edges": 3528,
+    "immutable_outside_roi_invalid_edges_total": 10199,
+    "repair_seam_boundary_edges": null,
+    "confirmed_cross_intersections": null,
+    "proof": "For every counted immutable edge, all incident source faces are outside the fixed R11 problem mask. Adding/removing incident faces would extend work outside the approved ROI; changing an outside face or index violates hard rule 1."
+  },
+  "execution_sequence": {
+    "A_hash_gates": "PASS",
+    "B_load_r11_roi_and_healthy_ring": "FAIL_HEALTHY_RING",
+    "C_remove_colliding_old_triangles": "NOT_RUN_FATAL_B_PRECONDITION",
+    "D_single_local_rebuild": "NOT_RUN_FATAL_B_PRECONDITION",
+    "E_weld_remesh": "NOT_RUN_FATAL_B_PRECONDITION",
+    "F_mesh_gate": "FAIL_PRECONDITION",
+    "G_six_real_optic_renders": "NOT_RUN_BY_MESH_GATE",
+    "H_optik_gate": "NOT_RUN_BY_MESH_GATE",
+    "I_split_shell_connector_stl_fdm": "NOT_RUN_BY_MESH_AND_OPTIK_GATE"
+  },
+  "forbidden_output_absence": {
+    "approved_master_created": false,
+    "cad_created": false,
+    "stl_created": false,
+    "split_created": false,
+    "shells_created": false,
+    "connector_created": false,
+    "fdm_validation_run": false,
+    "optic_gate_renders_created": false
+  },
+  "soll_ist_report": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/reports/soll-ist-binary-r12.json",
+  "topology_audit": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/reports/r11-roi-boundary-audit-r12.json",
+  "open_real_tests": [
+    "Optical comparison remains gated by the failed mesh precondition.",
+    "Physical print, fit, support, material, wall and 200 mm scale tests remain inapplicable before mesh and optical PASS."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Technically proven incompatibility between fixed outside-ROI geometry and the mandatory zero-nonmanifold mesh gate; no product dimension or function choice is missing.",
+  "final_user_approval_claimed": false
+}

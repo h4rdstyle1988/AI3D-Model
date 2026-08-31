@@ -1,0 +1,11 @@
+NOT RUN: blocked by the mandatory mesh-first gate.
+
+R12 requires the visible end body to pass the mesh gate before real geometry
+Optik-Gate renders or the visual SOLL/IST sheet are generated. The fixed
+outside-ROI source already contains 6671 boundary edges and 3528 nonmanifold
+edges, so no gate-eligible R12 end body exists.
+
+The PNG files under diagnostics/ visualize the topology proof only. They are
+not Optik-Gate renders and do not claim optical or final product approval.
+
+NUTZERENTSCHEIDUNG_ERFORDERLICH: false

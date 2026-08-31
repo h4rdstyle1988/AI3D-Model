@@ -1,0 +1,9 @@
+STOPP: MESH_GATE_PRECONDITION FAIL
+
+No approved master, CAD split, hollow shells, connector, STL or FDM artifact was created.
+The byte/index-fixed outside-ROI source already contains 6671 boundary edges and
+3528 nonmanifold edges. Repairing those edges would require changing geometry
+outside the approved R11 ROI and would violate hard rule 1 of R12.
+
+No final user approval is claimed.
+NUTZERENTSCHEIDUNG_ERFORDERLICH: false

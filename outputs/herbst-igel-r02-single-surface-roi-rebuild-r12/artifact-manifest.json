@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-SINGLE-SURFACE-ROI-REBUILD-R12.md",
+  "technical_revision": "R12",
+  "status": "STOPP",
+  "artifacts": [
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/CAD-STL-NOT-CREATED.txt",
+      "bytes": 427,
+      "sha256": "3563c7d929cf1cca5b176a2ab21aeb1b956df791bf84d6f6f879832e82351305"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-invalid-edges-3q-front.png",
+      "bytes": 95598,
+      "sha256": "452e91b3682621c36c882e9b3529a8b0f39caf994cc0d1cf48eeb4aff2362e28"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-invalid-edges-bottom.png",
+      "bytes": 91533,
+      "sha256": "d20ad636b28038bde1f1dfa8e47792d3ab729415081c53cd857741edf5c7f774"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-invalid-edges-left.png",
+      "bytes": 73590,
+      "sha256": "e59a0171b98a22208bb5c170d7916397c5197df13590e5ab1feed48f25fec5d9"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-invalid-edges-rear.png",
+      "bytes": 76630,
+      "sha256": "2d38f649eb2de07c9eda0fbf55a4e3aa6f5a3f7e802edd4c70aeb6b7e47faae0"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-invalid-edges-right.png",
+      "bytes": 72893,
+      "sha256": "6c55a0d14a185da12e17ffa97fbf104a2334d6298bbd0a33692e17c607b0847a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-invalid-edges-top.png",
+      "bytes": 92028,
+      "sha256": "0835604626e9dcf36396da13256314d7ca5daf7230e428d21565ee6082682dba"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/diagnostics/immutable-outside-roi-topology-blocker-sheet-r12.png",
+      "bytes": 1472227,
+      "sha256": "6c67396e5a5449490c405c512d8cfcfee8bda92f42d5902bdc7825c5f6b2e3d5"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/OPTIK-RENDERS-AND-SOLL-IST-SHEET-NOT-CREATED.txt",
+      "bytes": 520,
+      "sha256": "c381fcbde9956885c9e61141d12a81b3378dad45d3bfc9cc5c2ae31235fee280"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/reports/r11-roi-boundary-audit-r12.json",
+      "bytes": 4050,
+      "sha256": "40f668c9c7ebd1717eab8b988876c7a4919f6b4b4e735e9bedea3b7f7e981779"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/reports/soll-ist-binary-r12.json",
+      "bytes": 4487,
+      "sha256": "9965ce2a68ae0394357bd0b2dbcdd8216d9e039391fa0c493dfcfb2e1abd9454"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/reports/topology-blocker-renders-r12.json",
+      "bytes": 2094,
+      "sha256": "727ce23690ed5c799dd4f336ac549fc711e5fdb4323990103cd9c2c4a3783363"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/reproduction-scripts/analyze_r11_roi_r12.py",
+      "bytes": 6156,
+      "sha256": "1ed6f8245c3f96751c3de4323475acf373b3b3a539b0c50465f75bd81365eaf0"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/reproduction-scripts/render_topology_blocker_r12.py",
+      "bytes": 5787,
+      "sha256": "d8d6a7eb214ed84cf41710ea1d832fddb24703c7f797bd872a44c966b60ca5ee"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/reproduction-scripts/validate_r12.py",
+      "bytes": 11243,
+      "sha256": "5c9fdb58c3009aed4cd2dadc22dd72637e135dbd26a654cfc7970c205159f315"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/reproduction-scripts/write_artifact_manifest_r12.py",
+      "bytes": 1270,
+      "sha256": "e39c979f26ae8b9a169bd3ea6e18e246747ea832484fe78bb8376c96be6b281c"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/REPRODUKTION-R12.md",
+      "bytes": 1041,
+      "sha256": "554ca359fc490ada7ff2c519a74c28bb8941d20d0fd7fe90a407745319ebd4b6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/result-status.json",
+      "bytes": 2176,
+      "sha256": "d89246f8fdc8c1ec899023503b7792d3ae3d8d1ae84f50c0499143f67f399ff0"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/REVISION-R02-R12.md",
+      "bytes": 2001,
+      "sha256": "a6d20b538773f51efdc18523b9154e6fa99d56a61774238f5404d812b89f4c05"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-single-surface-roi-rebuild-r12/VALIDIERUNG-R02-R12.json",
+      "bytes": 4159,
+      "sha256": "3b8e1645ebf1409e28196e2a775d90fbfc6ff18482faa21d9f9b98f19079ad8c"
+    }
+  ],
+  "final_user_approval_claimed": false
+}
