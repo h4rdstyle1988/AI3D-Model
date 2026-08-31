@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-UNDERSIDE-CLOSURE-R15.md",
+  "task_blob_sha": "6f36e00693a3f9ad6859b43450a5a77316fa9254",
+  "product_revision": "R02",
+  "technical_revision": "R15",
+  "status": "STOPP",
+  "stop_phase": "GATE_1_TOPOLOGY_AND_INTERSECTION_AFTER_SELF_CORRECTION",
+  "validations": {
+    "hash_gate": "PASS",
+    "confirmed_source_hole_identity": "PASS",
+    "boundary_position_max_0_05mm": "PASS",
+    "bbox_and_extrema": "PASS",
+    "projection_confinement": "FAIL",
+    "boundary_normal_transition": "FAIL",
+    "other_depth_layer_exclusion": "FAIL_45_CONFIRMED_CROSSINGS",
+    "gate_1_topology": "FAIL",
+    "gate_2_form_protection": "NOT_RUN_BY_GATE1",
+    "gate_3_optic": "NOT_RUN_BY_GATE1",
+    "gate_4_cad_fdm": "NOT_RUN_BY_GATES_1_2_3"
+  },
+  "manufacturing_outputs": {
+    "approved_master_created": false,
+    "cad_created": false,
+    "split_created": false,
+    "hollow_shells_created": false,
+    "connector_created": false,
+    "stl_created": false,
+    "three_mf_created": false,
+    "glb_created": false,
+    "fdm_validation_run": false
+  },
+  "open_real_tests": [
+    "Gate 2 formal bidirectional visible-surface and silhouette audits remain gated by Gate 1.",
+    "Gate 3 independent optical acceptance remains gated; diagnostic renders are not approval renders.",
+    "Physical print, wall, split, connector, fit, material, support and slicer tests remain gated by Gates 1-3."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Methodically proven topology/depth-layer conflict in the R14 source; no user dimension, function or reference datum is missing.",
+  "final_user_approval_claimed": false
+}

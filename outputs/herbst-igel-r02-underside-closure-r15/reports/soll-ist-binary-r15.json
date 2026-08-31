@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-UNDERSIDE-CLOSURE-R15.md",
+  "criteria": [
+    {
+      "criterion": "face_free_and_round_like_ref_clean",
+      "pass": null,
+      "status": "NOT_FORMALLY_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "forehead_free",
+      "pass": null,
+      "status": "NOT_FORMALLY_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "both_eyes_clear",
+      "pass": null,
+      "status": "NOT_FORMALLY_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "both_ears_clear",
+      "pass": null,
+      "status": "NOT_FORMALLY_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "snout_and_nose_clear",
+      "pass": null,
+      "status": "NOT_FORMALLY_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "four_short_feet_preserved",
+      "pass": null,
+      "status": "NOT_FORMALLY_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "arched_plausible_back",
+      "pass": null,
+      "status": "NOT_FORMALLY_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "exactly_one_visible_maple_leaf",
+      "pass": null,
+      "status": "NOT_FORMALLY_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "ref_seam_plausible",
+      "pass": null,
+      "status": "NOT_FORMALLY_EVALUATED_BY_GATE1_FAIL"
+    },
+    {
+      "criterion": "no_visible_repair_artifact",
+      "pass": null,
+      "status": "NOT_FORMALLY_EVALUATED_BY_GATE1_FAIL"
+    }
+  ],
+  "diagnostic_observation": "The retained Seed-42 face remains visibly covered by fused leaf/spine sheets; ROI reconstruction was correctly not started after Gate-1 failure.",
+  "gate_3": "NOT_RUN",
+  "overall": "STOPP"
+}

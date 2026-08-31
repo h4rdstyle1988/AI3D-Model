@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-UNDERSIDE-CLOSURE-R15.md",
+  "source_geometry": "outputs/herbst-igel-r02-underside-closure-r15/masterform/r15-underside-d4-PARTIAL-NON-APPROVED.ply",
+  "source_geometry_sha256": "6595ecf4f150e12aad5651726b823f5206613d93a5072509b990c6d42543d3ee",
+  "source_is_real_partial_geometry": true,
+  "approved_master": false,
+  "views": [
+    {
+      "view": "3q-front",
+      "camera_vector": [
+        -1.0,
+        -1.0,
+        0.35
+      ],
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-3q-front.png"
+    },
+    {
+      "view": "left",
+      "camera_vector": [
+        0.0,
+        -1.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-left.png"
+    },
+    {
+      "view": "right",
+      "camera_vector": [
+        0.0,
+        1.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-right.png"
+    },
+    {
+      "view": "rear",
+      "camera_vector": [
+        1.0,
+        0.0,
+        0.12
+      ],
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-rear.png"
+    },
+    {
+      "view": "top",
+      "camera_vector": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-top.png"
+    },
+    {
+      "view": "bottom",
+      "camera_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-bottom.png"
+    }
+  ],
+  "contact_sheet": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-contact-sheet.png",
+  "soll_ist_sheet": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/soll-ist-r15.png"
+}

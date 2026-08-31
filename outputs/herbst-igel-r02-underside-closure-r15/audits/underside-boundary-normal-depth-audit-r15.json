@@ -1,0 +1,3303 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-UNDERSIDE-CLOSURE-R15.md",
+  "task_blob_sha": "6f36e00693a3f9ad6859b43450a5a77316fa9254",
+  "selected_variant": "d4",
+  "selection_reason": "fewest confirmed strict crossings after a complete 133472-face patch scan; d1-d3 and d5 reached the 50-witness fail-fast limit",
+  "method": "boundary-constrained discrete harmonic disk, depth biased to existing minimum Z with exponent 32 and zero floor offset",
+  "boundary": {
+    "nodes": 1376,
+    "maximum_position_displacement_mm": 0.0,
+    "position_requirement_mm": 0.05,
+    "position_pass": true,
+    "normal_transition": {
+      "connection_edges": 1376,
+      "normal_jump_deg_unsigned": {
+        "minimum": 0.0,
+        "median": 28.678091728264572,
+        "p95": 79.8256302156631,
+        "maximum": 89.75485514883198
+      },
+      "within_45deg": 1019,
+      "over_45deg": 357,
+      "local_exceptions": [
+        {
+          "edge_vertex_ids": [
+            36339,
+            36351
+          ],
+          "source_face": 72951,
+          "patch_face": 871423,
+          "normal_jump_deg_unsigned": 50.27457300390669
+        },
+        {
+          "edge_vertex_ids": [
+            36350,
+            36351
+          ],
+          "source_face": 72951,
+          "patch_face": 871425,
+          "normal_jump_deg_unsigned": 51.8963651391229
+        },
+        {
+          "edge_vertex_ids": [
+            36352,
+            37973
+          ],
+          "source_face": 72967,
+          "patch_face": 871429,
+          "normal_jump_deg_unsigned": 53.16502313000533
+        },
+        {
+          "edge_vertex_ids": [
+            37966,
+            37973
+          ],
+          "source_face": 72967,
+          "patch_face": 871431,
+          "normal_jump_deg_unsigned": 52.35100190518661
+        },
+        {
+          "edge_vertex_ids": [
+            39961,
+            39964
+          ],
+          "source_face": 80107,
+          "patch_face": 868783,
+          "normal_jump_deg_unsigned": 60.828674753700504
+        },
+        {
+          "edge_vertex_ids": [
+            42224,
+            42225
+          ],
+          "source_face": 80106,
+          "patch_face": 868794,
+          "normal_jump_deg_unsigned": 66.45388619820285
+        },
+        {
+          "edge_vertex_ids": [
+            42227,
+            42228
+          ],
+          "source_face": 84525,
+          "patch_face": 868790,
+          "normal_jump_deg_unsigned": 82.64087826018083
+        },
+        {
+          "edge_vertex_ids": [
+            42267,
+            42273
+          ],
+          "source_face": 84607,
+          "patch_face": 868808,
+          "normal_jump_deg_unsigned": 64.61188727108397
+        },
+        {
+          "edge_vertex_ids": [
+            42273,
+            42274
+          ],
+          "source_face": 84607,
+          "patch_face": 868810,
+          "normal_jump_deg_unsigned": 63.69766392750005
+        },
+        {
+          "edge_vertex_ids": [
+            45002,
+            45003
+          ],
+          "source_face": 89950,
+          "patch_face": 868849,
+          "normal_jump_deg_unsigned": 51.562405562477274
+        },
+        {
+          "edge_vertex_ids": [
+            45003,
+            45004
+          ],
+          "source_face": 89952,
+          "patch_face": 868851,
+          "normal_jump_deg_unsigned": 49.24932004085438
+        },
+        {
+          "edge_vertex_ids": [
+            63885,
+            63886
+          ],
+          "source_face": 127526,
+          "patch_face": 871352,
+          "normal_jump_deg_unsigned": 48.57316514660838
+        },
+        {
+          "edge_vertex_ids": [
+            68301,
+            68304
+          ],
+          "source_face": 136202,
+          "patch_face": 868860,
+          "normal_jump_deg_unsigned": 79.18068804189778
+        },
+        {
+          "edge_vertex_ids": [
+            68304,
+            68305
+          ],
+          "source_face": 136202,
+          "patch_face": 868862,
+          "normal_jump_deg_unsigned": 75.74552024445096
+        },
+        {
+          "edge_vertex_ids": [
+            68334,
+            68335
+          ],
+          "source_face": 136266,
+          "patch_face": 868874,
+          "normal_jump_deg_unsigned": 87.19059157932305
+        },
+        {
+          "edge_vertex_ids": [
+            68335,
+            68337
+          ],
+          "source_face": 136266,
+          "patch_face": 868876,
+          "normal_jump_deg_unsigned": 83.58640887065243
+        },
+        {
+          "edge_vertex_ids": [
+            68393,
+            68402
+          ],
+          "source_face": 136363,
+          "patch_face": 868893,
+          "normal_jump_deg_unsigned": 56.93401224583503
+        },
+        {
+          "edge_vertex_ids": [
+            72095,
+            72096
+          ],
+          "source_face": 143595,
+          "patch_face": 869003,
+          "normal_jump_deg_unsigned": 82.73307898887722
+        },
+        {
+          "edge_vertex_ids": [
+            72096,
+            72098
+          ],
+          "source_face": 143595,
+          "patch_face": 869005,
+          "normal_jump_deg_unsigned": 80.86618596625203
+        },
+        {
+          "edge_vertex_ids": [
+            72098,
+            72100
+          ],
+          "source_face": 143599,
+          "patch_face": 869007,
+          "normal_jump_deg_unsigned": 60.26253401539074
+        },
+        {
+          "edge_vertex_ids": [
+            72241,
+            94925
+          ],
+          "source_face": 143884,
+          "patch_face": 869021,
+          "normal_jump_deg_unsigned": 48.03184874813393
+        },
+        {
+          "edge_vertex_ids": [
+            91296,
+            91300
+          ],
+          "source_face": 181827,
+          "patch_face": 871255,
+          "normal_jump_deg_unsigned": 60.35475624509764
+        },
+        {
+          "edge_vertex_ids": [
+            91296,
+            115637
+          ],
+          "source_face": 181822,
+          "patch_face": 871253,
+          "normal_jump_deg_unsigned": 68.48180871481702
+        },
+        {
+          "edge_vertex_ids": [
+            91298,
+            91301
+          ],
+          "source_face": 181832,
+          "patch_face": 871261,
+          "normal_jump_deg_unsigned": 66.46129961999405
+        },
+        {
+          "edge_vertex_ids": [
+            91298,
+            91303
+          ],
+          "source_face": 181834,
+          "patch_face": 871263,
+          "normal_jump_deg_unsigned": 53.25758620198218
+        },
+        {
+          "edge_vertex_ids": [
+            91299,
+            91300
+          ],
+          "source_face": 181826,
+          "patch_face": 871257,
+          "normal_jump_deg_unsigned": 57.96479029592531
+        },
+        {
+          "edge_vertex_ids": [
+            91299,
+            91301
+          ],
+          "source_face": 181833,
+          "patch_face": 871259,
+          "normal_jump_deg_unsigned": 65.70068759728231
+        },
+        {
+          "edge_vertex_ids": [
+            91302,
+            91303
+          ],
+          "source_face": 181838,
+          "patch_face": 871265,
+          "normal_jump_deg_unsigned": 55.44362262297418
+        },
+        {
+          "edge_vertex_ids": [
+            91302,
+            91304
+          ],
+          "source_face": 181837,
+          "patch_face": 871266,
+          "normal_jump_deg_unsigned": 51.51377698885219
+        },
+        {
+          "edge_vertex_ids": [
+            91304,
+            91376
+          ],
+          "source_face": 181837,
+          "patch_face": 871268,
+          "normal_jump_deg_unsigned": 59.637853858806395
+        },
+        {
+          "edge_vertex_ids": [
+            92149,
+            92150
+          ],
+          "source_face": 131572,
+          "patch_face": 871323,
+          "normal_jump_deg_unsigned": 51.64556132413625
+        },
+        {
+          "edge_vertex_ids": [
+            92150,
+            92151
+          ],
+          "source_face": 183444,
+          "patch_face": 871321,
+          "normal_jump_deg_unsigned": 68.98374889449349
+        },
+        {
+          "edge_vertex_ids": [
+            92151,
+            92152
+          ],
+          "source_face": 183446,
+          "patch_face": 871319,
+          "normal_jump_deg_unsigned": 80.72093300898841
+        },
+        {
+          "edge_vertex_ids": [
+            92159,
+            92160
+          ],
+          "source_face": 183456,
+          "patch_face": 871314,
+          "normal_jump_deg_unsigned": 85.74218111030001
+        },
+        {
+          "edge_vertex_ids": [
+            92160,
+            92165
+          ],
+          "source_face": 183458,
+          "patch_face": 871312,
+          "normal_jump_deg_unsigned": 69.6367552940314
+        },
+        {
+          "edge_vertex_ids": [
+            92165,
+            92166
+          ],
+          "source_face": 183459,
+          "patch_face": 871311,
+          "normal_jump_deg_unsigned": 70.5337123178366
+        },
+        {
+          "edge_vertex_ids": [
+            92166,
+            92168
+          ],
+          "source_face": 183469,
+          "patch_face": 871309,
+          "normal_jump_deg_unsigned": 79.46403124167438
+        },
+        {
+          "edge_vertex_ids": [
+            92168,
+            92169
+          ],
+          "source_face": 183472,
+          "patch_face": 871307,
+          "normal_jump_deg_unsigned": 83.46686638097167
+        },
+        {
+          "edge_vertex_ids": [
+            92169,
+            92187
+          ],
+          "source_face": 183472,
+          "patch_face": 871305,
+          "normal_jump_deg_unsigned": 83.09046508965645
+        },
+        {
+          "edge_vertex_ids": [
+            92190,
+            92200
+          ],
+          "source_face": 183509,
+          "patch_face": 871299,
+          "normal_jump_deg_unsigned": 60.24243086427797
+        },
+        {
+          "edge_vertex_ids": [
+            92275,
+            92279
+          ],
+          "source_face": 183655,
+          "patch_face": 871284,
+          "normal_jump_deg_unsigned": 48.21263971728394
+        },
+        {
+          "edge_vertex_ids": [
+            92276,
+            92277
+          ],
+          "source_face": 183564,
+          "patch_face": 871289,
+          "normal_jump_deg_unsigned": 81.77045599603059
+        },
+        {
+          "edge_vertex_ids": [
+            96098,
+            96103
+          ],
+          "source_face": 191176,
+          "patch_face": 869038,
+          "normal_jump_deg_unsigned": 73.83977717107395
+        },
+        {
+          "edge_vertex_ids": [
+            96103,
+            96104
+          ],
+          "source_face": 191176,
+          "patch_face": 869040,
+          "normal_jump_deg_unsigned": 73.83520834915343
+        },
+        {
+          "edge_vertex_ids": [
+            97284,
+            120864
+          ],
+          "source_face": 193494,
+          "patch_face": 869110,
+          "normal_jump_deg_unsigned": 75.09666537654809
+        },
+        {
+          "edge_vertex_ids": [
+            97332,
+            97333
+          ],
+          "source_face": 193602,
+          "patch_face": 869077,
+          "normal_jump_deg_unsigned": 70.42400383691691
+        },
+        {
+          "edge_vertex_ids": [
+            97333,
+            97337
+          ],
+          "source_face": 193602,
+          "patch_face": 869079,
+          "normal_jump_deg_unsigned": 70.45012467123328
+        },
+        {
+          "edge_vertex_ids": [
+            108557,
+            108565
+          ],
+          "source_face": 215958,
+          "patch_face": 870977,
+          "normal_jump_deg_unsigned": 46.22599934307254
+        },
+        {
+          "edge_vertex_ids": [
+            108565,
+            108727
+          ],
+          "source_face": 215958,
+          "patch_face": 870978,
+          "normal_jump_deg_unsigned": 45.023838781227155
+        },
+        {
+          "edge_vertex_ids": [
+            108784,
+            108786
+          ],
+          "source_face": 216394,
+          "patch_face": 871018,
+          "normal_jump_deg_unsigned": 53.10922709002931
+        },
+        {
+          "edge_vertex_ids": [
+            108786,
+            108796
+          ],
+          "source_face": 216400,
+          "patch_face": 871020,
+          "normal_jump_deg_unsigned": 48.30192425993107
+        },
+        {
+          "edge_vertex_ids": [
+            108795,
+            108797
+          ],
+          "source_face": 216426,
+          "patch_face": 871024,
+          "normal_jump_deg_unsigned": 45.785061387564404
+        },
+        {
+          "edge_vertex_ids": [
+            110639,
+            110640
+          ],
+          "source_face": 219948,
+          "patch_face": 871046,
+          "normal_jump_deg_unsigned": 54.85539829941015
+        },
+        {
+          "edge_vertex_ids": [
+            110643,
+            110649
+          ],
+          "source_face": 219951,
+          "patch_face": 871057,
+          "normal_jump_deg_unsigned": 47.361051288370554
+        },
+        {
+          "edge_vertex_ids": [
+            110645,
+            110646
+          ],
+          "source_face": 219957,
+          "patch_face": 871053,
+          "normal_jump_deg_unsigned": 45.285767523055235
+        },
+        {
+          "edge_vertex_ids": [
+            112797,
+            112850
+          ],
+          "source_face": 224203,
+          "patch_face": 871085,
+          "normal_jump_deg_unsigned": 78.16346826435601
+        },
+        {
+          "edge_vertex_ids": [
+            112850,
+            112851
+          ],
+          "source_face": 224203,
+          "patch_face": 871087,
+          "normal_jump_deg_unsigned": 72.60588672855937
+        },
+        {
+          "edge_vertex_ids": [
+            112851,
+            112852
+          ],
+          "source_face": 224313,
+          "patch_face": 871089,
+          "normal_jump_deg_unsigned": 77.33117740693237
+        },
+        {
+          "edge_vertex_ids": [
+            112852,
+            112854
+          ],
+          "source_face": 224313,
+          "patch_face": 871091,
+          "normal_jump_deg_unsigned": 88.06576985986186
+        },
+        {
+          "edge_vertex_ids": [
+            112854,
+            112856
+          ],
+          "source_face": 224319,
+          "patch_face": 871093,
+          "normal_jump_deg_unsigned": 69.34987612515685
+        },
+        {
+          "edge_vertex_ids": [
+            112856,
+            112857
+          ],
+          "source_face": 224319,
+          "patch_face": 871095,
+          "normal_jump_deg_unsigned": 65.361998810615
+        },
+        {
+          "edge_vertex_ids": [
+            112857,
+            112858
+          ],
+          "source_face": 224322,
+          "patch_face": 871097,
+          "normal_jump_deg_unsigned": 55.135443305091556
+        },
+        {
+          "edge_vertex_ids": [
+            112872,
+            112877
+          ],
+          "source_face": 224351,
+          "patch_face": 871102,
+          "normal_jump_deg_unsigned": 80.8968533274669
+        },
+        {
+          "edge_vertex_ids": [
+            112877,
+            112878
+          ],
+          "source_face": 224351,
+          "patch_face": 871104,
+          "normal_jump_deg_unsigned": 81.31575926352512
+        },
+        {
+          "edge_vertex_ids": [
+            112878,
+            112879
+          ],
+          "source_face": 224360,
+          "patch_face": 871106,
+          "normal_jump_deg_unsigned": 54.24469006651693
+        },
+        {
+          "edge_vertex_ids": [
+            112879,
+            112881
+          ],
+          "source_face": 224361,
+          "patch_face": 871107,
+          "normal_jump_deg_unsigned": 60.00272128396878
+        },
+        {
+          "edge_vertex_ids": [
+            112918,
+            112919
+          ],
+          "source_face": 224436,
+          "patch_face": 871115,
+          "normal_jump_deg_unsigned": 65.88224426008927
+        },
+        {
+          "edge_vertex_ids": [
+            112919,
+            112921
+          ],
+          "source_face": 224437,
+          "patch_face": 871116,
+          "normal_jump_deg_unsigned": 74.47468163048435
+        },
+        {
+          "edge_vertex_ids": [
+            114766,
+            114776
+          ],
+          "source_face": 228061,
+          "patch_face": 871206,
+          "normal_jump_deg_unsigned": 76.62451906436088
+        },
+        {
+          "edge_vertex_ids": [
+            114770,
+            114773
+          ],
+          "source_face": 228067,
+          "patch_face": 871198,
+          "normal_jump_deg_unsigned": 80.39542819910905
+        },
+        {
+          "edge_vertex_ids": [
+            114770,
+            114775
+          ],
+          "source_face": 228070,
+          "patch_face": 871200,
+          "normal_jump_deg_unsigned": 79.04285032510622
+        },
+        {
+          "edge_vertex_ids": [
+            114771,
+            114772
+          ],
+          "source_face": 228021,
+          "patch_face": 871194,
+          "normal_jump_deg_unsigned": 80.49413577754744
+        },
+        {
+          "edge_vertex_ids": [
+            114771,
+            114773
+          ],
+          "source_face": 228068,
+          "patch_face": 871196,
+          "normal_jump_deg_unsigned": 80.59210039616755
+        },
+        {
+          "edge_vertex_ids": [
+            114772,
+            134952
+          ],
+          "source_face": 228024,
+          "patch_face": 871192,
+          "normal_jump_deg_unsigned": 60.88306896285792
+        },
+        {
+          "edge_vertex_ids": [
+            114774,
+            114775
+          ],
+          "source_face": 228069,
+          "patch_face": 871202,
+          "normal_jump_deg_unsigned": 78.6373876213269
+        },
+        {
+          "edge_vertex_ids": [
+            114774,
+            114776
+          ],
+          "source_face": 228062,
+          "patch_face": 871204,
+          "normal_jump_deg_unsigned": 76.39198498471602
+        },
+        {
+          "edge_vertex_ids": [
+            115576,
+            115602
+          ],
+          "source_face": 229652,
+          "patch_face": 871223,
+          "normal_jump_deg_unsigned": 85.66027514548385
+        },
+        {
+          "edge_vertex_ids": [
+            115576,
+            115627
+          ],
+          "source_face": 229649,
+          "patch_face": 871221,
+          "normal_jump_deg_unsigned": 79.64591473848428
+        },
+        {
+          "edge_vertex_ids": [
+            115593,
+            115606
+          ],
+          "source_face": 229681,
+          "patch_face": 871238,
+          "normal_jump_deg_unsigned": 83.20960309838648
+        },
+        {
+          "edge_vertex_ids": [
+            115593,
+            115633
+          ],
+          "source_face": 229684,
+          "patch_face": 871240,
+          "normal_jump_deg_unsigned": 77.0625237712246
+        },
+        {
+          "edge_vertex_ids": [
+            115595,
+            115596
+          ],
+          "source_face": 229691,
+          "patch_face": 871231,
+          "normal_jump_deg_unsigned": 78.5233193702531
+        },
+        {
+          "edge_vertex_ids": [
+            115595,
+            115604
+          ],
+          "source_face": 229689,
+          "patch_face": 871233,
+          "normal_jump_deg_unsigned": 76.12994199865656
+        },
+        {
+          "edge_vertex_ids": [
+            115596,
+            115603
+          ],
+          "source_face": 229687,
+          "patch_face": 871229,
+          "normal_jump_deg_unsigned": 85.72017672728272
+        },
+        {
+          "edge_vertex_ids": [
+            115601,
+            115602
+          ],
+          "source_face": 229652,
+          "patch_face": 871225,
+          "normal_jump_deg_unsigned": 85.47062537803318
+        },
+        {
+          "edge_vertex_ids": [
+            115601,
+            115603
+          ],
+          "source_face": 229688,
+          "patch_face": 871227,
+          "normal_jump_deg_unsigned": 87.38780928470025
+        },
+        {
+          "edge_vertex_ids": [
+            115604,
+            115605
+          ],
+          "source_face": 229690,
+          "patch_face": 871234,
+          "normal_jump_deg_unsigned": 76.69355614014424
+        },
+        {
+          "edge_vertex_ids": [
+            115605,
+            115606
+          ],
+          "source_face": 229682,
+          "patch_face": 871236,
+          "normal_jump_deg_unsigned": 82.4243029686145
+        },
+        {
+          "edge_vertex_ids": [
+            115621,
+            115624
+          ],
+          "source_face": 229703,
+          "patch_face": 871213,
+          "normal_jump_deg_unsigned": 74.67348833645111
+        },
+        {
+          "edge_vertex_ids": [
+            115621,
+            115626
+          ],
+          "source_face": 229706,
+          "patch_face": 871215,
+          "normal_jump_deg_unsigned": 72.44418875876144
+        },
+        {
+          "edge_vertex_ids": [
+            115622,
+            115624
+          ],
+          "source_face": 229704,
+          "patch_face": 871211,
+          "normal_jump_deg_unsigned": 74.1826498414038
+        },
+        {
+          "edge_vertex_ids": [
+            115625,
+            115626
+          ],
+          "source_face": 229706,
+          "patch_face": 871217,
+          "normal_jump_deg_unsigned": 72.55509639562348
+        },
+        {
+          "edge_vertex_ids": [
+            115625,
+            115627
+          ],
+          "source_face": 229650,
+          "patch_face": 871219,
+          "normal_jump_deg_unsigned": 79.4606577511249
+        },
+        {
+          "edge_vertex_ids": [
+            115631,
+            115634
+          ],
+          "source_face": 229709,
+          "patch_face": 871246,
+          "normal_jump_deg_unsigned": 76.08566275816771
+        },
+        {
+          "edge_vertex_ids": [
+            115631,
+            115636
+          ],
+          "source_face": 229712,
+          "patch_face": 871248,
+          "normal_jump_deg_unsigned": 75.17588106259211
+        },
+        {
+          "edge_vertex_ids": [
+            115632,
+            115633
+          ],
+          "source_face": 229683,
+          "patch_face": 871242,
+          "normal_jump_deg_unsigned": 77.46693590209728
+        },
+        {
+          "edge_vertex_ids": [
+            115632,
+            115634
+          ],
+          "source_face": 229710,
+          "patch_face": 871244,
+          "normal_jump_deg_unsigned": 75.72178223606646
+        },
+        {
+          "edge_vertex_ids": [
+            115635,
+            115636
+          ],
+          "source_face": 229711,
+          "patch_face": 871249,
+          "normal_jump_deg_unsigned": 74.9542563698145
+        },
+        {
+          "edge_vertex_ids": [
+            115635,
+            115637
+          ],
+          "source_face": 181823,
+          "patch_face": 871251,
+          "normal_jump_deg_unsigned": 68.09511906766238
+        },
+        {
+          "edge_vertex_ids": [
+            120864,
+            120865
+          ],
+          "source_face": 193494,
+          "patch_face": 869112,
+          "normal_jump_deg_unsigned": 74.60928427916039
+        },
+        {
+          "edge_vertex_ids": [
+            120865,
+            120866
+          ],
+          "source_face": 240053,
+          "patch_face": 869113,
+          "normal_jump_deg_unsigned": 77.65592679819837
+        },
+        {
+          "edge_vertex_ids": [
+            120866,
+            120868
+          ],
+          "source_face": 240053,
+          "patch_face": 869115,
+          "normal_jump_deg_unsigned": 77.64125877930017
+        },
+        {
+          "edge_vertex_ids": [
+            120868,
+            120870
+          ],
+          "source_face": 240059,
+          "patch_face": 869117,
+          "normal_jump_deg_unsigned": 87.53401387442825
+        },
+        {
+          "edge_vertex_ids": [
+            120870,
+            120871
+          ],
+          "source_face": 240059,
+          "patch_face": 869119,
+          "normal_jump_deg_unsigned": 87.49042401444285
+        },
+        {
+          "edge_vertex_ids": [
+            134124,
+            134125
+          ],
+          "source_face": 266253,
+          "patch_face": 871127,
+          "normal_jump_deg_unsigned": 53.827804082573316
+        },
+        {
+          "edge_vertex_ids": [
+            134134,
+            134140
+          ],
+          "source_face": 266274,
+          "patch_face": 871133,
+          "normal_jump_deg_unsigned": 45.639155876278714
+        },
+        {
+          "edge_vertex_ids": [
+            134142,
+            134143
+          ],
+          "source_face": 266285,
+          "patch_face": 871138,
+          "normal_jump_deg_unsigned": 65.54570808999462
+        },
+        {
+          "edge_vertex_ids": [
+            134143,
+            134144
+          ],
+          "source_face": 266289,
+          "patch_face": 871140,
+          "normal_jump_deg_unsigned": 86.30415380700406
+        },
+        {
+          "edge_vertex_ids": [
+            134144,
+            134146
+          ],
+          "source_face": 266289,
+          "patch_face": 871142,
+          "normal_jump_deg_unsigned": 86.37594975968415
+        },
+        {
+          "edge_vertex_ids": [
+            134146,
+            134210
+          ],
+          "source_face": 266290,
+          "patch_face": 871143,
+          "normal_jump_deg_unsigned": 85.38697413755149
+        },
+        {
+          "edge_vertex_ids": [
+            134210,
+            134212
+          ],
+          "source_face": 266421,
+          "patch_face": 871146,
+          "normal_jump_deg_unsigned": 69.87500011020023
+        },
+        {
+          "edge_vertex_ids": [
+            134212,
+            134216
+          ],
+          "source_face": 266424,
+          "patch_face": 871148,
+          "normal_jump_deg_unsigned": 66.3307405551984
+        },
+        {
+          "edge_vertex_ids": [
+            134216,
+            134217
+          ],
+          "source_face": 266429,
+          "patch_face": 871150,
+          "normal_jump_deg_unsigned": 77.50802001365479
+        },
+        {
+          "edge_vertex_ids": [
+            134217,
+            134221
+          ],
+          "source_face": 266429,
+          "patch_face": 871151,
+          "normal_jump_deg_unsigned": 77.25086996269492
+        },
+        {
+          "edge_vertex_ids": [
+            134221,
+            134894
+          ],
+          "source_face": 266437,
+          "patch_face": 871154,
+          "normal_jump_deg_unsigned": 74.14530478377885
+        },
+        {
+          "edge_vertex_ids": [
+            134894,
+            134896
+          ],
+          "source_face": 267760,
+          "patch_face": 871156,
+          "normal_jump_deg_unsigned": 76.38600196708398
+        },
+        {
+          "edge_vertex_ids": [
+            134896,
+            134898
+          ],
+          "source_face": 267764,
+          "patch_face": 871158,
+          "normal_jump_deg_unsigned": 82.4173104892304
+        },
+        {
+          "edge_vertex_ids": [
+            134898,
+            134899
+          ],
+          "source_face": 267768,
+          "patch_face": 871161,
+          "normal_jump_deg_unsigned": 78.11784385822904
+        },
+        {
+          "edge_vertex_ids": [
+            134899,
+            134926
+          ],
+          "source_face": 267770,
+          "patch_face": 871163,
+          "normal_jump_deg_unsigned": 66.38793394193212
+        },
+        {
+          "edge_vertex_ids": [
+            134944,
+            134950
+          ],
+          "source_face": 267832,
+          "patch_face": 871182,
+          "normal_jump_deg_unsigned": 83.89402152925267
+        },
+        {
+          "edge_vertex_ids": [
+            134947,
+            134950
+          ],
+          "source_face": 267831,
+          "patch_face": 871184,
+          "normal_jump_deg_unsigned": 84.74006249343286
+        },
+        {
+          "edge_vertex_ids": [
+            134948,
+            134952
+          ],
+          "source_face": 228024,
+          "patch_face": 871190,
+          "normal_jump_deg_unsigned": 59.646416174957345
+        },
+        {
+          "edge_vertex_ids": [
+            151518,
+            151519
+          ],
+          "source_face": 300799,
+          "patch_face": 870906,
+          "normal_jump_deg_unsigned": 84.47851596507036
+        },
+        {
+          "edge_vertex_ids": [
+            151519,
+            151522
+          ],
+          "source_face": 300799,
+          "patch_face": 870904,
+          "normal_jump_deg_unsigned": 86.5429356866993
+        },
+        {
+          "edge_vertex_ids": [
+            151529,
+            151531
+          ],
+          "source_face": 300821,
+          "patch_face": 870892,
+          "normal_jump_deg_unsigned": 50.1895732934879
+        },
+        {
+          "edge_vertex_ids": [
+            151531,
+            151532
+          ],
+          "source_face": 300821,
+          "patch_face": 870890,
+          "normal_jump_deg_unsigned": 49.30733208817908
+        },
+        {
+          "edge_vertex_ids": [
+            161234,
+            161235
+          ],
+          "source_face": 319961,
+          "patch_face": 869239,
+          "normal_jump_deg_unsigned": 50.67115093249561
+        },
+        {
+          "edge_vertex_ids": [
+            161235,
+            161237
+          ],
+          "source_face": 319962,
+          "patch_face": 869240,
+          "normal_jump_deg_unsigned": 50.344675454953126
+        },
+        {
+          "edge_vertex_ids": [
+            161237,
+            161252
+          ],
+          "source_face": 319965,
+          "patch_face": 869242,
+          "normal_jump_deg_unsigned": 65.30259752824891
+        },
+        {
+          "edge_vertex_ids": [
+            161252,
+            161257
+          ],
+          "source_face": 319966,
+          "patch_face": 869244,
+          "normal_jump_deg_unsigned": 64.6835469102024
+        },
+        {
+          "edge_vertex_ids": [
+            161253,
+            161255
+          ],
+          "source_face": 319989,
+          "patch_face": 869247,
+          "normal_jump_deg_unsigned": 75.99243154420026
+        },
+        {
+          "edge_vertex_ids": [
+            161253,
+            161257
+          ],
+          "source_face": 319988,
+          "patch_face": 869246,
+          "normal_jump_deg_unsigned": 62.77567111582024
+        },
+        {
+          "edge_vertex_ids": [
+            161255,
+            161284
+          ],
+          "source_face": 319993,
+          "patch_face": 869250,
+          "normal_jump_deg_unsigned": 80.0776568322348
+        },
+        {
+          "edge_vertex_ids": [
+            161256,
+            161261
+          ],
+          "source_face": 319997,
+          "patch_face": 869256,
+          "normal_jump_deg_unsigned": 65.28131467267963
+        },
+        {
+          "edge_vertex_ids": [
+            161256,
+            161289
+          ],
+          "source_face": 319995,
+          "patch_face": 869254,
+          "normal_jump_deg_unsigned": 74.77816178004974
+        },
+        {
+          "edge_vertex_ids": [
+            161261,
+            161291
+          ],
+          "source_face": 319997,
+          "patch_face": 869258,
+          "normal_jump_deg_unsigned": 63.92301966839735
+        },
+        {
+          "edge_vertex_ids": [
+            161284,
+            161289
+          ],
+          "source_face": 320048,
+          "patch_face": 869252,
+          "normal_jump_deg_unsigned": 87.79684720197102
+        },
+        {
+          "edge_vertex_ids": [
+            161291,
+            161292
+          ],
+          "source_face": 320057,
+          "patch_face": 869260,
+          "normal_jump_deg_unsigned": 71.87807019271527
+        },
+        {
+          "edge_vertex_ids": [
+            161292,
+            161294
+          ],
+          "source_face": 320058,
+          "patch_face": 869262,
+          "normal_jump_deg_unsigned": 71.07493481043265
+        },
+        {
+          "edge_vertex_ids": [
+            161294,
+            161303
+          ],
+          "source_face": 320061,
+          "patch_face": 869264,
+          "normal_jump_deg_unsigned": 71.85312852463223
+        },
+        {
+          "edge_vertex_ids": [
+            161306,
+            161309
+          ],
+          "source_face": 320084,
+          "patch_face": 869270,
+          "normal_jump_deg_unsigned": 64.27491372436502
+        },
+        {
+          "edge_vertex_ids": [
+            161309,
+            161310
+          ],
+          "source_face": 320089,
+          "patch_face": 869272,
+          "normal_jump_deg_unsigned": 72.25311293090286
+        },
+        {
+          "edge_vertex_ids": [
+            161310,
+            161312
+          ],
+          "source_face": 320090,
+          "patch_face": 869274,
+          "normal_jump_deg_unsigned": 72.9438385149276
+        },
+        {
+          "edge_vertex_ids": [
+            162269,
+            162270
+          ],
+          "source_face": 321997,
+          "patch_face": 869280,
+          "normal_jump_deg_unsigned": 50.54911044130489
+        },
+        {
+          "edge_vertex_ids": [
+            162270,
+            162276
+          ],
+          "source_face": 322000,
+          "patch_face": 869282,
+          "normal_jump_deg_unsigned": 80.90384824365778
+        },
+        {
+          "edge_vertex_ids": [
+            162276,
+            162277
+          ],
+          "source_face": 322000,
+          "patch_face": 869283,
+          "normal_jump_deg_unsigned": 80.64453426100717
+        },
+        {
+          "edge_vertex_ids": [
+            162278,
+            183183
+          ],
+          "source_face": 322013,
+          "patch_face": 869288,
+          "normal_jump_deg_unsigned": 58.194904986111396
+        },
+        {
+          "edge_vertex_ids": [
+            183183,
+            183184
+          ],
+          "source_face": 322014,
+          "patch_face": 869289,
+          "normal_jump_deg_unsigned": 61.8644832039332
+        },
+        {
+          "edge_vertex_ids": [
+            183184,
+            183186
+          ],
+          "source_face": 322021,
+          "patch_face": 869291,
+          "normal_jump_deg_unsigned": 85.17401697227785
+        },
+        {
+          "edge_vertex_ids": [
+            183185,
+            183188
+          ],
+          "source_face": 363426,
+          "patch_face": 869297,
+          "normal_jump_deg_unsigned": 65.30520678064238
+        },
+        {
+          "edge_vertex_ids": [
+            183234,
+            183243
+          ],
+          "source_face": 363527,
+          "patch_face": 869318,
+          "normal_jump_deg_unsigned": 85.24777610057943
+        },
+        {
+          "edge_vertex_ids": [
+            183243,
+            183271
+          ],
+          "source_face": 363527,
+          "patch_face": 869320,
+          "normal_jump_deg_unsigned": 85.37179065285694
+        },
+        {
+          "edge_vertex_ids": [
+            183271,
+            183272
+          ],
+          "source_face": 363600,
+          "patch_face": 869322,
+          "normal_jump_deg_unsigned": 79.64580295007318
+        },
+        {
+          "edge_vertex_ids": [
+            183272,
+            183274
+          ],
+          "source_face": 363600,
+          "patch_face": 869324,
+          "normal_jump_deg_unsigned": 79.76353694127201
+        },
+        {
+          "edge_vertex_ids": [
+            183274,
+            183278
+          ],
+          "source_face": 363606,
+          "patch_face": 869326,
+          "normal_jump_deg_unsigned": 66.82424555876574
+        },
+        {
+          "edge_vertex_ids": [
+            183278,
+            183279
+          ],
+          "source_face": 363612,
+          "patch_face": 869328,
+          "normal_jump_deg_unsigned": 84.30940101753181
+        },
+        {
+          "edge_vertex_ids": [
+            183279,
+            183285
+          ],
+          "source_face": 363612,
+          "patch_face": 869330,
+          "normal_jump_deg_unsigned": 84.23421273392522
+        },
+        {
+          "edge_vertex_ids": [
+            183300,
+            183301
+          ],
+          "source_face": 363652,
+          "patch_face": 869336,
+          "normal_jump_deg_unsigned": 47.159647179752845
+        },
+        {
+          "edge_vertex_ids": [
+            195676,
+            195682
+          ],
+          "source_face": 388273,
+          "patch_face": 870796,
+          "normal_jump_deg_unsigned": 62.86414788687334
+        },
+        {
+          "edge_vertex_ids": [
+            195682,
+            195684
+          ],
+          "source_face": 388285,
+          "patch_face": 870794,
+          "normal_jump_deg_unsigned": 75.96117853919692
+        },
+        {
+          "edge_vertex_ids": [
+            195684,
+            195690
+          ],
+          "source_face": 388289,
+          "patch_face": 870791,
+          "normal_jump_deg_unsigned": 87.03611098890669
+        },
+        {
+          "edge_vertex_ids": [
+            195690,
+            195691
+          ],
+          "source_face": 388289,
+          "patch_face": 870789,
+          "normal_jump_deg_unsigned": 82.97425630991991
+        },
+        {
+          "edge_vertex_ids": [
+            195691,
+            195692
+          ],
+          "source_face": 388292,
+          "patch_face": 870788,
+          "normal_jump_deg_unsigned": 67.06856464023502
+        },
+        {
+          "edge_vertex_ids": [
+            195692,
+            195693
+          ],
+          "source_face": 388301,
+          "patch_face": 870787,
+          "normal_jump_deg_unsigned": 73.90010266003637
+        },
+        {
+          "edge_vertex_ids": [
+            195693,
+            195696
+          ],
+          "source_face": 388303,
+          "patch_face": 870784,
+          "normal_jump_deg_unsigned": 85.38788128181051
+        },
+        {
+          "edge_vertex_ids": [
+            195696,
+            195697
+          ],
+          "source_face": 388309,
+          "patch_face": 870782,
+          "normal_jump_deg_unsigned": 86.07517924444267
+        },
+        {
+          "edge_vertex_ids": [
+            195697,
+            197250
+          ],
+          "source_face": 388314,
+          "patch_face": 870780,
+          "normal_jump_deg_unsigned": 61.31967644491971
+        },
+        {
+          "edge_vertex_ids": [
+            197250,
+            197251
+          ],
+          "source_face": 388314,
+          "patch_face": 870778,
+          "normal_jump_deg_unsigned": 63.95042247208178
+        },
+        {
+          "edge_vertex_ids": [
+            197251,
+            197252
+          ],
+          "source_face": 388379,
+          "patch_face": 870776,
+          "normal_jump_deg_unsigned": 89.75485514883198
+        },
+        {
+          "edge_vertex_ids": [
+            197252,
+            197254
+          ],
+          "source_face": 391384,
+          "patch_face": 870775,
+          "normal_jump_deg_unsigned": 75.8347424762575
+        },
+        {
+          "edge_vertex_ids": [
+            197254,
+            197255
+          ],
+          "source_face": 391385,
+          "patch_face": 870773,
+          "normal_jump_deg_unsigned": 75.77149582464543
+        },
+        {
+          "edge_vertex_ids": [
+            197255,
+            197259
+          ],
+          "source_face": 391389,
+          "patch_face": 870771,
+          "normal_jump_deg_unsigned": 77.57922851900761
+        },
+        {
+          "edge_vertex_ids": [
+            197259,
+            197264
+          ],
+          "source_face": 391396,
+          "patch_face": 870769,
+          "normal_jump_deg_unsigned": 63.04525375287618
+        },
+        {
+          "edge_vertex_ids": [
+            197264,
+            197265
+          ],
+          "source_face": 391403,
+          "patch_face": 870767,
+          "normal_jump_deg_unsigned": 50.08461555341199
+        },
+        {
+          "edge_vertex_ids": [
+            197265,
+            197268
+          ],
+          "source_face": 391403,
+          "patch_face": 870765,
+          "normal_jump_deg_unsigned": 49.372344306673426
+        },
+        {
+          "edge_vertex_ids": [
+            197268,
+            197269
+          ],
+          "source_face": 391407,
+          "patch_face": 870764,
+          "normal_jump_deg_unsigned": 66.37994820182622
+        },
+        {
+          "edge_vertex_ids": [
+            197269,
+            197292
+          ],
+          "source_face": 391412,
+          "patch_face": 870762,
+          "normal_jump_deg_unsigned": 73.91934791484034
+        },
+        {
+          "edge_vertex_ids": [
+            197292,
+            197293
+          ],
+          "source_face": 391413,
+          "patch_face": 870760,
+          "normal_jump_deg_unsigned": 69.91971487643426
+        },
+        {
+          "edge_vertex_ids": [
+            197293,
+            197294
+          ],
+          "source_face": 391416,
+          "patch_face": 870758,
+          "normal_jump_deg_unsigned": 74.35423530442716
+        },
+        {
+          "edge_vertex_ids": [
+            197294,
+            197317
+          ],
+          "source_face": 391460,
+          "patch_face": 870756,
+          "normal_jump_deg_unsigned": 55.66161064426592
+        },
+        {
+          "edge_vertex_ids": [
+            197317,
+            197318
+          ],
+          "source_face": 391520,
+          "patch_face": 870753,
+          "normal_jump_deg_unsigned": 48.340910849475804
+        },
+        {
+          "edge_vertex_ids": [
+            197318,
+            197319
+          ],
+          "source_face": 391524,
+          "patch_face": 870751,
+          "normal_jump_deg_unsigned": 48.4575216834067
+        },
+        {
+          "edge_vertex_ids": [
+            197319,
+            197322
+          ],
+          "source_face": 391525,
+          "patch_face": 870749,
+          "normal_jump_deg_unsigned": 69.67510684414286
+        },
+        {
+          "edge_vertex_ids": [
+            197322,
+            197323
+          ],
+          "source_face": 391529,
+          "patch_face": 870747,
+          "normal_jump_deg_unsigned": 89.65252900032577
+        },
+        {
+          "edge_vertex_ids": [
+            197323,
+            197330
+          ],
+          "source_face": 391532,
+          "patch_face": 870745,
+          "normal_jump_deg_unsigned": 87.48517741373666
+        },
+        {
+          "edge_vertex_ids": [
+            197330,
+            197331
+          ],
+          "source_face": 391537,
+          "patch_face": 870743,
+          "normal_jump_deg_unsigned": 62.86383873452958
+        },
+        {
+          "edge_vertex_ids": [
+            197331,
+            197334
+          ],
+          "source_face": 391540,
+          "patch_face": 870740,
+          "normal_jump_deg_unsigned": 59.46296660027352
+        },
+        {
+          "edge_vertex_ids": [
+            225527,
+            225529
+          ],
+          "source_face": 447227,
+          "patch_face": 869402,
+          "normal_jump_deg_unsigned": 50.65820199230019
+        },
+        {
+          "edge_vertex_ids": [
+            225527,
+            225565
+          ],
+          "source_face": 447224,
+          "patch_face": 869399,
+          "normal_jump_deg_unsigned": 53.95857559504029
+        },
+        {
+          "edge_vertex_ids": [
+            225529,
+            225530
+          ],
+          "source_face": 447230,
+          "patch_face": 869404,
+          "normal_jump_deg_unsigned": 53.46617235749972
+        },
+        {
+          "edge_vertex_ids": [
+            225530,
+            225627
+          ],
+          "source_face": 447233,
+          "patch_face": 869406,
+          "normal_jump_deg_unsigned": 54.22882751847318
+        },
+        {
+          "edge_vertex_ids": [
+            225627,
+            225628
+          ],
+          "source_face": 447438,
+          "patch_face": 869408,
+          "normal_jump_deg_unsigned": 53.729485609009465
+        },
+        {
+          "edge_vertex_ids": [
+            225628,
+            225631
+          ],
+          "source_face": 447440,
+          "patch_face": 869410,
+          "normal_jump_deg_unsigned": 58.45034249343715
+        },
+        {
+          "edge_vertex_ids": [
+            225632,
+            225633
+          ],
+          "source_face": 447449,
+          "patch_face": 869414,
+          "normal_jump_deg_unsigned": 53.13223086981237
+        },
+        {
+          "edge_vertex_ids": [
+            225633,
+            225643
+          ],
+          "source_face": 447450,
+          "patch_face": 869416,
+          "normal_jump_deg_unsigned": 53.11269776271861
+        },
+        {
+          "edge_vertex_ids": [
+            225645,
+            225646
+          ],
+          "source_face": 447478,
+          "patch_face": 869425,
+          "normal_jump_deg_unsigned": 46.528180826031466
+        },
+        {
+          "edge_vertex_ids": [
+            225646,
+            225648
+          ],
+          "source_face": 447478,
+          "patch_face": 869426,
+          "normal_jump_deg_unsigned": 45.195327013782524
+        },
+        {
+          "edge_vertex_ids": [
+            225648,
+            225654
+          ],
+          "source_face": 447481,
+          "patch_face": 869429,
+          "normal_jump_deg_unsigned": 71.3486468021607
+        },
+        {
+          "edge_vertex_ids": [
+            237407,
+            237409
+          ],
+          "source_face": 470704,
+          "patch_face": 870666,
+          "normal_jump_deg_unsigned": 59.678806519701226
+        },
+        {
+          "edge_vertex_ids": [
+            237409,
+            237410
+          ],
+          "source_face": 470704,
+          "patch_face": 870664,
+          "normal_jump_deg_unsigned": 58.82081792242052
+        },
+        {
+          "edge_vertex_ids": [
+            237428,
+            436528
+          ],
+          "source_face": 470737,
+          "patch_face": 870651,
+          "normal_jump_deg_unsigned": 80.01191003883638
+        },
+        {
+          "edge_vertex_ids": [
+            237429,
+            237431
+          ],
+          "source_face": 470744,
+          "patch_face": 870646,
+          "normal_jump_deg_unsigned": 50.26373217370098
+        },
+        {
+          "edge_vertex_ids": [
+            237431,
+            237432
+          ],
+          "source_face": 470745,
+          "patch_face": 870644,
+          "normal_jump_deg_unsigned": 48.08224120103957
+        },
+        {
+          "edge_vertex_ids": [
+            237432,
+            237682
+          ],
+          "source_face": 470750,
+          "patch_face": 870642,
+          "normal_jump_deg_unsigned": 82.90773497124177
+        },
+        {
+          "edge_vertex_ids": [
+            246400,
+            246401
+          ],
+          "source_face": 488549,
+          "patch_face": 869438,
+          "normal_jump_deg_unsigned": 49.19276886949315
+        },
+        {
+          "edge_vertex_ids": [
+            246400,
+            246404
+          ],
+          "source_face": 488548,
+          "patch_face": 869435,
+          "normal_jump_deg_unsigned": 63.97059088455702
+        },
+        {
+          "edge_vertex_ids": [
+            246401,
+            246402
+          ],
+          "source_face": 488550,
+          "patch_face": 869440,
+          "normal_jump_deg_unsigned": 48.18226657400371
+        },
+        {
+          "edge_vertex_ids": [
+            246402,
+            246403
+          ],
+          "source_face": 488553,
+          "patch_face": 869442,
+          "normal_jump_deg_unsigned": 46.37179898719591
+        },
+        {
+          "edge_vertex_ids": [
+            246403,
+            246417
+          ],
+          "source_face": 488554,
+          "patch_face": 869445,
+          "normal_jump_deg_unsigned": 47.01185601008021
+        },
+        {
+          "edge_vertex_ids": [
+            246404,
+            246406
+          ],
+          "source_face": 488557,
+          "patch_face": 869434,
+          "normal_jump_deg_unsigned": 71.36915131343368
+        },
+        {
+          "edge_vertex_ids": [
+            246416,
+            246427
+          ],
+          "source_face": 488583,
+          "patch_face": 869454,
+          "normal_jump_deg_unsigned": 61.86037479575151
+        },
+        {
+          "edge_vertex_ids": [
+            246416,
+            246500
+          ],
+          "source_face": 488582,
+          "patch_face": 869456,
+          "normal_jump_deg_unsigned": 59.85776456239407
+        },
+        {
+          "edge_vertex_ids": [
+            246417,
+            246418
+          ],
+          "source_face": 488584,
+          "patch_face": 869446,
+          "normal_jump_deg_unsigned": 46.368995720090986
+        },
+        {
+          "edge_vertex_ids": [
+            246418,
+            246420
+          ],
+          "source_face": 488585,
+          "patch_face": 869448,
+          "normal_jump_deg_unsigned": 45.05249299987732
+        },
+        {
+          "edge_vertex_ids": [
+            246500,
+            246501
+          ],
+          "source_face": 488747,
+          "patch_face": 869458,
+          "normal_jump_deg_unsigned": 51.427369921361574
+        },
+        {
+          "edge_vertex_ids": [
+            246501,
+            246503
+          ],
+          "source_face": 488747,
+          "patch_face": 869460,
+          "normal_jump_deg_unsigned": 51.374967493659476
+        },
+        {
+          "edge_vertex_ids": [
+            246510,
+            246529
+          ],
+          "source_face": 488763,
+          "patch_face": 869468,
+          "normal_jump_deg_unsigned": 47.32107112895509
+        },
+        {
+          "edge_vertex_ids": [
+            246529,
+            246530
+          ],
+          "source_face": 488763,
+          "patch_face": 869470,
+          "normal_jump_deg_unsigned": 48.69123134446319
+        },
+        {
+          "edge_vertex_ids": [
+            246530,
+            246531
+          ],
+          "source_face": 488807,
+          "patch_face": 869472,
+          "normal_jump_deg_unsigned": 65.6247588213519
+        },
+        {
+          "edge_vertex_ids": [
+            246531,
+            246533
+          ],
+          "source_face": 488807,
+          "patch_face": 869474,
+          "normal_jump_deg_unsigned": 64.46231286576037
+        },
+        {
+          "edge_vertex_ids": [
+            257673,
+            257674
+          ],
+          "source_face": 470748,
+          "patch_face": 870636,
+          "normal_jump_deg_unsigned": 49.06976478844256
+        },
+        {
+          "edge_vertex_ids": [
+            257675,
+            257677
+          ],
+          "source_face": 510883,
+          "patch_face": 870631,
+          "normal_jump_deg_unsigned": 88.58838638464401
+        },
+        {
+          "edge_vertex_ids": [
+            257675,
+            257893
+          ],
+          "source_face": 510881,
+          "patch_face": 870630,
+          "normal_jump_deg_unsigned": 81.63718123894184
+        },
+        {
+          "edge_vertex_ids": [
+            257719,
+            257720
+          ],
+          "source_face": 511003,
+          "patch_face": 870609,
+          "normal_jump_deg_unsigned": 50.297106482315755
+        },
+        {
+          "edge_vertex_ids": [
+            257720,
+            257842
+          ],
+          "source_face": 511004,
+          "patch_face": 870607,
+          "normal_jump_deg_unsigned": 49.92710864792642
+        },
+        {
+          "edge_vertex_ids": [
+            257839,
+            257844
+          ],
+          "source_face": 511207,
+          "patch_face": 870596,
+          "normal_jump_deg_unsigned": 65.09630073099969
+        },
+        {
+          "edge_vertex_ids": [
+            257840,
+            257841
+          ],
+          "source_face": 511198,
+          "patch_face": 870603,
+          "normal_jump_deg_unsigned": 47.56198176136659
+        },
+        {
+          "edge_vertex_ids": [
+            257840,
+            257842
+          ],
+          "source_face": 511005,
+          "patch_face": 870605,
+          "normal_jump_deg_unsigned": 51.424906283249435
+        },
+        {
+          "edge_vertex_ids": [
+            257841,
+            257843
+          ],
+          "source_face": 511201,
+          "patch_face": 870601,
+          "normal_jump_deg_unsigned": 48.05740687148286
+        },
+        {
+          "edge_vertex_ids": [
+            257843,
+            257844
+          ],
+          "source_face": 511206,
+          "patch_face": 870598,
+          "normal_jump_deg_unsigned": 47.98897636764209
+        },
+        {
+          "edge_vertex_ids": [
+            257848,
+            257852
+          ],
+          "source_face": 511209,
+          "patch_face": 870592,
+          "normal_jump_deg_unsigned": 49.88661416138852
+        },
+        {
+          "edge_vertex_ids": [
+            257848,
+            257860
+          ],
+          "source_face": 511210,
+          "patch_face": 870590,
+          "normal_jump_deg_unsigned": 54.04591914144076
+        },
+        {
+          "edge_vertex_ids": [
+            257863,
+            257864
+          ],
+          "source_face": 511236,
+          "patch_face": 870582,
+          "normal_jump_deg_unsigned": 54.859395279458774
+        },
+        {
+          "edge_vertex_ids": [
+            257864,
+            278445
+          ],
+          "source_face": 511236,
+          "patch_face": 870580,
+          "normal_jump_deg_unsigned": 53.084332892806025
+        },
+        {
+          "edge_vertex_ids": [
+            257893,
+            257898
+          ],
+          "source_face": 511286,
+          "patch_face": 870628,
+          "normal_jump_deg_unsigned": 59.393615749184455
+        },
+        {
+          "edge_vertex_ids": [
+            257897,
+            257899
+          ],
+          "source_face": 511291,
+          "patch_face": 870624,
+          "normal_jump_deg_unsigned": 70.72613417372348
+        },
+        {
+          "edge_vertex_ids": [
+            257897,
+            257901
+          ],
+          "source_face": 511288,
+          "patch_face": 870622,
+          "normal_jump_deg_unsigned": 76.5829711876646
+        },
+        {
+          "edge_vertex_ids": [
+            257898,
+            257899
+          ],
+          "source_face": 511291,
+          "patch_face": 870626,
+          "normal_jump_deg_unsigned": 63.42662249003963
+        },
+        {
+          "edge_vertex_ids": [
+            257901,
+            257918
+          ],
+          "source_face": 511279,
+          "patch_face": 870620,
+          "normal_jump_deg_unsigned": 57.17714174426407
+        },
+        {
+          "edge_vertex_ids": [
+            257915,
+            257916
+          ],
+          "source_face": 511309,
+          "patch_face": 870617,
+          "normal_jump_deg_unsigned": 46.59885883455999
+        },
+        {
+          "edge_vertex_ids": [
+            257915,
+            257918
+          ],
+          "source_face": 511279,
+          "patch_face": 870619,
+          "normal_jump_deg_unsigned": 56.42079470514578
+        },
+        {
+          "edge_vertex_ids": [
+            266465,
+            266519
+          ],
+          "source_face": 528166,
+          "patch_face": 869495,
+          "normal_jump_deg_unsigned": 45.315815726749925
+        },
+        {
+          "edge_vertex_ids": [
+            278421,
+            278422
+          ],
+          "source_face": 551839,
+          "patch_face": 870557,
+          "normal_jump_deg_unsigned": 89.73779661197358
+        },
+        {
+          "edge_vertex_ids": [
+            278421,
+            278617
+          ],
+          "source_face": 551838,
+          "patch_face": 870558,
+          "normal_jump_deg_unsigned": 62.13174704370479
+        },
+        {
+          "edge_vertex_ids": [
+            278422,
+            278423
+          ],
+          "source_face": 551840,
+          "patch_face": 870555,
+          "normal_jump_deg_unsigned": 45.09444714607643
+        },
+        {
+          "edge_vertex_ids": [
+            278426,
+            278427
+          ],
+          "source_face": 551848,
+          "patch_face": 870549,
+          "normal_jump_deg_unsigned": 53.12792772390756
+        },
+        {
+          "edge_vertex_ids": [
+            278427,
+            278681
+          ],
+          "source_face": 551849,
+          "patch_face": 870547,
+          "normal_jump_deg_unsigned": 51.35570087246575
+        },
+        {
+          "edge_vertex_ids": [
+            278428,
+            278429
+          ],
+          "source_face": 551850,
+          "patch_face": 870536,
+          "normal_jump_deg_unsigned": 45.04785047992379
+        },
+        {
+          "edge_vertex_ids": [
+            278428,
+            278708
+          ],
+          "source_face": 551851,
+          "patch_face": 870538,
+          "normal_jump_deg_unsigned": 49.70134207636645
+        },
+        {
+          "edge_vertex_ids": [
+            278450,
+            278600
+          ],
+          "source_face": 551900,
+          "patch_face": 870574,
+          "normal_jump_deg_unsigned": 53.819949827592076
+        },
+        {
+          "edge_vertex_ids": [
+            278600,
+            278601
+          ],
+          "source_face": 551900,
+          "patch_face": 870572,
+          "normal_jump_deg_unsigned": 54.123161465394105
+        },
+        {
+          "edge_vertex_ids": [
+            287343,
+            287344
+          ],
+          "source_face": 569525,
+          "patch_face": 869561,
+          "normal_jump_deg_unsigned": 78.2523647258194
+        },
+        {
+          "edge_vertex_ids": [
+            287343,
+            287345
+          ],
+          "source_face": 569525,
+          "patch_face": 869559,
+          "normal_jump_deg_unsigned": 79.5476122343226
+        },
+        {
+          "edge_vertex_ids": [
+            287358,
+            287360
+          ],
+          "source_face": 569552,
+          "patch_face": 869574,
+          "normal_jump_deg_unsigned": 46.33233558014413
+        },
+        {
+          "edge_vertex_ids": [
+            287358,
+            287452
+          ],
+          "source_face": 569551,
+          "patch_face": 869572,
+          "normal_jump_deg_unsigned": 47.48670892385393
+        },
+        {
+          "edge_vertex_ids": [
+            287359,
+            287384
+          ],
+          "source_face": 569555,
+          "patch_face": 869580,
+          "normal_jump_deg_unsigned": 48.27899573268594
+        },
+        {
+          "edge_vertex_ids": [
+            287375,
+            287384
+          ],
+          "source_face": 569592,
+          "patch_face": 869582,
+          "normal_jump_deg_unsigned": 48.09125390029429
+        },
+        {
+          "edge_vertex_ids": [
+            287451,
+            287452
+          ],
+          "source_face": 569750,
+          "patch_face": 869571,
+          "normal_jump_deg_unsigned": 47.06255359372837
+        },
+        {
+          "edge_vertex_ids": [
+            287451,
+            287453
+          ],
+          "source_face": 569749,
+          "patch_face": 869569,
+          "normal_jump_deg_unsigned": 47.257771501197034
+        },
+        {
+          "edge_vertex_ids": [
+            298432,
+            298433
+          ],
+          "source_face": 591529,
+          "patch_face": 870525,
+          "normal_jump_deg_unsigned": 82.49377177840105
+        },
+        {
+          "edge_vertex_ids": [
+            298433,
+            298436
+          ],
+          "source_face": 591529,
+          "patch_face": 870524,
+          "normal_jump_deg_unsigned": 83.23688994907776
+        },
+        {
+          "edge_vertex_ids": [
+            298440,
+            301623
+          ],
+          "source_face": 591545,
+          "patch_face": 870517,
+          "normal_jump_deg_unsigned": 54.28069550765749
+        },
+        {
+          "edge_vertex_ids": [
+            301623,
+            301624
+          ],
+          "source_face": 591545,
+          "patch_face": 870515,
+          "normal_jump_deg_unsigned": 53.40420615205457
+        },
+        {
+          "edge_vertex_ids": [
+            301646,
+            301729
+          ],
+          "source_face": 597923,
+          "patch_face": 870485,
+          "normal_jump_deg_unsigned": 61.98806075396209
+        },
+        {
+          "edge_vertex_ids": [
+            301648,
+            301738
+          ],
+          "source_face": 597926,
+          "patch_face": 870478,
+          "normal_jump_deg_unsigned": 87.38649927672253
+        },
+        {
+          "edge_vertex_ids": [
+            301657,
+            301659
+          ],
+          "source_face": 597944,
+          "patch_face": 870463,
+          "normal_jump_deg_unsigned": 50.65347367869318
+        },
+        {
+          "edge_vertex_ids": [
+            301658,
+            301659
+          ],
+          "source_face": 597946,
+          "patch_face": 870461,
+          "normal_jump_deg_unsigned": 79.69616351434419
+        },
+        {
+          "edge_vertex_ids": [
+            301658,
+            301671
+          ],
+          "source_face": 597946,
+          "patch_face": 870459,
+          "normal_jump_deg_unsigned": 74.62502826382016
+        },
+        {
+          "edge_vertex_ids": [
+            301662,
+            301663
+          ],
+          "source_face": 597954,
+          "patch_face": 870455,
+          "normal_jump_deg_unsigned": 56.76181987455464
+        },
+        {
+          "edge_vertex_ids": [
+            301662,
+            301671
+          ],
+          "source_face": 597954,
+          "patch_face": 870457,
+          "normal_jump_deg_unsigned": 59.40884216112473
+        },
+        {
+          "edge_vertex_ids": [
+            301663,
+            301668
+          ],
+          "source_face": 597956,
+          "patch_face": 870453,
+          "normal_jump_deg_unsigned": 61.828283482163755
+        },
+        {
+          "edge_vertex_ids": [
+            301664,
+            301666
+          ],
+          "source_face": 597958,
+          "patch_face": 870445,
+          "normal_jump_deg_unsigned": 68.68304723739143
+        },
+        {
+          "edge_vertex_ids": [
+            301664,
+            302515
+          ],
+          "source_face": 597958,
+          "patch_face": 870443,
+          "normal_jump_deg_unsigned": 65.44087392084039
+        },
+        {
+          "edge_vertex_ids": [
+            301665,
+            301666
+          ],
+          "source_face": 597960,
+          "patch_face": 870448,
+          "normal_jump_deg_unsigned": 83.68844341491263
+        },
+        {
+          "edge_vertex_ids": [
+            301665,
+            301667
+          ],
+          "source_face": 597960,
+          "patch_face": 870449,
+          "normal_jump_deg_unsigned": 63.822263632477934
+        },
+        {
+          "edge_vertex_ids": [
+            301667,
+            301668
+          ],
+          "source_face": 597964,
+          "patch_face": 870451,
+          "normal_jump_deg_unsigned": 66.20974513114808
+        },
+        {
+          "edge_vertex_ids": [
+            302514,
+            302515
+          ],
+          "source_face": 599598,
+          "patch_face": 870441,
+          "normal_jump_deg_unsigned": 67.69797839700557
+        },
+        {
+          "edge_vertex_ids": [
+            302514,
+            302516
+          ],
+          "source_face": 599597,
+          "patch_face": 870440,
+          "normal_jump_deg_unsigned": 82.28497377601286
+        },
+        {
+          "edge_vertex_ids": [
+            302516,
+            302525
+          ],
+          "source_face": 599603,
+          "patch_face": 870438,
+          "normal_jump_deg_unsigned": 82.81681567175585
+        },
+        {
+          "edge_vertex_ids": [
+            302525,
+            302526
+          ],
+          "source_face": 599604,
+          "patch_face": 870436,
+          "normal_jump_deg_unsigned": 66.59885643270061
+        },
+        {
+          "edge_vertex_ids": [
+            302526,
+            302527
+          ],
+          "source_face": 599621,
+          "patch_face": 870435,
+          "normal_jump_deg_unsigned": 83.4314278237555
+        },
+        {
+          "edge_vertex_ids": [
+            302527,
+            302536
+          ],
+          "source_face": 599623,
+          "patch_face": 870432,
+          "normal_jump_deg_unsigned": 82.97590644364169
+        },
+        {
+          "edge_vertex_ids": [
+            302536,
+            302537
+          ],
+          "source_face": 599624,
+          "patch_face": 870430,
+          "normal_jump_deg_unsigned": 81.54184466675382
+        },
+        {
+          "edge_vertex_ids": [
+            302537,
+            302539
+          ],
+          "source_face": 599643,
+          "patch_face": 870429,
+          "normal_jump_deg_unsigned": 67.07562340298057
+        },
+        {
+          "edge_vertex_ids": [
+            302539,
+            302540
+          ],
+          "source_face": 599644,
+          "patch_face": 870426,
+          "normal_jump_deg_unsigned": 62.36526720281467
+        },
+        {
+          "edge_vertex_ids": [
+            302540,
+            302544
+          ],
+          "source_face": 599649,
+          "patch_face": 870425,
+          "normal_jump_deg_unsigned": 61.530482595719086
+        },
+        {
+          "edge_vertex_ids": [
+            302544,
+            302551
+          ],
+          "source_face": 599650,
+          "patch_face": 870422,
+          "normal_jump_deg_unsigned": 57.93386479224847
+        },
+        {
+          "edge_vertex_ids": [
+            302551,
+            302553
+          ],
+          "source_face": 599671,
+          "patch_face": 870420,
+          "normal_jump_deg_unsigned": 63.63671314669188
+        },
+        {
+          "edge_vertex_ids": [
+            302553,
+            302554
+          ],
+          "source_face": 599672,
+          "patch_face": 870419,
+          "normal_jump_deg_unsigned": 61.53390274777124
+        },
+        {
+          "edge_vertex_ids": [
+            302554,
+            302558
+          ],
+          "source_face": 599675,
+          "patch_face": 870417,
+          "normal_jump_deg_unsigned": 53.638560629043965
+        },
+        {
+          "edge_vertex_ids": [
+            302558,
+            302564
+          ],
+          "source_face": 599681,
+          "patch_face": 870414,
+          "normal_jump_deg_unsigned": 64.89774195207842
+        },
+        {
+          "edge_vertex_ids": [
+            302564,
+            302565
+          ],
+          "source_face": 599682,
+          "patch_face": 870413,
+          "normal_jump_deg_unsigned": 61.08841148019128
+        },
+        {
+          "edge_vertex_ids": [
+            302565,
+            327422
+          ],
+          "source_face": 599695,
+          "patch_face": 870411,
+          "normal_jump_deg_unsigned": 50.684756260133796
+        },
+        {
+          "edge_vertex_ids": [
+            310993,
+            310994
+          ],
+          "source_face": 616430,
+          "patch_face": 869644,
+          "normal_jump_deg_unsigned": 50.94661924278403
+        },
+        {
+          "edge_vertex_ids": [
+            310994,
+            310996
+          ],
+          "source_face": 616435,
+          "patch_face": 869646,
+          "normal_jump_deg_unsigned": 51.933096065186376
+        },
+        {
+          "edge_vertex_ids": [
+            310996,
+            310997
+          ],
+          "source_face": 616436,
+          "patch_face": 869649,
+          "normal_jump_deg_unsigned": 47.232735579163325
+        },
+        {
+          "edge_vertex_ids": [
+            310997,
+            335749
+          ],
+          "source_face": 616439,
+          "patch_face": 869651,
+          "normal_jump_deg_unsigned": 48.47693535062477
+        },
+        {
+          "edge_vertex_ids": [
+            311014,
+            311017
+          ],
+          "source_face": 616479,
+          "patch_face": 869619,
+          "normal_jump_deg_unsigned": 49.085066135058206
+        },
+        {
+          "edge_vertex_ids": [
+            311017,
+            311042
+          ],
+          "source_face": 616479,
+          "patch_face": 869621,
+          "normal_jump_deg_unsigned": 49.21685437271416
+        },
+        {
+          "edge_vertex_ids": [
+            311093,
+            311096
+          ],
+          "source_face": 616633,
+          "patch_face": 869631,
+          "normal_jump_deg_unsigned": 58.253576382901834
+        },
+        {
+          "edge_vertex_ids": [
+            311096,
+            311102
+          ],
+          "source_face": 616633,
+          "patch_face": 869633,
+          "normal_jump_deg_unsigned": 56.94496293079808
+        },
+        {
+          "edge_vertex_ids": [
+            311102,
+            311103
+          ],
+          "source_face": 616653,
+          "patch_face": 869635,
+          "normal_jump_deg_unsigned": 71.71878891851439
+        },
+        {
+          "edge_vertex_ids": [
+            311103,
+            311105
+          ],
+          "source_face": 616653,
+          "patch_face": 869637,
+          "normal_jump_deg_unsigned": 68.9571738980384
+        },
+        {
+          "edge_vertex_ids": [
+            327422,
+            327424
+          ],
+          "source_face": 648795,
+          "patch_face": 870408,
+          "normal_jump_deg_unsigned": 62.94431389949871
+        },
+        {
+          "edge_vertex_ids": [
+            327424,
+            327425
+          ],
+          "source_face": 648796,
+          "patch_face": 870406,
+          "normal_jump_deg_unsigned": 56.517564769060286
+        },
+        {
+          "edge_vertex_ids": [
+            327444,
+            327445
+          ],
+          "source_face": 648843,
+          "patch_face": 870394,
+          "normal_jump_deg_unsigned": 59.244449007694755
+        },
+        {
+          "edge_vertex_ids": [
+            327445,
+            327450
+          ],
+          "source_face": 648843,
+          "patch_face": 870392,
+          "normal_jump_deg_unsigned": 60.17888899220019
+        },
+        {
+          "edge_vertex_ids": [
+            335764,
+            335809
+          ],
+          "source_face": 665268,
+          "patch_face": 869698,
+          "normal_jump_deg_unsigned": 77.38300824724979
+        },
+        {
+          "edge_vertex_ids": [
+            335764,
+            436600
+          ],
+          "source_face": 665268,
+          "patch_face": 869696,
+          "normal_jump_deg_unsigned": 74.48642174958152
+        },
+        {
+          "edge_vertex_ids": [
+            335769,
+            335770
+          ],
+          "source_face": 665276,
+          "patch_face": 869685,
+          "normal_jump_deg_unsigned": 45.55939037159096
+        },
+        {
+          "edge_vertex_ids": [
+            335819,
+            335821
+          ],
+          "source_face": 665386,
+          "patch_face": 869692,
+          "normal_jump_deg_unsigned": 73.08292267931314
+        },
+        {
+          "edge_vertex_ids": [
+            348461,
+            348462
+          ],
+          "source_face": 690303,
+          "patch_face": 870332,
+          "normal_jump_deg_unsigned": 58.64982251116489
+        },
+        {
+          "edge_vertex_ids": [
+            348463,
+            348474
+          ],
+          "source_face": 690318,
+          "patch_face": 870328,
+          "normal_jump_deg_unsigned": 56.57215106489935
+        },
+        {
+          "edge_vertex_ids": [
+            348474,
+            348475
+          ],
+          "source_face": 690319,
+          "patch_face": 870326,
+          "normal_jump_deg_unsigned": 62.20351634440057
+        },
+        {
+          "edge_vertex_ids": [
+            348475,
+            348476
+          ],
+          "source_face": 690343,
+          "patch_face": 870324,
+          "normal_jump_deg_unsigned": 51.114656087399155
+        },
+        {
+          "edge_vertex_ids": [
+            348476,
+            348487
+          ],
+          "source_face": 690346,
+          "patch_face": 870322,
+          "normal_jump_deg_unsigned": 72.95873780476477
+        },
+        {
+          "edge_vertex_ids": [
+            348487,
+            348488
+          ],
+          "source_face": 690347,
+          "patch_face": 870320,
+          "normal_jump_deg_unsigned": 67.51818215766345
+        },
+        {
+          "edge_vertex_ids": [
+            348488,
+            348489
+          ],
+          "source_face": 690351,
+          "patch_face": 870319,
+          "normal_jump_deg_unsigned": 53.79968209073387
+        },
+        {
+          "edge_vertex_ids": [
+            348492,
+            350276
+          ],
+          "source_face": 690378,
+          "patch_face": 870313,
+          "normal_jump_deg_unsigned": 46.927007240509276
+        },
+        {
+          "edge_vertex_ids": [
+            357329,
+            357331
+          ],
+          "source_face": 707938,
+          "patch_face": 869769,
+          "normal_jump_deg_unsigned": 56.28032186547394
+        },
+        {
+          "edge_vertex_ids": [
+            357330,
+            357332
+          ],
+          "source_face": 707951,
+          "patch_face": 869762,
+          "normal_jump_deg_unsigned": 63.22011866268603
+        },
+        {
+          "edge_vertex_ids": [
+            370095,
+            370102
+          ],
+          "source_face": 733103,
+          "patch_face": 870264,
+          "normal_jump_deg_unsigned": 83.49374574878367
+        },
+        {
+          "edge_vertex_ids": [
+            370102,
+            370103
+          ],
+          "source_face": 733103,
+          "patch_face": 870262,
+          "normal_jump_deg_unsigned": 86.48490625938449
+        },
+        {
+          "edge_vertex_ids": [
+            372059,
+            372060
+          ],
+          "source_face": 736971,
+          "patch_face": 870252,
+          "normal_jump_deg_unsigned": 52.03594132663462
+        },
+        {
+          "edge_vertex_ids": [
+            372060,
+            372071
+          ],
+          "source_face": 736971,
+          "patch_face": 870250,
+          "normal_jump_deg_unsigned": 50.540901813163835
+        },
+        {
+          "edge_vertex_ids": [
+            372120,
+            372124
+          ],
+          "source_face": 737101,
+          "patch_face": 870230,
+          "normal_jump_deg_unsigned": 53.646649443262
+        },
+        {
+          "edge_vertex_ids": [
+            372124,
+            372125
+          ],
+          "source_face": 737101,
+          "patch_face": 870228,
+          "normal_jump_deg_unsigned": 54.94120521026547
+        },
+        {
+          "edge_vertex_ids": [
+            372158,
+            372159
+          ],
+          "source_face": 737169,
+          "patch_face": 870220,
+          "normal_jump_deg_unsigned": 46.53175653049973
+        },
+        {
+          "edge_vertex_ids": [
+            372159,
+            372161
+          ],
+          "source_face": 737169,
+          "patch_face": 870218,
+          "normal_jump_deg_unsigned": 46.408928366491
+        },
+        {
+          "edge_vertex_ids": [
+            372867,
+            372868
+          ],
+          "source_face": 738557,
+          "patch_face": 870185,
+          "normal_jump_deg_unsigned": 77.20787992418539
+        },
+        {
+          "edge_vertex_ids": [
+            372867,
+            372869
+          ],
+          "source_face": 738557,
+          "patch_face": 870184,
+          "normal_jump_deg_unsigned": 74.68142351551604
+        },
+        {
+          "edge_vertex_ids": [
+            372874,
+            372875
+          ],
+          "source_face": 738569,
+          "patch_face": 870178,
+          "normal_jump_deg_unsigned": 45.02327408404996
+        },
+        {
+          "edge_vertex_ids": [
+            372874,
+            372876
+          ],
+          "source_face": 738570,
+          "patch_face": 870179,
+          "normal_jump_deg_unsigned": 46.320637007446706
+        },
+        {
+          "edge_vertex_ids": [
+            372875,
+            372884
+          ],
+          "source_face": 738571,
+          "patch_face": 870175,
+          "normal_jump_deg_unsigned": 59.609243504467756
+        },
+        {
+          "edge_vertex_ids": [
+            372884,
+            372885
+          ],
+          "source_face": 738587,
+          "patch_face": 870173,
+          "normal_jump_deg_unsigned": 58.8033043901653
+        },
+        {
+          "edge_vertex_ids": [
+            372885,
+            372887
+          ],
+          "source_face": 738588,
+          "patch_face": 870172,
+          "normal_jump_deg_unsigned": 57.88190052745326
+        },
+        {
+          "edge_vertex_ids": [
+            372887,
+            372893
+          ],
+          "source_face": 738593,
+          "patch_face": 870170,
+          "normal_jump_deg_unsigned": 48.49162936723935
+        },
+        {
+          "edge_vertex_ids": [
+            372893,
+            372895
+          ],
+          "source_face": 738605,
+          "patch_face": 870167,
+          "normal_jump_deg_unsigned": 50.56319121400653
+        },
+        {
+          "edge_vertex_ids": [
+            372895,
+            372896
+          ],
+          "source_face": 738606,
+          "patch_face": 870165,
+          "normal_jump_deg_unsigned": 51.07885040646928
+        },
+        {
+          "edge_vertex_ids": [
+            374000,
+            374002
+          ],
+          "source_face": 740822,
+          "patch_face": 870146,
+          "normal_jump_deg_unsigned": 51.66943162145749
+        },
+        {
+          "edge_vertex_ids": [
+            374002,
+            374003
+          ],
+          "source_face": 740822,
+          "patch_face": 870144,
+          "normal_jump_deg_unsigned": 51.0067286450972
+        },
+        {
+          "edge_vertex_ids": [
+            377446,
+            377448
+          ],
+          "source_face": 747606,
+          "patch_face": 869859,
+          "normal_jump_deg_unsigned": 70.90028121708694
+        },
+        {
+          "edge_vertex_ids": [
+            377449,
+            377507
+          ],
+          "source_face": 747612,
+          "patch_face": 869863,
+          "normal_jump_deg_unsigned": 49.17171176838634
+        },
+        {
+          "edge_vertex_ids": [
+            377463,
+            377514
+          ],
+          "source_face": 747642,
+          "patch_face": 869816,
+          "normal_jump_deg_unsigned": 86.52275447500418
+        },
+        {
+          "edge_vertex_ids": [
+            396247,
+            396249
+          ],
+          "source_face": 784817,
+          "patch_face": 870127,
+          "normal_jump_deg_unsigned": 59.660251160395376
+        },
+        {
+          "edge_vertex_ids": [
+            396249,
+            396250
+          ],
+          "source_face": 784817,
+          "patch_face": 870125,
+          "normal_jump_deg_unsigned": 60.27664684260979
+        },
+        {
+          "edge_vertex_ids": [
+            397909,
+            397912
+          ],
+          "source_face": 784934,
+          "patch_face": 870100,
+          "normal_jump_deg_unsigned": 45.6978452077125
+        },
+        {
+          "edge_vertex_ids": [
+            397968,
+            397975
+          ],
+          "source_face": 788218,
+          "patch_face": 870068,
+          "normal_jump_deg_unsigned": 65.84381034767941
+        },
+        {
+          "edge_vertex_ids": [
+            397978,
+            397984
+          ],
+          "source_face": 788239,
+          "patch_face": 870062,
+          "normal_jump_deg_unsigned": 46.85982979056145
+        },
+        {
+          "edge_vertex_ids": [
+            397985,
+            397988
+          ],
+          "source_face": 788247,
+          "patch_face": 870056,
+          "normal_jump_deg_unsigned": 58.53817333298299
+        },
+        {
+          "edge_vertex_ids": [
+            401053,
+            401054
+          ],
+          "source_face": 794425,
+          "patch_face": 869980,
+          "normal_jump_deg_unsigned": 82.19408035991525
+        },
+        {
+          "edge_vertex_ids": [
+            401053,
+            401079
+          ],
+          "source_face": 794425,
+          "patch_face": 869982,
+          "normal_jump_deg_unsigned": 80.54012195218667
+        },
+        {
+          "edge_vertex_ids": [
+            401100,
+            401114
+          ],
+          "source_face": 794518,
+          "patch_face": 869960,
+          "normal_jump_deg_unsigned": 48.568177777715704
+        },
+        {
+          "edge_vertex_ids": [
+            402460,
+            402461
+          ],
+          "source_face": 797198,
+          "patch_face": 869914,
+          "normal_jump_deg_unsigned": 86.8342954837127
+        },
+        {
+          "edge_vertex_ids": [
+            402460,
+            402470
+          ],
+          "source_face": 797198,
+          "patch_face": 869912,
+          "normal_jump_deg_unsigned": 85.6692070436313
+        },
+        {
+          "edge_vertex_ids": [
+            402480,
+            402481
+          ],
+          "source_face": 797240,
+          "patch_face": 869904,
+          "normal_jump_deg_unsigned": 75.21497206561556
+        },
+        {
+          "edge_vertex_ids": [
+            402480,
+            402482
+          ],
+          "source_face": 797240,
+          "patch_face": 869902,
+          "normal_jump_deg_unsigned": 75.91962351767091
+        },
+        {
+          "edge_vertex_ids": [
+            404026,
+            404061
+          ],
+          "source_face": 800365,
+          "patch_face": 869870,
+          "normal_jump_deg_unsigned": 51.74823933641146
+        }
+      ]
+    }
+  },
+  "projection_confinement": {
+    "interior_patch_vertices_tested": 66049,
+    "inside_xy_ring_projection": 64770,
+    "outside_xy_ring_projection": 1279,
+    "pass": false
+  },
+  "bounds": {
+    "base_min_mm": [
+      -76.07909885516911,
+      -54.462114620423485,
+      -69.89569752776242
+    ],
+    "base_max_mm": [
+      123.92090114483088,
+      142.977262152103,
+      89.27757458909063
+    ],
+    "candidate_min_mm": [
+      -76.07909885516911,
+      -54.462114620423485,
+      -69.89569752776242
+    ],
+    "candidate_max_mm": [
+      123.92090114483088,
+      142.977262152103,
+      89.27757458909063
+    ],
+    "bbox_expansion_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "no_new_x_y_extrema": true,
+    "z_not_below_existing_minimum": true
+  },
+  "triangulation": {
+    "new_vertices": 66049,
+    "new_faces": 133472,
+    "surface_area_mm2": 19152.417687260044,
+    "edge_length_mm_percentiles": [
+      0.043816230459303614,
+      0.2941873179688474,
+      0.7200109757100688,
+      1.138529352372116,
+      3.2781285125851016
+    ],
+    "edge_aspect_ratio_percentiles": [
+      2.472944805680937,
+      3.7911292307891657,
+      4.744487494979121,
+      30.47400408564309
+    ],
+    "degenerate_faces": 0
+  },
+  "other_depth_layers": {
+    "r14_adjacent_same_layer_counter_ring_found": false,
+    "r14_centroid_to_nearest_seed_vertex_mm": 59.2120366582587,
+    "complete_patch_source_crossing_scan": true,
+    "confirmed_strict_crossings": 45,
+    "pass": false,
+    "reason": "45 strict source/patch crossings remain even at the existing minimum-Z floor; lowering farther would violate the hard Z bound."
+  },
+  "status": "FAIL_OTHER_DEPTH_LAYER_INTERSECTIONS_AND_NORMAL_TRANSITION"
+}

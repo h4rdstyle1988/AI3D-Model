@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-UNDERSIDE-CLOSURE-R15.md",
+  "gate_1_precondition": "FAIL",
+  "existing_seed_correspondence": {
+    "retained_r14_main_faces": 868709,
+    "retained_vertex_coordinates_exact": true,
+    "identity_surface_distance_mm": {
+      "p95": 0.0,
+      "maximum": 0.0
+    },
+    "r14_limits_mm": {
+      "p95_max": 0.15,
+      "maximum_max": 0.4
+    },
+    "status": "PASS_EXACT_IDENTITY_FOR_RETAINED_SURFACE_ONLY"
+  },
+  "confirmed_source_hole_patch": {
+    "seed_distance_rule_applied": false,
+    "replacement_criteria_report": "outputs/herbst-igel-r02-underside-closure-r15/audits/underside-boundary-normal-depth-audit-r15.json",
+    "status": "FAIL_INTERSECTIONS"
+  },
+  "formal_bidirectional_visible_surface_gate": "NOT_RUN_BY_GATE1_FAIL",
+  "formal_silhouette_gate": "NOT_RUN_BY_GATE1_FAIL",
+  "gate_2": "NOT_RUN"
+}

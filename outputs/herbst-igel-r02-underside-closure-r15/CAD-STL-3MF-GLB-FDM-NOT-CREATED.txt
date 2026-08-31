@@ -1,0 +1,1 @@
+Gate 1 failed after five depth-guided underside variants and three whole-surface topology attempts. No approved master, CAD split, hollow shell, connector, STL, 3MF, GLB, slicer profile or FDM validation was created.

@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-UNDERSIDE-CLOSURE-R15.md",
+  "task_blob_sha": "6f36e00693a3f9ad6859b43450a5a77316fa9254",
+  "revision": "R02/R15",
+  "status": "STOPP",
+  "files": [
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/confirmed-source-hole-mask-r15.json",
+      "bytes": 41194,
+      "sha256": "de7f8570dadf73d12e4cd4f5e3de13ea3e74932142d5ef43fb417b4743990b33"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/gate1-harmonic-closure-r15.json",
+      "bytes": 7343071,
+      "sha256": "43f460494330f9412b45ed3786c1ced7b6af7c4791f63f756c536ccf5b0acaaf"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/r15-input-audit.json",
+      "bytes": 1322658,
+      "sha256": "e4b87f01431ba5bf2f1a23038c6a9427df1ef5f0d5750579c8cbdb4bc166eb6d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/self-intersection-audit-attempt-a-r15.json",
+      "bytes": 53482,
+      "sha256": "7ad5c072cf5ba57061569b51b7b0f0cd396180bbb8414ea0607c87aa06b9f69c"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/self-intersection-audit-r15.json",
+      "bytes": 53393,
+      "sha256": "5a20a3309341f314f11d99c1d8dc06cd5287e304a7afa532fce651233faa6465"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/topology-before-after-r15.json",
+      "bytes": 7668,
+      "sha256": "e5c0a1f337325abd8cb614f3fe698a483fe1cee79b63dfbfa4fcb7597150f638"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/underside-boundary-normal-depth-audit-r15.json",
+      "bytes": 86187,
+      "sha256": "536ede8f4c3c87bdbb83a432dbec80de7f1424058886c73309070a2883d025e4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/underside-d1-intersection-audit-r15.json",
+      "bytes": 53574,
+      "sha256": "1d9cab07bc5ef360d6f1e40d14808840479e71db67a017e17bce22ead47e26b3"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/underside-d2-intersection-audit-r15.json",
+      "bytes": 53536,
+      "sha256": "1c1066a528c9214f8e17a5f4805d8e0340d8de52dbfb100954ae4d322dd50a3b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/underside-d3-intersection-audit-r15.json",
+      "bytes": 53452,
+      "sha256": "b8137b980c789cf85cfb24a7a5ed06589aefb97a76b2ed9a5ce76c385cd20b1e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/underside-d4-intersection-audit-r15.json",
+      "bytes": 48280,
+      "sha256": "b8b7ed83900b34d58c6f589edce0506f6076302516ce30fe8fe4a611973f368c"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/underside-d5-intersection-audit-r15.json",
+      "bytes": 53567,
+      "sha256": "020b9aed04b8cfd25836e8b395c66a642173d1657b6663ffe9d9384f13a52519"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/underside-depth-variant-build-r15.json",
+      "bytes": 8012,
+      "sha256": "df4da8d6af41205cd9b07f6f9328e9414bcb241c4553dc61490ec4f0403fdc25"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/audits/underside-patch-intersection-audit-r15.json",
+      "bytes": 53454,
+      "sha256": "894a77942e11f4cbe7a85404ee0f6f3f591153ad7ccf3f5b4cc8f5f389b882d7"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/CAD-STL-3MF-GLB-FDM-NOT-CREATED.txt",
+      "bytes": 218,
+      "sha256": "e151dba5a8d6d1795d447e54a1cf12077472415ae58a34325b388b6352594842"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/diagnostics/attempt-a-3q.png",
+      "bytes": 830788,
+      "sha256": "dd29d8513ab43bc484a4e78b34a58e7e253aaa98a573901fc978909d1791e95e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/diagnostics/attempt-a-bottom.png",
+      "bytes": 814402,
+      "sha256": "75c9cb84f0d06928b6c02eb8c7ce56692bc223c8cb311cdf1f4bb5a25a170b64"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/diagnostics/attempt-b-3q.png",
+      "bytes": 804349,
+      "sha256": "0e639e78d9c8d5e519c66a50ba93429ef7d0fe9431302dbc6ec54a7ab8fc1c73"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/diagnostics/attempt-b-bottom.png",
+      "bytes": 833366,
+      "sha256": "529112b30530501c6a48412520358f507c2489ce0fbcbdc7657f3d01df0d5521"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/inputs/boundary-loop-audit-r14.json",
+      "bytes": 1333067,
+      "sha256": "8bf01541936ac8d02d09e254b4f6cc2c7e4a35c861b5b163a06de2ba46b2f621"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/inputs/r14-local-surgery-input.ply",
+      "bytes": 16539912,
+      "sha256": "f6c82635080a5c97c350ba80e18dbda79424f34542ca3f87e66a7d9d665cb1c2"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/inputs/ref-clean-r15.jpg",
+      "bytes": 17344,
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/inputs/ref-seam-r15.jpg",
+      "bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/inputs/topology-audit-r14.json",
+      "bytes": 2190,
+      "sha256": "e34367896da7b2053376fd6a14118de3f4c823e03e153b36ac06307886114a95"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/masterform/herbst-igel-r02-r15-gate1-candidate-c.ply",
+      "bytes": 39919061,
+      "sha256": "c7dc05c11d8bade772e0d35d812c304b7d669567b5a0b1c78440fb8734ad2e5d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/masterform/herbst-igel-r02-r15-gate1-candidate.ply",
+      "bytes": 37049386,
+      "sha256": "0d92267d0d43cc72d2359eaf214893f201fad6388434ce18e0c9facd48220b62"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/masterform/r15-attempt-a-harmonic-closure-NON-APPROVED.ply",
+      "bytes": 20134556,
+      "sha256": "f5f56cdfe2bbed495ca2c6dd896fbcdad1221503ae9a9c9d70de364ace332579"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/masterform/r15-underside-d1-PARTIAL-NON-APPROVED.ply",
+      "bytes": 19061425,
+      "sha256": "0c33a43e557aad0ad8696e6c0c7e7af4046120c94a73e7474fc74d730cfdf7e8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/masterform/r15-underside-d2-PARTIAL-NON-APPROVED.ply",
+      "bytes": 19061425,
+      "sha256": "7ad61c55e81d142542cf9674f2314837da43f141f5acf3ae590cc4b7a71e85b0"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/masterform/r15-underside-d3-PARTIAL-NON-APPROVED.ply",
+      "bytes": 19061425,
+      "sha256": "9ae1118eecf78af593a65455ee424734b101ddec5e5f6152deed1f435b071159"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/masterform/r15-underside-d4-PARTIAL-NON-APPROVED.ply",
+      "bytes": 19061425,
+      "sha256": "6595ecf4f150e12aad5651726b823f5206613d93a5072509b990c6d42543d3ee"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/masterform/r15-underside-d5-PARTIAL-NON-APPROVED.ply",
+      "bytes": 19061425,
+      "sha256": "7cde13b7d7fbcc9956969e62b495f18f4ce455c4da711cfc011693253323051d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-3q-front.png",
+      "bytes": 889381,
+      "sha256": "66b351f69b9269abbebcc963879196e8f131ae215f75086da7aea4149ff5dcd7"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-bottom.png",
+      "bytes": 779688,
+      "sha256": "5b7fc8d66a0340c5b57f62c655b52b9da39f97420e03ae28d73465a371071d28"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-contact-sheet.png",
+      "bytes": 5009951,
+      "sha256": "b171f53497eee58de854afd01265591a7d33cf788c131755c8cb0cff967c9912"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-left.png",
+      "bytes": 808483,
+      "sha256": "3db8fe7880e19d47012d195c760fbb6a669f1dd8b7a2c29fd04a22761237243a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-rear.png",
+      "bytes": 787439,
+      "sha256": "cd9ea209b41c631183a48418194f96c1c13d0e3f9effac2af1ecf4ddf4d4356f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-right.png",
+      "bytes": 786979,
+      "sha256": "4a49a9e04de4af0de4eee6807cb6ca02e57554d089a8637f881ed06cd8c14261"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/partial-r15-top.png",
+      "bytes": 808190,
+      "sha256": "df754c07f362f2afce03f77aaf61858e0375a38c0d874ad40a4134c681938ccf"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/renders-gate-evidence/soll-ist-r15.png",
+      "bytes": 3751447,
+      "sha256": "9f5b1bc35b813d5908e5b6e83d2e3e841a9c7f759e3bec4b6d97c3637eef4159"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/reports/evidence-validation-r15.json",
+      "bytes": 5234,
+      "sha256": "c44cc1443269ad927d88298e348fbce8290837ddbb3b2211dd83653a77f0db22"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/reports/form-protection-split-r15.json",
+      "bytes": 903,
+      "sha256": "d5036cedebd5e3bd8cc51aaae243efc60330c0b32fa0febc50510c52f2ff1fca"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/reports/real-geometry-renders-r15.json",
+      "bytes": 1984,
+      "sha256": "c0efff5c24e298a3080c0ac57a2ce40cd8612ce5434c6c950add622997adfb7e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/reports/soll-ist-binary-r15.json",
+      "bytes": 1718,
+      "sha256": "ae453fa75b22e3e49b96e86a43e9c50471533833d4c8726334a19e692048d1f6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/reproduction-scripts/__pycache__/build_r15_gate1.cpython-312.pyc",
+      "bytes": 32749,
+      "sha256": "f516cb881aa91023b51fe51d9c9be57eb8584b6ff6394739424a909168afc7f6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/reproduction-scripts/__pycache__/r15_mesh_core.cpython-312.pyc",
+      "bytes": 24318,
+      "sha256": "f1f863c7c85282784ebab24cad1cf01b284204c125b5d9c16151f93e1d889979"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/reproduction-scripts/analyze_r15_input.py",
+      "bytes": 4380,
+      "sha256": "c7f3c196c1ca6353497e31c1ea3d3c7ad661e6d8c56fc4774f65ae509fa3e5fe"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/reproduction-scripts/audit_r15_intersections.py",
+      "bytes": 11748,
+      "sha256": "78000526cf77e789c894f4dc29463113e2e1085a13bd7ea093dfc136e9294a34"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/reproduction-scripts/build_r15_gate1.py",
+      "bytes": 23248,
+      "sha256": "00b37d3162af98652ca6979edb36bc5d19a57dc26c3b572fd37c0bba8efee01b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/reproduction-scripts/build_r15_underside_variants.py",
+      "bytes": 4213,
+      "sha256": "589f816165d127d2ce3c4a92f73819ccae04df1a2d4a092fb75a0c630273c3dd"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/reproduction-scripts/finalize_r15.py",
+      "bytes": 19439,
+      "sha256": "d6fea2706bda19d940e7a26de9b1153ac8f146ed23495d9c288ec52d6be3b7d6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/reproduction-scripts/r15_mesh_core.py",
+      "bytes": 13632,
+      "sha256": "961475d5ae3124df702c243e98d8d488c09ef0a9036840b588831e46c9294907"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/reproduction-scripts/validate_r15.py",
+      "bytes": 6233,
+      "sha256": "2198977e4c25f384051a77693bbf3e0006b85208745566dee7775464d4d603f7"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/REPRODUKTION-R15.md",
+      "bytes": 941,
+      "sha256": "2ddfc69d12a48a8b1343ee8bf95004791188aaf7b503b373c9ad56c724559471"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/result-status.json",
+      "bytes": 1804,
+      "sha256": "774f8c92e9680ec437060a55ccfc7a0bb7d6497c03bfe2d8da6fda72f1d9df61"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/REVISION-R02-R15.md",
+      "bytes": 1394,
+      "sha256": "2b91c491bc261294b65210073209f53f1d6f44ca1c53830408efa372a68e654a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/toolchain-preflight.json",
+      "bytes": 2916,
+      "sha256": "2859fdef1ed46c57a8ab2bbdff9fe9f6b8d22d33aef77a206b01b812d7e49cc4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-underside-closure-r15/VALIDIERUNG-R02-R15.json",
+      "bytes": 1732,
+      "sha256": "dcc345170251bc4220305105eac9f1ba5256dc051984bbf35ae30dd5ebd98baf"
+    }
+  ],
+  "manifest_excludes_self": true
+}

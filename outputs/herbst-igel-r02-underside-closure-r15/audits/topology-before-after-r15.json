@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-UNDERSIDE-CLOSURE-R15.md",
+  "before_r14_all_components": {
+    "vertices": 436928,
+    "used_vertices": 436928,
+    "triangles": 868969,
+    "boundary_edges": 9631,
+    "nonmanifold_edges": 0,
+    "max_edge_incidence": 2,
+    "degenerate_faces": 0,
+    "connected_face_surfaces": 127,
+    "largest_surface_faces": 868709,
+    "surface_area_normalized2": 1.1090443537945784,
+    "surface_area_mm2": 112324.28336350765,
+    "bounds_min": [
+      -0.23905783891677856,
+      -0.17113235592842102,
+      -0.21962818503379822
+    ],
+    "bounds_max": [
+      0.38938766717910767,
+      0.44926708936691284,
+      0.2805304527282715
+    ],
+    "bounds_min_mm": [
+      -76.07909885516911,
+      -54.462114620423485,
+      -69.89569752776242
+    ],
+    "bounds_max_mm": [
+      123.92090114483088,
+      142.977262152103,
+      89.27757458909063
+    ]
+  },
+  "before_r14_dominant_surface": {
+    "vertices": 436692,
+    "used_vertices": 436692,
+    "triangles": 868709,
+    "boundary_edges": 9527,
+    "nonmanifold_edges": 0,
+    "max_edge_incidence": 2,
+    "degenerate_faces": 0,
+    "connected_face_surfaces": 1,
+    "largest_surface_faces": 868709,
+    "surface_area_normalized2": 1.1087124307250797,
+    "surface_area_mm2": 112290.66611385871,
+    "bounds_min": [
+      -0.23905783891677856,
+      -0.17113235592842102,
+      -0.21962818503379822
+    ],
+    "bounds_max": [
+      0.38938766717910767,
+      0.44926708936691284,
+      0.2805304527282715
+    ],
+    "bounds_min_mm": [
+      -76.07909885516911,
+      -54.462114620423485,
+      -69.89569752776242
+    ],
+    "bounds_max_mm": [
+      123.92090114483088,
+      142.977262152103,
+      89.27757458909063
+    ]
+  },
+  "after_best_underside_only_variant_d4": {
+    "vertices": 502741,
+    "used_vertices": 502741,
+    "triangles": 1002181,
+    "boundary_edges": 8151,
+    "nonmanifold_edges": 0,
+    "max_edge_incidence": 2,
+    "degenerate_faces": 0,
+    "connected_face_surfaces": 1,
+    "largest_surface_faces": 1002181,
+    "surface_area_normalized2": 1.2978156242778995,
+    "surface_area_mm2": 131443.08380111877,
+    "bounds_min": [
+      -0.23905783891677856,
+      -0.17113235592842102,
+      -0.21962818503379822
+    ],
+    "bounds_max": [
+      0.38938766717910767,
+      0.44926708936691284,
+      0.2805304527282715
+    ],
+    "bounds_min_mm": [
+      -76.07909885516911,
+      -54.462114620423485,
+      -69.89569752776242
+    ],
+    "bounds_max_mm": [
+      123.92090114483088,
+      142.977262152103,
+      89.27757458909063
+    ]
+  },
+  "after_best_underside_only_orientation": {
+    "orientable": false,
+    "orientation_constraint_conflicts": 6751
+  },
+  "after_best_underside_only_confirmed_strict_crossings": 45,
+  "self_correction_attempts": {
+    "A_all_harmonic_closures": {
+      "metrics": {
+        "vertices": 528916,
+        "used_vertices": 528916,
+        "triangles": 1060568,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "max_edge_incidence": 2,
+        "degenerate_faces": 0,
+        "connected_face_surfaces": 1,
+        "largest_surface_faces": 1060568,
+        "surface_area_normalized2": 1.2936710806908938,
+        "surface_area_mm2": 131023.32341309961,
+        "bounds_min": [
+          -0.23905783891677856,
+          -0.17113235592842102,
+          -0.21962818503379822
+        ],
+        "bounds_max": [
+          0.38938766717910767,
+          0.44926708936691284,
+          0.2805304527282715
+        ],
+        "bounds_min_mm": [
+          -76.07909885516911,
+          -54.462114620423485,
+          -69.89569752776242
+        ],
+        "bounds_max_mm": [
+          123.92090114483088,
+          142.977262152103,
+          89.27757458909063
+        ]
+      },
+      "orientation": {
+        "orientable": false,
+        "orientation_constraint_conflicts": 11585,
+        "conflict_faces": 21794
+      }
+    },
+    "B_broad_conflict_surgery": {
+      "metrics": {
+        "vertices": 974546,
+        "used_vertices": 974546,
+        "triangles": 1950358,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "max_edge_incidence": 2,
+        "degenerate_faces": 0,
+        "connected_face_surfaces": 1,
+        "largest_surface_faces": 1950358,
+        "surface_area_normalized2": 1.9002353411855142,
+        "surface_area_mm2": 192456.30004821974,
+        "bounds_min": [
+          -0.23905783891677856,
+          -0.17113235592842102,
+          -0.21962818503379822
+        ],
+        "bounds_max": [
+          0.38938766717910767,
+          0.44926708936691284,
+          0.2805304527282715
+        ],
+        "bounds_min_mm": [
+          -76.07909885516911,
+          -54.462114620423485,
+          -69.89569752776242
+        ],
+        "bounds_max_mm": [
+          123.92090114483088,
+          142.977262152103,
+          89.27757458909063
+        ]
+      },
+      "orientation": {
+        "orientable": true,
+        "orientation_constraint_conflicts": 0,
+        "conflict_faces": 0
+      },
+      "confirmed_crossings": 50
+    },
+    "C_greedy_conflict_cover": {
+      "metrics": {
+        "vertices": 1049944,
+        "used_vertices": 1049944,
+        "triangles": 2101504,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "max_edge_incidence": 2,
+        "degenerate_faces": 0,
+        "connected_face_surfaces": 1,
+        "largest_surface_faces": 2101504,
+        "surface_area_normalized2": 1.941306564597272,
+        "surface_area_mm2": 196616.00359912272,
+        "bounds_min": [
+          -0.23905783891677856,
+          -0.17113235592842102,
+          -0.21962818503379822
+        ],
+        "bounds_max": [
+          0.38938766717910767,
+          0.44926708936691284,
+          0.2805304527282715
+        ],
+        "bounds_min_mm": [
+          -76.07909885516911,
+          -54.462114620423485,
+          -69.89569752776242
+        ],
+        "bounds_max_mm": [
+          123.92090114483088,
+          142.977262152103,
+          89.27757458909063
+        ]
+      },
+      "orientation": {
+        "orientable": true,
+        "orientation_constraint_conflicts": 0,
+        "conflict_faces": 0
+      },
+      "surgery": {
+        "conflict_edges_before": 6351,
+        "greedy_vertex_cover_faces_removed": 5909,
+        "faces_after_component_selection": 861476,
+        "discarded_faces_total": 7233,
+        "zero_displacement_bowtie_splits": 4659,
+        "boundary_edges_after": 23720,
+        "boundary_loops_after": 979,
+        "non_simple_boundary_vertices_after": 0,
+        "orientable_after": true,
+        "orientation_conflicts_after": 0,
+        "vertices_retained_after_compaction": 440811
+      },
+      "rejection": "two non-underside global cut loops of 4502/4435 edges and ~2624/2602 mm perimeter require forbidden global caps; surface area inflates pathologically"
+    },
+    "D_underside_depth_variants": "d1-d5; all have confirmed strict source/patch crossings, d4 complete scan found 45"
+  },
+  "gate_1": "FAIL",
+  "failure_reasons": [
+    "best underside-only variant still has 8151 boundary edges outside the confirmed source hole",
+    "best underside-only variant remains non-orientable with 6751 conflicts",
+    "45 strict source/patch crossings confirmed in the complete d4 underside-patch scan",
+    "orientable attempts B/C require nonlocal global cut closure, have severe normal discontinuities and pathological area inflation"
+  ]
+}

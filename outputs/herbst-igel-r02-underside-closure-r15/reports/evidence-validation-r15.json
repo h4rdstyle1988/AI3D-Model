@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-UNDERSIDE-CLOSURE-R15.md",
+  "task_blob_sha": "6f36e00693a3f9ad6859b43450a5a77316fa9254",
+  "evidence_status": "PASS",
+  "product_status": "STOPP",
+  "checks": [
+    {
+      "check": "task_blob_sha",
+      "pass": true,
+      "detail": "6f36e00693a3f9ad6859b43450a5a77316fa9254"
+    },
+    {
+      "check": "input_hash_r14-local-surgery-input.ply",
+      "pass": true,
+      "detail": "f6c82635080a5c97c350ba80e18dbda79424f34542ca3f87e66a7d9d665cb1c2"
+    },
+    {
+      "check": "input_hash_ref-clean-r15.jpg",
+      "pass": true,
+      "detail": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "check": "input_hash_ref-seam-r15.jpg",
+      "pass": true,
+      "detail": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "check": "required_VALIDIERUNG-R02-R15.json",
+      "pass": true,
+      "detail": 1732
+    },
+    {
+      "check": "required_result-status.json",
+      "pass": true,
+      "detail": 1804
+    },
+    {
+      "check": "required_REVISION-R02-R15.md",
+      "pass": true,
+      "detail": 1394
+    },
+    {
+      "check": "required_REPRODUKTION-R15.md",
+      "pass": true,
+      "detail": 941
+    },
+    {
+      "check": "required_CAD-STL-3MF-GLB-FDM-NOT-CREATED.txt",
+      "pass": true,
+      "detail": 218
+    },
+    {
+      "check": "required_audits/confirmed-source-hole-mask-r15.json",
+      "pass": true,
+      "detail": 41194
+    },
+    {
+      "check": "required_audits/r15-input-audit.json",
+      "pass": true,
+      "detail": 1322658
+    },
+    {
+      "check": "required_audits/gate1-harmonic-closure-r15.json",
+      "pass": true,
+      "detail": 7343071
+    },
+    {
+      "check": "required_audits/topology-before-after-r15.json",
+      "pass": true,
+      "detail": 7668
+    },
+    {
+      "check": "required_audits/underside-boundary-normal-depth-audit-r15.json",
+      "pass": true,
+      "detail": 86187
+    },
+    {
+      "check": "required_audits/underside-d4-intersection-audit-r15.json",
+      "pass": true,
+      "detail": 48280
+    },
+    {
+      "check": "required_reports/form-protection-split-r15.json",
+      "pass": true,
+      "detail": 903
+    },
+    {
+      "check": "required_reports/real-geometry-renders-r15.json",
+      "pass": true,
+      "detail": 1984
+    },
+    {
+      "check": "required_reports/soll-ist-binary-r15.json",
+      "pass": true,
+      "detail": 1718
+    },
+    {
+      "check": "required_masterform/r15-underside-d4-PARTIAL-NON-APPROVED.ply",
+      "pass": true,
+      "detail": 19061425
+    },
+    {
+      "check": "required_renders-gate-evidence/partial-r15-contact-sheet.png",
+      "pass": true,
+      "detail": 5009951
+    },
+    {
+      "check": "required_renders-gate-evidence/soll-ist-r15.png",
+      "pass": true,
+      "detail": 3751447
+    },
+    {
+      "check": "required_toolchain-preflight.json",
+      "pass": true,
+      "detail": 2916
+    },
+    {
+      "check": "status_stopp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "gate1_fail",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "confirmed_crossings",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "boundary_fixed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "manufacturing_all_false",
+      "pass": true,
+      "detail": {
+        "approved_master_created": false,
+        "cad_created": false,
+        "split_created": false,
+        "hollow_shells_created": false,
+        "connector_created": false,
+        "stl_created": false,
+        "three_mf_created": false,
+        "glb_created": false,
+        "fdm_validation_run": false
+      }
+    },
+    {
+      "check": "no_user_decision",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "no_final_approval",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "manufacturing_artifacts_absent",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "six_real_renders",
+      "pass": true,
+      "detail": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "check": "reproduction_script_syntax",
+      "pass": true,
+      "detail": [
+        {
+          "script": "analyze_r15_input.py",
+          "pass": true
+        },
+        {
+          "script": "audit_r15_intersections.py",
+          "pass": true
+        },
+        {
+          "script": "build_r15_gate1.py",
+          "pass": true
+        },
+        {
+          "script": "build_r15_underside_variants.py",
+          "pass": true
+        },
+        {
+          "script": "finalize_r15.py",
+          "pass": true
+        },
+        {
+          "script": "r15_mesh_core.py",
+          "pass": true
+        },
+        {
+          "script": "validate_r15.py",
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "note": "Evidence PASS verifies the STOPP package; it is not a product, mesh, print or user approval."
+}
