@@ -15,7 +15,7 @@ param(
 
 $ErrorActionPreference = "Continue"
 $PSDefaultParameterValues["*:ErrorAction"] = "Stop"
-$WatcherVersion = "R03.9"
+$WatcherVersion = "R03.10"
 $env:GIT_TERMINAL_PROMPT = "0"
 
 if ($PollSeconds -lt 5) { throw "PollSeconds muss mindestens 5 sein." }
@@ -388,27 +388,30 @@ function Get-TaskBranch {
 
 function Try-RecoverLocalResult {
     param($Task,[string]$Branch,$State)
-    $exists = (& git -C $WorkerDir show-ref --verify --quiet "refs/heads/$Branch"; $LASTEXITCODE)
-    if ([int]$exists -ne 0) { return $false }
 
-    $commit = (& git -C $WorkerDir rev-parse $Branch | Out-String).Trim()
+    & git.exe -C $WorkerDir show-ref --verify --quiet "refs/heads/$Branch"
+    if ($LASTEXITCODE -ne 0) { return $false }
+
+    $commit = (& git.exe -C $WorkerDir rev-parse $Branch | Out-String).Trim()
     if (-not $commit) { return $false }
-    $subject = (& git -C $WorkerDir log -1 --format=%s $commit | Out-String).Trim()
+
+    $subject = (& git.exe -C $WorkerDir log -1 --format=%s $commit | Out-String).Trim()
     $expectedSubject = "Ruediger result for $($Task.path)"
     if ($subject -ne $expectedSubject) { return $false }
 
-    & git -C $WorkerDir merge-base --is-ancestor origin/master $commit 2>$null
-    if ($LASTEXITCODE -ne 0) { return $false }
+    $commitTaskBlob = (& git.exe -C $WorkerDir rev-parse "${commit}:$($Task.path)" 2>$null | Out-String).Trim()
+    if ($LASTEXITCODE -ne 0 -or -not $commitTaskBlob -or $commitTaskBlob -ne $Task.blob) { return $false }
 
     Invoke-GitSafe -GitArgs @("-C",$WorkerDir,"checkout",$Branch) | Out-Null
-    if ((& git -C $WorkerDir status --porcelain | Out-String).Trim()) {
+    if ((& git.exe -C $WorkerDir status --porcelain | Out-String).Trim()) {
         throw "Lokales abgeschlossenes Ergebnis ist unerwartet dirty: $Branch"
     }
 
-    Publish-Status -Phase "PUSH_RETRY" -Task $Task -Branch $Branch -Detail "Lokales abgeschlossenes Ergebnis erkannt; nur Remote-Push wird wiederholt."
+    Publish-Status -Phase "PUSH_RETRY" -Task $Task -Branch $Branch -Detail "Lokales abgeschlossenes Ergebnis zur exakten Task-Revision erkannt; nur Remote-Push wird wiederholt."
     Write-Log "PUSH_RETRY: vorhandenes lokales Ergebnis wird wiederverwendet: $Branch @ $commit"
     Invoke-GitSafe -GitArgs @("-C",$WorkerDir,"push","-u","origin",$Branch,"--force-with-lease") -Retries $FetchRetryCount | Out-Null
     $sha = Verify-Remote $Branch
+    if ($sha -ne $commit) { throw "Recovery-Remote-SHA weicht vom lokalen Ergebnis ab: lokal=$commit remote=$sha" }
 
     $State.processed += [pscustomobject]@{
         key=$Task.key;task=$Task.path;blob=$Task.blob;source=$Task.source;
