@@ -15,7 +15,8 @@ param(
 
 $ErrorActionPreference = "Continue"
 $PSDefaultParameterValues["*:ErrorAction"] = "Stop"
-$WatcherVersion = "R03.8"
+$WatcherVersion = "R03.9"
+$env:GIT_TERMINAL_PROMPT = "0"
 
 if ($PollSeconds -lt 5) { throw "PollSeconds muss mindestens 5 sein." }
 if ($HeartbeatSeconds -lt 60 -or $HeartbeatSeconds -gt 120) { throw "HeartbeatSeconds muss zwischen 60 und 120 liegen." }
@@ -126,7 +127,10 @@ function Invoke-GitSafe {
         }
 
         if ($isPush) {
-            Write-Log "Git-Push fehlgeschlagen; lokales CAD-Ergebnis bleibt erhalten. Nur der Push wird erneut versucht (Versuch $attempt)." "WARN"
+            Write-Log "Git-Push fehlgeschlagen; lokales CAD-Ergebnis bleibt erhalten (Versuch $attempt/$Retries)." "WARN"
+            if ($attempt -ge $Retries) {
+                throw "git push failed after $attempt attempt(s): git $($GitArgs -join ' ') :: $lastMessage"
+            }
             Start-Sleep -Seconds ([Math]::Min(30,[Math]::Max(2,2*$attempt)))
             continue
         }
@@ -376,6 +380,47 @@ function Verify-Remote {
     return $local
 }
 
+function Get-TaskBranch {
+    param($Task)
+    $stem = [IO.Path]::GetFileNameWithoutExtension($Task.path).ToLowerInvariant() -replace '[^a-z0-9-]+','-'
+    return "ruediger/$stem-$($Task.blob.Substring(0,8))"
+}
+
+function Try-RecoverLocalResult {
+    param($Task,[string]$Branch,$State)
+    $exists = (& git -C $WorkerDir show-ref --verify --quiet "refs/heads/$Branch"; $LASTEXITCODE)
+    if ([int]$exists -ne 0) { return $false }
+
+    $commit = (& git -C $WorkerDir rev-parse $Branch | Out-String).Trim()
+    if (-not $commit) { return $false }
+    $subject = (& git -C $WorkerDir log -1 --format=%s $commit | Out-String).Trim()
+    $expectedSubject = "Ruediger result for $($Task.path)"
+    if ($subject -ne $expectedSubject) { return $false }
+
+    & git -C $WorkerDir merge-base --is-ancestor origin/master $commit 2>$null
+    if ($LASTEXITCODE -ne 0) { return $false }
+
+    Invoke-GitSafe -GitArgs @("-C",$WorkerDir,"checkout",$Branch) | Out-Null
+    if ((& git -C $WorkerDir status --porcelain | Out-String).Trim()) {
+        throw "Lokales abgeschlossenes Ergebnis ist unerwartet dirty: $Branch"
+    }
+
+    Publish-Status -Phase "PUSH_RETRY" -Task $Task -Branch $Branch -Detail "Lokales abgeschlossenes Ergebnis erkannt; nur Remote-Push wird wiederholt."
+    Write-Log "PUSH_RETRY: vorhandenes lokales Ergebnis wird wiederverwendet: $Branch @ $commit"
+    Invoke-GitSafe -GitArgs @("-C",$WorkerDir,"push","-u","origin",$Branch,"--force-with-lease") -Retries $FetchRetryCount | Out-Null
+    $sha = Verify-Remote $Branch
+
+    $State.processed += [pscustomobject]@{
+        key=$Task.key;task=$Task.path;blob=$Task.blob;source=$Task.source;
+        branch=$Branch;remote_commit=$sha;verified_at=(Get-Date).ToString("o")
+    }
+    $State.failures = @($State.failures | Where-Object { $_.key -ne $Task.key })
+    Write-State $State
+    Publish-Status -Phase "FERTIG" -Task $Task -Branch $Branch -Detail "Lokales Ergebnis wiederverwendet; Remote-Verifikation PASS: $sha"
+    Write-Log "FERTIG aus lokalem Recovery: $($Task.path) @ $sha"
+    return $true
+}
+
 function Compact {
     Invoke-GitSafe -GitArgs @("-C",$WorkerDir,"checkout","--detach","origin/master") | Out-Null
     Invoke-GitSafe -GitArgs @("-C",$WorkerDir,"sparse-checkout","init","--cone") | Out-Null
@@ -429,14 +474,18 @@ try {
                 continue
             }
 
+            $branch = Get-TaskBranch $task
+            if (Try-RecoverLocalResult -Task $task -Branch $branch -State $state) {
+                Compact
+                continue
+            }
+
             Publish-Status -Phase "TASK_GEFUNDEN" -Task $task -Detail "Freigegebene FIFO-Queue."
             & git.exe -C $WorkerDir sparse-checkout disable 2>$null
             Invoke-GitSafe -GitArgs @("-C",$WorkerDir,"checkout","--detach","origin/master") | Out-Null
             Invoke-GitSafe -GitArgs @("-C",$WorkerDir,"reset","--hard","origin/master") | Out-Null
             Invoke-GitSafe -GitArgs @("-C",$WorkerDir,"clean","-fd") | Out-Null
 
-            $stem = [IO.Path]::GetFileNameWithoutExtension($task.path).ToLowerInvariant() -replace '[^a-z0-9-]+','-'
-            $branch = "ruediger/$stem-$($task.blob.Substring(0,8))"
             & git.exe -C $WorkerDir branch -D $branch 2>$null | Out-Null
             Invoke-GitSafe -GitArgs @("-C",$WorkerDir,"checkout","-b",$branch,"origin/master") | Out-Null
 
