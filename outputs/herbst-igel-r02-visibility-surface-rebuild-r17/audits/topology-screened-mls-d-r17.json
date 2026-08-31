@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-VISIBILITY-SURFACE-REBUILD-R17.md",
+  "task_blob_sha": "d6aa08d28f227f8811ce3f2aa04302c3e8eb7f03",
+  "attempt": "screened-mls-d",
+  "method": "visibility-classified oriented local MLS screen with low-support Poisson closure",
+  "poisson_closure": {
+    "grid_shape_nodes": [
+      200,
+      198,
+      168
+    ],
+    "pitch_mm": 1.2574884804875275,
+    "origin_mm": [
+      -125.14673142197488,
+      -123.83796327528394,
+      -104.72768312907914
+    ],
+    "source_padding_nodes": 20,
+    "blur_passes": 1,
+    "oriented_samples": 194600,
+    "occupied_splat_nodes": 177610,
+    "iso_value": -0.52264309009185,
+    "sample_value_percentiles": [
+      -1.7421304000392563,
+      -1.0001476909292333,
+      -0.52264309009185,
+      -0.040053193119279365,
+      0.4419827433178299
+    ],
+    "border_value_percentiles": [
+      -0.2997041642665863,
+      0.40154868364334106,
+      0.6508729457855225
+    ],
+    "center_value": -1.2537981271743774,
+    "inside_relation": "field<=iso"
+  },
+  "surface_screen": {
+    "method": "local oriented moving-plane screen blended with Poisson only outside source-supported neighborhoods",
+    "support_stencil": "3x3x3 nodes",
+    "support_sigma_mm": 1.508986176585033,
+    "supported_nodes": 284438,
+    "supported_node_fraction": 0.04275462962962963,
+    "gradient_scale_per_mm": 0.469948947429657,
+    "screen_alpha_percentiles": [
+      0.17594783008098602,
+      0.9611148983240128,
+      0.9700000286102295,
+      0.9700000286102295,
+      0.9700000286102295
+    ],
+    "outside_sign": "positive",
+    "inside_relation": "field<=0"
+  },
+  "extraction": {
+    "active_cubes": 166783,
+    "raw_surface_vertices": 494890,
+    "raw_surface_triangles": 990660
+  },
+  "components": {
+    "raw_components": 718,
+    "component_triangle_counts_desc": [
+      959972,
+      348,
+      228,
+      220,
+      216,
+      208,
+      204,
+      196,
+      196,
+      184,
+      184,
+      180,
+      168,
+      164,
+      164,
+      156,
+      156,
+      156,
+      156,
+      148
+    ],
+    "discarded_component_triangles": 30688
+  },
+  "float32_exchange_normalization": {
+    "input_vertices": 478112,
+    "float32_vertices_after_weld": 478107,
+    "input_triangles": 959972,
+    "triangles_removed_after_float32_quantization": 12
+  },
+  "topology": {
+    "vertices": 478107,
+    "triangles": 959960,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "max_edge_incidence": 2,
+    "all_edges_incidence_two": true,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "surface_area_mm2": 191123.3801559693,
+    "signed_volume_mm3": 3019702.093650289,
+    "orientable_outward": true,
+    "bounds_min_mm": [
+      -100.36787414550781,
+      -98.80062103271484,
+      -81.07672882080078
+    ],
+    "bounds_max_mm": [
+      100.23919677734375,
+      98.8774642944336,
+      81.59463500976562
+    ],
+    "max_extent_mm": 200.60707092285156
+  },
+  "actual_self_intersection_check": {
+    "method": "consistent tetrahedral-complex iso-surface plus exhaustive indexed edge-incidence, duplicate and degeneracy checks",
+    "confirmed_self_intersections": 0,
+    "status": "PASS"
+  },
+  "watertight": true,
+  "two_manifold": true,
+  "nonmanifold_vertices": 0,
+  "connected_surface_components": 1,
+  "internal_enclosed_shells": 0,
+  "overlapping_double_skin": false,
+  "gate_1": "PASS",
+  "form_delta": {
+    "attempt": "screened-mls-d",
+    "comparison": "bidirectional local visible-depth match (2-pixel search) and 2-pixel-dilated silhouette",
+    "views": {
+      "3q-front": {
+        "common_depth_samples": 88691,
+        "visible_depth_delta_mm": {
+          "median": 0.04104938596708507,
+          "p95": 2.5857156128356373,
+          "p99": 107.57869400364129,
+          "maximum": 239.49380236329392
+        },
+        "silhouette_iou": 0.9842962732781391,
+        "source_only_pixel_fraction": 0.0010543138081814752,
+        "candidate_only_pixel_fraction": 0.01459392271324884
+      },
+      "left": {
+        "common_depth_samples": 93350,
+        "visible_depth_delta_mm": {
+          "median": 0.02909267399355997,
+          "p95": 2.089197527905949,
+          "p99": 122.7750786888579,
+          "maximum": 190.545092374328
+        },
+        "silhouette_iou": 0.9850891170604561,
+        "source_only_pixel_fraction": 0.001297974948028239,
+        "candidate_only_pixel_fraction": 0.013612907991515676
+      },
+      "right": {
+        "common_depth_samples": 94013,
+        "visible_depth_delta_mm": {
+          "median": 0.03373719462403102,
+          "p95": 1.221097766541062,
+          "p99": 75.20907456614542,
+          "maximum": 183.9759771528182
+        },
+        "silhouette_iou": 0.9826492322807898,
+        "source_only_pixel_fraction": 0.001034774701326393,
+        "candidate_only_pixel_fraction": 0.01716262686442361
+      },
+      "rear": {
+        "common_depth_samples": 95324,
+        "visible_depth_delta_mm": {
+          "median": 0.03534595543759167,
+          "p95": 1.3120120293144664,
+          "p99": 94.268552837347,
+          "maximum": 183.79621845544864
+        },
+        "silhouette_iou": 0.9834211965212367,
+        "source_only_pixel_fraction": 0.0012895771218701963,
+        "candidate_only_pixel_fraction": 0.017331916517935437
+      },
+      "top": {
+        "common_depth_samples": 89863,
+        "visible_depth_delta_mm": {
+          "median": 0.050640091931647646,
+          "p95": 2.351058990737038,
+          "p99": 5.873894937744729,
+          "maximum": 158.96438133117306
+        },
+        "silhouette_iou": 0.9920952980271366,
+        "source_only_pixel_fraction": 0.0008059263184623368,
+        "candidate_only_pixel_fraction": 0.01171353183408958
+      },
+      "bottom": {
+        "common_depth_samples": 89863,
+        "visible_depth_delta_mm": {
+          "median": 1.0020469276874877,
+          "p95": 147.49027883407416,
+          "p99": 152.1408839995086,
+          "maximum": 159.9849250119587
+        },
+        "silhouette_iou": 0.9920952980271366,
+        "source_only_pixel_fraction": 0.0008059263184623368,
+        "candidate_only_pixel_fraction": 0.01171353183408958
+      }
+    },
+    "render_directory": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d",
+    "source_contact_sheet": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/source-contact-sheet.png",
+    "candidate_contact_sheet": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/screened-mls-d-contact-sheet.png",
+    "soll_ist_pairs": [
+      "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-3q-front.png",
+      "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-left.png",
+      "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-right.png",
+      "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-rear.png",
+      "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-top.png",
+      "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-bottom.png"
+    ]
+  },
+  "master": {
+    "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/candidates/herbst-igel-r02-r17-screened-mls-d-200mm.ply",
+    "bytes": 18217157,
+    "sha256": "d9c63f96e44245c3aebd583457418f3d82afbb6cd1a73163bfe7f70983d3fa29"
+  }
+}

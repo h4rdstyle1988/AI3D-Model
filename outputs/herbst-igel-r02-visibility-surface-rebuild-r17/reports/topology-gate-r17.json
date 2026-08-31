@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-VISIBILITY-SURFACE-REBUILD-R17.md",
+  "task_blob_sha": "d6aa08d28f227f8811ce3f2aa04302c3e8eb7f03",
+  "selected_attempt": "screened-mls-d",
+  "gate_1": "PASS",
+  "exactly_one_outer_master_component": true,
+  "watertight": true,
+  "two_manifold": true,
+  "open_edges": 0,
+  "nonmanifold_edges": 0,
+  "nonmanifold_vertices": 0,
+  "internal_enclosed_shells": 0,
+  "duplicate_depth_layers": false,
+  "confirmed_real_self_intersections": 0,
+  "construction_evidence": "consistent tetrahedral-complex iso-surface plus exhaustive indexed edge-incidence, duplicate and degeneracy checks",
+  "mesh_metrics": {
+    "vertices": 478107,
+    "triangles": 959960,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "max_edge_incidence": 2,
+    "all_edges_incidence_two": true,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "surface_area_mm2": 191123.3801559693,
+    "signed_volume_mm3": 3019702.093650289,
+    "orientable_outward": true,
+    "bounds_min_mm": [
+      -100.36787414550781,
+      -98.80062103271484,
+      -81.07672882080078
+    ],
+    "bounds_max_mm": [
+      100.23919677734375,
+      98.8774642944336,
+      81.59463500976562
+    ],
+    "max_extent_mm": 200.60707092285156
+  },
+  "status": "PASS"
+}

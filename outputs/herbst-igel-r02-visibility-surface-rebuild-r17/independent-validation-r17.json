@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-VISIBILITY-SURFACE-REBUILD-R17.md",
+  "selected_mesh": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/candidates/herbst-igel-r02-r17-screened-mls-d-200mm.ply",
+  "measured_mesh_metrics": {
+    "vertices": 478107,
+    "triangles": 959960,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "max_edge_incidence": 2,
+    "all_edges_incidence_two": true,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "surface_area_mm2": 191123.3801559693,
+    "signed_volume_mm3": 3019702.093650289,
+    "orientable_outward": true,
+    "bounds_min_mm": [
+      -100.36787414550781,
+      -98.80062103271484,
+      -81.07672882080078
+    ],
+    "bounds_max_mm": [
+      100.23919677734375,
+      98.8774642944336,
+      81.59463500976562
+    ],
+    "max_extent_mm": 200.60707092285156
+  },
+  "checks": {
+    "selected_mesh_exists": true,
+    "selected_mesh_sha256_matches_audit": true,
+    "independent_topology_matches_report": true,
+    "watertight_edge_incidence": true,
+    "no_nonmanifold_edges": true,
+    "no_degenerate_or_duplicate_faces": true,
+    "manifest_entries_valid_before_this_report": true,
+    "no_artifact_over_90MB": true,
+    "no_gate3_stl_3mf_glb": true,
+    "status_is_stopp_gate2_fail": true,
+    "no_final_user_approval_claimed": true,
+    "nutzerentscheidung_not_required": true
+  },
+  "manifest_errors": [],
+  "files_over_90MB": [],
+  "forbidden_gate3_files": [],
+  "status": "PASS"
+}

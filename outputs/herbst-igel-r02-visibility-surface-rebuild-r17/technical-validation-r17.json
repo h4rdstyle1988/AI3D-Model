@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-VISIBILITY-SURFACE-REBUILD-R17.md",
+  "revision": "R02/R17",
+  "task_blob_sha": "d6aa08d28f227f8811ce3f2aa04302c3e8eb7f03",
+  "reference_hash_gate": "PASS",
+  "visibility_classification": "PASS_TECHNICAL",
+  "gate_1_topology": "PASS",
+  "gate_2_form_protection": "FAIL",
+  "gate_3_cad_fdm": "NOT_RUN_GATE_2_FAIL",
+  "stl_generated": false,
+  "assembly_3mf_or_glb_generated": false,
+  "split_hollow_connector_generated": false,
+  "overall": "STOPP",
+  "final_user_approval_claimed": false
+}

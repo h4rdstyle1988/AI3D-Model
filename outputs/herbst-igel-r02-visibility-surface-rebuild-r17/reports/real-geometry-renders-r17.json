@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-VISIBILITY-SURFACE-REBUILD-R17.md",
+  "selected_attempt": "screened-mls-d",
+  "candidate_is_real_geometry_render": true,
+  "selected_views": [
+    {
+      "view": "3q-front",
+      "candidate": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/selected-r17-3q-front.png",
+      "soll_ist": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17-3q-front.png"
+    },
+    {
+      "view": "left",
+      "candidate": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/selected-r17-left.png",
+      "soll_ist": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17-left.png"
+    },
+    {
+      "view": "right",
+      "candidate": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/selected-r17-right.png",
+      "soll_ist": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17-right.png"
+    },
+    {
+      "view": "rear",
+      "candidate": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/selected-r17-rear.png",
+      "soll_ist": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17-rear.png"
+    },
+    {
+      "view": "top",
+      "candidate": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/selected-r17-top.png",
+      "soll_ist": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17-top.png"
+    },
+    {
+      "view": "bottom",
+      "candidate": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/selected-r17-bottom.png",
+      "soll_ist": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17-bottom.png"
+    }
+  ],
+  "contact_sheet": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17.png",
+  "reference_source_candidate_sheet": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-ref-source-candidate-r17.png"
+}

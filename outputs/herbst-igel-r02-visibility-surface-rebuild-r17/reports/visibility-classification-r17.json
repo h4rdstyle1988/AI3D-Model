@@ -1,0 +1,179 @@
+{
+  "method": "14 deterministic orthographic exterior z-buffers (six axes plus eight corners); face orientation toward best non-grazing observing camera",
+  "resolution": 160,
+  "depth_tolerance_mm": 0.16,
+  "minimum_independent_view_hits": 1,
+  "source_faces": 870466,
+  "visible_faces": 578984,
+  "rejected_hidden_faces": 291482,
+  "visible_fraction": 0.6651425788026184,
+  "visibility_hit_percentiles": [
+    1.0,
+    1.0,
+    1.0,
+    2.0,
+    7.0
+  ],
+  "orientation_alignment_percentiles": [
+    0.08004956692457199,
+    0.8338910788297653,
+    0.9212135374546051,
+    0.9698221832513809,
+    0.9999999403953552
+  ],
+  "adaptive_density_weight_percentiles": [
+    1.0,
+    1.0,
+    1.0000000596046448,
+    1.0885539948940277,
+    3.0
+  ],
+  "per_view": [
+    {
+      "index": 0,
+      "camera_vector": [
+        -0.5773502691896258,
+        -0.5773502691896258,
+        -0.5773502691896258
+      ],
+      "visible_face_centers": 59672
+    },
+    {
+      "index": 1,
+      "camera_vector": [
+        -0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ],
+      "visible_face_centers": 52848
+    },
+    {
+      "index": 2,
+      "camera_vector": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "visible_face_centers": 60465
+    },
+    {
+      "index": 3,
+      "camera_vector": [
+        -0.5773502691896258,
+        0.5773502691896258,
+        -0.5773502691896258
+      ],
+      "visible_face_centers": 59751
+    },
+    {
+      "index": 4,
+      "camera_vector": [
+        -0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "visible_face_centers": 63467
+    },
+    {
+      "index": 5,
+      "camera_vector": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "visible_face_centers": 60312
+    },
+    {
+      "index": 6,
+      "camera_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "visible_face_centers": 57231
+    },
+    {
+      "index": 7,
+      "camera_vector": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "visible_face_centers": 56179
+    },
+    {
+      "index": 8,
+      "camera_vector": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "visible_face_centers": 58906
+    },
+    {
+      "index": 9,
+      "camera_vector": [
+        0.5773502691896258,
+        -0.5773502691896258,
+        -0.5773502691896258
+      ],
+      "visible_face_centers": 60393
+    },
+    {
+      "index": 10,
+      "camera_vector": [
+        0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ],
+      "visible_face_centers": 63431
+    },
+    {
+      "index": 11,
+      "camera_vector": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "visible_face_centers": 58397
+    },
+    {
+      "index": 12,
+      "camera_vector": [
+        0.5773502691896258,
+        0.5773502691896258,
+        -0.5773502691896258
+      ],
+      "visible_face_centers": 50035
+    },
+    {
+      "index": 13,
+      "camera_vector": [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "visible_face_centers": 57710
+    }
+  ],
+  "neighborhood_rule": "Only samples with direct exterior visibility are retained; small source triangles receive up to 3x adaptive detail weight.",
+  "bounds_mm": [
+    199.9879705468403,
+    197.4178438932963,
+    159.16102135969305
+  ],
+  "source_sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6",
+  "source_scale_to_200mm": 318.2455727028218,
+  "source_bounds_mm": [
+    [
+      -100.0,
+      -98.71968838626324,
+      -79.58663605842654
+    ],
+    [
+      100.0,
+      98.71968838626324,
+      79.58663605842654
+    ]
+  ]
+}

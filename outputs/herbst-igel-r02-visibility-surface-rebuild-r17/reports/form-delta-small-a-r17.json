@@ -1,0 +1,89 @@
+{
+  "attempt": "small-a",
+  "comparison": "bidirectional local visible-depth match (2-pixel search) and 2-pixel-dilated silhouette",
+  "views": {
+    "3q-front": {
+      "common_depth_samples": 85189,
+      "visible_depth_delta_mm": {
+        "median": 0.24908757264370252,
+        "p95": 160.87278775362347,
+        "p99": 208.41863190717413,
+        "maximum": 239.6577628640804
+      },
+      "silhouette_iou": 0.9530463383527622,
+      "source_only_pixel_fraction": 0.12338621260600094,
+      "candidate_only_pixel_fraction": 0.010918935851251874
+    },
+    "left": {
+      "common_depth_samples": 91395,
+      "visible_depth_delta_mm": {
+        "median": 0.2753081614803481,
+        "p95": 131.6164278028229,
+        "p99": 173.26811803407656,
+        "maximum": 190.72815246547813
+      },
+      "silhouette_iou": 0.9597895488532303,
+      "source_only_pixel_fraction": 0.14210703184071244,
+      "candidate_only_pixel_fraction": 0.01343148786020331
+    },
+    "right": {
+      "common_depth_samples": 93147,
+      "visible_depth_delta_mm": {
+        "median": 0.15108726759207336,
+        "p95": 125.88359236426002,
+        "p99": 169.13305035732745,
+        "maximum": 182.68179458953983
+      },
+      "silhouette_iou": 0.9730991830509182,
+      "source_only_pixel_fraction": 0.12550928731117195,
+      "candidate_only_pixel_fraction": 0.015806188754936168
+    },
+    "rear": {
+      "common_depth_samples": 94472,
+      "visible_depth_delta_mm": {
+        "median": 0.1661899735305461,
+        "p95": 129.47487502996378,
+        "p99": 165.49112178091877,
+        "maximum": 182.5593961442338
+      },
+      "silhouette_iou": 0.9719841555635578,
+      "source_only_pixel_fraction": 0.13304182313905036,
+      "candidate_only_pixel_fraction": 0.015072791810278307
+    },
+    "top": {
+      "common_depth_samples": 88760,
+      "visible_depth_delta_mm": {
+        "median": 0.19881733710941774,
+        "p95": 114.60783076774129,
+        "p99": 144.731825743749,
+        "maximum": 157.80660028864543
+      },
+      "silhouette_iou": 0.9810770183040056,
+      "source_only_pixel_fraction": 0.11650013263772217,
+      "candidate_only_pixel_fraction": 0.007118224423025909
+    },
+    "bottom": {
+      "common_depth_samples": 88760,
+      "visible_depth_delta_mm": {
+        "median": 0.7416898777219973,
+        "p95": 139.81782762841888,
+        "p99": 147.90963661442453,
+        "maximum": 157.437074907885
+      },
+      "silhouette_iou": 0.9810770183040056,
+      "source_only_pixel_fraction": 0.11650013263772217,
+      "candidate_only_pixel_fraction": 0.007118224423025909
+    }
+  },
+  "render_directory": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a",
+  "source_contact_sheet": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/source-contact-sheet.png",
+  "candidate_contact_sheet": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/small-a-contact-sheet.png",
+  "soll_ist_pairs": [
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/soll-ist-3q-front.png",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/soll-ist-left.png",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/soll-ist-right.png",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/soll-ist-rear.png",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/soll-ist-top.png",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/soll-ist-bottom.png"
+  ]
+}

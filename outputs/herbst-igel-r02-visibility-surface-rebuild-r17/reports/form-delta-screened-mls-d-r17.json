@@ -1,0 +1,89 @@
+{
+  "attempt": "screened-mls-d",
+  "comparison": "bidirectional local visible-depth match (2-pixel search) and 2-pixel-dilated silhouette",
+  "views": {
+    "3q-front": {
+      "common_depth_samples": 88691,
+      "visible_depth_delta_mm": {
+        "median": 0.04104938596708507,
+        "p95": 2.5857156128356373,
+        "p99": 107.57869400364129,
+        "maximum": 239.49380236329392
+      },
+      "silhouette_iou": 0.9842962732781391,
+      "source_only_pixel_fraction": 0.0010543138081814752,
+      "candidate_only_pixel_fraction": 0.01459392271324884
+    },
+    "left": {
+      "common_depth_samples": 93350,
+      "visible_depth_delta_mm": {
+        "median": 0.02909267399355997,
+        "p95": 2.089197527905949,
+        "p99": 122.7750786888579,
+        "maximum": 190.545092374328
+      },
+      "silhouette_iou": 0.9850891170604561,
+      "source_only_pixel_fraction": 0.001297974948028239,
+      "candidate_only_pixel_fraction": 0.013612907991515676
+    },
+    "right": {
+      "common_depth_samples": 94013,
+      "visible_depth_delta_mm": {
+        "median": 0.03373719462403102,
+        "p95": 1.221097766541062,
+        "p99": 75.20907456614542,
+        "maximum": 183.9759771528182
+      },
+      "silhouette_iou": 0.9826492322807898,
+      "source_only_pixel_fraction": 0.001034774701326393,
+      "candidate_only_pixel_fraction": 0.01716262686442361
+    },
+    "rear": {
+      "common_depth_samples": 95324,
+      "visible_depth_delta_mm": {
+        "median": 0.03534595543759167,
+        "p95": 1.3120120293144664,
+        "p99": 94.268552837347,
+        "maximum": 183.79621845544864
+      },
+      "silhouette_iou": 0.9834211965212367,
+      "source_only_pixel_fraction": 0.0012895771218701963,
+      "candidate_only_pixel_fraction": 0.017331916517935437
+    },
+    "top": {
+      "common_depth_samples": 89863,
+      "visible_depth_delta_mm": {
+        "median": 0.050640091931647646,
+        "p95": 2.351058990737038,
+        "p99": 5.873894937744729,
+        "maximum": 158.96438133117306
+      },
+      "silhouette_iou": 0.9920952980271366,
+      "source_only_pixel_fraction": 0.0008059263184623368,
+      "candidate_only_pixel_fraction": 0.01171353183408958
+    },
+    "bottom": {
+      "common_depth_samples": 89863,
+      "visible_depth_delta_mm": {
+        "median": 1.0020469276874877,
+        "p95": 147.49027883407416,
+        "p99": 152.1408839995086,
+        "maximum": 159.9849250119587
+      },
+      "silhouette_iou": 0.9920952980271366,
+      "source_only_pixel_fraction": 0.0008059263184623368,
+      "candidate_only_pixel_fraction": 0.01171353183408958
+    }
+  },
+  "render_directory": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d",
+  "source_contact_sheet": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/source-contact-sheet.png",
+  "candidate_contact_sheet": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/screened-mls-d-contact-sheet.png",
+  "soll_ist_pairs": [
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-3q-front.png",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-left.png",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-right.png",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-rear.png",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-top.png",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-bottom.png"
+  ]
+}

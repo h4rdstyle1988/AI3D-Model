@@ -1,0 +1,5 @@
+STOPP at Gate 2 (form protection FAIL).
+
+No REF-SEAM split, hollow shells, connector, STL, 3MF, GLB, support setup,
+print orientation or slicer production file was created. Gate 3 remains locked.
+This is a technical result and does not claim final user approval.

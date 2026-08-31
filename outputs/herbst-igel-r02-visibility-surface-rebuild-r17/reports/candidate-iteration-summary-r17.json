@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-VISIBILITY-SURFACE-REBUILD-R17.md",
+  "task_blob_sha": "d6aa08d28f227f8811ce3f2aa04302c3e8eb7f03",
+  "attempts": [
+    {
+      "attempt": "small-a",
+      "method": "visibility-classified oriented Poisson field plus consistent marching tetrahedra",
+      "grid_shape_nodes": [
+        136,
+        135,
+        117
+      ],
+      "pitch_mm": 2.1051365320720032,
+      "gate_1": "PASS",
+      "triangles": 239218,
+      "max_extent_mm": 197.99078369140625,
+      "minimum_silhouette_iou": 0.9530463383527622,
+      "front_visible_depth_p95_mm": 160.87278775362347,
+      "bottom_visible_depth_p95_mm": 139.81782762841888,
+      "worst_view_median_depth_delta_mm": 0.7416898777219973,
+      "gate_2": "FAIL",
+      "master": {
+        "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/candidates/herbst-igel-r02-r17-small-a-200mm.ply",
+        "bytes": 4545547,
+        "sha256": "ac0a6f7c7610124e1846b4c65e7ae4ccbe40674bd41a4f01a11621b91e13b196"
+      }
+    },
+    {
+      "attempt": "medium-b",
+      "method": "visibility-classified oriented Poisson field plus consistent marching tetrahedra",
+      "grid_shape_nodes": [
+        200,
+        198,
+        168
+      ],
+      "pitch_mm": 1.2577859782820144,
+      "gate_1": "PASS",
+      "triangles": 703556,
+      "max_extent_mm": 199.56755828857422,
+      "minimum_silhouette_iou": 0.9623851369435276,
+      "front_visible_depth_p95_mm": 3.2154285347669394,
+      "bottom_visible_depth_p95_mm": 145.23649973370962,
+      "worst_view_median_depth_delta_mm": 1.8058764417415674,
+      "gate_2": "FAIL",
+      "master": {
+        "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/candidates/herbst-igel-r02-r17-medium-b-200mm.ply",
+        "bytes": 13367946,
+        "sha256": "55ccc52511e904cfa33cc0aa951dcc6f1526f3e2c46088cbcadd7de8fe84bace"
+      }
+    },
+    {
+      "attempt": "fine-c",
+      "method": "visibility-classified oriented Poisson field plus consistent marching tetrahedra",
+      "grid_shape_nodes": [
+        264,
+        262,
+        219
+      ],
+      "pitch_mm": 0.896807042810943,
+      "gate_1": "PASS",
+      "triangles": 1414480,
+      "max_extent_mm": 199.8158187866211,
+      "minimum_silhouette_iou": 0.972346986659516,
+      "front_visible_depth_p95_mm": 1.4153863550870118,
+      "bottom_visible_depth_p95_mm": 149.25349798824442,
+      "worst_view_median_depth_delta_mm": 109.49786182422883,
+      "gate_2": "FAIL",
+      "master": {
+        "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/candidates/herbst-igel-r02-r17-fine-c-200mm.ply",
+        "bytes": 26875453,
+        "sha256": "2c9b4b50866310ef16f43a93cc7d17e4cac7e29e19fdf12366570d1f6777d1dc"
+      }
+    },
+    {
+      "attempt": "screened-mls-d",
+      "method": "visibility-classified oriented local MLS screen with low-support Poisson closure",
+      "grid_shape_nodes": [
+        200,
+        198,
+        168
+      ],
+      "pitch_mm": 1.2574884804875275,
+      "gate_1": "PASS",
+      "triangles": 959960,
+      "max_extent_mm": 200.60707092285156,
+      "minimum_silhouette_iou": 0.9826492322807898,
+      "front_visible_depth_p95_mm": 2.5857156128356373,
+      "bottom_visible_depth_p95_mm": 147.49027883407416,
+      "worst_view_median_depth_delta_mm": 1.0020469276874877,
+      "gate_2": "FAIL",
+      "master": {
+        "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/candidates/herbst-igel-r02-r17-screened-mls-d-200mm.ply",
+        "bytes": 18217157,
+        "sha256": "d9c63f96e44245c3aebd583457418f3d82afbb6cd1a73163bfe7f70983d3fa29"
+      }
+    }
+  ],
+  "method_change_rule": {
+    "triggered": true,
+    "reason": "The bottom-layer smoothing/edge-runner failure did not materially decrease from medium-b to fine-c.",
+    "changed_from": "global oriented Poisson",
+    "changed_to": "local oriented screened MLS with low-support Poisson closure"
+  },
+  "selected_diagnostic_attempt": "screened-mls-d",
+  "selection_reason": "Highest minimum six-view silhouette IoU and better feet/nose binding; still Gate-2 FAIL because bottom relief is replaced and the surface is visibly noisy."
+}

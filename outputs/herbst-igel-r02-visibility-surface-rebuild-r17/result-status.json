@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-VISIBILITY-SURFACE-REBUILD-R17.md",
+  "task_blob_sha": "d6aa08d28f227f8811ce3f2aa04302c3e8eb7f03",
+  "product_revision": "R02",
+  "technical_revision": "R17",
+  "status": "STOPP",
+  "gates": {
+    "gate_1_topology": "PASS",
+    "gate_2_form_protection": "FAIL",
+    "gate_3_cad_fdm": "NOT_RUN_GATE_2_FAIL"
+  },
+  "main_files": [
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/candidates/herbst-igel-r02-r17-screened-mls-d-200mm.ply",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reports/topology-gate-r17.json",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reports/form-protection-gate-r17.json",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-ref-source-candidate-r17.png",
+    "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/REVISION-R02-R17.md"
+  ],
+  "validations": [
+    "Reference/source hash gate PASS",
+    "Visibility/orientation classification recorded",
+    "Gate 1 selected screened-mls-d topology PASS",
+    "Gate 2 six-view and SOLL/IST inspection FAIL",
+    "Method changed after persistent bottom failure",
+    "Gate 3 correctly not run"
+  ],
+  "open_real_tests": [
+    "No print, assembly, wall-thickness, connector, support or slicer test because Gate 2 failed.",
+    "A new technical reconstruction must preserve the visible underside relief without roughness or edge runners before Gate 3."
+  ],
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "The blocker is technical surface reconstruction. No binding user dimension, function or reference datum is missing.",
+  "final_user_approval_claimed": false
+}

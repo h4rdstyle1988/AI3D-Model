@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-VISIBILITY-SURFACE-REBUILD-R17.md",
+  "task_blob_sha": "d6aa08d28f227f8811ce3f2aa04302c3e8eb7f03",
+  "attempt": "fine-c",
+  "method": "visibility-classified oriented Poisson field plus consistent marching tetrahedra",
+  "poisson": {
+    "grid_shape_nodes": [
+      264,
+      262,
+      219
+    ],
+    "pitch_mm": 0.896807042810943,
+    "origin_mm": [
+      -117.93310266844318,
+      -116.63834306497186,
+      -97.51405437554745
+    ],
+    "source_padding_nodes": 20,
+    "blur_passes": 1,
+    "oriented_samples": 578984,
+    "occupied_splat_nodes": 373256,
+    "iso_value": -0.4403472010340198,
+    "sample_value_percentiles": [
+      -2.043288852699944,
+      -1.0034510671649428,
+      -0.4403472010340198,
+      0.04681882362429014,
+      0.47221237794452875
+    ],
+    "border_value_percentiles": [
+      -0.33629611134529114,
+      0.4748179465532303,
+      0.7566308379173279
+    ],
+    "center_value": -1.137676477432251,
+    "inside_relation": "field<=iso",
+    "exterior_boundary_condition": {
+      "type": "constant outside iso",
+      "guard_nodes": 3,
+      "source_padding_nodes": 20,
+      "outside_value": -0.36698001067299685,
+      "changes_source_supported_nodes": false
+    }
+  },
+  "extraction": {
+    "active_cubes": 233965,
+    "raw_surface_vertices": 709808,
+    "raw_surface_triangles": 1419608
+  },
+  "components": {
+    "raw_components": 5,
+    "component_triangle_counts_desc": [
+      1414480,
+      4848,
+      208,
+      48,
+      24
+    ],
+    "discarded_component_triangles": 5128
+  },
+  "float32_exchange_normalization": {
+    "input_vertices": 707236,
+    "float32_vertices_after_weld": 707236,
+    "input_triangles": 1414480,
+    "triangles_removed_after_float32_quantization": 0
+  },
+  "topology": {
+    "vertices": 707236,
+    "triangles": 1414480,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "max_edge_incidence": 2,
+    "all_edges_incidence_two": true,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "surface_area_mm2": 129323.73762018382,
+    "signed_volume_mm3": 3011154.516831866,
+    "orientable_outward": true,
+    "bounds_min_mm": [
+      -99.71348571777344,
+      -98.33139038085938,
+      -82.7734603881836
+    ],
+    "bounds_max_mm": [
+      100.10233306884766,
+      98.88201141357422,
+      82.61365509033203
+    ],
+    "max_extent_mm": 199.8158187866211
+  },
+  "actual_self_intersection_check": {
+    "method": "consistent tetrahedral-complex iso-surface; each emitted triangle lies in one grid tetrahedron, with exhaustive indexed edge-incidence, duplicate and degeneracy checks",
+    "confirmed_self_intersections": 0,
+    "status": "PASS"
+  },
+  "watertight": true,
+  "two_manifold": true,
+  "nonmanifold_vertices": 0,
+  "connected_surface_components": 1,
+  "internal_enclosed_shells": 0,
+  "overlapping_double_skin": false,
+  "gate_1": "PASS",
+  "form_delta": {
+    "attempt": "fine-c",
+    "comparison": "bidirectional local visible-depth match (2-pixel search) and 2-pixel-dilated silhouette",
+    "views": {
+      "3q-front": {
+        "common_depth_samples": 87027,
+        "visible_depth_delta_mm": {
+          "median": 0.044801046828212066,
+          "p95": 1.4153863550870118,
+          "p99": 14.246372618368563,
+          "maximum": 233.03215381908507
+        },
+        "silhouette_iou": 0.972346986659516,
+        "source_only_pixel_fraction": 0.020301222319054322,
+        "candidate_only_pixel_fraction": 0.009955084802574244
+      },
+      "left": {
+        "common_depth_samples": 92614,
+        "visible_depth_delta_mm": {
+          "median": 0.03941391936461258,
+          "p95": 0.6413343324317454,
+          "p99": 18.782223109777515,
+          "maximum": 187.79673849428076
+        },
+        "silhouette_iou": 0.9734701170930649,
+        "source_only_pixel_fraction": 0.014557800248060712,
+        "candidate_only_pixel_fraction": 0.012728878050831423
+      },
+      "right": {
+        "common_depth_samples": 93768,
+        "visible_depth_delta_mm": {
+          "median": 0.040444242552588605,
+          "p95": 0.6843947179352277,
+          "p99": 14.890774477681477,
+          "maximum": 184.32451451492005
+        },
+        "silhouette_iou": 0.9825223186219036,
+        "source_only_pixel_fraction": 0.004180812272098579,
+        "candidate_only_pixel_fraction": 0.014784777232910013
+      },
+      "rear": {
+        "common_depth_samples": 94899,
+        "visible_depth_delta_mm": {
+          "median": 0.0406813587517485,
+          "p95": 0.6429737683113543,
+          "p99": 8.83819428099027,
+          "maximum": 184.07831655992814
+        },
+        "silhouette_iou": 0.9822082841706514,
+        "source_only_pixel_fraction": 0.00611687263242874,
+        "candidate_only_pixel_fraction": 0.01376555093253845
+      },
+      "top": {
+        "common_depth_samples": 89752,
+        "visible_depth_delta_mm": {
+          "median": 0.07575854027209683,
+          "p95": 2.1399378783410836,
+          "p99": 4.607905140526251,
+          "maximum": 156.2862263497584
+        },
+        "silhouette_iou": 0.9927879297376222,
+        "source_only_pixel_fraction": 0.004347152780850405,
+        "candidate_only_pixel_fraction": 0.008152294146276714
+      },
+      "bottom": {
+        "common_depth_samples": 89752,
+        "visible_depth_delta_mm": {
+          "median": 109.49786182422883,
+          "p95": 149.25349798824442,
+          "p99": 153.8921434713337,
+          "maximum": 162.12771421687404
+        },
+        "silhouette_iou": 0.9927879297376222,
+        "source_only_pixel_fraction": 0.004347152780850405,
+        "candidate_only_pixel_fraction": 0.008152294146276714
+      }
+    },
+    "render_directory": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c",
+    "source_contact_sheet": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/source-contact-sheet.png",
+    "candidate_contact_sheet": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/fine-c-contact-sheet.png",
+    "soll_ist_pairs": [
+      "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/soll-ist-3q-front.png",
+      "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/soll-ist-left.png",
+      "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/soll-ist-right.png",
+      "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/soll-ist-rear.png",
+      "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/soll-ist-top.png",
+      "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/soll-ist-bottom.png"
+    ]
+  },
+  "master": {
+    "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/candidates/herbst-igel-r02-r17-fine-c-200mm.ply",
+    "bytes": 26875453,
+    "sha256": "2c9b4b50866310ef16f43a93cc7d17e4cac7e29e19fdf12366570d1f6777d1dc"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-VISIBILITY-SURFACE-REBUILD-R17.md",
+  "threshold_bytes": 90000000,
+  "artifacts": [],
+  "status": "NOT_REQUIRED_ALL_R17_ARTIFACTS_BELOW_90MB"
+}

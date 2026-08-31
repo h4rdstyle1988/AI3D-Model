@@ -1,0 +1,632 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HERBST-IGEL-R02-VISIBILITY-SURFACE-REBUILD-R17.md",
+  "task_blob_sha": "d6aa08d28f227f8811ce3f2aa04302c3e8eb7f03",
+  "artifacts": [
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/audits/topology-fine-c-r17.json",
+      "bytes": 7177,
+      "sha256": "e72c6f00daf7286f70caca29da3c5a37a4fdc47577ed07ab7e721643f9e594d7"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/audits/topology-medium-b-r17.json",
+      "bytes": 7197,
+      "sha256": "3c17c46198be5cb6d28f48c72af420cb8327d2c2dc13e08dc6c6f1ca988c0148"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/audits/topology-screened-mls-d-r17.json",
+      "bytes": 7785,
+      "sha256": "762a8710107bf8ffaa0ae2d0fa4b2ddef370bca15009e76988c3626dfe16e18b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/audits/topology-small-a-r17.json",
+      "bytes": 7129,
+      "sha256": "0bbec943da3a3568b3bef6d3d66c2bf5cf4f4c6f9a32c4406b5f5743f7fc808f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/CAD-STL-3MF-GLB-FDM-NOT-CREATED.txt",
+      "bytes": 263,
+      "sha256": "8ffc3df8a87b57cb2225aead68c935d17e7a1bc50e2dc732cba3b2b10665d05d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/candidates/herbst-igel-r02-r17-fine-c-200mm.ply",
+      "bytes": 26875453,
+      "sha256": "2c9b4b50866310ef16f43a93cc7d17e4cac7e29e19fdf12366570d1f6777d1dc"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/candidates/herbst-igel-r02-r17-medium-b-200mm.ply",
+      "bytes": 13367946,
+      "sha256": "55ccc52511e904cfa33cc0aa951dcc6f1526f3e2c46088cbcadd7de8fe84bace"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/candidates/herbst-igel-r02-r17-screened-mls-d-200mm.ply",
+      "bytes": 18217157,
+      "sha256": "d9c63f96e44245c3aebd583457418f3d82afbb6cd1a73163bfe7f70983d3fa29"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/candidates/herbst-igel-r02-r17-small-a-200mm.ply",
+      "bytes": 4545547,
+      "sha256": "ac0a6f7c7610124e1846b4c65e7ae4ccbe40674bd41a4f01a11621b91e13b196"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/independent-validation-r17.json",
+      "bytes": 1528,
+      "sha256": "0fd6280d482f05c7a45533cde6b45187fc5c3368a0cd2706d3360ad8eab38670"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/inputs/seed42-optically-best-source.ply",
+      "bytes": 16557141,
+      "sha256": "85ba18eaed15bdbe631fc49dd571e73882c4055e2c247022e90ad15ed99822c6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/LOCAL-LARGE-ARTIFACTS.json",
+      "bytes": 214,
+      "sha256": "e4ad40a4f7925fbcc57303898de1bea614adc31a81daff4fd8d5bb19f249b827"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reference-audit/hash-gate-r17.json",
+      "bytes": 803,
+      "sha256": "5e2d85b21c280ccf4dba566f3001003b193b35404a43ed7958bf73312f2b3ec7"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reference-audit/ref-clean-r17.jpg",
+      "bytes": 17344,
+      "sha256": "c1c9a5a094f1db2fd220f3433f83af8dedca780f56a4bf479eb8883432250859"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reference-audit/ref-seam-r17.jpg",
+      "bytes": 11788,
+      "sha256": "b46aa70f60d342ab36d24fff1488308a6b33b286ce2890577a42be69425697a4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/fine-c-3q-front.png",
+      "bytes": 147210,
+      "sha256": "445dd562d5ebb133c2c2da6632711435288399fc964f841183b3bcdcc4f01b77"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/fine-c-bottom.png",
+      "bytes": 87839,
+      "sha256": "c78a505d9c01fadf7e2abc9f98e7b862e24e8153c876897d36d192585b378cad"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/fine-c-contact-sheet.png",
+      "bytes": 813542,
+      "sha256": "a493885f6403d49b000fe0a9da6fa88cfbf84d50c95d9101d829a83bd5431244"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/fine-c-left.png",
+      "bytes": 141106,
+      "sha256": "a03335a1805e79d237d25a51ffb690230a08e18486aae3fc5d26614380974a50"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/fine-c-rear.png",
+      "bytes": 154129,
+      "sha256": "e4b33fa79fb59a51c7fa0729db642fb5689631dafff2c54e2a13368e0841cec6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/fine-c-right.png",
+      "bytes": 147483,
+      "sha256": "2dce16a4588f712298da6ed5e162a483abc91f550e95512c16a5f7f0f7cc7250"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/fine-c-top.png",
+      "bytes": 145789,
+      "sha256": "a45f4cdfe2a837ae237bc1b74f05dbc99329f2221f31252b328e4be4e1453f8b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/soll-ist-3q-front.png",
+      "bytes": 309139,
+      "sha256": "8628c3572763ef432cbede66bb5cc2b71155bca551c2a92c3bfed27579e2938f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/soll-ist-bottom.png",
+      "bytes": 261842,
+      "sha256": "91c82b5c7b8342870b01f15a300e449fa5734a4c6d734bd68c8b4f48de9b158d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/soll-ist-left.png",
+      "bytes": 305174,
+      "sha256": "23ed72d6cdec12a88382f405283caac4ea85118896e1bea2086905843b93ed7b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/soll-ist-rear.png",
+      "bytes": 340937,
+      "sha256": "a2a898172dccab2be6f3e6c44ff6ac7e3756135794ee6e1893c8f1d45ba08c36"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/soll-ist-right.png",
+      "bytes": 322451,
+      "sha256": "da090634e5ac677ac6da923db27b3cb62f807aceaee15afecc7adac39c02eb9a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/soll-ist-top.png",
+      "bytes": 305931,
+      "sha256": "fa7a9856a6cbca93d6aaef1fdbf13c5ff6b9bdc9701151716e0f4885d2dbd11d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/source-3q-front.png",
+      "bytes": 158006,
+      "sha256": "35daa0200b42feb9a2b45400bdbaa9b7ae2658af45dcc986398764dde1fbd2c8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/source-bottom.png",
+      "bytes": 170855,
+      "sha256": "b7714cc11c66b2a1dfdd5f6de3e2d30695b3e332b0de35ba0dde3fe37a244d7a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/source-contact-sheet.png",
+      "bytes": 992563,
+      "sha256": "3242688472b8649e9b1ba142a7b146c0f02b850048f93aa48194b7cb7c60939e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/source-left.png",
+      "bytes": 160788,
+      "sha256": "d29c48b7dca790d60d7fdded161c09c0334a69de876cdb2153a4fa0702ec0c33"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/source-rear.png",
+      "bytes": 181155,
+      "sha256": "16bc3b9b118fc61d5727dd1240aa0d8b85bb612038e1607874033e00732c713b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/source-right.png",
+      "bytes": 170345,
+      "sha256": "9e80fad1044cea424790b1c52c7c340d27b22f3158b0a8e254099ed6509fc141"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/fine-c/source-top.png",
+      "bytes": 155235,
+      "sha256": "a8d88de7002cb5005023fbae10377c8955bc57588842e91c0182c46571baf609"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/medium-b-3q-front.png",
+      "bytes": 144413,
+      "sha256": "7ee7f5a3aa25b6b20a755a95142345a7f9418d74c266c3dc88dce17c0971eba9"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/medium-b-bottom.png",
+      "bytes": 90172,
+      "sha256": "9c4e94b386bf846a5fe878d4555377ceeaff9c55ea3fbe933f1b63deb4c400af"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/medium-b-contact-sheet.png",
+      "bytes": 803636,
+      "sha256": "95a2df1878d3ebc0a734ce6e18f324701eed04e1459aa81b660d7daa0be9009c"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/medium-b-left.png",
+      "bytes": 141686,
+      "sha256": "a7e0332328b719556c305e9e572782b1efcc56ddcde32a9d0e12ee5f4c45e255"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/medium-b-rear.png",
+      "bytes": 157129,
+      "sha256": "10a12d8a5174c8ec7641a36f8a820efbee8394b42a9e38d6194094de14b35509"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/medium-b-right.png",
+      "bytes": 149757,
+      "sha256": "71bb187836a8ecf423bb603d565a49fc46847d50207b5bd46c3b42a7278a5901"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/medium-b-top.png",
+      "bytes": 131952,
+      "sha256": "08f5132b1268d41ab17a0cf0a594e5f00c091ba66be85fd0c60a49b430090866"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/soll-ist-3q-front.png",
+      "bytes": 307116,
+      "sha256": "379ca7a93fb7c1a1ec397538d57dade6e693c2434237856408a2e5550c9e9a5f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/soll-ist-bottom.png",
+      "bytes": 265368,
+      "sha256": "503e087b8fce1bececc2335543894eedffd6f8d470faf1ac866cc42a9421ec59"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/soll-ist-left.png",
+      "bytes": 307112,
+      "sha256": "4445cab2f70b46ae73c94026fb2a3bd4518fe528124c1bd44173bf3fe366c3c1"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/soll-ist-rear.png",
+      "bytes": 346122,
+      "sha256": "5bf7157b65d949afd7f4f3a25ede5f5a260231f63b434e95fa9e1c1ca045577a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/soll-ist-right.png",
+      "bytes": 325605,
+      "sha256": "a0a8f1d04af94879f7c76b9f94c28544d0d2efd89c97a725d13e3ade828c9f5f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/soll-ist-top.png",
+      "bytes": 293107,
+      "sha256": "2b541f012d00bbef5a04bb674d7d3d88bb684f4cb0f34cd81d6daed597aafaea"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/source-3q-front.png",
+      "bytes": 158094,
+      "sha256": "6fde91cfc9adc3a795541f63f7be972b19d35aef75e2b31f7d545d36ecb9b448"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/source-bottom.png",
+      "bytes": 170649,
+      "sha256": "e1c27314f7f0bb502a7452dbdbab3e65354df32cfcb7b972a190c53b9421d807"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/source-contact-sheet.png",
+      "bytes": 994005,
+      "sha256": "0188c98dd265cb1af3ea91b28be524c18269947f3a647fb896d0aa3ecc220d0f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/source-left.png",
+      "bytes": 161226,
+      "sha256": "1e7cbf4db8d78ae096ac7409362ee2db191ba7752dcdc7390a43bc510c439ca8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/source-rear.png",
+      "bytes": 182311,
+      "sha256": "81069ba3c24424a0b68e46eec8a3453b53f28abdeb4a08daad67ea547c5ff345"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/source-right.png",
+      "bytes": 170275,
+      "sha256": "b89c3153fdadd649a023bfa5278b6371d218534fcf00eacf2542d4967053f21e"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/medium-b/source-top.png",
+      "bytes": 155354,
+      "sha256": "f6af6fac72bee4a497f85cbea7be9095f5c307a623aeff52383af090564a1320"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/screened-mls-d-3q-front.png",
+      "bytes": 165895,
+      "sha256": "f97135a684ad7a0aaa660d4e1962d79cbe99436dc6a5efdaf9bae51ed86eef0b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/screened-mls-d-bottom.png",
+      "bytes": 104833,
+      "sha256": "d53fce8b22010db639d55346bbcec4bd6f1e3e9d6b5f42b6b2a97930c2ef65d8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/screened-mls-d-contact-sheet.png",
+      "bytes": 888431,
+      "sha256": "4db17d6bca5c4364071d22bda76c11b213e72fadcf6662a4b9386cd9c5508030"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/screened-mls-d-left.png",
+      "bytes": 157238,
+      "sha256": "55259438ef6c1a2eb09f83a70c8492ce869adbc9b8530e1843841b3da6119277"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/screened-mls-d-rear.png",
+      "bytes": 167622,
+      "sha256": "d9a791764bcdb7d3374c52db6f63d801839fbf570999c73c241a78ee73ff6485"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/screened-mls-d-right.png",
+      "bytes": 160622,
+      "sha256": "7217e6e95b956fe5b5d681e41e5fb98306ab0227cd17177c4d076773b84e9cb8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/screened-mls-d-top.png",
+      "bytes": 145543,
+      "sha256": "36463a35f6c8a7989a58b6e508a2db6470d6ac023eb388443c4e7cc15750e7ec"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-3q-front.png",
+      "bytes": 329310,
+      "sha256": "808520a08b70c5f01a963b0720b6d0929fad9189208810477ecc07f1569839d3"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-bottom.png",
+      "bytes": 280570,
+      "sha256": "89dad36c4ca5f10c0e992aa9be34376e2887d75aba99dc707ca18f9c63f301d2"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-left.png",
+      "bytes": 322602,
+      "sha256": "04fb12b61304340bc48d2aba95b1409acc057b327cb37f54fea363b1441508db"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-rear.png",
+      "bytes": 355651,
+      "sha256": "f73c7b418e5510788d524ce70cbcdb0b3e75de50f12ecad6ac4d7a36c22dacdb"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-right.png",
+      "bytes": 336672,
+      "sha256": "f40763803c173f858c92b5a99a4b1adeec14c0b1fb2ae13192b1e493e483e097"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/soll-ist-top.png",
+      "bytes": 306280,
+      "sha256": "d4128168a37cd939f81a4ea5f07c63fd0e0504f356830b29c2e25c8121d61a74"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/source-3q-front.png",
+      "bytes": 157758,
+      "sha256": "7f97d76798c6fea2b09d7bffa8c6c6fcc32b7aa3450e9120c517fd7da0e86189"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/source-bottom.png",
+      "bytes": 170014,
+      "sha256": "4da21423c75fb2a9f3ee608258d0035289d404205903434cfc926a984d96fcd1"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/source-contact-sheet.png",
+      "bytes": 989224,
+      "sha256": "8ae0dd45b2f87bb7fd3310d7b3fe6fb53be35a3958c503f308f3fa5f6819123d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/source-left.png",
+      "bytes": 160280,
+      "sha256": "12930c3d2f4d3d7a8d2896e968ca4f8f08e35c0011d49fa711050c8fdd96254c"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/source-rear.png",
+      "bytes": 180607,
+      "sha256": "2ff89a8c82d7c3e105810b9e9a13d52de9e081056cc9c144667b6b97b6975d41"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/source-right.png",
+      "bytes": 169539,
+      "sha256": "a6a593fd6d0d09920d24a8f73baa620e392b4c07376e90185fe49d0f6ee52029"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/screened-mls-d/source-top.png",
+      "bytes": 154714,
+      "sha256": "947673e48e89359e9e04493b2e79287d05debedbfd28389f67cf00f963f1ddaa"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/small-a-3q-front.png",
+      "bytes": 144171,
+      "sha256": "71f400c75f0018981c2c36cf5f15c5eef6eadd8d9db961ddb0917ad770e5db82"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/small-a-bottom.png",
+      "bytes": 107334,
+      "sha256": "568097e5a50f5653558ddf96f663e8703ded5006079171f693f349add064a925"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/small-a-contact-sheet.png",
+      "bytes": 842060,
+      "sha256": "cf28d0da48e8e6274d4ce047b229f37d44d00816ff2a12c70626818ddad8319b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/small-a-left.png",
+      "bytes": 155334,
+      "sha256": "721e642dc6847d716063add55d6ae9a384b22e939df9eb8ef2400bb405895000"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/small-a-rear.png",
+      "bytes": 160352,
+      "sha256": "c51e094851c0b08934700995729e8ff7195a9dc016c118f5b0f3297d62e8c501"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/small-a-right.png",
+      "bytes": 156300,
+      "sha256": "0986b8b6352c11429b108d13557a6e609a39aa703c9ed169f758f0d61fc4ac27"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/small-a-top.png",
+      "bytes": 132955,
+      "sha256": "546c74c29d6221c34ba364b2674af8e762c9768a309b45decdd69390097ba903"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/soll-ist-3q-front.png",
+      "bytes": 306634,
+      "sha256": "0f8f030d03d59e86a9bb5318c638255cc7978c34fa7b98d1eb527c7f239f4ffa"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/soll-ist-bottom.png",
+      "bytes": 284273,
+      "sha256": "a7dc922d4248da1500fafd504823dba8a2675e11df451d99ec284ab2f16d67c1"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/soll-ist-left.png",
+      "bytes": 321873,
+      "sha256": "ab5a7da749cf21c66b1e63dce8a0203c1e56f6fee3dc6de13fb4db2a8024455d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/soll-ist-rear.png",
+      "bytes": 349994,
+      "sha256": "ceccb17d1944b89fc1f7186d24208feff257b15a274be70e548a94812ca199f4"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/soll-ist-right.png",
+      "bytes": 333092,
+      "sha256": "a8cb1a0476b2e131f8461811ee4020d4a4aba849e8e9b84aff39c8d2064cbc75"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/soll-ist-top.png",
+      "bytes": 294298,
+      "sha256": "9a814f1b00b0daec0bcfc51c2089b4ee831dfeca401a7a94bd6c1dcce59b0eaa"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/source-3q-front.png",
+      "bytes": 157845,
+      "sha256": "9c1300184287bda06c3c7fe908a9c0f16812290a843b161c83c4585b74c87a5f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/source-bottom.png",
+      "bytes": 170761,
+      "sha256": "20b7244de744b1b286e86cab9a48675adb8eaa0dc4904f4a20c4d535ff210d0f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/source-contact-sheet.png",
+      "bytes": 993639,
+      "sha256": "3a7aabbf6fd1c49244c962b38bb86b0f067e2014f5c2361d6fd71e934f4dbf44"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/source-left.png",
+      "bytes": 160843,
+      "sha256": "2a5b788839385a1d2f08d9794eb0ef61c7c903a8fbc9403055f5af71356f929a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/source-rear.png",
+      "bytes": 182332,
+      "sha256": "be0cc13c7b1770cc378a7bed0ac993a57ef7e67e6a7d082e1787c4d53678565c"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/source-right.png",
+      "bytes": 169896,
+      "sha256": "b0c00e68d046897da42b828ed4aad6374682bd81c51154f695176d9ba153795f"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-candidates/small-a/source-top.png",
+      "bytes": 155208,
+      "sha256": "54a2e4aa35b3ba60c8e31974fe68755c63691b6bde3ff205abf4121c8a37a8d8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/selected-r17-3q-front.png",
+      "bytes": 165895,
+      "sha256": "f97135a684ad7a0aaa660d4e1962d79cbe99436dc6a5efdaf9bae51ed86eef0b"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/selected-r17-bottom.png",
+      "bytes": 104833,
+      "sha256": "d53fce8b22010db639d55346bbcec4bd6f1e3e9d6b5f42b6b2a97930c2ef65d8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/selected-r17-left.png",
+      "bytes": 157238,
+      "sha256": "55259438ef6c1a2eb09f83a70c8492ce869adbc9b8530e1843841b3da6119277"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/selected-r17-rear.png",
+      "bytes": 167622,
+      "sha256": "d9a791764bcdb7d3374c52db6f63d801839fbf570999c73c241a78ee73ff6485"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/selected-r17-right.png",
+      "bytes": 160622,
+      "sha256": "7217e6e95b956fe5b5d681e41e5fb98306ab0227cd17177c4d076773b84e9cb8"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/selected-r17-top.png",
+      "bytes": 145543,
+      "sha256": "36463a35f6c8a7989a58b6e508a2db6470d6ac023eb388443c4e7cc15750e7ec"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17-3q-front.png",
+      "bytes": 329310,
+      "sha256": "808520a08b70c5f01a963b0720b6d0929fad9189208810477ecc07f1569839d3"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17-bottom.png",
+      "bytes": 280570,
+      "sha256": "89dad36c4ca5f10c0e992aa9be34376e2887d75aba99dc707ca18f9c63f301d2"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17-left.png",
+      "bytes": 322602,
+      "sha256": "04fb12b61304340bc48d2aba95b1409acc057b327cb37f54fea363b1441508db"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17-rear.png",
+      "bytes": 355651,
+      "sha256": "f73c7b418e5510788d524ce70cbcdb0b3e75de50f12ecad6ac4d7a36c22dacdb"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17-right.png",
+      "bytes": 336672,
+      "sha256": "f40763803c173f858c92b5a99a4b1adeec14c0b1fb2ae13192b1e493e483e097"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17-top.png",
+      "bytes": 306280,
+      "sha256": "d4128168a37cd939f81a4ea5f07c63fd0e0504f356830b29c2e25c8121d61a74"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-r17.png",
+      "bytes": 1926649,
+      "sha256": "820e0c4623ee47a087796d2d20a013a17c2cebebf90d46646f1871671ffb7fb9"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/renders-gate-evidence/soll-ist-ref-source-candidate-r17.png",
+      "bytes": 2257875,
+      "sha256": "d07de53e01f09257c555ad33f0b31179d799e352333cd9175d8e9b00ac90ea4c"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reports/candidate-iteration-summary-r17.json",
+      "bytes": 4272,
+      "sha256": "34340c4bc3f7255ca52c641eec1d8772d79764dfa32ce7712f3db2536ab6d51d"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reports/form-delta-fine-c-r17.json",
+      "bytes": 3744,
+      "sha256": "8d9c2113557a53f366caa98d499003079ffe2c10fac1837a54a11573b2288977"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reports/form-delta-medium-b-r17.json",
+      "bytes": 3758,
+      "sha256": "fabd4de271efba738f2fdc7cf289bada4eefea2a81311e0c6fa810eda09df637"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reports/form-delta-screened-mls-d-r17.json",
+      "bytes": 3826,
+      "sha256": "4ba6bc2d59217e3047958b2315f0687ce73e846633250d7fa672133d27e663cd"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reports/form-delta-small-a-r17.json",
+      "bytes": 3746,
+      "sha256": "5669fc64b3a5b64558c1a8616585d579b879547f480013022f7807c0f69eaaef"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reports/form-protection-gate-r17.json",
+      "bytes": 5341,
+      "sha256": "162296424f4d3a8a3a9bb19a30ccc1d30911a7a349e512c82c6b59f235acadb3"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reports/real-geometry-renders-r17.json",
+      "bytes": 2191,
+      "sha256": "bbd05e1465b032fec44770f5063a7ee4c52a46706e97d02cf2f06333f8f65326"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reports/topology-gate-r17.json",
+      "bytes": 1323,
+      "sha256": "2ad5f484d2a06d20a7e6a9d9fc65d9496ce400841175a13d280a9850ed2ab9d2"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reports/visibility-classification-r17.json",
+      "bytes": 3824,
+      "sha256": "15cd2408cc593479f44320c5b1167b5c1fa7d174565748258721ddab31205deb"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reproduction-scripts/finalize_r17.py",
+      "bytes": 11775,
+      "sha256": "143bc857e0c3bd7888e972fc3be8d15673a188b9e7e3262a4f9b068815a1d1e6"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reproduction-scripts/r17_visibility_poisson.py",
+      "bytes": 44928,
+      "sha256": "ae3f6e7b986f87c692c4f3f8e8efa94f8397c81c629e451fb32522937552215a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/reproduction-scripts/validate_r17.py",
+      "bytes": 4017,
+      "sha256": "e0e5b86aad14c3fb6d6f8a20d3def8f72335f86f72a2f7406fbd09756a2cea1a"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/REPRODUKTION-R17.md",
+      "bytes": 1236,
+      "sha256": "ea1001e8c28d3cf44ba5221ce5b0e183505eba2c67f0a7a8eab72e466b07c669"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/result-status.json",
+      "bytes": 1743,
+      "sha256": "769f6d00dea1d077ee84b7c9128ca100abb58c87185f8fb33b9bbcc63bbe9369"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/REVISION-R02-R17.md",
+      "bytes": 4071,
+      "sha256": "f00f68b32c42780926544b3f19e2834b7ead4ebd8a7d5af23cd34412b4dcf019"
+    },
+    {
+      "path": "outputs/herbst-igel-r02-visibility-surface-rebuild-r17/technical-validation-r17.json",
+      "bytes": 569,
+      "sha256": "e74eafd49e8bf971abf8165f1cdc1b0c8556e95a8806fbe51acaeea71a83f069"
+    }
+  ]
+}
