@@ -100,11 +100,14 @@ $text = $text.Replace($oldPushBlock,$newPushBlock)
 
 # Verhindert, dass origin/master R03.8 den lokalen Notfallfix direkt beim Neustart wieder ueberschreibt.
 $syncNeedle = 'function Sync-RuntimeFromRemote {'
-$syncReplacement = "function Sync-RuntimeFromRemote {`r`n    if (`$WatcherVersion -eq \"R03.9-HOTFIX\") { return `$false }"
+$syncReplacement = @'
+function Sync-RuntimeFromRemote {
+    if ($WatcherVersion -eq "R03.9-HOTFIX") { return $false }
+'@
 if (-not $text.Contains($syncNeedle)) {
     throw "Hotfix abgebrochen: Sync-RuntimeFromRemote nicht gefunden. Backup: $backup"
 }
-$text = $text.Replace($syncNeedle,$syncReplacement)
+$text = $text.Replace($syncNeedle,$syncReplacement.TrimEnd())
 
 [IO.File]::WriteAllText($runtimeWatcher,$text,(New-Object Text.UTF8Encoding($false)))
 Log "Runtime-Watcher gepatcht; Backup: $backup"
