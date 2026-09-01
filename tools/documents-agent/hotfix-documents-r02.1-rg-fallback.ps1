@@ -1,7 +1,7 @@
 param(
     [string]$AgentRoot = "D:\Documents-Controlling-Agent",
     [string]$SchedulerTaskName = "Documents-Ruediger-Agent",
-    [int]$WaitForCodexSeconds = 1800
+    [int]$GraceSeconds = 30
 )
 
 $ErrorActionPreference = "Stop"
@@ -18,28 +18,46 @@ if (-not (Test-Path -LiteralPath $runtimeFile -PathType Leaf)) { throw "Document
 if (-not (Test-Path -LiteralPath $stateFile -PathType Leaf)) { throw "Documents State fehlt: $stateFile" }
 
 $rootPattern = [Regex]::Escape($AgentRoot)
+function Get-DocumentsWatchers {
+    return @(Get-CimInstance Win32_Process -ErrorAction SilentlyContinue | Where-Object {
+        $_.CommandLine -and $_.CommandLine -match 'documents-agent-watch\.ps1' -and $_.CommandLine -match $rootPattern
+    })
+}
 function Get-ActiveDocumentsCodex {
-    $all = @(Get-CimInstance Win32_Process -ErrorAction SilentlyContinue)
-    return @($all | Where-Object {
+    return @(Get-CimInstance Win32_Process -ErrorAction SilentlyContinue | Where-Object {
         $_.CommandLine -and $_.CommandLine -match $rootPattern -and
         ($_.Name -match '^codex' -or $_.CommandLine -match 'codex(?:\.exe)?')
     })
 }
 
-# Nicht in einen laufenden Codex eingreifen. Statt abzubrechen, kontrolliert warten.
-$deadline = (Get-Date).AddSeconds([Math]::Max(0,$WaitForCodexSeconds))
-$announced = $false
-while ($true) {
-    $activeCodex = @(Get-ActiveDocumentsCodex)
-    if ($activeCodex.Count -eq 0) { break }
-    if (-not $announced) {
-        Write-Output "Aktiver Documents-Codex erkannt. Hotfix wartet automatisch auf einen sicheren Zustand."
-        $announced = $true
+# R02.2: Erst den Produzenten neuer Codex-Prozesse stilllegen. Dadurch gibt es kein Rennen
+# zwischen Hotfix und Watcher. Der bereits seit >30 Minuten festhaengende, checkpointlose
+# Documents-Codex darf danach kontrolliert beendet werden; betroffen sind ausschliesslich
+# Prozesse, deren CommandLine auf diesen AgentRoot zeigt.
+Write-Output "Documents-Agent wird fuer den Hotfix kontrolliert angehalten."
+Stop-ScheduledTask -TaskName $SchedulerTaskName -ErrorAction SilentlyContinue
+Start-Sleep -Seconds 2
+$watchers = @(Get-DocumentsWatchers)
+foreach ($watcher in $watchers) {
+    Stop-Process -Id $watcher.ProcessId -Force -ErrorAction SilentlyContinue
+}
+
+$deadline = (Get-Date).AddSeconds([Math]::Max(0,$GraceSeconds))
+while ((Get-Date) -lt $deadline) {
+    if (@(Get-ActiveDocumentsCodex).Count -eq 0) { break }
+    Start-Sleep -Seconds 2
+}
+
+$activeCodex = @(Get-ActiveDocumentsCodex)
+if ($activeCodex.Count -gt 0) {
+    Write-Output "Checkpointloser Documents-Codex blieb nach Stop des Watchers aktiv; beende nur diese AgentRoot-gebundenen Prozesse."
+    foreach ($proc in $activeCodex) {
+        Stop-Process -Id $proc.ProcessId -Force -ErrorAction SilentlyContinue
     }
-    if ((Get-Date) -ge $deadline) {
-        throw "Timeout: Documents-Codex nach $WaitForCodexSeconds Sekunden noch aktiv. Hotfix stoppt ohne Aenderung."
-    }
-    Start-Sleep -Seconds 5
+    Start-Sleep -Seconds 2
+}
+if (@(Get-ActiveDocumentsCodex).Count -ne 0) {
+    throw "Documents-Codex konnte nicht sicher beendet werden. Hotfix stoppt ohne State-Aenderung."
 }
 
 $state = Get-Content -LiteralPath $stateFile -Raw | ConvertFrom-Json
@@ -63,7 +81,7 @@ $marker
 "@
 if ($text -notmatch 'Verlasse dich nicht auf optionale Kommandozeilenwerkzeuge wie rg/ripgrep') {
     if (-not $text.Contains($marker)) { throw "Prompt-Marker im Runtime-Watcher nicht gefunden." }
-    Copy-Item -LiteralPath $runtimeFile -Destination "$runtimeFile.previous-r02.1" -Force
+    Copy-Item -LiteralPath $runtimeFile -Destination "$runtimeFile.previous-r02.2" -Force
     $text = $text.Replace($marker,$addition.TrimEnd())
     [IO.File]::WriteAllText($runtimeFile,$text,(New-Object Text.UTF8Encoding($false)))
 }
@@ -81,27 +99,18 @@ foreach ($failure in $failures) {
         $failure.last_checkpoint_sha = ""
         $failure.last_checkpoint_number = 0
         $failure.blocked = $false
-        $failure.reason = "R02.1: technischer rg-Abhaengigkeitsfehler behoben; Retry-Budget kontrolliert zurueckgesetzt."
+        $failure.reason = "R02.2: technischer rg-Abhaengigkeitsfehler behoben; Retry-Budget kontrolliert zurueckgesetzt."
     }
 }
 $state.failures = $failures
-Copy-Item -LiteralPath $stateFile -Destination "$stateFile.previous-r02.1" -Force
+Copy-Item -LiteralPath $stateFile -Destination "$stateFile.previous-r02.2" -Force
 [IO.File]::WriteAllText($stateFile,($state | ConvertTo-Json -Depth 12),(New-Object Text.UTF8Encoding($false)))
 
-Stop-ScheduledTask -TaskName $SchedulerTaskName -ErrorAction SilentlyContinue
-Start-Sleep -Seconds 2
-Get-CimInstance Win32_Process -ErrorAction SilentlyContinue |
-    Where-Object { $_.CommandLine -and $_.CommandLine -match 'documents-agent-watch\.ps1' -and $_.CommandLine -match $rootPattern } |
-    ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
-Start-Sleep -Seconds 2
 Start-ScheduledTask -TaskName $SchedulerTaskName
-Start-Sleep -Seconds 4
-
-$watchers = @(Get-CimInstance Win32_Process -ErrorAction SilentlyContinue | Where-Object {
-    $_.CommandLine -and $_.CommandLine -match 'documents-agent-watch\.ps1' -and $_.CommandLine -match $rootPattern
-})
+Start-Sleep -Seconds 5
+$watchers = @(Get-DocumentsWatchers)
 if ($watchers.Count -ne 1) { throw "Nach Hotfix wurden $($watchers.Count) Documents-Watcher gefunden; erwartet: 1." }
 
-Write-Output "DOCUMENTS R02.1 RG-FALLBACK HOTFIX PASS"
+Write-Output "DOCUMENTS R02.2 RG-FALLBACK HOTFIX PASS"
 Write-Output "Watcher PID: $($watchers[0].ProcessId)"
 Write-Output "Retry-State fuer R01 kontrolliert zurueckgesetzt."
