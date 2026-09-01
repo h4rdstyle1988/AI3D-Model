@@ -6,10 +6,13 @@ param(
 $ErrorActionPreference = 'Stop'
 $StateDir = Join-Path $Root 'state'
 $LogDir   = Join-Path $Root 'logs'
-New-Item -ItemType Directory -Force -Path $StateDir,$LogDir | Out-Null
+$MaintenanceDir = Join-Path $Root 'maintenance'
+New-Item -ItemType Directory -Force -Path $StateDir,$LogDir,$MaintenanceDir | Out-Null
 
 $LogFile = Join-Path $LogDir ('manfred-' + (Get-Date -Format 'yyyy-MM-dd') + '.log')
 $StateFile = Join-Path $StateDir 'MANFRED_STATUS.json'
+$MaintenanceRequestFile = Join-Path $MaintenanceDir 'REQUEST.json'
+$MaintenanceRunner = Join-Path $PSScriptRoot 'invoke-known-agent-repair.ps1'
 
 $agents = @(
     [pscustomobject]@{
@@ -34,6 +37,29 @@ function Get-Watchers {
     param([string]$Pattern)
     @(Get-CimInstance Win32_Process -Filter "Name='powershell.exe'" -ErrorAction SilentlyContinue |
         Where-Object { $_.CommandLine -and $_.CommandLine -match $Pattern })
+}
+
+function Invoke-ManfredMaintenance {
+    if (-not (Test-Path -LiteralPath $MaintenanceRequestFile -PathType Leaf)) {
+        return [pscustomobject]@{ status='NONE'; request_id=$null; repair_id=$null; target_agent=$null; reason='Kein lokaler Maintenance-Request.' }
+    }
+    if (-not (Test-Path -LiteralPath $MaintenanceRunner -PathType Leaf)) {
+        $reason = "Allowlist-Runner fehlt: $MaintenanceRunner"
+        Write-ManfredLog 'ERROR' $reason
+        return [pscustomobject]@{ status='BLOCKED'; request_id=$null; repair_id=$null; target_agent=$null; reason=$reason }
+    }
+
+    try {
+        $result = & $MaintenanceRunner -RequestPath $MaintenanceRequestFile -Root $Root -SourceRepository 'D:\AI3D-Agent\worker\AI3D-Model-worker'
+        $level = $(if ($result.status -eq 'PASS') { 'INFO' } else { 'ERROR' })
+        Write-ManfredLog $level ("Maintenance {0}: {1} ({2})" -f $result.repair_id,$result.status,$result.reason)
+        return $result
+    }
+    catch {
+        $reason = 'Maintenance-Runner fehlgeschlagen: ' + $_.Exception.Message
+        Write-ManfredLog 'ERROR' $reason
+        return [pscustomobject]@{ status='BLOCKED'; request_id=$null; repair_id=$null; target_agent=$null; reason=$reason }
+    }
 }
 
 function Repair-Agent {
@@ -93,7 +119,7 @@ function Repair-Agent {
 }
 
 function Write-State {
-    param($Results)
+    param($Results,$Maintenance)
     $codex = @(Get-CimInstance Win32_Process -ErrorAction SilentlyContinue |
         Where-Object { $_.Name -eq 'codex.exe' -and $_.CommandLine -and $_.CommandLine -match 'AI3D-Agent|Documents-Controlling-Agent' } |
         ForEach-Object { [pscustomobject]@{ pid=[int]$_.ProcessId; command=$_.CommandLine } })
@@ -101,16 +127,19 @@ function Write-State {
     $state = [ordered]@{
         schema_version = 1
         supervisor = 'MANFRED'
-        version = 'R01'
+        version = 'R01.1'
         updated_at = (Get-Date).ToString('o')
         machine = $env:COMPUTERNAME
         healthy = (@($Results | Where-Object { -not $_.healthy }).Count -eq 0)
         agents = @($Results)
         codex_workers = $codex
+        maintenance = $Maintenance
         policy = [ordered]@{
             project_code_changes = $false
             remote_shell = $false
             create_project_tasks = $false
+            maintenance_allowlist_only = $true
+            maintenance_request_local_only = $true
             herbst_igel_after_r19 = 'HOLD'
         }
     }
@@ -119,15 +148,16 @@ function Write-State {
     Move-Item -LiteralPath $tmp -Destination $StateFile -Force
 }
 
-Write-ManfredLog 'INFO' 'MANFRED Supervisor R01 gestartet.'
+Write-ManfredLog 'INFO' 'MANFRED Supervisor R01.1 gestartet.'
 
 while ($true) {
     try {
+        $maintenance = Invoke-ManfredMaintenance
         $results = @()
         foreach ($agent in $agents) {
             $results += Repair-Agent -Agent $agent
         }
-        Write-State -Results $results
+        Write-State -Results $results -Maintenance $maintenance
     } catch {
         Write-ManfredLog 'ERROR' ('Supervisor-Zyklus fehlgeschlagen: ' + $_.Exception.Message)
     }

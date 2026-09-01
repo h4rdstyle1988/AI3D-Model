@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HANNES-MANFRED-DOCUMENTS-REPAIR-R04.md",
+  "revision": "R04",
+  "task_blob_sha": "57ce7b3b9898b2ccaa52a929a5d79da04665f6ea",
+  "generated_at": "2026-09-01T18:02:00+02:00",
+  "status": "BLOCKED",
+  "checks": [
+    {
+      "name": "documents_worker_path_origin_clean",
+      "status": "PASS",
+      "detail": "Dedicated Documents worker path and GitHub origin matched; worktree was clean and no stash was required."
+    },
+    {
+      "name": "hidden_loop_reproduced",
+      "status": "PASS",
+      "detail": "Same task blob restarted with changing Codex PIDs while local live status remained attempt=1 and retry_count=0."
+    },
+    {
+      "name": "r02_3_source_parser_and_semantics",
+      "status": "PASS",
+      "detail": "10/10 R02.3 checks passed, including attempt persistence before launch and a state-persisted stable third infrastructure failure block."
+    },
+    {
+      "name": "r02_runtime_deterministic_dry_run",
+      "status": "PASS",
+      "detail": "Real runtime matched after newline normalization; complete candidate parsed; runtime SHA-256 remained F13481943826E1841925E91C11AD2ABABB092280A952838E50F34C41A0A2DC07."
+    },
+    {
+      "name": "r02_3_local_deployment",
+      "status": "BLOCKED",
+      "detail": "Sandbox denied creation of the mandatory runtime backup before any stop or runtime write; actual runtime remains DOCUMENTS-R02."
+    },
+    {
+      "name": "documents_scheduler_single_watcher",
+      "status": "PASS",
+      "detail": "Existing MANFRED R01 local status reports scheduler Running and exactly one Documents watcher PID 18232 after the aborted repair."
+    },
+    {
+      "name": "documents_full_infrastructure_suite",
+      "status": "PASS",
+      "detail": "18 PASS, 1 SKIP, 0 FAIL."
+    },
+    {
+      "name": "manfred_maintenance_allowlist",
+      "status": "PASS",
+      "detail": "12/12 checks passed; valid fixed blob accepted in validate-only fixture, unknown repair and changed blob rejected."
+    },
+    {
+      "name": "manfred_r01_1_local_install",
+      "status": "BLOCKED",
+      "detail": "Installed MANFRED remains R01 because this unelevated sandbox cannot update D:\\Manfred-Supervisor or restart its SYSTEM scheduled task."
+    },
+    {
+      "name": "herbst_igel_and_documents_product_requirements_unchanged",
+      "status": "PASS",
+      "detail": "No Herbst-Igel file and no Documents product requirement was changed."
+    },
+    {
+      "name": "git_diff_check",
+      "status": "PASS",
+      "detail": "No whitespace errors."
+    }
+  ],
+  "failure_count": 0,
+  "blocked_count": 2,
+  "final_user_approval_claimed": false
+}

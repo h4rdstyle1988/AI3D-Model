@@ -1,4 +1,4 @@
-# Documents-Agent Software-Workflow R02
+# Documents-Agent Software-Workflow R02.3
 
 Diese Infrastruktur ist eine getrennte zweite Ruediger-Instanz fuer
 `Documents-Controlling-clear`. Sie aendert weder Konfiguration noch Queue-Semantik
@@ -86,6 +86,11 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\tools\documents-agent
   Checkpoint beginnt ein frisches begrenztes Fehlerbudget.
 - Fetch-, Push- und sonstige Infrastrukturfehler zaehlen getrennt und erhalten
   einen bis auf fuenf Minuten begrenzten exponentiellen Backoff.
+- R02.3 speichert `attempt` vor jedem Codex-Start. Drei aufeinanderfolgende
+  Infrastruktur- oder Post-Validation-Fehler fuehren stabil zu `BLOCKIERT`,
+  sodass ein erfolgreicher Codex-Exit ohne Ergebnisdateien keinen versteckten
+  PID-Restart-Loop mehr erzeugen kann. Echte Codex-Fehler bleiben ausschliesslich
+  im separaten `retry_count`-Budget.
 - Vor Checkpoints laufen zielgerichtete Tests; vor dem finalen Ergebnis fordert
   der Prompt den vollstaendigen relevanten Testlauf. Der finale Commit wird vom
   Watcher mit Task-Trailern erzeugt und erst nach exakter Remote-SHA-Pruefung als

@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-HANNES-MANFRED-DOCUMENTS-REPAIR-R04.md",
+  "task_revision": "R04",
+  "task_blob_sha": "57ce7b3b9898b2ccaa52a929a5d79da04665f6ea",
+  "REPAIR_STATUS": "BLOCKED",
+  "status": "BLOCKED",
+  "runtime_watcher_before": "DOCUMENTS-R02",
+  "runtime_watcher_after": "DOCUMENTS-R02",
+  "source_watcher_target": "DOCUMENTS-R02.3",
+  "runtime_sha256_after": "F13481943826E1841925E91C11AD2ABABB092280A952838E50F34C41A0A2DC07",
+  "secured_stashes": [],
+  "runtime_backups": [],
+  "state_backups": [],
+  "backup_attempt": "documents-agent-watch.ps1.r02.3-backup-20260901-175840",
+  "backup_attempt_status": "BLOCKED_BY_SANDBOX_BEFORE_CREATION",
+  "scheduler": {
+    "name": "Documents-Ruediger-Agent",
+    "state": "Running",
+    "watcher_count": 1,
+    "watcher_pids": [18232]
+  },
+  "live_status_after_attempt": {
+    "source": "D:\\Documents-Controlling-Agent\\temp\\RUEDIGER_STATUS.json",
+    "updated_at": "2026-09-01T18:00:42.5575277+02:00",
+    "watcher_version": "DOCUMENTS-R02",
+    "phase": "ARBEITET",
+    "task": "tasks/R01_GENERIC_VALIDATION_CORE.md",
+    "task_blob": "180b5973f7b5320af090cf9b96fe46e5ec755336",
+    "branch": "ruediger/r01-generic-validation-core-180b5973",
+    "attempt": 1,
+    "retry_count": 0,
+    "codex_pid": 14976,
+    "watcher_pid": 18232
+  },
+  "manfred_maintenance_flow": {
+    "source_extended": true,
+    "source_version": "R01.1",
+    "local_installed_version": "R01",
+    "local_install_completed": false,
+    "remote_shell_enabled": false,
+    "known_agents": ["AI3D", "Documents"],
+    "allowed_repairs": ["documents-r02.3-hidden-loop-guard"],
+    "request_accepts_arbitrary_commands": false,
+    "script_blob_allowlist": true,
+    "automatic_self_update": false,
+    "automatic_self_update_reason": "A self-update of the executing allowlist would create an unsafe bootstrap cycle."
+  },
+  "main_files": [
+    "tools/documents-agent/documents-agent-watch.ps1",
+    "tools/documents-agent/hotfix-documents-r02.3-hidden-loop-guard.ps1",
+    "tools/documents-agent/test-documents-r02.3-loop-guard.ps1",
+    "tools/documents-agent/README.md",
+    "tools/manfred-supervisor/manfred-supervisor.ps1",
+    "tools/manfred-supervisor/invoke-known-agent-repair.ps1",
+    "tools/manfred-supervisor/request-known-agent-repair.ps1",
+    "tools/manfred-supervisor/install-manfred-supervisor.ps1",
+    "tools/manfred-supervisor/test-manfred-maintenance.ps1",
+    "tools/manfred-supervisor/README.md",
+    "tools/manfred-supervisor/maintenance/README.md",
+    "reports/RESULT-HANNES-MANFRED-DOCUMENTS-REPAIR-R04.md",
+    "reports/validation-hannes-manfred-documents-repair-r04.json",
+    "reports/result-status-hannes-manfred-documents-repair-r04.json"
+  ],
+  "validations": [
+    {"name": "r02_3_loop_guard_suite", "status": "PASS", "detail": "10/10"},
+    {"name": "documents_full_infrastructure_suite", "status": "PASS", "detail": "18 PASS, 1 SKIP, 0 FAIL"},
+    {"name": "manfred_maintenance_suite", "status": "PASS", "detail": "12/12"},
+    {"name": "real_r02_3_deployment", "status": "BLOCKED", "detail": "mandatory backup write denied before stop"}
+  ],
+  "open_real_tests": [
+    "Deploy R02.3 with a local elevated token and verify watcher_version DOCUMENTS-R02.3.",
+    "Verify exactly one Documents watcher and active scheduler after restart.",
+    "If a second Codex process starts for blob 180b5973f7b5320af090cf9b96fe46e5ec755336, verify attempt > 1 while retry_count changes only on genuine Codex errors.",
+    "Verify the third consecutive infrastructure/post-validation failure remains stably BLOCKIERT and starts no fourth Codex process.",
+    "Bootstrap MANFRED R01.1 once locally, then use only the allowlisted maintenance request path."
+  ],
+  "herbst_igel_touched": false,
+  "documents_product_requirements_changed": false,
+  "final_user_approval_claimed": false,
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "No product function, confirmed measurement, product form, or user choice is missing; the remaining blocker is local elevation/write authority."
+}

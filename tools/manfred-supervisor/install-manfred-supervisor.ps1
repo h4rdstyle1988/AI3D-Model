@@ -1,7 +1,9 @@
 param(
     [string]$InstallRoot = 'D:\Manfred-Supervisor',
     [string]$TaskName = 'MANFRED-Supervisor',
-    [string]$SourceUrl = 'https://raw.githubusercontent.com/h4rdstyle1988/AI3D-Model/master/tools/manfred-supervisor/manfred-supervisor.ps1'
+    [string]$SourceUrl = 'https://raw.githubusercontent.com/h4rdstyle1988/AI3D-Model/master/tools/manfred-supervisor/manfred-supervisor.ps1',
+    [string]$MaintenanceRunnerUrl = 'https://raw.githubusercontent.com/h4rdstyle1988/AI3D-Model/master/tools/manfred-supervisor/invoke-known-agent-repair.ps1',
+    [string]$RequestWriterUrl = 'https://raw.githubusercontent.com/h4rdstyle1988/AI3D-Model/master/tools/manfred-supervisor/request-known-agent-repair.ps1'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -16,23 +18,37 @@ $StateDir = Join-Path $InstallRoot 'state'
 New-Item -ItemType Directory -Force -Path $InstallRoot,$RuntimeDir,$LogsDir,$StateDir | Out-Null
 
 $Target = Join-Path $RuntimeDir 'manfred-supervisor.ps1'
-$Temp = $Target + '.download'
+$MaintenanceRunnerTarget = Join-Path $RuntimeDir 'invoke-known-agent-repair.ps1'
+$RequestWriterTarget = Join-Path $RuntimeDir 'request-known-agent-repair.ps1'
+$downloads = @(
+    [pscustomobject]@{ Url=$SourceUrl; Target=$Target },
+    [pscustomobject]@{ Url=$MaintenanceRunnerUrl; Target=$MaintenanceRunnerTarget },
+    [pscustomobject]@{ Url=$RequestWriterUrl; Target=$RequestWriterTarget }
+)
 
-Invoke-WebRequest -UseBasicParsing -Uri $SourceUrl -OutFile $Temp
-
-$tokens = $null
-$errors = $null
-[System.Management.Automation.Language.Parser]::ParseFile($Temp,[ref]$tokens,[ref]$errors) | Out-Null
-if ($errors.Count -gt 0) {
-    $messages = (($errors | ForEach-Object { $_.Message }) -join '; ')
-    Remove-Item -LiteralPath $Temp -Force -ErrorAction SilentlyContinue
-    throw ('Downloaded MANFRED runtime failed PowerShell parser validation: ' + $messages)
+foreach ($download in $downloads) {
+    $download | Add-Member -NotePropertyName Temp -NotePropertyValue ($download.Target + '.download')
+    Invoke-WebRequest -UseBasicParsing -Uri $download.Url -OutFile $download.Temp
+    $tokens = $null
+    $errors = $null
+    [System.Management.Automation.Language.Parser]::ParseFile($download.Temp,[ref]$tokens,[ref]$errors) | Out-Null
+    if ($errors.Count -gt 0) {
+        $messages = (($errors | ForEach-Object { $_.Message }) -join '; ')
+        foreach ($item in $downloads) {
+            if ($item.Temp) { Remove-Item -LiteralPath $item.Temp -Force -ErrorAction SilentlyContinue }
+        }
+        throw ("Downloaded MANFRED file failed parser validation: $($download.Url) :: $messages")
+    }
 }
 
-if (Test-Path -LiteralPath $Target) {
-    Copy-Item -LiteralPath $Target -Destination ($Target + '.previous') -Force
+foreach ($download in $downloads) {
+    if (Test-Path -LiteralPath $download.Target) {
+        Copy-Item -LiteralPath $download.Target -Destination ($download.Target + '.previous') -Force
+    }
 }
-Move-Item -LiteralPath $Temp -Destination $Target -Force
+foreach ($download in $downloads) {
+    Move-Item -LiteralPath $download.Temp -Destination $download.Target -Force
+}
 
 $existing = Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
 if ($existing) {
@@ -47,7 +63,7 @@ $trigger = New-ScheduledTaskTrigger -AtStartup
 $principal = New-ScheduledTaskPrincipal -UserId 'SYSTEM' -LogonType ServiceAccount -RunLevel Highest
 $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit ([TimeSpan]::Zero)
 
-Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Principal $principal -Settings $settings -Description 'DAUMKI Engineering MANFRED Supervisor R01' | Out-Null
+Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Principal $principal -Settings $settings -Description 'DAUMKI Engineering MANFRED Supervisor R01.1' | Out-Null
 Start-ScheduledTask -TaskName $TaskName
 Start-Sleep -Seconds 5
 
@@ -60,9 +76,11 @@ if ($proc.Count -ne 1) {
 }
 
 Write-Host ''
-Write-Host 'MANFRED SUPERVISOR R01 INSTALL PASS' -ForegroundColor Green
+Write-Host 'MANFRED SUPERVISOR R01.1 INSTALL PASS' -ForegroundColor Green
 Write-Host ('Task:    {0} ({1})' -f $TaskName,$task.State)
 Write-Host ('Runtime: {0}' -f $Target)
+Write-Host ('Maintenance runner: {0}' -f $MaintenanceRunnerTarget)
+Write-Host ('Request writer:     {0}' -f $RequestWriterTarget)
 Write-Host ('PID:     {0}' -f $proc[0].ProcessId)
 Write-Host ('State:   {0}' -f (Join-Path $StateDir 'MANFRED_STATUS.json'))
 Write-Host ('Logs:    {0}' -f $LogsDir)

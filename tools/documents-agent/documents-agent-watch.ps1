@@ -16,7 +16,7 @@ param(
 
 $ErrorActionPreference = "Continue"
 $PSDefaultParameterValues["*:ErrorAction"] = "Stop"
-$WatcherVersion = "DOCUMENTS-R02"
+$WatcherVersion = "DOCUMENTS-R02.3"
 $env:GIT_TERMINAL_PROMPT = "0"
 
 if ($PollSeconds -lt 5) { throw "PollSeconds muss mindestens 5 sein." }
@@ -527,6 +527,7 @@ try {
     $infrastructureFailures = 0
     while ($true) {
         $task = $null
+        $failure = $null
         $branch = ""
         try {
             Fetch-Base
@@ -589,7 +590,10 @@ try {
                 checkpoint_sha=$(if ($checkpoint) { $checkpoint.sha } else { "" })
                 checkpoint_number=$(if ($checkpoint) { $checkpoint.number } else { 0 })
             }
-            $infrastructureFailures = 0
+            # Persist the attempt before Codex starts. Infrastructure/post-validation
+            # failures must remain consecutive across successful Codex exits.
+            $failure.attempts = $attempt
+            Set-TaskFailure -State $state -Task $task -Failure $failure
 
             $prompt = @"
 Lies zuerst AGENTS.md und danach die freigegebene Auftragsdatei '$($task.path)' vollstaendig.
@@ -620,6 +624,9 @@ Software-Workflow fuer diesen Versuch:
             finally { Pop-Location }
 
             if ($code -ne 0) {
+                # A genuine Codex failure is accounted for by the separate retry
+                # budget and interrupts an infrastructure-failure sequence.
+                $infrastructureFailures = 0
                 [void](Fetch-TaskBranch $branch)
                 $afterFailure = Resolve-TaskCheckpoint -Repository $WorkerDir -Branch $branch -TaskPath $task.path -TaskBlob $task.blob
                 $currentCheckpoint = $(if ($afterFailure.status -eq "FOUND") { $afterFailure.checkpoint } else { $checkpoint })
@@ -663,10 +670,25 @@ Software-Workflow fuer diesen Versuch:
         catch {
             $reason = $_.Exception.Message
             $infrastructureFailures++
-            $phase = $(if ($reason.StartsWith("CHECKPOINT_BLOCKIERT:")) { "BLOCKIERT" } else { "FEHLER_RETRY" })
-            Publish-Status -Phase $phase -Task $task -Branch $branch -Detail $reason
+            $hardInfrastructureBlock = ($infrastructureFailures -ge 3)
+            $phase = $(if ($reason.StartsWith("CHECKPOINT_BLOCKIERT:") -or $hardInfrastructureBlock) { "BLOCKIERT" } else { "FEHLER_RETRY" })
+            $detail = $(if ($hardInfrastructureBlock) { "R02.3 LOOP-GUARD nach $infrastructureFailures aufeinanderfolgenden Infrastruktur/Post-Validation-Fehlern: $reason" } else { $reason })
+            if ($hardInfrastructureBlock -and $task -and $failure) {
+                $failure.blocked = $true
+                $failure.reason = $detail
+                Set-TaskFailure -State $state -Task $task -Failure $failure
+            }
+            Publish-Status -Phase $phase -Task $task -Branch $branch -Detail $detail -Attempt $(if ($failure) { $failure.attempts } else { 0 }) -RetryCount $(if ($failure) { $failure.codex_failures_without_checkpoint } else { 0 }) -CheckpointSha $(if ($failure) { $failure.last_checkpoint_sha } else { '' }) -CheckpointNumber $(if ($failure) { $failure.last_checkpoint_number } else { 0 })
             $delay = [Math]::Min(300,[Math]::Max($PollSeconds,$PollSeconds * [Math]::Pow(2,[Math]::Min(4,$infrastructureFailures-1))))
-            Write-Log "$phase Infrastruktur/Workflow: $reason; naechster Versuch fruehestens in $([int]$delay)s." "WARN"
+            Write-Log "$phase Infrastruktur/Workflow: $detail; naechster Versuch fruehestens in $([int]$delay)s." $(if ($hardInfrastructureBlock) { "ERROR" } else { "WARN" })
+            if ($hardInfrastructureBlock) {
+                # Stable local block: no further Codex process is started. A
+                # controlled watcher restart is required after a repair/revision.
+                while ($true) {
+                    Start-Sleep -Seconds 300
+                    Publish-Status -Phase "BLOCKIERT" -Task $task -Branch $branch -Detail $detail -Attempt $(if ($failure) { $failure.attempts } else { 0 }) -RetryCount $(if ($failure) { $failure.codex_failures_without_checkpoint } else { 0 }) -CheckpointSha $(if ($failure) { $failure.last_checkpoint_sha } else { '' }) -CheckpointNumber $(if ($failure) { $failure.last_checkpoint_number } else { 0 })
+                }
+            }
             Start-Sleep -Seconds ([int]$delay)
         }
     }
