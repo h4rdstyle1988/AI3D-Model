@@ -1,0 +1,108 @@
+{
+    "schema_version":  1,
+    "generated_at":  "2026-09-01T07:58:18.7265135+02:00",
+    "task":  "tasks/TASK-DOCUMENTS-SOFTWARE-WORKFLOW-R02.md",
+    "revision":  "R02",
+    "status":  "PASS",
+    "checks":  [
+                   {
+                       "name":  "powershell-parser",
+                       "status":  "PASS",
+                       "detail":  "7 scripts parsed"
+                   },
+                   {
+                       "name":  "documents-profile-defaults",
+                       "status":  "PASS",
+                       "detail":  "repo/main/root/worker/scheduler/status/poll/retention/preflight"
+                   },
+                   {
+                       "name":  "documents-profile-isolation",
+                       "status":  "PASS",
+                       "detail":  "no existing-agent or CAD paths"
+                   },
+                   {
+                       "name":  "documents-lock-state-log-paths",
+                       "status":  "PASS",
+                       "detail":  "all paths unique and below independent AgentRoot"
+                   },
+                   {
+                       "name":  "documents-script-isolation",
+                       "status":  "PASS",
+                       "detail":  "no existing-agent, CAD, generated-output or master references"
+                   },
+                   {
+                       "name":  "workflow-mechanisms",
+                       "status":  "PASS",
+                       "detail":  "FIFO, path+blob checkpoints, bounded retry, audit phases, remote verification, worker guard"
+                   },
+                   {
+                       "name":  "queue-only-selection",
+                       "status":  "PASS",
+                       "detail":  "CURRENT_TASK migration file is not read"
+                   },
+                   {
+                       "name":  "fifo-path-blob-unit",
+                       "status":  "PASS",
+                       "detail":  "first unprocessed path+blob revision selected"
+                   },
+                   {
+                       "name":  "checkpoint-first-run-base",
+                       "status":  "PASS",
+                       "detail":  "first run without checkpoint selects origin/main base"
+                   },
+                   {
+                       "name":  "checkpoint-remote-resume",
+                       "status":  "PASS",
+                       "detail":  "same task path+blob resumes verified remote checkpoint and rejects dirty worktree as evidence"
+                   },
+                   {
+                       "name":  "checkpoint-inconsistent-head-rejected",
+                       "status":  "PASS",
+                       "detail":  "verified ancestor is not adopted when remote HEAD itself is unverified"
+                   },
+                   {
+                       "name":  "checkpoint-dirty-not-trusted",
+                       "status":  "PASS",
+                       "detail":  "dirty/unverified state is not silently accepted as checkpoint"
+                   },
+                   {
+                       "name":  "checkpoint-foreign-blob-rejected",
+                       "status":  "PASS",
+                       "detail":  "foreign task blob is never resumed"
+                   },
+                   {
+                       "name":  "retry-budget-blocks-third-error",
+                       "status":  "PASS",
+                       "detail":  "third consecutive Codex error without checkpoint becomes BLOCKIERT"
+                   },
+                   {
+                       "name":  "retry-budget-reset-on-checkpoint",
+                       "status":  "PASS",
+                       "detail":  "new verified checkpoint starts a fresh bounded failure sequence"
+                   },
+                   {
+                       "name":  "final-result-remote-sha",
+                       "status":  "PASS",
+                       "detail":  "synthetic remote ref plus production ls-remote exact-SHA verification"
+                   },
+                   {
+                       "name":  "existing-agent-static-defaults",
+                       "status":  "PASS",
+                       "detail":  "existing root/scheduler/repo/master/CAD defaults retained"
+                   },
+                   {
+                       "name":  "existing-agent-files-unchanged",
+                       "status":  "PASS",
+                       "detail":  "no working-tree diff in existing runtime files"
+                   },
+                   {
+                       "name":  "target-queue-selection-no-execution",
+                       "status":  "SKIP",
+                       "detail":  "live target-repository access not requested"
+                   }
+               ],
+    "failure_count":  0,
+    "live_queue_selection_executed":  false,
+    "queued_implementation_executed":  false,
+    "final_user_approval_claimed":  false
+}

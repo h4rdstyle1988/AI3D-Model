@@ -8,6 +8,7 @@ param(
     [int]$PollSeconds = 30,
     [int]$HeartbeatSeconds = 90,
     [int]$FetchRetryCount = 3,
+    [int]$MaxCodexFailuresWithoutCheckpoint = 3,
     [int]$LogRetentionDays = 7
 )
 
@@ -67,7 +68,8 @@ try {
         "-AgentRoot",('"' + $AgentRoot + '"'),"-WorkerDir",('"' + $WorkerDir + '"'),
         "-SchedulerTaskName",('"' + $SchedulerTaskName + '"'),"-LiveStatusBranch",('"' + $LiveStatusBranch + '"'),
         "-PollSeconds",$PollSeconds,"-HeartbeatSeconds",$HeartbeatSeconds,
-        "-FetchRetryCount",$FetchRetryCount,"-LogRetentionDays",$LogRetentionDays
+        "-FetchRetryCount",$FetchRetryCount,"-MaxCodexFailuresWithoutCheckpoint",$MaxCodexFailuresWithoutCheckpoint,
+        "-LogRetentionDays",$LogRetentionDays
     ) -join ' '
 
     $process = Start-Process -FilePath "powershell.exe" -ArgumentList $watcherArgs -WindowStyle Hidden -RedirectStandardOutput $stdoutPath -RedirectStandardError $stderrPath -PassThru -Wait

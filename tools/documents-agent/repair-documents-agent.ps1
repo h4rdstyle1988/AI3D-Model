@@ -9,6 +9,7 @@ param(
     [int]$PollSeconds = 30,
     [int]$HeartbeatSeconds = 90,
     [int]$FetchRetryCount = 3,
+    [int]$MaxCodexFailuresWithoutCheckpoint = 3,
     [int]$LogRetentionDays = 7,
     [switch]$StartAfterRepair
 )
@@ -154,6 +155,7 @@ if ($LASTEXITCODE -ne 0) { throw "Checkout origin/$BaseBranch fehlgeschlagen." }
 
 $runtimeFiles = @(
     "documents-agent-watch.ps1",
+    "documents-agent-workflow.ps1",
     "documents-agent-launcher.ps1",
     "documents-agent-preflight.ps1",
     "repair-documents-agent.ps1",
@@ -180,7 +182,8 @@ $actionArguments = @(
     "-AgentRoot",('"' + $AgentRoot + '"'),"-WorkerDir",('"' + $WorkerDir + '"'),
     "-SchedulerTaskName",('"' + $SchedulerTaskName + '"'),"-LiveStatusBranch",('"' + $LiveStatusBranch + '"'),
     "-PollSeconds",$PollSeconds,"-HeartbeatSeconds",$HeartbeatSeconds,
-    "-FetchRetryCount",$FetchRetryCount,"-LogRetentionDays",$LogRetentionDays
+    "-FetchRetryCount",$FetchRetryCount,"-MaxCodexFailuresWithoutCheckpoint",$MaxCodexFailuresWithoutCheckpoint,
+    "-LogRetentionDays",$LogRetentionDays
 ) -join ' '
 $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument $actionArguments
 $identity = $currentIdentity.Name

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-DOCUMENTS-SOFTWARE-WORKFLOW-R02.md",
+  "task_revision": "R02",
+  "task_blob_sha": "00232a62fb480c64b69bfb6a6eecba0568ad82fb",
+  "status": "PASS",
+  "main_files": [
+    "tools/documents-agent/documents-agent-watch.ps1",
+    "tools/documents-agent/documents-agent-workflow.ps1",
+    "tools/documents-agent/documents-agent-launcher.ps1",
+    "tools/documents-agent/install-documents-agent.ps1",
+    "tools/documents-agent/repair-documents-agent.ps1",
+    "tools/documents-agent/documents-agent-profile.json",
+    "tools/documents-agent/test-documents-agent-infrastructure.ps1",
+    "tools/documents-agent/README.md",
+    "tools/documents-agent/RESULT-R02.md",
+    "tools/documents-agent/validation-report-r02.json",
+    "tools/documents-agent/result-status-r02.json"
+  ],
+  "validations": [
+    {
+      "name": "powershell_parser_all_changed_scripts",
+      "status": "PASS",
+      "detail": "7 scripts parsed; 0 parser errors"
+    },
+    {
+      "name": "checkpoint_resume_same_task_path_blob",
+      "status": "PASS",
+      "detail": "verified remote checkpoint selected over divergent local checkpoint"
+    },
+    {
+      "name": "foreign_or_inconsistent_checkpoint_rejected",
+      "status": "PASS",
+      "detail": "foreign task blob and unverified remote HEAD rejected"
+    },
+    {
+      "name": "dirty_unverified_state_not_trusted",
+      "status": "PASS",
+      "detail": "dirty worktree is not checkpoint evidence and production watcher preserves it as a dedicated-worker stash before reset"
+    },
+    {
+      "name": "codex_retry_budget",
+      "status": "PASS",
+      "detail": "third consecutive execution error without a new checkpoint becomes BLOCKIERT; a new verified checkpoint starts a fresh bounded sequence"
+    },
+    {
+      "name": "final_remote_sha_verification",
+      "status": "PASS",
+      "detail": "synthetic remote ref and production exact ls-remote SHA comparison validated"
+    },
+    {
+      "name": "documents_agent_isolation",
+      "status": "PASS",
+      "detail": "Documents defaults remain repo/main/D:\\Documents-Controlling-Agent/Documents-Ruediger-Agent with generic development preflight and no CAD preflight"
+    },
+    {
+      "name": "existing_ai3d_behavior_unchanged",
+      "status": "PASS",
+      "detail": "no changes in productive AI3D watcher, installer, repair, CAD preflight or 3D task files"
+    },
+    {
+      "name": "git_diff_check",
+      "status": "PASS",
+      "detail": "no whitespace errors"
+    }
+  ],
+  "open_real_tests": [
+    "After an explicitly authorized controlled deployment, simulate a real Codex process failure and confirm resume from the published checkpoint in the target repository.",
+    "After deployment, observe one real final push and live-status sequence without modifying document content."
+  ],
+  "running_documents_task_touched": false,
+  "documents_scheduler_started_stopped_or_repaired": false,
+  "installation_or_repair_performed": false,
+  "ai3d_workflow_changed": false,
+  "cad_preflight_used": false,
+  "new_gpl_or_agpl_runtime_dependency": false,
+  "employer_or_private_source_data_used": false,
+  "final_user_approval_claimed": false,
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Keine verbindliche Produktfunktion, kein Nutzermass und keine Produktidee musste geaendert oder gewaehlt werden."
+}

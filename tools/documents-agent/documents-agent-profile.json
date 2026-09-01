@@ -10,6 +10,7 @@
   "poll_seconds": 30,
   "heartbeat_seconds": 90,
   "fetch_retry_count": 3,
+  "max_codex_failures_without_checkpoint": 3,
   "log_retention_days": 7,
   "preflight_kind": "generic-development",
   "cad_preflight": false,

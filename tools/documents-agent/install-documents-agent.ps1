@@ -8,6 +8,7 @@ param(
     [int]$PollSeconds = 30,
     [int]$HeartbeatSeconds = 90,
     [int]$FetchRetryCount = 3,
+    [int]$MaxCodexFailuresWithoutCheckpoint = 3,
     [int]$LogRetentionDays = 7,
     [switch]$StartAfterInstall
 )
@@ -32,6 +33,7 @@ $repairArgs = @(
     "-PollSeconds", [string]$PollSeconds,
     "-HeartbeatSeconds", [string]$HeartbeatSeconds,
     "-FetchRetryCount", [string]$FetchRetryCount,
+    "-MaxCodexFailuresWithoutCheckpoint", [string]$MaxCodexFailuresWithoutCheckpoint,
     "-LogRetentionDays", [string]$LogRetentionDays
 )
 if ($StartAfterInstall) { $repairArgs += "-StartAfterRepair" }

@@ -1,4 +1,4 @@
-# Documents-Agent Bootstrap R01
+# Documents-Agent Software-Workflow R02
 
 Diese Infrastruktur ist eine getrennte zweite Ruediger-Instanz fuer
 `Documents-Controlling-clear`. Sie aendert weder Konfiguration noch Queue-Semantik
@@ -55,23 +55,70 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\tools\documents-agent
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\tools\documents-agent\test-documents-agent-infrastructure.ps1" -LiveQueueSelectionTest
 ```
 
-## Betriebsmodell
+## Checkpoint- und Resume-Modell
 
 - FIFO-Steuerquelle: `tasks/TASK_QUEUE.txt`; `CURRENT_TASK.txt` wird nicht gelesen.
 - Task-Identitaet: Task-Pfad plus Blob-SHA aus `origin/main`.
 - Ergebnisbranch: `ruediger/<task>-<blob8>` mit Remote-SHA-Verifikation.
-- Fehlgeschlagene Tasks gelten nicht als verarbeitet und werden erneut versucht.
-- Ein bereits lokal abgeschlossenes Ergebnis derselben Task-Revision wird beim
-  Push-Fehler wiederverwendet, nicht erneut erzeugt.
+- Groessere Software-Aufgaben werden in wenige logisch abgeschlossene Abschnitte
+  zerlegt. Nach zielgerichteten Tests darf Codex einen Zwischen-Commit erzeugen
+  und auf denselben Task-Branch pushen. Mikro-Commits sind nicht vorgesehen.
+- Ein Checkpoint ist nur gueltig, wenn seine Commit-Trailer Task-Pfad, Task-Blob,
+  Basis-SHA, positive Checkpoint-Nummer und
+  `Ruediger-Checkpoint-Verified: true` eindeutig ausweisen. Zusaetzlich prueft
+  der Watcher Basis-Ancestry und den unveraenderten Task-Blob im Commit.
+- Bei lokal/remote abweichenden Checkpoints wird der verifizierte Remote-Stand
+  verwendet. Ein lokaler Checkpoint wird nur bei eindeutiger Identitaet
+  akzeptiert und vor dem Resume remote gesichert. Ein fremder oder
+  inkonsistenter Remote-Branch fuehrt zu `BLOCKIERT`.
+- Dirty oder nicht verifizierte Arbeitsbaum-Aenderungen gelten nie als
+  Checkpoint. Vor einer technischen Wiederherstellung sichert der Watcher sie
+  explizit als Stash und setzt nur innerhalb des geprueften dedizierten Workers
+  auf den verifizierten Checkpoint beziehungsweise beim Erstlauf auf
+  `origin/main` zurueck.
+- Ein gueltiger Checkpoint wird niemals pauschal auf `origin/main` gesetzt.
+
+## Retry, Validierung und Audit
+
+- Maximal drei aufeinanderfolgende Codex-Ausfuehrungsfehler ohne neuen
+  verifizierten Checkpoint sind erlaubt. Danach bleibt die FIFO-Task in
+  `BLOCKIERT` und wird nicht erneut ausgefuehrt. Ein neuer verifizierter
+  Checkpoint beginnt ein frisches begrenztes Fehlerbudget.
+- Fetch-, Push- und sonstige Infrastrukturfehler zaehlen getrennt und erhalten
+  einen bis auf fuenf Minuten begrenzten exponentiellen Backoff.
+- Vor Checkpoints laufen zielgerichtete Tests; vor dem finalen Ergebnis fordert
+  der Prompt den vollstaendigen relevanten Testlauf. Der finale Commit wird vom
+  Watcher mit Task-Trailern erzeugt und erst nach exakter Remote-SHA-Pruefung als
+  verarbeitet gespeichert.
+- Der Live-Status fuehrt knapp Phase, Attempt, Retry-Zahl, letzten verifizierten
+  Checkpoint-SHA und Checkpoint-Nummer. Betriebsphasen sind `ARBEITET`,
+  `CHECKPOINT`, `VALIDIERUNG`, `FERTIG`, `FEHLER_RETRY`, `BLOCKIERT` und
+  `WARTET`; Heartbeats erzeugen keine Aenderungen im Produktbranch.
+
+## Betriebsmodell und Abgrenzung
+
 - Live-Status liegt ausschliesslich auf `ruediger/live-status` im Documents-Repo.
 - Lock, State, Logs, Runtime, Temp und Worker liegen unter dem getrennten
   Documents-AgentRoot.
-- Vor `reset --hard` oder `clean -fd` wird geprueft, dass der Worker unter dem
+- Vor `reset --hard`, `clean -fd` oder einer Sicherung wird geprueft, dass der Worker unter dem
   dedizierten `AgentRoot\worker` liegt. Normale Benutzer-Arbeitsbaeume werden
   nicht veraendert.
 - Der Preflight prueft PowerShell, Git, Git-Identitaet und Codex. Python ist nur
   informativ; CAD-, Slicer- und 3D-Ausgabe-Pfade sind nicht Bestandteil des
   Documents-Agenten.
+
+Sparse-Checkout wird nicht mehr aktiviert: Fuer allgemeine Software-Tests und
+Resume-Pfade ist ein vollstaendiger Worker belastbarer; ein messbarer Vorteil
+des bisherigen `tasks`/`tools`-Ausschnitts war nicht belegt.
+
+## Optimierungsbremse
+
+Optimieren nur bei messbarem Problem, wiederholtem Fehler oder klarer
+Zeit-/Robustheitsverbesserung. Keine Refactor-Schleifen ohne konkreten Nutzen.
+Nach PASS ist R02 ein eingefrorener stabiler Workflow. Erneute Aenderungen sind
+nur bei nachgewiesenem Problem, notwendiger Schnittstellenaenderung,
+Sicherheits-/Lizenzthema oder klar belegtem Nutzen vorgesehen. Der Agent
+refactort seine Infrastruktur nicht selbststaendig nach erfolgreichen Tasks.
 
 Installation, Parser-/Statik-PASS und ein erfolgreicher Agentenlauf sind keine
 finale Freigabe von Dokumentinhalten. Diese bleibt ausschliesslich beim Nutzer.
