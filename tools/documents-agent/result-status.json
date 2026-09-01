@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "task": "tasks/TASK-DOCUMENTS-AGENT-BOOTSTRAP-R01.md",
+  "task_revision": "R01",
+  "task_blob_sha": "f9590d7504d32dad0314c3d0a4fefee2c6b658e8",
+  "status": "PASS",
+  "implementation_variant": "B_SEPARATE_DOCUMENTS_WATCHER",
+  "existing_ai3d_workflow_behaviorally_unchanged": true,
+  "existing_ai3d_files_changed": [],
+  "main_files": [
+    "tools/documents-agent/documents-agent-profile.json",
+    "tools/documents-agent/documents-agent-watch.ps1",
+    "tools/documents-agent/documents-agent-launcher.ps1",
+    "tools/documents-agent/documents-agent-preflight.ps1",
+    "tools/documents-agent/install-documents-agent.ps1",
+    "tools/documents-agent/repair-documents-agent.ps1",
+    "tools/documents-agent/test-documents-agent-infrastructure.ps1",
+    "tools/documents-agent/README.md",
+    "tools/documents-agent/development-preflight-report.json",
+    "tools/documents-agent/validation-report.json",
+    "tools/documents-agent/RESULT-R01.md",
+    "tools/documents-agent/result-status.json"
+  ],
+  "validations": [
+    {
+      "name": "powershell_parser_all_new_scripts",
+      "status": "PASS",
+      "detail": "6 of 6 scripts parsed without errors"
+    },
+    {
+      "name": "generic_development_preflight",
+      "status": "PASS",
+      "detail": "PowerShell, Git, Codex, Code-Mode-Host and Git identity available; Python informational; CAD preflight not used"
+    },
+    {
+      "name": "documents_profile_isolation",
+      "status": "PASS",
+      "detail": "independent root, worker, runtime, scheduler, state, lock, logs and main branch; no AI3D/CAD/generated paths"
+    },
+    {
+      "name": "existing_ai3d_static_defaults",
+      "status": "PASS",
+      "detail": "D:\\AI3D-Agent, AI3D-Ruediger-Agent, AI3D repo/master and CAD preflight remain present in unchanged existing scripts"
+    },
+    {
+      "name": "fifo_path_blob_selection_unit",
+      "status": "PASS",
+      "detail": "first unprocessed queue entry selected by task path plus blob SHA"
+    },
+    {
+      "name": "target_repository_queue_selection",
+      "status": "OPEN",
+      "detail": "not executed: HTTPS access to github.com was blocked by the task sandbox proxy; no queued implementation task was executed"
+    },
+    {
+      "name": "git_diff_check",
+      "status": "PASS",
+      "detail": "no whitespace errors"
+    },
+    {
+      "name": "scheduled_task_api_dry_run",
+      "status": "OPEN",
+      "detail": "sandbox denied ScheduledTasks CIM access; installer now requires an explicitly elevated PowerShell and was not run"
+    }
+  ],
+  "open_real_tests": [
+    "Run the one-time installer command from an elevated PowerShell on the interactive Windows machine.",
+    "Run -SelectionTestOnly against the reachable Documents repository and confirm its current FIFO queue result.",
+    "Confirm the new scheduled task is Running and publishes only to the Documents repository status branch."
+  ],
+  "activation_command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \".\\tools\\documents-agent\\install-documents-agent.ps1\" -StartAfterInstall",
+  "installation_or_scheduler_start_performed_by_this_task": false,
+  "queued_implementation_task_executed": false,
+  "final_user_approval_claimed": false,
+  "NUTZERENTSCHEIDUNG_ERFORDERLICH": false,
+  "nutzerentscheidung_grund": "Keine technische oder funktionale Auswahl ist offen. Installation/Aktivierung bleibt entsprechend der Freigabe ein ausdruecklicher Nutzerbefehl; reale Betriebspruefungen bleiben offen."
+}
