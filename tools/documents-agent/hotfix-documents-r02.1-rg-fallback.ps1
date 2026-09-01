@@ -1,6 +1,7 @@
 param(
     [string]$AgentRoot = "D:\Documents-Controlling-Agent",
-    [string]$SchedulerTaskName = "Documents-Ruediger-Agent"
+    [string]$SchedulerTaskName = "Documents-Ruediger-Agent",
+    [int]$WaitForCodexSeconds = 1800
 )
 
 $ErrorActionPreference = "Stop"
@@ -16,15 +17,29 @@ $stateFile = Join-Path $AgentRoot "state\documents-task-state.json"
 if (-not (Test-Path -LiteralPath $runtimeFile -PathType Leaf)) { throw "Documents Runtime fehlt: $runtimeFile" }
 if (-not (Test-Path -LiteralPath $stateFile -PathType Leaf)) { throw "Documents State fehlt: $stateFile" }
 
-# Nur bei sicherem, nicht laufendem Codex-Zustand patchen.
-$all = @(Get-CimInstance Win32_Process -ErrorAction SilentlyContinue)
 $rootPattern = [Regex]::Escape($AgentRoot)
-$activeCodex = @($all | Where-Object {
-    $_.CommandLine -and $_.CommandLine -match $rootPattern -and
-    ($_.Name -match '^codex' -or $_.CommandLine -match 'codex(?:\.exe)?')
-})
-if ($activeCodex.Count -gt 0) {
-    throw "Aktiver Documents-Codex erkannt. Hotfix stoppt ohne Aenderung."
+function Get-ActiveDocumentsCodex {
+    $all = @(Get-CimInstance Win32_Process -ErrorAction SilentlyContinue)
+    return @($all | Where-Object {
+        $_.CommandLine -and $_.CommandLine -match $rootPattern -and
+        ($_.Name -match '^codex' -or $_.CommandLine -match 'codex(?:\.exe)?')
+    })
+}
+
+# Nicht in einen laufenden Codex eingreifen. Statt abzubrechen, kontrolliert warten.
+$deadline = (Get-Date).AddSeconds([Math]::Max(0,$WaitForCodexSeconds))
+$announced = $false
+while ($true) {
+    $activeCodex = @(Get-ActiveDocumentsCodex)
+    if ($activeCodex.Count -eq 0) { break }
+    if (-not $announced) {
+        Write-Output "Aktiver Documents-Codex erkannt. Hotfix wartet automatisch auf einen sicheren Zustand."
+        $announced = $true
+    }
+    if ((Get-Date) -ge $deadline) {
+        throw "Timeout: Documents-Codex nach $WaitForCodexSeconds Sekunden noch aktiv. Hotfix stoppt ohne Aenderung."
+    }
+    Start-Sleep -Seconds 5
 }
 
 $state = Get-Content -LiteralPath $stateFile -Raw | ConvertFrom-Json
@@ -53,14 +68,12 @@ if ($text -notmatch 'Verlasse dich nicht auf optionale Kommandozeilenwerkzeuge w
     [IO.File]::WriteAllText($runtimeFile,$text,(New-Object Text.UTF8Encoding($false)))
 }
 
-# Parser-Check vor State-Aenderung.
 $tokens = $null; $errors = $null
 [void][Management.Automation.Language.Parser]::ParseFile($runtimeFile,[ref]$tokens,[ref]$errors)
 if ($errors.Count -gt 0) {
     throw "Gepatchter Watcher hat Parserfehler: $((@($errors) | ForEach-Object { $_.Message }) -join '; ')"
 }
 
-# Nur den eindeutig identifizierten rg-Fehlerdatensatz zuruecksetzen.
 foreach ($failure in $failures) {
     if ($failure -eq $rgFailures[0]) {
         $failure.attempts = 0
@@ -75,7 +88,6 @@ $state.failures = $failures
 Copy-Item -LiteralPath $stateFile -Destination "$stateFile.previous-r02.1" -Force
 [IO.File]::WriteAllText($stateFile,($state | ConvertTo-Json -Depth 12),(New-Object Text.UTF8Encoding($false)))
 
-# Watcher sauber neu starten. Kein Codex laeuft an dieser Stelle.
 Stop-ScheduledTask -TaskName $SchedulerTaskName -ErrorAction SilentlyContinue
 Start-Sleep -Seconds 2
 Get-CimInstance Win32_Process -ErrorAction SilentlyContinue |
