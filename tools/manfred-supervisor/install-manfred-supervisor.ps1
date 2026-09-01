@@ -24,8 +24,9 @@ $tokens = $null
 $errors = $null
 [System.Management.Automation.Language.Parser]::ParseFile($Temp,[ref]$tokens,[ref]$errors) | Out-Null
 if ($errors.Count -gt 0) {
+    $messages = (($errors | ForEach-Object { $_.Message }) -join '; ')
     Remove-Item -LiteralPath $Temp -Force -ErrorAction SilentlyContinue
-    throw ('Downloaded MANFRED runtime failed PowerShell parser validation: ' + ($errors | ForEach-Object Message -join '; '))
+    throw ('Downloaded MANFRED runtime failed PowerShell parser validation: ' + $messages)
 }
 
 if (Test-Path -LiteralPath $Target) {
